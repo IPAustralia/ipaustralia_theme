@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- @file Instructions on how to sub-theme the Drupal Bootstrap base theme using the CDN Starterkit. -->
 <!-- @defgroup subtheme_cdn -->
 <!-- @ingroup subtheme -->
@@ -27,3 +28,7 @@ Please refer to the @link registry Theme Registry @endlink topic.
 [Drupal Bootstrap]: https://www.drupal.org/project/bootstrap
 [Bootstrap Framework]: http://getbootstrap.com
 [jsDelivr CDN]: http://www.jsdelivr.com
+=======
+# ipaustralia_theme
+Theme for the IP Australia website
+>>>>>>> f5b33ebaf3befee0796d432f2c7df7ea3d237233
