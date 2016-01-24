@@ -1,5 +1,5 @@
-name = IP Australia theme
-description = Uses the jsDelivr CDN for all CSS and JavaScript. No source files or compiling is necessary and is recommended for simple sites or beginners.
+name = IP Australia
+description = Responsive theme for the IP Australia corporate website (www.ipaustralia.gov.au). Based on Bootstrap.
 core = 7.x
 base theme = bootstrap
 
@@ -8,13 +8,27 @@ base theme = bootstrap
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[navigation]     = 'Navigation'
+; ---------------------------------------------
+; | page_top (scripts)                        |
+; | header                                    |
+; | navigation                                |
+; | breadcrumbs                               |
+; | page title                                |
+; | content_top (e.g. patent lifecycle block) |
+; | sidebar_first | content | sidebar second  |
+; | content_bottom (e.g. case studies block)  |
+; | footer                                    |
+; | page_bottom (scripts)                     |
+; ---------------------------------------------
+
 regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[content]        = 'Content'
 regions[sidebar_first]  = 'Left hand sidebar'
 regions[sidebar_second] = 'Right hand sidebar'
+regions[content_top]    = 'Content top'
+regions[content_bottom] = 'Content bottom'
 regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
@@ -34,10 +48,15 @@ features[] = secondary_menu
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] = css/style.css
 stylesheets[all][] = css/header.css
 stylesheets[all][] = css/footer.css
+stylesheets[all][] = css/megamenu.css
+stylesheets[all][] = css/frontpage.css
+stylesheets[all][] = css/common.css
+stylesheets[all][] = css/style.css
 stylesheets[print][] = css/print.css
+
+
 
 
 ;;;;;;;;;;;;;;;;;;;;;

@@ -8,14 +8,11 @@
 	float: none;
 }
 
-.megamenu-level-1 > li {
-    float: left;
-}
 
 .megamenu-tab-contents {
     position: absolute;
 }
-
+/*default heading styles for site*/
 h1, h2, h3, h4, h5, h6 {color:#1D252C;font-family: 'montserratbold';}
 
 h1 {font-size: 60px; line-height: 72px;}
@@ -25,7 +22,14 @@ h4 {font-size: 24px; line-height: 30px;}
 h5 {font-size: 20px; line-height: 24px;}
 h6 {font-size: 18px; line-height: 24px;}
 
-body {/*font-family: 'calibrilight'*/}
+/*default font for site*/
+body {font-family: 'robotoregular', sans-serif;}
+
+/*gold color for links*/
+a {color:#977100;}
+a:hover {color:#977100;}
+a:active {color:#977100;}
+a:visited {color:#977100;}
 
 /* fonts - Montserrat regular and bold. Reference the font family to use*/
 @font-face {
@@ -52,6 +56,44 @@ body {/*font-family: 'calibrilight'*/}
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto-bold-webfont.eot');
+    src: url('fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('fonts/roboto-bold-webfont.woff') format('woff'),
+         url('fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto-light-webfont.eot');
+    src: url('fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('fonts/roboto-light-webfont.woff') format('woff'),
+         url('fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('fonts/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.eot');
+    src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff'),
+         url('fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* callout boxes for blocks on landing pages and tools links */
 .bs-callout, .bs-vert-callout {
 	padding:20px;
@@ -63,10 +105,17 @@ body {/*font-family: 'calibrilight'*/}
 .bs-callout-patents, .bs-vert-callout-patents  {border-color:#30AEB6;}
 .bs-callout-trade-marks, .bs-vert-callout-trade-marks {border-color:#DE4326;}
 .bs-callout-designs, .bs-vert-callout-designs {border-color:#84C98F;}
-.bs-callout-pbr, .bs-vert-callout-pbr {border-color:#84C98F;}
+.bs-callout-pbr, .bs-vert-callout-pbr {border-color:#F1AC1E;}
 .bs-callout-purple, .bs-vert-callout-purple {border-color:#704579;}
 .bs-callout-charcoal, .bs-vert-callout-charcoal {border-color:#1D252C;}
 
 .bs-vert-callout {border-bottom-width:5px;}
 .bs-callout {border-left-width:5px;}
 
+.panels-flexible-row-four_column_panel_with_top_and_bottom-main-row h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/*removes additional heading on homepage*/
+.pane-quicktabs-news-events-and-media h2 {display:none;}

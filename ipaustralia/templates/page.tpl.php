@@ -1,23 +1,40 @@
 <?php include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/header.inc"; ?>
 
-<div class="main-container <?php print $container_class; ?>">
+<div class="main-container">
 
-  <div class="row">
-    <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+  <div class="overlay" />
 
-    <?php print $messages; ?>
+  <?php if (!empty($breadcrumb)): ?>
+    <div class="breadcrumbs">
+      <div class="container">
+         <?php print $breadcrumb; ?>
+         <a class="listen-to-this-page" href="http://www.example.com">Listen to this page</a>
+      </div>
+    </div>
+  <?php endif; ?>
 
-    <?php print render($title_prefix); ?>
-    <?php if (!empty($title)): ?>
-    <h1 class="page-header"><?php print $title; ?></h1>
-    <?php endif; ?>
-    <?php print render($title_suffix); ?>
+  <?php if (!empty($messages)): ?>
+    <div class="messages">
+      <div class="container">
+        <?php print $messages; ?>
+      </div>
+    </div>
+  <?php endif; ?>
 
-    <?php print render($page['page_top']); ?>
+  <div class="title">
+    <div class="container">
+      <?php print render($title_prefix); ?>
+      <?php if (!empty($title)): ?>
+      <h1 class="page-header"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+    </div>
   </div>
 
-  <div class="row">
+  <?php print render($page['content_top']); ?>
 
+  <div class="container">
+  
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_first']); ?>
@@ -43,12 +60,11 @@
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
-
+  
   </div>
 
-  <div class="row">
-    <?php print render($page['page_bottom']); ?>
-  </div>
+  <?php print render($page['content_bottom']); ?>
+
 </div>
 
 <?php include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/footer.inc"; ?>

@@ -1,0 +1,170 @@
+/*Desktop tablet landscape*/
+/*Tablet*/
+/*Mobile*/
+.region {
+  border: none;
+}
+
+.front #block-system-main {
+  display: none;
+}
+
+/*.last.leaf.menu-mlid-1816 {
+  display: none;
+}*/
+/*.main-container {
+    display: none;
+}*/
+h2 {
+  font: normal 36px "montserratbold";
+}
+
+a {
+  outline: 0;
+}
+a:active, a:focus {
+  outline: 0;
+  text-decoration: none;
+  background: transparent;
+}
+
+body {
+  font: normal 16px "robotoregular";
+  font-weight: normal;
+}
+
+.messages .alert-block {
+  border-radius: 0px;
+  padding: 22px 30px;
+  border: none;
+  margin: 20px 0px;
+}
+.messages .alert-block.error {
+  background: #ffe8ee url("/sites/all/themes/ipaustralia/images/warning.png") 10px center no-repeat;
+  padding-left: 60px;
+  color: #ed0129;
+  font-weight: bold;
+}
+
+.resource-list-block {
+  padding: 0px;
+  margin: 0px;
+  color: #1d252c;
+  list-style: none;
+}
+.resource-list-block li {
+  background: #fff;
+  border: 0px;
+  padding: 14px;
+  font: normal 16px "robotoregular";
+  margin-top: 2px;
+}
+.resource-list-block li.patents {
+  border-left: 10px solid #30aeb6;
+  border-left: 5px solid #30aeb6;
+  padding-left: 90px;
+  background: #fff url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat;
+}
+.resource-list-block li.trade-marks {
+  border-left: 10px solid #de4326;
+  border-left: 5px solid #de4326;
+  padding-left: 90px;
+  background: #fff url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat;
+}
+.resource-list-block li.designs {
+  border-left: 10px solid #84c98f;
+  border-left: 5px solid #84c98f;
+  padding-left: 90px;
+  background: #fff url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat;
+}
+.resource-list-block li.pbr {
+  border-left: 10px solid #f1ac1e;
+  border-left: 5px solid #f1ac1e;
+  padding-left: 90px;
+  background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat;
+}
+
+footer {
+  padding: 0 0 80px 0px !important;
+  margin: 0px !important;
+  border: 0px !important;
+}
+footer .block-menu-block {
+  background: #1d252c none repeat scroll 0 0;
+  padding: 60px 0;
+}
+footer .block-menu-block .nav li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+@media only screen and (max-width: 768px) {
+  footer .block-menu-block .nav li {
+    width: 50%;
+  }
+}
+footer .block-menu-block .nav li a {
+  color: white;
+  text-decoration: none;
+  font: normal 16px montserratregular;
+  padding: 20px 18px 20px 0;
+  background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right.png") right center no-repeat;
+  float: left;
+}
+footer .block-menu-block .nav li a:hover, footer .block-menu-block .nav li a:active, footer .block-menu-block .nav li a:focus {
+  background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right.png") right center no-repeat;
+}
+footer .block-menu-block .nav li ul {
+  background: transparent none repeat scroll 0 0;
+  box-shadow: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border: 0px;
+  clear: both;
+}
+footer .block-menu-block .nav li ul li {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+footer .block-menu-block .nav li ul li a {
+  color: white;
+  font-weight: normal;
+  padding: 0 10px 16px 0px;
+  text-decoration: underline;
+  font: normal 16px "robotoregular";
+  font-size: 15px;
+  background: transparent;
+}
+footer .block-menu-block .nav li ul li a:hover, footer .block-menu-block .nav li ul li a:active, footer .block-menu-block .nav li ul li a:focus {
+  text-decoration: none;
+  background: transparent;
+}
+footer .block-menu .block-title {
+  font: normal 16px montserratregular;
+  font-size: 18px;
+  margin: 0px;
+  padding: 40px 0px 0px;
+}
+footer .block-menu .nav li {
+  float: left;
+  padding: 10px 10px 0 0;
+}
+footer .block-menu .nav li a {
+  padding: 0px 10px 0 0;
+  border-right: 1px solid #1d252c;
+  font-size: 13px;
+  line-height: 12px;
+  color: #977100;
+}
+footer .block-menu .nav li a:hover {
+  text-decoration: underline;
+}
+footer .block-menu .nav li a:active, footer .block-menu .nav li a:focus, footer .block-menu .nav li a:hover {
+  background: transparent;
+}
+footer .block-menu .nav li.last a {
+  border: none;
+}

@@ -1,0 +1,98 @@
+/*Desktop tablet landscape*/
+/*Tablet*/
+/*Mobile*/
+.region {
+  border: none;
+}
+
+.front #block-system-main {
+  display: none;
+}
+
+/*.last.leaf.menu-mlid-1816 {
+  display: none;
+}*/
+/*.main-container {
+    display: none;
+}*/
+h2 {
+  font: normal 36px "montserratbold";
+}
+
+a {
+  outline: 0;
+}
+a:active, a:focus {
+  outline: 0;
+  text-decoration: none;
+  background: transparent;
+}
+
+body {
+  font: normal 16px "robotoregular";
+  font-weight: normal;
+}
+
+.messages .alert-block {
+  border-radius: 0px;
+  padding: 22px 30px;
+  border: none;
+  margin: 20px 0px;
+}
+.messages .alert-block.error {
+  background: #ffe8ee url("/sites/all/themes/ipaustralia/images/warning.png") 10px center no-repeat;
+  padding-left: 60px;
+  color: #ed0129;
+  font-weight: bold;
+}
+
+.resource-list-block {
+  padding: 0px;
+  margin: 0px;
+  color: #1d252c;
+  list-style: none;
+}
+.resource-list-block li {
+  background: #fff;
+  border: 0px;
+  padding: 14px;
+  font: normal 16px "robotoregular";
+  margin-top: 2px;
+}
+.resource-list-block li.patents {
+  border-left: 10px solid #30aeb6;
+  border-left: 5px solid #30aeb6;
+  padding-left: 90px;
+  background: #fff url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat;
+}
+.resource-list-block li.trade-marks {
+  border-left: 10px solid #de4326;
+  border-left: 5px solid #de4326;
+  padding-left: 90px;
+  background: #fff url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat;
+}
+.resource-list-block li.designs {
+  border-left: 10px solid #84c98f;
+  border-left: 5px solid #84c98f;
+  padding-left: 90px;
+  background: #fff url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat;
+}
+.resource-list-block li.pbr {
+  border-left: 10px solid #f1ac1e;
+  border-left: 5px solid #f1ac1e;
+  padding-left: 90px;
+  background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1180px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 1180px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

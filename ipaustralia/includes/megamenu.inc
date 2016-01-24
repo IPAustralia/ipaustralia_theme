@@ -49,6 +49,15 @@ function __ipaustralia_add_mega_menu_theme_suggestions(&$tree, $level = 1)  {
 	foreach (element_children($tree) as $key) {
 		$value = &$tree[$key];
 		array_unshift($value['#theme'], 'menu_link__menu_block__mega_menu__level_' . $level);
+		if (isset($value['#localized_options']['attributes']['class'])) {
+			// Merge our classes on the menu link <a> tag
+			// (#localized_options->attributes->class) up onto the <li> tag
+			// (#attributes->class). The menu attributes module lets us add
+			// classes to menu links, but we actually need them on the <li> so
+			// that we can style e.g. the "search patents" and "apply for a
+			// patent" menus per the design.
+			$value['#attributes']['class'] = array_merge($value['#attributes']['class'], $value['#localized_options']['attributes']['class']);
+		}
 		if (!empty($value['#below'])) {
 			__ipaustralia_add_mega_menu_theme_suggestions($value['#below'], $level + 1);
 		}
@@ -67,42 +76,59 @@ function ipaustralia_menu_link__menu_block__mega_menu__level_1(array $variables)
 	if ($element['#href'] == '<front>') {
 		// special case for the homepage
 		array_push($element['#attributes']['class'], 'icon', 'icon-home');
-		$link = l($element['#title'], $element['#href'], $element['#localized_options']);
-		$output = '<span class="megamenu-tab megamenu-tab-home">' . $link . '</span>'; 
+		$output = l($element['#title'], $element['#href'], $element['#localized_options']);
 		return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . "</li>\n";
 	}
 	else {
-		$sub_menu = '';
-
-		if ($element['#below']) {
-			$sub_menu = drupal_render($element['#below']);
-		}
 		$tab_id = $element['#original_link']['mlid'];
 		$class = drupal_clean_css_identifier(strtolower($element["#title"]));
-		$title = l(
+		// get tab header
+		$tab_header = l(
 			$element['#title'], 
 			$element['#href'], 
-			array_merge_recursive($element['#localized_options'], array('attributes' => array('class' => array('title'))))
+			array_merge_recursive(
+				$element['#localized_options'],
+				array(
+					'attributes' => array(
+						'data-toggle' => 'dropdown',
+						'data-tab-id' => $tab_id,
+						'class' => array('title', 'dropdown-toggle', 'megamenu-tab-' . $class)
+					)
+				)
+			)
 		);
-		$tab_header = '<span class="megamenu-tab megamenu-tab-' . $class . '" data-tab-id="' . $tab_id . '">' . $title . '</span>';
-		// using <i> for icons per bootstrap convention
-		$icon = '<i class="icon icon-' . $class . '"></i>';
-		$learn_more = l(
-			t('Learn more'),
-			$element['#href'],
-			array_merge_recursive($element['#localized_options'], array('attributes' => array('class' => array('learn-more'))))
-		);
-		$description = 
-			!empty($element['#localized_options']['attributes']['title'])
-			? '<p>' . $element['#localized_options']['attributes']['title'] . '</p>'
-			: '';
-		$tab_contents = 
-			'<div class="megamenu-tab-contents" style="display: none" data-tab-id="' . $tab_id . '">' .
-				$icon .
-				'<div class="megamenu-tab-contents__title">' . $title . $description . '</div>' .
-				$learn_more .
-				$sub_menu . 
-			'</div>';
+		// get tab contents
+		$tab_contents = '';
+		{
+			$sub_menu = '';
+			if ($element['#below']) {
+				$sub_menu = drupal_render($element['#below']);
+			}
+			$title = l(
+				$element['#title'], 
+				$element['#href'], 
+				array_merge_recursive($element['#localized_options'], array('attributes' => array('class' => array('title'))))
+			);
+			// using <i> for icons per bootstrap convention
+			$icon = '<i class="icon icon-' . $class . '"></i>';
+			$learn_more = l(
+				t('Learn more'),
+				$element['#href'],
+				array_merge_recursive($element['#localized_options'], array('attributes' => array('class' => array('learn-more'))))
+			);
+			$description = 
+				!empty($element['#localized_options']['attributes']['title'])
+				? '<p>' . $element['#localized_options']['attributes']['title'] . '</p>'
+				: '';
+			$tab_contents = 
+				'<div class="megamenu-tab-contents dropdown-menu" data-tab-id="' . $tab_id . '">' .
+					$icon .
+					'<div class="megamenu-tab-contents__title">' . $title . $description . '</div>' .
+					$learn_more .
+					$sub_menu . 
+					'<div class="clearfix" />' .
+				'</div>';
+		}
 		$output = $tab_header . $tab_contents;
 		return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . "</li>\n";
 	}
@@ -140,7 +166,7 @@ function ipaustralia_menu_link__menu_block__mega_menu__level_3(array $variables)
  * Implements theme_menu_tree().
  */
 function ipaustralia_menu_tree__menu_block__mega_menu__level_1($variables) {
-	return '<ul class="menu megamenu megamenu-level-1">' . $variables['tree'] . '</ul>';
+	return '<ul class="menu megamenu megamenu-level-1 nav nav-tabs">' . $variables['tree'] . '</ul>';
 }
 
 /**

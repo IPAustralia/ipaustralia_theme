@@ -1,12 +1,21 @@
 <?php include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/header.inc"; ?>
 
-<div class="main-container <?php print $container_class; ?>">
+<div class="main-container">
 
-  <div class="row">
+  <div class="overlay" />
 
-    <section<?php print $content_column_class; ?>>
+  <?php if (!empty($messages)): ?>
+    <div class="messages">
+      <div class="container">
+        <?php print $messages; ?>
+      </div>
+    </div>
+  <?php endif; ?>
+
+  <div>
+
+    <section>
       <a id="main-content"></a>
-      <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
