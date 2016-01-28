@@ -1,6 +1,6 @@
 .region
 {
-	border: thin solid black; /* just for debugging */
+	/*border: thin solid black;  just for debugging */
 }
 
 .navbar-header
@@ -13,7 +13,7 @@
     position: absolute;
 }
 /*default heading styles for site*/
-h1, h2, h3, h4, h5, h6 {color:#1D252C;font-family: 'montserratbold';}
+h1, h2, h3, h4, h5, h6 {color:#1D252C;font-family: 'montserratbold', sans-serif;}
 
 h1 {font-size: 60px; line-height: 72px;}
 h2 {font-size: 44px; line-height: 60px;}
@@ -102,6 +102,8 @@ a:visited {color:#977100;}
 	border-radius:0px;
 	background-color:#EEF0F1;
 }
+.bs-vert-callout{min-height: 400px;}
+
 .bs-callout-patents, .bs-vert-callout-patents  {border-color:#30AEB6;}
 .bs-callout-trade-marks, .bs-vert-callout-trade-marks {border-color:#DE4326;}
 .bs-callout-designs, .bs-vert-callout-designs {border-color:#84C98F;}
@@ -119,3 +121,61 @@ a:visited {color:#977100;}
 
 /*removes additional heading on homepage*/
 .pane-quicktabs-news-events-and-media h2 {display:none;}
+
+/* alistairs css for landing page boxes */
+.main-list-item-patent {
+    width: 100%;
+    border: solid 1px #30aeb6;
+    margin: 0 3% 30px 1%;   
+    float: left;
+    position: relative;
+    height: auto;
+    max-height: 480px;
+    list-style-type:none;       
+    min-height:360px;
+}
+
+.main-list-item-pbr {
+    width: 100%;
+    border: solid 1px #f1ac1e;
+    margin: 0 3% 30px 1%;   
+    float: left;
+    position: relative;
+    height: auto;
+    max-height: 480px;
+    list-style-type:none;
+    min-height:250px;
+}
+
+.main-list-item:nth-child(3){
+    margin: 0 5px;
+}
+.main-list-item-pbr ul, .main-list-item-patent ul {
+    padding-left:25px;
+    line-height: 1.6;
+}
+
+.list-header-pbr{
+    background: #30aeb6;
+    position: relative;
+}
+.list-header-patent{
+    background: #f1ac1e;
+    position: relative;
+}
+.content-new-tm .para.col-white,.content-new-tm .heading.col-white{
+    color: #fff;
+}
+.heading.col-white ul{
+    list-style-type:none;
+}
+.list-header-pbr .heading, .list-header-patent .heading{
+    margin: 0;
+    display: block;
+    padding: 10px 15px;
+    color:white;
+    margin-top:-10px;
+}
+
+/* end alistairs css */
+

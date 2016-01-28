@@ -16,7 +16,7 @@
     display: none;
 }*/
 h2 {
-  font: normal 36px "montserratbold";
+  font: normal 36px "montserratbold", sans-serif;
 }
 
 a {
@@ -29,7 +29,7 @@ a:active, a:focus {
 }
 
 body {
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   font-weight: normal;
 }
 
@@ -56,7 +56,7 @@ body {
   background: #fff;
   border: 0px;
   padding: 14px;
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   margin-top: 2px;
 }
 .resource-list-block li.patents {
@@ -260,7 +260,7 @@ header .header .header-right .block-bean .bean-link .field-item {
 }
 header .header .header-right .block-bean .bean-link .field-item a {
   display: block;
-  font-family: "montserratbold";
+  font-family: "montserratbold", sans-serif;
   font-size: 14px;
   line-height: 17px;
   padding: 14px 35px 14px 60px;

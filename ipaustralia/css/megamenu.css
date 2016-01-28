@@ -16,7 +16,7 @@
     display: none;
 }*/
 h2 {
-  font: normal 36px "montserratbold";
+  font: normal 36px "montserratbold", sans-serif;
 }
 
 a {
@@ -29,7 +29,7 @@ a:active, a:focus {
 }
 
 body {
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   font-weight: normal;
 }
 
@@ -56,7 +56,7 @@ body {
   background: #fff;
   border: 0px;
   padding: 14px;
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   margin-top: 2px;
 }
 .resource-list-block li.patents {
@@ -220,7 +220,7 @@ header nav .nav-tabs li a {
   display: block;
   cursor: pointer;
   color: white;
-  font: normal 16px montserratregular;
+  font: normal 16px "montserratregular", sans-serif;
   display: block;
   line-height: 46px;
   border: 0px;
@@ -333,7 +333,7 @@ header nav .nav-tabs .dropdown-menu i.icon-understanding-ip, header nav .nav-tab
 }
 header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title a {
   float: left;
-  font: normal 24px "montserratbold";
+  font: normal 24px "montserratbold", sans-serif;
   /*font-family: $font-title-normal;*/
   text-transform: uppercase;
 }
@@ -424,7 +424,7 @@ header nav .nav-tabs .dropdown-menu .megamenu-level-2 li .megamenu-level-3 li {
   width: 100%;
 }
 header nav .nav-tabs .dropdown-menu .megamenu-level-2 li .megamenu-level-3 li a {
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   line-height: 40px;
   background: none;
   text-decoration: underline;
@@ -448,7 +448,7 @@ header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a {
   padding: 25px 23px 25px 60px;
   background: white url("/sites/all/themes/ipaustralia/images/link-manual.png") 15px center no-repeat;
   border-left: 6px solid #1d252c;
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   width: 100%;
 }
 header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a:after {

@@ -1,3 +1,8 @@
+/*new css added*/
+.front .panels-flexible-region-inside h3.block-title {
+    color: #FFF;
+  }
+
 /*Desktop tablet landscape*/
 /*Tablet*/
 /*Mobile*/
@@ -16,7 +21,7 @@
     display: none;
 }*/
 h2 {
-  font: normal 36px "montserratbold";
+  font: normal 36px "montserratbold", sans-serif;
 }
 
 a {
@@ -29,7 +34,7 @@ a:active, a:focus {
 }
 
 body {
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   font-weight: normal;
 }
 
@@ -56,7 +61,7 @@ body {
   background: #fff;
   border: 0px;
   padding: 14px;
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   margin-top: 2px;
 }
 .resource-list-block li.patents {
@@ -83,9 +88,15 @@ body {
   padding-left: 90px;
   background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat;
 }
+.resource-list-block li.copyright {
+  border-left: 10px solid #704579;
+  border-left: 5px solid #704579;
+  padding-left: 90px;
+  background: #fff url("/sites/all/themes/ipaustralia/images/block-copyright.png") left center no-repeat;
+}
 
 .front h2 {
-  font-family: "montserratregular";
+  font-family: "montserratregular", sans-serif;
 }
 .front #block-quicktabs-homepage-main-tab {
   padding: 80px 10px;
@@ -94,6 +105,10 @@ body {
   background: #1d252c url("/sites/all/themes/ipaustralia/images/women-with-tablet-merged.jpg") center top no-repeat;
   background-size: 100% auto;
 }
+.front #block-quicktabs-homepage-main-tab h2{
+  color:#fff;
+}
+
 @media only screen and (max-width: 768px) {
   .front #block-quicktabs-homepage-main-tab {
     background-size: auto 100%;
@@ -123,8 +138,8 @@ body {
   color: #fff;
   width: 100%;
   display: inline-block;
-  font: normal 20px "montserratbold";
-  font-family: "montserratregular";
+  font: normal 20px "montserratbold", sans-serif;
+  font-family: "montserratregular", sans-serif;
   text-transform: uppercase;
   border: 1px solid #1d252c;
   line-height: 14px;
@@ -160,7 +175,7 @@ body {
 .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main {
   background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-charcoal.png") center center repeat;
   padding: 80px 40px;
-  font: normal 20px "robotolight";
+  font: normal 20px "robotolight", sans-serif;
 }
 @media only screen and (max-width: 768px) {
   .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main {
@@ -181,7 +196,7 @@ body {
   color: white;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: "montserratregular";
+  font-family: "montserratregular", sans-serif;
   line-height: 14px;
 }
 .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a:after {
@@ -211,8 +226,8 @@ body {
   text-align: left;
 }
 .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last h3 {
-  font: normal 20px "montserratbold";
-  font-family: "montserratregular";
+  font: normal 20px "montserratbold", sans-serif;
+  font-family: "montserratregular", sans-serif;
   margin: 0px;
   background: white;
   padding: 20px 0px;
@@ -229,7 +244,7 @@ body {
   background: #fff;
   border: 0px;
   padding: 14px;
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   margin-top: 2px;
 }
 .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.patents {
@@ -256,6 +271,12 @@ body {
   padding-left: 90px;
   background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat;
 }
+.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.copyright {
+  border-left: 10px solid #704579;
+  border-left: 5px solid #704579;
+  padding-left: 90px;
+  background: #fff url("/sites/all/themes/ipaustralia/images/block-copyright.png") left center no-repeat;
+}
 @media only screen and (max-width: 768px) {
   .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last {
     display: none;
@@ -266,7 +287,7 @@ body {
   text-align: center;
   color: white;
   background-color: #612166;
-  font: normal 20px "robotolight";
+  font: normal 20px "robotolight", sans-serif;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
 }
@@ -296,7 +317,7 @@ body {
   color: white;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: "montserratregular";
+  font-family: "montserratregular", sans-serif;
   line-height: 14px;
   margin-top: 40px;
 }
@@ -393,7 +414,7 @@ body {
 }
 .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
   background: transparent;
-  font: normal 20px "robotolight";
+  font: normal 20px "robotolight", sans-serif;
   padding-bottom: 40px;
   min-height: 10px;
 }
@@ -402,7 +423,7 @@ body {
 }
 .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside {
   background: transparent;
-  font: normal 20px "robotolight";
+  font: normal 20px "robotolight", sans-serif;
   min-height: 10px;
 }
 .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
@@ -415,7 +436,7 @@ body {
   color: white;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: "montserratregular";
+  font-family: "montserratregular", sans-serif;
   line-height: 14px;
   border-color: white;
   cursor: pointer;
@@ -446,7 +467,7 @@ body {
   background: #fff;
   border: 0px;
   padding: 14px;
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   margin-top: 2px;
 }
 .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.patents {
@@ -481,7 +502,7 @@ body {
   background: #fff;
   border: 0px;
   padding: 14px;
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   margin-top: 2px;
 }
 .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.patents {
@@ -501,7 +522,7 @@ body {
   border-top: 0px;
   margin-bottom: 0px;
   padding: 18px 14px;
-  font: normal 16px "robotoregular";
+  font: normal 16px "robotoregular", sans-serif;
   line-height: 22px;
 }
 .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.patents {
@@ -537,8 +558,8 @@ body {
   color: #1d252c;
   width: 100%;
   display: inline-block;
-  font: normal 20px "montserratbold";
-  font-family: "montserratregular";
+  font: normal 20px "montserratbold", sans-serif;
+  font-family: "montserratregular", sans-serif;
   text-transform: uppercase;
   border: 1px solid #1d252c;
   line-height: 14px;
@@ -620,8 +641,8 @@ body {
   position: relative;
   z-index: 100;
   clear: both;
-  font: normal 20px "montserratbold";
-  font-family: "montserratregular";
+  font: normal 20px "montserratbold", sans-serif;
+  font-family: "montserratregular", sans-serif;
   height: 70px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -667,7 +688,7 @@ body {
   width: 100%;
 }
 .front #block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region .inside {
-  font: normal 20px "robotolight";
+  font: normal 20px "robotolight", sans-serif;
   padding: 10px 0 30px 0;
 }
 .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region {
@@ -683,7 +704,7 @@ body {
   color: white;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: "montserratregular";
+  font-family: "montserratregular", sans-serif;
   line-height: 14px;
   border-color: #1d252c;
   margin-right: 27px;
@@ -732,8 +753,8 @@ body {
   }
 }
 .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-title, .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside h3 {
-  font: normal 24px "montserratbold";
-  font-family: "montserratregular";
+  font: normal 24px "montserratbold", sans-serif;
+  font-family: "montserratregular", sans-serif;
   margin: 0px;
   margin-bottom: 35px;
 }

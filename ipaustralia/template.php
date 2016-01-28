@@ -36,10 +36,10 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
 	}
 	// set example messages for Vishal to style
 	// TODO: remove these when they're all styled nicely
-	drupal_set_message(t('Example error message.'), 'error');
-	drupal_set_message(t('Example normal message 1.'), 'status');
-	drupal_set_message(t('Example normal message 2.'), 'status');
-	drupal_set_message(t('Example warning message.'), 'warning');
+	//drupal_set_message(t('Example error message.'), 'error');
+	//drupal_set_message(t('Example normal message 1.'), 'status');
+	//drupal_set_message(t('Example normal message 2.'), 'status');
+	drupal_set_message(t('We are developing this website (currently in beta) and would <a href="/node/1111">welcome your feedback</a>. For the full website refer to <a href="http://www.ipaustralia.gov.au/" title="IP Australia website">www.ipaustralia.gov.au</a>.'), 'warning');
 }
 
 function ipaustralia_menu_block_tree_alter(&$tree, &$config) {
