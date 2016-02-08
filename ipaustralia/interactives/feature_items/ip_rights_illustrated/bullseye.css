@@ -1,0 +1,335 @@
+#content {
+	background-color: #FFFFFF;
+/*	font-size: 62.5%;*/
+	color: #000000;
+}
+/*#content h1,*/ #content h2, #content h3, #content p, #content a{
+	font-family: Tahoma, Geneva, sans-serif;
+	color:#000000;
+	text-tranform:none !important;
+}
+/**
+ * Custom CSS to rearrange content around interactive code
+ */
+/*#content h1 {
+	font-size : 22px;
+}*/
+div.wrapper div.inner div.container {
+	height : 800px;
+}
+p#last-updated {
+	top : 720px;
+	font-size: 140%;
+}
+
+.rotationViewer {
+	BORDER: 1px solid #FFFFFF; 
+	POSITION: relative; 
+	WIDTH: 320px; HEIGHT: 210px; 
+	CURSOR: pointer; 
+}
+.rotationViewer-hi {
+	BORDER: 1px solid #FFFFFF; 
+	POSITION: relative; 
+	WIDTH: 700px; HEIGHT: 500px; 
+	CURSOR: pointer; 
+}
+
+.rotationViewer IMG, .rotationViewer-hi IMG {
+	POSITION: absolute; WIDTH: 100%; 
+	DISPLAY: none; 
+	HEIGHT: 100%; 
+	TOP: 0px; 
+	LEFT: 0px
+}
+
+.rotationViewer {
+	background: url(../img/lo/002.jpg);
+}
+
+.rotationViewer-hi{
+	background: url(../img/hi/002.jpg);
+}
+
+#component-container{
+	width:720px;
+	height:720px;
+/*	position: absolute;
+*/	
+	top: 5px;
+	left: 5px;
+	
+}
+
+#victa-container{
+	width:700px;
+	height:500px;
+	float:left;
+	top:50px;
+	position:absolute;
+	margin-left:10%;
+}
+
+#panel-view{
+	position:absolute;
+	z-index:12;
+	width:700px;
+	height:500px;
+	float:left;
+}
+
+#victa-reel{
+	position:absolute;
+	z-index:9;
+	float:left;
+}
+
+#layer_1{
+	position:relative;
+	z-index:22;
+	top: 216px;
+	left: -47px;
+	float:left;
+	width:567px;
+	height:432px;
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/layer-with-shadow-transp.png) no-repeat;
+	display:none;
+}
+
+.close-arrow{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/close.png) no-repeat;
+	width:30px;
+	height:42px;
+	position:relative;
+	top:190px;
+	left:245px;
+	cursor:pointer;
+	z-index: 22;
+}
+
+
+#controls{
+	clear:both;
+}
+
+.patent-zoom{
+	left: 170px;
+	position: relative;
+	top: -75px;
+}
+.pbr-zoom{
+	left: -36px;
+	top: -82px;
+	position: relative;
+	width: 627px;
+	height: 291px;
+}
+
+.design-zoom{
+	left: 104px;
+	position: relative;
+	top: -130px;
+	width: 342px;
+	height: 341px;
+	z-index: 21;
+}
+
+.trademarks-zoom{
+	left: 125px;
+	position: relative;
+	top: -75px;
+}
+
+
+#hotspots{
+	float:left;
+	display:none;
+	
+}
+
+.hotspot{
+	position:relative;
+	z-index:19;
+	display:block;
+	cursor:pointer;
+	width:50px;
+	height:50px;
+}
+
+.hotspot p{
+	display:none;
+}
+.hotspot a{
+	display:none;
+}
+.hotspot.green{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/design1.png);
+}
+.hotspot.blue{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/patent1.png);
+}
+.hotspot.red{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/trademarks1.png);
+}
+.hotspot.pbr{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/pbr1.png);
+}
+
+.tooltip{
+	text-indent:-9999px;
+	width:179px;
+	height:68px;
+	z-index: 20;
+	position:absolute;
+	
+}
+.hotspot-over{
+	width:179px;
+	height:68px;
+	position:absolute;
+	z-index:999;
+	display:none;
+	left:500px;
+	top: 188px;
+}
+#design-hotspot-tooltip{
+	width:178px;
+	height:68px;
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/design-tag.png) no-repeat;
+	
+}
+
+#pbr-hotspot-tooltip{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/pbr-tag.png) no-repeat;
+}
+
+#patent-hotspot-tooltip{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/patent-tag.png) no-repeat;
+}
+#trademarks-hotspot-tooltip{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/trademarks-tag.png) no-repeat;
+}
+
+.content-layer{
+	display:none;
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/white-gradient.png) no-repeat;
+	float: left;
+	position: relative;
+	top: -252px;
+	left: 5px;
+	z-index:19;
+	width:404px;
+	
+}
+
+.content-layer h2{
+	font-family: Arial;
+	color:#000000;
+	font-size:1.8em;
+	margin-top:30px;
+	height:50px;
+	padding-top:17px;
+	display: inline-block;
+	padding-left:62px;
+	width:180px;
+	text-transform:none !important;
+}
+.content-layer h3{
+	font-family: Arial;
+	font-size:1.8em;
+	margin-top:0;
+	margin-left:5px;
+}
+
+.content-layer p{
+	width: 400px;
+	font-family: Arial;
+	font-size:1.2em;
+	margin-left:5px;
+}
+
+.content-layer a{
+	font-family: Arial;
+	font-size:1.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.content-layer a:hover{
+	text-decoration: underline;
+}
+
+.round-arrow{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/round_arrow.png) no-repeat;
+	height: 30px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	padding-top: 3px;}
+
+#patent-content h2{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/patent-icon.png) no-repeat;
+	border-bottom: 5px solid #6a93c6;
+}
+#patent-content a{
+	color: #6a93c6;
+}
+
+#design-content h2{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/design-icon.png) no-repeat;
+	border-bottom: 5px solid #7bad9a;
+}
+#design-content a{
+	color: #7bad9a;
+}
+
+#trademarks-content h2{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/trademarks-icon.png) no-repeat;
+	border-bottom: 5px solid #b8363e;
+}
+#trademarks-content a{
+	color: #b8363e;
+}
+
+#pbr-content h2{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/pbr-icon.png) no-repeat;
+	border-bottom: 5px solid #eb9c4f;
+	line-height: 16px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+#pbr-content a{
+	color: #eb9c4f;
+}
+
+#top-cover{
+	background: url(http://www.ipaustralia.gov.au/images/int/victa/top-cover.png);
+	width:719px;
+	height:247px;
+	top:6px;
+	float:left;
+	position:absolute;
+	z-index: 21;
+	display:none;
+}
+
+.content-img{
+	display:none;
+}
+
+#instructions{
+	text-align:right;
+	*font-size:1.5em;
+}
+
+.jquery-reel-preloader{
+	background-color: #F0F0F0 !important;
+	border: 1px solid #C0C0C0 !important;
+	height: 32px !important;
+	padding-left: 10px !important;
+	overflow:visible !important
+	
+	-moz-box-shadow: -5px 5px 5px #888;
+	-webkit-box-shadow: -5px 5px 5px #888;
+	box-shadow: -5px 5px 5px #888;
+}
+

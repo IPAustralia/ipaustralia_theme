@@ -1,0 +1,21 @@
+<div id="timeline-popup-content">
+	<div class="wrap">
+		<div class="content">
+			<div class="header">
+				<div class="heading"></div>
+				<div class="btn-close"><a href="#" title="close"></a></div>
+			</div>
+			<div class="body">
+				<div class="primary">
+					<div class="text"></div>	
+					<div class="parameters"></div>
+				</div>
+				<div class="img-wrapper">
+				<div class="img">
+				</div>
+					<div class="imgcopyright"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

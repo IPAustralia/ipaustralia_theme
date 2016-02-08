@@ -1,0 +1,674 @@
+.infographic-container{
+  width:953px;
+  background:#fff;
+  font-family: 'Roboto', sans-serif;
+	background: #fff;
+  margin-bottom: 50px;
+}
+
+.infographic-container h1{
+  background:none;
+}
+
+.infographic-container .top-section{
+  background:#333333;
+  width:100%;
+  height:115px;
+  border-top: 4px solid #d43147;
+  text-align: center;
+}
+
+.infographic-container .top-section img{
+  position: relative;
+  bottom: 10px;
+  padding-right: 30px;
+}
+
+.infographic-container .top-section h1{
+  background: none;
+  font-size: 36px;
+  color: #FFF;
+  text-align: center;
+  font-weight: normal;
+  width: auto;
+  float: none;
+  display: inline;
+  line-height: 115px;
+  text-transform: uppercase;
+}
+
+.infographic-tm {
+  width:910px;
+  height:5559px;
+  background-image: url(/images/tm_process/Desktop/PNG/FullLine.png);
+  background-repeat: no-repeat;
+  background-color: #B1DFF8;
+  margin: 21.5px auto;
+  position:relative;
+}
+
+.infographic-tm ol,
+.infographic-tm ul {
+  margin-bottom: 0;
+}
+
+.infographic-mob-bg {
+  display: none;
+}
+
+.no-svg .infographic-tm {
+  background-image: url(/images/tm_process/Desktop/PNG/FullLine.png);
+}
+
+.infographic-stages .infographic-end{
+  position:absolute;
+  bottom:150px;
+  width: 360px;
+  margin:0px auto;
+  text-align: center;
+}
+
+.infographic-stages .infographic-end h2{
+  font-weight: bold;
+  font-size: 48px;
+  color:#424242;
+}
+
+.infographic-stages li h2{
+  font-size: 30px;
+  color: #424242;
+}
+
+.infographic-stages li p, .use-your-ip-cta-text > p {
+  font-size: 16px;
+  color: #424242;
+  font-weight: normal;
+}
+
+.infographic-tm ul, .infographic-tm ol {
+  list-style-type: none;
+  padding-left: 0;
+  margin-right: 0;
+}
+
+/* Counters */
+.infographic-stages {
+  counter-reset: stages-counter;
+}
+
+.infographic-stages ol, .infographic-stages ul {
+  counter-reset: stages-sub-counter;
+}
+
+.infographic-stages .tm-list-text:before {
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  display: block;
+  text-align: center;
+  line-height: 55px;
+  font-size:30px;
+}
+
+/* first-level */
+.infographic-stages > li > .tm-list-text:before {
+  content: counter(stages-counter);
+  counter-increment: stages-counter;
+  background-image: url(/images/tm_process/Desktop/PNG/Number-Container.png);
+}
+
+.no-svg .infographic-stages > li > .tm-list-text:before {
+  background-image: url(/images/tm_process/Desktop/PNG/Number-Container.png);
+}
+
+/* second-level */
+.infographic-stages > li li > .tm-list-text:before {
+  content: counter(stages-counter) counter(stages-sub-counter, lower-latin);
+  counter-increment: stages-sub-counter;
+  background-image: url(/images/tm_process/Desktop/PNG/Number-Container2.png);
+  width: 64px;
+  padding-left: 5px;
+  background-repeat: no-repeat;
+}
+
+.no-svg .infographic-stages > li li > .tm-list-text:before {
+  background-image: url(/images/tm_process/Desktop/PNG/Number-Container2.png);
+}
+
+/* List positioning */
+.infographic-stages .tm-list-text {
+  position: absolute;
+  z-index: 2;
+}
+
+.infographic-stages > li > .tm-list-text {
+  width: 340px;
+}
+.infographic-stages > li.li-odd > .tm-list-text {
+  left: 90px;
+}
+.infographic-stages > li.li-even > .tm-list-text {
+  right: 90px;
+}
+
+.infographic-stages > li > img,
+.headstart-list > li > img {
+  position: absolute;
+  width: 390px;
+}
+
+.infographic-stages > li.li-1 > .tm-list-text{
+  top: 80px;
+}
+.infographic-stages > li.li-1 > img{
+  top: -10px;
+  right: 72px;
+}
+
+.infographic-stages > li.li-2 > .tm-list-text{
+  top: 455px;
+}
+.infographic-stages > li.li-2 > img{
+  top: 355px;
+  left: 15px;
+}
+
+.infographic-stages > li.li-3 > .tm-list-text{
+  top: 815px;
+}
+.infographic-stages > li.li-3 > img{
+  top: 755px;
+  right: 87px;
+}
+
+.infographic-stages > li.li-4 > .tm-list-text{
+  top: 1205px;
+}
+.infographic-stages > li.li-4 > img{
+  top: 1182px;
+  left: -12px;
+}
+
+.infographic-stages > li.li-5 > .tm-list-text{
+  top: 1640px;
+}
+.infographic-stages > li.li-5 > img{
+  top: 1570px;
+  right: 52px;
+}
+
+.infographic-stages > li.li-6 > .tm-list-text{
+  top: 2050px;
+}
+.infographic-stages > li.li-6 > img{
+  top: 1966px;
+  left: 79px;
+}
+
+.infographic-stages > li.li-7 > .tm-list-text{
+  top: 2440px;
+  width: 400px;
+}
+.infographic-stages > li.li-7 > img{
+  top: 2337px;
+  right: 76px;
+}
+
+/*Applications*/
+.infographic-stages .application{
+  background:#fff;
+  width: 286px;
+  color:#424242;
+  border-bottom-left-radius:25px;
+  border-bottom-right-radius: 25px;
+}
+.infographic-stages .application h2{
+  color:#424242;
+  font-size:20px;
+  margin:10px 0px 18px;
+  padding:0px 0px 0px 21px;
+}
+
+.infographic-stages .application p{
+  padding-left: 23px;
+  font-size:16px;
+  padding-right:25px;
+}
+
+.infographic-stages .application.app-headstart{
+  border-top:4px solid #F6695E;
+  position:absolute;
+  width:289px;
+  height:auto;
+  left: 90px;
+  top: 2779px;
+}
+
+.infographic-stages .application.app-standard{
+  border-top:4px solid #00addc;
+  position: absolute;
+  width:289px;
+  height:auto;
+  right: 90px;
+  top:2859px;
+}
+
+.infographic-stages .application.app-standard p{
+  margin-bottom:20px;
+}
+/* end applications sub-list */
+
+
+.infographic-stages > li.li-8 > .tm-list-text{
+  top: 3090px;
+  right: initial;
+  left: 90px;
+  width: 200px;
+}
+.infographic-stages > li.li-8 > img{
+  top: 3035px;
+  right: 265px;
+}
+
+
+/* headstart sublist*/
+.headstart-list > li.li-1 > .tm-list-text {
+  top: 3500px;
+  width: 310px;
+  left: 370px;
+}
+.headstart-list > li.li-1 > img{
+  top: 3451px;
+  left: 8px;
+}
+.headstart-list > li.li-2 > .tm-list-text {
+  top: 3860px;
+  width: 310px;
+  left: 370px;
+}
+.headstart-list > li.li-2 > img{
+  top: 3745px;
+  left: 2px;
+}
+
+.infographic-stages > li.li-9 > .tm-list-text{
+  top: 4305px;
+  width: 340px;
+}
+.infographic-stages > li.li-9 > img{
+  top: 4235px;
+  right: 85px;
+}
+/*End list positioning*/
+
+.use-your-ip-cta-text {
+  position: absolute;
+  bottom: 370px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.use-your-ip-cta-text > h2 {
+  font-size: 48px;
+}
+
+.use-your-ip-cta-text > p {
+  padding: 0 240px;
+  margin-bottom: 2.5em;
+}
+
+a.cta-btn-red {
+  text-decoration: none;
+  color: #fff;
+  background: #cb454e;
+  padding: 0.6em 1.75em 0.5em;
+  border-radius: 0.3em;
+  border-bottom: 0.25em solid #a2373e;
+}
+a.cta-btn-red:active {
+  border-bottom: none;
+  position: relative;
+  top: 0.25em;
+}
+
+.use-your-ip-cta-text > a.cta-btn-red {
+  font-size: 21px;
+}
+
+.use-your-ip-cta > img {
+  position: absolute;
+}
+
+.ip-cta-bg-left {
+  bottom: 0;
+  left: 0;
+  width: 50%;
+}
+
+.ip-cta-bg-right {
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+
+.ip-cta-bg-char {
+  bottom: 0;
+  left: 30%;
+  width: 40%;
+}
+
+.cloud-big {
+  bottom: 610px;
+  left: 50px;
+  width: 360px;
+}
+
+.cloud-small-1 {
+  bottom: 575px;
+  right: 110px;
+  width: 140px;
+}
+
+.cloud-small-2 {
+  bottom: 370px;
+  right: 36px;
+  width: 100px;
+}
+
+@media screen and (max-width:970px) {
+  .infographic-container {
+    width: 100%;
+    background-color: #B1DFF8;
+    border-left: 7px solid #fff;
+    border-right: 7px solid #fff;
+    border-bottom: 7px solid #fff;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+
+  .infographic-container .top-section {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    border-top: none;
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+  }
+
+  .infographic-container .top-section img{
+    display: none;
+  }
+
+  .infographic-container .top-section h1{
+    background: none;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    width: auto;
+    line-height: 1.5;
+    text-transform: none;
+  }
+
+  .infographic-tm {
+    /*Image size: 594x11547 px*/
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    background-image: none;
+    margin: 0 auto;
+  }
+
+  .infographic-mob-bg {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .infographic-stages {
+    text-align: center;
+  }
+
+  .infographic-stages li h2{
+    font-size: 22px;
+  }
+  .infographic-stages li p,
+  .use-your-ip-cta-text > p {
+    font-size: 16px;
+  }
+
+  .infographic-stages .tm-list-text:before {
+    width: 65px;
+    height: auto;
+    line-height: 65px;
+    font-size: 35px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  /* first-level */
+  .infographic-stages > li > .tm-list-text:before {
+    margin: 0 auto;
+  }
+
+  /* second-level */
+  .infographic-stages > li li > .tm-list-text:before {
+    margin: 0 auto;
+    width: 65px;
+    height: auto;
+    line-height: 65px;
+    font-size: 35px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(/images/tm_process/Mobile/PNG/Number-container2.png);
+  }
+  .no-svg .infographic-stages > li li > .tm-list-text:before {
+    background-image: url(/images/tm_process/Mobile/PNG/Number-container2.png);
+  }
+
+  /* List positioning */
+  .infographic-stages > li > .tm-list-text {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+
+  .infographic-stages > li.li-odd > .tm-list-text {
+    left: 0;
+  }
+  .infographic-stages > li.li-even > .tm-list-text {
+    right: 0;
+  }
+
+  .infographic-stages > li > img,
+  .headstart-list > li > img {
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+  }
+
+  .infographic-stages > li.li-1 > .tm-list-text{
+    top: 0.75%;
+  }
+  .infographic-stages > li.li-1 > img{
+    top: 3.68%;
+    right: 0;
+  }
+
+  .infographic-stages > li.li-2 > .tm-list-text{
+    top: 8.50%;
+  }
+  .infographic-stages > li.li-2 > img{
+    top: 10.88%;
+    left: 0;
+  }
+
+  .infographic-stages > li.li-3 > .tm-list-text{
+    top: 15.67%;
+  }
+  .infographic-stages > li.li-3 > img{
+    top: 18.51%;
+    right: 0;
+  }
+
+  .infographic-stages > li.li-4 > .tm-list-text{
+    top: 23.42%;
+  }
+  .infographic-stages > li.li-4 > img{
+    top: 27.1%;
+    left: 0;
+  }
+
+  .infographic-stages > li.li-5 > .tm-list-text{
+    top: 31.95%;
+  }
+  .infographic-stages > li.li-5 > img{
+    top: 34.8%;
+    right: 0;
+  }
+
+  .infographic-stages > li.li-6 > .tm-list-text{
+    top: 39.48%;
+  }
+  .infographic-stages > li.li-6 > img{
+    top: 42.3%;
+    left: 0;
+  }
+
+  .infographic-stages > li.li-7 > .tm-list-text{
+    top: 47.24%;
+    width: 100%;
+  }
+  .infographic-stages > li.li-7 > img{
+    top: 49.69%;
+    right: 0;
+  }
+
+  /*Applications*/
+  .infographic-stages .application{
+    width: 100%;
+  }
+  .infographic-stages .application p {
+    padding: 0 5px;
+  }
+
+  .infographic-stages .application h2 {
+    padding: 0;
+    font-size: 18px;
+    margin: 0.25em 0 0.5em 0;
+  }
+
+  .infographic-stages .application.app-headstart{
+    width: auto;
+    left: 8%;
+    right: 8%;
+    top: 53.79%;
+  }
+
+  .infographic-stages .application.app-standard{
+    width: auto;
+    left: 8%;
+    right: 8%;
+    top: 55.90%;
+  }
+
+  /* end applications sub-list */
+
+
+  .infographic-stages > li.li-8 > .tm-list-text{
+    top: 59.28%;
+    left: 0;
+    width: 100%;
+  }
+  .infographic-stages > li.li-8 > img{
+    top: 61.65%;
+    right: 0;
+  }
+
+
+  /* headstart sublist*/
+  .headstart-list > li.li-1 > .tm-list-text {
+    top: 66.98%;
+    width: 100%;
+    left: 0;
+    padding: 0 4%;
+    box-sizing: border-box;
+  }
+  .headstart-list > li.li-1 > img{
+    top: 70.25%;
+    left: 0;
+    padding: 0;
+  }
+  .headstart-list > li.li-2 > .tm-list-text {
+    top: 75.96%;
+    width: 100%;
+    left: 0;
+    padding: 0 4%;
+    box-sizing: border-box;
+  }
+  .headstart-list > li.li-2 > img{
+    top: 78.2%;
+    left: 0;
+  }
+
+  .infographic-stages > li.li-9 > .tm-list-text{
+    top: 83.36%;
+    width: 100%;
+  }
+  .infographic-stages > li.li-9 > img{
+    top: 87.1%;
+    right: 0;
+  }
+  /*End list positioning*/
+
+  .use-your-ip-cta-text {
+    bottom: initial;
+    top: 92.85%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .use-your-ip-cta-text > h2 {
+    font-size: 40px;
+  }
+
+  .use-your-ip-cta-text > p {
+    padding: 0 15px;;
+    font-size: 16px;
+  }
+
+  .use-your-ip-cta-text > a.cta-btn-red {
+    font-size: 20px;
+    padding-top: 0.9em;
+    padding-bottom: 0.8em;
+  }
+
+  .ip-cta-bg-left {
+    display: none;
+  }
+
+  .ip-cta-bg-right {
+    width: 100%;
+  }
+
+  .ip-cta-bg-char {
+    left: 7.5%;
+    width: 85%;
+  }
+
+  .cloud-big {
+    bottom: initial;
+    top: 90.76%;
+    left: 0;
+    width: 100%;
+    padding: 0 15%;
+    box-sizing: border-box;
+  }
+
+  .cloud-small-1,
+  .cloud-small-2 {
+    display: none;
+  }
+}

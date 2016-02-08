@@ -1,0 +1,70 @@
+$charcoal: #1d252c;
+$purple: #612166;
+$grey: #b6bec0;
+$light-grey: #e5e8ec;
+$off-white: #eff0f2;
+
+$violet: #704579;
+$teal: #30aeb6;
+$red: #de4326;
+$yellow: #f1ac1e;
+$mint:#84c98f;
+$gold: #977100;
+
+$gap-large:80px;
+$gap-medium:40px;
+$gap-small:30px;
+
+$font-title-bold: 'montserratbold', sans-serif;
+$font-title-normal: 'montserratregular', sans-serif;
+
+$font-body-light: 'robotolight', sans-serif;
+$font-body-normal: 'robotoregular', sans-serif;
+$font-body-bold: 'robotobold', sans-serif;
+
+$menu-active-color:$off-white;
+$menu-active-color-patents:#273b42;
+$menu-active-color-trademark:#360f08;
+$menu-active-color-designs:#1c3e21;
+$menu-active-color-plantbreeder:#3e2b04;
+
+
+
+$title-h1: normal 60px $font-title-bold;
+$title-h2: normal 44px $font-title-bold;
+$title-h3: normal 36px $font-title-bold;
+$title-h4: normal 24px $font-title-bold;
+$title-h5: normal 20px $font-title-bold;
+$title-h6: normal 18px $font-title-bold;
+$title-h7: normal 16px $font-title-bold;
+
+$title-h2-normal: normal 44px $font-title-normal;
+
+$intro-text: normal 20px $font-body-light;
+$body-text: normal 16px $font-body-normal;
+
+$intro-text-responsive: normal 16px $font-body-light;
+
+
+
+$title-h1-retina: normal 64px $font-title-bold;
+$title-h2-retina: normal 50px $font-title-bold;
+$title-h3-retina: normal 40px $font-title-bold;
+$title-h4-retina: normal 36px $font-title-bold;
+$title-h5-retina: normal 30px $font-title-bold;
+$title-h6-retina: normal 28px $font-title-bold;
+$title-h6-retina: normal 24px $font-title-bold;
+
+$intro-text-retina: normal 36px $font-body-normal;
+$body-text-retina: normal 28px $font-body-normal;
+
+$footer-link-color: $gold;
+
+$break-point-xlarge:1200px;
+$break-point-large:992px; /*Desktop tablet landscape*/
+$break-point-medium:768px; /*Tablet*/
+$break-point-small:480px; /*Mobile*/
+
+@media only screen and (max-width: $break-point-medium) {
+   $body-text: normal 12px $font-body-normal;
+}

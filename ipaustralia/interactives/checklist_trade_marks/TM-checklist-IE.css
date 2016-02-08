@@ -1,0 +1,7 @@
+.checklist-section .label-text .icon_check{
+	display: none;
+}
+
+.checklist-section input[type="checkbox"]{
+	display: block;
+}

@@ -1,0 +1,86 @@
+@font-face { font-family: "icons"; src: url("/static/assets/fonts/stepped-interactive/icons.eot"); src: url("/static/assets/fonts/stepped-interactive/icons.eot?#iefix") format("embedded-opentype"), url("/static/assets/fonts/stepped-interactive/icons.woff") format("woff"), url("/static/assets/fonts/stepped-interactive/icons.ttf") format("truetype"), url("/static/assets/fonts/stepped-interactive/icons.svg?#icons") format("svg"); font-weight: normal; font-style: normal; }
+.content h1 .categories .patents.active, .content h1 .categories .trade-marks.active, .content h1 .categories .design.active, .content h1 .categories .plant-breeders-rights.active { height: 17px; }
+
+.small { font-size: 0.9em; }
+
+.stepped-interactive { margin-top: -15px; float: left; width: 100%; }
+.stepped-interactive .blue { color: #769fcf; }
+.stepped-interactive .red { color: #ca4953; }
+.stepped-interactive .green { color: #71a28e; }
+.stepped-interactive .orange { color: #e79249; }
+.stepped-interactive .l-col { width: 60%; float: left; }
+.stepped-interactive .r-col { width: 35%; padding-left: 5%; float: right; text-align: center; }
+.stepped-interactive .r-col .next-button { display: inline-block; float: none; margin-top: 1.5em; }
+.stepped-interactive .r-col .next-button.yes:after, .stepped-interactive .r-col .next-button.no:after { display: none; }
+.stepped-interactive .r-col img { max-width: 100%; }
+.stepped-interactive .slides { clear: both; float: left; width: 100%; background: -webkit-linear-gradient(top, white 0%, #fff 100%); background: linear-gradient(to bottom, white 0%, #fff 100%); padding: 3.7%; width: 92.6%; margin-bottom: 20px; }
+.stepped-interactive .slide { display: none; }
+.stepped-interactive .slide:first-child { display: block; }
+.stepped-interactive .nav { background: #fff; box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3); position: relative; z-index: 1; height: 80px; overflow: hidden; }
+.stepped-interactive .nav.shadow:after { width: 15px; top: 0; right: 0; position: absolute; height: 100%; background: red; content: ''; background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.5) 100%); background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.5) 100%); /* W3C */ }
+.stepped-interactive .nav ul { padding: 0; margin: 0 0 0 15px !important; padding-right: 25px; float: left; clear: none; height: 80px; width: 200%; }
+.stepped-interactive .nav li { float: left; margin: 16px 0 16px 6px; }
+.stepped-interactive .nav li:first-child { margin-left: 1px; }
+.stepped-interactive .nav li a { width: 48px; height: 48px; text-align: center; line-height: 48px; background-color: #4a4a4a; color: #fff; float: left; border-radius: 50px; font-size: 2.1em; text-decoration: none; box-shadow: -1px -1px 0 0 #262626; }
+.stepped-interactive.patent .nav .active a { background-color: #769fcf; }
+.stepped-interactive.tm .nav .active a { background-color: #ca4953; }
+.stepped-interactive.design .nav .active a { background-color: #71a28e; }
+.stepped-interactive.pbr .nav .active a { background-color: #e79249; }
+.stepped-interactive .nav-wrapper { width: 860px; float: left; overflow-x: scroll; position: relative; }
+.stepped-interactive li.nav-more-info a { width: 100%; font-size: 1.25em; margin: 0; padding: 0 10px; }
+.stepped-interactive .nav-intro a { background: #4a4a4a; color: #fff; text-transform: uppercase; font-size: 1.6em; position: relative; width: 90px; text-align: center; line-height: 80px !important; min-height: 80px; float: left; text-decoration: none; }
+#content .stepped-interactive .nav-intro a { margin: 0 !important; }
+.stepped-interactive .nav-intro a:after { width: 0; height: 0; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-left: 15px solid #4a4a4a; border-left-width: 10px; position: absolute; top: 50%; right: -10px; margin-top: -15px; content: ''; z-index: 2; }
+.stepped-interactive.patent .nav-intro.active a { background: -webkit-radial-gradient(center, ellipse, #c74953 0%, #b22235 100%); background: radial-gradient(ellipse at center, #c74953 0%, #b22235 100%); }
+.stepped-interactive.patent .nav-intro.active a:after { border-left-color: #b92f3f; }
+.stepped-interactive.tm .nav-intro.active a { background: -webkit-radial-gradient(center, ellipse, #c74953 0%, #b22235 100%); background: radial-gradient(ellipse at center, #c74953 0%, #b22235 100%); }
+.stepped-interactive.tm .nav-intro.active a:after { border-left-color: #b92f3f; }
+.stepped-interactive.design .nav-intro.active a { background: -webkit-radial-gradient(center, ellipse, #c74953 0%, #b22235 100%); background: radial-gradient(ellipse at center, #c74953 0%, #b22235 100%); }
+.stepped-interactive.design .nav-intro.active a:after { border-left-color: #b92f3f; }
+.stepped-interactive.pbr .nav-intro.active a { background: -webkit-radial-gradient(center, ellipse, #c74953 0%, #b22235 100%); background: radial-gradient(ellipse at center, #c74953 0%, #b22235 100%); }
+.stepped-interactive.pbr .nav-intro.active a:after { border-left-color: #b92f3f; }
+.stepped-interactive h2 { font-size: 3.9em; line-height: normal; clear: both; }
+#content .stepped-interactive h2 { margin: 0 0 0.4em 0 !important; }
+.stepped-interactive h2 .small { font-size: 0.5em; color: #000; display: block; margin-top: 0.3em; text-transform: none; font-weight: normal; }
+.stepped-interactive h3 { font-size: 1.2em; text-transform: none; }
+#content .stepped-interactive h3 { margin: 0 0 1em 0 !important; }
+.stepped-interactive .question { font-size: 1.3em; font-weight: bold; }
+#content .stepped-interactive .question { margin-top: 0.6em !important; }
+.stepped-interactive .question + .next-button, .stepped-interactive .question + .next-button + .next-button { margin-top: 0.5em; }
+.stepped-interactive .more-info { text-align: left; color: #fff; padding: 0 5%; width: 90%; float: left; display: none; }
+.stepped-interactive .more-info p { color: #fff; }
+.stepped-interactive.patent .more-info { background-color: #769fcf; }
+.stepped-interactive.tm .more-info { background-color: #ca4953; }
+.stepped-interactive.design .more-info { background-color: #71a28e; }
+.stepped-interactive.pbr .more-info { background-color: #e79249; }
+#content .stepped-interactive p { margin: 1em 0 !important; }
+.stepped-interactive .next-button span { color: #fff !important; font-size: 1.8em; text-transform: uppercase; padding: 0 35px; border-radius: 50px; line-height: 1; border: none; margin: 0; left: 0; min-height: 50px; line-height: 50px; float: left; }
+.stepped-interactive .next-button + .next-button { margin-left: 10px; }
+.stepped-interactive.patent .next-button span { background: #769fcf; }
+.stepped-interactive.patent .next-button:after { color: #769fcf; }
+.stepped-interactive.tm .next-button span { background: #ca4953; }
+.stepped-interactive.tm .next-button:after { color: #ca4953; }
+.stepped-interactive.design .next-button span { background: #71a28e; }
+.stepped-interactive.design .next-button:after { color: #71a28e; }
+.stepped-interactive.pbr .next-button span { background: #e79249; }
+.stepped-interactive.pbr .next-button:after { color: #e79249; }
+.stepped-interactive .next-button { border-top: solid 1px #b5b5b5; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3); display: block; border-radius: 50px; min-height: 50px; cursor: pointer; float: left; position: relative; z-index: 10; border-top: none; }
+.stepped-interactive .next-button:after { display: block; border-radius: 50px; background-color: #f0f0f0; height: 50px; width: 50px; float: right; margin-left: 3px; font-family: "icons"; speak: none; display: inline-block; vertical-align: middle; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f101"; font-size: 26px; line-height: 50px; text-align: center; text-indent: 2px; }
+.stepped-interactive .next-button span { text-transform: none; font-size: 1.35em; font-weight: normal; }
+
+@media only screen and (max-width: 950px) { .stepped-interactive .nav { height: 50px; }
+  .stepped-interactive .nav ul { height: 50px; }
+  .stepped-interactive .nav li { margin: 8px 0 8px 6px; }
+  .stepped-interactive .nav li a { width: 34px; height: 34px; font-size: 1.2em; line-height: 34px; }
+  .stepped-interactive .nav-intro a { min-height: 50px; line-height: 50px; line-height: 50px !important; font-size: 1.4em; } }
+@media only screen and (max-width: 640px) { .stepped-interactive .nav { height: 40px; }
+  .stepped-interactive .nav ul { height: 40px; }
+  .stepped-interactive .nav li a { width: 24px; height: 24px; font-size: 1.1em; line-height: 24px; }
+  .stepped-interactive .nav-intro a { min-height: 40px; line-height: 40px; line-height: 40px !important; font-size: 1.3em; }
+  .stepped-interactive li.nav-more-info a { width: 100%; }
+  .stepped-interactive h2 { font-size: 3em; }
+  .stepped-interactive .l-col { width: 100%; }
+  .stepped-interactive .r-col { width: 100%; }
+  .stepped-interactive .r-col img { display: none; } }
+
+/*# sourceMappingURL=main.css.map */

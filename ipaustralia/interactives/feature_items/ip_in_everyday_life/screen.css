@@ -1,0 +1,162 @@
+/* Styles when there's no javascript */
+.no-js IMG {display:none !important;}
+.no-js #ed-hotspots {list-style:none; padding:0;}
+.no-js #ed-hotspots > LI {margin:0; padding:0 0 1em; clear:both;}
+.no-js #ed-hotspots > LI > H2 {display:none}
+.no-js #ed-hotspots > LI > .ed-info {display:none}
+.no-js .ed-info-panel {clear:both;}
+.no-js .ed-back-to-top {float:right; font-size:11px;}
+
+.ed-text-only {padding:4px 0 0; text-align:center; font-family:Arial; font-size:11px;}
+
+.visually-hidden {border:0 !important; clip:rect(0 0 0 0); height:1px !important; margin:-1px !important; overflow:hidden !important; padding:0 !important; position:absolute !important; width:1px !important;}
+
+#everyday.has-js {position:relative; width:950px; height:450px; margin:20px auto; background:#eee;}
+.has-js #ed-slider {position:absolute; bottom:14px; left:17px; width:915px; z-index:10; border:1px solid #4b4b4b; background:transparent url('/images/int/everyday/sprites.png') no-repeat 0 -154px;}
+.has-js #ed-periodical {position:absolute; bottom:0; float:left; width:915px; z-index:1; padding:0; margin:0; border-top:1px solid #4b4b4b; list-style:none; color:#fff; text-transform:uppercase; font-weight:bold; font-size:25px; font-family:'Trebuchet MS';}
+.has-js #ed-periodical .ed-item {float:left; width:228px; height:27px; line-height:22px; padding:0; margin:0; border-right:1px solid #4b4b4b; text-align:center; cursor:pointer; background:transparent url('/images/int/everyday/sprites.png') no-repeat 0 -202px;}
+.has-js #ed-periodical .ed-item.last {border-right:none;}
+.has-js #ed-periodical .ed-item.hover, .has-js #ed-periodical .ed-item:hover {background:#505611}
+.has-js #ed-periodical .ed-item.active {background:#333;}
+.has-js #ed-periodical .ed-item.hover {}
+.has-js #ed-arrow-backward {position:absolute; left:2px; top:121px; z-index:3;}
+.has-js #ed-arrow-backward A {display:block; width:43px; height:154px; background:transparent url('/images/int/everyday/sprites.png') no-repeat -86px 0;}
+.has-js #ed-arrow-backward A:hover {background-position:-129px 0;}
+.has-js #ed-arrow-forward {position:absolute; right:2px; top:121px; z-index:3;}
+.has-js #ed-arrow-forward A {display:block; width:43px; height:154px; text-indent:-9999px; background:transparent url('/images/int/everyday/sprites.png') no-repeat -172px 0;}
+.has-js #ed-arrow-forward A:hover {background-position:-215px 0;}
+.has-js #ed-arrow-backward A SPAN, .has-js #ed-arrow-forward A SPAN {height:1px !important; margin:-1px !important; overflow:hidden !important; padding:0 !important; position:absolute !important; width:1px !important;}
+.has-js #ed-arrow-backward A:focus, .has-js #ed-arrow-forward A:focus {outline:1px dotted #eee;}
+.has-js #ed-border-t, #ed-border-r, #ed-border-b, #ed-border-l {position:absolute; background:#000; z-index:9;}
+.has-js #ed-border-t {width:950px; height:3px; top:0; left:0}
+.has-js #ed-border-r {height:450px; width:3px; bottom:0; right:0}
+.has-js #ed-border-b {width:950px; height:3px; bottom:0; right:0}
+.has-js #ed-border-l {height:450px; width:3px; top:0; left:0}
+
+.has-js #ed-buildings {position:absolute; width:950px; height:450px; background:transparent url('/images/int/everyday/layer-buildings.png') no-repeat 0 0;}
+.has-js #ed-landscape {position:absolute; width:950px; height:450px; background:transparent url('/images/int/everyday/layer-landscape.png') no-repeat 0 0;}
+.has-js #ed-sky-layers {position:absolute; width:950px; height:450px; z-index:0;}
+.has-js #ed-sky-layer1 {position:absolute; width:950px; height:450px; background:transparent url('/images/int/everyday/layer-morning.png') no-repeat 0 0;}
+.has-js #ed-sky-layer2 {position:absolute; width:950px; height:450px; background:transparent url('/images/int/everyday/layer-afternoon.png') no-repeat 0 0;}
+.has-js #ed-sky-layer3 {position:absolute; width:950px; height:450px; background:transparent url('/images/int/everyday/layer-evening.png') no-repeat 0 0;}
+.has-js #ed-sky-layer4 {position:absolute; width:950px; height:450px; background:transparent url('/images/int/everyday/layer-night.png') no-repeat 0 0;}
+.has-js #ed-coldspots {position:absolute; width:950px; height:450px; background:transparent url('/images/int/everyday/layer-coldspots.png') no-repeat 0 0;}
+
+.has-js #ed-hotspots-wrapper {position:absolute; width:950px; height:450px; overflow:hidden;}
+.has-js #ed-hotspots {position:absolute; width:3800px; height:450px; margin:0 0 0 30px; padding:0; list-style:none;}
+.has-js #ed-hotspots > LI {position:absolute; border:3px solid #fff; padding:0; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; cursor:pointer; background:none;}
+.has-js #ed-hotspots > LI IMG {float:left; border:3px solid #4f1a69;}
+.has-js #ed-hotspots > LI H2 {display:none; position:absolute; bottom:0; left:0; width:72%; height:21px; line-height:25px; padding:4px 0 0 28%; margin:-22px 0 0; overflow:hidden; color:#fff; text-transform:uppercase; font-size:17px; font-family:'Trebuchet MS'; background:#4f1b69;}
+.ie7.has-js #ed-hotspots > LI H2 {padding-top:0; height:25px;}
+.has-js #ed-hotspots > LI.active {z-index:1; cursor:default;} 
+.has-js #ed-hotspots > LI.active H2 {display:block; cursor:pointer;}
+.has-js #ed-hotspots > LI .ed-info {position:absolute; width:24px; height:24px; left:7px; bottom:-7px; background:transparent url('/images/int/everyday/sprites.png') no-repeat 0 -230px;}
+.has-js #ed-hotspots > LI.active .ed-info {width:53px; height:53px; bottom:-10px; left:-3px; padding:141px 199px 0 10px; background-position:-880px -173px;}
+.has-js #ed-hotspots > LI .ed-info:focus {outline:none;}
+.has-js #ed-hotspots > LI.active .ed-info:focus {outline:1px dotted #fff;}
+.has-js #ed-hotspots > LI .ed-hotspot-details-wrapper {display:none;}
+.has-js #ed-info-wrapper #ed-info {position:absolute; width:3800px; height:450px; padding:0; margin:0; list-style:none;}
+.has-js .ed-info-panel {position:absolute; width:274px; height:302px; padding:17px 6px; z-index:2; margin:0; background:transparent url('/images/int/everyday/sprites.png') no-repeat -594px -173px; line-height:1.25em; color:#fff; font-size:14px; font-family:Arial;}
+.has-js .ed-info-panel P {color:#fff;}
+.has-js .ed-info-panel#ed-intro {left:179px; top:18px;}
+.has-js .ed-info-panel#ed-cta {left:4285px; top:18px;}
+.has-js .ed-info-panel H2 {margin:-10px 0 4px; padding:9px 21px 6px; font-weight:bold; line-height:1em; font-size:30px; background:#26262e; font-family:'Trebuchet MS';}
+.has-js .ed-info-panel .ed-info-panel-body {padding:10px 12px 0; border-top:3px solid #4d1a66;}
+.has-js .ed-info-panel .ed-info-panel-body P {margin:0; padding:0 0 10px;}
+.has-js .ed-info-panel .ed-info-panel-body a {margin:0; padding:0 0 10px; color: #FFFFFF;}/*****TF added 080911*******/
+.has-js .ed-info-panel .ed-info-panel-body UL {margin:0; padding:0 0 10px 20px;}
+
+.has-js #ed-planets {position:absolute; width:950px; height:450px; overflow:hidden;}
+.has-js #ed-sun {position:absolute; width:250px; height:250px; top:100px; background:transparent url('/images/int/everyday/sprites.png') no-repeat -228px -173px;}
+.has-js #ed-moon {position:absolute; width:116px; height:116px; top:200px; left:-1100px; background:transparent url('/images/int/everyday/sprites.png') no-repeat -478px -173px;}
+
+/* Lightbox */
+#colorbox .ed-hotspot-details {float:left; width:706px; background-color:#000;}
+#colorbox .ed-hotspot-details .ed-head {float:left; width:706px; height:53px; background-color:#262626;}
+#colorbox .ed-hotspot-details .ed-head H2 {padding:14px 0 0 16px; margin:0; font-size:30px; color:#fff; text-transform:uppercase; font-family:'Trebuchet MS';}
+#colorbox .ed-back-to-top {display:none;}
+#colorbox .ed-hotspot-details P {margin:0px; padding:0 0 5px; color:#FFF; line-height:20px; font-size:14px; font-family:Arial;}
+#colorbox .ed-hotspot-details P .truncate-ellipsis {display:none !important;}
+#colorbox .ed-hotspot-details P .truncate-more {display:inline !important;}
+
+#colorbox .ed-hotspot-details .ed-body {float:left; width:670px; padding:18px; margin-top:4px; border-top:3px solid #4f1a69;}
+#colorbox .ed-hotspot-details .ed-body .ed-primary {float:left; width:260px; padding:0 10px 10px 0;}
+#colorbox .ed-hotspot-details .ed-body .ed-text {float:left; width:260px;}
+#colorbox .ed-hotspot-details .ed-body .ed-ip-categories {float:left; width:260px; padding:0px; margin:5px 0 0; font-size:15px;}
+#colorbox .ed-hotspot-details .ed-body .ed-ip-categories LI {float:left; width:218px; padding:0 0 0 42px; margin:4px 0; color:#FFF; list-style:none; font-weight:bold; font-family:Arial; line-height:37px; background:transparent url('/images/int/everyday/sprites.png') no-repeat 100% 100%;}
+#colorbox .ed-hotspot-details .ed-body .ed-ip-categories LI.ed-design {background-position:-915px 0;}
+#colorbox .ed-hotspot-details .ed-body .ed-ip-categories LI.ed-patent {background-position:-915px -37px;}
+#colorbox .ed-hotspot-details .ed-body .ed-ip-categories LI.ed-pbr {background-position:-915px -75px;}
+#colorbox .ed-hotspot-details .ed-body .ed-ip-categories LI.ed-trademark {background-position:-915px -113px;}
+#colorbox .ed-hotspot-details .ed-body .ed-img {float:right; width:400px; height:310px; background:transparent url('/images/int/everyday/sprites.png') no-repeat -258px 282px;}
+#colorbox .ed-hotspot-details .ed-body .ed-img IMG {border-bottom:2px solid #000;}
+
+/* jQuery UI slider */
+.has-js #ed-slider .ui-slider {position:relative; height:47px; z-index:2; cursor:pointer;}
+.has-js #ed-slider .ui-slider .ui-slider-handle {position:absolute; z-index:2; width:84px; height:72px; padding:5px 0 0; margin:-26px 0 0 -42px; text-align:center; text-decoration:none; color:#4f1a69; font-weight:bold; font-size:15px; line-height:16px; background:transparent url('/images/int/everyday/sprites.png') no-repeat 0 0; font-family:Arial;}
+.has-js #ed-slider .ui-slider .ui-slider-handle:focus {outline:none; background-position:0 -77px;}
+
+/* ColorBox */
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+#cboxOverlay{background:#000;}
+#colorbox{}
+    #cboxTopLeft{width:14px; height:15px; background:url('/images/int/everyday/lightbox-sprites1.png') no-repeat -50px 0px;}
+    #cboxTopRight{width:14px; height:15px; background:url('/images/int/everyday/lightbox-sprites1.png') no-repeat -72px 0px;}
+    #cboxBottomLeft{width:14px; height:15px; background:url('/images/int/everyday/lightbox-sprites1.png') no-repeat -50px -24px;}
+    #cboxBottomRight{width:14px; height:15px; background:url('/images/int/everyday/lightbox-sprites1.png') no-repeat -72px -24px;}
+    #cboxMiddleLeft{width:14px; background:url('/images/int/everyday/lightbox-sprites1.png') left top repeat-y;}
+    #cboxMiddleRight{width:14px; background:url('/images/int/everyday/lightbox-sprites1.png') right top repeat-y;}
+    #cboxTopCenter{height:15px; background:url('/images/int/everyday/lightbox-sprites2.png') 0 0 repeat-x;}
+    #cboxBottomCenter{height:15px; background:url('/images/int/everyday/lightbox-sprites2.png') 0 100% repeat-x;}
+    #cboxContent{background:#000; overflow:hidden;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxClose{position:absolute; top:8px; right:0; width:49px; height:38px; background:url('/images/int/everyday/sprites.png') no-repeat -77px -229px; width:49px; height:38px; text-indent:-9999px;}
+
+/* The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to IE9. */
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/* The following provides PNG transparency support for IE6 */
+.cboxIE6 #cboxTopLeft{background:url('/images/int/everyday/ie6/borderTopLeft.png');}
+.cboxIE6 #cboxTopCenter{background:url('/images/int/everyday/ie6/borderTopCenter.png');}
+.cboxIE6 #cboxTopRight{background:url('/images/int/everyday/ie6/borderTopRight.png');}
+.cboxIE6 #cboxBottomLeft{background:url('/images/int/everyday/ie6/borderBottomLeft.png');}
+.cboxIE6 #cboxBottomCenter{background:url('/images/int/everyday/ie6/borderBottomCenter.png');}
+.cboxIE6 #cboxBottomRight{background:url('/images/int/everyday/ie6/borderBottomRight.png');}
+.cboxIE6 #cboxMiddleLeft{background:url('/images/int/everyday/ie6/borderMiddleLeft.png');}
+.cboxIE6 #cboxMiddleRight{background:url('/images/int/everyday/ie6/borderMiddleRight.png');}
+
+.cboxIE6 #cboxTopLeft,
+.cboxIE6 #cboxTopCenter,
+.cboxIE6 #cboxTopRight,
+.cboxIE6 #cboxBottomLeft,
+.cboxIE6 #cboxBottomCenter,
+.cboxIE6 #cboxBottomRight,
+.cboxIE6 #cboxMiddleLeft,
+.cboxIE6 #cboxMiddleRight {
+    _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')");
+}
+
+
+
+
+
+

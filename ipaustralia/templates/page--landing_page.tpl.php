@@ -3,14 +3,7 @@
 <div class="main-container">
 
   <div class="overlay" />
-  <?php if (!empty($breadcrumb)): ?>
-    <div class="breadcrumbs">
-      <div class="container">
-         <?php print $breadcrumb; ?>
-         <a class="listen-to-this-page" href="http://www.example.com">Listen to this page</a>
-      </div>
-    </div>
-  <?php endif; ?>
+
   <?php if (!empty($messages)): ?>
     <div class="messages">
       <div class="container">

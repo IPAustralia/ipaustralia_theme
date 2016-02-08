@@ -1,0 +1,100 @@
+@import "_variables.scss";
+
+@import "_cleanup.scss";
+@import "_generic.scss";
+@import "_mixins.scss";
+
+footer {
+    padding: 0 0 $gap-large 0px !important;
+    margin: 0px !important;
+    border: 0px !important;
+    .block-menu-block {
+        background: $charcoal none repeat scroll 0 0;
+        padding: 60px 0;
+        .nav {
+            li{
+                display: block;
+                float: left;
+                width: 25%;
+                @media only screen and (max-width: $break-point-medium) {
+                    width: 50%;
+                } 
+                a {
+                    color:white;
+                    text-decoration: none;
+                    font: normal 16px montserratregular;
+                    padding: 20px 18px 20px 0;
+                    @include background-image('arrow-right.png', right);
+                    float:left;
+                    &:hover, &:active, &:focus{
+                        @include background-image('arrow-right.png', right);
+                    }
+
+                }
+                ul {
+                    background: transparent none repeat scroll 0 0;
+                    box-shadow: none;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    border:0px;
+                    clear:both;
+                    li {
+                        display: block;
+                        width: 100%;
+                        clear: both;
+                        a {
+                            color: white;
+                            font-weight: normal;
+                            padding: 0 10px 16px 0px;
+                            text-decoration: underline;
+                            font: $body-text;
+                            font-size:15px;
+                            background: transparent;
+                            &:hover, &:active, &:focus{
+                                text-decoration: none;
+                                background: transparent;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    .block-menu {
+        .block-title {
+            font: normal 16px montserratregular;;
+            font-size: 18px;
+            margin: 0px;
+            padding: $gap-medium 0px 0px ;
+        }
+        .nav {
+            li {
+                float: left;
+                padding: 10px 10px 0 0 ;
+                a {
+                    padding:0px 10px 0 0;
+                    border-right: 1px solid $charcoal;
+                    font-size: 13px;
+                    line-height: 12px;
+                    color: $footer-link-color;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    &:active, &:focus, &:hover {
+                        background: transparent;
+                    }
+                }
+                &.last {
+                    a {
+                        border:none;
+                    }
+                }
+
+            }
+        }
+    }
+}
+

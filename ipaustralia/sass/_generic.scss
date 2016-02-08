@@ -1,0 +1,38 @@
+
+@import "_mixins.scss";
+
+h2 {
+    font: $title-h3;
+}
+
+a {
+    outline: 0;
+    &:active, &:focus {
+        outline: 0;
+        text-decoration: none;
+        background: transparent;
+    }
+}
+body {
+    font: $body-text;
+    font-weight: normal;
+}
+
+.messages {
+    .alert-block {
+        border-radius: 0px;
+        padding: 22px 30px;
+        border:none;
+        margin:20px 0px;
+        &.error {
+            @include background-image('warning.png', 10px, center, no-repeat, #ffe8ee);
+            padding-left: 60px;
+            color:#ed0129;
+            font-weight: bold;
+        }
+    }
+}
+
+.resource-list-block {
+    @include resources-list;
+}

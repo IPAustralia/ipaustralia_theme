@@ -1,0 +1,193 @@
+#timeline {position:relative; width:946px; height:446px; margin:10px auto; background:#eee; border:2px solid #000; font-size:16px;}
+.no-js #timeline {height: auto;}
+#time-slider {position:absolute; bottom:14px; left:17px; width:916px; height:29px; border:1px solid #4b4b4b; z-index:2;}
+#time-periodical {float:left; height:29px; width:916px; z-index:1; padding:0; margin:0; border-top:1px solid #4b4b4b; list-style:none; color:#fff; font-weight:bold; line-height:29px; font-size:17px; position:absolute; bottom:0px; left:0px;}
+#time-periodical .time-item {float:left; height:29px; width:130px; padding:0px; margin:0; line-height:29px; border-right:1px solid #4b4b4b; text-align:center; background:transparent url('/images/int/history/sprites.png') no-repeat 0 -202px; font-family:Arial,Tahoma,Helvetica,San Serif;}
+.ie8 #time-periodical .time-item {padding-top:5px; height:24px;}
+#time-periodical .time-item.last {border-right:none;}
+#time-periodical .time-item.over {background-position:0px -231px;}
+#time-arrow-backward {position:absolute; left:0px; top:121px; z-index:10;}
+#time-arrow-backward A {display:block; width:43px; height:154px; background:transparent url('/images/int/history/sprites.png') no-repeat -86px 0;}
+#time-arrow-backward A:hover {background-position:-129px 0;}
+#time-arrow-forward {position:absolute; right:0px; top:121px; z-index:10;}
+#time-arrow-forward A {display:block; width:43px; height:154px; background:transparent url('/images/int/history/sprites.png') no-repeat -172px 0;}
+#time-arrow-forward A:hover {background-position:-215px 0;}
+
+#time-landscape {float:left; width:946px; height:446px; background:transparent url('/images/int/history/timeline-bg-landscape.jpg') no-repeat 0 0;}
+#time-overlay {float:left; width:946px; height:446px; position:absolute; top:0px; left:0px; background:transparent url('/images/int/history/timeline-bg-overlay.png') no-repeat 0 0;}
+
+#timeline-content {float:left; width:946px; height:450px; position:absolute; top:0px; left:0px; overflow:hidden; z-index:1;}
+#timeline-content .wrap {float:left; height:450px; padding:0px 20px 0px 370px; margin:0px; position:absolute; top:0px; left:0px;}
+#timeline-content UL {float:left; height:450px; padding:0px; margin:0px;}
+#timeline-content UL LI {float:left; width:188px; height:318px; padding:132px 0px 0px 10px; margin:0px; list-style:none; background:transparent url('/images/int/history/sprites.png') no-repeat 100% 0; font-family:Arial,Tahoma,Helvetica,San Serif;}
+#timeline-content UL LI  H3 {float:left; padding:0px 0px 0px 5px; margin:0px; color:#FFF; font-size:17px;}
+#timeline-content UL LI .text-wrap {float:left; width:170px; padding:1px; margin:1px 0px; background:none;}
+#timeline-content UL LI .text {float:left; width:170px; line-height:19px; margin:1px 0px; position:relative; background:#000 url('/images/int/history/bg-item.png') repeat-x 0 100%;}
+#timeline-content UL LI P {width:145px; padding:5px; margin:0px; color:#FFF; font-size:12px; line-heigth:15px; text-overflow:ellipsis; overflow:hidden;}
+#timeline-content UL LI .icon {float:left; width:25px; height:24px; position:absolute; top:2px; right:-10px; background:transparent url('/images/int/history/sprites.png') no-repeat -288px 0;}
+#timeline-content UL LI .icon:focus {outline:1px dotted #fff;}
+#timeline-content .active .icon {background-position:-328px 0px;}
+#timeline-content UL LI .popup .icon {background-position:-368px 0px;}
+#timeline-content UL LI H1 {display:none;}
+#timeline-content UL LI IMG {display:none;}
+#timeline-content UL LI .properties {display:none;}
+#timeline-content UL LI .popup .imgcopyright{display:none;}
+
+#timeline #timeline-popup-content {display:none;}
+#timeline-popup-content {float:left; width:637px;  background-color:#000;}
+#timeline-popup-content .wrap {float:left; width:637px;}
+#timeline-popup-content .wrap .content {float:left; width:637px;}
+#timeline-popup-content .wrap .content .header {float:left; width:637px;  height:53px; background-color:#262626;}
+#timeline-popup-content .wrap .content .header H1 {padding:12px 0px 0px 16px; margin:0px; line-height:53px; font-size:30px; color:#FFF;}
+.ie7 #timeline-popup-content .wrap .content .header H1 {padding-top:0px;}
+.ie7 #timeline-popup-content .wrap .content .header H1 cufontext,
+.ie8 #timeline-popup-content .wrap .content .header H1 cufontext{display:inline !important; height:0 !important; width:0 !important; overflow:hidden !important; text-indent: -1000em !important;}
+#timeline-popup-content P {margin:0px; color:#FFF; line-height:20px; font-size:14px; font-family:Arial,Tahoma,Helvetica,San Serif;}
+#timeline-popup-content P .truncate-ellipsis {display:none !important;}
+#timeline-popup-content P .truncate-more {display:inline !important;}
+
+#timeline-popup-content .wrap .content .body {float:left; width:605px; padding:20px 16px 10px 16px; margin-top:4px; border-top:3px solid #4f1a69; background:transparent url('/images/int/history/sprites.png') no-repeat 0 100%;}
+#timeline-popup-content .wrap .content .body .primary {float:left; width:270px;}
+#timeline-popup-content .wrap .content .body .text {float:left; width:270px;}
+#timeline-popup-content .wrap .content .body .parameters {float:left; width:270px; margin-top:43px;}
+#timeline-popup-content .wrap .content .body .parameters UL {float:left; width:270px; padding:0px; margin:0px; font-size:15px;}
+#timeline-popup-content .wrap .content .body .parameters UL LI {float:left; width:200px; padding:0px 0px 0px 42px; margin:8px 0px; color:#FFF; list-style:none; font-weight:bold; font-family:Arial,Tahoma,Helvetica,San Serif; line-height:37px; background:transparent url('/images/int/history/sprites.png') no-repeat 100% 100%;}
+#timeline-popup-content .wrap .content .body .parameters UL LI.design {background-position:-964px -489px;}
+#timeline-popup-content .wrap .content .body .parameters UL LI.patent {background-position:-964px -540px;}
+#timeline-popup-content .wrap .content .body .parameters UL LI.pbr {background-position:-964px -593px;}
+#timeline-popup-content .wrap .content .body .parameters UL LI.trademark {width:120px; background-position:-964px -642px;}
+#timeline-popup-content .wrap .content .body .parameters UL LI.copyright {background-position:-964px -921px;}
+
+#timeline-popup-content .wrap .content .body .img-wrapper{float:right; width:319px; height:395px;}
+#timeline-popup-content .wrap .content .body  .img-wrapper.img {float:right; width:319px; /*height:360px; */ background:transparent url('/images/int/history/sprites.png') no-repeat 100% 100%;}
+#timeline-popup-content .wrap .content .body  .img-wrapper .imgcopyright{float:right; width:319px; padding:1em 0px 1em 0px;}
+#timeline-popup-content .wrap .content .body  .img-wrapper .imgcopyright P{text-align:right;}
+
+P.text-only-link {width:946px; margin:0 auto; font-family:Arial,Tahoma,Helvetica,San Serif; font-size:13px;}
+P.text-only-link A {color:#555; text-decoration:underline;}
+
+
+.disabled {border:none !important; background:none !important;}
+.not-loaded {display:none;}
+P.loading {margin:0 auto; width:946px; font-size:20px; font-weight:bold; padding:1em 0px;}
+
+/* jQuery UI slider */
+#time-slider .ui-slider {position:relative; width:916px; height:29px; z-index:2; cursor:pointer; background:transparent url('/images/int/history/sprites.png') no-repeat 0 -154px;}
+#time-slider .ui-slider .ui-slider-handle {position:absolute; z-index:3; width:84px; height:36px; padding:0; margin:-4px 0 0 -40px; background:transparent url('/images/int/history/sprites.png') no-repeat 0 0; font-family:Arial,Tahoma,Helvetica,San Serif;}
+#time-slider .ui-slider .ui-slider-handle:focus {outline:none;}
+
+/* General */
+/*BODY {background:none; margin:20px;}*/
+#timeline > DIV {font-size:62.5%; font-family:Arial,Tahoma,Helvetica,San Serif;}
+#timeline P {font-size:1.2em;}
+#timeline H1 {font-size:2.2em;}
+.no-js #timeline h1 {background: none; color: #000}
+#timeline H2 {font-size:1.6em;}
+#timeline H3 {font-size:1.4em;}
+
+
+.non-js .item {margin: 0 20px 50px 20px;}
+.non-js UL {padding:0px; margin:0px; overflow:hidden; font-size:1.2em;}
+.non-js UL LI {float:left; padding:0px 10px 0px 42px; margin:8px 0px; list-style:none; font-weight:bold; line-height:37px !important; background:transparent url('/images/int/history/sprites.png') no-repeat 100% 100%;}
+.non-js UL LI.design {background-position:-964px -721px;}
+.non-js UL LI.patent {background-position:-964px -771px;}
+.non-js UL LI.pbr {background-position:-964px -820px;}
+.non-js UL LI.trademark {background-position:-964px -872px;}
+.non-js UL LI.copyright {background-position:-964px -921px;}
+.non-js .back-to-top {font-size:10px; text-align:right; padding:2em 0; font-weight:bold;}
+
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#000;}
+#colorbox{}
+    #cboxTopLeft{width:14px; height:15px; background:url(/images/int/history/control.png) no-repeat -50px 0px;}
+    #cboxTopRight{width:14px; height:15px; background:url(/images/int/history/control.png) no-repeat -72px 0px;}
+    #cboxBottomLeft{width:14px; height:15px; background:url(/images/int/history/control.png) no-repeat -50px -24px;}
+    #cboxBottomRight{width:14px; height:15px; background:url(/images/int/history/control.png) no-repeat -72px -24px;}
+    #cboxMiddleLeft{width:14px; background:url(/images/int/history/control.png) left top repeat-y;}
+    #cboxMiddleRight{width:14px; background:url(/images/int/history/control.png) right top repeat-y;}
+    #cboxTopCenter{height:15px; background:url(/images/int/history/border-timeline.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:15px; background:url(/images/int/history/border-timeline.png) 0 100% repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{/*margin-bottom:28px;*/}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxSlideshow{position:absolute; bottom:4px; right:20px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(/images/int/history/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious.hover{}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(/images/int/history/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext.hover{}
+        #cboxLoadingOverlay{background:url(/images/int/history/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(/images/int/history/loading.gif) no-repeat center center;}
+        #cboxClose{position:absolute; top:8px; right:0; background:url(/images/int/history/btn-close.gif) no-repeat 0 0; width:49px; height:38px; text-indent:-9999px;}
+        #cboxClose.hover{}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to IE9.
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/*
+  The following provides PNG transparency support for IE6
+*/
+.cboxIE6 #cboxTopLeft{background:url(/images/int/history/borderTopLeft.png);}
+.cboxIE6 #cboxTopCenter{background:url(/images/int/history/borderTopCenter.png);}
+.cboxIE6 #cboxTopRight{background:url(/images/int/history/borderTopRight.png);}
+.cboxIE6 #cboxBottomLeft{background:url(/images/int/history/borderBottomLeft.png);}
+.cboxIE6 #cboxBottomCenter{background:url(/images/int/history/borderBottomCenter.png);}
+.cboxIE6 #cboxBottomRight{background:url(/images/int/history/borderBottomRight.png);}
+.cboxIE6 #cboxMiddleLeft{background:url(/images/int/history/borderMiddleLeft.png);}
+.cboxIE6 #cboxMiddleRight{background:url(/images/int/history/borderMiddleRight.png);}
+
+.cboxIE6 #cboxTopLeft,
+.cboxIE6 #cboxTopCenter,
+.cboxIE6 #cboxTopRight,
+.cboxIE6 #cboxBottomLeft,
+.cboxIE6 #cboxBottomCenter,
+.cboxIE6 #cboxBottomRight,
+.cboxIE6 #cboxMiddleLeft,
+.cboxIE6 #cboxMiddleRight {
+    _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')");
+}
+
+
+/* TF070911 - this was a call made in the HTML....moved to this css file as it was being stripped out*/
+#timeline.not-loaded {display:none;}
+
+
+.content h1 {
+float:none !important;	
+width: auto !important;
+}
+
+
+

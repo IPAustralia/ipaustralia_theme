@@ -1,0 +1,71 @@
+.small-header #header-wrapper {height: 225px;}
+.small-header #header-wrapper .inner {height: 214px;}
+.home #page-header {height: 220px;}
+.small-header #page-header {height: 110px;}
+#i-want-to .col {height: 80px;}
+.box-purple .inner {height: 135px;}
+.home-box {height: 75px;}
+#breadcrumb, #right-column .box-black {height: 37px;}
+#header-wrapper {height: 350px;}
+#header-wrapper .inner {height: 341px;}
+.tertiary #header-wrapper {height: 225px;}
+.tertiary #header-wrapper .inner {height: 214px;}
+.tertiary #page-header {height: 110px;}
+form textarea {height: 51px;}
+form textarea.large {height: 237px;}
+form label.radio {width: 500px;}
+
+#nav li {height: 76px;}
+#nav li a span.wrapper {height: 62px;}
+#nav ul ul li a {height: 27px;}
+#nav ul ul li a.tall {height: 43px;}
+#nav ul ul li a.tall span {height: 33px;}
+#nav ul ul li a span {height: 17px;}
+
+#content {height: 400px;}
+#content p, #content h2 {clear: left;} /* due to h1 floating */
+
+.home-feature-box {height: 158px;}
+.box-purple #slider {height: 145px;}
+
+#page-header {float: none; margin-left: 210px;}
+#header-nav {height: 50px; width: 690px;}
+#header-nav fieldset {float: left;}
+#header-nav .inner {height: 45px !important;}
+
+#home-feature-box-2 {position: absolute; top: 0; left: 475px;}
+
+#i-want-to p.heading span.purple .cufon-vml {margin: -40px 0 !important;} 
+#i-want-to p.heading .cufon-vml  {margin: -50px 0 !important;} 
+#content-wrapper-home .ie6 {padding-bottom: 30px;}
+
+#header-nav fieldset {width: 185px;}
+
+.home-box ul {padding-bottom: 11px;}
+
+#nav li span.small {margin-right: 7px;}
+
+.tertiary #page-header h2 {margin-left: 320px;}
+
+#nav li#nav-5 span.small {width: 100px;}
+#nav li#nav-5 {background: url(/static/images/template/nav-bg-right.png) 119px 0 no-repeat;}
+#nav li#nav-5.active {background: url(/static/images/template/nav-bg-right-white.png) 119px 0 no-repeat;}
+
+.box-purple .button {background-image: url(/static/images/template/home-arrow-sprite-ie6.png);}
+.box-purple .left {background-position: 0 0;}
+.box-purple .right {background-position: 0 -250px;}
+
+#footer #column-3 li {background-image: url(/static/images/template/sprite2-ie6.png); height: 19px;}
+#footer #footer-bottom, #branding-stripes, .home-box .icon, #footer #footer-bottom li {background-image: url(/static/images/template/sprite2-ie6.png); }
+
+/* fixes drop downs z-index */
+#header {z-index: 200; position: relative;}
+
+#nav ul ul {background: #000;}
+
+#page-header .button span {padding: 4px 10px 5px 10px;height: auto;line-height: normal;}
+
+#feature-nav a {width: 15px; padding-left: 2px;}
+#feature-nav a.on, #feature-nav a:hover {width: 14px; padding-left: 3px;}
+
+h2 .rss, h3 .rss {overflow:hidden;}

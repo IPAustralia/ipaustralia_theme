@@ -732,3 +732,338 @@
   min-height: 490px;
 }
 /* end tools and resources PBR */
+
+/* start More About.. landing page styling */
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .block-title {
+  text-align: center;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] {
+  color: #1d252c;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td {
+  position: relative;
+  vertical-align: top;
+  width: 25%;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="image"] {
+  position: relative;
+  z-index: 10;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="image"] img {
+  display: inline-block;
+  height: 280px;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="date"],  .node-type-landing-page section[id*="lock-panels-mini-more-about"] .view-id-case_studies td div[class*="title"] {
+  text-align: left;
+  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+  padding: 0px 20px;
+  /*margin: 0 auto;*/
+  color: white;
+  width: 280px;
+  display: block;
+  position: relative;
+  z-index: 100;
+  padding-top: 23px;
+  height: 45px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: -115px;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .view-id-case_studies td div[class*="title"] {
+  margin-top: -70px;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="date"] span[class*="label "] {
+  float: left;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="title"], .node-type-landing-page section[id*="lock-panels-mini-more-about"]   .views-view-grid td div[class*="location"] {
+  text-align: left;
+  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+  padding: 0px 20px;
+  /*margin: 0 auto;*/
+  color: white;
+  width: 280px;
+  display: block;
+  position: relative;
+  z-index: 100;
+  clear: both;
+  font: normal 20px "montserratbold", sans-serif;
+  font-family: "montserratregular", sans-serif;
+  height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 6px 20px;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="title"] a, .node-type-landing-page section[id*="lock-panels-mini-more-about"]   .views-view-grid td div[class*="location"] a {
+  color: white;
+  text-decoration: underline;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="location"] {
+  text-align: left;
+  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+  padding: 0px 20px;
+  /*margin: 0 auto;*/
+  color: white;
+  width: 280px;
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="body"] {
+  text-align: left;
+  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+  padding: 0px 20px;
+  /*margin: 0 auto;*/
+  color: white;
+  width: 280px;
+  display: block;
+  position: relative;
+  z-index: 100;
+  height: 165px;
+  overflow: hidden;
+  display: none;
+  text-overflow: ellipsis;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .view-id-case_studies .views-view-grid td div[class*="body"] {
+  height: 210px;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td:hover div[class*="date"], .node-type-landing-page section[id*="lock-panels-mini-more-about"] .view-id-case_studies td:hover div[class*="title"] {
+  margin-top: -280px;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td:hover div[class*="body"] {
+  display: block;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .panels-flexible-row-inside .panels-flexible-region {
+  width: 100%;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .panels-flexible-region .inside {
+  font: normal 20px "robotolight", sans-serif;
+  padding: 10px 0 30px 0;
+}
+.node-type-landing-page section[id*="lock-panels-mini-more-about"] .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1180px) {.node-type-landing-page .panel-2col .panel-col-first {
+
+}
+}
+.node-type-landing-page section#block-panels-mini-more-about-patents-2-col-panel .views-view-grid td div[class*="body"],
+.node-type-landing-page section#block-panels-mini-more-about-patents-2-col-panel .views-view-grid td div[class*="title"],
+.node-type-landing-page section#block-panels-mini-more-about-patents-2-col-panel .views-view-grid td div[class*="date"],
+.node-type-landing-page section#block-panels-mini-more-about-patents-2-col-panel .views-view-grid td div[class*="location"] {
+  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-teal.png") center center repeat;
+}
+.node-type-landing-page section#block-panels-mini-more-about-trade-marks-2-column- .views-view-grid td div[class*="body"],
+.node-type-landing-page section#block-panels-mini-more-about-trade-marks-2-column- .views-view-grid td div[class*="title"],
+.node-type-landing-page section#block-panels-mini-more-about-trade-marks-2-column- .views-view-grid td div[class*="date"],
+.node-type-landing-page section#block-panels-mini-more-about-trade-marks-2-column- .views-view-grid td div[class*="location"] {
+  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-red.png") center center repeat;
+}
+.node-type-landing-page section#block-panels-mini-more-about-designs-2-col-panel .views-view-grid td div[class*="body"],
+.node-type-landing-page section#block-panels-mini-more-about-designs-2-col-panel .views-view-grid td div[class*="title"],
+.node-type-landing-page section#block-panels-mini-more-about-designs-2-col-panel .views-view-grid td div[class*="date"],
+.node-type-landing-page section#block-panels-mini-more-about-designs-2-col-panel .views-view-grid td div[class*="location"] {
+  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-mint.png") center center repeat;
+}
+.node-type-landing-page section#block-panels-mini-more-about-pbr-2-col-panel .views-view-grid td div[class*="body"],
+.node-type-landing-page section#block-panels-mini-more-about-pbr-2-col-panel .views-view-grid td div[class*="title"],
+.node-type-landing-page section#block-panels-mini-more-about-pbr-2-col-panel .views-view-grid td div[class*="date"],
+.node-type-landing-page section#block-panels-mini-more-about-pbr-2-col-panel .views-view-grid td div[class*="location"] {
+  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-yellow.png") center center repeat;
+}
+
+/* end More about.. styling */
+
+/* start Tools and resources Intro */
+.node-type-landing-page #block-bean-tools-and-resources-landing-bloc {
+  background: #1d252c url("/sites/all/themes/ipaustralia/images/tablet.jpg") center center no-repeat;
+  background-size: 100% auto;
+  padding: 60px 10px 80px 20px;
+  color:#FFF;
+}
+.node-type-landing-page #block-bean-tools-and-resources-landing-bloc .content {
+  width: 66%;
+  text-align: left;
+}
+.node-type-landing-page #block-bean-tools-and-resources-landing-bloc .content p {
+  font: normal 20px "robotolight", sans-serif;
+}
+.node-type-landing-page #block-bean-tools-and-resources-landing-bloc .content h2 {
+  color:#FFF;
+  text-transform: uppercase;
+  font: normal 60px "montserratregular", sans-serif;
+}
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs  {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 40px;
+  height:115px;
+}
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li {
+  margin: 0;
+  padding: 0;
+  width: 19.5%;
+  display: inline-block;
+}
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a {
+  width:100%;
+  padding: 5px 5px 5px 30px;
+  background-color:#1D252C;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: normal 18px "robotobold", sans-serif;
+  white-space:normal;
+  border: 1px solid #1D252C;
+  height: 75px;
+  display: inline-block;
+  color: #FFF;
+  text-align: center;
+  vertical-align: middle;
+  /* fallback for non-Flexbox browsers */
+  display: inline-block;
+  /* Flexbox browsers */
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  /* vertical centering for legacy, horizontal centering for modern */
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /* modern Flexbox only */
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  /* legacy Flexbox only */
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+}
+
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-0 {
+  background: #30aeb6 url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat;
+  /*background-color: #30aeb6;*/
+  border: 1px solid #30aeb6;
+} 
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-1 {
+  background: #de4326 url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat;
+  border: 1px solid #de4326;
+} 
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-2 {
+  background: #84c98f url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat;
+  border: 1px solid #84c98f;
+} 
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-3 {
+  background: #f1ac1e url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat;
+  border: 1px solid #f1ac1e;
+} 
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-4 {
+  background-color: #704579;
+  border: 1px solid #704579;
+} 
+
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-0:hover,
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-0 {
+  color:#30aeb6;
+  background-color: #fff;
+  border-bottom-width: 6px;
+  height:80px;
+  margin-bottom:-5px;
+} 
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-1:hover,
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-1 {
+  color:#de4326;
+  background-color: #fff;
+  border-bottom-width: 6px;
+  height:80px;
+  margin-bottom:-5px;
+} 
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-2:hover,
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-2 {
+  color:#84c98f;
+  background-color: #fff;
+  border-bottom-width: 6px;
+  height:80px;
+  margin-bottom:-5px;
+} 
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-3:hover,
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-3 {
+  color:#f1ac1e;
+  background-color: #fff;
+  border-bottom-width: 6px;
+  height:80px;
+  margin-bottom:-5px;
+} 
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-4:hover,
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-4 {
+  color:#704579;
+  background-color: #fff;
+  border-bottom-width: 6px;
+  margin-bottom:-5px;
+  height:80px;
+} 
+
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a.toc-filter-processed,
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a.toc-filter-processed:visited,
+.node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a.toc-filter-processed:active, {
+  color:#FFF;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .node-type-landing-page #block-bean-tools-and-resources-landing-bloc .content  {
+ width: 100%;
+  }
+  .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li {
+     width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a {
+    padding: 5px;
+    background-image:none;
+  }
+}
+
+/* end Tools and resources intro */
+
+/* start tools and resources tab for patents */
+/*.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content */
+/* start tools and resources patent */
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content  {
+  background: #1d252c;
+  color: white;
+  text-align: center;
+    background-size: 100% auto;
+    padding: 60px 10px 20px;
+}
+/*.node-type-landing-page #block-bean-tools-and-resources h2 {
+  color:#FFF;
+  font-family: "montserratregular", sans-serif;
+}*/
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content ul {
+  list-style: none;
+  text-align: left;
+  color:#1D252C;
+  padding:0px;
+  margin:0px;
+}
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content ul li {
+  margin-top: 18px;
+  padding: 0 30px 0 50px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  background: transparent url("/sites/all/themes/ipaustralia/images/link-tool.png") 17px top no-repeat;
+}
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content div.panels-flexible-region {
+  background: #FFF;
+  min-height: 490px;
+}
+/* end tools and resources patent */
+.node-type-landing-page #block-quicktabs-tools-and-resources .panels-flexible-row-first {
+  display: none;
+}
+/* end tools and resources tab for trade marks */

@@ -1,18 +1,11 @@
-/*new css added*/
-.front .panels-flexible-region-inside h3.block-title {
-    color: #FFF;
-  }
-
 /*Desktop tablet landscape*/
 /*Tablet*/
 /*Mobile*/
 .region {
-  border: none;
-}
+  border: none; }
 
 .front #block-system-main {
-  display: none;
-}
+  display: none; }
 
 /*.last.leaf.menu-mlid-1816 {
   display: none;
@@ -21,267 +14,212 @@
     display: none;
 }*/
 h2 {
-  font: normal 36px "montserratbold", sans-serif;
-}
+  font: normal 36px "montserratbold", sans-serif; }
 
 a {
-  outline: 0;
-}
-a:active, a:focus {
-  outline: 0;
-  text-decoration: none;
-  background: transparent;
-}
+  outline: 0; }
+  a:active, a:focus {
+    outline: 0;
+    text-decoration: none;
+    background: transparent; }
 
 body {
   font: normal 16px "robotoregular", sans-serif;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 .messages .alert-block {
   border-radius: 0px;
   padding: 22px 30px;
   border: none;
-  margin: 20px 0px;
-}
-.messages .alert-block.error {
-  background: #ffe8ee url("/sites/all/themes/ipaustralia/images/warning.png") 10px center no-repeat;
-  padding-left: 60px;
-  color: #ed0129;
-  font-weight: bold;
-}
+  margin: 20px 0px; }
+  .messages .alert-block.error {
+    background: #ffe8ee url("/sites/all/themes/ipaustralia/images/warning.png") 10px center no-repeat;
+    padding-left: 60px;
+    color: #ed0129;
+    font-weight: bold; }
 
 .resource-list-block {
   padding: 0px;
   margin: 0px;
   color: #1d252c;
-  list-style: none;
-}
-.resource-list-block li {
-  background: #fff;
-  border: 0px;
-  padding: 14px;
-  font: normal 16px "robotoregular", sans-serif;
-  margin-top: 2px;
-}
-.resource-list-block li.patents {
-  border-left: 10px solid #30aeb6;
-  border-left: 5px solid #30aeb6;
-  padding-left: 90px;
-  background: #fff url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat;
-}
-.resource-list-block li.trade-marks {
-  border-left: 10px solid #de4326;
-  border-left: 5px solid #de4326;
-  padding-left: 90px;
-  background: #fff url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat;
-}
-.resource-list-block li.designs {
-  border-left: 10px solid #84c98f;
-  border-left: 5px solid #84c98f;
-  padding-left: 90px;
-  background: #fff url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat;
-}
-.resource-list-block li.pbr {
-  border-left: 10px solid #f1ac1e;
-  border-left: 5px solid #f1ac1e;
-  padding-left: 90px;
-  background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat;
-}
-.resource-list-block li.copyright {
-  border-left: 10px solid #704579;
-  border-left: 5px solid #704579;
-  padding-left: 90px;
-  background: #fff url("/sites/all/themes/ipaustralia/images/block-copyright.png") left center no-repeat;
-}
+  list-style: none; }
+  .resource-list-block li {
+    background: #fff;
+    border: 0px;
+    padding: 14px;
+    font: normal 16px "robotoregular", sans-serif;
+    margin-top: 2px; }
+    .resource-list-block li.patents {
+      border-left: 10px solid #30aeb6;
+      border-left: 5px solid #30aeb6;
+      padding-left: 90px;
+      background: #fff url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat; }
+    .resource-list-block li.trade-marks {
+      border-left: 10px solid #de4326;
+      border-left: 5px solid #de4326;
+      padding-left: 90px;
+      background: #fff url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat; }
+    .resource-list-block li.designs {
+      border-left: 10px solid #84c98f;
+      border-left: 5px solid #84c98f;
+      padding-left: 90px;
+      background: #fff url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat; }
+    .resource-list-block li.pbr {
+      border-left: 10px solid #f1ac1e;
+      border-left: 5px solid #f1ac1e;
+      padding-left: 90px;
+      background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat; }
+    .resource-list-block li.copyright {
+      border-left: 10px solid #704579;
+      border-left: 5px solid #704579;
+      padding-left: 90px;
+      background: #fff url("/sites/all/themes/ipaustralia/images/block-copyright.png") left center no-repeat; }
 
 .front h2 {
-  font-family: "montserratregular", sans-serif;
-}
+  font-family: "montserratregular", sans-serif; }
 .front #block-quicktabs-homepage-main-tab {
   padding: 80px 10px;
   background: #eff0f2;
   text-align: center;
   background: #1d252c url("/sites/all/themes/ipaustralia/images/women-with-tablet-merged.jpg") center top no-repeat;
-  background-size: 100% auto;
-}
-.front #block-quicktabs-homepage-main-tab h2{
-  color:#fff;
-}
-
-@media only screen and (max-width: 768px) {
-  .front #block-quicktabs-homepage-main-tab {
-    background-size: auto 100%;
-    padding: 10px 0px;
-  }
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs {
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li {
-  width: 33.1%;
-  text-align: center;
-  float: left;
-  padding: 0px;
-  display: inline-block;
-}
-@media only screen and (max-width: 768px) {
+  background-size: 100% auto; }
+  @media only screen and (max-width: 768px) {
+    .front #block-quicktabs-homepage-main-tab {
+      background-size: auto 100%;
+      padding: 10px 0px; } }
+  .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs {
+    width: 100%;
+    padding: 0px;
+    margin: 0px; }
+    .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li {
+      width: 33.1%;
+      text-align: center;
+      float: left;
+      padding: 0px;
+      display: inline-block; }
+      @media only screen and (max-width: 768px) {
+        .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li {
+          width: 100%; } }
+      .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li a {
+        background: #1d252c;
+        padding: 27px 0px;
+        color: #fff;
+        width: 100%;
+        display: inline-block;
+        font: normal 20px "montserratbold", sans-serif;
+        font-family: "montserratregular", sans-serif;
+        text-transform: uppercase;
+        border: 1px solid #1d252c;
+        line-height: 14px; }
+        .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li a:hover {
+          text-decoration: none; }
+      .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li.active a {
+        background: #fff;
+        color: #1d252c; }
+  .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main {
+    clear: both;
+    background: #1d252c;
+    width: 99.3%;
+    color: white; }
+    @media only screen and (max-width: 768px) {
+      .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main {
+        width: 100%; } }
   .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li {
-    width: 100%;
-  }
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li a {
-  background: #1d252c;
-  padding: 27px 0px;
-  color: #fff;
-  width: 100%;
-  display: inline-block;
-  font: normal 20px "montserratbold", sans-serif;
-  font-family: "montserratregular", sans-serif;
-  text-transform: uppercase;
-  border: 1px solid #1d252c;
-  line-height: 14px;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li a:hover {
-  text-decoration: none;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li.active a {
-  background: #fff;
-  color: #1d252c;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main {
-  clear: both;
-  background: #1d252c;
-  width: 99.3%;
-  color: white;
-}
-@media only screen and (max-width: 768px) {
+    padding-right: 5px;
+    margin-bottom: 5px; }
+    .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li a {
+      /*font-size:16px;*/ }
+  .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li:last-child {
+    padding-right: 0px; }
   .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main {
-    width: 100%;
-  }
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li {
-  padding-right: 5px;
-  margin-bottom: 5px;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li a {
-  /*font-size:16px;*/
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li:last-child {
-  padding-right: 0px;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main {
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-charcoal.png") center center repeat;
-  padding: 80px 40px;
-  font: normal 20px "robotolight", sans-serif;
-}
-@media only screen and (max-width: 768px) {
-  .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main {
-    padding: 20px 10px;
-  }
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first {
-  text-align: left;
-  padding-right: 100px;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a {
-  margin-top: 30px;
-  border: 2px solid white;
-  background: transparent;
-  padding: 16px 35px 16px;
-  display: inline-block;
-  border-radius: 100px;
-  color: white;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: "montserratregular", sans-serif;
-  line-height: 14px;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a:after {
-  background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
-  display: inline-block;
-  width: 9px;
-  height: 15px;
-  content: '';
-  margin: 0 0 -2px 10px;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a:hover {
-  text-decoration: none;
-  background: transparent;
-  border: 2px solid #1d252c;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a:hover {
-  border-color: white;
-}
-@media only screen and (max-width: 768px) {
-  .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first {
-    padding-right: 0px;
-    width: 100%;
-    text-align: center;
-  }
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last {
-  text-align: left;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last h3 {
-  font: normal 20px "montserratbold", sans-serif;
-  font-family: "montserratregular", sans-serif;
-  margin: 0px;
-  background: white;
-  padding: 20px 0px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list {
-  padding: 0px;
-  margin: 0px;
-  color: #1d252c;
-  list-style: none;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li {
-  background: #fff;
-  border: 0px;
-  padding: 14px;
-  font: normal 16px "robotoregular", sans-serif;
-  margin-top: 2px;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.patents {
-  border-left: 10px solid #30aeb6;
-  border-left: 5px solid #30aeb6;
-  padding-left: 90px;
-  background: #fff url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.trade-marks {
-  border-left: 10px solid #de4326;
-  border-left: 5px solid #de4326;
-  padding-left: 90px;
-  background: #fff url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.designs {
-  border-left: 10px solid #84c98f;
-  border-left: 5px solid #84c98f;
-  padding-left: 90px;
-  background: #fff url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.pbr {
-  border-left: 10px solid #f1ac1e;
-  border-left: 5px solid #f1ac1e;
-  padding-left: 90px;
-  background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat;
-}
-.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.copyright {
-  border-left: 10px solid #704579;
-  border-left: 5px solid #704579;
-  padding-left: 90px;
-  background: #fff url("/sites/all/themes/ipaustralia/images/block-copyright.png") left center no-repeat;
-}
-@media only screen and (max-width: 768px) {
-  .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last {
-    display: none;
-  }
-}
+    background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-charcoal.png") center center repeat;
+    padding: 80px 40px;
+    font: normal 20px "robotolight", sans-serif; }
+    @media only screen and (max-width: 768px) {
+      .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main {
+        padding: 20px 10px; } }
+    .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first {
+      text-align: left;
+      padding-right: 100px; }
+      .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a {
+        margin-top: 30px;
+        border: 2px solid white;
+        background: transparent;
+        padding: 16px 35px 16px;
+        display: inline-block;
+        border-radius: 100px;
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: "montserratregular", sans-serif;
+        line-height: 14px; }
+        .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a:after {
+          background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+          display: inline-block;
+          width: 9px;
+          height: 15px;
+          content: '';
+          margin: 0 0 -2px 10px; }
+        .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a:hover {
+          text-decoration: none;
+          background: transparent;
+          border: 2px solid #1d252c; }
+        .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a:hover {
+          border-color: white; }
+      @media only screen and (max-width: 768px) {
+        .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first {
+          padding-right: 0px;
+          width: 100%;
+          text-align: center; } }
+    .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last {
+      text-align: left; }
+      .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last h3 {
+        font: normal 20px "montserratbold", sans-serif;
+        font-family: "montserratregular", sans-serif;
+        margin: 0px;
+        background: white;
+        padding: 20px 0px;
+        text-align: center;
+        text-transform: uppercase; }
+      .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list {
+        padding: 0px;
+        margin: 0px;
+        color: #1d252c;
+        list-style: none; }
+        .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li {
+          background: #fff;
+          border: 0px;
+          padding: 14px;
+          font: normal 16px "robotoregular", sans-serif;
+          margin-top: 2px; }
+          .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.patents {
+            border-left: 10px solid #30aeb6;
+            border-left: 5px solid #30aeb6;
+            padding-left: 90px;
+            background: #fff url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat; }
+          .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.trade-marks {
+            border-left: 10px solid #de4326;
+            border-left: 5px solid #de4326;
+            padding-left: 90px;
+            background: #fff url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat; }
+          .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.designs {
+            border-left: 10px solid #84c98f;
+            border-left: 5px solid #84c98f;
+            padding-left: 90px;
+            background: #fff url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat; }
+          .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.pbr {
+            border-left: 10px solid #f1ac1e;
+            border-left: 5px solid #f1ac1e;
+            padding-left: 90px;
+            background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat; }
+          .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.copyright {
+            border-left: 10px solid #704579;
+            border-left: 5px solid #704579;
+            padding-left: 90px;
+            background: #fff url("/sites/all/themes/ipaustralia/images/block-copyright.png") left center no-repeat; }
+      @media only screen and (max-width: 768px) {
+        .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last {
+          display: none; } }
 .front #block-bean-need-help-choosing-the-right-ip {
   padding: 80px 10px;
   text-align: center;
@@ -289,535 +227,430 @@ body {
   background-color: #612166;
   font: normal 20px "robotolight", sans-serif;
   border-top: 2px solid white;
-  border-bottom: 2px solid white;
-}
-@media only screen and (max-width: 768px) {
-  .front #block-bean-need-help-choosing-the-right-ip {
-    padding: 10px 0px 40px;
-  }
-}
-.front #block-bean-need-help-choosing-the-right-ip h2 {
-  color: white;
-}
-.front #block-bean-need-help-choosing-the-right-ip .bean-basic-content {
-  max-width: 60%;
-  margin: 0 auto;
-}
-@media only screen and (max-width: 768px) {
+  border-bottom: 2px solid white; }
+  @media only screen and (max-width: 768px) {
+    .front #block-bean-need-help-choosing-the-right-ip {
+      padding: 10px 0px 40px; } }
+  .front #block-bean-need-help-choosing-the-right-ip h2 {
+    color: white; }
   .front #block-bean-need-help-choosing-the-right-ip .bean-basic-content {
-    max-width: 90%;
-  }
-}
-.front #block-bean-need-help-choosing-the-right-ip .field-items a {
-  border: 2px solid white;
-  background: transparent;
-  padding: 16px 35px 16px;
-  display: inline-block;
-  border-radius: 100px;
-  color: white;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: "montserratregular", sans-serif;
-  line-height: 14px;
-  margin-top: 40px;
-}
-.front #block-bean-need-help-choosing-the-right-ip .field-items a:after {
-  background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
-  display: inline-block;
-  width: 9px;
-  height: 15px;
-  content: '';
-  margin: 0 0 -2px 10px;
-}
-.front #block-bean-need-help-choosing-the-right-ip .field-items a:hover {
-  text-decoration: none;
-  background: transparent;
-  border: 2px solid #1d252c;
-}
-.front #block-bean-need-help-choosing-the-right-ip .field-items a:hover {
-  border-color: white;
-}
+    max-width: 60%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 768px) {
+      .front #block-bean-need-help-choosing-the-right-ip .bean-basic-content {
+        max-width: 90%; } }
+  .front #block-bean-need-help-choosing-the-right-ip .field-items a {
+    border: 2px solid white;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 14px;
+    margin-top: 40px; }
+    .front #block-bean-need-help-choosing-the-right-ip .field-items a:after {
+      background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    .front #block-bean-need-help-choosing-the-right-ip .field-items a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #1d252c; }
+    .front #block-bean-need-help-choosing-the-right-ip .field-items a:hover {
+      border-color: white; }
 .front #block-bean-tools-and-resources-generic-bloc {
   padding: 80px 10px;
   background: #1d252c;
   color: white;
   text-align: center;
   background: #1d252c url("/sites/all/themes/ipaustralia/images/tablet_v2.jpg") center center no-repeat;
-  background-size: 120% auto;
-}
-@media only screen and (max-width: 768px) {
-  .front #block-bean-tools-and-resources-generic-bloc {
-    background-size: auto 100%;
-  }
-}
-.front #block-bean-tools-and-resources-generic-bloc h2 {
-  margin: 0px 0px 20px 0px;
-  color: white;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
-  width: 25%;
-}
-@media only screen and (max-width: 768px) {
+  background-size: 120% auto; }
+  @media only screen and (max-width: 768px) {
+    .front #block-bean-tools-and-resources-generic-bloc {
+      background-size: auto 100%; } }
+  .front #block-bean-tools-and-resources-generic-bloc h2 {
+    margin: 0px 0px 20px 0px;
+    color: white; }
   .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
-    width: 50%;
-  }
-  .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region:nth-child(3) {
-    clear: both;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
-    width: 100%;
-  }
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
-  background: white none repeat scroll 0 0;
-  margin-right: 20px;
-  min-height: 607px;
-  padding: 0;
-}
-@media only screen and (max-width: 768px) {
-  .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
-    margin-bottom: 20px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
-    margin-right: 0px;
-  }
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .panel-image {
-  margin-top: 40px;
-}
-@media only screen and (max-width: 768px) {
-  .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .panel-image {
-    margin: 13px;
-    float: left;
-    width: 45px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+    width: 25%; }
+    @media only screen and (max-width: 768px) {
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+        width: 50%; }
+        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region:nth-child(3) {
+          clear: both; } }
+    @media only screen and (max-width: 480px) {
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+        width: 100%; } }
+    .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+      background: white none repeat scroll 0 0;
+      margin-right: 20px;
+      min-height: 607px;
+      padding: 0; }
+      @media only screen and (max-width: 768px) {
+        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+          margin-bottom: 20px; } }
+      @media only screen and (max-width: 480px) {
+        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+          margin-right: 0px; } }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .panel-image {
+        margin-top: 40px; }
+        @media only screen and (max-width: 768px) {
+          .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .panel-image {
+            margin: 13px;
+            float: left;
+            width: 45px; } }
+      @media only screen and (max-width: 768px) {
+        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+          margin: 0px;
+          line-height: 77px;
+          text-align: left; } }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+        list-style: none; }
+        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li {
+          text-align: left; }
+  .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region {
+    width: 100%; }
+    .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+      background: transparent;
+      font: normal 20px "robotolight", sans-serif;
+      padding-bottom: 40px;
+      min-height: 10px; }
+  .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region {
+    width: 100%; }
+    .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside {
+      background: transparent;
+      font: normal 20px "robotolight", sans-serif;
+      min-height: 10px; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
+        margin-top: 40px;
+        border: 2px solid white;
+        background: transparent;
+        padding: 16px 35px 16px;
+        display: inline-block;
+        border-radius: 100px;
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: "montserratregular", sans-serif;
+        line-height: 14px;
+        border-color: white;
+        cursor: pointer; }
+        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p:after, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
+          background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+          display: inline-block;
+          width: 9px;
+          height: 15px;
+          content: '';
+          margin: 0 0 -2px 10px; }
+        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p:hover, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
+          text-decoration: none;
+          background: transparent;
+          border: 2px solid #1d252c; }
+        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p :hover, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
+          border-color: white; }
+  .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list {
+    padding: 0px;
     margin: 0px;
-    line-height: 77px;
-    text-align: left;
-  }
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
-  list-style: none;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li {
-  text-align: left;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region {
-  width: 100%;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
-  background: transparent;
-  font: normal 20px "robotolight", sans-serif;
-  padding-bottom: 40px;
-  min-height: 10px;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region {
-  width: 100%;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside {
-  background: transparent;
-  font: normal 20px "robotolight", sans-serif;
-  min-height: 10px;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
-  margin-top: 40px;
-  border: 2px solid white;
-  background: transparent;
-  padding: 16px 35px 16px;
-  display: inline-block;
-  border-radius: 100px;
-  color: white;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: "montserratregular", sans-serif;
-  line-height: 14px;
-  border-color: white;
-  cursor: pointer;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p:after, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
-  background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
-  display: inline-block;
-  width: 9px;
-  height: 15px;
-  content: '';
-  margin: 0 0 -2px 10px;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p:hover, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
-  text-decoration: none;
-  background: transparent;
-  border: 2px solid #1d252c;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p :hover, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
-  border-color: white;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list {
-  padding: 0px;
-  margin: 0px;
-  color: #1d252c;
-  list-style: none;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li {
-  background: #fff;
-  border: 0px;
-  padding: 14px;
-  font: normal 16px "robotoregular", sans-serif;
-  margin-top: 2px;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.patents {
-  border-left: 10px solid #30aeb6;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.trade-marks {
-  border-left: 10px solid #de4326;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.designs {
-  border-left: 10px solid #84c98f;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.pbr {
-  border-left: 10px solid #f1ac1e;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li {
-  margin-top: 18px;
-  padding: 0 30px 0 50px;
-  margin-bottom: 18px;
-  font-size: 16px;
-  background: transparent url("/sites/all/themes/ipaustralia/images/link-tool.png") 17px top no-repeat;
-  line-height: 22px;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list {
-  padding: 0px;
-  margin: 0px;
-  color: #1d252c;
-  list-style: none;
-  background: #1d252c;
-  padding-top: 2px;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li {
-  background: #fff;
-  border: 0px;
-  padding: 14px;
-  font: normal 16px "robotoregular", sans-serif;
-  margin-top: 2px;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.patents {
-  border-left: 10px solid #30aeb6;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.trade-marks {
-  border-left: 10px solid #de4326;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.designs {
-  border-left: 10px solid #84c98f;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.pbr {
-  border-left: 10px solid #f1ac1e;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li {
-  margin-top: 2px;
-  border-top: 0px;
-  margin-bottom: 0px;
-  padding: 18px 14px;
-  font: normal 16px "robotoregular", sans-serif;
-  line-height: 22px;
-}
-.front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.patents {
-  margin-top: 0px;
-}
+    color: #1d252c;
+    list-style: none; }
+    .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li {
+      background: #fff;
+      border: 0px;
+      padding: 14px;
+      font: normal 16px "robotoregular", sans-serif;
+      margin-top: 2px; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.patents {
+        border-left: 10px solid #30aeb6; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.trade-marks {
+        border-left: 10px solid #de4326; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.designs {
+        border-left: 10px solid #84c98f; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.pbr {
+        border-left: 10px solid #f1ac1e; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.copyright {
+        border-left: 10px solid #704579; }
+    .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li {
+      margin-top: 18px;
+      padding: 0 30px 0 50px;
+      margin-bottom: 18px;
+      font-size: 16px;
+      background: transparent url("/sites/all/themes/ipaustralia/images/link-tool.png") 17px top no-repeat;
+      line-height: 22px; }
+  .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list {
+    padding: 0px;
+    margin: 0px;
+    color: #1d252c;
+    list-style: none;
+    background: #1d252c;
+    padding-top: 2px; }
+    .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li {
+      background: #fff;
+      border: 0px;
+      padding: 14px;
+      font: normal 16px "robotoregular", sans-serif;
+      margin-top: 2px; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.patents {
+        border-left: 10px solid #30aeb6; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.trade-marks {
+        border-left: 10px solid #de4326; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.designs {
+        border-left: 10px solid #84c98f; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.pbr {
+        border-left: 10px solid #f1ac1e; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.copyright {
+        border-left: 10px solid #704579; }
+    .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li {
+      margin-top: 2px;
+      border-top: 0px;
+      margin-bottom: 0px;
+      padding: 18px 14px;
+      font: normal 16px "robotoregular", sans-serif;
+      line-height: 22px; }
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.patents {
+        margin-top: 0px; }
 .front #block-panels-mini-news-and-community-homepage-pane {
   padding: 80px 10px;
-  text-align: center;
-}
-.front #block-panels-mini-news-and-community-homepage-pane h2 {
-  color: #1d252c;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs {
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li {
-  width: 32.9%;
-  text-align: center;
-  float: left;
-  padding: 0px;
-  display: inline-block;
-}
-@media only screen and (max-width: 768px) {
-  .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li {
+  text-align: center; }
+  .front #block-panels-mini-news-and-community-homepage-pane h2 {
+    color: #1d252c; }
+  .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs {
     width: 100%;
-  }
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li a {
-  background: #fff;
-  padding: 27px 0px;
-  color: #1d252c;
-  width: 100%;
-  display: inline-block;
-  font: normal 20px "montserratbold", sans-serif;
-  font-family: "montserratregular", sans-serif;
-  text-transform: uppercase;
-  border: 1px solid #1d252c;
-  line-height: 14px;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li a:hover {
-  text-decoration: none;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active a {
-  background: #1d252c;
-  color: #fff;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main {
-  clear: both;
-  background: #fff;
-  width: 98.7%;
-  color: white;
-}
-@media only screen and (max-width: 768px) {
+    padding: 0px;
+    margin: 0px; }
+    .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li {
+      width: 32.9%;
+      text-align: center;
+      float: left;
+      padding: 0px;
+      display: inline-block; }
+      @media only screen and (max-width: 768px) {
+        .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li {
+          width: 100%; } }
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li a {
+        background: #fff;
+        padding: 27px 0px;
+        color: #1d252c;
+        width: 100%;
+        display: inline-block;
+        font: normal 20px "montserratbold", sans-serif;
+        font-family: "montserratregular", sans-serif;
+        text-transform: uppercase;
+        border: 1px solid #1d252c;
+        line-height: 14px; }
+        .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li a:hover {
+          text-decoration: none; }
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active a {
+        background: #1d252c;
+        color: #fff; }
   .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main {
-    width: 100%;
-  }
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li {
-  padding-bottom: 19px;
-  margin-bottom: 14px;
-  margin-right: -1px;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active {
-  background: transparent url("/sites/all/themes/ipaustralia/images/dwn-arrow-charcoal.png") center bottom no-repeat;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active a {
-  background: white;
-  color: #1d252c;
-  border-bottom: 7px solid #1d252c;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main {
-  color: #1d252c;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td {
-  position: relative;
-  vertical-align: top;
-  width: 33%;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="image"] {
-  position: relative;
-  z-index: 10;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="image"] img {
-  display: inline-block;
-  height: 380px;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="date"] {
-  text-align: left;
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
-  padding: 0px 20px;
-  margin: 0 auto;
-  color: white;
-  width: 380px;
-  display: block;
-  position: relative;
-  z-index: 100;
-  padding-top: 23px;
-  height: 44px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin-top: -115px;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="date"] span[class*="label "] {
-  float: left;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="title"], .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="location"] {
-  text-align: left;
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
-  padding: 0px 20px;
-  margin: 0 auto;
-  color: white;
-  width: 380px;
-  display: block;
-  position: relative;
-  z-index: 100;
-  clear: both;
-  font: normal 20px "montserratbold", sans-serif;
-  font-family: "montserratregular", sans-serif;
-  height: 70px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 6px 20px;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="title"] a, .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="location"] a {
-  color: white;
-  text-decoration: underline;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="location"] {
-  text-align: left;
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
-  padding: 0px 20px;
-  margin: 0 auto;
-  color: white;
-  width: 380px;
-  display: block;
-  position: relative;
-  z-index: 100;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="body"] {
-  text-align: left;
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
-  padding: 0px 20px;
-  margin: 0 auto;
-  color: white;
-  width: 380px;
-  display: block;
-  position: relative;
-  z-index: 100;
-  height: 265px;
-  overflow: hidden;
-  display: none;
-  text-overflow: ellipsis;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td:hover div[class*="date"] {
-  margin-top: -380px;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td:hover div[class*="body"] {
-  display: block;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region {
-  width: 100%;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region .inside {
-  font: normal 20px "robotolight", sans-serif;
-  padding: 10px 0 30px 0;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region {
-  width: 100%;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a {
-  margin-top: 40px;
-  border: 2px solid white;
-  background: #1d252c;
-  padding: 16px 35px 16px;
-  display: inline-block;
-  border-radius: 100px;
-  color: white;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: "montserratregular", sans-serif;
-  line-height: 14px;
-  border-color: #1d252c;
-  margin-right: 27px;
-  cursor: pointer;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p:after, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a:after {
-  background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
-  display: inline-block;
-  width: 9px;
-  height: 15px;
-  content: '';
-  margin: 0 0 -2px 10px;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p:hover, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
-  text-decoration: none;
-  background: #1d252c;
-  border: 2px solid #1d252c;
-}
-.front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p :hover, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
-  border-color: white;
-}
+    clear: both;
+    background: #fff;
+    width: 98.7%;
+    color: white; }
+    @media only screen and (max-width: 768px) {
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main {
+        width: 100%; } }
+  .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li {
+    padding-bottom: 19px;
+    margin-bottom: 14px;
+    margin-right: -1px; }
+    .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active {
+      background: transparent url("/sites/all/themes/ipaustralia/images/dwn-arrow-charcoal.png") center bottom no-repeat; }
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active a {
+        background: white;
+        color: #1d252c;
+        border-bottom: 7px solid #1d252c; }
+  .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main {
+    color: #1d252c; }
+    .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td {
+      position: relative;
+      vertical-align: top;
+      width: 33%; }
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="image"] {
+        position: relative;
+        z-index: 10; }
+        .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="image"] img {
+          display: inline-block;
+          height: 380px; }
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="date"] {
+        text-align: left;
+        background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+        padding: 0px 20px;
+        margin: 0 auto;
+        color: white;
+        width: 380px;
+        display: block;
+        position: relative;
+        z-index: 100;
+        padding-top: 23px;
+        height: 44px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-top: -115px; }
+        .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="date"] span[class*="label "] {
+          float: left; }
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="title"], .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="location"] {
+        text-align: left;
+        background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+        padding: 0px 20px;
+        margin: 0 auto;
+        color: white;
+        width: 380px;
+        display: block;
+        position: relative;
+        z-index: 100;
+        clear: both;
+        font: normal 20px "montserratbold", sans-serif;
+        font-family: "montserratregular", sans-serif;
+        height: 70px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 6px 20px; }
+        .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="title"] a, .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="location"] a {
+          color: white;
+          text-decoration: underline; }
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="location"] {
+        text-align: left;
+        background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+        padding: 0px 20px;
+        margin: 0 auto;
+        color: white;
+        width: 380px;
+        display: block;
+        position: relative;
+        z-index: 100; }
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="body"] {
+        text-align: left;
+        background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+        padding: 0px 20px;
+        margin: 0 auto;
+        color: white;
+        width: 380px;
+        display: block;
+        position: relative;
+        z-index: 100;
+        height: 265px;
+        overflow: hidden;
+        display: none;
+        text-overflow: ellipsis; }
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td:hover div[class*="date"] {
+        margin-top: -380px; }
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td:hover div[class*="body"] {
+        display: block; }
+  .front #block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region {
+    width: 100%; }
+    .front #block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+      font: normal 20px "robotolight", sans-serif;
+      padding: 10px 0 30px 0; }
+  .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region {
+    width: 100%; }
+    .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a {
+      margin-top: 40px;
+      border: 2px solid white;
+      background: #1d252c;
+      padding: 16px 35px 16px;
+      display: inline-block;
+      border-radius: 100px;
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: "montserratregular", sans-serif;
+      line-height: 14px;
+      border-color: #1d252c;
+      margin-right: 27px;
+      cursor: pointer; }
+      .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p:after, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a:after {
+        background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+        display: inline-block;
+        width: 9px;
+        height: 15px;
+        content: '';
+        margin: 0 0 -2px 10px; }
+      .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p:hover, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
+        text-decoration: none;
+        background: #1d252c;
+        border: 2px solid #1d252c; }
+      .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p :hover, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
+        border-color: white; }
 .front #block-panels-mini-consultations-and-twitter-feed-2 {
   padding: 80px 10px;
-  background: #eff0f2;
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel {
-  width: 50%;
-}
-@media only screen and (max-width: 768px) {
+  background: #eff0f2; }
   .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel {
-    width: 100%;
-  }
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside {
-  border-left: 10px solid #1d252c;
-  margin-right: 20px;
-  background: white;
-  padding: 40px 30px;
-  min-height: 300px;
-  position: relative;
-  margin-left: 0px;
-}
-@media only screen and (max-width: 768px) {
-  .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside {
-    margin-right: 0px;
-  }
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-title, .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside h3 {
-  font: normal 24px "montserratbold", sans-serif;
-  font-family: "montserratregular", sans-serif;
-  margin: 0px;
-  margin-bottom: 35px;
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside a {
-  background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-golden-transparent.png") right center no-repeat;
-  padding-right: 20px;
-  text-decoration: underline;
-  margin-top: 35px;
-  display: inline-block;
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-govcms-social-links-services .pane-content {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 20px;
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-govcms-social-links-services .pane-content a {
-  background: none;
-  padding: 0 0 0 10px;
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 {
-  position: absolute;
-  top: 0;
-  right: 20px;
-}
-@media only screen and (max-width: 480px) {
-  .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 {
-    top: 44px;
-    right: 0px;
-    left: -15px;
-  }
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul {
-  list-style: none;
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li {
-  float: left;
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a {
-  background: none;
-  text-indent: -9999px;
-  padding: 0px;
-  width: 36px;
-  height: 36px;
-  margin: 28px 0 0 12px;
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(1) a {
-  background: black;
-  background: transparent url("/sites/all/themes/ipaustralia/images/sm-facebook.png") center center no-repeat;
-  border-radius: 100px;
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(2) a {
-  background: black;
-  background: transparent url("/sites/all/themes/ipaustralia/images/sm-twitter.png") center center no-repeat;
-  border-radius: 100px;
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(3) a {
-  background: black;
-  background: transparent url("/sites/all/themes/ipaustralia/images/sm-linkedin.png") center center no-repeat;
-  border-radius: 100px;
-}
-.front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(4) a {
-  background: black;
-  background: transparent url("/sites/all/themes/ipaustralia/images/sm-youtube.png") center center no-repeat;
-  border-radius: 100px;
-}
+    width: 50%; }
+    @media only screen and (max-width: 768px) {
+      .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel {
+        width: 100%; } }
+    .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside {
+      border-left: 10px solid #1d252c;
+      margin-right: 20px;
+      background: white;
+      padding: 40px 30px;
+      min-height: 300px;
+      position: relative;
+      margin-left: 0px; }
+      @media only screen and (max-width: 768px) {
+        .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside {
+          margin-right: 0px; } }
+      .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-title, .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside h3 {
+        font: normal 24px "montserratbold", sans-serif;
+        font-family: "montserratregular", sans-serif;
+        margin: 0px;
+        margin-bottom: 35px; }
+      .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside a {
+        background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-golden-transparent.png") right center no-repeat;
+        padding-right: 20px;
+        text-decoration: underline;
+        margin-top: 35px;
+        display: inline-block; }
+      .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-govcms-social-links-services .pane-content {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 20px; }
+        .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-govcms-social-links-services .pane-content a {
+          background: none;
+          padding: 0 0 0 10px; }
+      .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 {
+        position: absolute;
+        top: 0;
+        right: 20px; }
+        @media only screen and (max-width: 480px) {
+          .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 {
+            top: 44px;
+            right: 0px;
+            left: -15px; } }
+        .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul {
+          list-style: none; }
+          .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li {
+            float: left; }
+            .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a {
+              background: none;
+              text-indent: -9999px;
+              padding: 0px;
+              width: 36px;
+              height: 36px;
+              margin: 28px 0 0 12px; }
+            .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(1) a {
+              background: black;
+              background: transparent url("/sites/all/themes/ipaustralia/images/sm-facebook.png") center center no-repeat;
+              border-radius: 100px; }
+            .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(2) a {
+              background: black;
+              background: transparent url("/sites/all/themes/ipaustralia/images/sm-twitter.png") center center no-repeat;
+              border-radius: 100px; }
+            .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(3) a {
+              background: black;
+              background: transparent url("/sites/all/themes/ipaustralia/images/sm-linkedin.png") center center no-repeat;
+              border-radius: 100px; }
+            .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(4) a {
+              background: black;
+              background: transparent url("/sites/all/themes/ipaustralia/images/sm-youtube.png") center center no-repeat;
+              border-radius: 100px; }
+
+/*# sourceMappingURL=frontpage.css.map */

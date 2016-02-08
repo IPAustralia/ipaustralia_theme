@@ -1,0 +1,20 @@
+#i-want-to p.heading span.purple .cufon-vml {margin: -40px 0 !important;} 
+#i-want-to p.heading .cufon-vml  {margin: -50px 0 !important;} 
+
+#content-wrapper-home .dark-bg, #content-wrapper-home .ie7 {padding-bottom: 30px;}
+
+.home-box ul {padding-bottom: 11px;}
+
+#nav li span.small {margin-right: 7px;}
+
+#header-wrapper {padding-bottom: 7px;}
+
+#header-nav {width: 690px;}
+
+/* fixes drop downs z-index */
+#header {z-index: 200; position: relative;}
+
+#page-header .button span {height:26px;line-height:26px;padding:0px 10px 4px 10px;}
+
+#feature-nav a {width: 15px; padding-left: 2px;}
+#feature-nav a.on, #feature-nav a:hover {width: 14px; padding-left: 3px;}

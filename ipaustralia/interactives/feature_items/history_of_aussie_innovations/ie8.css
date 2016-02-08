@@ -1,0 +1,8 @@
+.cufon-active #page-header .button span {padding-top:7px;}
+.cufon-active #page-header .button span>.cufon {position: relative;top:-0.5em;}
+
+#right-column .box h3, .box-purple h3 {position: relative;padding: 10px 9px 2px 15px;}
+#right-column .box h3 .cufon, .box-purple h3 .cufon {position: relative; top: -0.3em;}
+
+#feature-nav a {width: 11px; padding-left: 6px;}
+#feature-nav a.on, #feature-nav a:hover {width: 10px; padding-left: 7px;}

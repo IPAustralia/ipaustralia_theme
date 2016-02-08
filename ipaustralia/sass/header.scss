@@ -1,0 +1,170 @@
+@import "_variables.scss";
+
+@import "_cleanup.scss";
+@import "_generic.scss";
+@import "_mixins.scss";
+
+header{
+    .logo {
+        margin: 0px;
+        padding:0px;
+        @media only screen and (max-width: $break-point-medium) {
+            width:60%;
+        }
+        img {
+            margin-top: 40px;
+            width: 84%;
+            @media only screen and (max-width: $break-point-medium) {
+                width: 100%;
+                margin-top: 15px;
+                margin-bottom:10px;
+            }
+        }
+    }
+    .header {
+        padding: 0 0 $gap-small 0px;
+        @media only screen and (max-width: $break-point-medium) {
+            padding-bottom:10px;
+            border-bottom:2px solid $charcoal;
+        }
+        .header-right {
+            padding-right: 0px;
+            section{
+                float: right;
+                margin-top: 20px;
+                margin-left:20px;
+                ul {
+                    list-style: none;
+                    margin: 0px;
+                    padding: 0px;
+                    li {
+                        float: left;
+                        a {
+                            display: block;
+                            color: $charcoal;
+                            line-height: 10px;
+                        }
+                    }
+                }
+                @media only screen and (max-width: $break-point-medium) {
+                    display:none;
+                }
+            }
+            a {
+                color: $charcoal;
+            }
+            .block-govcms-text-resize {
+                width:66px;
+                ul {
+                    list-style: none;
+                    margin: 0px;
+                    padding: 0px;
+                    li {
+                        float: left;
+                        a {
+                            display: block;
+                            text-indent: -9999px;
+                            background:#efefef;
+                            margin-left:3px;
+                            height:19px;
+                            @include background-image('font-size-sprite.png', left, bottom);
+                            &.font-small {
+                                width: 11px;
+                                background-position: 0px 0px;;
+                            }
+                            &.font-large {
+                                width: 14px;
+                                background-position: -23px 0px;
+                            }
+                            &.reset {
+                                width: 32px;
+                                background-position: -50px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+            .block-search-api-page {
+                background: $off-white none repeat scroll 0 0;
+                clear: both;
+                padding: 0;
+                width: 360px;
+                input.form-text {
+                    background: transparent none repeat scroll 0 0;
+                    border: 0 none;
+                    box-shadow: none;
+                    float: left;
+                    height: auto;
+                    padding: 13px 20px 15px;
+                    width: 260px;
+                    @include placeholder-color($charcoal);
+                }
+                .form-group {
+                    margin:0px;
+                }
+                .form-submit {
+                    @include background-image('link-search-26px.png');
+                    border: medium none;
+                    float: right;
+                    height: 48px;
+                    margin-right: 11px;
+                    padding: 0;
+                    text-indent: -9999px;
+                    width: 33px;
+                    &:active{
+                        box-shadow: none;
+                    }
+                }
+            }
+            .block-menu {
+                li {
+                    padding: 10px 10px 10px 0px
+                }
+                a {
+                    /*font-weight: 600;*/
+                    font-size: 14px;
+                    padding: 0px 10px 0 0;
+                    border-right: 1px solid $charcoal;
+                    &:hover {
+                        background: transparent;
+                        text-decoration: underline;
+                    }
+                    &:focus {
+                        background: transparent;
+                    }
+                }
+                .last {
+                    padding-right: 0px;
+                    a {
+                        padding-right: 0px;
+                        border:none;
+                    }
+                }
+            }
+            .block-bean {
+                .bean-link {
+                    .field-label {
+                        display: none;
+                    }
+                    .field-item {
+                        border: 1px solid $grey;  
+                        @include background-image('icon-online-services.png', 19px);
+                        a {
+                            display: block;
+                            font-family: $font-title-bold;
+                            font-size: 14px;
+                            line-height: 17px;
+                            padding: 14px 35px 14px 60px;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            @include background-image('arrow-right-online-services.png', right)
+                        }  
+                    }
+
+                }
+            }
+        }
+
+    }
+    
+}
