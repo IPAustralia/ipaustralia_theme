@@ -33,7 +33,7 @@ body {
   border: none;
   margin: 20px 0px; }
   .messages .alert-block.error {
-    background: #ffe8ee url("/sites/all/themes/ipaustralia/images/warning.png") 10px center no-repeat;
+    background: #ffe8ee url("../images/warning.png") 10px center no-repeat;
     padding-left: 60px;
     color: #ed0129;
     font-weight: bold; }
@@ -53,27 +53,27 @@ body {
       border-left: 10px solid #30aeb6;
       border-left: 5px solid #30aeb6;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat; }
+      background: #fff url("../images/block-patent.png") left center no-repeat; }
     .resource-list-block li.trade-marks {
       border-left: 10px solid #de4326;
       border-left: 5px solid #de4326;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat; }
+      background: #fff url("../images/block-tm.png") left center no-repeat; }
     .resource-list-block li.designs {
       border-left: 10px solid #84c98f;
       border-left: 5px solid #84c98f;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat; }
+      background: #fff url("../images/block-design.png") left center no-repeat; }
     .resource-list-block li.pbr {
       border-left: 10px solid #f1ac1e;
       border-left: 5px solid #f1ac1e;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat; }
+      background: #fff url("../images/block-pbr.png") left center no-repeat; }
     .resource-list-block li.copyright {
       border-left: 10px solid #704579;
       border-left: 5px solid #704579;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-copyright.png") left center no-repeat; }
+      background: #fff url("../images/block-copyright.png") left center no-repeat; }
 
 .front h2 {
   font-family: "montserratregular", sans-serif; }
@@ -81,7 +81,7 @@ body {
   padding: 80px 10px;
   background: #eff0f2;
   text-align: center;
-  background: #1d252c url("/sites/all/themes/ipaustralia/images/women-with-tablet-merged.jpg") center top no-repeat;
+  background: #1d252c url("../images/women-with-tablet-merged.jpg") center top no-repeat;
   background-size: 100% auto; }
   @media only screen and (max-width: 768px) {
     .front #block-quicktabs-homepage-main-tab {
@@ -132,7 +132,7 @@ body {
   .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li:last-child {
     padding-right: 0px; }
   .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main {
-    background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-charcoal.png") center center repeat;
+    background: transparent url("../images/transparent-pixel-charcoal.png") center center repeat;
     padding: 80px 40px;
     font: normal 20px "robotolight", sans-serif; }
     @media only screen and (max-width: 768px) {
@@ -154,7 +154,7 @@ body {
         font-family: "montserratregular", sans-serif;
         line-height: 14px; }
         .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a:after {
-          background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+          background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
           display: inline-block;
           width: 9px;
           height: 15px;
@@ -196,27 +196,27 @@ body {
             border-left: 10px solid #30aeb6;
             border-left: 5px solid #30aeb6;
             padding-left: 90px;
-            background: #fff url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat; }
+            background: #fff url("../images/block-patent.png") left center no-repeat; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.trade-marks {
             border-left: 10px solid #de4326;
             border-left: 5px solid #de4326;
             padding-left: 90px;
-            background: #fff url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat; }
+            background: #fff url("../images/block-tm.png") left center no-repeat; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.designs {
             border-left: 10px solid #84c98f;
             border-left: 5px solid #84c98f;
             padding-left: 90px;
-            background: #fff url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat; }
+            background: #fff url("../images/block-design.png") left center no-repeat; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.pbr {
             border-left: 10px solid #f1ac1e;
             border-left: 5px solid #f1ac1e;
             padding-left: 90px;
-            background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat; }
+            background: #fff url("../images/block-pbr.png") left center no-repeat; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.copyright {
             border-left: 10px solid #704579;
             border-left: 5px solid #704579;
             padding-left: 90px;
-            background: #fff url("/sites/all/themes/ipaustralia/images/block-copyright.png") left center no-repeat; }
+            background: #fff url("../images/block-copyright.png") left center no-repeat; }
       @media only screen and (max-width: 768px) {
         .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last {
           display: none; } }
@@ -252,7 +252,7 @@ body {
     line-height: 14px;
     margin-top: 40px; }
     .front #block-bean-need-help-choosing-the-right-ip .field-items a:after {
-      background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
@@ -269,7 +269,7 @@ body {
   background: #1d252c;
   color: white;
   text-align: center;
-  background: #1d252c url("/sites/all/themes/ipaustralia/images/tablet_v2.jpg") center center no-repeat;
+  background: #1d252c url("../images/tablet_v2.jpg") center center no-repeat;
   background-size: 120% auto; }
   @media only screen and (max-width: 768px) {
     .front #block-bean-tools-and-resources-generic-bloc {
@@ -342,7 +342,7 @@ body {
         border-color: white;
         cursor: pointer; }
         .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p:after, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
-          background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+          background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
           display: inline-block;
           width: 9px;
           height: 15px;
@@ -380,7 +380,7 @@ body {
       padding: 0 30px 0 50px;
       margin-bottom: 18px;
       font-size: 16px;
-      background: transparent url("/sites/all/themes/ipaustralia/images/link-tool.png") 17px top no-repeat;
+      background: transparent url("../images/link-tool.png") 17px top no-repeat;
       line-height: 22px; }
   .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list {
     padding: 0px;
@@ -461,7 +461,7 @@ body {
     margin-bottom: 14px;
     margin-right: -1px; }
     .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active {
-      background: transparent url("/sites/all/themes/ipaustralia/images/dwn-arrow-charcoal.png") center bottom no-repeat; }
+      background: transparent url("../images/dwn-arrow-charcoal.png") center bottom no-repeat; }
       .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active a {
         background: white;
         color: #1d252c;
@@ -480,7 +480,7 @@ body {
           height: 380px; }
       .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="date"] {
         text-align: left;
-        background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+        background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
         padding: 0px 20px;
         margin: 0 auto;
         color: white;
@@ -497,7 +497,7 @@ body {
           float: left; }
       .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="title"], .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="location"] {
         text-align: left;
-        background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+        background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
         padding: 0px 20px;
         margin: 0 auto;
         color: white;
@@ -517,7 +517,7 @@ body {
           text-decoration: underline; }
       .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="location"] {
         text-align: left;
-        background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+        background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
         padding: 0px 20px;
         margin: 0 auto;
         color: white;
@@ -527,7 +527,7 @@ body {
         z-index: 100; }
       .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="body"] {
         text-align: left;
-        background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+        background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
         padding: 0px 20px;
         margin: 0 auto;
         color: white;
@@ -566,7 +566,7 @@ body {
       margin-right: 27px;
       cursor: pointer; }
       .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p:after, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a:after {
-        background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+        background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
         display: inline-block;
         width: 9px;
         height: 15px;
@@ -603,7 +603,7 @@ body {
         margin: 0px;
         margin-bottom: 35px; }
       .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside a {
-        background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-golden-transparent.png") right center no-repeat;
+        background: transparent url("../images/arrow-right-golden-transparent.png") right center no-repeat;
         padding-right: 20px;
         text-decoration: underline;
         margin-top: 35px;
@@ -638,19 +638,19 @@ body {
               margin: 28px 0 0 12px; }
             .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(1) a {
               background: black;
-              background: transparent url("/sites/all/themes/ipaustralia/images/sm-facebook.png") center center no-repeat;
+              background: transparent url("../images/sm-facebook.png") center center no-repeat;
               border-radius: 100px; }
             .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(2) a {
               background: black;
-              background: transparent url("/sites/all/themes/ipaustralia/images/sm-twitter.png") center center no-repeat;
+              background: transparent url("../images/sm-twitter.png") center center no-repeat;
               border-radius: 100px; }
             .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(3) a {
               background: black;
-              background: transparent url("/sites/all/themes/ipaustralia/images/sm-linkedin.png") center center no-repeat;
+              background: transparent url("../images/sm-linkedin.png") center center no-repeat;
               border-radius: 100px; }
             .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(4) a {
               background: black;
-              background: transparent url("/sites/all/themes/ipaustralia/images/sm-youtube.png") center center no-repeat;
+              background: transparent url("../images/sm-youtube.png") center center no-repeat;
               border-radius: 100px; }
 
 /*# sourceMappingURL=frontpage.css.map */

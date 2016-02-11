@@ -4,7 +4,7 @@
   }
   /* start patent landing block */
 .node-type-landing-page #block-bean-patents-landing-block {
-    background: #1d252c url("/sites/all/themes/ipaustralia/images/patents-landing.jpg") center top no-repeat;
+    background: #1d252c url("../images/patents-landing.jpg") center top no-repeat;
   background-size: 100% auto;
     padding: 60px 10px 20px;
 }
@@ -61,7 +61,7 @@
     cursor: pointer;
 }
 .node-type-landing-page #block-bean-understanding-patents-block .group-footer p:after, .node-type-landing-page #block-bean-understanding-patents-block .group-footer a:after {
-    background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
     height: 15px;
@@ -116,7 +116,7 @@
     cursor: pointer;
 }
 .node-type-landing-page #block-bean-managing-your-patent-block .group-footer p:after, .node-type-landing-page #block-bean-managing-your-patent-block .group-footer a:after {
-    background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
     height: 15px;
@@ -141,7 +141,7 @@
 
 /* start tools and resources patent */
 .node-type-landing-page #block-bean-tools-and-resources {
-  background: #1d252c url("/sites/all/themes/ipaustralia/images/tablet_v2.jpg") center center no-repeat;
+  background: #1d252c url("../images/tablet_v2.jpg") center center no-repeat;
   background-size: 120% auto;
   color: white;
   text-align: center;
@@ -164,7 +164,7 @@
   padding: 0 30px 0 50px;
   margin-bottom: 18px;
   font-size: 16px;
-  background: transparent url("/sites/all/themes/ipaustralia/images/link-tool.png") 17px top no-repeat;
+  background: transparent url("../images/link-tool.png") 17px top no-repeat;
 }
 .node-type-landing-page #block-bean-tools-and-resources div.bs-vert-callout-patents {
   background: #FFF;
@@ -178,7 +178,7 @@
 
   /* start trade marks landing block */
 .node-type-landing-page #block-bean-trade-marks-landing-block {
-    background: #1d252c url("/sites/all/themes/ipaustralia/images/tm-banner.jpg") center top no-repeat;
+    background: #1d252c url("../images/tm-banner.jpg") center top no-repeat;
   background-size: 120% auto;
     padding: 60px 10px 20px;
 }
@@ -235,7 +235,7 @@
     cursor: pointer;
 }
 .node-type-landing-page #block-bean-understanding-trade-marks-block .group-footer p:after, .node-type-landing-page #block-bean-understanding-trade-marks-block .group-footer a:after {
-    background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
     height: 15px;
@@ -267,7 +267,7 @@
   border:none;
 }
 /*.node-type-landing-page #block-bean-trade-marks-application-process p.more-button:after, .node-type-landing-page #block-bean-understanding-trade-marks-block a.more-button:after {
-    background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
     height: 15px;
@@ -315,7 +315,7 @@
     cursor: pointer;
 }
 .node-type-landing-page #block-bean-managing-your-trade-mark-block .group-footer p:after, .node-type-landing-page #block-bean-managing-your-trade-mark-block .group-footer a:after {
-    background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
     height: 15px;
@@ -339,7 +339,7 @@
 
 /* start tools and resources trade marks */
 .node-type-landing-page #block-bean-tools-and-resources-trade-mark {
-  background: #1d252c url("/sites/all/themes/ipaustralia/images/tablet_v2.jpg") center center no-repeat;
+  background: #1d252c url("../images/tablet_v2.jpg") center center no-repeat;
   background-size: 120% auto;
   color: white;
   text-align: center;
@@ -362,7 +362,7 @@
   padding: 0 30px 0 50px;
   margin-bottom: 18px;
   font-size: 16px;
-  background: transparent url("/sites/all/themes/ipaustralia/images/link-tool.png") 17px top no-repeat;
+  background: transparent url("../images/link-tool.png") 17px top no-repeat;
 }
 .node-type-landing-page #block-bean-tools-and-resources-trade-mark div.bs-vert-callout-trade-marks {
   background: #FFF;
@@ -372,7 +372,7 @@
 
   /* start designs landing block */
 .node-type-landing-page #block-bean-designs-landing-block {
-    background: #dff0d8 url("/sites/all/themes/ipaustralia/images/designs-banner.jpg") center top no-repeat;
+    background: #dff0d8 url("../images/designs-banner.jpg") center top no-repeat;
   background-size: 120% auto;
     padding: 60px 10px 20px;
 }
@@ -429,7 +429,7 @@
     cursor: pointer;
 }
 .node-type-landing-page #block-bean-understanding-designs-block .group-footer p:after, .node-type-landing-page #block-bean-understanding-designs-block .group-footer a:after {
-    background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
     height: 15px;
@@ -461,7 +461,7 @@
   border:none;
 }
 /*.node-type-landing-page #block-bean-trade-marks-application-process p.more-button:after, .node-type-landing-page #block-bean-understanding-trade-marks-block a.more-button:after {
-    background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
     height: 15px;
@@ -509,7 +509,7 @@
     cursor: pointer;
 }
 .node-type-landing-page #block-bean-managing-your-design-block .group-footer p:after, .node-type-landing-page #block-bean-managing-your-design-block .group-footer a:after {
-    background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
     height: 15px;
@@ -533,7 +533,7 @@
 
 /* start tools and resources designs */
 .node-type-landing-page #block-bean-tools-and-resources-designs {
-  background: #1d252c url("/sites/all/themes/ipaustralia/images/tablet_v2.jpg") center center no-repeat;
+  background: #1d252c url("../images/tablet_v2.jpg") center center no-repeat;
   background-size: 120% auto;
   color: white;
   text-align: center;
@@ -556,7 +556,7 @@
   padding: 0 30px 0 50px;
   margin-bottom: 18px;
   font-size: 16px;
-  background: transparent url("/sites/all/themes/ipaustralia/images/link-tool.png") 17px top no-repeat;
+  background: transparent url("../images/link-tool.png") 17px top no-repeat;
 }
 .node-type-landing-page #block-bean-tools-and-resources-designs div.bs-vert-callout-designs {
   background: #FFF;
@@ -566,7 +566,7 @@
 
   /* start PBR landing block */
 .node-type-landing-page #block-bean-pbr-landing-block {
-    background: #1d252c url("/sites/all/themes/ipaustralia/images/pbr-banner.jpg") center top no-repeat;
+    background: #1d252c url("../images/pbr-banner.jpg") center top no-repeat;
   background-size: 120% auto;
     padding: 60px 10px 20px;
 }
@@ -623,7 +623,7 @@
     cursor: pointer;
 }
 .node-type-landing-page #block-bean-understanding-pbr .group-footer p:after, .node-type-landing-page #block-bean-understanding-pbr .group-footer a:after {
-    background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
     height: 15px;
@@ -678,7 +678,7 @@
     cursor: pointer;
 }
 .node-type-landing-page #bblock-bean-managing-you-pbr-block .group-footer p:after, .node-type-landing-page #block-bean-managing-you-pbr-block .group-footer a:after {
-    background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-transparent.png") center center no-repeat;
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
     height: 15px;
@@ -702,7 +702,7 @@
 
 /* start tools and resources PBR */
 .node-type-landing-page #block-bean-tools-and-resources-pbr {
-  background: #1d252c url("/sites/all/themes/ipaustralia/images/tablet_v2.jpg") center center no-repeat;
+  background: #1d252c url("../images/tablet_v2.jpg") center center no-repeat;
   background-size: 120% auto;
   color: white;
   text-align: center;
@@ -725,7 +725,7 @@
   padding: 0 30px 0 50px;
   margin-bottom: 18px;
   font-size: 16px;
-  background: transparent url("/sites/all/themes/ipaustralia/images/link-tool.png") 17px top no-repeat;
+  background: transparent url("../images/link-tool.png") 17px top no-repeat;
 }
 .node-type-landing-page #block-bean-tools-and-resources-pbr div.bs-vert-callout-patents {
   background: #FFF;
@@ -755,7 +755,7 @@
 }
 .node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="date"],  .node-type-landing-page section[id*="lock-panels-mini-more-about"] .view-id-case_studies td div[class*="title"] {
   text-align: left;
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
   padding: 0px 20px;
   /*margin: 0 auto;*/
   color: white;
@@ -777,7 +777,7 @@
 }
 .node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="title"], .node-type-landing-page section[id*="lock-panels-mini-more-about"]   .views-view-grid td div[class*="location"] {
   text-align: left;
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
   padding: 0px 20px;
   /*margin: 0 auto;*/
   color: white;
@@ -799,7 +799,7 @@
 }
 .node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="location"] {
   text-align: left;
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
   padding: 0px 20px;
   /*margin: 0 auto;*/
   color: white;
@@ -810,7 +810,7 @@
 }
 .node-type-landing-page section[id*="lock-panels-mini-more-about"] .views-view-grid td div[class*="body"] {
   text-align: left;
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-purple_v2.png") center center repeat;
+  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
   padding: 0px 20px;
   /*margin: 0 auto;*/
   color: white;
@@ -851,32 +851,32 @@
 .node-type-landing-page section#block-panels-mini-more-about-patents-2-col-panel .views-view-grid td div[class*="title"],
 .node-type-landing-page section#block-panels-mini-more-about-patents-2-col-panel .views-view-grid td div[class*="date"],
 .node-type-landing-page section#block-panels-mini-more-about-patents-2-col-panel .views-view-grid td div[class*="location"] {
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-teal.png") center center repeat;
+  background: transparent url("../images/transparent-pixel-teal.png") center center repeat;
 }
 .node-type-landing-page section#block-panels-mini-more-about-trade-marks-2-column- .views-view-grid td div[class*="body"],
 .node-type-landing-page section#block-panels-mini-more-about-trade-marks-2-column- .views-view-grid td div[class*="title"],
 .node-type-landing-page section#block-panels-mini-more-about-trade-marks-2-column- .views-view-grid td div[class*="date"],
 .node-type-landing-page section#block-panels-mini-more-about-trade-marks-2-column- .views-view-grid td div[class*="location"] {
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-red.png") center center repeat;
+  background: transparent url("../images/transparent-pixel-red.png") center center repeat;
 }
 .node-type-landing-page section#block-panels-mini-more-about-designs-2-col-panel .views-view-grid td div[class*="body"],
 .node-type-landing-page section#block-panels-mini-more-about-designs-2-col-panel .views-view-grid td div[class*="title"],
 .node-type-landing-page section#block-panels-mini-more-about-designs-2-col-panel .views-view-grid td div[class*="date"],
 .node-type-landing-page section#block-panels-mini-more-about-designs-2-col-panel .views-view-grid td div[class*="location"] {
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-mint.png") center center repeat;
+  background: transparent url("../images/transparent-pixel-mint.png") center center repeat;
 }
 .node-type-landing-page section#block-panels-mini-more-about-pbr-2-col-panel .views-view-grid td div[class*="body"],
 .node-type-landing-page section#block-panels-mini-more-about-pbr-2-col-panel .views-view-grid td div[class*="title"],
 .node-type-landing-page section#block-panels-mini-more-about-pbr-2-col-panel .views-view-grid td div[class*="date"],
 .node-type-landing-page section#block-panels-mini-more-about-pbr-2-col-panel .views-view-grid td div[class*="location"] {
-  background: transparent url("/sites/all/themes/ipaustralia/images/transparent-pixel-yellow.png") center center repeat;
+  background: transparent url("../images/transparent-pixel-yellow.png") center center repeat;
 }
 
 /* end More about.. styling */
 
 /* start Tools and resources Intro */
 .node-type-landing-page #block-bean-tools-and-resources-landing-bloc {
-  background: #1d252c url("/sites/all/themes/ipaustralia/images/tablet.jpg") center center no-repeat;
+  background: #1d252c url("../images/tablet.jpg") center center no-repeat;
   background-size: 100% auto;
   padding: 60px 10px 80px 20px;
   color:#FFF;
@@ -908,14 +908,14 @@
 }
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a {
   width:100%;
-  padding: 5px 5px 5px 30px;
+  padding: 5px 5px 5px 5px;
   background-color:#1D252C;
   text-decoration: none;
   text-transform: uppercase;
   font: normal 18px "robotobold", sans-serif;
   white-space:normal;
   border: 1px solid #1D252C;
-  height: 75px;
+  height: 72px;
   display: inline-block;
   color: #FFF;
   text-align: center;
@@ -944,20 +944,23 @@
 }
 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-0 {
-  background: #30aeb6 url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat;
-  /*background-color: #30aeb6;*/
+  /*background: #30aeb6 url("../images/block-patent.png") left center no-repeat;*/
+  background-color: #30aeb6;
   border: 1px solid #30aeb6;
 } 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-1 {
-  background: #de4326 url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat;
+  /*background: #de4326 url("../images/block-tm.png") left center no-repeat;*/
+  background: #de4326;
   border: 1px solid #de4326;
 } 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-2 {
-  background: #84c98f url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat;
+  /*background: #84c98f url("../images/block-design.png") left center no-repeat;*/
+  background: #84c98f;
   border: 1px solid #84c98f;
 } 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-3 {
-  background: #f1ac1e url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat;
+  /*background: #f1ac1e url("../images/block-pbr.png") left center no-repeat;*/
+  background: #f1ac1e;
   border: 1px solid #f1ac1e;
 } 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-4 {
@@ -969,41 +972,41 @@
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-0 {
   color:#30aeb6;
   background-color: #fff;
-  border-bottom-width: 6px;
+  border-bottom-width: 9px;
   height:80px;
-  margin-bottom:-5px;
+  margin-bottom:-8px;
 } 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-1:hover,
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-1 {
   color:#de4326;
   background-color: #fff;
-  border-bottom-width: 6px;
+  border-bottom-width: 9px;
   height:80px;
-  margin-bottom:-5px;
+  margin-bottom:-8px;
 } 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-2:hover,
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-2 {
   color:#84c98f;
   background-color: #fff;
-  border-bottom-width: 6px;
+  border-bottom-width: 9px;
   height:80px;
-  margin-bottom:-5px;
+  margin-bottom:-8px;
 } 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-3:hover,
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-3 {
   color:#f1ac1e;
   background-color: #fff;
-  border-bottom-width: 6px;
+  border-bottom-width: 9px;
   height:80px;
-  margin-bottom:-5px;
+  margin-bottom:-8px;
 } 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-4:hover,
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-4 {
   color:#704579;
   background-color: #fff;
-  border-bottom-width: 6px;
-  margin-bottom:-5px;
+  border-bottom-width: 9px;
   height:80px;
+  margin-bottom:-8px;
 } 
 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a.toc-filter-processed,
@@ -1034,11 +1037,9 @@
 /*.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content */
 /* start tools and resources patent */
 .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content  {
-  background: #1d252c;
-  color: white;
+  color: #FFF;
   text-align: center;
-    background-size: 100% auto;
-    padding: 60px 10px 20px;
+  padding: 15px 0px 0px;
 }
 /*.node-type-landing-page #block-bean-tools-and-resources h2 {
   color:#FFF;
@@ -1056,14 +1057,114 @@
   padding: 0 30px 0 50px;
   margin-bottom: 18px;
   font-size: 16px;
-  background: transparent url("/sites/all/themes/ipaustralia/images/link-tool.png") 17px top no-repeat;
+  background: transparent url("../images/link-tool.png") 17px top no-repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content div.panels-flexible-region {
-  background: #FFF;
-  min-height: 490px;
-}
+
 /* end tools and resources patent */
 .node-type-landing-page #block-quicktabs-tools-and-resources .panels-flexible-row-first {
   display: none;
 }
 /* end tools and resources tab for trade marks */
+
+.node-type-landing-page #block-quicktabs-tools-and-resources .bs-callout, .node-type-landing-page #block-quicktabs-tools-and-resources .bs-vert-callout {
+  background-color: #FFF;
+      padding: 20px;
+    margin: 20px 0;
+    border: 0px solid #eee;
+    border-radius: 0px;
+}
+.node-type-landing-page #block-quicktabs-tools-and-resources  {
+  background: #EEF0F1;
+}
+
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-row-four_column_panel_with_top_and_bottom-main-row-inside .panels-flexible-region .inside {
+    background: white none repeat scroll 0 0;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    min-height: 607px;
+    padding: 0;
+}
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .panel-image {
+    margin-top: 20px;
+}
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-row-four_column_panel_with_top_and_bottom-main-row-inside .panels-flexible-region .inside.panels-flexible-region-inside-last {
+  margin-right:0;
+}
+  .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region {
+    width: 100%; }
+    .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+      background: transparent;
+      font: normal 20px "robotolight", sans-serif;
+      padding-bottom: 40px;
+      min-height: 10px; }
+  .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .tools-resources-list {
+    padding: 0px;
+    margin: 0px;
+    color: #1d252c;
+    list-style: none; }
+    .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .tools-resources-list li {
+      background: #fff;
+      border: 0px;
+      padding: 14px;
+      font: normal 16px "robotoregular", sans-serif;
+      margin-top: 2px; }
+      .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .tools-resources-list li.patents {
+        border-left: 10px solid #30aeb6; }
+      .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .tools-resources-list li.trade-marks {
+        border-left: 10px solid #de4326; }
+      .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .tools-resources-list li.designs {
+        border-left: 10px solid #84c98f; }
+      .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .tools-resources-list li.pbr {
+        border-left: 10px solid #f1ac1e; }
+      .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .tools-resources-list li.copyright {
+        border-left: 10px solid #704579; }
+    .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .tools-resources-list li {
+      margin-top: 18px;
+      padding: 0 30px 0 50px;
+      margin-bottom: 18px;
+      font-size: 16px;
+      background: transparent url("../images/link-tool.png") 17px top no-repeat;
+      line-height: 22px; }
+  .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list {
+    padding: 0px;
+    margin: 0px;
+    color: #1d252c;
+    background: #EEF0F1;
+    list-style: none;
+    padding-top: 2px; }
+    .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li {
+      background: #fff;
+      border: 0px;
+      padding: 14px;
+      font: normal 16px "robotoregular", sans-serif;
+      margin-top: 2px; }
+      .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.patents {
+        border-left: 10px solid #30aeb6; }
+      .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.trade-marks {
+        border-left: 10px solid #de4326; }
+      .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.designs {
+        border-left: 10px solid #84c98f; }
+      .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.pbr {
+        border-left: 10px solid #f1ac1e; }
+      .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.copyright {
+        border-left: 10px solid #704579; }
+    .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li {
+      margin-top: 2px;
+      border-top: 0px;
+      margin-bottom: 0px;
+      padding: 18px 14px;
+      font: normal 16px "robotoregular", sans-serif;
+      line-height: 22px; }
+      .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.patents {
+        margin-top: 0px; }
+
+  .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 {
+    width: 25%;
+}
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 ul li {
+    margin-top: 18px;
+    padding: 0 30px 0 50px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    background: transparent url("../images/link-tool.png") 17px top no-repeat;
+  }

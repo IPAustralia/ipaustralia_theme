@@ -25,7 +25,7 @@
 }
 
 @mixin background-image($imagefile, $x:center, $y:center, $repeat:no-repeat, $background-color:transparent) {
-    background: $background-color url("/sites/all/themes/ipaustralia/images/#{$imagefile}") $x $y $repeat;
+    background: $background-color url("../images/#{$imagefile}") $x $y $repeat;
 }
 
 @mixin rounded-button-with-arrrow($background-color:transparent, $line-color:white, $font-size:14px, $arrow-icon:'arrow-right-transparent.png') {
