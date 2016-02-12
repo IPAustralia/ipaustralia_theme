@@ -33,7 +33,7 @@ body {
   border: none;
   margin: 20px 0px; }
   .messages .alert-block.error {
-    background: #ffe8ee url("/sites/all/themes/ipaustralia/images/warning.png") 10px center no-repeat;
+    background: #ffe8ee url("../images/warning.png") 10px center no-repeat;
     padding-left: 60px;
     color: #ed0129;
     font-weight: bold; }
@@ -53,27 +53,27 @@ body {
       border-left: 10px solid #30aeb6;
       border-left: 5px solid #30aeb6;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat; }
+      background: #fff url("../images/block-patent.png") left center no-repeat; }
     .resource-list-block li.trade-marks {
       border-left: 10px solid #de4326;
       border-left: 5px solid #de4326;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat; }
+      background: #fff url("../images/block-tm.png") left center no-repeat; }
     .resource-list-block li.designs {
       border-left: 10px solid #84c98f;
       border-left: 5px solid #84c98f;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat; }
+      background: #fff url("../images/block-design.png") left center no-repeat; }
     .resource-list-block li.pbr {
       border-left: 10px solid #f1ac1e;
       border-left: 5px solid #f1ac1e;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat; }
+      background: #fff url("../images/block-pbr.png") left center no-repeat; }
     .resource-list-block li.copyright {
       border-left: 10px solid #704579;
       border-left: 5px solid #704579;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-copyright.png") left center no-repeat; }
+      background: #fff url("../images/block-copyright.png") left center no-repeat; }
 
 footer {
   padding: 0 0 80px 0px !important;
@@ -94,10 +94,10 @@ footer {
         text-decoration: none;
         font: normal 16px montserratregular;
         padding: 20px 18px 20px 0;
-        background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right.png") right center no-repeat;
+        background: transparent url("../images/arrow-right.png") right center no-repeat;
         float: left; }
         footer .block-menu-block .nav li a:hover, footer .block-menu-block .nav li a:active, footer .block-menu-block .nav li a:focus {
-          background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right.png") right center no-repeat; }
+          background: transparent url("../images/arrow-right.png") right center no-repeat; }
       footer .block-menu-block .nav li ul {
         background: transparent none repeat scroll 0 0;
         box-shadow: none;

@@ -1161,6 +1161,12 @@
   .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 {
     width: 25%;
 }
+.front #block-bean-tools-and-resources-generic-bloc .panel-flexible ul {
+    padding: 0px;
+    margin: 0px;
+    color: #1d252c;
+    list-style: none;
+  }
 .node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 ul li {
     margin-top: 18px;
     padding: 0 30px 0 50px;

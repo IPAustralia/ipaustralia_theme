@@ -33,7 +33,7 @@ body {
   border: none;
   margin: 20px 0px; }
   .messages .alert-block.error {
-    background: #ffe8ee url("/sites/all/themes/ipaustralia/images/warning.png") 10px center no-repeat;
+    background: #ffe8ee url("../images/warning.png") 10px center no-repeat;
     padding-left: 60px;
     color: #ed0129;
     font-weight: bold; }
@@ -53,27 +53,27 @@ body {
       border-left: 10px solid #30aeb6;
       border-left: 5px solid #30aeb6;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-patent.png") left center no-repeat; }
+      background: #fff url("../images/block-patent.png") left center no-repeat; }
     .resource-list-block li.trade-marks {
       border-left: 10px solid #de4326;
       border-left: 5px solid #de4326;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-tm.png") left center no-repeat; }
+      background: #fff url("../images/block-tm.png") left center no-repeat; }
     .resource-list-block li.designs {
       border-left: 10px solid #84c98f;
       border-left: 5px solid #84c98f;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-design.png") left center no-repeat; }
+      background: #fff url("../images/block-design.png") left center no-repeat; }
     .resource-list-block li.pbr {
       border-left: 10px solid #f1ac1e;
       border-left: 5px solid #f1ac1e;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-pbr.png") left center no-repeat; }
+      background: #fff url("../images/block-pbr.png") left center no-repeat; }
     .resource-list-block li.copyright {
       border-left: 10px solid #704579;
       border-left: 5px solid #704579;
       padding-left: 90px;
-      background: #fff url("/sites/all/themes/ipaustralia/images/block-copyright.png") left center no-repeat; }
+      background: #fff url("../images/block-copyright.png") left center no-repeat; }
 
 header .logo {
   margin: 0px;
@@ -130,7 +130,7 @@ header .header {
             background: #efefef;
             margin-left: 3px;
             height: 19px;
-            background: transparent url("/sites/all/themes/ipaustralia/images/font-size-sprite.png") left bottom no-repeat; }
+            background: transparent url("../images/font-size-sprite.png") left bottom no-repeat; }
             header .header .header-right .block-govcms-text-resize ul li a.font-small {
               width: 11px;
               background-position: 0px 0px; }
@@ -174,7 +174,7 @@ header .header {
       header .header .header-right .block-search-api-page .form-group {
         margin: 0px; }
       header .header .header-right .block-search-api-page .form-submit {
-        background: transparent url("/sites/all/themes/ipaustralia/images/link-search-26px.png") center center no-repeat;
+        background: transparent url("../images/link-search-26px.png") center center no-repeat;
         border: medium none;
         float: right;
         height: 48px;
@@ -205,7 +205,7 @@ header .header {
       display: none; }
     header .header .header-right .block-bean .bean-link .field-item {
       border: 1px solid #b6bec0;
-      background: transparent url("/sites/all/themes/ipaustralia/images/icon-online-services.png") 19px center no-repeat; }
+      background: transparent url("../images/icon-online-services.png") 19px center no-repeat; }
       header .header .header-right .block-bean .bean-link .field-item a {
         display: block;
         font-family: "montserratbold", sans-serif;
@@ -214,6 +214,6 @@ header .header {
         padding: 14px 35px 14px 60px;
         text-decoration: none;
         text-transform: uppercase;
-        background: transparent url("/sites/all/themes/ipaustralia/images/arrow-right-online-services.png") right center no-repeat; }
+        background: transparent url("../images/arrow-right-online-services.png") right center no-repeat; }
 
 /*# sourceMappingURL=header.css.map */
