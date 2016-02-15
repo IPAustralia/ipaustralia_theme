@@ -41,7 +41,7 @@ body {
 .resource-list-block {
   padding: 0px;
   margin: 0px;
-  color: #1d252c;
+  color: #0d252c;
   list-style: none; }
   .resource-list-block li {
     background: #fff;
@@ -51,27 +51,37 @@ body {
     margin-top: 2px; }
     .resource-list-block li.patents {
       border-left: 10px solid #30aeb6;
-      border-left: 5px solid #30aeb6;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #30aeb6;
       padding-left: 90px;
       background: #fff url("../images/block-patent.png") left center no-repeat; }
     .resource-list-block li.trade-marks {
       border-left: 10px solid #de4326;
-      border-left: 5px solid #de4326;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #de4326;
       padding-left: 90px;
       background: #fff url("../images/block-tm.png") left center no-repeat; }
     .resource-list-block li.designs {
       border-left: 10px solid #84c98f;
-      border-left: 5px solid #84c98f;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #84c98f;
       padding-left: 90px;
       background: #fff url("../images/block-design.png") left center no-repeat; }
     .resource-list-block li.pbr {
       border-left: 10px solid #f1ac1e;
-      border-left: 5px solid #f1ac1e;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #f1ac1e;
       padding-left: 90px;
       background: #fff url("../images/block-pbr.png") left center no-repeat; }
     .resource-list-block li.copyright {
       border-left: 10px solid #704579;
-      border-left: 5px solid #704579;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #704579;
       padding-left: 90px;
       background: #fff url("../images/block-copyright.png") left center no-repeat; }
 
@@ -81,7 +91,7 @@ body {
   padding: 80px 10px;
   background: #eff0f2;
   text-align: center;
-  background: #1d252c url("../images/women-with-tablet-merged.jpg") center top no-repeat;
+  background: #0d252c url("../images/women-with-tablet-merged.jpg") center top no-repeat;
   background-size: 100% auto; }
   @media only screen and (max-width: 768px) {
     .front #block-quicktabs-homepage-main-tab {
@@ -101,7 +111,7 @@ body {
         .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li {
           width: 100%; } }
       .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li a {
-        background: #1d252c;
+        background: #0d252c;
         padding: 27px 0px;
         color: #fff;
         width: 100%;
@@ -109,16 +119,16 @@ body {
         font: normal 20px "montserratbold", sans-serif;
         font-family: "montserratregular", sans-serif;
         text-transform: uppercase;
-        border: 1px solid #1d252c;
+        border: 1px solid #0d252c;
         line-height: 14px; }
         .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li a:hover {
           text-decoration: none; }
       .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs-tabs li.active a {
         background: #fff;
-        color: #1d252c; }
+        color: #0d252c; }
   .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main {
     clear: both;
-    background: #1d252c;
+    background: #0d252c;
     width: 99.3%;
     color: white; }
     @media only screen and (max-width: 768px) {
@@ -163,7 +173,7 @@ body {
         .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a:hover {
           text-decoration: none;
           background: transparent;
-          border: 2px solid #1d252c; }
+          border: 2px solid #0d252c; }
         .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a:hover {
           border-color: white; }
       @media only screen and (max-width: 768px) {
@@ -184,7 +194,7 @@ body {
       .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list {
         padding: 0px;
         margin: 0px;
-        color: #1d252c;
+        color: #0d252c;
         list-style: none; }
         .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li {
           background: #fff;
@@ -194,27 +204,37 @@ body {
           margin-top: 2px; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.patents {
             border-left: 10px solid #30aeb6;
-            border-left: 5px solid #30aeb6;
+            font-size: 14px;
+            font-size: 15px;
+            border-left: 0px solid #30aeb6;
             padding-left: 90px;
             background: #fff url("../images/block-patent.png") left center no-repeat; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.trade-marks {
             border-left: 10px solid #de4326;
-            border-left: 5px solid #de4326;
+            font-size: 14px;
+            font-size: 15px;
+            border-left: 0px solid #de4326;
             padding-left: 90px;
             background: #fff url("../images/block-tm.png") left center no-repeat; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.designs {
             border-left: 10px solid #84c98f;
-            border-left: 5px solid #84c98f;
+            font-size: 14px;
+            font-size: 15px;
+            border-left: 0px solid #84c98f;
             padding-left: 90px;
             background: #fff url("../images/block-design.png") left center no-repeat; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.pbr {
             border-left: 10px solid #f1ac1e;
-            border-left: 5px solid #f1ac1e;
+            font-size: 14px;
+            font-size: 15px;
+            border-left: 0px solid #f1ac1e;
             padding-left: 90px;
             background: #fff url("../images/block-pbr.png") left center no-repeat; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.copyright {
             border-left: 10px solid #704579;
-            border-left: 5px solid #704579;
+            font-size: 14px;
+            font-size: 15px;
+            border-left: 0px solid #704579;
             padding-left: 90px;
             background: #fff url("../images/block-copyright.png") left center no-repeat; }
       @media only screen and (max-width: 768px) {
@@ -261,15 +281,15 @@ body {
     .front #block-bean-need-help-choosing-the-right-ip .field-items a:hover {
       text-decoration: none;
       background: transparent;
-      border: 2px solid #1d252c; }
+      border: 2px solid #0d252c; }
     .front #block-bean-need-help-choosing-the-right-ip .field-items a:hover {
       border-color: white; }
 .front #block-bean-tools-and-resources-generic-bloc {
   padding: 80px 10px;
-  background: #1d252c;
+  background: #0d252c;
   color: white;
   text-align: center;
-  background: #1d252c url("../images/tablet_v2.jpg") center center no-repeat;
+  background: #0d252c url("../images/tablet_v2.jpg") center center no-repeat;
   background-size: 120% auto; }
   @media only screen and (max-width: 768px) {
     .front #block-bean-tools-and-resources-generic-bloc {
@@ -351,13 +371,13 @@ body {
         .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p:hover, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
           text-decoration: none;
           background: transparent;
-          border: 2px solid #1d252c; }
+          border: 2px solid #0d252c; }
         .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p :hover, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
           border-color: white; }
   .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list {
     padding: 0px;
     margin: 0px;
-    color: #1d252c;
+    color: #0d252c;
     list-style: none; }
     .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li {
       background: #fff;
@@ -366,15 +386,20 @@ body {
       font: normal 16px "robotoregular", sans-serif;
       margin-top: 2px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.patents {
-        border-left: 10px solid #30aeb6; }
+        border-left: 10px solid #30aeb6;
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.trade-marks {
-        border-left: 10px solid #de4326; }
+        border-left: 10px solid #de4326;
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.designs {
-        border-left: 10px solid #84c98f; }
+        border-left: 10px solid #84c98f;
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.pbr {
-        border-left: 10px solid #f1ac1e; }
+        border-left: 10px solid #f1ac1e;
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.copyright {
-        border-left: 10px solid #704579; }
+        border-left: 10px solid #704579;
+        font-size: 14px; }
     .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li {
       margin-top: 18px;
       padding: 0 30px 0 50px;
@@ -385,9 +410,9 @@ body {
   .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list {
     padding: 0px;
     margin: 0px;
-    color: #1d252c;
+    color: #0d252c;
     list-style: none;
-    background: #1d252c;
+    background: #0d252c;
     padding-top: 2px; }
     .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li {
       background: #fff;
@@ -396,15 +421,20 @@ body {
       font: normal 16px "robotoregular", sans-serif;
       margin-top: 2px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.patents {
-        border-left: 10px solid #30aeb6; }
+        border-left: 10px solid #30aeb6;
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.trade-marks {
-        border-left: 10px solid #de4326; }
+        border-left: 10px solid #de4326;
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.designs {
-        border-left: 10px solid #84c98f; }
+        border-left: 10px solid #84c98f;
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.pbr {
-        border-left: 10px solid #f1ac1e; }
+        border-left: 10px solid #f1ac1e;
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.copyright {
-        border-left: 10px solid #704579; }
+        border-left: 10px solid #704579;
+        font-size: 14px; }
     .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li {
       margin-top: 2px;
       border-top: 0px;
@@ -418,7 +448,7 @@ body {
   padding: 80px 10px;
   text-align: center; }
   .front #block-panels-mini-news-and-community-homepage-pane h2 {
-    color: #1d252c; }
+    color: #0d252c; }
   .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs {
     width: 100%;
     padding: 0px;
@@ -435,18 +465,18 @@ body {
       .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li a {
         background: #fff;
         padding: 27px 0px;
-        color: #1d252c;
+        color: #0d252c;
         width: 100%;
         display: inline-block;
         font: normal 20px "montserratbold", sans-serif;
         font-family: "montserratregular", sans-serif;
         text-transform: uppercase;
-        border: 1px solid #1d252c;
+        border: 1px solid #0d252c;
         line-height: 14px; }
         .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li a:hover {
           text-decoration: none; }
       .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active a {
-        background: #1d252c;
+        background: #0d252c;
         color: #fff; }
   .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main {
     clear: both;
@@ -464,10 +494,10 @@ body {
       background: transparent url("../images/dwn-arrow-charcoal.png") center bottom no-repeat; }
       .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active a {
         background: white;
-        color: #1d252c;
-        border-bottom: 7px solid #1d252c; }
+        color: #0d252c;
+        border-bottom: 7px solid #0d252c; }
   .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main {
-    color: #1d252c; }
+    color: #0d252c; }
     .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td {
       position: relative;
       vertical-align: top;
@@ -550,10 +580,10 @@ body {
       padding: 10px 0 30px 0; }
   .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region {
     width: 100%; }
-    .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a {
+    .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a {
       margin-top: 40px;
       border: 2px solid white;
-      background: #1d252c;
+      background: #0d252c;
       padding: 16px 35px 16px;
       display: inline-block;
       border-radius: 100px;
@@ -562,21 +592,21 @@ body {
       text-transform: uppercase;
       font-family: "montserratregular", sans-serif;
       line-height: 14px;
-      border-color: #1d252c;
+      border-color: #0d252c;
       margin-right: 27px;
       cursor: pointer; }
-      .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p:after, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a:after {
+      .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a:after {
         background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
         display: inline-block;
         width: 9px;
         height: 15px;
         content: '';
         margin: 0 0 -2px 10px; }
-      .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p:hover, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
+      .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
         text-decoration: none;
-        background: #1d252c;
-        border: 2px solid #1d252c; }
-      .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside p :hover, .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
+        background: #0d252c;
+        border: 2px solid #0d252c; }
+      .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
         border-color: white; }
 .front #block-panels-mini-consultations-and-twitter-feed-2 {
   padding: 80px 10px;
@@ -587,7 +617,7 @@ body {
       .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel {
         width: 100%; } }
     .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside {
-      border-left: 10px solid #1d252c;
+      border-left: 10px solid #0d252c;
       margin-right: 20px;
       background: white;
       padding: 40px 30px;
@@ -636,7 +666,7 @@ body {
               width: 36px;
               height: 36px;
               margin: 28px 0 0 12px; }
-            .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li:nth-child(1) a {
+            .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.facebook {
               background: black;
               background: transparent url("../images/sm-facebook.png") center center no-repeat;
               border-radius: 100px; }

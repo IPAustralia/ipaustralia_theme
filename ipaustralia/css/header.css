@@ -41,7 +41,7 @@ body {
 .resource-list-block {
   padding: 0px;
   margin: 0px;
-  color: #1d252c;
+  color: #0d252c;
   list-style: none; }
   .resource-list-block li {
     background: #fff;
@@ -51,27 +51,37 @@ body {
     margin-top: 2px; }
     .resource-list-block li.patents {
       border-left: 10px solid #30aeb6;
-      border-left: 5px solid #30aeb6;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #30aeb6;
       padding-left: 90px;
       background: #fff url("../images/block-patent.png") left center no-repeat; }
     .resource-list-block li.trade-marks {
       border-left: 10px solid #de4326;
-      border-left: 5px solid #de4326;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #de4326;
       padding-left: 90px;
       background: #fff url("../images/block-tm.png") left center no-repeat; }
     .resource-list-block li.designs {
       border-left: 10px solid #84c98f;
-      border-left: 5px solid #84c98f;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #84c98f;
       padding-left: 90px;
       background: #fff url("../images/block-design.png") left center no-repeat; }
     .resource-list-block li.pbr {
       border-left: 10px solid #f1ac1e;
-      border-left: 5px solid #f1ac1e;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #f1ac1e;
       padding-left: 90px;
       background: #fff url("../images/block-pbr.png") left center no-repeat; }
     .resource-list-block li.copyright {
       border-left: 10px solid #704579;
-      border-left: 5px solid #704579;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #704579;
       padding-left: 90px;
       background: #fff url("../images/block-copyright.png") left center no-repeat; }
 
@@ -94,7 +104,7 @@ header .header {
   @media only screen and (max-width: 768px) {
     header .header {
       padding-bottom: 10px;
-      border-bottom: 2px solid #1d252c; } }
+      border-bottom: 2px solid #0d252c; } }
   header .header .header-right {
     padding-right: 0px; }
     header .header .header-right section {
@@ -109,13 +119,13 @@ header .header {
           float: left; }
           header .header .header-right section ul li a {
             display: block;
-            color: #1d252c;
+            color: #0d252c;
             line-height: 10px; }
       @media only screen and (max-width: 768px) {
         header .header .header-right section {
           display: none; } }
     header .header .header-right a {
-      color: #1d252c; }
+      color: #0d252c; }
     header .header .header-right .block-govcms-text-resize {
       width: 66px; }
       header .header .header-right .block-govcms-text-resize ul {
@@ -155,22 +165,22 @@ header .header {
         width: 260px; }
         header .header .header-right .block-search-api-page input.form-text::-webkit-input-placeholder {
           /* Safari, Chrome and Opera */
-          color: #1d252c; }
+          color: #0d252c; }
         header .header .header-right .block-search-api-page input.form-text:-moz-placeholder {
           /* Firefox 18- */
-          color: #1d252c; }
+          color: #0d252c; }
         header .header .header-right .block-search-api-page input.form-text::-moz-placeholder {
           /* Firefox 19+ */
-          color: #1d252c; }
+          color: #0d252c; }
         header .header .header-right .block-search-api-page input.form-text:-ms-input-placeholder {
           /* IE 10+ */
-          color: #1d252c; }
+          color: #0d252c; }
         header .header .header-right .block-search-api-page input.form-text::-ms-input-placeholder {
           /* Edge */
-          color: #1d252c; }
+          color: #0d252c; }
         header .header .header-right .block-search-api-page input.form-text:placeholder-shown {
           /* Standard one last! */
-          color: #1d252c; }
+          color: #0d252c; }
       header .header .header-right .block-search-api-page .form-group {
         margin: 0px; }
       header .header .header-right .block-search-api-page .form-submit {
@@ -190,7 +200,7 @@ header .header {
       /*font-weight: 600;*/
       font-size: 14px;
       padding: 0px 10px 0 0;
-      border-right: 1px solid #1d252c; }
+      border-right: 1px solid #0d252c; }
       header .header .header-right .block-menu a:hover {
         background: transparent;
         text-decoration: underline; }

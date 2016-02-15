@@ -8,7 +8,7 @@
     <div class="breadcrumbs">
       <div class="container">
          <?php print $breadcrumb; ?>
-         <a class="listen-to-this-page" href="http://www.example.com">Listen to this page</a>
+         <!--<a class="listen-to-this-page" href="http://www.example.com">Listen to this page</a>-->
       </div>
     </div>
   <?php endif; ?>

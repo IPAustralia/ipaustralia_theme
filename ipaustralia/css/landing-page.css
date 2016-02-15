@@ -3,7 +3,7 @@
     color: #FFF;
   }
   /* start patent landing block */
-.node-type-landing-page #block-bean-patents-landing-block {
+.node-type-landing-page #block-bean-patents-landing-block-new {
     background: #1d252c url("../images/patents-landing.jpg") center top no-repeat;
   background-size: 100% auto;
     padding: 60px 10px 20px;
@@ -40,11 +40,11 @@
  /* end patent landing block */
 
 /*understanding patents block */
-.node-type-landing-page  #block-bean-understanding-patents-block {
+.node-type-landing-page  #block-bean-understanding-patents-block-new {
     padding: 80px 10px;
     text-align: center;
   }
-  .node-type-landing-page  #block-bean-understanding-patents-block .group-footer p, .node-type-landing-page  #block-bean-understanding-patents-block .group-footer a {
+  .node-type-landing-page  #block-bean-understanding-patents-block-new .group-footer p, .node-type-landing-page  #block-bean-understanding-patents-block-new .group-footer a {
     margin-top: 40px;
     border: 2px solid white;
     background: #1d252c;
@@ -60,7 +60,7 @@
     margin-right: 27px;
     cursor: pointer;
 }
-.node-type-landing-page #block-bean-understanding-patents-block .group-footer p:after, .node-type-landing-page #block-bean-understanding-patents-block .group-footer a:after {
+.node-type-landing-page #block-bean-understanding-patents-block-new .group-footer p:after, .node-type-landing-page #block-bean-understanding-patents-block-new .group-footer a:after {
     background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
@@ -68,7 +68,7 @@
     content: '';
     margin: 0 0 -2px 10px;
 }
-.node-type-landing-page #block-bean-understanding-patents-block .group-left, .node-type-landing-page #block-bean-understanding-patents-block .group-right, .node-type-landing-page #block-bean-understanding-patents-block .group-middle{
+.node-type-landing-page #block-bean-understanding-patents-block-new .group-left, .node-type-landing-page #block-bean-understanding-patents-block-new .group-right, .node-type-landing-page #block-bean-understanding-patents-block-new .group-middle{
   background: #FFF;
   text-align: left;
   padding: 20px 40px;
@@ -77,7 +77,7 @@
   margin-left: 3%;
   margin-top: 30px;
 }
-.node-type-landing-page #block-bean-understanding-patents-block {
+.node-type-landing-page #block-bean-understanding-patents-block-new {
   background: #EEF0F1;
   font-family: "robotoregular", sans-serif;
   margin-bottom: 2px;
@@ -177,22 +177,22 @@
 /* end more Patents section */
 
   /* start trade marks landing block */
-.node-type-landing-page #block-bean-trade-marks-landing-block {
+.node-type-landing-page #block-bean-trade-marks-landing-block-0 {
     background: #1d252c url("../images/tm-banner.jpg") center top no-repeat;
   background-size: 120% auto;
     padding: 60px 10px 20px;
 }
-.node-type-landing-page #block-bean-trade-marks-landing-block .panels-flexible-region-first {
+.node-type-landing-page #block-bean-trade-marks-landing-block-0 .panels-flexible-region-first {
   color:#1d252c;
   font: normal 20px "robotoregular", sans-serif;
   padding-right: 20%;
 }
-.node-type-landing-page #block-bean-trade-marks-landing-block .panels-flexible-region-first h2 {
+.node-type-landing-page #block-bean-trade-marks-landing-block-0 .panels-flexible-region-first h2 {
     font: normal 60px "montserratregular", sans-serif;
     text-transform: uppercase;
     color:#1d252c;
 }
-.node-type-landing-page #block-bean-trade-marks-landing-block .panels-flexible-region-inside-last ul.tools-resources-list {
+.node-type-landing-page #block-bean-trade-marks-landing-block-0 .panels-flexible-region-inside-last ul.tools-resources-list {
     padding: 0px;
     margin: 0px;
     color: #1d252c;
@@ -200,7 +200,7 @@
     /*background: #fff;*/
     padding-top: 2px;
   }
-.node-type-landing-page #block-bean-trade-marks-landing-block .panels-flexible-region-inside-last li.trade-marks {
+.node-type-landing-page #block-bean-trade-marks-landing-block-0 .panels-flexible-region-inside-last li.trade-marks {
   margin-top: 2px;
     border-top: 0px;
     margin-bottom: 0px;
@@ -371,22 +371,22 @@
 /* end tools and resources trade marks */
 
   /* start designs landing block */
-.node-type-landing-page #block-bean-designs-landing-block {
+.node-type-landing-page #block-bean-designs-landing-block-0 {
     background: #dff0d8 url("../images/designs-banner.jpg") center top no-repeat;
   background-size: 120% auto;
     padding: 60px 10px 20px;
 }
-.node-type-landing-page #block-bean-designs-landing-block .panels-flexible-region-first {
-  color:#1d252c;
+.node-type-landing-page #block-bean-designs-landing-block-0 .panels-flexible-region-first {
+  color:#FFF;
   font: normal 20px "robotoregular", sans-serif;
   padding-right: 20%;
 }
-.node-type-landing-page #block-bean-designs-landing-block .panels-flexible-region-first h2 {
+.node-type-landing-page #block-bean-designs-landing-block-0 .panels-flexible-region-first h2 {
     font: normal 60px "montserratregular", sans-serif;
     text-transform: uppercase;
     color:#1d252c;
 }
-.node-type-landing-page #block-bean-designs-landing-block .panels-flexible-region-inside-last ul.tools-resources-list {
+.node-type-landing-page #block-bean-designs-landing-block-0 .panels-flexible-region-inside-last ul.tools-resources-list {
     padding: 0px;
     margin: 0px;
     color: #1d252c;
@@ -394,7 +394,7 @@
     /*background: #fff;*/
     padding-top: 2px;
   }
-.node-type-landing-page #block-bean-designs-landing-block .panels-flexible-region-inside-last li.designs {
+.node-type-landing-page #block-bean-designs-landing-block-0 .panels-flexible-region-inside-last li.designs {
   margin-top: 2px;
     border-top: 0px;
     margin-bottom: 0px;
@@ -565,22 +565,22 @@
 /* end tools and resources designs */
 
   /* start PBR landing block */
-.node-type-landing-page #block-bean-pbr-landing-block {
+.node-type-landing-page #block-bean-pbr-landing-block-0 {
     background: #1d252c url("../images/pbr-banner.jpg") center top no-repeat;
   background-size: 120% auto;
     padding: 60px 10px 20px;
 }
-.node-type-landing-page #block-bean-pbr-landing-block .panels-flexible-region-first {
+.node-type-landing-page #block-bean-pbr-landing-block-0 .panels-flexible-region-first {
   color:#1d252c;
   font: normal 20px "robotoregular", sans-serif;
   padding-right: 20%;
 }
-.node-type-landing-page #block-bean-pbr-landing-block .panels-flexible-region-first h2 {
+.node-type-landing-page #block-bean-pbr-landing-block-0 .panels-flexible-region-first h2 {
     font: normal 60px "montserratregular", sans-serif;
     text-transform: uppercase;
     color:#1d252c;
 }
-.node-type-landing-page #block-bean-pbr-landing-block .panels-flexible-region-inside-last ul.tools-resources-list {
+.node-type-landing-page #block-bean-pbr-landing-block-0 .panels-flexible-region-inside-last ul.tools-resources-list {
     padding: 0px;
     margin: 0px;
     color: #1d252c;
@@ -588,7 +588,7 @@
     /*background: #fff;*/
     padding-top: 2px;
   }
-.node-type-landing-page #block-bean-pbr-landing-block .panels-flexible-region-inside-last li.pbr {
+.node-type-landing-page #block-bean-pbr-landing-block-0 .panels-flexible-region-inside-last li.pbr {
   margin-top: 2px;
     border-top: 0px;
     margin-bottom: 0px;

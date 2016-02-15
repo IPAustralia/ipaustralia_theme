@@ -41,7 +41,7 @@ body {
 .resource-list-block {
   padding: 0px;
   margin: 0px;
-  color: #1d252c;
+  color: #0d252c;
   list-style: none; }
   .resource-list-block li {
     background: #fff;
@@ -51,27 +51,37 @@ body {
     margin-top: 2px; }
     .resource-list-block li.patents {
       border-left: 10px solid #30aeb6;
-      border-left: 5px solid #30aeb6;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #30aeb6;
       padding-left: 90px;
       background: #fff url("../images/block-patent.png") left center no-repeat; }
     .resource-list-block li.trade-marks {
       border-left: 10px solid #de4326;
-      border-left: 5px solid #de4326;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #de4326;
       padding-left: 90px;
       background: #fff url("../images/block-tm.png") left center no-repeat; }
     .resource-list-block li.designs {
       border-left: 10px solid #84c98f;
-      border-left: 5px solid #84c98f;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #84c98f;
       padding-left: 90px;
       background: #fff url("../images/block-design.png") left center no-repeat; }
     .resource-list-block li.pbr {
       border-left: 10px solid #f1ac1e;
-      border-left: 5px solid #f1ac1e;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #f1ac1e;
       padding-left: 90px;
       background: #fff url("../images/block-pbr.png") left center no-repeat; }
     .resource-list-block li.copyright {
       border-left: 10px solid #704579;
-      border-left: 5px solid #704579;
+      font-size: 14px;
+      font-size: 15px;
+      border-left: 0px solid #704579;
       padding-left: 90px;
       background: #fff url("../images/block-copyright.png") left center no-repeat; }
 
@@ -80,7 +90,7 @@ footer {
   margin: 0px !important;
   border: 0px !important; }
   footer .block-menu-block {
-    background: #1d252c none repeat scroll 0 0;
+    background: #0d252c none repeat scroll 0 0;
     padding: 60px 0; }
     footer .block-menu-block .nav li {
       display: block;
@@ -132,7 +142,7 @@ footer {
     padding: 10px 10px 0 0; }
     footer .block-menu .nav li a {
       padding: 0px 10px 0 0;
-      border-right: 1px solid #1d252c;
+      border-right: 1px solid #0d252c;
       font-size: 13px;
       line-height: 12px;
       color: #977100; }

@@ -354,7 +354,7 @@
                 .panels-flexible-region {
                     width:100%;
                     .inside {
-                        p, a {
+                        a {
                             margin-top: $gap-medium;
                             @include rounded-button-with-arrrow($charcoal, white, 14px, 'arrow-right-transparent.png');
                             border-color: $charcoal;
@@ -440,12 +440,12 @@
 
 
                                 }
-                                &:nth-child(1) {
-                                    a {
+
+                                    a.facebook {
                                         background:black;
                                         @include background-image('sm-facebook.png');
                                         border-radius: 100px; 
-                                    }
+                                    
 
                                 } 
                                 &:nth-child(2) {
