@@ -179,6 +179,23 @@ a:visited {color:#977100;}
     margin-top:-10px;
 }
 
+#block-bean-get-your-ip-homepage-block .patents a, #block-bean-get-your-ip-homepage-block .trade-marks a, #block-bean-get-your-ip-homepage-block .designs a, #block-bean-get-your-ip-homepage-block .pbr a, #block-bean-get-your-ip-homepage-block .copyright a {
+	padding-top: 10px;
+	font-size:18px;
+	color:#0d252c;
+}
+#quicktabs-tabpage-homepage_main_tab-2 ul {
+	list-style:none;
+	padding-left:0;
+}
+#quicktabs-tabpage-homepage_main_tab-2 .bs-callout-purple, #quicktabs-tabpage-homepage_main_tab-2 .bs-callout-purple a {
+	background:#fff;
+	color:#000;
+	margin:3px 0;
+	font-size:16px;
+	font-weight:bold;
+}
+
 /* end alistairs css */
 
 @media only screen and (min-width: 768px){
