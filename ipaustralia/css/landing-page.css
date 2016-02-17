@@ -1474,6 +1474,7 @@ background-size: 100% auto;
 }
 .pane-bean-patents-faqs .field-name-field-faqs-container h3, .pane-bean-patents-faqs .field-name-field-guides-and-tutorials-conta h3, .pane-bean-patents-faqs .field-name-field-ip-references-container h3, .pane-bean-patents-faqs .field-name-field-ip-search-text h3, .pane-bean-trade-marks-faqs .field-name-field-faqs-container h3, .pane-bean-trade-marks-faqs .field-name-field-guides-and-tutorials-conta h3, .pane-bean-trade-marks-faqs .field-name-field-ip-references-container h3, .pane-bean-trade-marks-faqs .field-name-field-ip-search-text h3, .pane-bean-designs-faqs .field-name-field-faqs-container h3, .pane-bean-designs-faqs .field-name-field-guides-and-tutorials-conta h3, .pane-bean-designs-faqs .field-name-field-ip-references-container h3, .pane-bean-designs-faqs .field-name-field-ip-search-text h3, .pane-bean-pbr-faqs .field-name-field-faqs-container h3, .pane-bean-pbr-faqs .field-name-field-guides-and-tutorials-conta h3, .pane-bean-pbr-faqs .field-name-field-ip-references-container h3, .pane-bean-pbr-faqs .field-name-field-ip-search-text h3 {
   padding-left:10px;
+  padding-top:10px;
 }
 
 /* end faq styling */
