@@ -201,12 +201,12 @@ a:visited {color:#977100;}
 }
 /* end alistairs css */
 /* start iconography */
-.sml-link-icon-search{background:url("../images/link-search.png") no-repeat; height:36px; width:36px; float:left; margin-right:12px;}
-.sml-link-icon-checklist{background:url("../images/link-checklist.png") no-repeat; height:36px; width:36px; float:left; margin-right:12px;}
-.sml-link-icon-process{background:url("../images/link-process.png") no-repeat; height:36px; width:36px; float:left; margin-right:12px;}
-.sml-link-icon-fees{background:url("../images/link-fees.png") no-repeat; height:36px; width:36px; float:left; margin-right:12px;}
-.sml-link-icon-apply{background:url("../images/link-apply.png") no-repeat; height:36px; width:36px; float:left; margin-right:12px;}
-.sml-link-icon-more{background:url("../images/link-extra.png") no-repeat; height:36px; width:36px; float:left; margin-right:12px;}
+.sml-link-icon-search{background:url("../images/link-search.png") no-repeat; height:36px; width:36px; float:left; margin-right:12px;margin-top:-5px;}
+.sml-link-icon-checklist{background:url("../images/link-checklist.png") no-repeat; height:36px; width:36px; float:left; margin-right:12px;margin-top:-5px;}
+.sml-link-icon-process{background:url("../images/link-process.png") no-repeat; height:36px; width:36px; float:left; margin-right:12px;margin-top:-5px;}
+.sml-link-icon-fees{background:url("../images/link-fees.png") no-repeat; height:36px; width:36px; float:left; margin-right:12px;margin-top:-5px;}
+.sml-link-icon-apply{background:url("../images/link-apply.png") no-repeat; height:36px; width:36px; float:left; margin-right:12px;margin-top:-5px;}
+.sml-link-icon-more{background:url("../images/link-extra.png") no-repeat; height:36px; width:36px; float:right; margin-top:-28px;}
 /* end icongraphy */
 @media only screen and (min-width: 768px){
 div.container div.container{
