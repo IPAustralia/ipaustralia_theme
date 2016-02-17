@@ -200,8 +200,8 @@
 
   /* start trade marks landing block */
 .node-type-landing-page #block-bean-trade-marks-landing-block-0 {
-    background: #1d252c url("../images/tm-banner.jpg") center top no-repeat;
-  background-size: 120% auto;
+    background: #0d252c url("../images/tm-banner.jpg") center top no-repeat;
+    background-size: 120% auto;
     padding: 60px 10px 20px;
 }
 .node-type-landing-page #block-bean-trade-marks-landing-block-0 .panels-flexible-region-first {
@@ -1266,6 +1266,17 @@ background-size: 100% auto;
     color:#fff;
 }
 /* end about us intro block */
+/* start about us in page nav */
+#block-bean-about-us-anchor-menu {
+  height:72px;
+  text-transform:uppercase;
+  padding-top:25px;
+  text-align:center;
+}
+#block-bean-about-us-anchor-menu a {
+  color:#0d252c;
+}
+/* end about us in page nav */
 /* start about us what we do block */
 /* .node-type-landing-page #block-bean-what-we-do-block .panels-flexible-region-inside-last, .node-type-landing-page #block-bean-what-we-do-block .panels-flexible-region-inside, .node-type-landing-page #block-bean-what-we-do-block .group-middle #block-bean-what-we-do-block .group-middle{
   background: #FFF;
