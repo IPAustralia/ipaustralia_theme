@@ -1098,14 +1098,14 @@
   color:#FFF;
   font-family: "montserratregular", sans-serif;
 }*/
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content ul {
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .pane-content ul, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-1 .pane-content ul, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-2 .pane-content ul, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-3 .pane-content ul, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content ul {
   list-style: none;
   text-align: left;
   color:#1D252C;
   padding:0px;
   margin:0px;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content ul li {
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .pane-content ul li, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-1 .pane-content ul li, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-2 .pane-content ul li, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-3 .pane-content ul li, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-content ul li{
   margin-top: 18px;
   padding: 0 30px 0 50px;
   margin-bottom: 18px;
