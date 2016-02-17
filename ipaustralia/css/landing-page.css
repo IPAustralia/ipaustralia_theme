@@ -50,7 +50,17 @@
     background: #fff;
 }
  /* end patent landing block */
-
+/* start patents in page nav */
+#block-bean-patents-anchor-menu-3 {
+  height:72px;
+  text-transform:uppercase;
+  padding-top:25px;
+  text-align:center;
+}
+#block-bean-patents-anchor-menu-3 a {
+  color:#0d252c;
+}
+/* end patents in page nav */
 /*understanding patents block */
 .node-type-landing-page  #block-bean-understanding-patents-block {
     padding: 50px 10px;
@@ -224,7 +234,18 @@
     background: #fff;
 }
  /* end trade marks landing block */
-
+ /* start trade marks in page nav */
+ #block-bean-trade-marks-anchor-menu {
+   height:72px;
+   text-transform:uppercase;
+   padding-top:25px;
+   text-align:center;
+   vertical-align: middle;
+ }
+ #block-bean-trade-marks-anchor-menu a {
+   color:#0d252c;
+ }
+ /* end trade marks in page nav */
  /*understanding trade marks block */
 .node-type-landing-page  #block-bean-understanding-trade-marks-block {
     padding: 50px 10px;
@@ -418,7 +439,17 @@
     background: #fff;
 }
  /* end designs landing block */
-
+ /* start designs in page nav */
+ #block-bean-designs-anchor-menu {
+   height:72px;
+   text-transform:uppercase;
+   padding-top:25px;
+   text-align:center;
+ }
+ #block-bean-designs-anchor-menu a {
+   color:#0d252c;
+ }
+ /* end designs in page nav */
  /*understanding designs block */
 .node-type-landing-page  #block-bean-understanding-designs-block {
     padding: 50px 10px;
@@ -612,7 +643,17 @@
     background: #fff;
 }
  /* end PBR landing block */
-
+ /* start pbr in page nav */
+ #block-bean-pbr-anchor-menu {
+   height:72px;
+   text-transform:uppercase;
+   padding-top:25px;
+   text-align:center;
+ }
+ #block-bean-pbr-anchor-menu a {
+   color:#0d252c;
+ }
+ /* end pbr in page nav */
  /*understanding PBR block */
 .node-type-landing-page  #block-bean-understanding-pbr {
     padding: 50px 10px;
