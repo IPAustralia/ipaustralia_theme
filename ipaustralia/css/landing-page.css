@@ -97,7 +97,7 @@
 /* end understanding patents*/
 
 /*start application process - patent */
-.node-type-landing-page #block-bean-patents-landing-page-navigation- {
+.node-type-landing-page #block-bean-patents-landing-page-navigation-, .node-type-landing-page #block-bean-all-about-patents-block{
   background: #C3e6e8;
   padding-top: 40px;
 }
@@ -659,7 +659,7 @@
 /* end understanding PBR*/
 
 /*start application process - PBR */
-.node-type-landing-page #block-bean-patents-landing-page-navigatio-0 {
+.node-type-landing-page #block-bean-patents-landing-page-navigatio-0, .node-type-landing-page #block-bean-all-about-pbr-block {
   background: #fdedce;
   padding-top: 40px;
 }

@@ -126,25 +126,27 @@ a:visited {color:#977100;}
 .main-list-item-patent {
     width: 100%;
     border: solid 1px #30aeb6;
-    margin: 0 3% 30px 1%;   
+    margin: 0 3% 30px 1%;
     float: left;
     position: relative;
     height: auto;
     max-height: 480px;
-    list-style-type:none;       
+    list-style-type:none;
     min-height:360px;
+		background:#fff;
 }
 
 .main-list-item-pbr {
     width: 100%;
     border: solid 1px #f1ac1e;
-    margin: 0 3% 30px 1%;   
+    margin: 0 3% 30px 1%;
     float: left;
     position: relative;
     height: auto;
     max-height: 480px;
     list-style-type:none;
     min-height:250px;
+		background:#fff;
 }
 
 .main-list-item:nth-child(3){
