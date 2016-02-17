@@ -8,6 +8,18 @@
   background-size: 100% auto;
     padding: 60px 10px 20px;
 }
+
+.node-type-landing-page #block-bean-patents-landing-block-new .panels-flexible-region-first {
+  color:#fff;
+  font: normal 20px "robotoregular", sans-serif;
+  padding-right: 20%;
+}
+.node-type-landing-page #block-bean-patents-landing-block-new .panels-flexible-region-first h2 {
+    font: normal 60px "montserratregular", sans-serif;
+    text-transform: uppercase;
+    color:#fff;
+}
+
 .node-type-landing-page .panels-flexible-region-two_column_panel_66_33_-left_region{
   color:#FFF;
   font: normal 20px "robotoregular", sans-serif;
@@ -183,14 +195,14 @@
     padding: 60px 10px 20px;
 }
 .node-type-landing-page #block-bean-trade-marks-landing-block-0 .panels-flexible-region-first {
-  color:#1d252c;
+  color:#fff;
   font: normal 20px "robotoregular", sans-serif;
   padding-right: 20%;
 }
 .node-type-landing-page #block-bean-trade-marks-landing-block-0 .panels-flexible-region-first h2 {
     font: normal 60px "montserratregular", sans-serif;
     text-transform: uppercase;
-    color:#1d252c;
+    color:#fff;
 }
 .node-type-landing-page #block-bean-trade-marks-landing-block-0 .panels-flexible-region-inside-last ul.tools-resources-list {
     padding: 0px;
@@ -384,7 +396,7 @@
 .node-type-landing-page #block-bean-designs-landing-block-0 .panels-flexible-region-first h2 {
     font: normal 60px "montserratregular", sans-serif;
     text-transform: uppercase;
-    color:#1d252c;
+    color:#fff;
 }
 .node-type-landing-page #block-bean-designs-landing-block-0 .panels-flexible-region-inside-last ul.tools-resources-list {
     padding: 0px;
@@ -571,14 +583,14 @@
     padding: 60px 10px 20px;
 }
 .node-type-landing-page #block-bean-pbr-landing-block-0 .panels-flexible-region-first {
-  color:#1d252c;
+  color:#fff;
   font: normal 20px "robotoregular", sans-serif;
   padding-right: 20%;
 }
 .node-type-landing-page #block-bean-pbr-landing-block-0 .panels-flexible-region-first h2 {
     font: normal 60px "montserratregular", sans-serif;
     text-transform: uppercase;
-    color:#1d252c;
+    color:#fff;
 }
 .node-type-landing-page #block-bean-pbr-landing-block-0 .panels-flexible-region-inside-last ul.tools-resources-list {
     padding: 0px;
@@ -947,26 +959,26 @@
   /*background: #30aeb6 url("../images/block-patent.png") left center no-repeat;*/
   background-color: #30aeb6;
   border: 1px solid #30aeb6;
-} 
+}
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-1 {
   /*background: #de4326 url("../images/block-tm.png") left center no-repeat;*/
   background: #de4326;
   border: 1px solid #de4326;
-} 
+}
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-2 {
   /*background: #84c98f url("../images/block-design.png") left center no-repeat;*/
   background: #84c98f;
   border: 1px solid #84c98f;
-} 
+}
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-3 {
   /*background: #f1ac1e url("../images/block-pbr.png") left center no-repeat;*/
   background: #f1ac1e;
   border: 1px solid #f1ac1e;
-} 
+}
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-4 {
   background-color: #704579;
   border: 1px solid #704579;
-} 
+}
 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-0:hover,
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-0 {
@@ -975,7 +987,7 @@
   border-bottom-width: 9px;
   height:80px;
   margin-bottom:-8px;
-} 
+}
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-1:hover,
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-1 {
   color:#de4326;
@@ -983,7 +995,7 @@
   border-bottom-width: 9px;
   height:80px;
   margin-bottom:-8px;
-} 
+}
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-2:hover,
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-2 {
   color:#84c98f;
@@ -991,7 +1003,7 @@
   border-bottom-width: 9px;
   height:80px;
   margin-bottom:-8px;
-} 
+}
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-3:hover,
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-3 {
   color:#f1ac1e;
@@ -999,7 +1011,7 @@
   border-bottom-width: 9px;
   height:80px;
   margin-bottom:-8px;
-} 
+}
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a#quicktabs-tab-tools_and_resources-4:hover,
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li.active a#quicktabs-tab-tools_and_resources-4 {
   color:#704579;
@@ -1007,7 +1019,7 @@
   border-bottom-width: 9px;
   height:80px;
   margin-bottom:-8px;
-} 
+}
 
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a.toc-filter-processed,
 .node-type-landing-page #block-quicktabs-tools-and-resources #quicktabs-tools_and_resources ul.quicktabs-tabs li a.toc-filter-processed:visited,
@@ -1173,4 +1185,25 @@
     margin-bottom: 18px;
     font-size: 16px;
     background: transparent url("../images/link-tool.png") 17px top no-repeat;
+  }
+
+
+div.thick {
+  height:6px;
+  border:0;
+  color:#fff;
+  background-color:#fff;
+  width:150px;
+  text-align:left;
+  margin-bottom:10px;
+  }
+
+div.thin {
+    height:4px;
+    border:0;
+    color:#b6bec1;
+    background-color:#b6bec1;
+    width:100px;
+    text-align:left;
+    margin-bottom:8px;
   }
