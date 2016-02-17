@@ -195,6 +195,10 @@ a:visited {color:#977100;}
 	font-size:16px;
 	font-weight:bold;
 }
+.front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.patents, .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.trade-marks, .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.designs, .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.pbr, .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.copyright {
+	height:68px;
+	padding-top:22px;
+}
 
 /* end alistairs css */
 
