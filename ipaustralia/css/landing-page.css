@@ -1129,12 +1129,17 @@
 .node-type-landing-page #block-quicktabs-tools-and-resources  {
   background: #EEF0F1;
 }
-
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-1 .bs-vert-callout-trade-marks {
+  min-height:490px;
+}
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .bs-vert-callout-patents {
+  min-height:525px;
+}
 .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-row-four_column_panel_with_top_and_bottom-main-row-inside .panels-flexible-region .inside {
     background: white none repeat scroll 0 0;
     margin-right: 0.5em;
     margin-left: 0.5em;
-    min-height: 607px;
+    min-height: 590px;
     padding: 0;
 }
 .node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .panel-image {
