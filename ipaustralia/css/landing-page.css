@@ -1218,11 +1218,14 @@
     padding: 0px;
     margin: 0px;
     color: #1d252c;
-    list-style: none;
   }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 ul li {
+  .node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 ul, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_2 ul, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .panels-flexible-region-four_column_panel_with_top_and_bottom-center ul, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .panels-flexible-region-four_column_panel_with_top_and_bottom-right_region_2 ul {
+    list-style-type: none;
+    padding-left:0px;
+  }
+.node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 ul li, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_2 ul li, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .panels-flexible-region-four_column_panel_with_top_and_bottom-center ul li, .node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .panels-flexible-region-four_column_panel_with_top_and_bottom-right_region_2 ul li {
     margin-top: 18px;
-    padding: 0 30px 0 50px;
+    padding: 0 10px 0 50px;
     margin-bottom: 18px;
     font-size: 16px;
     background: transparent url("../images/link-tool.png") 17px top no-repeat;
