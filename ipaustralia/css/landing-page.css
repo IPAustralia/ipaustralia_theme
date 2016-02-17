@@ -52,11 +52,11 @@
  /* end patent landing block */
 
 /*understanding patents block */
-.node-type-landing-page  #block-bean-understanding-patents-block-new {
-    padding: 80px 10px;
+.node-type-landing-page  #block-bean-understanding-patents-block {
+    padding: 50px 10px;
     text-align: center;
   }
-  .node-type-landing-page  #block-bean-understanding-patents-block-new .group-footer p, .node-type-landing-page  #block-bean-understanding-patents-block-new .group-footer a {
+  .node-type-landing-page  #block-bean-understanding-patents-block .group-footer p, .node-type-landing-page  #block-bean-understanding-patents-block .group-footer a {
     margin-top: 40px;
     border: 2px solid white;
     background: #1d252c;
@@ -72,7 +72,7 @@
     margin-right: 27px;
     cursor: pointer;
 }
-.node-type-landing-page #block-bean-understanding-patents-block-new .group-footer p:after, .node-type-landing-page #block-bean-understanding-patents-block-new .group-footer a:after {
+.node-type-landing-page #block-bean-understanding-patents-block .group-footer p:after, .node-type-landing-page #block-bean-understanding-patents-block .group-footer a:after {
     background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
@@ -80,7 +80,7 @@
     content: '';
     margin: 0 0 -2px 10px;
 }
-.node-type-landing-page #block-bean-understanding-patents-block-new .group-left, .node-type-landing-page #block-bean-understanding-patents-block-new .group-right, .node-type-landing-page #block-bean-understanding-patents-block-new .group-middle{
+.node-type-landing-page #block-bean-understanding-patents-block .group-left, .node-type-landing-page #block-bean-understanding-patents-block .group-right, .node-type-landing-page #block-bean-understanding-patents-block .group-middle{
   background: #FFF;
   text-align: left;
   padding: 20px 40px;
@@ -89,7 +89,7 @@
   margin-left: 3%;
   margin-top: 30px;
 }
-.node-type-landing-page #block-bean-understanding-patents-block-new {
+.node-type-landing-page #block-bean-understanding-patents-block {
   background: #EEF0F1;
   font-family: "robotoregular", sans-serif;
   margin-bottom: 2px;
@@ -108,7 +108,7 @@
 
 /* start managing your patent block */
 .node-type-landing-page  #block-bean-managing-your-patent-block {
-    padding: 80px 10px;
+    padding: 40px 10px;
     text-align: center;
   }
   .node-type-landing-page  #block-bean-managing-your-patent-block .group-footer p, .node-type-landing-page  #block-bean-managing-your-patent-block .group-footer a {
@@ -180,7 +180,7 @@
 }
 .node-type-landing-page #block-bean-tools-and-resources div.bs-vert-callout-patents {
   background: #FFF;
-  min-height: 490px;
+  min-height: 525px;
 }
 /* end tools and resources patent */
 
@@ -572,7 +572,7 @@
 }
 .node-type-landing-page #block-bean-tools-and-resources-designs div.bs-vert-callout-designs {
   background: #FFF;
-  min-height: 490px;
+  min-height: 440px;
 }
 /* end tools and resources designs */
 
