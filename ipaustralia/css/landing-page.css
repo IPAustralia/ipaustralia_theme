@@ -1207,3 +1207,189 @@ div.thin {
     text-align:left;
     margin-bottom:8px;
   }
+/* start about us intro block */
+
+.node-type-landing-page #block-bean-about-us-landing-block {
+  background: #1d252c url("../images/contact-us-banner.jpg") center top no-repeat;
+background-size: 100% auto;
+  padding: 40px 10px 60px;
+}
+.node-type-landing-page #block-bean-about-us-landing-block  .container {
+  color:#fff;
+  font: normal 20px "robotoregular", sans-serif;
+  padding-right: 20%;
+}
+.node-type-landing-page #block-bean-about-us-landing-block  .container h2 {
+    font: normal 60px "montserratregular", sans-serif;
+    text-transform: uppercase;
+    color:#fff;
+}
+/* end about us intro block */
+/* start about us what we do block */
+/* .node-type-landing-page #block-bean-what-we-do-block .panels-flexible-region-inside-last, .node-type-landing-page #block-bean-what-we-do-block .panels-flexible-region-inside, .node-type-landing-page #block-bean-what-we-do-block .group-middle #block-bean-what-we-do-block .group-middle{
+  background: #FFF;
+  text-align: left;
+  padding: 20px 40px;
+  min-height: 280px;
+  width: 22%;
+  margin-left: 3%;
+  margin-top: 30px;
+}*/
+.node-type-landing-page #block-bean-what-we-do-block {
+  background: #EEF0F1;
+  font-family: "robotoregular", sans-serif;
+  margin-bottom: 2px;
+}
+/* end what we do block */
+/* start news and community block */
+#block-panels-mini-news-and-community-homepage-pane {
+  padding:80px 10px;
+  text-align:center;
+}
+#block-panels-mini-news-and-community-homepage-pane h2 {
+  color:#0d252c;
+}
+#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs {
+  width:100%;
+  padding:0px;
+  margin:0px;
+}
+#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li {
+  width:33%;
+  text-align:center;
+  float:left;
+  display:inline-block;
+  padding-bottom:19px;
+  margin-bottom:14px;
+  margin-right:-1px;
+}
+#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active {
+  background:transparent url("../images/dwn-arrow-charcoal.png") center bottom no-repeat;
+}
+#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active a {
+  background:white;
+  color:#0d252c;
+  border-bottom: 7px solid #0d252c;
+}
+#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li a {
+  text-transform: uppercase;
+  background:white;
+  padding:27px 0px;
+  color:#0d252c;
+  display:inline-block;
+  font: normal 20px "monserratbold", sans-serif;
+  font-family: "monserratregular", sans-serif;
+  line-height:14px;
+  border:1px solid #0d252c;
+  width:100%;
+}
+/* end news block */
+/* start careers block */
+.node-type-landing-page  #block-bean-careers-block{
+    padding: 50px 10px;
+    text-align: center;
+  }
+  .node-type-landing-page #block-bean-careers-block h2, .node-type-landing-page #block-bean-careers-block p span{
+    color:#fff;
+  }
+.node-type-landing-page #block-bean-careers-block .group-left, .node-type-landing-page #block-bean-careers-block .group-right, .node-type-landing-page #block-bean-careers-block .group-middle{
+  background: #FFF;
+  text-align: left;
+  padding: 20px 40px;
+  min-height: 280px;
+  width: 30%;
+  margin-left: 3%;
+  margin-top: 30px;
+}
+.node-type-landing-page #block-bean-careers-block {
+  background: #099;
+  font-family: "robotoregular", sans-serif;
+  margin-bottom: 2px;
+}
+/* end careers block */
+
+/* start accountability block */
+.node-type-landing-page  #block-bean-accountability-and-reporting {
+    padding: 50px 10px;
+    text-align: center;
+  }
+  .node-type-landing-page #block-bean-accountability-and-reporting h2, .node-type-landing-page #block-bean-accountability-and-reporting p span {
+    color:#fff;
+  }
+.node-type-landing-page #block-bean-accountability-and-reporting .group-left, .node-type-landing-page #block-bean-accountability-and-reporting .group-right, .node-type-landing-page #block-bean-accountability-and-reporting .group-middle{
+  background: #FFF;
+  text-align: left;
+  padding: 20px 40px;
+  min-height: 280px;
+  width: 30%;
+  margin-left: 3%;
+  margin-top: 30px;
+}
+.node-type-landing-page #block-bean-accountability-and-reporting {
+  background: #0d252c;
+  font-family: "robotoregular", sans-serif;
+  margin-bottom: 2px;
+}
+/* start accountability block */
+/* start public consultations connect with us block */
+
+#block-panels-mini-consultations-and-twitter-feed-2 {
+  padding:80px 10px;
+  background:#eff0f2;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside {
+  border-left:10px solid #0d252c;
+  margin-right:20px;
+  background:white;
+  padding:40px 30px;
+  min-height:300px;
+  position:relative;
+  margin-left:0px;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 a {
+  display:inline-block;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul {
+  list-style:none;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li{
+  display:inline;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a {
+  text-indent:-9999px;
+  padding:0px;
+  width:36px;
+  height:36px;
+  margin:28px 0 0 12px;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 {
+  position:absolute;
+  top:0;
+  right:20px;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.facebook {
+  background:transparent url("../images/sm-facebook.png") center center no-repeat;
+  border-radius:100px;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.twitter {
+  background:transparent url("../images/sm-twitter.png") center center no-repeat;
+  border-radius:100px;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.linkedin {
+  background:transparent url("../images/sm-linkedin.png") center center no-repeat;
+  border-radius:100px;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.youtube {
+  background:transparent url("../images/sm-youtube.png") center center no-repeat;
+  border-radius:100px;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-govcms-social-links-services .pane-content {
+  display:none;
+}
+#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside h3, #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-title {
+  font: normal 24px "monserratbold", sans-serif;
+  font-family: "monserratregular", sans-serif;
+  margin: 0px;
+  margin-bottom:35px;
+}
+/* end public consultations connect with us block */
