@@ -1453,3 +1453,27 @@ background-size: 100% auto;
   margin-bottom:35px;
 }
 /* end public consultations connect with us block */
+
+
+/* faqs styling */
+.pane-bean-patents-faqs .field-name-field-faqs-container, .pane-bean-patents-faqs .field-name-field-guides-and-tutorials-conta, .pane-bean-patents-faqs .field-name-field-ip-references-container , .pane-bean-patents-faqs .field-name-field-ip-search-text{
+  background:white;
+  min-height:750px;
+}
+.pane-bean-trade-marks-faqs .field-name-field-faqs-container, .pane-bean-trade-marks-faqs .field-name-field-guides-and-tutorials-conta, .pane-bean-trade-marks-faqs .field-name-field-ip-references-container , .pane-bean-trade-marks-faqs .field-name-field-ip-search-text{
+  background:white;
+  min-height:725px;
+}
+.pane-bean-designs-faqs .field-name-field-faqs-container, .pane-bean-designs-faqs .field-name-field-guides-and-tutorials-conta, .pane-bean-designs-faqs .field-name-field-ip-references-container , .pane-bean-designs-faqs .field-name-field-ip-search-text{
+  background:white;
+  min-height:550px;
+}
+.pane-bean-pbr-faqs .field-name-field-faqs-container, .pane-bean-pbr-faqs .field-name-field-guides-and-tutorials-conta, .pane-bean-pbr-faqs .field-name-field-ip-references-container , .pane-bean-pbr-faqs .field-name-field-ip-search-text{
+  background:white;
+  min-height:750px;
+}
+.pane-bean-patents-faqs .field-name-field-faqs-container h3, .pane-bean-patents-faqs .field-name-field-guides-and-tutorials-conta h3, .pane-bean-patents-faqs .field-name-field-ip-references-container h3, .pane-bean-patents-faqs .field-name-field-ip-search-text h3, .pane-bean-trade-marks-faqs .field-name-field-faqs-container h3, .pane-bean-trade-marks-faqs .field-name-field-guides-and-tutorials-conta h3, .pane-bean-trade-marks-faqs .field-name-field-ip-references-container h3, .pane-bean-trade-marks-faqs .field-name-field-ip-search-text h3, .pane-bean-designs-faqs .field-name-field-faqs-container h3, .pane-bean-designs-faqs .field-name-field-guides-and-tutorials-conta h3, .pane-bean-designs-faqs .field-name-field-ip-references-container h3, .pane-bean-designs-faqs .field-name-field-ip-search-text h3, .pane-bean-pbr-faqs .field-name-field-faqs-container h3, .pane-bean-pbr-faqs .field-name-field-guides-and-tutorials-conta h3, .pane-bean-pbr-faqs .field-name-field-ip-references-container h3, .pane-bean-pbr-faqs .field-name-field-ip-search-text h3 {
+  padding-left:10px;
+}
+
+/* end faq styling */

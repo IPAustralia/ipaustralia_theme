@@ -104,15 +104,15 @@ a:visited {color:#977100;}
 }
 .bs-vert-callout{min-height: 430px;}
 
-.bs-callout-patents, .bs-vert-callout-patents  {border-color:#30AEB6;}
-.bs-callout-trade-marks, .bs-vert-callout-trade-marks {border-color:#DE4326;}
-.bs-callout-designs, .bs-vert-callout-designs {border-color:#84C98F;}
-.bs-callout-pbr, .bs-vert-callout-pbr {border-color:#F1AC1E;}
-.bs-callout-purple, .bs-vert-callout-purple {border-color:#704579;}
-.bs-callout-charcoal, .bs-vert-callout-charcoal {border-color:#1D252C;}
+.bs-callout-patents, .bs-vert-callout-patents  {border-color:#30AEB6 !important;}
+.bs-callout-trade-marks, .bs-vert-callout-trade-marks {border-color:#DE4326 !important;}
+.bs-callout-designs, .bs-vert-callout-designs {border-color:#84C98F !important;}
+.bs-callout-pbr, .bs-vert-callout-pbr {border-color:#F1AC1E !important;}
+.bs-callout-purple, .bs-vert-callout-purple {border-color:#704579 !important;}
+.bs-callout-charcoal, .bs-vert-callout-charcoal {border-color:#1D252C !important;}
 
-.bs-vert-callout {border-bottom-width:5px;}
-.bs-callout {border-left-width:5px;}
+.bs-vert-callout {border-bottom-width:5px !important;}
+.bs-callout {border-left-width:5px !important;}
 
 .panels-flexible-row-four_column_panel_with_top_and_bottom-main-row h3 {
     text-transform: uppercase;
