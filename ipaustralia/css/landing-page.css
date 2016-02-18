@@ -1286,15 +1286,21 @@ background-size: 100% auto;
 }
 /* end about us in page nav */
 /* start about us what we do block */
-/* .node-type-landing-page #block-bean-what-we-do-block .panels-flexible-region-inside-last, .node-type-landing-page #block-bean-what-we-do-block .panels-flexible-region-inside, .node-type-landing-page #block-bean-what-we-do-block .group-middle #block-bean-what-we-do-block .group-middle{
+#block-bean-what-we-do-block .field-name-field-ip-search-text, #block-bean-what-we-do-block .field-name-field-ip-references-container, #block-bean-what-we-do-block .field-name-field-faqs-container, #block-bean-what-we-do-block .field-name-field-guides-and-tutorials-conta {
   background: #FFF;
   text-align: left;
-  padding: 20px 40px;
+  padding:10px 40px;
   min-height: 280px;
-  width: 22%;
   margin-left: 3%;
   margin-top: 30px;
-}*/
+}
+#block-bean-what-we-do-block h3 {
+  line-height:30px;
+}
+#block-bean-what-we-do-block {
+  padding-top:40px;
+  padding-bottom: 40px;
+}
 .node-type-landing-page #block-bean-what-we-do-block {
   background: #EEF0F1;
   font-family: "robotoregular", sans-serif;
@@ -1345,6 +1351,10 @@ background-size: 100% auto;
 }
 /* end news block */
 /* start careers block */
+#block-bean-careers-block h4 {
+  text-transform:uppercase;
+  font-size:18px;
+}
 .node-type-landing-page  #block-bean-careers-block{
     padding: 50px 10px;
     text-align: center;
@@ -1476,5 +1486,4 @@ background-size: 100% auto;
   padding-left:10px;
   padding-top:10px;
 }
-
 /* end faq styling */
