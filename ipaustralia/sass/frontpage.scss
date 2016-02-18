@@ -142,7 +142,7 @@
                     .inside {
                         background: white none repeat scroll 0 0;
                         margin-right: 20px;
-                        min-height: 607px;
+                        min-height: 565px;
                         @media only screen and (max-width: $break-point-medium) {
                             margin-bottom:20px;
                         }
@@ -199,7 +199,7 @@
                             font:$intro-text;
                             min-height: 10px;
 
-                            p, a {
+                            a {
                                 margin-top: $gap-medium;
                                 @include rounded-button-with-arrrow;
                                 border-color: white;
