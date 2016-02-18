@@ -195,6 +195,12 @@
 /* end tools and resources patent */
 
 /* start more Patents section */
+.pane-pdf-froms .bs-callout-patents, .pane-bean-patents-publications-and-reports .bs-callout-patents {
+  min-height:350px;
+}
+.pane-pdf-froms .bs-vert-callout-trade-marks, .pane-bean-trade-marks-publications-and-reports .bs-vert-callout-trade-marks, .pane-pdf-froms .bs-callout-designs, .pane-bean-designs-publications-and-reports .bs-callout-designs, .pane-pdf-froms .bs-callout-pbr, .pane-bean-pbr-publications-and-reports .bs-callout-pbr {
+  min-height:370px;
+}
 
 /* end more Patents section */
 
