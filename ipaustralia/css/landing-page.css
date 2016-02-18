@@ -1537,7 +1537,7 @@ background-size: 100% auto;
   .node-type-landing-page #block-quicktabs-tools-and-resources .bs-callout-trade-marks,  .node-type-landing-page #block-quicktabs-tools-and-resources .bs-callout-designs {
     min-height:370px;
   }
-  #block-panels-mini-more-about-pbr-2-col-panel,   #block-panels-mini-more-about-designs-2-col-panel,  #block-panels-mini-more-about-trade-marks-2-col-panel,  #block-panels-mini-more-about-patents-2-col-panel, #block-quicktabs-tools-and-resources .pane-case-studies {
+  #block-panels-mini-more-about-pbr-2-col-panel,   #block-panels-mini-more-about-designs-2-col-panel,  #block-panels-mini-more-about-trade-marks-2-column-  #block-panels-mini-more-about-patents-2-col-panel, #block-quicktabs-tools-and-resources .pane-case-studies {
     padding-top:40px;
     padding-bottom:40px;
   }
