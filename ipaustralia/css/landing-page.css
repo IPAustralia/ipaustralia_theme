@@ -1372,7 +1372,8 @@ background-size: 100% auto;
   margin-top: 30px;
 }
 .node-type-landing-page #block-bean-careers-block {
-  background: #099;
+  background: #0d252c url("../images/careers-banner.jpg");
+  background-size:100% auto;
   font-family: "robotoregular", sans-serif;
   margin-bottom: 2px;
 }
