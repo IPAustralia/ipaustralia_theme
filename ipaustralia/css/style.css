@@ -217,3 +217,9 @@ div.container div.container{
 #block-quicktabs-homepage-main-tab h3.block-title {
     color:#FFF;
 }
+.footer .block-menu-block .nav .last ul li {margin-top:-2px;}
+.footer .block-menu-block .nav .last ul li a{padding-left:50px; margin-top:5px; padding-top:8px;}
+.footer .icon-facebook {background:url("../images/sm-facebook.png") no-repeat !important; height:36px; width:36px; float:left;}
+.footer .icon-twitter {background:url("../images/sm-twitter.png") no-repeat !important; height:36px; width:36px; float:left;}
+.footer .icon-linkedin {background:url("../images/sm-linkedin.png") no-repeat !important; height:36px; width:36px; float:left;}
+.footer .icon-youtube {background:url("../images/sm-youtube.png") no-repeat !important; height:36px; width:36px; float:left;}
