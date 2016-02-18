@@ -223,3 +223,45 @@ div.container div.container{
 .footer .icon-twitter {background:url("../images/sm-twitter.png") no-repeat !important; height:36px; width:36px; float:left;}
 .footer .icon-linkedin {background:url("../images/sm-linkedin.png") no-repeat !important; height:36px; width:36px; float:left;}
 .footer .icon-youtube {background:url("../images/sm-youtube.png") no-repeat !important; height:36px; width:36px; float:left;}
+
+
+
+/* search */
+.page-search .search-info {
+	display:none;
+}
+
+.page-search li.search-result {
+  display:block;
+  background:#eff0f2;
+  padding:35px;
+  margin-bottom:10px;
+}
+
+
+.page-search ol.search-results {
+  display: block;
+  list-style-type: none;
+  padding: 0px !important;
+}
+
+
+.page-search .search-snippet-info h1, .search-snippet-info h2, .search-snippet-info h3, .search-snippet-info h4 {
+  font-size:15px;
+
+}
+
+.page-search .search-snippet-info img {
+  display:none;
+}
+
+.page-search h3.title {
+  decoration:underline;
+
+}
+
+.page-search .search-result h3 a {
+  color #od252c;
+  text-decoration:underline;
+  font-size:24px;
+}
