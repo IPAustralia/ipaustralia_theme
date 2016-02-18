@@ -310,7 +310,7 @@ body {
     .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
       background: white none repeat scroll 0 0;
       margin-right: 20px;
-      min-height: 607px;
+      min-height: 565px;
       padding: 0; }
       @media only screen and (max-width: 768px) {
         .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
@@ -347,7 +347,7 @@ body {
       background: transparent;
       font: normal 20px "robotolight", sans-serif;
       min-height: 10px; }
-      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
         margin-top: 40px;
         border: 2px solid white;
         background: transparent;
@@ -361,18 +361,18 @@ body {
         line-height: 14px;
         border-color: white;
         cursor: pointer; }
-        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p:after, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
+        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
           background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
           display: inline-block;
           width: 9px;
           height: 15px;
           content: '';
           margin: 0 0 -2px 10px; }
-        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p:hover, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
+        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
           text-decoration: none;
           background: transparent;
           border: 2px solid #0d252c; }
-        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside p :hover, .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
+        .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
           border-color: white; }
   .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list {
     padding: 0px;
