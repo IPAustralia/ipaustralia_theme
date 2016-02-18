@@ -1487,3 +1487,10 @@ background-size: 100% auto;
   padding-top:10px;
 }
 /* end faq styling */
+
+.img-responsive{
+  display:inline;
+}
+#block-bean-designs-landing-block-0 a, #block-bean-pbr-landing-block-0 a, #block-bean-patents-landing-block-new a, #block-bean-trade-marks-landing-block-0 a {
+  color:#0d252c;
+}
