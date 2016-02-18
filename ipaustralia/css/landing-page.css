@@ -1495,3 +1495,36 @@ background-size: 100% auto;
 #block-bean-designs-landing-block-0 a, #block-bean-pbr-landing-block-0 a, #block-bean-patents-landing-block-new a, #block-bean-trade-marks-landing-block-0 a {
   color:#0d252c;
 }
+
+/* buttons */
+#block-bean-careers-block .group-footer a, #block-bean-accountability-and-reporting .group-footer a {
+    margin-top: 40px;
+    border: 2px solid white;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 14px;
+    border-color: white;
+    cursor: pointer;
+  }
+  #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-41-1 a, .panels-flexible-row-four_column_panel_with_top_and_bottom-2 a {
+    margin-top: 40px;
+    border: 2px solid white;
+    background: #0d252c;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 14px;
+    border-color: #0d252c;
+    margin-right: 27px;
+    cursor: pointer;
+  }
