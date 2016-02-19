@@ -7,12 +7,6 @@
 .front #block-system-main {
   display: none; }
 
-/*.last.leaf.menu-mlid-1816 {
-  display: none;
-}*/
-/*.main-container {
-    display: none;
-}*/
 h2 {
   font: normal 36px "montserratbold", sans-serif; }
 
@@ -386,5 +380,3 @@ header nav .nav-tabs {
           @media only screen and (max-width: 768px) {
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box {
               display: none; } }
-
-/*# sourceMappingURL=megamenu.css.map */
