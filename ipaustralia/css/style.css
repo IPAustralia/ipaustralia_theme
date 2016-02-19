@@ -347,6 +347,7 @@ height:140px;
 .page-tools-resources-pdf-forms .views-row {
 background:#eff0f2;
 margin-bottom:10px;
+padding:20px;
 }
 .page-tools-resources-pdf-forms .views-row .views-field-title a {
 	color:#0d252c;
@@ -354,7 +355,10 @@ margin-bottom:10px;
 	font-weight:bold;
 	text-decoration:underline;
 }
-.page-tools-resources-pdf-forms .views-row .views-field-field-puplish-online-date {
+.page-tools-resources-pdf-forms .views-row .views-field-field-publish-online-date {
 	color:#999;
+}
+.page-tools-resources-pdf-forms .views-row .date-display-single {
+	display:none;
 }
 /* end forms listing */
