@@ -305,40 +305,40 @@ width:140px;
 height:140px;
 }
 /* end case studies listing */
-/* start events listing */
-.page-news-media-events .views-row, .page-news .views-row {
+/* start events and news listing */
+.page-news-media-events .views-row, .page-about-us-news-and-community-news .views-row {
 background:#eff0f2;
 margin-bottom:10px;
 }
-.page-news-media-events .views-row .views-field-title a, .page-news .views-row .views-field-title a{
+.page-news-media-events .views-row .views-field-title a, .page-about-us-news-and-community-news .views-row .views-field-title a{
 	color:#0d252c;
 	font-size:24px;
 	font-weight:bold;
 	text-decoration:underline;
 }
-.page-news-media-events .views-field-field-organiser, .page-news .views-field-field-organiser{
+.page-news-media-events .views-field-field-organiser, .page-about-us-news-and-community-news .views-field-field-organiser{
 	display:none;
 }
 .page-news-media-events .views-field-field-event-date-1, .page-news-media-events .views-field-field-location {
 color:#999;
 }
-.page-news-media-events .views-row .panel-col-first, .page-news .views-row .panel-col-first {
+.page-news-media-events .views-row .panel-col-first, .page-about-us-news-and-community-news .views-row .panel-col-first {
 width:23%;
 }
-.page-news-media-events .views-row .panel-col-last, .page-news .views-row .panel-col-last {
+.page-news-media-events .views-row .panel-col-last, .page-about-us-news-and-community-news .views-row .panel-col-last {
 width:70%;
 }
-.page-news-media-events .views-row .panel-col-first img, .page-news .views-row .panel-col-first img {
+.page-news-media-events .views-row .panel-col-first img, .page-about-us-news-and-community-news .views-row .panel-col-first img {
 margin:30px;
 width:140px;
 height:140px;
 }
-.page-news .views-field-field-news-date {
+.page-about-us-news-and-community-news .views-field-field-news-date {
 	padding-top:25px;
 	color:#999;
 }
 
-.page-news .views-field-field-news-date .views-label-field-news-date {
+.page-about-us-news-and-community-news .views-field-field-news-date .views-label-field-news-date {
 	display:none;
 }
-/* end events listing */
+/* end events and news listing */
