@@ -324,7 +324,15 @@ body {
         .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
           margin: 0px;
           line-height: 77px;
-          text-align: left; } }
+          text-align: left;
+          position: absolute;
+          margin: -74px 0 0 70px;
+          height: 73px;
+          overflow: hidden;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 54%; } }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
         list-style: none; }
         .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li {
@@ -395,6 +403,9 @@ body {
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.copyright {
         border-left: 10px solid #704579;
         font-size: 14px; }
+    @media only screen and (max-width: 480px) {
+      .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list {
+        /*display:none;*/ } }
     .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li {
       /*margin-top: 18px;*/
       padding: 0px 30px 15px 50px;

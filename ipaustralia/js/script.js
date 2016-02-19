@@ -9,6 +9,12 @@ jQuery(window).resize(function () {
     console.log('reszing height');
     equalHeight('#block-bean-tools-and-resources-generic-bloc .panels-flexible-region-inside')
 });
+jQuery(document).on('click', '.media-element-container', function(){
+//    jQuery(this).siblings('.tools-resources-list').toggle();
+//    jQuery(this).closest('.inside').css('height', 'auto');
+});
+
+
 
 
 

@@ -163,6 +163,14 @@
                                 margin:0px;
                                 line-height: 77px;
                                 text-align:left;
+                                position: absolute;
+                                margin:-74px 0 0 70px;
+                                height:73px;
+                                overflow:hidden;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                width:54%;
                             }
                         }
                         ul {
@@ -215,6 +223,10 @@
             }
             .tools-resources-list {
                 @include resources-list(no-icon);
+
+                @media only screen and (max-width: $break-point-small) {
+                    /*display:none;*/
+                }
                 li {
                     /*margin-top: 18px;*/
                     padding: 0px 30px 15px 50px;
