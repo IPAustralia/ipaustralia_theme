@@ -358,7 +358,7 @@ padding:20px;
 	font-weight:bold;
 	text-decoration:underline;
 }
-.page-tools-resources-pdf-forms .views-row .date-display-single, .page-tools-resources-patents-forms .views-row .date-display-single, .page-tools-resources-trade-marks-forms .views-row .date-display-single, .page-tools-resources-designs-forms .views-row .date-display-single, .page-tools-resources-pbr-forms .views-row .date-display-single {
+.page-tools-resources-pdf-forms .views-row .date-display-single, .page-tools-resources-patents-forms .views-row .date-display-single, .page-tools-resources-trade-marks-forms .views-row .date-display-single, .page-tools-resources-designs-forms .views-row .date-display-single, .page-tools-resources-pbr-forms .views-row .date-display-single, .page-tools-resources-publications---reports .views-row .date-display-single  {
 	color:#999;
 }
 .page-tools-resources-pdf-forms .views-row .views-label-field-publish-online-date, .page-tools-resources-patents-forms .views-row .views-label-field-publish-online-date, .page-tools-resources-trade-marks-forms .views-row .views-label-field-publish-online-date, .page-tools-resources-designs-forms .views-row .views-label-field-publish-online-date, .page-tools-resources-pbr-forms .views-row .views-label-field-publish-online-date {
