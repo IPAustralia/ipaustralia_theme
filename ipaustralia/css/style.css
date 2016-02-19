@@ -316,22 +316,22 @@ margin-bottom:10px;
 	font-weight:bold;
 	text-decoration:underline;
 }
-.page-news-media-events .views-field-field-organiser, .page-about-us-news-and-community-news .views-field-field-organiser{
+.page-about-us-news-and-community-events .views-field-field-organiser, .page-about-us-news-and-community-news .views-field-field-organiser{
 	display:none;
 }
-.page-news-media-events .views-field-field-event-date-1, .page-news-media-events .views-field-field-location, .page-tools-resources-publications---reports .views-label-field-publish-online-date {
+.page-about-us-news-and-community-events .views-field-field-event-date-1, .page-news-media-events .views-field-field-location, .page-tools-resources-publications---reports .views-label-field-publish-online-date {
 color:#999;
 }
-.page-news-media-events .views-row .panel-col-first, .page-about-us-news-and-community-news .views-row .panel-col-first, .page-tools-resources-publications---reports .views-row .panel-col-first {
+.page-about-us-news-and-community-events .views-row .panel-col-first, .page-about-us-news-and-community-news .views-row .panel-col-first, .page-tools-resources-publications---reports .views-row .panel-col-first {
 width:23%;
 }
-.page-news-media-events .views-row .panel-col-last, .page-about-us-news-and-community-news .views-row .panel-col-last, .page-tools-resources-publications---reports .views-row .panel-col-last {
+.page-about-us-news-and-community-events .views-row .panel-col-last, .page-about-us-news-and-community-news .views-row .panel-col-last, .page-tools-resources-publications---reports .views-row .panel-col-last {
 width:70%;
 }
 .page-tools-resources-publications---reports .views-row .panel-col-last {
 	padding-top:30px;
 }
-.page-news-media-events .views-row .panel-col-first img, .page-about-us-news-and-community-news .views-row .panel-col-first img, .page-tools-resources-publications---reports .views-row .panel-col-first img {
+.page-about-us-news-and-community-events .views-row .panel-col-first img, .page-about-us-news-and-community-news .views-row .panel-col-first img, .page-tools-resources-publications---reports .views-row .panel-col-first img {
 margin:30px;
 width:140px;
 height:140px;
