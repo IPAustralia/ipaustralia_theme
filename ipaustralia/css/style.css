@@ -381,7 +381,7 @@ padding:20px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .0) !important;
 }
 
-li.leaf a {
+.menu-block-wrapper.menu-block-5.menu-name-main-menu.parent-mlid-0.menu-level-2 li.leaf a {
     color: #000;
     text-transform: uppercase;
     font-family: robotobold, sans-serif;
@@ -390,7 +390,7 @@ li.leaf a {
     border-bottom-color: #ccc;
 }
 
-li.collapsed a {
+.menu-block-wrapper.menu-block-5.menu-name-main-menu.parent-mlid-0.menu-level-2 li.collapsed a {
     color: #000;
     text-transform: uppercase;
     font-family: robotobold, sans-serif;
@@ -399,7 +399,7 @@ li.collapsed a {
     border-bottom-color: #ccc;
 }
 
-li.first a {
+.menu-block-wrapper.menu-block-5.menu-name-main-menu.parent-mlid-0.menu-level-2 li.first a {
     color: #000;
     text-transform: uppercase;
     font-family: robotobold, sans-serif;
@@ -408,7 +408,7 @@ li.first a {
     border-bottom-color: #ccc;
 }
 
-li.active a {
+.menu-block-wrapper.menu-block-5.menu-name-main-menu.parent-mlid-0.menu-level-2 li.active a {
     color: #000;
     text-transform: uppercase;
     font-family: robotobold, sans-serif;
