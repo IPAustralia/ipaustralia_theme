@@ -1550,26 +1550,26 @@ background-size: 100% auto;
 
 
 /* */
-.node-type-landing-page .pane-case-studies .block-title {
+.page-node-1016 .pane-case-studies .block-title {
   text-align: center;
 }
-.node-type-landing-page .pane-case-studies {
+.page-node-1016 .pane-case-studies {
   color: #1d252c;
 }
-.node-type-landing-page .pane-case-studies .views-view-grid td {
+.page-node-1016 .pane-case-studies .views-view-grid td {
   position: relative;
   vertical-align: top;
   width: 33%;
 }
-.node-type-landing-page .pane-case-studies .views-view-grid td div[class*="image"] {
+.page-node-1016 .pane-case-studies .views-view-grid td div[class*="image"] {
   position: relative;
   z-index: 10;
 }
-.node-type-landing-page .pane-case-studies .views-view-grid td div[class*="image"] img {
+.page-node-1016 .pane-case-studies .views-view-grid td div[class*="image"] img {
   display: inline-block;
   height: 380px;
 }
-.node-type-landing-page .pane-case-studies .views-view-grid td div[class*="date"],  .node-type-landing-page section[id*="lock-panels-mini-more-about"] .view-id-case_studies td div[class*="title"] {
+.page-node-1016 .pane-case-studies .views-view-grid td div[class*="date"],  .page-node-1016 section[id*="lock-panels-mini-more-about"] .view-id-case_studies td div[class*="title"] {
   text-align: left;
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
   padding: 0px 20px;
@@ -1585,13 +1585,13 @@ background-size: 100% auto;
   overflow: hidden;
   margin-top: -115px;
 }
-.node-type-landing-page .pane-case-studies .view-id-case_studies td div[class*="title"] {
+.page-node-1016 .pane-case-studies .view-id-case_studies td div[class*="title"] {
   margin-top: -70px;
 }
-.node-type-landing-page .pane-case-studies .views-view-grid td div[class*="date"] span[class*="label "] {
+.page-node-1016 .pane-case-studies .views-view-grid td div[class*="date"] span[class*="label "] {
   float: left;
 }
-.node-type-landing-page .pane-case-studies .views-view-grid td div[class*="title"], .node-type-landing-page section[id*="lock-panels-mini-more-about"]   .views-view-grid td div[class*="location"] {
+.page-node-1016 .pane-case-studies .views-view-grid td div[class*="title"], .node-type-landing-page section[id*="lock-panels-mini-more-about"]   .views-view-grid td div[class*="location"] {
   text-align: left;
 /*  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat; */
   padding: 0px 20px;
@@ -1609,11 +1609,11 @@ background-size: 100% auto;
   text-overflow: ellipsis;
   padding: 6px 20px;
 }
-.node-type-landing-page .pane-case-studies .views-view-grid td div[class*="title"] a, .node-type-landing-page section[id*="lock-panels-mini-more-about"]   .views-view-grid td div[class*="location"] a {
+.page-node-1016 .pane-case-studies .views-view-grid td div[class*="title"] a, .node-type-landing-page section[id*="lock-panels-mini-more-about"]   .views-view-grid td div[class*="location"] a {
   color: white;
   text-decoration: underline;
 }
-.node-type-landing-page .pane-case-studies .views-view-grid td div[class*="location"] {
+.page-node-1016 .pane-case-studies .views-view-grid td div[class*="location"] {
   text-align: left;
   padding: 0px 20px;
   /*margin: 0 auto;*/
@@ -1623,52 +1623,52 @@ background-size: 100% auto;
   position: relative;
   z-index: 100;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .pane-case-studies .views-view-grid td div[class*="location"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-0 .pane-case-studies .views-view-grid td div[class*="location"] {
   background: transparent url("../images/transparent-pixel-teal.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-1 .pane-case-studies .views-view-grid td div[class*="location"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-1 .pane-case-studies .views-view-grid td div[class*="location"] {
   background: transparent url("../images/transparent-pixel-red.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-2 .pane-case-studies .views-view-grid td div[class*="location"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-2 .pane-case-studies .views-view-grid td div[class*="location"] {
   background: transparent url("../images/transparent-pixel-mint.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-3 .pane-case-studies .views-view-grid td div[class*="location"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-3 .pane-case-studies .views-view-grid td div[class*="location"] {
   background: transparent url("../images/transparent-pixel-yellow.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-case-studies .views-view-grid td div[class*="location"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-4 .pane-case-studies .views-view-grid td div[class*="location"] {
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .pane-case-studies .views-view-grid td div[class*="body"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-0 .pane-case-studies .views-view-grid td div[class*="body"] {
   background: transparent url("../images/transparent-pixel-teal.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-1 .pane-case-studies .views-view-grid td div[class*="body"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-1 .pane-case-studies .views-view-grid td div[class*="body"] {
   background: transparent url("../images/transparent-pixel-red.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-2 .pane-case-studies .views-view-grid td div[class*="body"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-2 .pane-case-studies .views-view-grid td div[class*="body"] {
   background: transparent url("../images/transparent-pixel-mint.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-3 .pane-case-studies .views-view-grid td div[class*="body"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-3 .pane-case-studies .views-view-grid td div[class*="body"] {
   background: transparent url("../images/transparent-pixel-yellow.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-case-studies .views-view-grid td div[class*="body"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-4 .pane-case-studies .views-view-grid td div[class*="body"] {
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-0 .pane-case-studies .views-view-grid td div[class*="title"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-0 .pane-case-studies .views-view-grid td div[class*="title"] {
   background: transparent url("../images/transparent-pixel-teal.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-1 .pane-case-studies .views-view-grid td div[class*="title"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-1 .pane-case-studies .views-view-grid td div[class*="title"] {
   background: transparent url("../images/transparent-pixel-red.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-2 .pane-case-studies .views-view-grid td div[class*="title"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-2 .pane-case-studies .views-view-grid td div[class*="title"] {
   background: transparent url("../images/transparent-pixel-mint.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-3 .pane-case-studies .views-view-grid td div[class*="title"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-3 .pane-case-studies .views-view-grid td div[class*="title"] {
   background: transparent url("../images/transparent-pixel-yellow.png") center center repeat;
 }
-.node-type-landing-page #quicktabs-tabpage-tools_and_resources-4 .pane-case-studies .views-view-grid td div[class*="title"] {
+.page-node-1016 #quicktabs-tabpage-tools_and_resources-4 .pane-case-studies .views-view-grid td div[class*="title"] {
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
 }
-.node-type-landing-page .pane-case-studies .views-view-grid td div[class*="body"] {
+.page-node-1016 .pane-case-studies .views-view-grid td div[class*="body"] {
   text-align: left;
 /*  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat; */
   padding: 0px 20px;
@@ -1683,23 +1683,23 @@ background-size: 100% auto;
   display: none;
   text-overflow: ellipsis;
 }
-.node-type-landing-page .pane-case-studies .view-id-case_studies .views-view-grid td div[class*="body"] {
+.page-node-1016 .pane-case-studies .view-id-case_studies .views-view-grid td div[class*="body"] {
   height: 310px;
 }
-.node-type-landing-page .pane-case-studies .views-view-grid td:hover div[class*="date"], .node-type-landing-page .pane-case-studies .view-id-case_studies td:hover div[class*="title"] {
+.page-node-1016 .pane-case-studies .views-view-grid td:hover div[class*="date"], .page-node-1016 .pane-case-studies .view-id-case_studies td:hover div[class*="title"] {
   margin-top: -380px;
 }
-.node-type-landing-page .pane-case-studies .views-view-grid td:hover div[class*="body"] {
+.page-node-1016 .pane-case-studies .views-view-grid td:hover div[class*="body"] {
   display: block;
 }
-.node-type-landing-page .pane-case-studies .panels-flexible-row-inside .panels-flexible-region {
+.page-node-1016 .pane-case-studies .panels-flexible-row-inside .panels-flexible-region {
   width: 100%;
 }
-.node-type-landing-page .pane-case-studies .panels-flexible-region .inside {
+ .page-node-1016 .pane-case-studies .panels-flexible-region .inside {
   font: normal 20px "robotolight", sans-serif;
   padding: 10px 0 30px 0;
 }
-.node-type-landing-page .pane-case-studies .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region {
+.page-node-1016 .pane-case-studies .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region {
   width: 100%;
 }
 
