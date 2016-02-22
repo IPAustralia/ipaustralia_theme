@@ -367,12 +367,6 @@ padding:20px;
 /* end forms listing */
 /* nav css */
 /* ide nav code */
-li.leaf {
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    border-bottom-color: #ccc;
-}
-
 .region.region-sidebar-first.well {
     border-top-style: solid;
     border-top-width: 5px;
@@ -391,10 +385,35 @@ li.leaf a {
     color: #000;
     text-transform: uppercase;
     font-family: robotobold, sans-serif;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #ccc;
 }
 
+li.collapsed a {
+    color: #000;
+    text-transform: uppercase;
+    font-family: robotobold, sans-serif;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #ccc;
+}
 
-.nav > li > a:hover {
-  background-color: #f0f1f3 !important;
+li.first a {
+    color: #000;
+    text-transform: uppercase;
+    font-family: robotobold, sans-serif;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #ccc;
+}
+
+li.active a {
+    color: #000;
+    text-transform: uppercase;
+    font-family: robotobold, sans-serif;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #ccc;
 }
 /* end nav css */
