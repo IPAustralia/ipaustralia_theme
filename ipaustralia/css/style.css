@@ -277,7 +277,7 @@ div.container div.container{
     border-color: #0d252c;
 }
 
-<<<<<<< HEAD
+
 /* case studies listing */
 .page-tools-resources-case-studies .views-row {
 background:#eff0f2;
@@ -368,19 +368,6 @@ padding:20px;
 /* end forms listing */
 /* nav css */
 /* ide nav code */
-.menu-block-wrapper.menu-block-5.menu-name-main-menu {
-    border-top-style: solid;
-    border-top-width: 5px;
-
-}
-
-/* ide nav code */
-li.leaf {
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    border-bottom-color: #ccc;
-}
-
 .region.region-sidebar-first.well {
     border-top-style: solid;
     border-top-width: 5px;
@@ -393,11 +380,9 @@ li.leaf {
     border-radius: 0px !important;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .0) !important;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .0) !important;
-    border-top-style: solid;
-    border-top-width: 5px;
 }
 
-.menu-block-wrapper.menu-block-5.menu-name-main-menu li.leaf a {
+.menu-block-wrapper.menu-block-5.menu-name-main-menu.parent-mlid-0.menu-level-2 li.leaf a {
     color: #000;
     text-transform: uppercase;
     font-family: robotobold, sans-serif;
@@ -406,7 +391,7 @@ li.leaf {
     border-bottom-color: #ccc;
 }
 
-.menu-block-wrapper.menu-block-5.menu-name-main-menu li.collapsed a {
+.menu-block-wrapper.menu-block-5.menu-name-main-menu.parent-mlid-0.menu-level-2 li.collapsed a {
     color: #000;
     text-transform: uppercase;
     font-family: robotobold, sans-serif;
@@ -415,7 +400,7 @@ li.leaf {
     border-bottom-color: #ccc;
 }
 
-.menu-block-wrapper.menu-block-5.menu-name-main-menu li.first a {
+.menu-block-wrapper.menu-block-5.menu-name-main-menu.parent-mlid-0.menu-level-2 li.first a {
     color: #000;
     text-transform: uppercase;
     font-family: robotobold, sans-serif;
@@ -424,7 +409,7 @@ li.leaf {
     border-bottom-color: #ccc;
 }
 
-.menu-block-wrapper.menu-block-5.menu-name-main-menu li.active a {
+.menu-block-wrapper.menu-block-5.menu-name-main-menu.parent-mlid-0.menu-level-2 li.active a {
     color: #000;
     text-transform: uppercase;
     font-family: robotobold, sans-serif;
@@ -433,46 +418,6 @@ li.leaf {
     border-bottom-color: #ccc;
 }
 
-
-
-
-
-
-.menu-block-wrapper.menu-name-menu-about-us li.leaf a {
-    color: #000;
-    text-transform: uppercase;
-    font-family: robotobold, sans-serif;
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    border-bottom-color: #ccc;
-}
-
-.menu-block-wrapper.menu-name-menu-about-us li.collapsed a {
-    color: #000;
-    text-transform: uppercase;
-    font-family: robotobold, sans-serif;
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    border-bottom-color: #ccc;
-}
-
-.menu-block-wrapper.menu-name-menu-about-us li.first a {
-    color: #000;
-    text-transform: uppercase;
-    font-family: robotobold, sans-serif;
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    border-bottom-color: #ccc;
-}
-
-.menu-block-wrapper.menu-name-menu-about-us li.active a {
-    color: #000;
-    text-transform: uppercase;
-    font-family: robotobold, sans-serif;
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    border-bottom-color: #ccc;
-}
 /* end nav css */
 
 }
