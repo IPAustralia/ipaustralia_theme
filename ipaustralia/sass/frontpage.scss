@@ -142,7 +142,7 @@
                     .inside {
                         background: white none repeat scroll 0 0;
                         margin-right: 20px;
-                        min-height: 565px;
+                        /*min-height: 565px;*/
                         @media only screen and (max-width: $break-point-medium) {
                             margin-bottom:20px;
                         }
@@ -163,6 +163,14 @@
                                 margin:0px;
                                 line-height: 77px;
                                 text-align:left;
+                                position: absolute;
+                                margin:-74px 0 0 70px;
+                                height:73px;
+                                overflow:hidden;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                width:54%;
                             }
                         }
                         ul {
@@ -215,12 +223,16 @@
             }
             .tools-resources-list {
                 @include resources-list(no-icon);
+
+                @media only screen and (max-width: $break-point-small) {
+                    /*display:none;*/
+                }
                 li {
-                    margin-top: 18px;
-                    padding: 0 30px 0 50px;
-                    margin-bottom: 18px;
+                    /*margin-top: 18px;*/
+                    padding: 0px 30px 15px 50px;
+                    /*margin-bottom: 18px;*/
                     font-size: 16px;
-                    @include background-image('link-tool.png', 17px, top);
+                    @include background-image('link-tool.png', 17px, 2px);
                     line-height: 22px;
                 }
             }
@@ -273,6 +285,7 @@
 
             .quicktabs_main {
                 color: $charcoal;
+                margin-left:0px !important;
                 .views-view-grid {
                     td {
                         position: relative;
@@ -297,16 +310,17 @@
                             span[class*="label "] {
                                 float: left;
                             }
-                            margin-top: -115px;
+                            margin-top: -140px;
                         }
                         div[class*="title"],  div[class*="location"]{
                             @include news-community-texts;
                             clear: both;
                             font:$title-h5;
                             font-family:$font-title-normal;
-                            height:70px;
+                            height:95px !important;
                             overflow: hidden;
                             text-overflow: ellipsis;
+                            text-decoration: underline;
                             padding:6px 20px;
                             a {
                                 color:white;
@@ -318,10 +332,9 @@
                         }
                         div[class*="body"] {
                             @include news-community-texts;
-                            height: 265px;
+                            height: 240px;
                             overflow: hidden;
                             display: none;
-
                             text-overflow: ellipsis;
 
                         }
@@ -332,6 +345,23 @@
                             div[class*="body"] {
                                 display: block;
                             }
+                        }
+                    }
+                }
+            }
+
+            @media only screen and(max-width:$break-point-medium) {
+                #quicktabs-container-news_events_and_media {
+                    height: 384px;
+                    overflow: hidden;
+                    width: 100% !important;
+                    .quicktabs-tabpage  {
+                        height: 400px;
+                        width: 100%;
+                        overflow-x: auto;
+                        overflow-y: hidden;
+                        > section {
+                            width: 1200px;
                         }
                     }
                 }
@@ -441,11 +471,11 @@
 
                                 }
 
-                                    a.facebook {
-                                        background:black;
-                                        @include background-image('sm-facebook.png');
-                                        border-radius: 100px; 
-                                    
+                                a.facebook {
+                                    background:black;
+                                    @include background-image('sm-facebook.png');
+                                    border-radius: 100px; 
+
 
                                 } 
                                 &:nth-child(2) {

@@ -7,12 +7,6 @@
 .front #block-system-main {
   display: none; }
 
-/*.last.leaf.menu-mlid-1816 {
-  display: none;
-}*/
-/*.main-container {
-    display: none;
-}*/
 h2 {
   font: normal 36px "montserratbold", sans-serif; }
 
@@ -93,5 +87,3 @@ body {
     max-width: 1180px;
     padding-left: 0px;
     padding-right: 0px; } }
-
-/*# sourceMappingURL=common.css.map */

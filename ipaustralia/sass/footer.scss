@@ -19,6 +19,9 @@ footer {
                 @media only screen and (max-width: $break-point-medium) {
                     width: 50%;
                 } 
+                @media only screen and (max-width: $break-point-small) {
+                    width: 100%;
+                } 
                 a {
                     color:white;
                     text-decoration: none;
