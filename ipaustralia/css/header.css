@@ -7,12 +7,6 @@
 .front #block-system-main {
   display: none; }
 
-/*.last.leaf.menu-mlid-1816 {
-  display: none;
-}*/
-/*.main-container {
-    display: none;
-}*/
 h2 {
   font: normal 36px "montserratbold", sans-serif; }
 
@@ -225,5 +219,3 @@ header .header {
         text-decoration: none;
         text-transform: uppercase;
         background: transparent url("../images/arrow-right-online-services.png") right center no-repeat; }
-
-/*# sourceMappingURL=header.css.map */

@@ -7,12 +7,6 @@
 .front #block-system-main {
   display: none; }
 
-/*.last.leaf.menu-mlid-1816 {
-  display: none;
-}*/
-/*.main-container {
-    display: none;
-}*/
 h2 {
   font: normal 36px "montserratbold", sans-serif; }
 
@@ -99,6 +93,9 @@ footer {
       @media only screen and (max-width: 768px) {
         footer .block-menu-block .nav li {
           width: 50%; } }
+      @media only screen and (max-width: 480px) {
+        footer .block-menu-block .nav li {
+          width: 100%; } }
       footer .block-menu-block .nav li a {
         color: white;
         text-decoration: none;
@@ -152,5 +149,3 @@ footer {
         background: transparent; }
     footer .block-menu .nav li.last a {
       border: none; }
-
-/*# sourceMappingURL=footer.css.map */

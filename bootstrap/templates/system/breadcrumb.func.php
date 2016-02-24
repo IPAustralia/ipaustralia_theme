@@ -27,6 +27,12 @@ function bootstrap_breadcrumb($variables) {
   $output = '';
   $breadcrumb = $variables['breadcrumb'];
 
+  print_r(array_values($breadcrumb));
+  //int breadnum = count($breadcrumb);
+  //breadnum--
+  //unset($array[1]);
+  //print_r(breadnum);
+   // print_r(array_values(breadnum));
   // Determine if we are to display the breadcrumb.
   $bootstrap_breadcrumb = bootstrap_setting('breadcrumb');
   if (($bootstrap_breadcrumb == 1 || ($bootstrap_breadcrumb == 2 && arg(0) == 'admin')) && !empty($breadcrumb)) {
@@ -38,5 +44,6 @@ function bootstrap_breadcrumb($variables) {
       'type' => 'ol',
     ));
   }
+
   return $output;
 }

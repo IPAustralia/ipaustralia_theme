@@ -1405,11 +1405,11 @@ background-size: 100% auto;
 /* start accountability block */
 /* start public consultations connect with us block */
 
-#block-panels-mini-consultations-and-twitter-feed-2 {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 {
   padding:80px 10px;
   background:#eff0f2;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside {
   border-left:10px solid #0d252c;
   margin-right:20px;
   background:white;
@@ -1418,47 +1418,47 @@ background-size: 100% auto;
   position:relative;
   margin-left:0px;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 a {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 a {
   display:inline-block;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul {
   list-style:none;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li{
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li{
   display:inline;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a {
   text-indent:-9999px;
   padding:0px;
   width:36px;
   height:36px;
   margin:28px 0 0 12px;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 {
   position:absolute;
   top:0;
   right:20px;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.facebook {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.facebook {
   background:transparent url("../images/sm-facebook.png") center center no-repeat;
   border-radius:100px;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.twitter {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.twitter {
   background:transparent url("../images/sm-twitter.png") center center no-repeat;
   border-radius:100px;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.linkedin {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.linkedin {
   background:transparent url("../images/sm-linkedin.png") center center no-repeat;
   border-radius:100px;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.youtube {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a.youtube {
   background:transparent url("../images/sm-youtube.png") center center no-repeat;
   border-radius:100px;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-govcms-social-links-services .pane-content {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-govcms-social-links-services .pane-content {
   display:none;
 }
-#block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside h3, #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-title {
+.node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside h3, .node-type-landing-page #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-title {
   font: normal 24px "monserratbold", sans-serif;
   font-family: "monserratregular", sans-serif;
   margin: 0px;
