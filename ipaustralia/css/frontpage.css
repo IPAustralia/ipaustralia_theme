@@ -642,7 +642,7 @@ body {
       margin-right: 20px;
       background: white;
       padding: 40px 30px;
-      min-height: 300px;
+      min-height: 400px;
       position: relative;
       margin-left: 0px; }
       @media only screen and (max-width: 768px) {
@@ -677,7 +677,8 @@ body {
             right: 0px;
             left: -15px; } }
         .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul {
-          list-style: none; }
+          list-style: none;
+          float: right; }
           .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li {
             float: left; }
             .front #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-twitter-block-1 ul li a {
@@ -703,3 +704,5 @@ body {
               background: black;
               background: transparent url("../images/sm-youtube.png") center center no-repeat;
               border-radius: 100px; }
+
+/*# sourceMappingURL=frontpage.css.map */

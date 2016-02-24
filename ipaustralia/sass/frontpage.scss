@@ -414,7 +414,7 @@
                     margin-right: 20px;
                     background: white;
                     padding: $gap-medium $gap-small;
-                    min-height:300px;
+                    min-height:400px;
                     position:relative;
                     margin-left: 0px;
 
@@ -458,6 +458,7 @@
                         } 
                         ul {
                             list-style:none;
+                            float: right;
                             li {
                                 float: left;
                                 a {
