@@ -30,7 +30,7 @@ function bootstrap_breadcrumb($variables) {
   print_r(array_values($breadcrumb));
   //int breadnum = count($breadcrumb);
   //breadnum--
-  unset($array[1]);
+  //unset($array[1]);
   //print_r(breadnum);
    // print_r(array_values(breadnum));
   // Determine if we are to display the breadcrumb.
