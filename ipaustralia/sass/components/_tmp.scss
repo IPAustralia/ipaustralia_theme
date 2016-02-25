@@ -1,0 +1,257 @@
+.main-list-item-patent {
+    width: 100%;
+    border: solid 1px $color_pelorous_approx;
+    margin: 0 3% 30px 1%;
+    float: left;
+    position: relative;
+    height: auto;
+    max-height: 480px;
+    list-style-type: none;
+    min-height: 360px;
+    background: $white;
+    ul {
+        padding-left: 25px;
+        line-height: 1.6;
+    }
+}
+.main-list-item-pbr {
+    width: 100%;
+    border: solid 1px $color_buttercup_approx;
+    margin: 0 3% 30px 1%;
+    float: left;
+    position: relative;
+    height: auto;
+    max-height: 480px;
+    list-style-type: none;
+    min-height: 250px;
+    background: $white;
+    ul {
+        padding-left: 25px;
+        line-height: 1.6;
+    }
+}
+
+.list-header-pbr {
+    background: $color_pelorous_approx;
+    position: relative;
+    .heading {
+        margin: 0;
+        display: block;
+        padding: 10px 15px;
+        color: $white;
+        margin-top: -10px;
+    }
+}
+.list-header-patent {
+    background: $color_buttercup_approx;
+    position: relative;
+    .heading {
+        margin: 0;
+        display: block;
+        padding: 10px 15px;
+        color: $white;
+        margin-top: -10px;
+    }
+}
+
+.content-new-tm {
+    .para.col-white {
+        color: $white;
+    }
+    .heading.col-white {
+        color: $white;
+    }
+}
+
+
+#block-bean-get-your-ip-homepage-block {
+    .patents a {
+        padding-top: 10px;
+        font-size: 18px;
+        color: $color_firefly_approx;
+    }
+    .trade-marks a {
+        padding-top: 10px;
+        font-size: 18px;
+        color: $color_firefly_approx;
+    }
+    .designs a {
+        padding-top: 10px;
+        font-size: 18px;
+        color: $color_firefly_approx;
+    }
+    .pbr a {
+        padding-top: 10px;
+        font-size: 18px;
+        color: $color_firefly_approx;
+    }
+    .copyright a {
+        padding-top: 10px;
+        font-size: 18px;
+        color: $color_firefly_approx;
+    }
+}
+#quicktabs-tabpage-homepage_main_tab-2 {
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .bs-callout-purple {
+        background: $white;
+        color: $black;
+        margin: 3px 0;
+        font-size: 16px;
+        font-weight: bold;
+        a {
+            background: $white;
+            color: $black;
+            margin: 3px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+@media only screen and(min-width: 768px) {
+    div.container div.container {
+        width: 100%;
+    }
+}
+
+
+.menu-block-wrapper {
+    &.menu-block-5.menu-name-main-menu {
+        border-top-style: solid;
+        border-top-width: 5px;
+        li {
+            &.leaf a {
+                color: $black;
+                text-transform: uppercase;
+                font-family: $font_2, $font_5;
+                border-bottom-style: dotted;
+                border-bottom-width: 2px;
+                border-bottom-color: $color_celeste_approx;
+            }
+            &.collapsed a {
+                color: $black;
+                text-transform: uppercase;
+                font-family: $font_2, $font_5;
+                border-bottom-style: dotted;
+                border-bottom-width: 2px;
+                border-bottom-color: $color_celeste_approx;
+            }
+            &.first a {
+                color: $black;
+                text-transform: uppercase;
+                font-family: $font_2, $font_5;
+                border-bottom-style: dotted;
+                border-bottom-width: 2px;
+                border-bottom-color: $color_celeste_approx;
+            }
+            &.active a {
+                color: $black;
+                text-transform: uppercase;
+                font-family: $font_2, $font_5;
+                border-bottom-style: dotted;
+                border-bottom-width: 2px;
+                border-bottom-color: $color_celeste_approx;
+            }
+        }
+    }
+    &.menu-name-menu-about-us li {
+        &.leaf a {
+            color: $black;
+            text-transform: uppercase;
+            font-family: $font_2, $font_5;
+            border-bottom-style: dotted;
+            border-bottom-width: 2px;
+            border-bottom-color: $color_celeste_approx;
+        }
+        &.collapsed a {
+            color: $black;
+            text-transform: uppercase;
+            font-family: $font_2, $font_5;
+            border-bottom-style: dotted;
+            border-bottom-width: 2px;
+            border-bottom-color: $color_celeste_approx;
+        }
+        &.first a {
+            color: $black;
+            text-transform: uppercase;
+            font-family: $font_2, $font_5;
+            border-bottom-style: dotted;
+            border-bottom-width: 2px;
+            border-bottom-color: $color_celeste_approx;
+        }
+        &.active a {
+            color: $black;
+            text-transform: uppercase;
+            font-family: $font_2, $font_5;
+            border-bottom-style: dotted;
+            border-bottom-width: 2px;
+            border-bottom-color: $color_celeste_approx;
+        }
+    }
+}
+
+.panels-flexible-row-four_column_panel_with_top_and_bottom-main-row h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.pane-quicktabs-news-events-and-media h2 {
+    display: none;
+}
+
+.main-list-item:nth-child(3) {
+    margin: 0 5px;
+}
+
+.heading.col-white ul {
+    list-style-type: none;
+}
+
+#quicktabs-tabpage-homepage_main_tab-1 li {
+    &.patents {
+        height: 68px;
+        padding-top: 22px !important;
+    }
+    &.trade-marks {
+        height: 68px;
+        padding-top: 22px !important;
+    }
+    &.designs {
+        height: 68px;
+        padding-top: 22px !important;
+    }
+    &.pbr {
+        height: 68px;
+        padding-top: 22px !important;
+    }
+    &.copyright {
+        height: 68px;
+        padding-top: 22px !important;
+    }
+}
+
+#block-quicktabs-homepage-main-tab h3.block-title {
+    color: $white;
+}
+
+.page-news-media-events .views-field-field-location {
+    color: $color_mountain_mist_approx;
+}
+
+.region-sidebar-first.well {
+    min-height: 20px !important;
+    padding: 0 !important;
+    background-color: $white !important;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 0 !important;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: inset 0 1px 1px $black_0 !important;
+    border-top-style: solid;
+    border-top-width: 5px;
+}

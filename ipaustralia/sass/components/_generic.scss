@@ -1,0 +1,59 @@
+h2 {
+    font: $title-h3;
+}
+
+h1 {
+    color: $color_shark_approx;
+    font-family: $font_1, $font_5;
+    font-size: 60px;
+    line-height: 72px;
+}
+h2 {
+    color: $color_shark_approx;
+    font-family: $font_1, $font_5;
+    font-size: 44px;
+    line-height: 60px;
+}
+h3 {
+    color: $color_shark_approx;
+    font-family: $font_1, $font_5;
+    font-size: 36px;
+    line-height: 44px;
+}
+h4 {
+    color: $color_shark_approx;
+    font-family: $font_1, $font_5;
+    font-size: 24px;
+    line-height: 30px;
+}
+h5 {
+    color: $color_shark_approx;
+    font-family: $font_1, $font_5;
+    font-size: 20px;
+    line-height: 24px;
+}
+h6 {
+    color: $color_shark_approx;
+    font-family: $font_1, $font_5;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+a {
+    outline: 0;
+    color: $gold;
+
+    &:active, &:focus, &:visited {
+        outline: 0;
+        color: $gold;
+        text-decoration: none;
+        background: transparent;
+    }
+    &:hover {
+        color: $gold;
+    }
+}
+body {
+    font: $body-text;
+    font-weight: normal;
+}

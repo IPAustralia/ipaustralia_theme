@@ -1,0 +1,50 @@
+@mixin quicktabs-tabs($tabs-width:33.1%, $background-color:$charcoal, $font-color:#fff) {
+    .quicktabs-tabs  {
+        width: 100%;
+        padding:0px;
+        margin:0px;
+        li {
+            width: $tabs-width;
+            text-align: center;
+            float: left;
+            padding:0px;
+            display: inline-block;
+            @media only screen and (max-width: $break-point-medium) {
+                width: 100%;
+                overflow: hidden;
+            }
+            a {
+                background: $background-color;
+                padding: 27px 0px;
+                color:$font-color;
+                width: 100%;
+                display: inline-block;
+                font:$title-h5;
+                font-family: $font-title-normal;
+                text-transform: uppercase;
+                border:1px solid $charcoal;
+                line-height: 14px;
+                &:hover {
+                    text-decoration: none;
+                }
+
+            }
+            &.active {
+                a {
+                    background: $font-color;
+                    color:$background-color;
+                }
+            }
+        }
+    }
+    .quicktabs_main {
+        clear: both;
+        background: $background-color;
+        width: $tabs-width * 3;
+        color: white;
+        @media only screen and (max-width: $break-point-medium) {
+            width: 100%;
+        }
+    }
+
+}
