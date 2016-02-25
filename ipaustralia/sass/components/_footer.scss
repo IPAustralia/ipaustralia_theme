@@ -1,9 +1,3 @@
-@import "_variables.scss";
-
-@import "_cleanup.scss";
-@import "_generic.scss";
-@import "_mixins.scss";
-
 footer {
     padding: 0 0 $gap-large 0px !important;
     margin: 0px !important;
@@ -100,4 +94,37 @@ footer {
         }
     }
 }
-
+.footer {
+	.icon-facebook {
+		background: $url_36 no-repeat !important;
+		height: 36px;
+		width: 36px;
+		float: left;
+	}
+	.icon-twitter {
+		background: $url_37 no-repeat !important;
+		height: 36px;
+		width: 36px;
+		float: left;
+	}
+	.icon-linkedin {
+		background: $url_38 no-repeat !important;
+		height: 36px;
+		width: 36px;
+		float: left;
+	}
+	.icon-youtube {
+		background: $url_39 no-repeat !important;
+		height: 36px;
+		width: 36px;
+		float: left;
+	}
+	.block-menu-block .nav .last ul li {
+		margin-top: -2px;
+		a {
+			padding-left: 50px;
+			margin-top: 5px;
+			padding-top: 8px;
+		}
+	}
+}

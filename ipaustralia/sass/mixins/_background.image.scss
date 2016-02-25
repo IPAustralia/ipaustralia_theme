@@ -1,0 +1,3 @@
+@mixin background-image($imagefile, $x:center, $y:center, $repeat:no-repeat, $background-color:transparent) {
+    background: $background-color url("../images/#{$imagefile}") $x $y $repeat;
+}
