@@ -603,3 +603,13 @@ section#block-search-api-page-default-search {
     float: left;
     margin-left: 213px;
 }
+
+/* arrow on menu homepage start */
+.front #quicktabs-tabpage-homepage_main_tab-1 a:after, .front #quicktabs-tabpage-homepage_main_tab-2 a:after  {
+  content: '  ';
+  float: right;
+  display: block;
+  background: transparent url("../images/arrow-right-charcoal-transparent.png") right center no-repeat;
+  width: 20px;
+  height: 20px; }
+  /* arrow on menu homepage end */
