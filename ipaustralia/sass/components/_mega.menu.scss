@@ -38,7 +38,6 @@ header {
             border: 0px;
             margin: 0px;
             li {
-                cursor: pointer;  
                 margin-bottom: 0px;
                 border: 0px;
                 position: inherit;
@@ -84,14 +83,14 @@ header {
                         }
                         &.megamenu-tab-patents {
                             background:$menu-active-color-patents;
-                            color: white;
+                            color: white !important;
                             &:hover, &:active, &:focus {
                                 border-bottom: 4px solid $teal;
                             }
                         }
                         &.megamenu-tab-trade-marks {
                             background:$menu-active-color-trademark;
-                            color: white;
+                            color: white !important;
                             &:hover, &:active, &:focus {
                                 border-bottom: 4px solid $red;
 
@@ -99,7 +98,7 @@ header {
                         }
                         &.megamenu-tab-designs {
                             background:$menu-active-color-designs;
-                            color: white;
+                            color: white !important;
                             &:hover, &:active, &:focus {
                                 border-bottom: 4px solid $mint;
 
@@ -107,7 +106,7 @@ header {
                         }
                         &.megamenu-tab-plant-breeders-rights {
                             background:$menu-active-color-plantbreeder;
-                            color: white;
+                            color: white !important;
                             &:hover, &:active, &:focus {
                                 border-bottom: 4px solid $yellow;
 
@@ -140,7 +139,7 @@ header {
                     display: block;
                     cursor: pointer;
                     color: white;
-                    font: normal 16px montserratregular;
+                    font: normal 16px 'montserratregular', sans-serif;
                     display: block;
                     line-height:46px;
                     border: 0px;
@@ -399,4 +398,13 @@ header {
 
 
     }
+}
+
+/* mega nav display none  */
+.megamenu-level-2 .meganav-hide {
+    display:none;
+}
+
+.region-sidebar-first .sidenav-hide {
+    display:none;
 }
