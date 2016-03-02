@@ -19,7 +19,7 @@ footer {
                 a {
                     color:white;
                     text-decoration: none;
-                    font: normal 16px montserratregular;
+                    font: normal 17px montserratregular;
                     padding: 20px 18px 20px 0;
                     @include background-image('arrow-right.png', right);
                     float:left;
@@ -65,9 +65,10 @@ footer {
             font: normal 16px montserratregular;;
             font-size: 18px;
             margin: 0px;
-            padding: $gap-medium 0px 0px ;
+            padding: $gap-medium 10px 0px ;
         }
         .nav {
+            padding:0px 10px;
             li {
                 float: left;
                 padding: 10px 10px 0 0 ;
@@ -95,36 +96,43 @@ footer {
     }
 }
 .footer {
-	.icon-facebook {
-		background: $url_36 no-repeat !important;
-		height: 36px;
-		width: 36px;
-		float: left;
-	}
-	.icon-twitter {
-		background: $url_37 no-repeat !important;
-		height: 36px;
-		width: 36px;
-		float: left;
-	}
-	.icon-linkedin {
-		background: $url_38 no-repeat !important;
-		height: 36px;
-		width: 36px;
-		float: left;
-	}
-	.icon-youtube {
-		background: $url_39 no-repeat !important;
-		height: 36px;
-		width: 36px;
-		float: left;
-	}
-	.block-menu-block .nav .last ul li {
-		margin-top: -2px;
-		a {
-			padding-left: 50px;
-			margin-top: 5px;
-			padding-top: 8px;
-		}
-	}
+    .icon-facebook {
+        background: $url_36 no-repeat !important;
+        height: 36px;
+        width: 36px;
+        float: left;
+    }
+    .icon-twitter {
+        background: $url_37 no-repeat !important;
+        height: 36px;
+        width: 36px;
+        float: left;
+    }
+    .icon-linkedin {
+        background: $url_38 no-repeat !important;
+        height: 36px;
+        width: 36px;
+        float: left;
+    }
+    .icon-youtube {
+        background: $url_39 no-repeat !important;
+        height: 36px;
+        width: 36px;
+        float: left;
+    }
+    .icon {
+        background-position: left center !important;
+        background-size: auto 98% !important;
+        height: 35px;
+        margin-bottom: 12px;
+        margin-top: -5px !important;
+    }
+    .block-menu-block .nav .last ul li {
+        margin-top: -2px;
+        a {
+            padding-left: 50px;
+            margin-top: 5px;
+            padding-top: 8px;
+        }
+    }
 }

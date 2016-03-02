@@ -15,7 +15,7 @@
             }
             a {
                 background: $background-color;
-                padding: 27px 0px;
+                padding: 27px 10px;
                 color:$font-color;
                 width: 100%;
                 display: inline-block;
@@ -24,6 +24,9 @@
                 text-transform: uppercase;
                 border:1px solid $charcoal;
                 line-height: 14px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 &:hover {
                     text-decoration: none;
                 }

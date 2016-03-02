@@ -37,6 +37,7 @@ header {
         .nav-tabs {
             border: 0px;
             margin: 0px;
+
             li {
                 margin-bottom: 0px;
                 border: 0px;
@@ -216,6 +217,24 @@ header {
 
             }
 
+            @media only screen and (max-width: $break-point-large) {
+                text-overflow:ellipsis;
+                white-space: nowrap ;
+                overflow:hidden;
+
+                > li {
+                    float: none;
+                    display:inline-block;
+                    a {
+                        margin: 0 -2px;
+                    }
+                }
+            }
+            @media only screen and (max-width: $break-point-medium) {
+                > li {
+                    display:block;
+                }
+            }
 
             .dropdown-menu {
                 background: $off-white;
@@ -283,6 +302,7 @@ header {
                 .learn-more {
                     @include rounded-button-with-arrrow(transparent,$charcoal, 16px, 'arrow-right-charcoal-transparent.png');
                     float: right;
+                    margin-bottom:70px;
                     &:hover {
                     }
                     @media only screen and (max-width: $break-point-medium) {
@@ -303,6 +323,12 @@ header {
                     li {
                         float: left;
                         width: 33%;
+                        
+                        @media only screen and (min-width: $break-point-medium + 1) {
+                            &.expanded:nth-child(4n) {
+                                clear: both;
+                            }
+                        }
                         @media only screen and (max-width: $break-point-medium) {
                             float:none;
                             width:100%;
@@ -317,6 +343,10 @@ header {
                             padding-right: 20px;
                             @include background-image('arrow-right-charcoal-transparent.png', right);
                             margin-bottom: 10px;
+                            white-space: normal;
+                            @media only screen and (max-width: $break-point-large - 100) {
+                                background:none;
+                            }
                             @media only screen and (max-width: $break-point-medium) {
                                 float:none;
                                 font:$body-text;
@@ -357,7 +387,11 @@ header {
                                 @include background-image('link-manual.png', 15px, center, no-repeat, white);
                                 border-left: 6px solid $charcoal;
                                 font: $body-text;
+                                position: relative;
                                 width: 100%;
+                                overflow:hidden;
+                                text-overflow:ellipsis;
+                                white-space:nowrap;
                                 &:after {
                                     content:'  ';
                                     float: right;
@@ -365,6 +399,10 @@ header {
                                     @include background-image('arrow-right-charcoal-transparent.png', right);
                                     width: 20px;
                                     height: 20px;
+                                    position: absolute;
+                                    right: 0px;
+                                    margin-right: 15px;
+                                    top:26px;
                                 }
 
                                 &.search-icon {

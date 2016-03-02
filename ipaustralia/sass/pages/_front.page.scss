@@ -1,6 +1,6 @@
 .front {
     h2 {
-        font-family: $font-title-normal;
+        /*font-family: $font-title-normal;*/
     }
     #block-quicktabs-homepage-main-tab {
         padding: $gap-large 10px;
@@ -46,6 +46,10 @@
                             }
                         }
                     }
+                    @media only screen and (max-width: $break-point-large) {
+                        padding-right:10px;
+                        width:50%;
+                    }
                     @media only screen and (max-width: $break-point-medium) {
                         padding-right:0px;
                         width:100%;
@@ -54,6 +58,9 @@
                 }
                 .panels-flexible-region-last {
                     text-align:left;
+                    @media only screen and (max-width: $break-point-large) {
+                        width:50%;
+                    }
                     h3 {
                         font:$title-h5;
                         font-family: $font-title-normal;
@@ -135,8 +142,12 @@
                         background: white none repeat scroll 0 0;
                         margin-right: 20px;
                         /*min-height: 565px;*/
-                        @media only screen and (max-width: $break-point-medium) {
-                            margin-bottom:20px;
+                        @media only screen and (max-width: $break-point-small) {
+                            margin-bottom:-10px;
+                            @include background-image('arrow-down-charcoal-transparent.png', 95%,29px,no-repeat, white);
+                            &.open {
+                                @include background-image('arrow-up-charcoal-transparent.png', 95%,29px,no-repeat, white);
+                            }
                         }
                         @media only screen and (max-width: $break-point-small) {
                             margin-right: 0px;
@@ -151,6 +162,11 @@
                             }
                         }
                         h3 {
+                            @media only screen and (max-width: $break-point-large) {
+                                height: 60px;
+                                line-height:25px;
+                            }
+
                             @media only screen and (max-width: $break-point-medium) {
                                 margin:0px;
                                 line-height: 77px;
@@ -162,11 +178,30 @@
                                 white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;
+                                width:150px;
+                            }
+                            @media only screen and (max-width: $break-point-small + 300) {
+                                width:200px;
+                            }
+                            @media only screen and (max-width: $break-point-small + 200) {
+                                width:150px;
+                            }
+                            @media only screen and (max-width: $break-point-small + 90) {
+                                width:100px;
+                            }
+                            @media only screen and (max-width: $break-point-small) {
                                 width:54%;
                             }
+
                         }
                         ul {
                             list-style:none;
+                            @media only screen and (max-width: $break-point-medium) {
+                                display:block;
+                            }
+                            @media only screen and (max-width: $break-point-small) {
+                                display:none;
+                            }
                             li {
                                 text-align: left;
                             }
@@ -219,6 +254,7 @@
                 @media only screen and (max-width: $break-point-small) {
                     /*display:none;*/
                 }
+                padding-top:15px;
                 li {
                     /*margin-top: 18px;*/
                     padding: 0px 30px 15px 50px;
@@ -261,7 +297,7 @@
             @include quicktabs-tabs(32.9%, #fff, $charcoal);
             .quicktabs-tabs {
                 li {
-                    padding-bottom: 19px;
+                    padding-bottom: 13px;
                     margin-bottom: 14px;;
                     margin-right: -1px;
                     &.active {
@@ -342,7 +378,7 @@
                 }
             }
 
-            @media only screen and(max-width:$break-point-medium) {
+            @media only screen and(max-width:$break-point-xlarge) {
                 #quicktabs-container-news_events_and_media {
                     height: 384px;
                     overflow: hidden;
