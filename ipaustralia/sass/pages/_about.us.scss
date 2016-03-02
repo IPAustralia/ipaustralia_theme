@@ -1,0 +1,97 @@
+
+.page-about-us-news-and-community-events {
+    .views-row {
+        background: $color_athens_gray_approx;
+        margin-bottom: 10px;
+        .panel-col-first {
+            width: 23%;
+            img {
+                margin: 30px;
+                width: 140px;
+                height: 140px;
+            }
+        }
+        .panel-col-last {
+            width: 70%;
+        }
+        .views-field-title a {
+            color: $color_firefly_approx;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+    .views-field-field-organiser {
+        display: none;
+    }
+    .views-field-field-event-date-1 {
+        color: $color_mountain_mist_approx;
+    }
+}
+.page-about-us-news-and-community-news {
+    .views-row {
+        background: $color_athens_gray_approx;
+        margin-bottom: 10px;
+        .panel-col-first {
+            width: 23%;
+            img {
+                margin: 30px;
+                width: 140px;
+                height: 140px;
+            }
+        }
+        .panel-col-last {
+            width: 70%;
+        }
+        .views-field-title a {
+            color: $color_firefly_approx;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+    .views-field-field-organiser {
+        display: none;
+    }
+    .views-field-field-news-date {
+        padding-top: 25px;
+        color: $color_mountain_mist_approx;
+        .views-label-field-news-date {
+            display: none;
+        }
+    }
+}
+.page-about-us-news-and-community-blog {
+    .views-row {
+        background: $color_athens_gray_approx;
+        margin-bottom: 10px;
+        .panel-col-first {
+            width: 23%;
+            img {
+                margin: 30px;
+                width: 140px;
+                height: 140px;
+            }
+        }
+        .panel-col-last {
+            width: 70%;
+            padding-top: 30px;
+        }
+        .views-field-title a {
+            color: $color_firefly_approx;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+    .views-field-field-organiser {
+        display: none;
+    }
+    .views-label-field-publish-online-date {
+        color: $color_mountain_mist_approx;
+    }
+    .views-field-field-news-date {
+        padding-top: 25px;
+        color: $color_mountain_mist_approx;
+    }
+}

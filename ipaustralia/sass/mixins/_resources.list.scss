@@ -1,0 +1,66 @@
+@mixin resources-list($with-icon:icon) {
+
+    padding: 0px;
+    margin:0px;
+    color:$charcoal;
+    list-style: none;
+
+    li {
+        background: #fff;
+        border:0px;
+        padding: 14px;
+        font:$body-text;
+        margin-top: 2px;
+        font-size: 16px;
+        a {
+            /*font-size: 14px;*/
+        }
+        &.patents {
+            border-left: 10px solid $teal;
+            @if $with-icon == icon {
+                /*font-size: 15px;*/
+                border-left: 0px solid $teal;
+                padding-left: 90px;
+                @include background-image('block-patent.png', left, center, no-repeat, #fff);
+            } 
+        }
+        &.trade-marks {
+            border-left: 10px solid $red;
+            @if $with-icon == icon {
+                /*font-size: 15px;*/
+                border-left: 0px solid $red;
+                padding-left: 90px;
+                @include background-image('block-tm.png', left, center, no-repeat, #fff);
+            } 
+        }
+        &.designs {
+            border-left: 10px solid $mint;
+            @if $with-icon == icon {
+                /*font-size: 15px;*/
+                border-left: 0px solid $mint;
+                padding-left: 90px;
+                @include background-image('block-design.png', left, center, no-repeat, #fff);
+            } 
+        }
+        &.pbr {
+            border-left: 10px solid $yellow;
+            @if $with-icon == icon {
+                /*font-size: 15px;*/
+                border-left: 0px solid $yellow;
+                padding-left: 90px;
+                @include background-image('block-pbr.png', left, center, no-repeat, #fff);
+            } 
+        }
+        &.copyright {
+            border-left: 10px solid $violet;
+            @if $with-icon == icon {
+                /*font-size: 15px;*/
+                border-left: 0px solid $violet;
+                padding-left: 90px;
+                @include background-image('block-copyright.png', left, center, no-repeat, #fff);
+            } 
+        }
+
+    }
+
+}

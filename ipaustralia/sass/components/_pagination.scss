@@ -1,0 +1,49 @@
+.pagination {
+    > li {
+        > a {
+            color: $black;
+        }
+        > span {
+            color: $black;
+        }
+    }
+    > .active {
+        > span {
+            z-index: 2;
+            color: $white;
+            cursor: default;
+            background-color: $color_firefly_approx;
+            border-color: $color_firefly_approx;
+            &:hover {
+                z-index: 2;
+                color: $white;
+                cursor: default;
+                background-color: $color_firefly_approx;
+                border-color: $color_firefly_approx;
+            }
+            &:focus {
+                z-index: 2;
+                color: $white;
+                cursor: default;
+                background-color: $color_firefly_approx;
+                border-color: $color_firefly_approx;
+            }
+        }
+        > a {
+            &:hover {
+                z-index: 2;
+                color: $white;
+                cursor: default;
+                background-color: $color_firefly_approx;
+                border-color: $color_firefly_approx;
+            }
+            &:focus {
+                z-index: 2;
+                color: $white;
+                cursor: default;
+                background-color: $color_firefly_approx;
+                border-color: $color_firefly_approx;
+            }
+        }
+    }
+}

@@ -1,13 +1,10 @@
-@import "_variables.scss";
-
-@import "_cleanup.scss";
-@import "_generic.scss";
-@import "_mixins.scss";
-
 header{
     .logo {
         margin: 0px;
         padding:0px;
+        @media only screen and (max-width: $break-point-large) {
+            width:40%;
+        }
         @media only screen and (max-width: $break-point-medium) {
             width:60%;
         }
@@ -29,6 +26,10 @@ header{
         }
         .header-right {
             padding-right: 0px;
+            @media only screen and (max-width: $break-point-large) {
+                float:right;
+                width:60%;
+            } 
             section{
                 float: right;
                 margin-top: 20px;
@@ -46,9 +47,20 @@ header{
                         }
                     }
                 }
+                @media only screen and (max-width: $break-point-large) {
+                    margin-left:10px;
+                    &.block-search-api-page {
+                        width:200px;
+                    }
+                } 
                 @media only screen and (max-width: $break-point-medium) {
                     display:none;
-                }
+
+                    &.block-search-api-page {
+                        /*display: block;*/
+                    }
+                } 
+
             }
             a {
                 color: $charcoal;
@@ -98,6 +110,10 @@ header{
                     padding: 13px 20px 15px;
                     width: 260px;
                     @include placeholder-color($charcoal);
+                    @media only screen and (max-width: $break-point-large) {
+                       width: 140px;
+                       padding: 13px 15px 15px;
+                    } 
                 }
                 .form-group {
                     margin:0px;
@@ -166,5 +182,5 @@ header{
         }
 
     }
-    
+
 }

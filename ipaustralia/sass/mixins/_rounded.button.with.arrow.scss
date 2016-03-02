@@ -1,0 +1,25 @@
+@mixin rounded-button-with-arrrow($background-color:transparent, $line-color:white, $font-size:14px, $arrow-icon:'arrow-right-transparent.png') {
+    border: 2px solid $line-color;
+    background: $background-color;
+    padding: 16px 35px 16px;
+    display:inline-block;
+    border-radius: 100px;
+    color:$line-color;
+    font-size: $font-size;
+    text-transform: uppercase;
+    font-family: $font-title-normal;
+    line-height: $font-size;
+    &:after {
+        @include background-image($arrow-icon);
+        display:inline-block;
+        width: 9px;
+        height:15px;
+        content:'';
+        margin: 0 0 -2px 10px;
+    }
+    &:hover {
+        text-decoration: none;
+        background: $background-color;
+        border: 2px solid $charcoal;
+    }
+}
