@@ -118,7 +118,7 @@ header{
                         width: 140px;
                         padding: 13px 15px 15px;
                     } 
-                    @media only screen and (max-width: $break-point-medium) {
+                    @media only screen and (max-width: $break-point-medium - 1) {
                         width: 80%;
                         padding: 13px 15px 15px;
                     } 

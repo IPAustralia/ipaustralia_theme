@@ -51,6 +51,7 @@ function setBreakPoints() {
     var $break_point_xlarge = "1200px";
     var $break_point_large = "992px"; /*Desktop tablet landscape*/
     var $break_point_medium = "767px"; /*Tablet*/
+    var $break_point_medium_ipad = "768px"; /*Tablet*/
     var $break_point_midsmall = "640px"; /*Mobile Landscape*/
     var $break_point_small = "480px"; /*Mobile*/
 
@@ -96,6 +97,18 @@ function setBreakPoints() {
         },
         unmatch: function () {
             jQuery('body').removeClass('bp-medium');
+        },
+        setup: function () {},
+        deferSetup: true,
+        destroy: function () {}
+
+    });
+    enquire.register("screen and (max-width:" + $break_point_medium_ipad + ")", {
+        match: function () {
+            jQuery('body').addClass('bp-medium_ipad');
+        },
+        unmatch: function () {
+            jQuery('body').removeClass('bp-medium_ipad');
         },
         setup: function () {},
         deferSetup: true,
@@ -191,7 +204,7 @@ function showSearchIcon() {
 }
 
 function slickSlides() {
-    if (jQuery('.bp-medium').length > 0) {
+    if (jQuery('.bp-medium_ipad').length > 0) {
         slideHomeMain('attach');
     } else {
         slideHomeMain('detach');
@@ -202,15 +215,27 @@ function slickSlides() {
 function slideHomeMain($action) {
     var $element = '#quicktabs-container-homepage_main_tab';
     if ($action === 'attach') {
-        jQuery($element).slick({
-            adaptiveHeight: false
-        });
+        try {
+            jQuery($element).slick({
+                adaptiveHeight: true,
+                arrows: false,
+                dots: true
+            });
+        } catch (exp) {
+//            console.log('Attaching slick issue');
+        }
     } else {
-        jQuery($element).slick('unslick');
+        try {
+            if (jQuery($element).hasClass('slick-initialized')) {
+                jQuery($element).slick('unslick');
+            }
+        } catch (exp) {
+//            console.log('Attaching slick issue');
+        }
     }
 
     jQuery($element).on('swipe', function (event, slick, direction) {
-        
+
         var $active_li = "#" + jQuery(this).find('.slick-active').attr('id').replace("-tabpage-", "-tab-");
         jQuery($active_li).parent('li').siblings('li').removeClass('active'); //remove active class from all tabs
         jQuery($active_li).parent('li').addClass('active'); //add active class to the correct tab

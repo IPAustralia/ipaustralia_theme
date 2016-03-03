@@ -86,6 +86,19 @@
                     }
                 }
             }
+            .slick-dots {
+                margin-left: -10px;
+                bottom:-40px;
+                li {
+                    background: black;
+                    width: 15px;
+                    height:15px;
+                    border: 1px solid black;
+                    &.slick-active {
+                        background: white;
+                    }
+                }
+            }
         }
     }
     #block-bean-need-help-choosing-the-right-ip {

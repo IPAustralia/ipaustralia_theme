@@ -658,7 +658,7 @@ header .header {
           header .header .header-right .block-search-api-page input.form-text {
             width: 140px;
             padding: 13px 15px 15px; } }
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 767px) {
           header .header .header-right .block-search-api-page input.form-text {
             width: 80%;
             padding: 13px 15px 15px; } }
@@ -1715,6 +1715,16 @@ ul.menu.nav ul.menu.nav {
       @media only screen and (max-width: 768px) {
         .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last {
           display: none; } }
+  .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .slick-dots {
+    margin-left: -10px;
+    bottom: -40px; }
+    .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .slick-dots li {
+      background: black;
+      width: 15px;
+      height: 15px;
+      border: 1px solid black; }
+      .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .slick-dots li.slick-active {
+        background: white; }
 .front #block-bean-need-help-choosing-the-right-ip {
   padding: 80px 10px;
   text-align: center;
