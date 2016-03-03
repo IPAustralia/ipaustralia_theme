@@ -9,7 +9,7 @@
         @include background-image('women-with-tablet-merged.jpg', center,top,no-repeat, $charcoal);
         background-size: 100% auto;
         @media only screen and (max-width: $break-point-medium) {
-            background-size: auto 100%;
+            background-size: cover;
             padding: 10px 0px;
         }
         .quicktabs-wrapper  {
@@ -20,6 +20,14 @@
                     margin-bottom: 5px;
                     a {
                         /*font-size:16px;*/
+                    }
+                    @media only screen and (max-width: $break-point-medium) {
+                        display:none;
+                        margin:0px;
+                        padding:0px;
+                        &.active {
+                            display: block;
+                        }
                     }
                 }
                 li:last-child {
