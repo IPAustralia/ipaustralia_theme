@@ -1802,7 +1802,8 @@ ul.menu.nav ul.menu.nav {
           .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .panel-image {
             margin: 13px;
             float: left;
-            width: 45px; } }
+            width: 45px;
+            height: 45px; } }
       @media only screen and (max-width: 992px) {
         .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
           height: 60px;

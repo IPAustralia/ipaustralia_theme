@@ -212,8 +212,8 @@ function slideHomeMain($action) {
     jQuery($element).on('swipe', function (event, slick, direction) {
         
         var $active_li = "#" + jQuery(this).find('.slick-active').attr('id').replace("-tabpage-", "-tab-");
-        jQuery($active_li).parent('li').siblings('li').removeClass('active');
-        jQuery($active_li).parent('li').addClass('active');
+        jQuery($active_li).parent('li').siblings('li').removeClass('active'); //remove active class from all tabs
+        jQuery($active_li).parent('li').addClass('active'); //add active class to the correct tab
         // left
     });
 
