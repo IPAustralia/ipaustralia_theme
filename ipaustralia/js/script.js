@@ -31,6 +31,7 @@ function resizing() {
     equaliseElementsHeight();
     showSearchIcon();
     slickSlides();
+    slideApplicationProcess();
 }
 function equaliseElementsHeight() {
     /*
@@ -244,6 +245,58 @@ function slideHomeMain($action) {
 
 }
 
+function slideApplicationProcess() {
+    var $break_point_xlarge = "1200";
+    var $break_point_large = "992"; /*Desktop tablet landscape*/
+    var $break_point_medium = "767"; /*Tablet*/
+    var $break_point_medium_ipad = "768"; /*Tablet*/
+    var $break_point_midsmall = "640"; /*Mobile Landscape*/
+    var $break_point_small = "480"; /*Mobile*/
+    
+    var $element = '#block-menu-block-6 ul';
+    try {
+        jQuery($element).slick({
+            adaptiveHeight: true,
+            arrows: true,
+            slide: 'li',
+            infinite: false,
+            slidesToShow: 6,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: $break_point_large,
+                    settings: {
+                       slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: $break_point_medium,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: $break_point_midsmall,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: $break_point_small,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    } catch (exp) {
+//            console.log('Attaching slick issue');
+    }
+}
 
 
 

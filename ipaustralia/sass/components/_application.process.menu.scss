@@ -1,0 +1,51 @@
+/*
+applicaiton process menu steps
+*/
+
+#block-menu-block-6 {
+    background-color: $light-grey;
+    margin: 0 0 50px 0;
+    height:296px;
+    overflow-y:hidden;
+    .block-title, h2 {
+        display: none;
+    }
+    ul{
+        li {
+            text-align: center;
+            counter-increment: process-counter;
+            width:198px;
+            padding: 0;
+            float:left;
+            @include background-image('application-process-bar.png');
+            background-position: 0px 116px;
+            background-repeat: repeat-x;
+            
+            &:first-child {
+                background-position: 100px 116px;
+                background-repeat: no-repeat;
+            }
+            &:last-child {
+                background-position: -100px 116px;
+                background-repeat: no-repeat;
+            }
+
+            a {
+                height: 297px;
+                padding: 177px 0 0 0;
+                display: block;
+                color: black;
+                @include background-image('dummy-image.png');
+                background-position: center 40px;
+
+                &::before {
+                    font-size: 34px;
+                    font-weight: 600;
+                    display: block;
+                    content: counter(process-counter);
+
+                }
+            }
+        }
+    }
+}

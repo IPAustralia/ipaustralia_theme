@@ -4,9 +4,10 @@ h2 {
 
 h1 {
     color: $color_shark_approx;
-    font-family: $font_1, $font_5;
-    font-size: 60px;
+    font-family: $font-title-normal;
+    font-size: 42px;
     line-height: 72px;
+    font-weight: 600;
     @media only screen and (max-width: $break-point-medium) {
         font-size: 44px;
     }
@@ -14,7 +15,7 @@ h1 {
 h2 {
     color: $color_shark_approx;
     font-family: $font-title-normal;
-    font-size: 38px;
+    font-size: 30px;
     line-height: 60px;
     font-weight: 600;
     letter-spacing: -0.5px;

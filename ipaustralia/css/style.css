@@ -274,9 +274,10 @@ h2 {
 
 h1 {
   color: #1d252c;
-  font-family: montserratbold, sans-serif;
-  font-size: 60px;
-  line-height: 72px; }
+  font-family: "montserratregular", sans-serif;
+  font-size: 42px;
+  line-height: 72px;
+  font-weight: 600; }
   @media only screen and (max-width: 768px) {
     h1 {
       font-size: 44px; } }
@@ -284,7 +285,7 @@ h1 {
 h2 {
   color: #1d252c;
   font-family: "montserratregular", sans-serif;
-  font-size: 38px;
+  font-size: 30px;
   line-height: 60px;
   font-weight: 600;
   letter-spacing: -0.5px; }
@@ -1544,8 +1545,68 @@ ul.menu.nav ul.menu.nav {
 .indented {
   padding-left: 50px; }
 
+/*
+Main title DIV with background image and underline 
+*/
+div.title {
+  background: #efefef;
+  padding: 80px 0px;
+  border-bottom: 2px solid white;
+  background: transparent url("../images/designs-banner.jpg") center center no-repeat; }
+  div.title h1 {
+    color: white;
+    border: 0px;
+    margin: 0px; }
+    div.title h1:after {
+      content: '';
+      display: block;
+      border-top: 6px solid white;
+      width: 141px; }
+
+/*
+applicaiton process menu steps
+*/
+#block-menu-block-6 {
+  background-color: #e5e8ec;
+  margin: 0 0 50px 0;
+  height: 296px;
+  overflow-y: hidden; }
+  #block-menu-block-6 .block-title, #block-menu-block-6 h2 {
+    display: none; }
+  #block-menu-block-6 ul li {
+    text-align: center;
+    counter-increment: process-counter;
+    width: 198px;
+    padding: 0;
+    float: left;
+    background: transparent url("../images/application-process-bar.png") center center no-repeat;
+    background-position: 0px 116px;
+    background-repeat: repeat-x; }
+    #block-menu-block-6 ul li:first-child {
+      background-position: 100px 116px;
+      background-repeat: no-repeat; }
+    #block-menu-block-6 ul li:last-child {
+      background-position: -100px 116px;
+      background-repeat: no-repeat; }
+    #block-menu-block-6 ul li a {
+      height: 297px;
+      padding: 177px 0 0 0;
+      display: block;
+      color: black;
+      background: transparent url("../images/dummy-image.png") center center no-repeat;
+      background-position: center 40px; }
+      #block-menu-block-6 ul li a::before {
+        font-size: 34px;
+        font-weight: 600;
+        display: block;
+        content: counter(process-counter); }
+
 .front h2 {
-  /*font-family: $font-title-normal;*/ }
+  font-size: 38px; }
+  @media only screen and (max-width: 768px) {
+    .front h2 {
+      font-size: 28px;
+      line-height: 34px; } }
 .front #block-quicktabs-homepage-main-tab {
   padding: 80px 10px;
   background: #eff0f2;
@@ -1778,9 +1839,10 @@ ul.menu.nav ul.menu.nav {
   background-size: 120% auto; }
   @media only screen and (max-width: 768px) {
     .front #block-bean-tools-and-resources-generic-bloc {
-      background-size: auto 100%; } }
+      background-size: cover;
+      padding: 40px 10px; } }
   .front #block-bean-tools-and-resources-generic-bloc h2 {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 10px 0px;
     color: white; }
   .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
     width: 25%; }
@@ -1794,7 +1856,7 @@ ul.menu.nav ul.menu.nav {
         width: 100%; } }
     .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
       background: white none repeat scroll 0 0;
-      margin-right: 20px;
+      margin: 0 10px;
       /*min-height: 565px;*/
       padding: 0; }
       @media only screen and (max-width: 480px) {
