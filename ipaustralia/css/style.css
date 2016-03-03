@@ -312,18 +312,21 @@ header .logo {
       width: 40%; } }
   @media only screen and (max-width: 768px) {
     header .logo {
+      width: 40%; } }
+  @media only screen and (max-width: 640px) {
+    header .logo {
       width: 60%; } }
   header .logo img {
     margin-top: 40px;
     width: 84%; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       header .logo img {
         width: 100%;
         margin-top: 15px;
         margin-bottom: 10px; } }
 header .header {
   padding: 0 0 30px 0px; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     header .header {
       padding-bottom: 10px;
       border-bottom: 2px solid #0d252c; } }
@@ -352,11 +355,11 @@ header .header {
           margin-left: 10px; }
           header .header .header-right section.block-search-api-page {
             width: 200px; } }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 767px) {
         header .header .header-right section {
           display: none; }
           header .header .header-right section.block-search-api-page {
-            /*display: block;*/ } }
+            width: 100%; } }
     header .header .header-right a {
       color: #0d252c; }
     header .header .header-right .block-govcms-text-resize {
@@ -418,6 +421,10 @@ header .header {
           header .header .header-right .block-search-api-page input.form-text {
             width: 140px;
             padding: 13px 15px 15px; } }
+        @media only screen and (max-width: 768px) {
+          header .header .header-right .block-search-api-page input.form-text {
+            width: 80%;
+            padding: 13px 15px 15px; } }
       header .header .header-right .block-search-api-page .form-group {
         margin: 0px; }
       header .header .header-right .block-search-api-page .form-submit {
@@ -462,6 +469,19 @@ header .header {
         text-decoration: none;
         text-transform: uppercase;
         background: transparent url("../images/arrow-right-online-services.png") right center no-repeat; }
+  header .header .responsive-search-icon {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 65px;
+    top: 22px;
+    cursor: pointer;
+    background: transparent url("../images/link-search-26px.png") center center no-repeat;
+    text-indent: -9999px;
+    background-size: auto 22px; }
+    header .header .responsive-search-icon.opened {
+      background: transparent url("../images/close-cross.png") center center no-repeat;
+      background-size: auto auto; }
 
 footer {
   padding: 0 0 80px 0px !important;
@@ -494,7 +514,7 @@ footer {
         box-shadow: none;
         display: block;
         margin: 0;
-        padding: 0;
+        padding: 0 !important;
         position: relative;
         border: 0px;
         clear: both; }
@@ -571,12 +591,12 @@ footer {
 
 header nav #header-navigation-container {
   position: relative; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     header nav #header-navigation-container {
       border: 0px;
       padding: 0px;
       margin-top: -1px; } }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   header nav .navbar-header {
     position: absolute;
     top: 20px;
@@ -602,7 +622,7 @@ header nav .nav-tabs {
     border: 0px;
     position: inherit;
     float: left; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       header nav .nav-tabs li {
         float: none;
         border-bottom: 1px solid #283e44;
@@ -614,13 +634,13 @@ header nav .nav-tabs {
       background: #eff0f2;
       color: #0d252c !important;
       border-color: #eff0f2 !important; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 767px) {
         header nav .nav-tabs li.open > a:first-child {
           background: #0d252c url("../images/arrow-up-transparent.png") 90% center no-repeat;
           /*background-color:$charcoal !important;*/
           color: white !important;
           margin-bottom: -5px; } }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       header nav .nav-tabs li.open {
         background: #0d252c; } }
     header nav .nav-tabs li.active {
@@ -697,7 +717,7 @@ header nav .nav-tabs {
       header nav .nav-tabs li a.megamenu-tab-plant-breeders-rights {
         border-bottom: 4px solid #f1ac1e;
         padding-bottom: 11px; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 767px) {
         header nav .nav-tabs li a {
           padding: 22px 15px !important;
           line-height: 16px;
@@ -722,19 +742,19 @@ header nav .nav-tabs {
         display: inline-block; }
         header nav .nav-tabs > li a {
           margin: 0 -2px; } }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     header nav .nav-tabs > li {
       display: block; } }
   header nav .nav-tabs .dropdown-menu {
     background: #eff0f2;
     border: medium none;
     border-radius: 0px;
-    box-shadow: 0 5px 4px #b2b2b2;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
     margin-top: 0 !important;
     position: absolute;
     width: 100%;
     padding: 40px; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       header nav .nav-tabs .dropdown-menu {
         position: relative;
         box-shadow: none;
@@ -763,7 +783,7 @@ header nav .nav-tabs {
         background: transparent url("../images/mm-icon-pbr.gif") left top no-repeat; }
       header nav .nav-tabs .dropdown-menu i.icon-understanding-ip, header nav .nav-tabs .dropdown-menu i.icon-ip-infringement, header nav .nav-tabs .dropdown-menu i.icon-tools--resources {
         display: none; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 767px) {
         header nav .nav-tabs .dropdown-menu i {
           display: none; } }
     header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title a {
@@ -771,7 +791,7 @@ header nav .nav-tabs {
       font: normal 24px "montserratbold", sans-serif;
       /*font-family: $font-title-normal;*/
       text-transform: uppercase; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title {
         display: none; } }
     header nav .nav-tabs .dropdown-menu .learn-more {
@@ -798,7 +818,7 @@ header nav .nav-tabs {
         text-decoration: none;
         background: transparent;
         border: 2px solid #0d252c; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 767px) {
         header nav .nav-tabs .dropdown-menu .learn-more {
           display: none; } }
     header nav .nav-tabs .dropdown-menu .megamenu-level-2 {
@@ -806,7 +826,7 @@ header nav .nav-tabs {
       padding: 40px 0px;
       margin-top: 40px;
       border-top: 2px dotted #c5c9cc; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 767px) {
         header nav .nav-tabs .dropdown-menu .megamenu-level-2 {
           border: none;
           margin: 0px;
@@ -817,7 +837,7 @@ header nav .nav-tabs {
         @media only screen and (min-width: 769px) {
           header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.expanded:nth-child(4n) {
             clear: both; } }
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 767px) {
           header nav .nav-tabs .dropdown-menu .megamenu-level-2 li {
             float: none;
             width: 100%;
@@ -835,7 +855,7 @@ header nav .nav-tabs {
           @media only screen and (max-width: 892px) {
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li a {
               background: none; } }
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 767px) {
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li a {
               float: none;
               font: normal 16px "robotoregular", sans-serif;
@@ -855,7 +875,7 @@ header nav .nav-tabs {
               margin: 0px; }
               header nav .nav-tabs .dropdown-menu .megamenu-level-2 li .megamenu-level-3 li a:hover {
                 text-decoration: none; }
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 767px) {
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li .megamenu-level-3 {
               display: none; } }
         header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box {
@@ -895,7 +915,7 @@ header nav .nav-tabs {
               background: white url("../images/link-case-studies.png") 15px center no-repeat; }
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a.download-icon {
               background: white url("../images/link-download.png") 15px center no-repeat; }
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 767px) {
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box {
               display: none; } }
 
@@ -4080,5 +4100,3 @@ div.thin {
 .page-about-us-news-and-community-blog .views-field-field-news-date {
   padding-top: 25px;
   color: #999; }
-
-/*# sourceMappingURL=style.css.map */

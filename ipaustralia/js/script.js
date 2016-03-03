@@ -1,10 +1,8 @@
 jQuery(window).load(function () {
-    removeJsAppliedStyles()
-    equaliseElementsHeight();
+    resizing();
 });
 jQuery(window).resize(function () {
-    removeJsAppliedStyles()
-    equaliseElementsHeight();
+    resizing();
 });
 jQuery(document).ready(function () {
     setBreakPoints();
@@ -26,8 +24,19 @@ jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-
 });
 
 
+function resizing() {
+    /*
+     *  Do action on resizing window or document
+     *  This is normally is used on mobile devices when rotating 
+     */
+    removeJsAppliedStyles();
+    equaliseElementsHeight();
+    showSearchIcon();
+}
 function equaliseElementsHeight() {
-
+    /*
+     *  Make element same height. example tool box on home page
+     */
     equalHeight('#block-bean-tools-and-resources-generic-bloc .panels-flexible-region-inside');
     equalHeight('.footer li.expanded');
 
@@ -36,15 +45,18 @@ function equaliseElementsHeight() {
     }, 500);
 }
 function setBreakPoints() {
+    /*
+     * Check the current viewport and attach class name to the body
+     * Used for responsive styling
+     */
     var $break_point_xlarge = "1200px";
     var $break_point_large = "992px"; /*Desktop tablet landscape*/
-    var $break_point_medium = "768px"; /*Tablet*/
+    var $break_point_medium = "767px"; /*Tablet*/
     var $break_point_midsmall = "640px"; /*Mobile Landscape*/
     var $break_point_small = "480px"; /*Mobile*/
 
     enquire.register("screen and (max-width:" + $break_point_xlarge + ")", {
         match: function () {
-//            console.log('$break_point_xlarge');
             jQuery('body').addClass('bp-xlarge');
         },
         unmatch: function () {
@@ -57,9 +69,7 @@ function setBreakPoints() {
     });
     enquire.register("screen and (min-width:" + $break_point_xlarge + ")", {
         match: function () {
-//            console.log('$break_point_xxlarge');
             jQuery('body').addClass('bp-xxlarge');
-            attachBreakpoints();
         },
         unmatch: function () {
             jQuery('body').removeClass('bp-xxlarge');
@@ -71,9 +81,7 @@ function setBreakPoints() {
     });
     enquire.register("screen and (max-width:" + $break_point_large + ")", {
         match: function () {
-//            console.log('$break_point_large');
             jQuery('body').addClass('bp-large');
-            attachBreakpoints();
         },
         unmatch: function () {
             jQuery('body').removeClass('bp-large');
@@ -85,7 +93,6 @@ function setBreakPoints() {
     });
     enquire.register("screen and (max-width:" + $break_point_medium + ")", {
         match: function () {
-            console.log('$break_point_medium');
             jQuery('body').addClass('bp-medium');
         },
         unmatch: function () {
@@ -98,7 +105,6 @@ function setBreakPoints() {
     });
     enquire.register("screen and (max-width:" + $break_point_midsmall + ")", {
         match: function () {
-//            console.log('$break_point_midsmall');
             jQuery('body').addClass('bp-midsmall');
         },
         unmatch: function () {
@@ -111,7 +117,6 @@ function setBreakPoints() {
     });
     enquire.register("screen and (max-width:" + $break_point_small + ")", {
         match: function () {
-//            console.log('$break_point_small');
             jQuery('body').addClass('bp-small');
         },
         unmatch: function () {
@@ -123,6 +128,103 @@ function setBreakPoints() {
 
     });
 }
+function removeJsAppliedStyles() {
+    /*
+     * Cleanup class. Remove styling applied for responsive
+     */
+    jQuery('#block-bean-tools-and-resources-generic-bloc .inside').removeAttr('style');
+}
+function addTwitterFeed() {
+    //add twitter feed script
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+        if (d.getElementById(id))
+            return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+//end twitter feed script
+
+
+
+
+
+
+
+}
+function showSearchIcon() {
+    /*
+     * On Reponsive device add element to show the search box
+     */
+    jQuery('.responsive-search-icon').remove();
+
+    if (jQuery('.bp-medium').length > 0) {
+        jQuery('header#navbar .header > .container').prepend('<div class="responsive-search-icon">search</div>');
+        jQuery('.block-search-api-page').css('width', jQuery(document).width() - 30 + 'px');
+    } else {
+        jQuery('.responsive-search-icon').remove();
+        jQuery('.block-search-api-page').removeAttr('style');
+    }
+
+    jQuery(document).on('click', '.responsive-search-icon', function () {
+        console.log('Clicked');
+        console.log(jQuery(this).attr('class'));
+        if (jQuery(this).hasClass('opened')) {
+            jQuery('.block-search-api-page').slideUp(function () {
+                jQuery('.responsive-search-icon').removeClass('opened');
+            });
+        } else {
+            jQuery('.block-search-api-page').slideDown(function () {
+                jQuery('.responsive-search-icon').addClass('opened');
+            });
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Third party scripts
 function equalHeight($container) {
 
     var currentTallest = 0,
@@ -154,71 +256,6 @@ function equalHeight($container) {
     });
 
 }
-function attachBreakpoints() {
-
-}
-function detachBreakpoints() {
-
-}
-function removeJsAppliedStyles() {
-    jQuery('#block-bean-tools-and-resources-generic-bloc .inside').removeAttr('style');
-}
-function addTwitterFeed() {
-    //add twitter feed script
-    window.twttr = (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-                t = window.twttr || {};
-        if (d.getElementById(id))
-            return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-
-        t._e = [];
-        t.ready = function (f) {
-            t._e.push(f);
-        };
-
-        return t;
-    }(document, "script", "twitter-wjs"));
-//end twitter feed script
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*!
