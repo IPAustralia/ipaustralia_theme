@@ -6,7 +6,7 @@ applicaiton process menu steps
     background-color: $light-grey;
     margin: 0 0 50px 0;
     height:296px;
-    overflow-y:hidden;
+    overflow:hidden;
     .block-title, h2 {
         display: none;
     }
@@ -20,7 +20,8 @@ applicaiton process menu steps
             @include background-image('application-process-bar.png');
             background-position: 0px 116px;
             background-repeat: repeat-x;
-            
+            /*opacity:0.4;*/
+
             &:first-child {
                 background-position: 100px 116px;
                 background-repeat: no-repeat;
@@ -32,7 +33,7 @@ applicaiton process menu steps
 
             a {
                 height: 297px;
-                padding: 177px 0 0 0;
+                padding: 177px 5px 0;
                 display: block;
                 color: black;
                 @include background-image('dummy-image.png');
@@ -45,6 +46,20 @@ applicaiton process menu steps
                     content: counter(process-counter);
 
                 }
+            }
+            &.active {
+                background-color: $light-grey * 1.05;
+                opacity:1;
+            }
+            &.slick-current, &:hover, &:active, &:focus {
+                /*opacity:1;*/
+            }
+        }
+        .slick-arrow {
+            margin-top: -31px;
+            z-index: 100;
+            @media only screen and (max-width: $break-point-large - 100) {
+                display:none !important;
             }
         }
     }

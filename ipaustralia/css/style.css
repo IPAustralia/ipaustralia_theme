@@ -276,7 +276,7 @@ h1 {
   color: #1d252c;
   font-family: "montserratregular", sans-serif;
   font-size: 42px;
-  line-height: 72px;
+  line-height: 55px;
   font-weight: 600; }
   @media only screen and (max-width: 768px) {
     h1 {
@@ -342,6 +342,18 @@ body {
 /* blog threading */
 .indented {
   padding-left: 50px; }
+
+.slick-arrow {
+  text-indent: -9999px;
+  width: 45px;
+  background-size: auto 80% !important;
+  height: 46px; }
+  .slick-arrow.slick-prev {
+    background: transparent url("../images/chevron-sign-left.png") center center no-repeat; }
+  .slick-arrow.slick-next {
+    background: transparent url("../images/chevron-sign-to-right.png") center center no-repeat; }
+  .slick-arrow.slick-disabled {
+    display: none !important; }
 
 .main-list-item-patent {
   width: 100%;
@@ -1570,7 +1582,7 @@ applicaiton process menu steps
   background-color: #e5e8ec;
   margin: 0 0 50px 0;
   height: 296px;
-  overflow-y: hidden; }
+  overflow: hidden; }
   #block-menu-block-6 .block-title, #block-menu-block-6 h2 {
     display: none; }
   #block-menu-block-6 ul li {
@@ -1581,7 +1593,8 @@ applicaiton process menu steps
     float: left;
     background: transparent url("../images/application-process-bar.png") center center no-repeat;
     background-position: 0px 116px;
-    background-repeat: repeat-x; }
+    background-repeat: repeat-x;
+    /*opacity:0.4;*/ }
     #block-menu-block-6 ul li:first-child {
       background-position: 100px 116px;
       background-repeat: no-repeat; }
@@ -1590,7 +1603,7 @@ applicaiton process menu steps
       background-repeat: no-repeat; }
     #block-menu-block-6 ul li a {
       height: 297px;
-      padding: 177px 0 0 0;
+      padding: 177px 5px 0;
       display: block;
       color: black;
       background: transparent url("../images/dummy-image.png") center center no-repeat;
@@ -1600,6 +1613,20 @@ applicaiton process menu steps
         font-weight: 600;
         display: block;
         content: counter(process-counter); }
+    #block-menu-block-6 ul li.active {
+      background-color: #f0f4f8;
+      opacity: 1; }
+    #block-menu-block-6 ul li.slick-current, #block-menu-block-6 ul li:hover, #block-menu-block-6 ul li:active, #block-menu-block-6 ul li:focus {
+      /*opacity:1;*/ }
+  #block-menu-block-6 ul .slick-arrow {
+    margin-top: -31px;
+    z-index: 100; }
+    @media only screen and (max-width: 892px) {
+      #block-menu-block-6 ul .slick-arrow {
+        display: none !important; } }
+
+.breadcrumbs {
+  background: #e5e8ec; }
 
 .front h2 {
   font-size: 38px; }

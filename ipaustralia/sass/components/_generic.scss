@@ -6,7 +6,7 @@ h1 {
     color: $color_shark_approx;
     font-family: $font-title-normal;
     font-size: 42px;
-    line-height: 72px;
+    line-height: 55px;
     font-weight: 600;
     @media only screen and (max-width: $break-point-medium) {
         font-size: 44px;
@@ -42,7 +42,7 @@ h4 {
     font-family: $font-title-normal;
     font-size: 24px;
     line-height: 30px;
-   
+
 }
 h5 {
     color: $color_shark_approx;
@@ -78,5 +78,22 @@ body {
 
 /* blog threading */
 .indented {
-  padding-left: 50px;
+    padding-left: 50px;
+}
+
+
+.slick-arrow {
+    text-indent: -9999px;
+    width:45px;
+    background-size: auto 80% !important;
+    height:46px;
+    &.slick-prev {
+        @include background-image('chevron-sign-left.png');
+    }
+    &.slick-next {
+        @include background-image('chevron-sign-to-right.png');
+    }
+    &.slick-disabled {
+        display: none !important;
+    }
 }

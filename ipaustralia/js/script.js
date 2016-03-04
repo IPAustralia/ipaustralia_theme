@@ -252,40 +252,88 @@ function slideApplicationProcess() {
     var $break_point_medium_ipad = "768"; /*Tablet*/
     var $break_point_midsmall = "640"; /*Mobile Landscape*/
     var $break_point_small = "480"; /*Mobile*/
-    
+
     var $element = '#block-menu-block-6 ul';
+    var $centermode = false;
+    var $initialSlide = 0;
+    var $slidesToShow = 6;
+    var $index = parseInt(jQuery($element).find('li.active').index());
+
+    if ($index > $slidesToShow - 1) {
+//        $centermode = true;
+
+    }
+    if ($index > -1) {
+        $initialSlide = $index;
+    }
+
+
     try {
         jQuery($element).slick({
             adaptiveHeight: true,
             arrows: true,
             slide: 'li',
             infinite: false,
-            slidesToShow: 6,
-            dots: true,
+            slidesToShow: $slidesToShow,
+            initialSlide: $initialSlide,
+            slidesToScroll: 1,
+            edgeFriction: 1,
+            variableWidth: false,
+            centerMode: $centermode,
+            dots: false,
             responsive: [
                 {
                     breakpoint: $break_point_large,
                     settings: {
-                       slidesToShow: 5
+                        slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: $break_point_medium - 100,
+                    settings: {
+                        centerMode: true,
+                        variableWidth: true,
+                        arrows: false,
+                        slidesToShow: 4
+
                     }
                 },
                 {
                     breakpoint: $break_point_medium,
                     settings: {
+                        centerMode: true,
+                        variableWidth: true,
+                        arrows: false,
                         slidesToShow: 4
+
+                    }
+                },
+                {
+                    breakpoint: $break_point_medium_ipad,
+                    settings: {
+                        centerMode: true,
+                        variableWidth: true,
+                        arrows: false,
+                        slidesToShow: 3
                     }
                 },
                 {
                     breakpoint: $break_point_midsmall,
                     settings: {
-                        slidesToShow: 3
+                        centerMode: true,
+                        variableWidth: true,
+                        slidesToScroll: 1,
+                        slidesToShow: 2,
+                        arrows: false
                     }
                 },
                 {
                     breakpoint: $break_point_small,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
+                        centerMode: true,
+                        slidesToShow: 1,
+                        variableWidth: true,
+                        arrows: false
                     }
                 }
                 // You can unslick at a given breakpoint now by adding:
@@ -293,9 +341,13 @@ function slideApplicationProcess() {
                 // instead of a settings object
             ]
         });
+
     } catch (exp) {
 //            console.log('Attaching slick issue');
     }
+//    $($element).on('edge', function (event, slick, direction) {
+//        console.log('edge was hit')
+//    });
 }
 
 
