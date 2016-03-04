@@ -1,0 +1,47 @@
+/*
+applicaiton process on body
+*/
+.applicaiton-process-wrapper {
+    h2,.description,p  {
+        text-align: center;
+    }
+    .description {
+        margin-bottom: $gap-medium;
+    }
+    ul {
+        text-align: center;
+        list-style: none;
+        padding:0px;
+        margin:0px;
+        li {
+            width: 350px;
+            padding: 30px 45px;
+            display: inline-block;
+            counter-increment: process-counter;
+            .image {
+                width: 182px;
+                height:182px;
+                background: #fff;
+                display:inline-block;
+                border-radius: 1000px;
+
+
+            }
+            h3 {
+                /*@include background-image('dummy-image.png');*/
+                &::before {
+                    font-size: 34px;
+                    font-weight: 600;
+                    display: block;
+                    content: counter(process-counter);
+
+                }
+            }
+        }
+    }
+    .button {
+        @include rounded-button-with-arrrow(black,black);
+        margin: $gap-large auto;
+        color: white;
+    }
+}
