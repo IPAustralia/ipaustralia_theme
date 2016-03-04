@@ -6,6 +6,14 @@
             line-height: 34px;
         }
     }
+    h3 {
+        color: $color_shark_approx;
+        font-family: $font-title-normal;
+        font-size: 38px;
+        line-height: 44px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
     #block-quicktabs-homepage-main-tab {
         padding: $gap-large 10px;
         background: $off-white;
@@ -151,6 +159,10 @@
         h2 {
             margin: 0px 0px 10px 0px;
             color: white;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: 18px;
         }
         .panel-flexible {
             .panels-flexible-row-inside {

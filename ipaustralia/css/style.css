@@ -285,9 +285,11 @@ h1 {
 h2 {
   color: #1d252c;
   font-family: "montserratregular", sans-serif;
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 38px;
+  line-height: 42px;
   font-weight: 600;
+  margin-top: 0px;
+  vertical-align: top;
   letter-spacing: -0.5px; }
   @media only screen and (max-width: 768px) {
     h2 {
@@ -297,20 +299,24 @@ h2 {
 h3 {
   color: #1d252c;
   font-family: "montserratregular", sans-serif;
-  font-size: 38px;
-  line-height: 44px;
+  font-size: 28px;
+  line-height: 32px;
   font-weight: 600;
   letter-spacing: -0.5px; }
   @media only screen and (max-width: 768px) {
     h3 {
-      font-size: 28px;
+      font-size: 24px;
       line-height: 34px; } }
 
 h4 {
   color: #1d252c;
   font-family: "montserratregular", sans-serif;
   font-size: 24px;
-  line-height: 30px; }
+  line-height: 26px; }
+  @media only screen and (max-width: 768px) {
+    h4 {
+      font-size: 22px;
+      line-height: 34px; } }
 
 h5 {
   color: #1d252c;
@@ -354,6 +360,26 @@ body {
     background: transparent url("../images/chevron-sign-to-right.png") center center no-repeat; }
   .slick-arrow.slick-disabled {
     display: none !important; }
+
+.not-front .main-container .overlay > .container {
+  margin-top: 80px; }
+  @media only screen and (max-width: 768px) {
+    .not-front .main-container .overlay > .container {
+      margin-top: 40px; } }
+
+article {
+  margin-top: -10px;
+  padding: 0 30px;
+  line-height: 24px; }
+  article h2 {
+    margin-top: 40px;
+    margin-bottom: 30px; }
+    article h2:first-child {
+      margin-top: 0px; }
+  article h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 1px; }
 
 .main-list-item-patent {
   width: 100%;
@@ -450,66 +476,6 @@ body {
 @media only screen and (min-width: 768px) {
   div.container div.container {
     width: 100%; } }
-.menu-block-wrapper.menu-block-5.menu-name-main-menu {
-  border-top-style: solid;
-  border-top-width: 5px; }
-  .menu-block-wrapper.menu-block-5.menu-name-main-menu li.leaf a {
-    color: #000;
-    text-transform: uppercase;
-    font-family: robotobold, sans-serif;
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    border-bottom-color: #ccc; }
-  .menu-block-wrapper.menu-block-5.menu-name-main-menu li.collapsed a {
-    color: #000;
-    text-transform: uppercase;
-    font-family: robotobold, sans-serif;
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    border-bottom-color: #ccc; }
-  .menu-block-wrapper.menu-block-5.menu-name-main-menu li.first a {
-    color: #000;
-    text-transform: uppercase;
-    font-family: robotobold, sans-serif;
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    border-bottom-color: #ccc; }
-  .menu-block-wrapper.menu-block-5.menu-name-main-menu li.active a {
-    color: #000;
-    text-transform: uppercase;
-    font-family: robotobold, sans-serif;
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    border-bottom-color: #ccc; }
-.menu-block-wrapper.menu-name-menu-about-us li.leaf a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-.menu-block-wrapper.menu-name-menu-about-us li.collapsed a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-.menu-block-wrapper.menu-name-menu-about-us li.first a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-.menu-block-wrapper.menu-name-menu-about-us li.active a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-
 .panels-flexible-row-four_column_panel_with_top_and_bottom-main-row h3 {
   text-transform: uppercase;
   font-size: 18px; }
@@ -1179,96 +1145,43 @@ header nav .nav-tabs {
 /* Garths css */
 /* ide nav code */
 .menu-block-wrapper.menu-block-5.menu-name-main-menu {
-  border-top-style: solid;
-  border-top-width: 5px; }
+  /*    border-top-style: solid;
+      border-top-width: 5px;*/ }
 
 .region-sidebar-first.well {
-  min-height: 20px !important;
-  padding: 0px !important;
   background-color: #fff !important;
-  border-radius: 0px !important;
-  -webkit-box-shadow: inset 0 1px 1px transparent !important;
-  box-shadow: inset 0 1px 1px transparent !important;
-  border-top-style: solid;
-  border-top-width: 5px; }
-
-.menu-block-wrapper.menu-name-main-menu li.leaf a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-
-.menu-block-wrapper.menu-name-main-menu li.collapsed a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-
-.menu-block-wrapper.menu-name-main-menu li.first a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-
-.menu-block-wrapper.menu-name-main-menu li.active a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-
-.menu-block-wrapper.menu-name-main-menu li a.active-trail {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-
-.menu-block-wrapper.menu-name-main-menu li a.active-trail.active {
-  background-color: #e3e5e7; }
-
-ul.menu.nav ul.menu.nav {
-  padding-left: 15px; }
-
-.menu-block-wrapper.menu-name-menu-about-us li.leaf a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-
-.menu-block-wrapper.menu-name-menu-about-us li.collapsed a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-
-.menu-block-wrapper.menu-name-menu-about-us li.first a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
-
-.menu-block-wrapper.menu-name-menu-about-us li.active a {
-  color: #000;
-  text-transform: uppercase;
-  font-family: robotobold, sans-serif;
-  border-bottom-style: dotted;
-  border-bottom-width: 2px;
-  border-bottom-color: #ccc; }
+  border: 0 none;
+  border-radius: 0 !important;
+  box-shadow: 0 1px 1px transparent inset !important;
+  min-height: 20px !important;
+  padding: 0 !important; }
+  .region-sidebar-first.well ul li:first-child {
+    border-top: 6px solid #000; }
+  .region-sidebar-first.well ul li.active > a, .region-sidebar-first.well ul li.active:hover {
+    background: #eff0f2; }
+  .region-sidebar-first.well ul li a {
+    font-family: robotobold, sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    border-bottom: 2px dotted #eff0f2; }
+    .region-sidebar-first.well ul li a:hover {
+      background: transparent;
+      text-decoration: underline; }
+  .region-sidebar-first.well ul li li:first-child {
+    border-top: 0px; }
+  .region-sidebar-first.well ul li li a {
+    /*border:0px;*/
+    /*border-top: 2px dotted $lighter-grey;*/
+    padding: 20px 35px; }
+    .region-sidebar-first.well ul li li a:before {
+      content: '>';
+      font-family: sans-serif;
+      width: 15px;
+      font-size: 9px;
+      display: inline-block;
+      opacity: 0.7;
+      margin-left: -15px; }
 
 /* side nav diplay none */
 .region-sidebar-first .sidenav-hide {
@@ -1579,7 +1492,7 @@ div.title {
 applicaiton process menu steps
 */
 #block-menu-block-6 {
-  background-color: #e5e8ec;
+  background-color: #eff0f2;
   margin: 0 0 50px 0;
   height: 296px;
   overflow: hidden; }
@@ -1614,7 +1527,7 @@ applicaiton process menu steps
         display: block;
         content: counter(process-counter); }
     #block-menu-block-6 ul li.active {
-      background-color: #f0f4f8;
+      background-color: #fbfcfe;
       opacity: 1; }
     #block-menu-block-6 ul li.slick-current, #block-menu-block-6 ul li:hover, #block-menu-block-6 ul li:active, #block-menu-block-6 ul li:focus {
       /*opacity:1;*/ }
@@ -1626,7 +1539,27 @@ applicaiton process menu steps
         display: none !important; } }
 
 .breadcrumbs {
-  background: #e5e8ec; }
+  background: #eff0f2;
+  padding: 20px 0px; }
+  .breadcrumbs ol {
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+    font-size: 14px; }
+    .breadcrumbs ol li {
+      line-height: 25px; }
+      .breadcrumbs ol li:last-child.active {
+        display: none; }
+      @media only screen and (max-width: 768px) {
+        .breadcrumbs ol li {
+          letter-spacing: -0.5px; } }
+      .breadcrumbs ol li a {
+        text-decoration: underline; }
+    .breadcrumbs ol > li + li::before {
+      color: #000;
+      content: "> ";
+      font-family: sans-serif;
+      padding: 0 1px; }
 
 .front h2 {
   font-size: 38px; }
@@ -1634,6 +1567,13 @@ applicaiton process menu steps
     .front h2 {
       font-size: 28px;
       line-height: 34px; } }
+.front h3 {
+  color: #1d252c;
+  font-family: "montserratregular", sans-serif;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: -0.5px; }
 .front #block-quicktabs-homepage-main-tab {
   padding: 80px 10px;
   background: #eff0f2;
@@ -1871,6 +1811,9 @@ applicaiton process menu steps
   .front #block-bean-tools-and-resources-generic-bloc h2 {
     margin: 0px 0px 10px 0px;
     color: white; }
+  .front #block-bean-tools-and-resources-generic-bloc h3 {
+    text-transform: uppercase;
+    font-size: 18px; }
   .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
     width: 25%; }
     @media only screen and (max-width: 768px) {

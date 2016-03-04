@@ -1,3 +1,32 @@
 .breadcrumbs {
-    background: $light-grey;
+    background: $lighter-grey;
+    padding: 20px 0px;
+
+    ol {
+        padding: 0px;
+        margin: 0px;
+        background: transparent;
+        font-size: 14px;
+        li {
+            line-height:25px;
+            &:last-child {
+                &.active {
+                    display: none;
+                }
+            }
+            @media only screen and (max-width: $break-point-medium) {
+                letter-spacing:-0.5px;
+            }
+            a {
+                text-decoration: underline;
+
+            }
+        }
+        > li + li::before {
+            color: #000;
+            content: "> ";
+            font-family: sans-serif;
+            padding: 0 1px;
+        }
+    }
 }

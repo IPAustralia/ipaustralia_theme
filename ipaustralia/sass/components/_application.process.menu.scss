@@ -3,7 +3,7 @@ applicaiton process menu steps
 */
 
 #block-menu-block-6 {
-    background-color: $light-grey;
+    background-color: $lighter-grey;
     margin: 0 0 50px 0;
     height:296px;
     overflow:hidden;
@@ -48,7 +48,7 @@ applicaiton process menu steps
                 }
             }
             &.active {
-                background-color: $light-grey * 1.05;
+                background-color: $lighter-grey * 1.05;
                 opacity:1;
             }
             &.slick-current, &:hover, &:active, &:focus {
