@@ -381,6 +381,9 @@ article {
     margin-bottom: 20px;
     letter-spacing: 1px; }
 
+.clear-float {
+  clear: both; }
+
 .main-list-item-patent {
   width: 100%;
   border: solid 1px #30aeb6;
@@ -1763,7 +1766,7 @@ applicaiton process menu steps
   border-bottom: 2px solid white; }
   @media only screen and (max-width: 768px) {
     .front #block-bean-need-help-choosing-the-right-ip {
-      padding: 10px 0px 40px; } }
+      padding: 40px 0px; } }
   .front #block-bean-need-help-choosing-the-right-ip h2 {
     color: white; }
   .front #block-bean-need-help-choosing-the-right-ip .bean-basic-content {
@@ -1998,6 +2001,9 @@ applicaiton process menu steps
 .front #block-panels-mini-news-and-community-homepage-pane {
   padding: 80px 10px;
   text-align: center; }
+  @media only screen and (max-width: 768px) {
+    .front #block-panels-mini-news-and-community-homepage-pane {
+      padding: 40px 0px; } }
   .front #block-panels-mini-news-and-community-homepage-pane h2 {
     color: #0d252c; }
   .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs {

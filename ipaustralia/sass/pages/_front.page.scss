@@ -122,7 +122,7 @@
         border-top: 2px solid white;
         border-bottom: 2px solid white;
         @media only screen and (max-width: $break-point-medium) {
-            padding: 10px 0px 40px;
+            padding: 40px 0px;
         }
         h2 {
             color: white;
@@ -330,6 +330,9 @@
     #block-panels-mini-news-and-community-homepage-pane {
         padding: $gap-large 10px;
         text-align: center;
+        @media only screen and (max-width: $break-point-medium) {
+            padding: 40px 0px;
+        }
         h2 {
             color: $charcoal;
         }
