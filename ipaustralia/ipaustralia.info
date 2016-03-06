@@ -49,16 +49,7 @@ features[] = secondary_menu
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
-stylesheets[all][] = css/header.css
-stylesheets[all][] = css/footer.css
-stylesheets[all][] = css/megamenu.css
-stylesheets[all][] = css/frontpage.css
-stylesheets[all][] = css/landing-page.css
-stylesheets[all][] = css/common.css
 stylesheets[print][] = css/print.css
-
-
-
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Scripts

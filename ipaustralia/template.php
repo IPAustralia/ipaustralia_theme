@@ -141,7 +141,7 @@ function ipaustralia_preprocess_block(&$vars) {
 	// some blocks need a <div class="container"> inside the <section>,
 	// wrapping the block content. add a theme suggestion for that.
 	if (in_array($bid, array(BLOCK_ID_FOOTER_MENU, BLOCK_ID_FOOTER_SUB_MENU)) ||
-		$vars['block']->region == 'content') {
+		$vars['block']->region == 'content' || $vars['block']->region == 'content_top') {
 		$vars['theme_hook_suggestions'][] = 'block__with_container';
 	}
 }
@@ -150,10 +150,10 @@ function ipaustralia_preprocess_region(&$vars) {
 	$region = $vars['region'];
 	// header blocks shouldn't have wrapper markup
 	switch ($region) {
+		case 'content_top':
 		case 'header':
 			$vars['theme_hook_suggestions'][] = 'region__no_wrapper';
 			break;
-		case 'content_top':
 		case 'content_bottom':
 			$vars['theme_hook_suggestions'][] = 'region__with_container';
 			break;

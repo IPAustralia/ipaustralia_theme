@@ -2,13 +2,13 @@ header {
     nav{
         #header-navigation-container {
             position: relative;
-            @media only screen and (max-width: $break-point-medium) {
+            @media only screen and (max-width: $break-point-medium - 1) {
                 border:0px;
                 padding:0px;
                 margin-top:-1px;
             }
         }
-        @media only screen and (max-width: $break-point-medium) {
+        @media only screen and (max-width: $break-point-medium - 1) {
             .navbar-header {
                 position: absolute;
                 top: 20px;
@@ -43,7 +43,7 @@ header {
                 border: 0px;
                 position: inherit;
                 float: left;
-                @media only screen and (max-width: $break-point-medium) {
+                @media only screen and (max-width: $break-point-medium - 1) {
                     float: none;
                     border-bottom:1px solid #283e44;
                     clear:both;
@@ -58,7 +58,7 @@ header {
                             background: $off-white;
                             color: $charcoal !important;
                             border-color: $off-white !important;
-                            @media only screen and (max-width: $break-point-medium) {
+                            @media only screen and (max-width: $break-point-medium - 1) {
                                 @include background-image('arrow-up-transparent.png', 90%, center, no-repeat, $charcoal);
                                 /*background-color:$charcoal !important;*/
                                 color:white !important;
@@ -67,7 +67,7 @@ header {
                         }
 
                     }
-                    @media only screen and (max-width: $break-point-medium) {
+                    @media only screen and (max-width: $break-point-medium - 1) {
                         background:$charcoal;
                     }
                 }
@@ -174,7 +174,7 @@ header {
                         border-bottom: 4px solid $yellow;
                         padding-bottom: 11px;
                     }
-                    @media only screen and (max-width: $break-point-medium) {
+                    @media only screen and (max-width: $break-point-medium - 1) {
                         padding: 22px 15px !important;
                         line-height:16px;
                         @include background-image('arrow-down-transparent.png', 90%);
@@ -230,7 +230,7 @@ header {
                     }
                 }
             }
-            @media only screen and (max-width: $break-point-medium) {
+            @media only screen and (max-width: $break-point-medium - 1) {
                 > li {
                     display:block;
                 }
@@ -240,12 +240,12 @@ header {
                 background: $off-white;
                 border: medium none;
                 border-radius: 0px;
-                box-shadow: 0 5px 4px #b2b2b2;
+                box-shadow: 0 5px 4px rgba(0,0,0, 0.5);
                 margin-top: 0 !important;
                 position: absolute;
                 width: 100%;
                 padding:40px;
-                @media only screen and (max-width: $break-point-medium) {
+                @media only screen and (max-width: $break-point-medium - 1) {
                     position:relative;
                     box-shadow:none;
                     padding:0px;
@@ -284,7 +284,7 @@ header {
                     &.icon-understanding-ip, &.icon-ip-infringement, &.icon-tools--resources {
                         display: none;
                     }
-                    @media only screen and (max-width: $break-point-medium) {
+                    @media only screen and (max-width: $break-point-medium - 1) {
                         display:none;
                     }
                 }
@@ -295,7 +295,7 @@ header {
                         /*font-family: $font-title-normal;*/
                         text-transform: uppercase;
                     }
-                    @media only screen and (max-width: $break-point-medium) {
+                    @media only screen and (max-width: $break-point-medium - 1) {
                         display:none;
                     }
                 }
@@ -305,7 +305,7 @@ header {
                     margin-bottom:70px;
                     &:hover {
                     }
-                    @media only screen and (max-width: $break-point-medium) {
+                    @media only screen and (max-width: $break-point-medium - 1) {
                         display:none;
                     }
                 }
@@ -315,7 +315,7 @@ header {
                     padding: $gap-medium 0px;
                     margin-top: $gap-medium;
                     border-top:2px dotted #c5c9cc;
-                    @media only screen and (max-width: $break-point-medium) {
+                    @media only screen and (max-width: $break-point-medium - 1) {
                         border:none;
                         margin:0px;
                         padding:0px;
@@ -329,7 +329,7 @@ header {
                                 clear: both;
                             }
                         }
-                        @media only screen and (max-width: $break-point-medium) {
+                        @media only screen and (max-width: $break-point-medium - 1) {
                             float:none;
                             width:100%;
                             border:0px;
@@ -347,7 +347,7 @@ header {
                             @media only screen and (max-width: $break-point-large - 100) {
                                 background:none;
                             }
-                            @media only screen and (max-width: $break-point-medium) {
+                            @media only screen and (max-width: $break-point-medium - 1) {
                                 float:none;
                                 font:$body-text;
                                 width:100%;
@@ -371,7 +371,7 @@ header {
                                     }
                                 }
                             }
-                            @media only screen and (max-width: $break-point-medium) {
+                            @media only screen and (max-width: $break-point-medium - 1) {
                                 display:none;
                             }
                         }
@@ -424,7 +424,7 @@ header {
                                     @include background-image('link-download.png', 15px, center, no-repeat, white); 
                                 }
                             }
-                            @media only screen and (max-width: $break-point-medium) {
+                            @media only screen and (max-width: $break-point-medium - 1) {
                                 display:none;
                             }
                         }

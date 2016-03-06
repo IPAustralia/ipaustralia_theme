@@ -6,12 +6,15 @@ header{
             width:40%;
         }
         @media only screen and (max-width: $break-point-medium) {
+            width:40%;
+        }
+        @media only screen and (max-width: $break-point-midsmall) {
             width:60%;
         }
         img {
             margin-top: 40px;
             width: 84%;
-            @media only screen and (max-width: $break-point-medium) {
+            @media only screen and (max-width: $break-point-medium - 1) {
                 width: 100%;
                 margin-top: 15px;
                 margin-bottom:10px;
@@ -20,7 +23,7 @@ header{
     }
     .header {
         padding: 0 0 $gap-small 0px;
-        @media only screen and (max-width: $break-point-medium) {
+        @media only screen and (max-width: $break-point-medium - 1) {
             padding-bottom:10px;
             border-bottom:2px solid $charcoal;
         }
@@ -53,11 +56,12 @@ header{
                         width:200px;
                     }
                 } 
-                @media only screen and (max-width: $break-point-medium) {
+                @media only screen and (max-width: $break-point-medium - 1) {
                     display:none;
-
                     &.block-search-api-page {
-                        /*display: block;*/
+
+                        width: 100%;
+
                     }
                 } 
 
@@ -111,8 +115,12 @@ header{
                     width: 260px;
                     @include placeholder-color($charcoal);
                     @media only screen and (max-width: $break-point-large) {
-                       width: 140px;
-                       padding: 13px 15px 15px;
+                        width: 140px;
+                        padding: 13px 15px 15px;
+                    } 
+                    @media only screen and (max-width: $break-point-medium - 1) {
+                        width: 80%;
+                        padding: 13px 15px 15px;
                     } 
                 }
                 .form-group {
@@ -178,6 +186,22 @@ header{
                     }
 
                 }
+            }
+
+        }
+        .responsive-search-icon{
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            right: 65px;
+            top: 22px;
+            cursor: pointer;
+            @include background-image('link-search-26px.png');
+            text-indent: -9999px;
+            background-size: auto 22px;
+            &.opened {
+                @include background-image('close-cross.png');
+                background-size: auto auto;
             }
         }
 
