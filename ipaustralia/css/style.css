@@ -1523,17 +1523,34 @@ applicaiton process menu steps
       display: block;
       color: black;
       background: transparent url("../images/dummy-image.png") center center no-repeat;
-      background-position: center 40px; }
+      background-size: 128px auto !important;
+      background-position: center 40px !important; }
       #block-menu-block-6 ul li a::before {
         font-size: 34px;
         font-weight: 600;
         display: block;
         content: counter(process-counter); }
     #block-menu-block-6 ul li.active {
-      background-color: #fbfcfe;
+      background-color: rgba(255, 255, 255, 0.4);
       opacity: 1; }
     #block-menu-block-6 ul li.slick-current, #block-menu-block-6 ul li:hover, #block-menu-block-6 ul li:active, #block-menu-block-6 ul li:focus {
       /*opacity:1;*/ }
+    #block-menu-block-6 ul li:nth-child(8) a {
+      background: transparent url("../images/application-process/_generic/8.png") center center no-repeat; }
+    #block-menu-block-6 ul li:nth-child(7) a {
+      background: transparent url("../images/application-process/_generic/7.png") center center no-repeat; }
+    #block-menu-block-6 ul li:nth-child(6) a {
+      background: transparent url("../images/application-process/_generic/6.png") center center no-repeat; }
+    #block-menu-block-6 ul li:nth-child(5) a {
+      background: transparent url("../images/application-process/_generic/5.png") center center no-repeat; }
+    #block-menu-block-6 ul li:nth-child(4) a {
+      background: transparent url("../images/application-process/_generic/4.png") center center no-repeat; }
+    #block-menu-block-6 ul li:nth-child(3) a {
+      background: transparent url("../images/application-process/_generic/3.png") center center no-repeat; }
+    #block-menu-block-6 ul li:nth-child(2) a {
+      background: transparent url("../images/application-process/_generic/2.png") center center no-repeat; }
+    #block-menu-block-6 ul li:nth-child(1) a {
+      background: transparent url("../images/application-process/_generic/1.png") center center no-repeat; }
   #block-menu-block-6 ul .slick-arrow {
     margin-top: -31px;
     z-index: 100; }
@@ -1546,31 +1563,102 @@ applicaiton process on body
 */
 .applicaiton-process-wrapper h2, .applicaiton-process-wrapper .description, .applicaiton-process-wrapper p {
   text-align: center; }
+.applicaiton-process-wrapper h2 {
+  margin-top: 40px; }
 .applicaiton-process-wrapper .description {
-  margin-bottom: 40px; }
+  font-size: 22px; }
 .applicaiton-process-wrapper ul {
+  background: transparent url("../images/application-process/_generic/backgrund-line-9.png") center center no-repeat;
+  background-size: 100% auto;
+  background-position: right 140px;
   text-align: center;
   list-style: none;
   padding: 0px;
   margin: 0px; }
+  @media only screen and (max-width: 992px) {
+    .applicaiton-process-wrapper ul {
+      background: transparent; } }
   .applicaiton-process-wrapper ul li {
     width: 350px;
-    padding: 30px 45px;
+    cursor: pointer;
+    padding: 30px 45px 100px;
     display: inline-block;
-    counter-increment: process-counter; }
+    counter-increment: process-counter;
+    margin: 20px 0px; }
+    @media only screen and (max-width: 1192px) {
+      .applicaiton-process-wrapper ul li {
+        padding: 30px 25px 2px;
+        width: 310px; } }
+    @media only screen and (max-width: 480px) {
+      .applicaiton-process-wrapper ul li {
+        padding: 30px 15px 20px;
+        width: 180px; } }
     .applicaiton-process-wrapper ul li .image {
       width: 182px;
       height: 182px;
       background: #fff;
       display: inline-block;
-      border-radius: 1000px; }
-    .applicaiton-process-wrapper ul li h3 {
-      /*@include background-image('dummy-image.png');*/ }
-      .applicaiton-process-wrapper ul li h3::before {
-        font-size: 34px;
+      border-radius: 1000px;
+      background-color: #fff !important;
+      background-size: 182px 182px !important; }
+      @media only screen and (max-width: 640px) {
+        .applicaiton-process-wrapper ul li .image {
+          width: 150px;
+          height: 150px; } }
+    .applicaiton-process-wrapper ul li:hover .image {
+      background-size: 190px 190px !important;
+      box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
+      transition: all 0.2s ease-in-out; }
+    .applicaiton-process-wrapper ul li h4 {
+      /*font-size: 28px;*/
+      color: #0d252c; }
+      .applicaiton-process-wrapper ul li h4::before {
+        font-size: 36px;
         font-weight: 600;
         display: block;
-        content: counter(process-counter); }
+        content: counter(process-counter);
+        margin-bottom: 10px;
+        color: #84c98f; }
+    .applicaiton-process-wrapper ul li a {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: underline;
+      background: transparent url("../images/arrow-right-golden-transparent.png") center center no-repeat;
+      background-position: right center;
+      padding-right: 15px; }
+    .applicaiton-process-wrapper ul li:nth-child(8) .image {
+      background: transparent url("../images/application-process/_generic/8.png") center center no-repeat; }
+    .applicaiton-process-wrapper ul li:nth-child(7) .image {
+      background: transparent url("../images/application-process/_generic/7.png") center center no-repeat; }
+    .applicaiton-process-wrapper ul li:nth-child(6) .image {
+      background: transparent url("../images/application-process/_generic/6.png") center center no-repeat; }
+    .applicaiton-process-wrapper ul li:nth-child(5) .image {
+      background: transparent url("../images/application-process/_generic/5.png") center center no-repeat; }
+    .applicaiton-process-wrapper ul li:nth-child(4) .image {
+      background: transparent url("../images/application-process/_generic/4.png") center center no-repeat; }
+    .applicaiton-process-wrapper ul li:nth-child(3) .image {
+      background: transparent url("../images/application-process/_generic/3.png") center center no-repeat; }
+    .applicaiton-process-wrapper ul li:nth-child(2) .image {
+      background: transparent url("../images/application-process/_generic/2.png") center center no-repeat; }
+    .applicaiton-process-wrapper ul li:nth-child(1) .image {
+      background: transparent url("../images/application-process/_generic/1.png") center center no-repeat; }
+  .applicaiton-process-wrapper ul.slick-slider li {
+    background: transparent url("../images/application-process-bar.png") center center no-repeat;
+    background-position: 0px 116px;
+    background-repeat: repeat-x;
+    /*opacity:0.4;*/ }
+    .applicaiton-process-wrapper ul.slick-slider li:first-child {
+      background-position: 100px 116px;
+      background-repeat: no-repeat; }
+    .applicaiton-process-wrapper ul.slick-slider li:last-child {
+      background-position: -100px 116px;
+      background-repeat: no-repeat; }
+  .applicaiton-process-wrapper ul.slick-slider .slick-arrow {
+    margin-top: -94px;
+    z-index: 100; }
+    @media only screen and (max-width: 892px) {
+      .applicaiton-process-wrapper ul.slick-slider .slick-arrow {
+        display: none !important; } }
 .applicaiton-process-wrapper .button {
   border: 2px solid black;
   background: black;
@@ -1582,7 +1670,7 @@ applicaiton process on body
   text-transform: uppercase;
   font-family: "montserratregular", sans-serif;
   line-height: 14px;
-  margin: 80px auto;
+  margin: 0 auto 80px;
   color: white; }
   .applicaiton-process-wrapper .button:after {
     background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
@@ -1595,6 +1683,9 @@ applicaiton process on body
     text-decoration: none;
     background: black;
     border: 2px solid #0d252c; }
+
+section#block-panels-mini-more-about-designs-2-col-panel {
+  /*display: none;*/ }
 
 .breadcrumbs {
   background: #eff0f2;
