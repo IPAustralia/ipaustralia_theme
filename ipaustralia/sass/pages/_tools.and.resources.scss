@@ -1,0 +1,61 @@
+section#block-bean-tools-and-resources-landing-bloc {
+    @include landing_page_header_title('tablet.jpg', $themecolor:$mint);
+
+}
+section#block-quicktabs-tools-and-resources{
+    background: $lighter-grey;
+    h2 {
+        margin-bottom: $gap-small;
+    }
+    .pane-title {
+        text-align: center;
+    }
+
+    .panel-separator {
+        height: 1px;
+        border-top: 2px solid $white;
+        margin: 0px;
+    }
+
+    .pane-bean-tools-and-resources, .pane-bean-tools-and-resources-trade-mark {
+        @include section_padding(0, $gap-medium + 15);
+        @include  landing_page_tools_resources($mint);
+        background: transparent;
+        h2,p {
+            color:$charcoal !important;
+        }
+        .Top {
+            display: none;
+        }
+    }
+
+    .pane-bean-patents-faqs {
+        @include section_padding(0, $gap-medium + 15);
+        @include landing_page_group_block_multiple($height:1000px);
+
+        div[class*="with_top_and_bottom-main-row"] {
+            .panels-flexible-region{
+                > div {
+                    height: auto;
+                }
+            }
+        }
+        .panels-flexible-row-last {
+            a{
+                border-color: $charcoal;
+                background-color: $charcoal;
+                &:hover,&:focus, &:active{
+                    background-color: $charcoal;
+                }
+            }
+        }
+        .Top {
+            display: none;
+        }
+    }
+
+    .pane-case-studies {
+        @include section_padding(0, $gap-medium + 15);
+        @include landing_page_more_about('transparent-pixel-mint.png', $wrappercontainer1:pane-content, $wrappercontainer2:view-content, $imageheight:380px, $height:360px);
+    }
+}

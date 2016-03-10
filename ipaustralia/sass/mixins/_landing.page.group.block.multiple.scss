@@ -11,7 +11,18 @@ section#id_of_section {
 }
 
 */
-@mixin landing_page_group_block_multiple($background:$white) {
+@mixin landing_page_group_block_multiple($background:$white, $height:350px) {
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        li {
+            padding: 0px 0 0 30px;
+            margin: 0px;
+            @include background-image('link-tool.png');
+            background-position: left 0px;
+        }
+    }
     .Top {
         br{
             display: none;
@@ -40,10 +51,10 @@ section#id_of_section {
                 margin:0 10px;
                 padding: 40px;
                 background: $background;
-                height: 350px !important;
+                height: $height;
                 overflow-y: hidden;
                 @media only screen and (max-width: $break-point-medium) {
-                    height: 500px !important;
+                    height: $height+150;
                 }
                 @media only screen and (max-width: $break-point-midsmall) {
                     height: auto !important;
@@ -54,7 +65,7 @@ section#id_of_section {
                     padding: 10px 20px;
                 }
             }
-            h4 {
+            h4, h3 {
                 font-size: 22px;
                 margin: 0px;
                 font-weight: bold;
@@ -93,6 +104,14 @@ section#id_of_section {
             .thin {
                 display: none;
             }
+        }
+    }
+    .panels-flexible-row-last {
+        a{
+            margin-top: $gap-medium;
+            @include rounded-button-with-arrrow();
+            border-color: $charcoal;
+            background-color: $charcoal;
         }
     }
 

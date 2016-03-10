@@ -11,9 +11,14 @@ section#id_of_section {
 
 */
 
-@mixin landing_page_more_about($backgroundimage:'transparent-pixel-teal.png') {
-    .container {
-        height: 332px;
+@mixin landing_page_more_about($backgroundimage:'transparent-pixel-teal.png', $height:332px, $wrappercontainer1:container, $wrappercontainer2:center-wrapper, $imageheight:260px) {
+    h2 {
+        margin-bottom: $gap-small ;
+        text-align: center;
+    }
+
+    .#{$wrappercontainer1} {
+        height: $height;
         overflow: hidden; 
         @media only screen and (max-width: $break-point-medium) {
             height: 325px;
@@ -22,12 +27,12 @@ section#id_of_section {
             display: none;
         }
         > div{
-            height: 380px;
+            height: $height + 50;
             width: 100%;
             overflow-x: auto;
             overflow-y: hidden;
 
-            .center-wrapper {
+            .#{$wrappercontainer2} {
                 width: 1180px;
                 .inside {
                     margin: 0px;
@@ -43,7 +48,7 @@ section#id_of_section {
                         padding: 0px 10px;
                         position: relative;
                         img{
-                            height: 260px;
+                            height: $imageheight;
                             width: 100%;
                         }
                         .views-field-field-news-date {
@@ -71,13 +76,13 @@ section#id_of_section {
                         }
                         .views-field-body {
                             padding-top: 0px;
-                            height:160px; 
+                            height:$imageheight - 100; 
                             overflow: hidden;
                         }
                         &:hover,&:active,&:focus {
                             /*cursor: pointer;*/
                             .views-field-title {
-                                margin-top: -260px;
+                                margin-top: $imageheight * -1;
                             }
                         }
                     }
@@ -85,10 +90,7 @@ section#id_of_section {
             }
         }
 
-        h2 {
-            margin-bottom: $gap-small ;
-            text-align: center;
-        }
+
         img {
             /*box-shadow: 0 0 2px #000;*/
         }
