@@ -1,97 +1,33 @@
+section#block-bean-about-us-landing-block {
+    @include landing_page_header_title('contact-us-banner.jpg', $themecolor:$mint);
+}
 
-.page-about-us-news-and-community-events {
-    .views-row {
-        background: $color_athens_gray_approx;
-        margin-bottom: 10px;
-        .panel-col-first {
-            width: 23%;
-            img {
-                margin: 30px;
-                width: 140px;
-                height: 140px;
-            }
-        }
-        .panel-col-last {
-            width: 70%;
-        }
-        .views-field-title a {
-            color: $color_firefly_approx;
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: underline;
-        }
-    }
-    .views-field-field-organiser {
-        display: none;
-    }
-    .views-field-field-event-date-1 {
-        color: $color_mountain_mist_approx;
-    }
+section#block-bean-about-us-anchor-menu {
+    @include landing_page_anchor_menu();
 }
-.page-about-us-news-and-community-news {
-    .views-row {
-        background: $color_athens_gray_approx;
-        margin-bottom: 10px;
-        .panel-col-first {
-            width: 23%;
-            img {
-                margin: 30px;
-                width: 140px;
-                height: 140px;
-            }
-        }
-        .panel-col-last {
-            width: 70%;
-        }
-        .views-field-title a {
-            color: $color_firefly_approx;
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: underline;
-        }
-    }
-    .views-field-field-organiser {
-        display: none;
-    }
-    .views-field-field-news-date {
-        padding-top: 25px;
-        color: $color_mountain_mist_approx;
-        .views-label-field-news-date {
-            display: none;
-        }
-    }
+
+section#block-bean-what-we-do-block {
+    background: $lighter-grey;
+    @include  section_padding(20);
+    @include  landing_page_group_block_multiple();
 }
-.page-about-us-news-and-community-blog {
-    .views-row {
-        background: $color_athens_gray_approx;
-        margin-bottom: 10px;
-        .panel-col-first {
-            width: 23%;
-            img {
-                margin: 30px;
-                width: 140px;
-                height: 140px;
-            }
-        }
-        .panel-col-last {
-            width: 70%;
-            padding-top: 30px;
-        }
-        .views-field-title a {
-            color: $color_firefly_approx;
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: underline;
-        }
-    }
-    .views-field-field-organiser {
-        display: none;
-    }
-    .views-label-field-publish-online-date {
-        color: $color_mountain_mist_approx;
-    }
-    .views-field-field-news-date {
-        padding-top: 25px;
-        color: $color_mountain_mist_approx;
-    }
+
+section#block-bean-careers-block {
+    @include background-image('careers-banner.jpg');
+    background-size: cover;
+    @include  section_padding(20);
+    @include  landing_page_group_block($height:500px, $color: $white);
+}
+
+section#block-bean-accountability-and-reporting{
+    background: $charcoal;
+    @include  section_padding(20);
+    @include  landing_page_group_block($color:$white);
+    border-top: $section-line-sperator;
+    border-bottom: $section-line-sperator;
+}
+
+section#block-panels-mini-news-and-community-homepage-pane{
+    @include section_padding(20);
+    @include news_and_community_inner_page($overlayimage:'transparent-pixel-purple_v2.png');
 }

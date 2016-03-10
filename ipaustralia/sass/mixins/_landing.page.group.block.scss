@@ -11,7 +11,7 @@ section#id_of_section {
 }
 
 */
-@mixin landing_page_group_block($background:$white) {
+@mixin landing_page_group_block($background:$white, $height:350px, $color:$charcoal, $arrow:'arrow-right-transparent.png') {
     .group-header {
         br{
             display: none;
@@ -20,10 +20,12 @@ section#id_of_section {
         h2 {
             margin-bottom: $gap-small ;
             text-align: center;
+            color: $color;
         }
         p {
             font-size: 1.3em;
             font-family: $font_3;
+            color: $color;
         }
     }
     .group-left, .group-middle, .group-right {
@@ -38,10 +40,10 @@ section#id_of_section {
             margin:0 20px;
             padding: 40px;
             background: $background;
-            height: 350px;
+            height: $height;
             overflow-y: hidden;
             @media only screen and (max-width: $break-point-medium) {
-                height: 500px;
+                height: $height + 150px;
             }
             @media only screen and (max-width: $break-point-midsmall) {
                 height: auto;
@@ -52,10 +54,21 @@ section#id_of_section {
                 padding: 10px 20px;
             }
         }
+        .media-element-container {
+            text-align: center;
+            margin-bottom: $gap-small;
+            img {
+                display: inline-block;
+            }
+            @media only screen and (max-width: $break-point-midsmall) {
+               display: none;
+            }
+        }
         h4 {
             font-size: 22px;
             margin: 0px;
             font-weight: bold;
+            text-align: left;
             @media only screen and (max-width: $break-point-midsmall) {
                 padding-right: 30px;
                 line-height: 30px;
@@ -105,5 +118,10 @@ section#id_of_section {
             margin-top: 0px;
         }
     }
-
+    .group-footer{
+        a {
+            margin-top: $gap-medium;
+            @include rounded-button-with-arrrow($line-color:$color, $arrow-icon:$arrow);
+        }
+    }
 }

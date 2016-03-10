@@ -31,7 +31,7 @@ section#id_of_section {
         padding: $gap-large/3 0px;
     }
 
-    .panels-flexible-region-first {
+    .panels-flexible-region-first,.field-name-field-bean-body {
         padding-right: $gap-large * 2;
         @media only screen and (max-width: $break-point-large) {
             width: 60%;

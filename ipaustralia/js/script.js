@@ -60,6 +60,8 @@ function equaliseElementsHeight() {
     equalHeight('section#block-bean-tools-and-resources-trade-mark .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-bean-tools-and-resources-designs .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-bean-tools-and-resources-pbr .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('.footer li.expanded');
 
     setTimeout(function () {
@@ -500,6 +502,7 @@ function openCloseGroups($object) {
         jQuery($object).siblings('p').slideToggle(function () {
             jQuery($object).closest('.field-item').removeClass('open');
             jQuery($object).siblings('p').removeAttr('style');
+            jQuery($object).closest('.inside').removeAttr('style');
         });
     } else {
         jQuery($object).siblings('p').slideToggle(function () {
