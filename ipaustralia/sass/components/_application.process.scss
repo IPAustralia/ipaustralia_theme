@@ -5,43 +5,124 @@ applicaiton process on body
     h2,.description,p  {
         text-align: center;
     }
+    h2 {
+        margin-top: $gap-medium;
+    }
     .description {
-        margin-bottom: $gap-medium;
+        font-size: 22px;
     }
     ul {
+        @include background-image('application-process/_generic/backgrund-line-9.png');
+        background-size: 100% auto;
+        background-position: right 140px;
         text-align: center;
         list-style: none;
         padding:0px;
         margin:0px;
+        @media only screen and (max-width: $break-point-large) {
+            background: transparent;
+        }
         li {
             width: 350px;
-            padding: 30px 45px;
+            cursor: pointer;
+            padding: 30px 45px 100px;
             display: inline-block;
             counter-increment: process-counter;
+            margin:$gap-medium /2 0px;
+            @media only screen and (max-width: $break-point-large + 200) {
+                padding: 30px 25px 2px;
+                width: 310px;
+            }
+            @media only screen and (max-width: $break-point-small) {
+                padding: 30px 15px 20px;
+                width: 180px;
+            }
+
             .image {
                 width: 182px;
                 height:182px;
                 background: #fff;
                 display:inline-block;
                 border-radius: 1000px;
-
-
+                background-color: $white !important;
+                background-size: 182px 182px !important;
+                @media only screen and (max-width: $break-point-midsmall) {
+                    width: 150px;
+                    height:150px;
+                }
             }
-            h3 {
-                /*@include background-image('dummy-image.png');*/
+            &:hover {
+                .image {
+                    background-size: 190px 190px !important;
+                    box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+            h4 {
+                /*font-size: 28px;*/
+                color:$charcoal;
+
                 &::before {
-                    font-size: 34px;
+                    font-size: 36px;
                     font-weight: 600;
                     display: block;
                     content: counter(process-counter);
+                    margin-bottom: 10px;
+                    color: $mint;
+                }
+            }
+            a {
+                display: inline-block;
+                margin-top: $gap-small /2;
+                text-decoration: underline;
+                @include background-image('arrow-right-golden-transparent.png');
+                background-position: right center;
+                padding-right: 15px;
+            }
 
+            $i: 8;
+            @while $i > 0 {
+                &:nth-child(#{$i}) {
+                    .image{
+                        @include background-image('application-process/_generic/#{$i}.png');
+                    }
+                }
+                $i: $i - 1;
+            }
+        }
+
+        &.slick-slider {
+            li {
+                @include background-image('application-process-bar.png');
+                background-position: 0px 116px;
+                background-repeat: repeat-x;
+                /*opacity:0.4;*/
+
+                &:first-child {
+                    background-position: 100px 116px;
+                    background-repeat: no-repeat;
+                }
+                &:last-child {
+                    background-position: -100px 116px;
+                    background-repeat: no-repeat;
+                }
+            }
+            .slick-arrow {
+                margin-top: -94px;
+                z-index: 100;
+                @media only screen and (max-width: $break-point-large - 100) {
+                    display:none !important;
                 }
             }
         }
     }
     .button {
         @include rounded-button-with-arrrow(black,black);
-        margin: $gap-large auto;
+        margin: 0 auto $gap-large;
         color: white;
     }
+}
+
+section#block-panels-mini-more-about-designs-2-col-panel {
+    /*display: none;*/
 }

@@ -20,6 +20,10 @@ jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-
         });
     }
 });
+jQuery(document).on('click', '.applicaiton-process-wrapper li', function () {
+    var $link = jQuery(this).find('a').attr('href');
+    window.open($link, '_self');
+});
 
 
 function resizing() {
@@ -210,6 +214,14 @@ function slickSlides() {
     } else {
         slideHomeMain('detach');
     }
+
+    if (jQuery('.bp-large').length > 0) {
+        slideApplicationProcessBody('attach');
+    } else {
+        slideApplicationProcessBody('detach');
+    }
+
+
 }
 
 
@@ -350,6 +362,118 @@ function slideApplicationProcess() {
 //    });
 }
 
+
+
+function slideApplicationProcessBody($action) {
+    var $break_point_xlarge = "1200";
+    var $break_point_large = "992"; /*Desktop tablet landscape*/
+    var $break_point_medium = "767"; /*Tablet*/
+    var $break_point_medium_ipad = "768"; /*Tablet*/
+    var $break_point_midsmall = "640"; /*Mobile Landscape*/
+    var $break_point_small = "480"; /*Mobile*/
+
+    var $element = '.applicaiton-process-wrapper ul';
+    var $centermode = false;
+    var $initialSlide = 0;
+    var $slidesToShow = 3;
+    
+    if ($action === 'attach') {
+
+        var $index = parseInt(jQuery($element).find('li.active').index());
+
+        if ($index > $slidesToShow - 1) {
+//        $centermode = true;
+
+        }
+        if ($index > -1) {
+            $initialSlide = $index;
+        }
+
+
+        try {
+            jQuery($element).slick({
+                adaptiveHeight: true,
+                arrows: true,
+                slide: 'li',
+                infinite: false,
+                slidesToShow: $slidesToShow,
+                initialSlide: $initialSlide,
+                slidesToScroll: 1,
+                edgeFriction: 1,
+                variableWidth: false,
+                centerMode: $centermode,
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: $break_point_medium - 100,
+                        settings: {
+                            centerMode: true,
+                            variableWidth: true,
+                            arrows: false
+
+                        }
+                    },
+                    {
+                        breakpoint: $break_point_medium,
+                        settings: {
+                            centerMode: true,
+                            variableWidth: true,
+                            arrows: false,
+                            slidesToShow: 2
+
+                        }
+                    },
+                    {
+                        breakpoint: $break_point_medium_ipad,
+                        settings: {
+                            centerMode: true,
+                            variableWidth: true,
+                            arrows: false,
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: $break_point_midsmall,
+                        settings: {
+                            centerMode: true,
+                            variableWidth: true,
+                            slidesToScroll: 1,
+                            slidesToShow: 1,
+                            arrows: false
+                        }
+                    },
+                    {
+                        breakpoint: $break_point_small,
+                        settings: {
+                            centerMode: true,
+                            slidesToShow: 1,
+                            variableWidth: true,
+                            arrows: false
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+
+        } catch (exp) {
+//            console.log('Attaching slick issue');
+        }
+//    $($element).on('edge', function (event, slick, direction) {
+//        console.log('edge was hit')
+//    });
+    } else {
+        try {
+            if (jQuery($element).hasClass('slick-initialized')) {
+                jQuery($element).slick('unslick');
+            }
+        } catch (exp) {
+//            console.log('Attaching slick issue');
+        }
+    }
+
+}
 
 
 

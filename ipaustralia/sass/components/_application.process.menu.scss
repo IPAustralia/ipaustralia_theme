@@ -37,7 +37,9 @@ applicaiton process menu steps
                 display: block;
                 color: black;
                 @include background-image('dummy-image.png');
-                background-position: center 40px;
+                background-size: 128px auto !important;
+                background-position: center 40px !important;
+                
 
                 &::before {
                     font-size: 34px;
@@ -48,11 +50,21 @@ applicaiton process menu steps
                 }
             }
             &.active {
-                background-color: $lighter-grey * 1.05;
+                background-color: rgba(255,255,255,0.4);
                 opacity:1;
             }
             &.slick-current, &:hover, &:active, &:focus {
                 /*opacity:1;*/
+            }
+
+            $i: 8;
+            @while $i > 0 {
+                &:nth-child(#{$i}) {
+                    a{
+                        @include background-image('application-process/_generic/#{$i}.png');
+                    }
+                }
+                $i: $i - 1;
             }
         }
         .slick-arrow {
