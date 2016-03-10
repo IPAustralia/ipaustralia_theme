@@ -1,0 +1,33 @@
+
+@mixin news_and_community_inner_page($color:$charcoal, $overlayimage:'transparent-pixel-purple_v2.png') {
+    @include news_and_community();
+    h2 {
+        margin-bottom: $gap-small ;
+        text-align: center;
+        color: $color;
+    }
+    p {
+        font-size: 1.3em;
+        font-family: $font_3;
+        color: $color;
+    }
+    .views-field-body {
+        p {
+            color: $white;
+            font-size: 1em;
+        }
+    }
+    .quicktabs-wrapper {
+        .quicktabs_main {
+            .views-view-grid {
+                td {
+
+                    div[class*="date"],  div[class*="title"],  div[class*="location"],  div[class*="body"]  {
+                        @include background-image($overlayimage, $repeat:repeat)
+                    }
+                }
+            }
+            
+        }
+    }
+}

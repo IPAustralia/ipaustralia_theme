@@ -1,0 +1,98 @@
+/*
+4 picture block styling
+
+example use:
+---
+#note that the mixin should be in a section
+
+section#id_of_section {
+    landing_page_more_about()
+}
+
+*/
+
+@mixin landing_page_more_about($backgroundimage:'transparent-pixel-teal.png', $height:332px, $wrappercontainer1:container, $wrappercontainer2:center-wrapper, $imageheight:260px) {
+    h2 {
+        margin-bottom: $gap-small ;
+        text-align: center;
+    }
+
+    .#{$wrappercontainer1} {
+        height: $height;
+        overflow: hidden; 
+        @media only screen and (max-width: $break-point-medium) {
+            height: 325px;
+        }
+        .contextual-links-wrapper{
+            display: none;
+        }
+        > div{
+            height: $height + 50;
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+            .#{$wrappercontainer2} {
+                width: 1180px;
+                .inside {
+                    margin: 0px;
+                }
+                table {
+                    width: 100%;
+                    border: 0px;
+                    padding: 0px;
+                    margin: 0px;
+                    td {
+                        width:25%;
+                        vertical-align: top;
+                        padding: 0px 10px;
+                        position: relative;
+                        img{
+                            height: $imageheight;
+                            width: 100%;
+                        }
+                        .views-field-field-news-date {
+                            display: none;
+                        }
+                        .views-field-title,.views-field-body {
+                            @include background-image($backgroundimage, $repeat:repeat);
+                            color:$white;
+                            padding: 20px;
+                            position: relative;
+                            a {
+                                color:$white;
+                                text-decoration: underline;
+                            }
+                        }
+                        .views-field-title {
+                            font:$title-h6-normal;
+                            font-size: 21px;
+                            height: 100px;
+                            letter-spacing: -1.2px;
+                            line-height: 23px;
+                            overflow: hidden;
+                            margin-top: -100px;
+                            line-height: 20px;
+                        }
+                        .views-field-body {
+                            padding-top: 0px;
+                            height:$imageheight - 100; 
+                            overflow: hidden;
+                        }
+                        &:hover,&:active,&:focus {
+                            /*cursor: pointer;*/
+                            .views-field-title {
+                                margin-top: $imageheight * -1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        img {
+            /*box-shadow: 0 0 2px #000;*/
+        }
+    }
+}

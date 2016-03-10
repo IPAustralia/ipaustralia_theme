@@ -19,9 +19,8 @@
         background: $off-white;
         text-align: center;
         @include background-image('women-with-tablet-merged.jpg', center,top,no-repeat, $charcoal);
-        background-size: 100% auto;
+        background-size: cover;
         @media only screen and (max-width: $break-point-medium) {
-            background-size: cover;
             padding: 10px 0px;
         }
         .quicktabs-wrapper  {
@@ -64,6 +63,13 @@
                             &:hover {
                                 border-color: white;
                             }
+                        }
+                    }
+                    h3 {
+                        color: $white;
+                        @media only screen and (max-width: $break-point-medium) {
+                            font-size:28px;
+                            line-height:34px;
                         }
                     }
                     @media only screen and (max-width: $break-point-large) {
@@ -128,7 +134,7 @@
             color: white;
         }
         .bean-basic-content {
-            max-width: 60%;
+            max-width: 80%;
             margin: 0 auto;
             @media only screen and (max-width: $break-point-medium) {
                 max-width: 90%;
@@ -150,9 +156,8 @@
         color:white;
         text-align:center;
         @include background-image('tablet_v2.jpg', center,center,no-repeat, $charcoal);
-        background-size: 120% auto;
+        background-size: cover;
         @media only screen and (max-width: $break-point-medium) {
-            background-size: cover;
             padding: $gap-large/2 10px;
 
         }
@@ -160,15 +165,15 @@
             margin: 0px 0px 10px 0px;
             color: white;
         }
-        h3 {
+/*        h3 {
             text-transform: uppercase;
             font-size: 18px;
-        }
+        }*/
         .panel-flexible {
             .panels-flexible-row-inside {
                 .panels-flexible-region {
                     width:25%;
-                    @media only screen and (max-width: $break-point-medium) {
+                    @media only screen and (max-width: $break-point-medium + 250) {
                         width: 50%;
                         &:nth-child(3) {
                             clear: both;
@@ -182,18 +187,18 @@
                         margin: 0 10px;
                         /*min-height: 565px;*/
                         @media only screen and (max-width: $break-point-small) {
+                            margin-left: 0px;
                             margin-bottom:-10px;
-                            @include background-image('arrow-down-charcoal-transparent.png', 95%,29px,no-repeat, white);
-                            &.open {
-                                @include background-image('arrow-up-charcoal-transparent.png', 95%,29px,no-repeat, white);
-                            }
-                        }
-                        @media only screen and (max-width: $break-point-small) {
                             margin-right: 0px;
+                            @include background-image('arrow-down-charcoal-transparent.png', 95%,31px,no-repeat, white);
+                            &.open {
+                                @include background-image('arrow-up-charcoal-transparent.png', 95%,31px,no-repeat, white);
+                            }
                         }
                         padding: 0;
                         .panel-image {
                             margin-top: $gap-medium;
+                            display: inline-block;
                             @media only screen and (max-width: $break-point-medium) {
                                 margin:13px;
                                 float:left;
@@ -202,6 +207,15 @@
                             }
                         }
                         h3 {
+                            font-size: 18px;
+                            overflow: hidden;
+                            padding: 0 10px;
+                            text-align: center;
+                            text-overflow: ellipsis;
+                            text-transform: uppercase;
+                            white-space: nowrap;
+                            width: 100%;
+
                             @media only screen and (max-width: $break-point-large) {
                                 height: 60px;
                                 line-height:25px;
@@ -221,7 +235,7 @@
                                 width:150px;
                             }
                             @media only screen and (max-width: $break-point-small + 300) {
-                                width:200px;
+                                /*width:200px;*/
                             }
                             @media only screen and (max-width: $break-point-small + 200) {
                                 width:150px;
@@ -328,148 +342,7 @@
 
     }
     #block-panels-mini-news-and-community-homepage-pane {
-        padding: $gap-large 10px;
-        text-align: center;
-        @media only screen and (max-width: $break-point-medium) {
-            padding: 40px 0px;
-        }
-        h2 {
-            color: $charcoal;
-        }
-        .quicktabs-wrapper {
-            @include quicktabs-tabs(32.9%, #fff, $charcoal);
-            .quicktabs-tabs {
-                li {
-                    padding-bottom: 13px;
-                    margin-bottom: 14px;;
-                    margin-right: -1px;
-                    &.active {
-                        @include background-image('dwn-arrow-charcoal.png', center, bottom);
-                        a {
-                            background: white;
-                            color: $charcoal;
-                            border-bottom: 7px solid $charcoal;
-                        }
-                    }
-                }
-            }
-
-            .quicktabs_main {
-                color: $charcoal;
-                margin-left:0px !important;
-                .views-view-grid {
-                    td {
-                        position: relative;
-                        vertical-align: top;
-                        width: 33%;
-
-
-                        div[class*="image"] {
-                            position:relative;
-                            z-index:10;
-                            img {
-                                display: inline-block;
-                                height: 380px;
-                            }
-                        }
-                        div[class*="date"] {
-                            @include news-community-texts;
-                            padding-top:23px;
-                            height:44px;
-                            text-overflow: ellipsis;
-                            overflow:hidden;
-                            span[class*="label "] {
-                                float: left;
-                            }
-                            margin-top: -140px;
-                        }
-                        div[class*="title"],  div[class*="location"]{
-                            @include news-community-texts;
-                            clear: both;
-                            font:$title-h5;
-                            font-family:$font-title-normal;
-                            height:95px !important;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            text-decoration: underline;
-                            padding:6px 20px;
-                            a {
-                                color:white;
-                                text-decoration: underline;
-                            }
-                        }
-                        div[class*="location"] {
-                            @include news-community-texts;
-                        }
-                        div[class*="body"] {
-                            @include news-community-texts;
-                            height: 240px;
-                            overflow: hidden;
-                            display: none;
-                            text-overflow: ellipsis;
-
-                        }
-                        &:hover {
-                            div[class*="date"] {
-                                margin-top: -380px
-                            }
-                            div[class*="body"] {
-                                display: block;
-                            }
-                        }
-                    }
-                }
-            }
-
-            @media only screen and(max-width:$break-point-xlarge) {
-                #quicktabs-container-news_events_and_media {
-                    height: 384px;
-                    overflow: hidden;
-                    width: 100% !important;
-                    .quicktabs-tabpage  {
-                        height: 400px;
-                        width: 100%;
-                        overflow-x: auto;
-                        overflow-y: hidden;
-                        > section {
-                            width: 1200px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .Top {
-            .panels-flexible-row-inside {
-                .panels-flexible-region {
-                    width:100%;
-                    .inside {
-                        font:$intro-text;
-                        padding: 10px 0 30px 0;
-                    }
-                }
-            }
-        }
-        .panels-flexible-row-last {
-            .panels-flexible-row-inside {
-                .panels-flexible-region {
-                    width:100%;
-                    .inside {
-                        a {
-                            margin-top: $gap-medium;
-                            @include rounded-button-with-arrrow($charcoal, white, 14px, 'arrow-right-transparent.png');
-                            border-color: $charcoal;
-                            margin-right: 27px;
-                            cursor: pointer;
-                            :hover {
-                                border-color: white;    
-                            }
-                        }
-                    }
-
-                }
-            }
-        }
+        @include news_and_community()
     }
     #block-system-main {
         display: none;

@@ -1,0 +1,63 @@
+section#block-bean-pbr-landing-block-0 {
+    @include landing_page_header_title('pbr-banner.jpg', $themecolor:$yellow);
+}
+
+section#block-bean-pbr-anchor-menu {
+    @include landing_page_anchor_menu();
+}
+
+section#block-bean-understanding-pbr {
+    background: $lighter-grey;
+    @include  section_padding(20);
+    @include  landing_page_group_block();
+}
+
+section#block-bean-pbr-application-process {
+    background: $color_willow_brook_approx;
+    @include  section_padding(20);
+    .applicaiton-process-wrapper {
+        @include application-process(6, $color:$yellow, $imagefolder:design);
+    }
+}
+
+section#block-bean-managing-you-pbr-block {
+    background: $white;
+    @include  section_padding(20);
+    @include  landing_page_group_block($background: $lighter-grey);
+}
+
+section#block-bean-tools-and-resources-pbr {
+    @include  section_padding(20);
+    @include  landing_page_tools_resources($yellow);
+}
+
+section#block-panels-mini-more-about-pbr-2-col-panel {
+    @include  section_padding(20);
+    @include landing_page_more_about('transparent-pixel-yellow.png');
+}
+
+/// tmp styling 
+section#block-bean-all-about-pbr-block {
+    padding: $gap-large 0px;
+    text-align:center;
+    ul{
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        list-style:none;
+        max-width:250px;
+        margin: 0px $gap-medium $gap-medium;
+        @media only screen and (max-width: $break-point-medium) {
+            display:none;
+        }
+        li {
+            a {
+
+            }
+        }
+    }
+    a {
+        color: $charcoal;
+    }
+
+}

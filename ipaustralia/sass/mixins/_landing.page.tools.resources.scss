@@ -1,0 +1,188 @@
+/*
+Tools and resources block
+
+example use:
+---
+#note that the mixin should be in a section
+
+section#id_of_section {
+    landing_page_tools_resources($teal)
+}
+
+*/
+
+@mixin landing_page_tools_resources($color:$teal) {
+    @include background-image('tablet_v2.jpg');
+    background-size: cover;
+    .panel-flexible {
+        text-align: center;
+        .panels-flexible-row-inside {
+            .panels-flexible-region {
+                width:25%;
+                @media only screen and (max-width: $break-point-medium + 250) {
+                    width: 50%;
+                    &:nth-child(3) {
+                        clear: both;
+                    }
+                }
+                @media only screen and (max-width: $break-point-small) {
+                    width: 100%;
+                }
+                .inside {
+                    background: $white none repeat scroll 0 0;
+                    margin: 0 10px;
+                    padding-bottom: 20px;
+                    padding: 0 0 20px;
+                    border-bottom: 6px solid $color;
+                    /*min-height: 500px;*/
+                    @media only screen and (max-width: $break-point-small) {
+                        margin-left: 0px;
+                        margin-bottom:-10px;
+                        margin-right: 0px;
+                        border-bottom: 0px;
+                        @include background-image('arrow-down-charcoal-transparent.png', 95%,31px,no-repeat, white);
+                        padding: 0px;
+
+                        &.open {
+                            @include background-image('arrow-up-charcoal-transparent.png', 95%,31px,no-repeat, white);
+                            padding: 0 0 20px;
+                            border-bottom: 6px solid $color;
+                        }
+                    }
+                    .file-full {
+                        margin-top: $gap-medium;
+                        display: inline-block;
+                        @media only screen and (max-width: $break-point-medium) {
+                            margin:13px;
+                            float:left;
+                            width:45px;
+                            height:45px;
+                        }
+                    }
+                    h3 {
+                        font-size: 18px;
+                        overflow: hidden;
+                        padding: 0 10px;
+                        text-align: center;
+                        text-overflow: ellipsis;
+                        text-transform: uppercase;
+                        white-space: nowrap;
+                        width: 100%;
+                        @media only screen and (max-width: $break-point-large) {
+                            height: 60px;
+                            line-height:25px;
+
+                        }
+
+                        @media only screen and (max-width: $break-point-medium) {
+                            margin:0px;
+                            line-height: 77px;
+                            text-align:left;
+                            position: absolute;
+                            margin:-74px 0 0 70px;
+                            height:73px;
+                            overflow:hidden;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width:150px;
+                        }
+                        @media only screen and (max-width: $break-point-small + 300) {
+                            /*width:200px;*/
+                        }
+                        @media only screen and (max-width: $break-point-small + 200) {
+                            width:150px;
+                        }
+                        @media only screen and (max-width: $break-point-small + 90) {
+                            width:100px;
+                        }
+                        @media only screen and (max-width: $break-point-small) {
+                            width:63%;
+                        }
+
+                    }
+                    ul {
+                        list-style:none;
+                        @media only screen and (max-width: $break-point-medium) {
+                            display:block;
+                        }
+                        @media only screen and (max-width: $break-point-small) {
+                            display:none;
+                        }
+                        li {
+                            text-align: left;
+                            a {
+                                text-decoration: underline;
+                            }
+                        }
+
+                    }
+                    .bs-vert-callout {
+                        min-height: auto; ///overwrite inherited height to allow equalise height script to work
+                    }
+                }
+
+            }
+
+        }
+        .Top {
+            .panels-flexible-row-inside {
+                .panels-flexible-region {
+                    width:100%;
+                    color: $white;
+                    h2 {
+                        margin-bottom: $gap-medium;
+                        color: $white;
+                    }
+                    .inside {
+                        background: transparent;
+                        font:$intro-text;
+                        padding-bottom: $gap-medium;
+                        min-height: 10px;
+                        border-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .Bottom {
+            .panels-flexible-row-inside {
+                .panels-flexible-region {
+                    width:100%;
+                    .inside {
+                        background: transparent;
+                        font:$intro-text;
+                        min-height: 10px;
+                        border-bottom: 0px;
+
+                        a {
+                            margin-top: $gap-medium;
+                            @include rounded-button-with-arrrow;
+                            border-color: white;
+                            cursor: pointer;
+                            :hover {
+                                border-color: white;    
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        ul {
+            @include resources-list(no-icon);
+
+            @media only screen and (max-width: $break-point-small) {
+                /*display:none;*/
+            }
+            padding-top:15px;
+            li {
+                /*margin-top: 18px;*/
+                padding: 0px 30px 15px 50px;
+                /*margin-bottom: 18px;*/
+                font-size: 16px;
+                @include background-image('link-tool.png', 17px, 2px);
+                line-height: 22px;
+            }
+        }
+    }
+}

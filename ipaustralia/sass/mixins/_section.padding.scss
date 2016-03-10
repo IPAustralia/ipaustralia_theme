@@ -1,0 +1,6 @@
+@mixin section_padding($footer:0, $gap:$gap-large) {
+    padding: $gap 0px $gap + 20;
+    @media only screen and (max-width: $break-point-midsmall) {
+        padding: $gap /2 0px $gap/2 + $footer;
+    }
+}

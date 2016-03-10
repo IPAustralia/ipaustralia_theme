@@ -13,6 +13,19 @@ function ipaustralia_js_alter(&$javascript) {
 	// bootstrap requires a later version of jquery
 	$javascript['misc/jquery.js']['data'] = drupal_get_path('theme', 'ipaustralia') . '/js/jquery-1.11.3.min.js';
 }
+	
+function ipaustralia_preprocess_html(&$variables) {
+	//used to add class to body for the application process menu blocks to be targeted by generic styling.
+	//find if block is visible then add class to body
+   //dpm($variables);
+  $node = menu_get_object();
+  if (isset($node) && isset($variables['page']['content_top']['menu_block_8']) ||
+  	isset($node) && isset($variables['page']['content_top']['menu_block_9']) ||
+  	isset($node) && isset($variables['page']['content_top']['menu_block_6']) ||
+  	isset($node) && isset($variables['page']['content_top']['menu_block_7'])) {
+    	$variables['classes_array'][] = 'application-process-visible';
+  }
+}
 
 function ipaustralia_preprocess_page(&$vars, $hook) {
 	// override the default primary nav render array. see
@@ -39,7 +52,7 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
 	//drupal_set_message(t('Example error message.'), 'error');
 	//drupal_set_message(t('Example normal message 1.'), 'status');
 	//drupal_set_message(t('Example normal message 2.'), 'status');
-	drupal_set_message(t('We are developing this website (currently in beta) and would <a href="/node/1111">welcome your feedback</a>. For the full website refer to <a href="http://www.ipaustralia.gov.au/" title="IP Australia website">www.ipaustralia.gov.au</a>.'), 'warning');
+	drupal_set_message(t('We are developing this website (currently in beta) and would <a target="_blank" href="/node/1111">welcome your feedback</a>. For the full website refer to <a href="http://www.ipaustralia.gov.au/" title="IP Australia website">www.ipaustralia.gov.au</a>.'), 'warning');
 }
 
 function ipaustralia_menu_block_tree_alter(&$tree, &$config) {

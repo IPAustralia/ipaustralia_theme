@@ -1,0 +1,103 @@
+/*
+Styling the top section of the landing page where we have the background image 
+going widescreen and the toolbar on the right.
+Options explained below:
+
+$backgroundimage
+---
+Wide screen background image to use.
+
+$themecolor
+---
+Color use for branding. Used on the tools list left border color
+
+
+example use:
+---
+#note that the mixin should be in a section
+
+section#id_of_section {
+    @include landing_page_header_title('patents-landing.jpg', $themecolor:$teal);
+}
+
+*/
+@mixin landing_page_header_title($backgroundimage:'patents-landing.jpg', $themecolor:$charcoal) {
+    @include background-image($backgroundimage);
+    background-size: cover;
+    padding: $gap-large 0px;
+    color: white;
+    border-bottom:$section-line-sperator;
+    @media only screen and (max-width: $break-point-large) {
+        padding: $gap-large/3 0px;
+    }
+
+    .panels-flexible-region-first,.field-name-field-bean-body {
+        padding-right: $gap-large * 2;
+        @media only screen and (max-width: $break-point-large) {
+            width: 60%;
+            padding-right: 20px;
+        }
+        @media only screen and (max-width: $break-point-midsmall) {
+            width: 100%;
+            padding-right: 0px;
+        }
+        h2 {
+            color: white;
+            font:$title-h1-normal;
+            font-weight: normal;
+            text-transform: uppercase;
+            position: relative;
+            &:after {
+                border-top: 6px solid white;
+                content: "";
+                display: block;
+                width: 141px;
+                margin-bottom: $gap-small;
+                margin-left: 2px;
+            }
+        }
+        .thick {
+            display: none;
+        }
+        p {
+            font: $title-h5-normal;
+            line-height: 1.5em;
+            margin-bottom: $gap-small;
+            font-family: $font_3;
+        }
+    }
+
+    .panels-flexible-region-last {
+        @media only screen and (max-width: $break-point-large) {
+            width: 40%;
+            .inside {
+                padding-left: 0px;
+            }
+        }
+        @media only screen and (max-width: $break-point-midsmall) {
+            width: 100%;
+            .inside {
+                padding-left: 0px;
+            }
+        }
+        .tools-resources-list {
+            @include resources-list(no-icon);
+            li {
+                border-left-color: $themecolor !important;
+                padding: 20px;
+                @include background-image('arrow-right-online-services.png', $x:right, $background-color:white);
+                &:last-child{
+                    /// Use this to not display right arrow icon on last li
+                    /*background-image: none;*/
+                }
+                .sml-link-icon-more {
+                    display: none;
+                }
+                a {
+                    color:$charcoal;
+                    padding-right: 10px;
+                }
+            }
+        }   
+    }
+}

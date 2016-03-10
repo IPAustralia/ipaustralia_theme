@@ -1,0 +1,151 @@
+
+@mixin news_and_community() {
+    padding: $gap-large 10px;
+    text-align: center;
+    @media only screen and (max-width: $break-point-medium) {
+        padding: 40px 0px;
+    }
+    h2 {
+        color: $charcoal;
+        &.pane-title {
+            display: none;
+        }
+    }
+    .quicktabs-wrapper {
+        @include quicktabs-tabs(32.9%, #fff, $charcoal);
+        .quicktabs-tabs {
+            li {
+                padding-bottom: 13px;
+                margin-bottom: 14px;;
+                margin-right: -1px;
+                &.active {
+                    @include background-image('dwn-arrow-charcoal.png', center, bottom);
+                    a {
+                        background: white;
+                        color: $charcoal;
+                        border-bottom: 7px solid $charcoal;
+                    }
+                }
+            }
+        }
+
+        .quicktabs_main {
+            color: $charcoal;
+            margin-left:0px !important;
+            .views-view-grid {
+                td {
+                    position: relative;
+                    vertical-align: top;
+                    width: 33%;
+
+
+                    div[class*="image"] {
+                        position:relative;
+                        z-index:10;
+                        img {
+                            display: inline-block;
+                            height: 380px;
+                        }
+                    }
+                    div[class*="date"] {
+                        @include news-community-texts;
+                        padding-top:23px;
+                        height:44px;
+                        text-overflow: ellipsis;
+                        overflow:hidden;
+                        span[class*="label "] {
+                            float: left;
+                        }
+                        margin-top: -140px;
+                    }
+                    div[class*="title"],  div[class*="location"]{
+                        @include news-community-texts;
+                        clear: both;
+                        font:$title-h5;
+                        font-family:$font-title-normal;
+                        height:95px !important;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        text-decoration: underline;
+                        padding:6px 20px;
+                        a {
+                            color:white;
+                            text-decoration: underline;
+                        }
+                    }
+                    div[class*="location"] {
+                        @include news-community-texts;
+                    }
+                    div[class*="body"] {
+                        @include news-community-texts;
+                        height: 240px;
+                        overflow: hidden;
+                        display: none;
+                        text-overflow: ellipsis;
+
+                    }
+                    &:hover {
+                        div[class*="date"] {
+                            margin-top: -380px
+                        }
+                        div[class*="body"] {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            h2 {
+                display: none;
+            }
+        }
+
+        @media only screen and(max-width:$break-point-xlarge) {
+            #quicktabs-container-news_events_and_media {
+                height: 384px;
+                overflow: hidden;
+                width: 100% !important;
+                .quicktabs-tabpage  {
+                    height: 400px;
+                    width: 100%;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    > section {
+                        width: 1200px;
+                    }
+                }
+            }
+        }
+    }
+
+    .Top {
+        .panels-flexible-row-inside {
+            .panels-flexible-region {
+                width:100%;
+                .inside {
+                    font:$intro-text;
+                    padding: 10px 0 30px 0;
+                }
+            }
+        }
+    }
+    .panels-flexible-row-last {
+        .panels-flexible-row-inside {
+            .panels-flexible-region {
+                width:100%;
+                .inside {
+                    a {
+                        margin-top: $gap-medium;
+                        @include rounded-button-with-arrrow($charcoal, white, 14px, 'arrow-right-transparent.png');
+                        border-color: $charcoal;
+                        margin-right: 27px;
+                        cursor: pointer;
+                        :hover {
+                            border-color: white;    
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

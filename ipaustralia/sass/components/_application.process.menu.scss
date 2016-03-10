@@ -33,11 +33,13 @@ applicaiton process menu steps
 
             a {
                 height: 297px;
-                padding: 177px 5px 0;
+                padding: 177px 20px 0;
                 display: block;
                 color: black;
                 @include background-image('dummy-image.png');
-                background-position: center 40px;
+                background-size: 128px auto !important;
+                background-position: center 40px !important;
+                
 
                 &::before {
                     font-size: 34px;
@@ -48,11 +50,26 @@ applicaiton process menu steps
                 }
             }
             &.active {
-                background-color: $lighter-grey * 1.05;
+                background-color: rgba(255,255,255,0.4);
                 opacity:1;
+                a {
+                    &::before {
+                        color:$charcoal;
+                    }
+                }
             }
             &.slick-current, &:hover, &:active, &:focus {
                 /*opacity:1;*/
+            }
+
+            $i: 8;
+            @while $i > 0 {
+                &:nth-child(#{$i}) {
+                    a{
+                        @include background-image('application-process/_generic/#{$i}.png');
+                    }
+                }
+                $i: $i - 1;
             }
         }
         .slick-arrow {
@@ -63,4 +80,8 @@ applicaiton process menu steps
             }
         }
     }
+}
+
+#block-menu-block-6 {
+    @include application-process-menu($steps:8, $backgroundcolor:$color_willow_brook_approx, $imagefolder:design, $color:$mint);
 }
