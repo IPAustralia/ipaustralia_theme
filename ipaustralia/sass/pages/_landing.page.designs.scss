@@ -1,0 +1,37 @@
+section#block-bean-designs-landing-block-0 {
+    @include landing_page_header_title('designs-banner.jpg', $themecolor:$mint);
+}
+
+section#block-bean-designs-anchor-menu {
+    @include landing_page_anchor_menu();
+}
+
+section#block-bean-understanding-designs-block {
+    background: $lighter-grey;
+    @include  section_padding(20);
+    @include  landing_page_group_block();
+}
+
+section#block-bean-designs-application-process {
+    background: $color_willow_brook_approx;
+    @include  section_padding(20);
+    .applicaiton-process-wrapper {
+        @include application-process(6, $color:$mint, $imagefolder:design);
+    }
+}
+
+section#block-bean-managing-your-design-block {
+    background: $white;
+    @include  section_padding(20);
+    @include  landing_page_group_block($background: $lighter-grey);
+}
+
+section#block-bean-tools-and-resources-designs {
+    @include  section_padding(20);
+    @include  landing_page_tools_resources($mint);
+}
+
+section#block-panels-mini-more-about-designs-2-col-panel {
+    @include  section_padding(20);
+    @include landing_page_more_about('transparent-pixel-mint.png');
+}

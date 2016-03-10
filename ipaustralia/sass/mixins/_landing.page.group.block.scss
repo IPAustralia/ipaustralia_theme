@@ -1,0 +1,109 @@
+/*
+Groupped block elements.
+This is a 3 column setup
+
+example use:
+---
+#note that the mixin should be in a section
+
+section#id_of_section {
+    landing_page_group_block() ;
+}
+
+*/
+@mixin landing_page_group_block($background:$white) {
+    .group-header {
+        br{
+            display: none;
+        }
+        margin-bottom: $gap-small ;
+        h2 {
+            margin-bottom: $gap-small ;
+            text-align: center;
+        }
+        p {
+            font-size: 1.3em;
+            font-family: $font_3;
+        }
+    }
+    .group-left, .group-middle, .group-right {
+        @media only screen and (max-width: $break-point-medium + 220) {
+            width: 50%;
+        }
+        @media only screen and (max-width: $break-point-midsmall) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        > div {
+            margin:0 20px;
+            padding: 40px;
+            background: $background;
+            height: 350px;
+            overflow-y: hidden;
+            @media only screen and (max-width: $break-point-medium) {
+                height: 500px;
+            }
+            @media only screen and (max-width: $break-point-midsmall) {
+                height: auto;
+                padding: 20px 30px;
+                margin: 0px;
+            }
+            @media only screen and (max-width: $break-point-small) {
+                padding: 10px 20px;
+            }
+        }
+        h4 {
+            font-size: 22px;
+            margin: 0px;
+            font-weight: bold;
+            @media only screen and (max-width: $break-point-midsmall) {
+                padding-right: 30px;
+                line-height: 30px;
+                font-size: 1.2em;
+                @include background-image('arrow-down-charcoal-transparent.png', $background-color:$background, $x:right, $y:20px );
+                cursor: pointer;
+            }
+
+            &:after {
+                border-top: 4px solid $grey;
+                content: "";
+                display: block;
+                width: 100px;
+                margin: 15px 0 $gap-medium 2px;
+                @media only screen and (max-width: $break-point-midsmall) {
+                    margin: 5px 0 10px 2px;
+                    border-top: 3px solid $grey;
+                }
+            }
+        }
+        .open{
+            h4 {
+                @include background-image('arrow-up-charcoal-transparent.png', $background-color:$background, $x:right, $y:20px );
+            }
+        }
+        p{
+            @media only screen and (max-width: $break-point-midsmall) {
+                display: none;
+            }
+        }
+        .thin {
+            display: none;
+        }
+    }
+    .group-left {
+
+    }
+    .group-middle {
+
+    }
+    .group-right {
+        @media only screen and (max-width: $break-point-medium + 220) {
+            float: left;
+            margin-top: 20px;
+        }
+        @media only screen and (max-width: $break-point-midsmall) {
+            margin-top: 0px;
+        }
+    }
+
+}

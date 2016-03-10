@@ -19,9 +19,8 @@
         background: $off-white;
         text-align: center;
         @include background-image('women-with-tablet-merged.jpg', center,top,no-repeat, $charcoal);
-        background-size: 100% auto;
+        background-size: cover;
         @media only screen and (max-width: $break-point-medium) {
-            background-size: cover;
             padding: 10px 0px;
         }
         .quicktabs-wrapper  {
@@ -64,6 +63,13 @@
                             &:hover {
                                 border-color: white;
                             }
+                        }
+                    }
+                    h3 {
+                        color: $white;
+                        @media only screen and (max-width: $break-point-medium) {
+                            font-size:28px;
+                            line-height:34px;
                         }
                     }
                     @media only screen and (max-width: $break-point-large) {
@@ -150,9 +156,8 @@
         color:white;
         text-align:center;
         @include background-image('tablet_v2.jpg', center,center,no-repeat, $charcoal);
-        background-size: 120% auto;
+        background-size: cover;
         @media only screen and (max-width: $break-point-medium) {
-            background-size: cover;
             padding: $gap-large/2 10px;
 
         }
@@ -160,15 +165,15 @@
             margin: 0px 0px 10px 0px;
             color: white;
         }
-        h3 {
+/*        h3 {
             text-transform: uppercase;
             font-size: 18px;
-        }
+        }*/
         .panel-flexible {
             .panels-flexible-row-inside {
                 .panels-flexible-region {
                     width:25%;
-                    @media only screen and (max-width: $break-point-medium) {
+                    @media only screen and (max-width: $break-point-medium + 250) {
                         width: 50%;
                         &:nth-child(3) {
                             clear: both;
@@ -182,18 +187,18 @@
                         margin: 0 10px;
                         /*min-height: 565px;*/
                         @media only screen and (max-width: $break-point-small) {
+                            margin-left: 0px;
                             margin-bottom:-10px;
-                            @include background-image('arrow-down-charcoal-transparent.png', 95%,29px,no-repeat, white);
-                            &.open {
-                                @include background-image('arrow-up-charcoal-transparent.png', 95%,29px,no-repeat, white);
-                            }
-                        }
-                        @media only screen and (max-width: $break-point-small) {
                             margin-right: 0px;
+                            @include background-image('arrow-down-charcoal-transparent.png', 95%,31px,no-repeat, white);
+                            &.open {
+                                @include background-image('arrow-up-charcoal-transparent.png', 95%,31px,no-repeat, white);
+                            }
                         }
                         padding: 0;
                         .panel-image {
                             margin-top: $gap-medium;
+                            display: inline-block;
                             @media only screen and (max-width: $break-point-medium) {
                                 margin:13px;
                                 float:left;
@@ -202,6 +207,15 @@
                             }
                         }
                         h3 {
+                            font-size: 18px;
+                            overflow: hidden;
+                            padding: 0 10px;
+                            text-align: center;
+                            text-overflow: ellipsis;
+                            text-transform: uppercase;
+                            white-space: nowrap;
+                            width: 100%;
+
                             @media only screen and (max-width: $break-point-large) {
                                 height: 60px;
                                 line-height:25px;
@@ -221,7 +235,7 @@
                                 width:150px;
                             }
                             @media only screen and (max-width: $break-point-small + 300) {
-                                width:200px;
+                                /*width:200px;*/
                             }
                             @media only screen and (max-width: $break-point-small + 200) {
                                 width:150px;
@@ -335,6 +349,9 @@
         }
         h2 {
             color: $charcoal;
+            &.pane-title {
+                display: none;
+            }
         }
         .quicktabs-wrapper {
             @include quicktabs-tabs(32.9%, #fff, $charcoal);
@@ -418,6 +435,9 @@
                             }
                         }
                     }
+                }
+                h2 {
+                    display: none;
                 }
             }
 

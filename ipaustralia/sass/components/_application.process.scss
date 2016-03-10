@@ -1,18 +1,19 @@
 /*
-applicaiton process on body
+Applicaiton process on body
 */
 .applicaiton-process-wrapper {
     h2,.description,p  {
         text-align: center;
     }
     h2 {
-        margin-top: $gap-medium;
+        margin: 0 0 $gap-small;
     }
     .description {
-        font-size: 22px;
+        font-size: 1.3em;
+        font-family: $font_3;
     }
     ul {
-        @include background-image('application-process/_generic/backgrund-line-9.png');
+        @include background-image('application-process/_generic/background-line-9.png');
         background-size: 100% auto;
         background-position: right 140px;
         text-align: center;
@@ -32,6 +33,10 @@ applicaiton process on body
             @media only screen and (max-width: $break-point-large + 200) {
                 padding: 30px 25px 2px;
                 width: 310px;
+            }
+            @media only screen and (max-width: $break-point-medium) {
+                /*padding: 30px 15px 20px;*/
+                width: 210px;
             }
             @media only screen and (max-width: $break-point-small) {
                 padding: 30px 15px 20px;
@@ -68,7 +73,7 @@ applicaiton process on body
                     display: block;
                     content: counter(process-counter);
                     margin-bottom: 10px;
-                    color: $mint;
+                    /*color: $mint;*/
                 }
             }
             a {
@@ -80,15 +85,6 @@ applicaiton process on body
                 padding-right: 15px;
             }
 
-            $i: 8;
-            @while $i > 0 {
-                &:nth-child(#{$i}) {
-                    .image{
-                        @include background-image('application-process/_generic/#{$i}.png');
-                    }
-                }
-                $i: $i - 1;
-            }
         }
 
         &.slick-slider {
@@ -121,8 +117,4 @@ applicaiton process on body
         margin: 0 auto $gap-large;
         color: white;
     }
-}
-
-section#block-panels-mini-more-about-designs-2-col-panel {
-    /*display: none;*/
 }

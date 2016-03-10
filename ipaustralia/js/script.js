@@ -9,22 +9,36 @@ jQuery(document).ready(function () {
     addTwitterFeed();
 });
 jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-bloc h3', function () {
-    jQuery('#block-bean-tools-and-resources-generic-bloc .inside').css('height', 'auto');
-    if (jQuery(this).closest('.inside').hasClass('open')) {
-        jQuery(this).siblings('.tools-resources-list').slideToggle(function () {
-            jQuery(this).closest('.inside').removeClass('open');
-        });
-    } else {
-        jQuery(this).siblings('.tools-resources-list').slideToggle(function () {
-            jQuery(this).closest('.inside').addClass('open');
-        });
-    }
+    openCloseToolsResources(jQuery(this));
+});
+jQuery(document).on('click', '.bp-small section#block-bean-tools-and-resources h3', function () {
+    openCloseToolsResources(jQuery(this));
+});
+jQuery(document).on('click', '.bp-small section#block-bean-tools-and-resources-trade-mark h3', function () {
+    openCloseToolsResources(jQuery(this));
+});
+jQuery(document).on('click', '.bp-small section#block-bean-tools-and-resources-designs h3', function () {
+    openCloseToolsResources(jQuery(this));
+});
+jQuery(document).on('click', '.bp-small section#block-bean-tools-and-resources-pbr h3', function () {
+    openCloseToolsResources(jQuery(this));
 });
 jQuery(document).on('click', '.applicaiton-process-wrapper li', function () {
     var $link = jQuery(this).find('a').attr('href');
     window.open($link, '_self');
 });
-
+jQuery(document).on('click', '.bp-midsmall .group-left h4', function () {
+    openCloseGroups(jQuery(this));
+});
+jQuery(document).on('click', '.bp-midsmall .group-middle h4', function () {
+    openCloseGroups(jQuery(this));
+});
+jQuery(document).on('click', '.bp-midsmall .group-right h4', function () {
+    openCloseGroups(jQuery(this));
+});
+jQuery(document).on('click', '.bp-midsmall .panels-flexible-region h4', function () {
+    openCloseGroups(jQuery(this));
+});
 
 function resizing() {
     /*
@@ -42,6 +56,10 @@ function equaliseElementsHeight() {
      *  Make element same height. example tool box on home page
      */
     equalHeight('#block-bean-tools-and-resources-generic-bloc .panels-flexible-region-inside');
+    equalHeight('section#block-bean-tools-and-resources .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-bean-tools-and-resources-trade-mark .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-bean-tools-and-resources-designs .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-bean-tools-and-resources-pbr .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('.footer li.expanded');
 
     setTimeout(function () {
@@ -87,9 +105,11 @@ function setBreakPoints() {
     enquire.register("screen and (max-width:" + $break_point_large + ")", {
         match: function () {
             jQuery('body').addClass('bp-large');
+            slickSlides();
         },
         unmatch: function () {
             jQuery('body').removeClass('bp-large');
+            slickSlides();
         },
         setup: function () {},
         deferSetup: true,
@@ -111,9 +131,11 @@ function setBreakPoints() {
     enquire.register("screen and (max-width:" + $break_point_medium_ipad + ")", {
         match: function () {
             jQuery('body').addClass('bp-medium_ipad');
+            slickSlides();
         },
         unmatch: function () {
             jQuery('body').removeClass('bp-medium_ipad');
+            slickSlides();
         },
         setup: function () {},
         deferSetup: true,
@@ -207,7 +229,6 @@ function showSearchIcon() {
         }
     });
 }
-
 function slickSlides() {
     if (jQuery('.bp-medium_ipad').length > 0) {
         slideHomeMain('attach');
@@ -221,10 +242,7 @@ function slickSlides() {
         slideApplicationProcessBody('detach');
     }
 
-
 }
-
-
 function slideHomeMain($action) {
     var $element = '#quicktabs-container-homepage_main_tab';
     if ($action === 'attach') {
@@ -256,7 +274,6 @@ function slideHomeMain($action) {
     });
 
 }
-
 function slideApplicationProcess() {
     var $break_point_xlarge = "1200";
     var $break_point_large = "992"; /*Desktop tablet landscape*/
@@ -361,9 +378,6 @@ function slideApplicationProcess() {
 //        console.log('edge was hit')
 //    });
 }
-
-
-
 function slideApplicationProcessBody($action) {
     var $break_point_xlarge = "1200";
     var $break_point_large = "992"; /*Desktop tablet landscape*/
@@ -376,7 +390,7 @@ function slideApplicationProcessBody($action) {
     var $centermode = false;
     var $initialSlide = 0;
     var $slidesToShow = 3;
-    
+
     if ($action === 'attach') {
 
         var $index = parseInt(jQuery($element).find('li.active').index());
@@ -435,7 +449,7 @@ function slideApplicationProcessBody($action) {
                     {
                         breakpoint: $break_point_midsmall,
                         settings: {
-                            centerMode: true,
+                            centerMode: false,
                             variableWidth: true,
                             slidesToScroll: 1,
                             slidesToShow: 1,
@@ -451,18 +465,12 @@ function slideApplicationProcessBody($action) {
                             arrows: false
                         }
                     }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
                 ]
             });
 
         } catch (exp) {
 //            console.log('Attaching slick issue');
         }
-//    $($element).on('edge', function (event, slick, direction) {
-//        console.log('edge was hit')
-//    });
     } else {
         try {
             if (jQuery($element).hasClass('slick-initialized')) {
@@ -474,7 +482,31 @@ function slideApplicationProcessBody($action) {
     }
 
 }
-
+function openCloseToolsResources($object) {
+    jQuery($object).closest('.inside').css('height', 'auto');
+    if (jQuery($object).closest('.inside').hasClass('open')) {
+        jQuery($object).siblings('ul').slideToggle(function () {
+            jQuery($object).closest('.inside').removeClass('open');
+        });
+    } else {
+        jQuery($object).siblings('ul').slideToggle(function () {
+            jQuery($object).closest('.inside').addClass('open');
+        });
+    }
+}
+function openCloseGroups($object) {
+    jQuery($object).closest('.inside').css('height', 'auto');
+    if (jQuery($object).closest('.field-item').hasClass('open')) {
+        jQuery($object).siblings('p').slideToggle(function () {
+            jQuery($object).closest('.field-item').removeClass('open');
+            jQuery($object).siblings('p').removeAttr('style');
+        });
+    } else {
+        jQuery($object).siblings('p').slideToggle(function () {
+            jQuery($object).closest('.field-item').addClass('open');
+        });
+    }
+}
 
 
 

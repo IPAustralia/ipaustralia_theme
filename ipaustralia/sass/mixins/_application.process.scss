@@ -1,0 +1,88 @@
+/*
+Mixing used to customise the look of the application process on the body. Note
+that the mixin is configured to style a max of 12 steps. Options explained below:
+
+$steps
+---
+Number of steps in the process. Mininum steps allowed is 3. Max allowed is 12
+
+$imagefolder
+---
+Defined where the images for the different steps are store.
+Note that image file name must match the step. For example
+step 1 must be called 1.png. Images should be places in respective
+subfolder under /images/application-process/[imagefolder]
+
+$backgroundline
+---
+Overwrite the backgorund line image to use on large screen. The mixing will count
+the number of steps defined and use the corresponding background line image. When
+defined this will overwrite the computed image name
+
+$color
+---
+Color of the step numbers. Default is charcoal
+
+
+example use:
+---
+.applicaiton-process-wrapper-div {
+    @inlcude application-process(6, design, $color:$mint);
+}
+
+*/
+
+@mixin application-process($steps:3, $imagefolder:_generic, $backgroundline: 'background-line-6.png', $color:$charcoal) {
+
+    /// Define the boundaries
+    @if $steps < 3 {
+        $steps: 3;
+    } @else if $steps > 12 {
+        $steps: 12;
+    }
+
+    /// Compute the background line to use
+    $backgroundline_computed : 'background-line-#{$steps}.png';
+    @if $backgroundline != 'background-line-6.png' {
+        $backgroundline_computed: $backgroundline;
+    }
+
+
+
+
+    ul {
+        @include background-image('application-process/_generic/#{$backgroundline_computed}');
+        background-size: 100% auto;
+        background-position: right 140px;
+        @media only screen and (max-width: $break-point-large) {
+            background: transparent;
+        }
+        li {
+
+            h4 {
+                &::before {
+                    color: $color;
+                }
+            }
+
+            /// Outputs the background image for each step
+            display:none;
+            $i: $steps;
+            @while $i > 0 {
+                &:nth-child(#{$i}) {
+                    display:inline-block;
+                    .image{
+                        @if $imagefolder == _generic {
+                            @include background-image('application-process/#{$imagefolder}/_default.png');
+                        } @else {
+                            @include background-image('application-process/#{$imagefolder}/#{$i}.png');
+                        }
+                    }
+                }
+                $i: $i - 1;
+            }
+        }
+    }
+
+
+}

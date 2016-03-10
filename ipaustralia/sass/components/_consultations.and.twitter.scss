@@ -7,7 +7,7 @@
     .panel-display {
         .panel-panel {
             width: 50%;
-            @media only screen and (max-width: $break-point-medium) {
+            @media only screen and (max-width: $break-point-medium + 250) {
                 width: 100%;
             } 
             .inside {
@@ -20,7 +20,7 @@
                 margin-left: 0px;
                 overflow: hidden;
 
-                @media only screen and (max-width: $break-point-medium) {
+                @media only screen and (max-width: $break-point-medium + 250) {
                     margin-right: 0px;
                 } 
                 .pane-title, h3 {
