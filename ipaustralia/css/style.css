@@ -1045,7 +1045,7 @@ header nav .nav-tabs {
       font-size: 16px;
       text-transform: uppercase;
       font-family: "montserratregular", sans-serif;
-      line-height: 16px;
+      line-height: 21px;
       float: right;
       margin-bottom: 70px; }
       header nav .nav-tabs .dropdown-menu .learn-more:after {
@@ -1721,7 +1721,7 @@ Applicaiton process on body
   font-size: 14px;
   text-transform: uppercase;
   font-family: "montserratregular", sans-serif;
-  line-height: 14px;
+  line-height: 19px;
   margin: 0 auto 80px;
   color: white; }
   .applicaiton-process-wrapper .button:after {
@@ -1857,7 +1857,7 @@ Applicaiton process on body
         font-size: 14px;
         text-transform: uppercase;
         font-family: "montserratregular", sans-serif;
-        line-height: 14px; }
+        line-height: 19px; }
         .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-first .field-name-field-link-more a:after {
           background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
           display: inline-block;
@@ -1985,7 +1985,7 @@ Applicaiton process on body
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px;
+    line-height: 19px;
     margin-top: 40px; }
     .front #block-bean-need-help-choosing-the-right-ip .field-items a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
@@ -2121,7 +2121,7 @@ Applicaiton process on body
         font-size: 14px;
         text-transform: uppercase;
         font-family: "montserratregular", sans-serif;
-        line-height: 14px;
+        line-height: 19px;
         border-color: white;
         cursor: pointer; }
         .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
@@ -2262,6 +2262,9 @@ Applicaiton process on body
     padding-bottom: 13px;
     margin-bottom: 14px;
     margin-right: -1px; }
+    @media only screen and (max-width: 1192px) {
+      .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li {
+        width: 33.3%; } }
     .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active {
       background: transparent url("../images/dwn-arrow-charcoal.png") center bottom no-repeat; }
       .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active a {
@@ -2361,11 +2364,13 @@ Applicaiton process on body
         overflow-y: hidden; }
         .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper #quicktabs-container-news_events_and_media .quicktabs-tabpage > section {
           width: 1200px; } }
-  .front #block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region {
-    width: 100%; }
-    .front #block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region .inside {
-      font: normal 20px "robotolight", sans-serif;
-      padding: 10px 0 30px 0; }
+  .front #block-panels-mini-news-and-community-homepage-pane .Top {
+    width: 97%; }
+    .front #block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region {
+      width: 100%; }
+      .front #block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+        font: normal 20px "robotolight", sans-serif;
+        padding: 10px 0 30px 0; }
   .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region {
     width: 100%; }
     .front #block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a {
@@ -2379,7 +2384,7 @@ Applicaiton process on body
       font-size: 14px;
       text-transform: uppercase;
       font-family: "montserratregular", sans-serif;
-      line-height: 14px;
+      line-height: 19px;
       border-color: #0d252c;
       margin-right: 27px;
       cursor: pointer; }
@@ -2607,6 +2612,9 @@ section#block-bean-about-us-landing-block {
         width: 141px;
         margin-bottom: 30px;
         margin-left: 2px; }
+      @media only screen and (max-width: 480px) {
+        section#block-bean-about-us-landing-block .panels-flexible-region-first h2, section#block-bean-about-us-landing-block .field-name-field-bean-body h2 {
+          font: normal 44px "montserratregular", sans-serif; } }
     section#block-bean-about-us-landing-block .panels-flexible-region-first .thick, section#block-bean-about-us-landing-block .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-about-us-landing-block .panels-flexible-region-first p, section#block-bean-about-us-landing-block .field-name-field-bean-body p {
@@ -2770,7 +2778,7 @@ section#block-bean-what-we-do-block {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px; }
+    line-height: 19px; }
     section#block-bean-what-we-do-block .panels-flexible-row-last a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -2888,7 +2896,7 @@ section#block-bean-careers-block {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px; }
+    line-height: 19px; }
     section#block-bean-careers-block .group-footer a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -3000,7 +3008,7 @@ section#block-bean-accountability-and-reporting {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px; }
+    line-height: 19px; }
     section#block-bean-accountability-and-reporting .group-footer a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -3072,6 +3080,9 @@ section#block-panels-mini-news-and-community-homepage-pane {
     padding-bottom: 13px;
     margin-bottom: 14px;
     margin-right: -1px; }
+    @media only screen and (max-width: 1192px) {
+      section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li {
+        width: 33.3%; } }
     section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active {
       background: transparent url("../images/dwn-arrow-charcoal.png") center bottom no-repeat; }
       section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs-tabs li.active a {
@@ -3171,11 +3182,13 @@ section#block-panels-mini-news-and-community-homepage-pane {
         overflow-y: hidden; }
         section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper #quicktabs-container-news_events_and_media .quicktabs-tabpage > section {
           width: 1200px; } }
-  section#block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region {
-    width: 100%; }
-    section#block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region .inside {
-      font: normal 20px "robotolight", sans-serif;
-      padding: 10px 0 30px 0; }
+  section#block-panels-mini-news-and-community-homepage-pane .Top {
+    width: 97%; }
+    section#block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region {
+      width: 100%; }
+      section#block-panels-mini-news-and-community-homepage-pane .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+        font: normal 20px "robotolight", sans-serif;
+        padding: 10px 0 30px 0; }
   section#block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region {
     width: 100%; }
     section#block-panels-mini-news-and-community-homepage-pane .panels-flexible-row-last .panels-flexible-row-inside .panels-flexible-region .inside a {
@@ -3189,7 +3202,7 @@ section#block-panels-mini-news-and-community-homepage-pane {
       font-size: 14px;
       text-transform: uppercase;
       font-family: "montserratregular", sans-serif;
-      line-height: 14px;
+      line-height: 19px;
       border-color: #0d252c;
       margin-right: 27px;
       cursor: pointer; }
@@ -3211,7 +3224,8 @@ section#block-panels-mini-news-and-community-homepage-pane {
     text-align: center;
     color: #0d252c; }
   section#block-panels-mini-news-and-community-homepage-pane p {
-    font-size: 1.3em;
+    /*font-size: 1.3em;*/
+    font-size: 20.8px;
     font-family: robotolight;
     color: #0d252c; }
   section#block-panels-mini-news-and-community-homepage-pane .views-field-body p {
@@ -3252,6 +3266,9 @@ section#block-bean-patents-landing-block-new {
         width: 141px;
         margin-bottom: 30px;
         margin-left: 2px; }
+      @media only screen and (max-width: 480px) {
+        section#block-bean-patents-landing-block-new .panels-flexible-region-first h2, section#block-bean-patents-landing-block-new .field-name-field-bean-body h2 {
+          font: normal 44px "montserratregular", sans-serif; } }
     section#block-bean-patents-landing-block-new .panels-flexible-region-first .thick, section#block-bean-patents-landing-block-new .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-patents-landing-block-new .panels-flexible-region-first p, section#block-bean-patents-landing-block-new .field-name-field-bean-body p {
@@ -3422,7 +3439,7 @@ section#block-bean-understanding-patents-block {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px; }
+    line-height: 19px; }
     section#block-bean-understanding-patents-block .group-footer a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -3532,7 +3549,7 @@ section#block-bean-managing-your-patent-block {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px; }
+    line-height: 19px; }
     section#block-bean-managing-your-patent-block .group-footer a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -3674,7 +3691,7 @@ section#block-bean-tools-and-resources {
           font-size: 14px;
           text-transform: uppercase;
           font-family: "montserratregular", sans-serif;
-          line-height: 14px;
+          line-height: 19px;
           border-color: white;
           cursor: pointer; }
           section#block-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
@@ -3842,6 +3859,9 @@ section#block-bean-trade-marks-landing-block-0 {
         width: 141px;
         margin-bottom: 30px;
         margin-left: 2px; }
+      @media only screen and (max-width: 480px) {
+        section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first h2, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body h2 {
+          font: normal 44px "montserratregular", sans-serif; } }
     section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first p, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body p {
@@ -4005,7 +4025,7 @@ section#block-bean-understanding-trade-marks-new {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px; }
+    line-height: 19px; }
     section#block-bean-understanding-trade-marks-new .panels-flexible-row-last a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -4122,7 +4142,7 @@ section#block-bean-managing-your-trade-mark-block {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px; }
+    line-height: 19px; }
     section#block-bean-managing-your-trade-mark-block .group-footer a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -4264,7 +4284,7 @@ section#block-bean-tools-and-resources-trade-mark {
           font-size: 14px;
           text-transform: uppercase;
           font-family: "montserratregular", sans-serif;
-          line-height: 14px;
+          line-height: 19px;
           border-color: white;
           cursor: pointer; }
           section#block-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
@@ -4432,6 +4452,9 @@ section#block-bean-designs-landing-block-0 {
         width: 141px;
         margin-bottom: 30px;
         margin-left: 2px; }
+      @media only screen and (max-width: 480px) {
+        section#block-bean-designs-landing-block-0 .panels-flexible-region-first h2, section#block-bean-designs-landing-block-0 .field-name-field-bean-body h2 {
+          font: normal 44px "montserratregular", sans-serif; } }
     section#block-bean-designs-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-designs-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-designs-landing-block-0 .panels-flexible-region-first p, section#block-bean-designs-landing-block-0 .field-name-field-bean-body p {
@@ -4602,7 +4625,7 @@ section#block-bean-understanding-designs-block {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px; }
+    line-height: 19px; }
     section#block-bean-understanding-designs-block .group-footer a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -4754,7 +4777,7 @@ section#block-bean-managing-your-design-block {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px; }
+    line-height: 19px; }
     section#block-bean-managing-your-design-block .group-footer a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -4896,7 +4919,7 @@ section#block-bean-tools-and-resources-designs {
           font-size: 14px;
           text-transform: uppercase;
           font-family: "montserratregular", sans-serif;
-          line-height: 14px;
+          line-height: 19px;
           border-color: white;
           cursor: pointer; }
           section#block-bean-tools-and-resources-designs .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
@@ -5048,6 +5071,9 @@ section#block-bean-pbr-landing-block-0 {
         width: 141px;
         margin-bottom: 30px;
         margin-left: 2px; }
+      @media only screen and (max-width: 480px) {
+        section#block-bean-pbr-landing-block-0 .panels-flexible-region-first h2, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body h2 {
+          font: normal 44px "montserratregular", sans-serif; } }
     section#block-bean-pbr-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-pbr-landing-block-0 .panels-flexible-region-first p, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body p {
@@ -5218,7 +5244,7 @@ section#block-bean-understanding-pbr {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px; }
+    line-height: 19px; }
     section#block-bean-understanding-pbr .group-footer a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -5370,7 +5396,7 @@ section#block-bean-managing-you-pbr-block {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px; }
+    line-height: 19px; }
     section#block-bean-managing-you-pbr-block .group-footer a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -5512,7 +5538,7 @@ section#block-bean-tools-and-resources-pbr {
           font-size: 14px;
           text-transform: uppercase;
           font-family: "montserratregular", sans-serif;
-          line-height: 14px;
+          line-height: 19px;
           border-color: white;
           cursor: pointer; }
           section#block-bean-tools-and-resources-pbr .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
@@ -5680,6 +5706,9 @@ section#block-bean-tools-and-resources-landing-bloc {
         width: 141px;
         margin-bottom: 30px;
         margin-left: 2px; }
+      @media only screen and (max-width: 480px) {
+        section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2 {
+          font: normal 44px "montserratregular", sans-serif; } }
     section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first .thick, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first p, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body p {
@@ -5736,6 +5765,9 @@ section#block-bean-tools-and-resources-landing-bloc {
 section#block-quicktabs-tools-and-resources {
   background: #eff0f2;
   margin-top: 150px; }
+  @media only screen and (max-width: 450px) {
+    section#block-quicktabs-tools-and-resources {
+      margin-top: 0px; } }
   section#block-quicktabs-tools-and-resources h2 {
     margin-bottom: 30px; }
   section#block-quicktabs-tools-and-resources .pane-title {
@@ -5756,6 +5788,15 @@ section#block-quicktabs-tools-and-resources {
     /*left:0px;*/
     /*right:0px;*/
     text-align: center; }
+    @media only screen and (max-width: 1200px) {
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs {
+        width: auto;
+        left: 0px;
+        right: 0px; } }
+    @media only screen and (max-width: 450px) {
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs {
+        position: relative;
+        margin-top: 0px; } }
     section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li {
       padding: 0px;
       margin: 0px 3px;
@@ -5763,6 +5804,21 @@ section#block-quicktabs-tools-and-resources {
       display: inline-block;
       text-align: left;
       float: left; }
+      @media only screen and (max-width: 1200px) {
+        section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li {
+          width: 19.4%; } }
+      @media only screen and (max-width: 1000px) {
+        section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li {
+          margin: 0px 1px;
+          width: 19.7%; } }
+      @media only screen and (max-width: 680px) {
+        section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li {
+          margin: 0px; } }
+      @media only screen and (max-width: 450px) {
+        section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li {
+          width: 100%; }
+          section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li.active, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:hover, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:focus, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:active {
+            padding-bottom: 0px !important; } }
       section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li a {
         background: white;
         display: block;
@@ -5782,6 +5838,27 @@ section#block-quicktabs-tools-and-resources {
           background-color: #fff;
           text-decoration: none;
           /*border-bottom-width: 8px;*/ }
+        @media only screen and (max-width: 1200px) {
+          section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li a {
+            background-position-x: -9999px !important;
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+            text-align: center; } }
+        @media only screen and (max-width: 1000px) {
+          section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li a {
+            padding-left: 2px !important;
+            padding-right: 2px !important; } }
+        @media only screen and (max-width: 680px) {
+          section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li a {
+            padding-top: 20px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important; } }
+        @media only screen and (max-width: 450px) {
+          section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li a {
+            padding-top: 25px !important;
+            background-position-x: 0px !important;
+            text-align: left;
+            padding-left: 70px !important; } }
       section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(1) a {
         border-color: #30aeb6;
         background: transparent url("../images/block-patent.png") left center no-repeat;
@@ -5850,8 +5927,17 @@ section#block-quicktabs-tools-and-resources {
         /*line-height: 17px;*/
         padding-top: 16px;
         padding-left: 64px; }
+        @media only screen and (max-width: 828px) {
+          section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4) a {
+            padding-top: 5px !important; } }
+        @media only screen and (max-width: 450px) {
+          section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4) a {
+            padding-top: 25px !important; } }
       section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4).active a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):hover a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):focus a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):active a {
         padding-top: 14px !important; }
+        @media only screen and (max-width: 828px) {
+          section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4).active a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):hover a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):focus a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):active a {
+            padding-top: 5px !important; } }
       section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5) a {
         border-color: #612166;
         background: transparent url("../images/icon.png") left center no-repeat;
@@ -5872,6 +5958,10 @@ section#block-quicktabs-tools-and-resources {
         background-image: none;
         padding-left: 0px;
         text-align: center; }
+        @media only screen and (max-width: 450px) {
+          section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5) a {
+            text-align: left !important;
+            /*padding-left: 0px !important;*/ } }
   section#block-quicktabs-tools-and-resources .pane-case-studies {
     padding: 55px 0px 75px; }
     @media only screen and (max-width: 640px) {
@@ -6069,7 +6159,7 @@ section#block-quicktabs-tools-and-resources {
             font-size: 14px;
             text-transform: uppercase;
             font-family: "montserratregular", sans-serif;
-            line-height: 14px;
+            line-height: 19px;
             border-color: white;
             cursor: pointer; }
             section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
@@ -6213,7 +6303,7 @@ section#block-quicktabs-tools-and-resources {
       font-size: 14px;
       text-transform: uppercase;
       font-family: "montserratregular", sans-serif;
-      line-height: 14px; }
+      line-height: 19px; }
       section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a:after {
         background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
         display: inline-block;
@@ -6430,7 +6520,7 @@ section#block-quicktabs-tools-and-resources {
             font-size: 14px;
             text-transform: uppercase;
             font-family: "montserratregular", sans-serif;
-            line-height: 14px;
+            line-height: 19px;
             border-color: white;
             cursor: pointer; }
             section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
@@ -6574,7 +6664,7 @@ section#block-quicktabs-tools-and-resources {
       font-size: 14px;
       text-transform: uppercase;
       font-family: "montserratregular", sans-serif;
-      line-height: 14px; }
+      line-height: 19px; }
       section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .panels-flexible-row-last a:after {
         background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
         display: inline-block;
@@ -6791,7 +6881,7 @@ section#block-quicktabs-tools-and-resources {
             font-size: 14px;
             text-transform: uppercase;
             font-family: "montserratregular", sans-serif;
-            line-height: 14px;
+            line-height: 19px;
             border-color: white;
             cursor: pointer; }
             section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
@@ -6935,7 +7025,7 @@ section#block-quicktabs-tools-and-resources {
       font-size: 14px;
       text-transform: uppercase;
       font-family: "montserratregular", sans-serif;
-      line-height: 14px; }
+      line-height: 19px; }
       section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .panels-flexible-row-last a:after {
         background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
         display: inline-block;
@@ -7152,7 +7242,7 @@ section#block-quicktabs-tools-and-resources {
             font-size: 14px;
             text-transform: uppercase;
             font-family: "montserratregular", sans-serif;
-            line-height: 14px;
+            line-height: 19px;
             border-color: white;
             cursor: pointer; }
             section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
@@ -7268,7 +7358,7 @@ section#block-quicktabs-tools-and-resources {
           background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
           cursor: pointer; } }
       section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
-        border-top: 4px solid #b6bec0;
+        border-top: 4px solid #f1ac1e;
         content: "";
         display: block;
         width: 100px;
@@ -7276,7 +7366,7 @@ section#block-quicktabs-tools-and-resources {
         @media only screen and (max-width: 640px) {
           section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
             margin: 5px 0 10px 2px;
-            border-top: 3px solid #b6bec0; } }
+            border-top: 3px solid #f1ac1e; } }
     @media only screen and (max-width: 640px) {
       section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
         background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
@@ -7296,7 +7386,7 @@ section#block-quicktabs-tools-and-resources {
       font-size: 14px;
       text-transform: uppercase;
       font-family: "montserratregular", sans-serif;
-      line-height: 14px; }
+      line-height: 19px; }
       section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .panels-flexible-row-last a:after {
         background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
         display: inline-block;
@@ -7513,7 +7603,7 @@ section#block-quicktabs-tools-and-resources {
             font-size: 14px;
             text-transform: uppercase;
             font-family: "montserratregular", sans-serif;
-            line-height: 14px;
+            line-height: 19px;
             border-color: white;
             cursor: pointer; }
             section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {

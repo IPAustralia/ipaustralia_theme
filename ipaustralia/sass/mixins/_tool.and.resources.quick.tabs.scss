@@ -12,6 +12,16 @@ The main tabs on the page
     /*left:0px;*/
     /*right:0px;*/
     text-align: center;
+
+    @media only screen and (max-width: 1200px) {
+        width:auto;
+        left:0px; 
+        right:0px;
+    }
+    @media only screen and (max-width: 450px) {
+        position: relative;
+        margin-top: 0px;
+    }
     li {
         padding:0px;
         margin:0px 3px;
@@ -19,6 +29,22 @@ The main tabs on the page
         display: inline-block;
         text-align: left;
         float: left;
+        @media only screen and (max-width: 1200px) {
+            width:19.4%;
+        }
+        @media only screen and (max-width: 1000px) {
+            margin:0px 1px;
+            width:19.7%;
+        }
+        @media only screen and (max-width: 680px) {
+            margin:0px;
+        }
+        @media only screen and (max-width: 450px) {
+            width: 100%;
+            &.active, &:hover, &:focus, &:active{
+                padding-bottom: 0px !important;
+            }
+        }
         a {
             background: white;
             display: block;
@@ -39,6 +65,28 @@ The main tabs on the page
                 text-decoration: none;
                 /*border-bottom-width: 8px;*/
             }
+            @media only screen and (max-width: 1200px) {
+                background-position-x: -9999px !important;
+                padding-left: 5px !important;
+                padding-right: 5px !important;
+                text-align: center;
+            }
+            @media only screen and (max-width: 1000px) {
+                padding-left: 2px !important;
+                padding-right: 2px !important;
+            }
+            @media only screen and (max-width: 680px) {
+                padding-top: 20px !important;
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+            @media only screen and (max-width: 450px) {
+                padding-top: 25px !important;
+                background-position-x: 0px !important;
+                text-align: left;
+                padding-left: 70px !important;
+            }
+
 
         }
         &:nth-child(1) {
@@ -56,11 +104,20 @@ The main tabs on the page
                 /*line-height: 17px;*/
                 padding-top: 16px;
                 padding-left: 64px;
+                @media only screen and (max-width: 828px) {
+                    padding-top: 5px !important;
+                }
+                @media only screen and (max-width: 450px) {
+                    padding-top: 25px !important;
+                }
 
             }
             &.active, &:hover, &:focus, &:active{
                 a {
                     padding-top: 14px !important;
+                    @media only screen and (max-width: 828px) {
+                        padding-top: 5px !important;
+                    }
                 }
             }
         }
@@ -70,6 +127,10 @@ The main tabs on the page
                 background-image: none;
                 padding-left: 0px;
                 text-align: center;
+                @media only screen and (max-width: 450px) {
+                    text-align: left !important;
+                    /*padding-left: 0px !important;*/
+                }
             }
         }
     }

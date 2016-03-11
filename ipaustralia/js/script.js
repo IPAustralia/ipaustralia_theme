@@ -56,6 +56,11 @@ jQuery(document).on('click', '.bp-midsmall .panels-flexible-region h4', function
     openCloseGroups(jQuery(this));
 });
 jQuery(document).on('mouseup', 'section#block-quicktabs-tools-and-resources .quicktabs-style-nostyle a', function () {
+    //using mouse up since click is already used and prevented for element
+    
+    jQuery(this).parent('li').siblings('li').removeClass('active');
+    jQuery(this).parent('li').addClass('active');
+    
     var $active_page = "#" + jQuery(this).attr('id').replace("-tab-", "-tabpage-");
     jQuery('section#block-quicktabs-tools-and-resources .quicktabs-tabpage').hide();
     jQuery($active_page).show();

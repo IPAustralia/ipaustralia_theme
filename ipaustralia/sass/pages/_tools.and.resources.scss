@@ -68,6 +68,9 @@ section#block-bean-tools-and-resources-landing-bloc {
 section#block-quicktabs-tools-and-resources{
     background: $lighter-grey;
     margin-top:150px;
+    @media only screen and (max-width: 450px) {
+        margin-top:0px;
+    }
     h2 {
         margin-bottom: $gap-small;
     }
@@ -130,7 +133,7 @@ section#block-quicktabs-tools-and-resources{
 
     /// PBR
     .pane-bean-tools-and-resources-pbr {@include block_keytools($color:$yellow)}
-    .pane-bean-pbr-faqs {@include block_faq()}
+    .pane-bean-pbr-faqs {@include block_faq($yellow)}
     .pane-forms-and-publications-pbr-panel {@include block_forms_publication($yellow)}
     #quicktabs-tabpage-tools_and_resources-3 {
         .pane-case-studies {
