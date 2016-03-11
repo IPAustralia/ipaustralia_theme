@@ -1645,7 +1645,7 @@ Applicaiton process on body
   .applicaiton-process-wrapper ul li {
     width: 350px;
     cursor: pointer;
-    padding: 30px 45px 100px;
+    padding: 30px 45px 54px;
     display: inline-block;
     counter-increment: process-counter;
     margin: 20px 0px; }
@@ -1679,7 +1679,19 @@ Applicaiton process on body
       transition: all 0.2s ease-in-out; }
     .applicaiton-process-wrapper ul li h4 {
       /*font-size: 28px;*/
-      color: #0d252c; }
+      color: #0d252c;
+      height: 89px;
+      overflow: hidden; }
+      @media only screen and (max-width: 1192px) {
+        .applicaiton-process-wrapper ul li h4 {
+          height: 65px;
+          white-space: nowrap;
+          text-overflow: ellipsis; } }
+      @media only screen and (max-width: 992px) {
+        .applicaiton-process-wrapper ul li h4 {
+          height: 89px;
+          white-space: normal;
+          line-height: 1em; } }
       .applicaiton-process-wrapper ul li h4::before {
         font-size: 36px;
         font-weight: 600;
@@ -1687,6 +1699,15 @@ Applicaiton process on body
         content: counter(process-counter);
         margin-bottom: 10px;
         /*color: $mint;*/ }
+    .applicaiton-process-wrapper ul li .breif-description {
+      height: 90px;
+      overflow: hidden; }
+      @media only screen and (max-width: 1192px) {
+        .applicaiton-process-wrapper ul li .breif-description {
+          height: 45px; } }
+      @media only screen and (max-width: 992px) {
+        .applicaiton-process-wrapper ul li .breif-description {
+          height: 90px; } }
     .applicaiton-process-wrapper ul li a {
       display: inline-block;
       margin-top: 15px;
@@ -1706,7 +1727,7 @@ Applicaiton process on body
       background-position: -100px 116px;
       background-repeat: no-repeat; }
   .applicaiton-process-wrapper ul.slick-slider .slick-arrow {
-    margin-top: -94px;
+    margin-top: -111px;
     z-index: 100; }
     @media only screen and (max-width: 892px) {
       .applicaiton-process-wrapper ul.slick-slider .slick-arrow {
@@ -2805,11 +2826,20 @@ section#block-bean-careers-block {
   @media only screen and (max-width: 640px) {
     section#block-bean-careers-block {
       padding: 40px 0px 60px; } }
+  section#block-bean-careers-block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-careers-block ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
   section#block-bean-careers-block .group-header {
     margin-bottom: 30px; }
     section#block-bean-careers-block .group-header br {
       display: none; }
-    section#block-bean-careers-block .group-header h2 {
+    section#block-bean-careers-block .group-header h2, section#block-bean-careers-block .group-header h3 {
       margin-bottom: 30px;
       text-align: center;
       color: #fff; }
@@ -2849,26 +2879,26 @@ section#block-bean-careers-block {
     @media only screen and (max-width: 640px) {
       section#block-bean-careers-block .group-left .media-element-container, section#block-bean-careers-block .group-middle .media-element-container, section#block-bean-careers-block .group-right .media-element-container {
         display: none; } }
-  section#block-bean-careers-block .group-left h4, section#block-bean-careers-block .group-middle h4, section#block-bean-careers-block .group-right h4 {
+  section#block-bean-careers-block .group-left h3, section#block-bean-careers-block .group-left h4, section#block-bean-careers-block .group-middle h3, section#block-bean-careers-block .group-middle h4, section#block-bean-careers-block .group-right h3, section#block-bean-careers-block .group-right h4 {
     font-size: 22px;
     margin: 0px;
     font-weight: bold;
     text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-careers-block .group-left h4, section#block-bean-careers-block .group-middle h4, section#block-bean-careers-block .group-right h4 {
+      section#block-bean-careers-block .group-left h3, section#block-bean-careers-block .group-left h4, section#block-bean-careers-block .group-middle h3, section#block-bean-careers-block .group-middle h4, section#block-bean-careers-block .group-right h3, section#block-bean-careers-block .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-careers-block .group-left h4:after, section#block-bean-careers-block .group-middle h4:after, section#block-bean-careers-block .group-right h4:after {
+    section#block-bean-careers-block .group-left h3:after, section#block-bean-careers-block .group-left h4:after, section#block-bean-careers-block .group-middle h3:after, section#block-bean-careers-block .group-middle h4:after, section#block-bean-careers-block .group-right h3:after, section#block-bean-careers-block .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-careers-block .group-left h4:after, section#block-bean-careers-block .group-middle h4:after, section#block-bean-careers-block .group-right h4:after {
+        section#block-bean-careers-block .group-left h3:after, section#block-bean-careers-block .group-left h4:after, section#block-bean-careers-block .group-middle h3:after, section#block-bean-careers-block .group-middle h4:after, section#block-bean-careers-block .group-right h3:after, section#block-bean-careers-block .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-careers-block .group-left .open h4, section#block-bean-careers-block .group-middle .open h4, section#block-bean-careers-block .group-right .open h4 {
@@ -2917,11 +2947,20 @@ section#block-bean-accountability-and-reporting {
   @media only screen and (max-width: 640px) {
     section#block-bean-accountability-and-reporting {
       padding: 40px 0px 60px; } }
+  section#block-bean-accountability-and-reporting ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-accountability-and-reporting ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
   section#block-bean-accountability-and-reporting .group-header {
     margin-bottom: 30px; }
     section#block-bean-accountability-and-reporting .group-header br {
       display: none; }
-    section#block-bean-accountability-and-reporting .group-header h2 {
+    section#block-bean-accountability-and-reporting .group-header h2, section#block-bean-accountability-and-reporting .group-header h3 {
       margin-bottom: 30px;
       text-align: center;
       color: #fff; }
@@ -2961,26 +3000,26 @@ section#block-bean-accountability-and-reporting {
     @media only screen and (max-width: 640px) {
       section#block-bean-accountability-and-reporting .group-left .media-element-container, section#block-bean-accountability-and-reporting .group-middle .media-element-container, section#block-bean-accountability-and-reporting .group-right .media-element-container {
         display: none; } }
-  section#block-bean-accountability-and-reporting .group-left h4, section#block-bean-accountability-and-reporting .group-middle h4, section#block-bean-accountability-and-reporting .group-right h4 {
+  section#block-bean-accountability-and-reporting .group-left h3, section#block-bean-accountability-and-reporting .group-left h4, section#block-bean-accountability-and-reporting .group-middle h3, section#block-bean-accountability-and-reporting .group-middle h4, section#block-bean-accountability-and-reporting .group-right h3, section#block-bean-accountability-and-reporting .group-right h4 {
     font-size: 22px;
     margin: 0px;
     font-weight: bold;
     text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-accountability-and-reporting .group-left h4, section#block-bean-accountability-and-reporting .group-middle h4, section#block-bean-accountability-and-reporting .group-right h4 {
+      section#block-bean-accountability-and-reporting .group-left h3, section#block-bean-accountability-and-reporting .group-left h4, section#block-bean-accountability-and-reporting .group-middle h3, section#block-bean-accountability-and-reporting .group-middle h4, section#block-bean-accountability-and-reporting .group-right h3, section#block-bean-accountability-and-reporting .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-accountability-and-reporting .group-left h4:after, section#block-bean-accountability-and-reporting .group-middle h4:after, section#block-bean-accountability-and-reporting .group-right h4:after {
+    section#block-bean-accountability-and-reporting .group-left h3:after, section#block-bean-accountability-and-reporting .group-left h4:after, section#block-bean-accountability-and-reporting .group-middle h3:after, section#block-bean-accountability-and-reporting .group-middle h4:after, section#block-bean-accountability-and-reporting .group-right h3:after, section#block-bean-accountability-and-reporting .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-accountability-and-reporting .group-left h4:after, section#block-bean-accountability-and-reporting .group-middle h4:after, section#block-bean-accountability-and-reporting .group-right h4:after {
+        section#block-bean-accountability-and-reporting .group-left h3:after, section#block-bean-accountability-and-reporting .group-left h4:after, section#block-bean-accountability-and-reporting .group-middle h3:after, section#block-bean-accountability-and-reporting .group-middle h4:after, section#block-bean-accountability-and-reporting .group-right h3:after, section#block-bean-accountability-and-reporting .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-accountability-and-reporting .group-left .open h4, section#block-bean-accountability-and-reporting .group-middle .open h4, section#block-bean-accountability-and-reporting .group-right .open h4 {
@@ -3348,11 +3387,20 @@ section#block-bean-understanding-patents-block {
   @media only screen and (max-width: 640px) {
     section#block-bean-understanding-patents-block {
       padding: 40px 0px 60px; } }
+  section#block-bean-understanding-patents-block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-understanding-patents-block ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
   section#block-bean-understanding-patents-block .group-header {
     margin-bottom: 30px; }
     section#block-bean-understanding-patents-block .group-header br {
       display: none; }
-    section#block-bean-understanding-patents-block .group-header h2 {
+    section#block-bean-understanding-patents-block .group-header h2, section#block-bean-understanding-patents-block .group-header h3 {
       margin-bottom: 30px;
       text-align: center;
       color: #0d252c; }
@@ -3392,26 +3440,26 @@ section#block-bean-understanding-patents-block {
     @media only screen and (max-width: 640px) {
       section#block-bean-understanding-patents-block .group-left .media-element-container, section#block-bean-understanding-patents-block .group-middle .media-element-container, section#block-bean-understanding-patents-block .group-right .media-element-container {
         display: none; } }
-  section#block-bean-understanding-patents-block .group-left h4, section#block-bean-understanding-patents-block .group-middle h4, section#block-bean-understanding-patents-block .group-right h4 {
+  section#block-bean-understanding-patents-block .group-left h3, section#block-bean-understanding-patents-block .group-left h4, section#block-bean-understanding-patents-block .group-middle h3, section#block-bean-understanding-patents-block .group-middle h4, section#block-bean-understanding-patents-block .group-right h3, section#block-bean-understanding-patents-block .group-right h4 {
     font-size: 22px;
     margin: 0px;
     font-weight: bold;
     text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-understanding-patents-block .group-left h4, section#block-bean-understanding-patents-block .group-middle h4, section#block-bean-understanding-patents-block .group-right h4 {
+      section#block-bean-understanding-patents-block .group-left h3, section#block-bean-understanding-patents-block .group-left h4, section#block-bean-understanding-patents-block .group-middle h3, section#block-bean-understanding-patents-block .group-middle h4, section#block-bean-understanding-patents-block .group-right h3, section#block-bean-understanding-patents-block .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-understanding-patents-block .group-left h4:after, section#block-bean-understanding-patents-block .group-middle h4:after, section#block-bean-understanding-patents-block .group-right h4:after {
+    section#block-bean-understanding-patents-block .group-left h3:after, section#block-bean-understanding-patents-block .group-left h4:after, section#block-bean-understanding-patents-block .group-middle h3:after, section#block-bean-understanding-patents-block .group-middle h4:after, section#block-bean-understanding-patents-block .group-right h3:after, section#block-bean-understanding-patents-block .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-understanding-patents-block .group-left h4:after, section#block-bean-understanding-patents-block .group-middle h4:after, section#block-bean-understanding-patents-block .group-right h4:after {
+        section#block-bean-understanding-patents-block .group-left h3:after, section#block-bean-understanding-patents-block .group-left h4:after, section#block-bean-understanding-patents-block .group-middle h3:after, section#block-bean-understanding-patents-block .group-middle h4:after, section#block-bean-understanding-patents-block .group-right h3:after, section#block-bean-understanding-patents-block .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-understanding-patents-block .group-left .open h4, section#block-bean-understanding-patents-block .group-middle .open h4, section#block-bean-understanding-patents-block .group-right .open h4 {
@@ -3458,11 +3506,20 @@ section#block-bean-managing-your-patent-block {
   @media only screen and (max-width: 640px) {
     section#block-bean-managing-your-patent-block {
       padding: 40px 0px 60px; } }
+  section#block-bean-managing-your-patent-block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-managing-your-patent-block ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
   section#block-bean-managing-your-patent-block .group-header {
     margin-bottom: 30px; }
     section#block-bean-managing-your-patent-block .group-header br {
       display: none; }
-    section#block-bean-managing-your-patent-block .group-header h2 {
+    section#block-bean-managing-your-patent-block .group-header h2, section#block-bean-managing-your-patent-block .group-header h3 {
       margin-bottom: 30px;
       text-align: center;
       color: #0d252c; }
@@ -3502,26 +3559,26 @@ section#block-bean-managing-your-patent-block {
     @media only screen and (max-width: 640px) {
       section#block-bean-managing-your-patent-block .group-left .media-element-container, section#block-bean-managing-your-patent-block .group-middle .media-element-container, section#block-bean-managing-your-patent-block .group-right .media-element-container {
         display: none; } }
-  section#block-bean-managing-your-patent-block .group-left h4, section#block-bean-managing-your-patent-block .group-middle h4, section#block-bean-managing-your-patent-block .group-right h4 {
+  section#block-bean-managing-your-patent-block .group-left h3, section#block-bean-managing-your-patent-block .group-left h4, section#block-bean-managing-your-patent-block .group-middle h3, section#block-bean-managing-your-patent-block .group-middle h4, section#block-bean-managing-your-patent-block .group-right h3, section#block-bean-managing-your-patent-block .group-right h4 {
     font-size: 22px;
     margin: 0px;
     font-weight: bold;
     text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-managing-your-patent-block .group-left h4, section#block-bean-managing-your-patent-block .group-middle h4, section#block-bean-managing-your-patent-block .group-right h4 {
+      section#block-bean-managing-your-patent-block .group-left h3, section#block-bean-managing-your-patent-block .group-left h4, section#block-bean-managing-your-patent-block .group-middle h3, section#block-bean-managing-your-patent-block .group-middle h4, section#block-bean-managing-your-patent-block .group-right h3, section#block-bean-managing-your-patent-block .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #eff0f2 url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-managing-your-patent-block .group-left h4:after, section#block-bean-managing-your-patent-block .group-middle h4:after, section#block-bean-managing-your-patent-block .group-right h4:after {
+    section#block-bean-managing-your-patent-block .group-left h3:after, section#block-bean-managing-your-patent-block .group-left h4:after, section#block-bean-managing-your-patent-block .group-middle h3:after, section#block-bean-managing-your-patent-block .group-middle h4:after, section#block-bean-managing-your-patent-block .group-right h3:after, section#block-bean-managing-your-patent-block .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-managing-your-patent-block .group-left h4:after, section#block-bean-managing-your-patent-block .group-middle h4:after, section#block-bean-managing-your-patent-block .group-right h4:after {
+        section#block-bean-managing-your-patent-block .group-left h3:after, section#block-bean-managing-your-patent-block .group-left h4:after, section#block-bean-managing-your-patent-block .group-middle h3:after, section#block-bean-managing-your-patent-block .group-middle h4:after, section#block-bean-managing-your-patent-block .group-right h3:after, section#block-bean-managing-your-patent-block .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-managing-your-patent-block .group-left .open h4, section#block-bean-managing-your-patent-block .group-middle .open h4, section#block-bean-managing-your-patent-block .group-right .open h4 {
@@ -4051,11 +4108,20 @@ section#block-bean-managing-your-trade-mark-block {
   @media only screen and (max-width: 640px) {
     section#block-bean-managing-your-trade-mark-block {
       padding: 40px 0px 60px; } }
+  section#block-bean-managing-your-trade-mark-block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-managing-your-trade-mark-block ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
   section#block-bean-managing-your-trade-mark-block .group-header {
     margin-bottom: 30px; }
     section#block-bean-managing-your-trade-mark-block .group-header br {
       display: none; }
-    section#block-bean-managing-your-trade-mark-block .group-header h2 {
+    section#block-bean-managing-your-trade-mark-block .group-header h2, section#block-bean-managing-your-trade-mark-block .group-header h3 {
       margin-bottom: 30px;
       text-align: center;
       color: #0d252c; }
@@ -4095,26 +4161,26 @@ section#block-bean-managing-your-trade-mark-block {
     @media only screen and (max-width: 640px) {
       section#block-bean-managing-your-trade-mark-block .group-left .media-element-container, section#block-bean-managing-your-trade-mark-block .group-middle .media-element-container, section#block-bean-managing-your-trade-mark-block .group-right .media-element-container {
         display: none; } }
-  section#block-bean-managing-your-trade-mark-block .group-left h4, section#block-bean-managing-your-trade-mark-block .group-middle h4, section#block-bean-managing-your-trade-mark-block .group-right h4 {
+  section#block-bean-managing-your-trade-mark-block .group-left h3, section#block-bean-managing-your-trade-mark-block .group-left h4, section#block-bean-managing-your-trade-mark-block .group-middle h3, section#block-bean-managing-your-trade-mark-block .group-middle h4, section#block-bean-managing-your-trade-mark-block .group-right h3, section#block-bean-managing-your-trade-mark-block .group-right h4 {
     font-size: 22px;
     margin: 0px;
     font-weight: bold;
     text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-managing-your-trade-mark-block .group-left h4, section#block-bean-managing-your-trade-mark-block .group-middle h4, section#block-bean-managing-your-trade-mark-block .group-right h4 {
+      section#block-bean-managing-your-trade-mark-block .group-left h3, section#block-bean-managing-your-trade-mark-block .group-left h4, section#block-bean-managing-your-trade-mark-block .group-middle h3, section#block-bean-managing-your-trade-mark-block .group-middle h4, section#block-bean-managing-your-trade-mark-block .group-right h3, section#block-bean-managing-your-trade-mark-block .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #eff0f2 url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-managing-your-trade-mark-block .group-left h4:after, section#block-bean-managing-your-trade-mark-block .group-middle h4:after, section#block-bean-managing-your-trade-mark-block .group-right h4:after {
+    section#block-bean-managing-your-trade-mark-block .group-left h3:after, section#block-bean-managing-your-trade-mark-block .group-left h4:after, section#block-bean-managing-your-trade-mark-block .group-middle h3:after, section#block-bean-managing-your-trade-mark-block .group-middle h4:after, section#block-bean-managing-your-trade-mark-block .group-right h3:after, section#block-bean-managing-your-trade-mark-block .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-managing-your-trade-mark-block .group-left h4:after, section#block-bean-managing-your-trade-mark-block .group-middle h4:after, section#block-bean-managing-your-trade-mark-block .group-right h4:after {
+        section#block-bean-managing-your-trade-mark-block .group-left h3:after, section#block-bean-managing-your-trade-mark-block .group-left h4:after, section#block-bean-managing-your-trade-mark-block .group-middle h3:after, section#block-bean-managing-your-trade-mark-block .group-middle h4:after, section#block-bean-managing-your-trade-mark-block .group-right h3:after, section#block-bean-managing-your-trade-mark-block .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-managing-your-trade-mark-block .group-left .open h4, section#block-bean-managing-your-trade-mark-block .group-middle .open h4, section#block-bean-managing-your-trade-mark-block .group-right .open h4 {
@@ -4534,11 +4600,20 @@ section#block-bean-understanding-designs-block {
   @media only screen and (max-width: 640px) {
     section#block-bean-understanding-designs-block {
       padding: 40px 0px 60px; } }
+  section#block-bean-understanding-designs-block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-understanding-designs-block ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
   section#block-bean-understanding-designs-block .group-header {
     margin-bottom: 30px; }
     section#block-bean-understanding-designs-block .group-header br {
       display: none; }
-    section#block-bean-understanding-designs-block .group-header h2 {
+    section#block-bean-understanding-designs-block .group-header h2, section#block-bean-understanding-designs-block .group-header h3 {
       margin-bottom: 30px;
       text-align: center;
       color: #0d252c; }
@@ -4578,26 +4653,26 @@ section#block-bean-understanding-designs-block {
     @media only screen and (max-width: 640px) {
       section#block-bean-understanding-designs-block .group-left .media-element-container, section#block-bean-understanding-designs-block .group-middle .media-element-container, section#block-bean-understanding-designs-block .group-right .media-element-container {
         display: none; } }
-  section#block-bean-understanding-designs-block .group-left h4, section#block-bean-understanding-designs-block .group-middle h4, section#block-bean-understanding-designs-block .group-right h4 {
+  section#block-bean-understanding-designs-block .group-left h3, section#block-bean-understanding-designs-block .group-left h4, section#block-bean-understanding-designs-block .group-middle h3, section#block-bean-understanding-designs-block .group-middle h4, section#block-bean-understanding-designs-block .group-right h3, section#block-bean-understanding-designs-block .group-right h4 {
     font-size: 22px;
     margin: 0px;
     font-weight: bold;
     text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-understanding-designs-block .group-left h4, section#block-bean-understanding-designs-block .group-middle h4, section#block-bean-understanding-designs-block .group-right h4 {
+      section#block-bean-understanding-designs-block .group-left h3, section#block-bean-understanding-designs-block .group-left h4, section#block-bean-understanding-designs-block .group-middle h3, section#block-bean-understanding-designs-block .group-middle h4, section#block-bean-understanding-designs-block .group-right h3, section#block-bean-understanding-designs-block .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-understanding-designs-block .group-left h4:after, section#block-bean-understanding-designs-block .group-middle h4:after, section#block-bean-understanding-designs-block .group-right h4:after {
+    section#block-bean-understanding-designs-block .group-left h3:after, section#block-bean-understanding-designs-block .group-left h4:after, section#block-bean-understanding-designs-block .group-middle h3:after, section#block-bean-understanding-designs-block .group-middle h4:after, section#block-bean-understanding-designs-block .group-right h3:after, section#block-bean-understanding-designs-block .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-understanding-designs-block .group-left h4:after, section#block-bean-understanding-designs-block .group-middle h4:after, section#block-bean-understanding-designs-block .group-right h4:after {
+        section#block-bean-understanding-designs-block .group-left h3:after, section#block-bean-understanding-designs-block .group-left h4:after, section#block-bean-understanding-designs-block .group-middle h3:after, section#block-bean-understanding-designs-block .group-middle h4:after, section#block-bean-understanding-designs-block .group-right h3:after, section#block-bean-understanding-designs-block .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-understanding-designs-block .group-left .open h4, section#block-bean-understanding-designs-block .group-middle .open h4, section#block-bean-understanding-designs-block .group-right .open h4 {
@@ -4686,11 +4761,20 @@ section#block-bean-managing-your-design-block {
   @media only screen and (max-width: 640px) {
     section#block-bean-managing-your-design-block {
       padding: 40px 0px 60px; } }
+  section#block-bean-managing-your-design-block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-managing-your-design-block ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
   section#block-bean-managing-your-design-block .group-header {
     margin-bottom: 30px; }
     section#block-bean-managing-your-design-block .group-header br {
       display: none; }
-    section#block-bean-managing-your-design-block .group-header h2 {
+    section#block-bean-managing-your-design-block .group-header h2, section#block-bean-managing-your-design-block .group-header h3 {
       margin-bottom: 30px;
       text-align: center;
       color: #0d252c; }
@@ -4730,26 +4814,26 @@ section#block-bean-managing-your-design-block {
     @media only screen and (max-width: 640px) {
       section#block-bean-managing-your-design-block .group-left .media-element-container, section#block-bean-managing-your-design-block .group-middle .media-element-container, section#block-bean-managing-your-design-block .group-right .media-element-container {
         display: none; } }
-  section#block-bean-managing-your-design-block .group-left h4, section#block-bean-managing-your-design-block .group-middle h4, section#block-bean-managing-your-design-block .group-right h4 {
+  section#block-bean-managing-your-design-block .group-left h3, section#block-bean-managing-your-design-block .group-left h4, section#block-bean-managing-your-design-block .group-middle h3, section#block-bean-managing-your-design-block .group-middle h4, section#block-bean-managing-your-design-block .group-right h3, section#block-bean-managing-your-design-block .group-right h4 {
     font-size: 22px;
     margin: 0px;
     font-weight: bold;
     text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-managing-your-design-block .group-left h4, section#block-bean-managing-your-design-block .group-middle h4, section#block-bean-managing-your-design-block .group-right h4 {
+      section#block-bean-managing-your-design-block .group-left h3, section#block-bean-managing-your-design-block .group-left h4, section#block-bean-managing-your-design-block .group-middle h3, section#block-bean-managing-your-design-block .group-middle h4, section#block-bean-managing-your-design-block .group-right h3, section#block-bean-managing-your-design-block .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #eff0f2 url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-managing-your-design-block .group-left h4:after, section#block-bean-managing-your-design-block .group-middle h4:after, section#block-bean-managing-your-design-block .group-right h4:after {
+    section#block-bean-managing-your-design-block .group-left h3:after, section#block-bean-managing-your-design-block .group-left h4:after, section#block-bean-managing-your-design-block .group-middle h3:after, section#block-bean-managing-your-design-block .group-middle h4:after, section#block-bean-managing-your-design-block .group-right h3:after, section#block-bean-managing-your-design-block .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-managing-your-design-block .group-left h4:after, section#block-bean-managing-your-design-block .group-middle h4:after, section#block-bean-managing-your-design-block .group-right h4:after {
+        section#block-bean-managing-your-design-block .group-left h3:after, section#block-bean-managing-your-design-block .group-left h4:after, section#block-bean-managing-your-design-block .group-middle h3:after, section#block-bean-managing-your-design-block .group-middle h4:after, section#block-bean-managing-your-design-block .group-right h3:after, section#block-bean-managing-your-design-block .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-managing-your-design-block .group-left .open h4, section#block-bean-managing-your-design-block .group-middle .open h4, section#block-bean-managing-your-design-block .group-right .open h4 {
@@ -5153,11 +5237,20 @@ section#block-bean-understanding-pbr {
   @media only screen and (max-width: 640px) {
     section#block-bean-understanding-pbr {
       padding: 40px 0px 60px; } }
+  section#block-bean-understanding-pbr ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-understanding-pbr ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
   section#block-bean-understanding-pbr .group-header {
     margin-bottom: 30px; }
     section#block-bean-understanding-pbr .group-header br {
       display: none; }
-    section#block-bean-understanding-pbr .group-header h2 {
+    section#block-bean-understanding-pbr .group-header h2, section#block-bean-understanding-pbr .group-header h3 {
       margin-bottom: 30px;
       text-align: center;
       color: #0d252c; }
@@ -5197,26 +5290,26 @@ section#block-bean-understanding-pbr {
     @media only screen and (max-width: 640px) {
       section#block-bean-understanding-pbr .group-left .media-element-container, section#block-bean-understanding-pbr .group-middle .media-element-container, section#block-bean-understanding-pbr .group-right .media-element-container {
         display: none; } }
-  section#block-bean-understanding-pbr .group-left h4, section#block-bean-understanding-pbr .group-middle h4, section#block-bean-understanding-pbr .group-right h4 {
+  section#block-bean-understanding-pbr .group-left h3, section#block-bean-understanding-pbr .group-left h4, section#block-bean-understanding-pbr .group-middle h3, section#block-bean-understanding-pbr .group-middle h4, section#block-bean-understanding-pbr .group-right h3, section#block-bean-understanding-pbr .group-right h4 {
     font-size: 22px;
     margin: 0px;
     font-weight: bold;
     text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-understanding-pbr .group-left h4, section#block-bean-understanding-pbr .group-middle h4, section#block-bean-understanding-pbr .group-right h4 {
+      section#block-bean-understanding-pbr .group-left h3, section#block-bean-understanding-pbr .group-left h4, section#block-bean-understanding-pbr .group-middle h3, section#block-bean-understanding-pbr .group-middle h4, section#block-bean-understanding-pbr .group-right h3, section#block-bean-understanding-pbr .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-understanding-pbr .group-left h4:after, section#block-bean-understanding-pbr .group-middle h4:after, section#block-bean-understanding-pbr .group-right h4:after {
+    section#block-bean-understanding-pbr .group-left h3:after, section#block-bean-understanding-pbr .group-left h4:after, section#block-bean-understanding-pbr .group-middle h3:after, section#block-bean-understanding-pbr .group-middle h4:after, section#block-bean-understanding-pbr .group-right h3:after, section#block-bean-understanding-pbr .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-understanding-pbr .group-left h4:after, section#block-bean-understanding-pbr .group-middle h4:after, section#block-bean-understanding-pbr .group-right h4:after {
+        section#block-bean-understanding-pbr .group-left h3:after, section#block-bean-understanding-pbr .group-left h4:after, section#block-bean-understanding-pbr .group-middle h3:after, section#block-bean-understanding-pbr .group-middle h4:after, section#block-bean-understanding-pbr .group-right h3:after, section#block-bean-understanding-pbr .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-understanding-pbr .group-left .open h4, section#block-bean-understanding-pbr .group-middle .open h4, section#block-bean-understanding-pbr .group-right .open h4 {
@@ -5305,11 +5398,20 @@ section#block-bean-managing-you-pbr-block {
   @media only screen and (max-width: 640px) {
     section#block-bean-managing-you-pbr-block {
       padding: 40px 0px 60px; } }
+  section#block-bean-managing-you-pbr-block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-managing-you-pbr-block ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
   section#block-bean-managing-you-pbr-block .group-header {
     margin-bottom: 30px; }
     section#block-bean-managing-you-pbr-block .group-header br {
       display: none; }
-    section#block-bean-managing-you-pbr-block .group-header h2 {
+    section#block-bean-managing-you-pbr-block .group-header h2, section#block-bean-managing-you-pbr-block .group-header h3 {
       margin-bottom: 30px;
       text-align: center;
       color: #0d252c; }
@@ -5349,26 +5451,26 @@ section#block-bean-managing-you-pbr-block {
     @media only screen and (max-width: 640px) {
       section#block-bean-managing-you-pbr-block .group-left .media-element-container, section#block-bean-managing-you-pbr-block .group-middle .media-element-container, section#block-bean-managing-you-pbr-block .group-right .media-element-container {
         display: none; } }
-  section#block-bean-managing-you-pbr-block .group-left h4, section#block-bean-managing-you-pbr-block .group-middle h4, section#block-bean-managing-you-pbr-block .group-right h4 {
+  section#block-bean-managing-you-pbr-block .group-left h3, section#block-bean-managing-you-pbr-block .group-left h4, section#block-bean-managing-you-pbr-block .group-middle h3, section#block-bean-managing-you-pbr-block .group-middle h4, section#block-bean-managing-you-pbr-block .group-right h3, section#block-bean-managing-you-pbr-block .group-right h4 {
     font-size: 22px;
     margin: 0px;
     font-weight: bold;
     text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-managing-you-pbr-block .group-left h4, section#block-bean-managing-you-pbr-block .group-middle h4, section#block-bean-managing-you-pbr-block .group-right h4 {
+      section#block-bean-managing-you-pbr-block .group-left h3, section#block-bean-managing-you-pbr-block .group-left h4, section#block-bean-managing-you-pbr-block .group-middle h3, section#block-bean-managing-you-pbr-block .group-middle h4, section#block-bean-managing-you-pbr-block .group-right h3, section#block-bean-managing-you-pbr-block .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #eff0f2 url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-managing-you-pbr-block .group-left h4:after, section#block-bean-managing-you-pbr-block .group-middle h4:after, section#block-bean-managing-you-pbr-block .group-right h4:after {
+    section#block-bean-managing-you-pbr-block .group-left h3:after, section#block-bean-managing-you-pbr-block .group-left h4:after, section#block-bean-managing-you-pbr-block .group-middle h3:after, section#block-bean-managing-you-pbr-block .group-middle h4:after, section#block-bean-managing-you-pbr-block .group-right h3:after, section#block-bean-managing-you-pbr-block .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-managing-you-pbr-block .group-left h4:after, section#block-bean-managing-you-pbr-block .group-middle h4:after, section#block-bean-managing-you-pbr-block .group-right h4:after {
+        section#block-bean-managing-you-pbr-block .group-left h3:after, section#block-bean-managing-you-pbr-block .group-left h4:after, section#block-bean-managing-you-pbr-block .group-middle h3:after, section#block-bean-managing-you-pbr-block .group-middle h4:after, section#block-bean-managing-you-pbr-block .group-right h3:after, section#block-bean-managing-you-pbr-block .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-managing-you-pbr-block .group-left .open h4, section#block-bean-managing-you-pbr-block .group-middle .open h4, section#block-bean-managing-you-pbr-block .group-right .open h4 {
@@ -7715,3 +7817,485 @@ section#block-quicktabs-tools-and-resources {
       height: 360px; } }
   section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-4 .pane-case-studies .views-field-title, section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-4 .pane-case-studies .views-field-body {
     background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat; }
+
+section#block-bean-ip-infringement-landing-block {
+  background: transparent url("../images/tablet.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 80px 0px;
+  color: white;
+  border-bottom: 2px solid white; }
+  @media only screen and (max-width: 992px) {
+    section#block-bean-ip-infringement-landing-block {
+      padding: 26.66667px 0px; } }
+  section#block-bean-ip-infringement-landing-block .panels-flexible-region-first, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body {
+    padding-right: 160px; }
+    @media only screen and (max-width: 992px) {
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-first, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body {
+        width: 60%;
+        padding-right: 20px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-first, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body {
+        width: 100%;
+        padding-right: 0px; } }
+    section#block-bean-ip-infringement-landing-block .panels-flexible-region-first h2, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body h2 {
+      color: white;
+      font: normal 60px "montserratregular", sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      position: relative; }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-first h2:after, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body h2:after {
+        border-top: 6px solid white;
+        content: "";
+        display: block;
+        width: 141px;
+        margin-bottom: 30px;
+        margin-left: 2px; }
+      @media only screen and (max-width: 480px) {
+        section#block-bean-ip-infringement-landing-block .panels-flexible-region-first h2, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body h2 {
+          font: normal 44px "montserratregular", sans-serif; } }
+    section#block-bean-ip-infringement-landing-block .panels-flexible-region-first .thick, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body .thick {
+      display: none; }
+    section#block-bean-ip-infringement-landing-block .panels-flexible-region-first p, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body p {
+      font: normal 20px "montserratregular", sans-serif;
+      line-height: 1.5em;
+      margin-bottom: 30px;
+      font-family: robotolight; }
+  @media only screen and (max-width: 992px) {
+    section#block-bean-ip-infringement-landing-block .panels-flexible-region-last {
+      width: 40%; }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .inside {
+        padding-left: 0px; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-ip-infringement-landing-block .panels-flexible-region-last {
+      width: 100%; }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .inside {
+        padding-left: 0px; } }
+  section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list {
+    padding: 0px;
+    margin: 0px;
+    color: #0d252c;
+    list-style: none; }
+    section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li {
+      background: #fff;
+      border: 0px;
+      padding: 14px;
+      font: normal 16px "robotoregular", sans-serif;
+      margin-top: 2px;
+      font-size: 16px; }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li a {
+        /*font-size: 14px;*/ }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li.patents {
+        border-left: 10px solid #30aeb6; }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li.trade-marks {
+        border-left: 10px solid #de4326; }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li.designs {
+        border-left: 10px solid #84c98f; }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li.pbr {
+        border-left: 10px solid #f1ac1e; }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li.copyright {
+        border-left: 10px solid #704579; }
+    section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li {
+      border-left-color: #84c98f !important;
+      padding: 20px;
+      background: white url("../images/arrow-right-online-services.png") right center no-repeat; }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li:last-child {
+        /*background-image: none;*/ }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li .sml-link-icon-more {
+        display: none; }
+      section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li a {
+        color: #0d252c;
+        padding-right: 10px; }
+
+section#block-bean-enforcing-your-ip-block {
+  background: #eff0f2;
+  padding: 80px 0px 100px;
+  /*div[]*/ }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-enforcing-your-ip-block {
+      padding: 40px 0px 60px; } }
+  section#block-bean-enforcing-your-ip-block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-enforcing-your-ip-block ul li {
+      padding: 0px 0 0 30px;
+      margin: 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 0px; }
+  section#block-bean-enforcing-your-ip-block .Top {
+    margin-bottom: 30px; }
+    section#block-bean-enforcing-your-ip-block .Top br {
+      display: none; }
+    section#block-bean-enforcing-your-ip-block .Top h2 {
+      margin-bottom: 30px; }
+    section#block-bean-enforcing-your-ip-block .Top p {
+      font-size: 1.3em;
+      font-family: robotolight; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+      width: 50%;
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+      width: 100%;
+      margin-bottom: 10px; } }
+  section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+    margin: 0 10px;
+    padding: 40px;
+    background: #fff;
+    height: 450px;
+    overflow-y: hidden; }
+    @media only screen and (max-width: 768px) {
+      section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+        height: 600px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+        height: auto !important;
+        padding: 20px 30px;
+        margin: 0px; } }
+    @media only screen and (max-width: 480px) {
+      section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+        padding: 10px 20px; } }
+  section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+    font-size: 22px;
+    margin: 0px;
+    font-weight: bold; }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+        padding-right: 30px;
+        line-height: 30px;
+        font-size: 1.2em;
+        background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+        cursor: pointer; } }
+    section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+      border-top: 4px solid #b6bec0;
+      content: "";
+      display: block;
+      width: 100px;
+      margin: 15px 0 40px 2px; }
+      @media only screen and (max-width: 640px) {
+        section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+          margin: 5px 0 10px 2px;
+          border-top: 3px solid #b6bec0; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
+      background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+      display: none; } }
+  section#block-bean-enforcing-your-ip-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
+    display: none; }
+  section#block-bean-enforcing-your-ip-block .panels-flexible-row-last a {
+    margin-top: 40px;
+    border: 2px solid white;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px; }
+    section#block-bean-enforcing-your-ip-block .panels-flexible-row-last a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-enforcing-your-ip-block .panels-flexible-row-last a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-enforcing-your-ip-block .group-right {
+      float: left;
+      margin-top: 20px; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-enforcing-your-ip-block .group-right {
+      margin-top: 0px; } }
+  section#block-bean-enforcing-your-ip-block h2 {
+    text-align: center; }
+  section#block-bean-enforcing-your-ip-block li {
+    margin-bottom: 5px !important;
+    background-position: left 1px !important; }
+
+section#block-bean-infringing-on-others-ip-block {
+  padding: 80px 10px;
+  text-align: center;
+  color: white;
+  background-color: #612166;
+  font: normal 20px "robotolight", sans-serif;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+  @media only screen and (max-width: 768px) {
+    section#block-bean-infringing-on-others-ip-block {
+      padding: 40px 0px; } }
+  section#block-bean-infringing-on-others-ip-block h2 {
+    color: white; }
+  section#block-bean-infringing-on-others-ip-block .bean-basic-content {
+    max-width: 80%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 768px) {
+      section#block-bean-infringing-on-others-ip-block .bean-basic-content {
+        max-width: 90%; } }
+  section#block-bean-infringing-on-others-ip-block .field-items a {
+    border: 2px solid white;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px;
+    margin-top: 40px; }
+    section#block-bean-infringing-on-others-ip-block .field-items a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-infringing-on-others-ip-block .field-items a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
+    section#block-bean-infringing-on-others-ip-block .field-items a:hover {
+      border-color: white; }
+
+section#block-bean-going-to-court-block {
+  padding: 80px 0px 100px;
+  padding-bottom: 10px; }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-going-to-court-block {
+      padding: 40px 0px 60px; } }
+  section#block-bean-going-to-court-block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-going-to-court-block ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
+  section#block-bean-going-to-court-block .group-header {
+    margin-bottom: 30px; }
+    section#block-bean-going-to-court-block .group-header br {
+      display: none; }
+    section#block-bean-going-to-court-block .group-header h2, section#block-bean-going-to-court-block .group-header h3 {
+      margin-bottom: 30px;
+      text-align: center;
+      color: #0d252c; }
+    section#block-bean-going-to-court-block .group-header p {
+      font-size: 1.3em;
+      font-family: robotolight;
+      color: #0d252c; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-going-to-court-block .group-left, section#block-bean-going-to-court-block .group-middle, section#block-bean-going-to-court-block .group-right {
+      width: 50%; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-going-to-court-block .group-left, section#block-bean-going-to-court-block .group-middle, section#block-bean-going-to-court-block .group-right {
+      width: 100%;
+      margin-bottom: 10px; } }
+  section#block-bean-going-to-court-block .group-left > div, section#block-bean-going-to-court-block .group-middle > div, section#block-bean-going-to-court-block .group-right > div {
+    margin: 0 20px;
+    padding: 40px;
+    background: #e5e8ec;
+    height: 350px;
+    overflow-y: hidden; }
+    @media only screen and (max-width: 768px) {
+      section#block-bean-going-to-court-block .group-left > div, section#block-bean-going-to-court-block .group-middle > div, section#block-bean-going-to-court-block .group-right > div {
+        height: 500px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-going-to-court-block .group-left > div, section#block-bean-going-to-court-block .group-middle > div, section#block-bean-going-to-court-block .group-right > div {
+        height: auto;
+        padding: 20px 30px;
+        margin: 0px; } }
+    @media only screen and (max-width: 480px) {
+      section#block-bean-going-to-court-block .group-left > div, section#block-bean-going-to-court-block .group-middle > div, section#block-bean-going-to-court-block .group-right > div {
+        padding: 10px 20px; } }
+  section#block-bean-going-to-court-block .group-left .media-element-container, section#block-bean-going-to-court-block .group-middle .media-element-container, section#block-bean-going-to-court-block .group-right .media-element-container {
+    text-align: center;
+    margin-bottom: 30px; }
+    section#block-bean-going-to-court-block .group-left .media-element-container img, section#block-bean-going-to-court-block .group-middle .media-element-container img, section#block-bean-going-to-court-block .group-right .media-element-container img {
+      display: inline-block; }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-going-to-court-block .group-left .media-element-container, section#block-bean-going-to-court-block .group-middle .media-element-container, section#block-bean-going-to-court-block .group-right .media-element-container {
+        display: none; } }
+  section#block-bean-going-to-court-block .group-left h3, section#block-bean-going-to-court-block .group-left h4, section#block-bean-going-to-court-block .group-middle h3, section#block-bean-going-to-court-block .group-middle h4, section#block-bean-going-to-court-block .group-right h3, section#block-bean-going-to-court-block .group-right h4 {
+    font-size: 22px;
+    margin: 0px;
+    font-weight: bold;
+    text-align: left; }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-going-to-court-block .group-left h3, section#block-bean-going-to-court-block .group-left h4, section#block-bean-going-to-court-block .group-middle h3, section#block-bean-going-to-court-block .group-middle h4, section#block-bean-going-to-court-block .group-right h3, section#block-bean-going-to-court-block .group-right h4 {
+        padding-right: 30px;
+        line-height: 30px;
+        font-size: 1.2em;
+        background: #e5e8ec url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+        cursor: pointer; } }
+    section#block-bean-going-to-court-block .group-left h3:after, section#block-bean-going-to-court-block .group-left h4:after, section#block-bean-going-to-court-block .group-middle h3:after, section#block-bean-going-to-court-block .group-middle h4:after, section#block-bean-going-to-court-block .group-right h3:after, section#block-bean-going-to-court-block .group-right h4:after {
+      border-top: 4px solid #b6bec0;
+      content: "";
+      display: block;
+      width: 100px;
+      margin: 15px 0 40px 2px; }
+      @media only screen and (max-width: 640px) {
+        section#block-bean-going-to-court-block .group-left h3:after, section#block-bean-going-to-court-block .group-left h4:after, section#block-bean-going-to-court-block .group-middle h3:after, section#block-bean-going-to-court-block .group-middle h4:after, section#block-bean-going-to-court-block .group-right h3:after, section#block-bean-going-to-court-block .group-right h4:after {
+          margin: 5px 0 10px 2px;
+          border-top: 3px solid #b6bec0; } }
+  section#block-bean-going-to-court-block .group-left .open h4, section#block-bean-going-to-court-block .group-middle .open h4, section#block-bean-going-to-court-block .group-right .open h4 {
+    background: #e5e8ec url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-going-to-court-block .group-left p, section#block-bean-going-to-court-block .group-middle p, section#block-bean-going-to-court-block .group-right p {
+      display: none; } }
+  section#block-bean-going-to-court-block .group-left .thin, section#block-bean-going-to-court-block .group-middle .thin, section#block-bean-going-to-court-block .group-right .thin {
+    display: none; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-going-to-court-block .group-right {
+      float: left;
+      margin-top: 20px; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-going-to-court-block .group-right {
+      margin-top: 0px; } }
+  section#block-bean-going-to-court-block .group-footer a {
+    margin-top: 40px;
+    border: 2px solid #0d252c;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: #0d252c;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px; }
+    section#block-bean-going-to-court-block .group-footer a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-going-to-court-block .group-footer a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
+
+section#block-bean-ip-infringement-other-block {
+  padding-bottom: 80px; }
+  section#block-bean-ip-infringement-other-block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-ip-infringement-other-block ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
+  section#block-bean-ip-infringement-other-block .group-header {
+    margin-bottom: 30px; }
+    section#block-bean-ip-infringement-other-block .group-header br {
+      display: none; }
+    section#block-bean-ip-infringement-other-block .group-header h2, section#block-bean-ip-infringement-other-block .group-header h3 {
+      margin-bottom: 30px;
+      text-align: center;
+      color: #0d252c; }
+    section#block-bean-ip-infringement-other-block .group-header p {
+      font-size: 1.3em;
+      font-family: robotolight;
+      color: #0d252c; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-ip-infringement-other-block .group-left, section#block-bean-ip-infringement-other-block .group-middle, section#block-bean-ip-infringement-other-block .group-right {
+      width: 50%; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-ip-infringement-other-block .group-left, section#block-bean-ip-infringement-other-block .group-middle, section#block-bean-ip-infringement-other-block .group-right {
+      width: 100%;
+      margin-bottom: 10px; } }
+  section#block-bean-ip-infringement-other-block .group-left > div, section#block-bean-ip-infringement-other-block .group-middle > div, section#block-bean-ip-infringement-other-block .group-right > div {
+    margin: 0 20px;
+    padding: 40px;
+    background: #e5e8ec;
+    height: 350px;
+    overflow-y: hidden; }
+    @media only screen and (max-width: 768px) {
+      section#block-bean-ip-infringement-other-block .group-left > div, section#block-bean-ip-infringement-other-block .group-middle > div, section#block-bean-ip-infringement-other-block .group-right > div {
+        height: 500px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-ip-infringement-other-block .group-left > div, section#block-bean-ip-infringement-other-block .group-middle > div, section#block-bean-ip-infringement-other-block .group-right > div {
+        height: auto;
+        padding: 20px 30px;
+        margin: 0px; } }
+    @media only screen and (max-width: 480px) {
+      section#block-bean-ip-infringement-other-block .group-left > div, section#block-bean-ip-infringement-other-block .group-middle > div, section#block-bean-ip-infringement-other-block .group-right > div {
+        padding: 10px 20px; } }
+  section#block-bean-ip-infringement-other-block .group-left .media-element-container, section#block-bean-ip-infringement-other-block .group-middle .media-element-container, section#block-bean-ip-infringement-other-block .group-right .media-element-container {
+    text-align: center;
+    margin-bottom: 30px; }
+    section#block-bean-ip-infringement-other-block .group-left .media-element-container img, section#block-bean-ip-infringement-other-block .group-middle .media-element-container img, section#block-bean-ip-infringement-other-block .group-right .media-element-container img {
+      display: inline-block; }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-ip-infringement-other-block .group-left .media-element-container, section#block-bean-ip-infringement-other-block .group-middle .media-element-container, section#block-bean-ip-infringement-other-block .group-right .media-element-container {
+        display: none; } }
+  section#block-bean-ip-infringement-other-block .group-left h3, section#block-bean-ip-infringement-other-block .group-left h4, section#block-bean-ip-infringement-other-block .group-middle h3, section#block-bean-ip-infringement-other-block .group-middle h4, section#block-bean-ip-infringement-other-block .group-right h3, section#block-bean-ip-infringement-other-block .group-right h4 {
+    font-size: 22px;
+    margin: 0px;
+    font-weight: bold;
+    text-align: left; }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-ip-infringement-other-block .group-left h3, section#block-bean-ip-infringement-other-block .group-left h4, section#block-bean-ip-infringement-other-block .group-middle h3, section#block-bean-ip-infringement-other-block .group-middle h4, section#block-bean-ip-infringement-other-block .group-right h3, section#block-bean-ip-infringement-other-block .group-right h4 {
+        padding-right: 30px;
+        line-height: 30px;
+        font-size: 1.2em;
+        background: #e5e8ec url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+        cursor: pointer; } }
+    section#block-bean-ip-infringement-other-block .group-left h3:after, section#block-bean-ip-infringement-other-block .group-left h4:after, section#block-bean-ip-infringement-other-block .group-middle h3:after, section#block-bean-ip-infringement-other-block .group-middle h4:after, section#block-bean-ip-infringement-other-block .group-right h3:after, section#block-bean-ip-infringement-other-block .group-right h4:after {
+      border-top: 4px solid #b6bec0;
+      content: "";
+      display: block;
+      width: 100px;
+      margin: 15px 0 40px 2px; }
+      @media only screen and (max-width: 640px) {
+        section#block-bean-ip-infringement-other-block .group-left h3:after, section#block-bean-ip-infringement-other-block .group-left h4:after, section#block-bean-ip-infringement-other-block .group-middle h3:after, section#block-bean-ip-infringement-other-block .group-middle h4:after, section#block-bean-ip-infringement-other-block .group-right h3:after, section#block-bean-ip-infringement-other-block .group-right h4:after {
+          margin: 5px 0 10px 2px;
+          border-top: 3px solid #b6bec0; } }
+  section#block-bean-ip-infringement-other-block .group-left .open h4, section#block-bean-ip-infringement-other-block .group-middle .open h4, section#block-bean-ip-infringement-other-block .group-right .open h4 {
+    background: #e5e8ec url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-ip-infringement-other-block .group-left p, section#block-bean-ip-infringement-other-block .group-middle p, section#block-bean-ip-infringement-other-block .group-right p {
+      display: none; } }
+  section#block-bean-ip-infringement-other-block .group-left .thin, section#block-bean-ip-infringement-other-block .group-middle .thin, section#block-bean-ip-infringement-other-block .group-right .thin {
+    display: none; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-ip-infringement-other-block .group-right {
+      float: left;
+      margin-top: 20px; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-ip-infringement-other-block .group-right {
+      margin-top: 0px; } }
+  section#block-bean-ip-infringement-other-block .group-footer a {
+    margin-top: 40px;
+    border: 2px solid #0d252c;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: #0d252c;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px; }
+    section#block-bean-ip-infringement-other-block .group-footer a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-ip-infringement-other-block .group-footer a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }

@@ -1,0 +1,32 @@
+section#block-bean-ip-infringement-landing-block {
+    @include landing_page_header_title('tablet.jpg', $themecolor:$mint);
+}
+
+section#block-bean-enforcing-your-ip-block {
+    background: $lighter-grey;
+    @include  section_padding(20);
+    @include  landing_page_group_block_multiple($height:450px);
+    h2 {
+        text-align: center;
+    }
+    li {
+        margin-bottom: 5px !important;
+        background-position: left 1px !important;
+    }
+}
+
+section#block-bean-infringing-on-others-ip-block {
+    @include full_width_block();
+}
+
+section#block-bean-going-to-court-block {
+    @include  section_padding(20);
+    padding-bottom: 10px;
+    @include  landing_page_group_block($background: $light-grey);
+}
+
+section#block-bean-ip-infringement-other-block {
+    @include  landing_page_group_block($background: $light-grey);
+    padding-bottom: $gap-large;
+}
+

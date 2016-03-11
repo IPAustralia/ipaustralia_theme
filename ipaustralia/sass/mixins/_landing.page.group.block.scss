@@ -12,12 +12,23 @@ section#id_of_section {
 
 */
 @mixin landing_page_group_block($background:$white, $height:350px, $color:$charcoal, $arrow:'arrow-right-transparent.png') {
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        li {
+            padding: 0px 0 0 30px;
+            margin: 3px 0px;
+            @include background-image('link-tool.png');
+            background-position: left 1px;
+        }
+    }
     .group-header {
         br{
             display: none;
         }
         margin-bottom: $gap-small ;
-        h2 {
+        h2,h3 {
             margin-bottom: $gap-small ;
             text-align: center;
             color: $color;
@@ -61,10 +72,10 @@ section#id_of_section {
                 display: inline-block;
             }
             @media only screen and (max-width: $break-point-midsmall) {
-               display: none;
+                display: none;
             }
         }
-        h4 {
+        h3,h4 {
             font-size: 22px;
             margin: 0px;
             font-weight: bold;
