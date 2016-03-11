@@ -1,0 +1,100 @@
+/*
+The main tabs on the page
+*/
+
+@mixin tools_and_resources_quick_tabs() {
+    padding:0px;
+    margin:0px;
+    margin-top: -116px;
+    margin-bottom: 10px;
+    position: absolute;
+    width:1180px;
+    /*left:0px;*/
+    /*right:0px;*/
+    text-align: center;
+    li {
+        padding:0px;
+        margin:0px 3px;
+        width: 227px;
+        display: inline-block;
+        text-align: left;
+        float: left;
+        a {
+            background: white;
+            display: block;
+            width: auto;
+            font: $title-h6-normal;
+            padding-left: 70px;
+            /*text-align: center;*/
+            text-transform: uppercase;
+            white-space: normal;
+            margin:0px;
+            height: 70px;
+            border: 1px solid $charcoal;
+            line-height: 18px;
+            letter-spacing: -0.9px;
+            padding-top: 25px;
+            &:hover{
+                background-color: $white;
+                text-decoration: none;
+                /*border-bottom-width: 8px;*/
+            }
+
+        }
+        &:nth-child(1) {
+            @include tools_and_resources_quick_tabs_links($teal, $icon:'block-patent.png', $arrow:'dwn-arrow-patent.png');
+        }
+        &:nth-child(2) {
+            @include tools_and_resources_quick_tabs_links($red, $icon:'block-tm.png', $arrow:'dwn-arrow-tm.png');
+        }
+        &:nth-child(3) {
+            @include tools_and_resources_quick_tabs_links($mint, $icon:'block-design.png', $arrow:'dwn-arrow-design.png');
+        }
+        &:nth-child(4) {
+            @include tools_and_resources_quick_tabs_links($yellow, $icon:'block-pbr.png', $arrow:'dwn-arrow-pbr.png');
+            a {
+                /*line-height: 17px;*/
+                padding-top: 16px;
+                padding-left: 64px;
+
+            }
+            &.active, &:hover, &:focus, &:active{
+                a {
+                    padding-top: 14px !important;
+                }
+            }
+        }
+        &:nth-child(5) {
+            @include tools_and_resources_quick_tabs_links($purple, $arrow:'dwn-arrow-purple.png');
+            a {
+                background-image: none;
+                padding-left: 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+/// This mixin is used only here so no need to create seperate scss file
+@mixin tools_and_resources_quick_tabs_links($color_to_use, $icon:'icon.png', $arrow:'arrow.png') {
+    a {
+        border-color: $color_to_use;
+        @include background-image($icon, $x:left);
+        background-size: 60px auto;
+        background-color: $color_to_use;
+        color:white;
+    }
+    &.active, &:hover, &:focus, &:active{
+        a {
+            color: $color_to_use;
+            background-color: $white;
+            border-bottom: 8px solid $color_to_use;
+            padding-top: 20px;
+            /*text-align: center;*/
+            /*            border-bottom-width: 8px;*/
+        }
+        padding-bottom: 20px;
+        @include background-image($arrow, $x:center, $y:bottom);
+    }
+}

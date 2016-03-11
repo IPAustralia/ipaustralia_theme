@@ -7,6 +7,7 @@ jQuery(window).resize(function () {
 jQuery(document).ready(function () {
     setBreakPoints();
     addTwitterFeed();
+    toolsAndResourcesTabsCheck();
 });
 jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-bloc h3', function () {
     openCloseToolsResources(jQuery(this));
@@ -21,6 +22,21 @@ jQuery(document).on('click', '.bp-small section#block-bean-tools-and-resources-d
     openCloseToolsResources(jQuery(this));
 });
 jQuery(document).on('click', '.bp-small section#block-bean-tools-and-resources-pbr h3', function () {
+    openCloseToolsResources(jQuery(this));
+});
+jQuery(document).on('click', '.bp-small section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources h3', function () {
+    openCloseToolsResources(jQuery(this));
+});
+jQuery(document).on('click', '.bp-small section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark h3', function () {
+    openCloseToolsResources(jQuery(this));
+});
+jQuery(document).on('click', '.bp-small section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs h3', function () {
+    openCloseToolsResources(jQuery(this));
+});
+jQuery(document).on('click', '.bp-small section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr h3', function () {
+    openCloseToolsResources(jQuery(this));
+});
+jQuery(document).on('click', '.bp-small section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc h3', function () {
     openCloseToolsResources(jQuery(this));
 });
 jQuery(document).on('click', '.applicaiton-process-wrapper li', function () {
@@ -39,7 +55,22 @@ jQuery(document).on('click', '.bp-midsmall .group-right h4', function () {
 jQuery(document).on('click', '.bp-midsmall .panels-flexible-region h4', function () {
     openCloseGroups(jQuery(this));
 });
+jQuery(document).on('mouseup', 'section#block-quicktabs-tools-and-resources .quicktabs-style-nostyle a', function () {
+    var $active_page = "#" + jQuery(this).attr('id').replace("-tab-", "-tabpage-");
+    jQuery('section#block-quicktabs-tools-and-resources .quicktabs-tabpage').hide();
+    jQuery($active_page).show();
+    equaliseElementsHeight();
 
+
+});
+function toolsAndResourcesTabsCheck() {
+    if (jQuery('section#block-quicktabs-tools-and-resources').length > 0) {
+        var $active_page = "#" + jQuery('section#block-quicktabs-tools-and-resources .quicktabs-style-nostyle li.active a').attr('id').replace("-tab-", "-tabpage-");
+        jQuery($active_page).show();
+        equaliseElementsHeight();
+    }
+
+}
 function resizing() {
     /*
      *  Do action on resizing window or document
@@ -60,8 +91,23 @@ function equaliseElementsHeight() {
     equalHeight('section#block-bean-tools-and-resources-trade-mark .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-bean-tools-and-resources-designs .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-bean-tools-and-resources-pbr .panels-flexible-region-inside'); // landing page tools and resources
+
     equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panels-flexible-region-inside'); // landing page tools and resources
+
     equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .panels-flexible-region-inside'); // landing page tools and resources
+    
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .inside'); // landing page tools and resources
+    equalHeight('section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .inside'); // landing page tools and resources
     equalHeight('.footer li.expanded');
 
     setTimeout(function () {
@@ -489,6 +535,7 @@ function openCloseToolsResources($object) {
     if (jQuery($object).closest('.inside').hasClass('open')) {
         jQuery($object).siblings('ul').slideToggle(function () {
             jQuery($object).closest('.inside').removeClass('open');
+            jQuery($object).siblings('ul').removeAttr('style');
         });
     } else {
         jQuery($object).siblings('ul').slideToggle(function () {

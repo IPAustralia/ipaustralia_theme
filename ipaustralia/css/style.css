@@ -184,6 +184,14 @@ section#id_of_section {
 }
 
 */
+/*
+Used on the tools and resources landing page
+
+
+*/
+/*
+The main tabs on the page
+*/
 /* Slider */
 .slick-slider {
   position: relative;
@@ -2762,9 +2770,7 @@ section#block-bean-what-we-do-block {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px;
-    border-color: #0d252c;
-    background-color: #0d252c; }
+    line-height: 14px; }
     section#block-bean-what-we-do-block .panels-flexible-row-last a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -3577,11 +3583,11 @@ section#block-bean-tools-and-resources {
               background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
               padding: 0 0 20px;
               border-bottom: 6px solid #30aeb6; } }
-        section#block-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full {
+        section#block-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
           margin-top: 40px;
           display: inline-block; }
           @media only screen and (max-width: 768px) {
-            section#block-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full {
+            section#block-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
               margin: 13px;
               float: left;
               width: 45px;
@@ -3999,9 +4005,7 @@ section#block-bean-understanding-trade-marks-new {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
-    line-height: 14px;
-    border-color: #0d252c;
-    background-color: #0d252c; }
+    line-height: 14px; }
     section#block-bean-understanding-trade-marks-new .panels-flexible-row-last a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
@@ -4169,11 +4173,11 @@ section#block-bean-tools-and-resources-trade-mark {
               background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
               padding: 0 0 20px;
               border-bottom: 6px solid #de4326; } }
-        section#block-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full {
+        section#block-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
           margin-top: 40px;
           display: inline-block; }
           @media only screen and (max-width: 768px) {
-            section#block-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full {
+            section#block-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
               margin: 13px;
               float: left;
               width: 45px;
@@ -4801,11 +4805,11 @@ section#block-bean-tools-and-resources-designs {
               background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
               padding: 0 0 20px;
               border-bottom: 6px solid #84c98f; } }
-        section#block-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full {
+        section#block-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
           margin-top: 40px;
           display: inline-block; }
           @media only screen and (max-width: 768px) {
-            section#block-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full {
+            section#block-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
               margin: 13px;
               float: left;
               width: 45px;
@@ -5417,11 +5421,11 @@ section#block-bean-tools-and-resources-pbr {
               background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
               padding: 0 0 20px;
               border-bottom: 6px solid #f1ac1e; } }
-        section#block-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full {
+        section#block-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
           margin-top: 40px;
           display: inline-block; }
           @media only screen and (max-width: 768px) {
-            section#block-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full {
+            section#block-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
               margin: 13px;
               float: left;
               width: 45px;
@@ -5730,7 +5734,8 @@ section#block-bean-tools-and-resources-landing-bloc {
         padding-right: 10px; }
 
 section#block-quicktabs-tools-and-resources {
-  background: #eff0f2; }
+  background: #eff0f2;
+  margin-top: 150px; }
   section#block-quicktabs-tools-and-resources h2 {
     margin-bottom: 30px; }
   section#block-quicktabs-tools-and-resources .pane-title {
@@ -5739,310 +5744,134 @@ section#block-quicktabs-tools-and-resources {
     height: 1px;
     border-top: 2px solid #fff;
     margin: 0px; }
-  section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark {
-    padding: 55px 0px 75px;
-    background: transparent url("../images/tablet_v2.jpg") center center no-repeat;
-    background-size: cover;
-    background: transparent; }
-    @media only screen and (max-width: 640px) {
-      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark {
-        padding: 27.5px 0px 27.5px; } }
-    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible {
-      text-align: center; }
-      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
-        width: 25%; }
-        @media only screen and (max-width: 1018px) {
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
-            width: 50%; }
-            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region:nth-child(3), section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region:nth-child(3) {
-              clear: both; } }
-        @media only screen and (max-width: 480px) {
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
-            width: 100%; } }
-        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
-          background: #fff none repeat scroll 0 0;
-          margin: 0 10px;
-          padding-bottom: 20px;
-          padding: 0 0 20px;
-          border-bottom: 6px solid #84c98f;
-          /*min-height: 500px;*/ }
-          @media only screen and (max-width: 480px) {
-            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
-              margin-left: 0px;
-              margin-bottom: -10px;
-              margin-right: 0px;
-              border-bottom: 0px;
-              background: white url("../images/arrow-down-charcoal-transparent.png") 95% 31px no-repeat;
-              padding: 0px; }
-              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside.open, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside.open {
-                background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
-                padding: 0 0 20px;
-                border-bottom: 6px solid #84c98f; } }
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full {
-            margin-top: 40px;
-            display: inline-block; }
-            @media only screen and (max-width: 768px) {
-              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full {
-                margin: 13px;
-                float: left;
-                width: 45px;
-                height: 45px; } }
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
-            font-size: 18px;
-            overflow: hidden;
-            padding: 0 10px;
-            text-align: center;
-            text-overflow: ellipsis;
-            text-transform: uppercase;
-            white-space: nowrap;
-            width: 100%; }
-            @media only screen and (max-width: 992px) {
-              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
-                height: 60px;
-                line-height: 25px; } }
-            @media only screen and (max-width: 768px) {
-              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
-                margin: 0px;
-                line-height: 77px;
-                text-align: left;
-                position: absolute;
-                margin: -74px 0 0 70px;
-                height: 73px;
-                overflow: hidden;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                width: 150px; } }
-            @media only screen and (max-width: 780px) {
-              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
-                /*width:200px;*/ } }
-            @media only screen and (max-width: 680px) {
-              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
-                width: 150px; } }
-            @media only screen and (max-width: 570px) {
-              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
-                width: 100px; } }
-            @media only screen and (max-width: 480px) {
-              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
-                width: 63%; } }
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
-            list-style: none; }
-            @media only screen and (max-width: 768px) {
-              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
-                display: block; } }
-            @media only screen and (max-width: 480px) {
-              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
-                display: none; } }
-            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li {
-              text-align: left; }
-              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li a, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li a {
-                text-decoration: underline; }
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .bs-vert-callout, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .bs-vert-callout {
-            min-height: auto; }
-      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region {
-        width: 100%;
-        color: #fff; }
-        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region h2, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region h2 {
-          margin-bottom: 40px;
-          color: #fff; }
-        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
-          background: transparent;
-          font: normal 20px "robotolight", sans-serif;
-          padding-bottom: 40px;
-          min-height: 10px;
-          border-bottom: 0px; }
-      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region {
-        width: 100%; }
-        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside {
-          background: transparent;
-          font: normal 20px "robotolight", sans-serif;
-          min-height: 10px;
-          border-bottom: 0px; }
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
-            margin-top: 40px;
-            border: 2px solid white;
-            background: transparent;
-            padding: 16px 35px 16px;
-            display: inline-block;
-            border-radius: 100px;
-            color: white;
-            font-size: 14px;
-            text-transform: uppercase;
-            font-family: "montserratregular", sans-serif;
-            line-height: 14px;
-            border-color: white;
-            cursor: pointer; }
-            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
-              background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
-              display: inline-block;
-              width: 9px;
-              height: 15px;
-              content: '';
-              margin: 0 0 -2px 10px; }
-            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
-              text-decoration: none;
-              background: transparent;
-              border: 2px solid #0d252c; }
-            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
-              border-color: white; }
-      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul {
-        padding: 0px;
-        margin: 0px;
-        color: #0d252c;
-        list-style: none;
-        padding-top: 15px; }
-        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li {
-          background: #fff;
-          border: 0px;
-          padding: 14px;
-          font: normal 16px "robotoregular", sans-serif;
-          margin-top: 2px;
-          font-size: 16px; }
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li a, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li a {
-            /*font-size: 14px;*/ }
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.patents, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.patents {
-            border-left: 10px solid #30aeb6; }
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.trade-marks, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.trade-marks {
-            border-left: 10px solid #de4326; }
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.designs, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.designs {
-            border-left: 10px solid #84c98f; }
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.pbr, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.pbr {
-            border-left: 10px solid #f1ac1e; }
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.copyright, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.copyright {
-            border-left: 10px solid #704579; }
-        @media only screen and (max-width: 480px) {
-          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul {
-            /*display:none;*/ } }
-        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li {
-          /*margin-top: 18px;*/
-          padding: 0px 30px 15px 50px;
-          /*margin-bottom: 18px;*/
-          font-size: 16px;
-          background: transparent url("../images/link-tool.png") 17px 2px no-repeat;
-          line-height: 22px; }
-    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources h2, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources p, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark h2, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark p {
-      color: #0d252c !important; }
-    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .Top, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .Top {
-      display: none; }
-  section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs {
-    padding: 55px 0px 75px;
-    /*div[]*/ }
-    @media only screen and (max-width: 640px) {
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs {
-        padding: 27.5px 0px 27.5px; } }
-    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs ul {
-      list-style: none;
+  section#block-quicktabs-tools-and-resources #quicktabs-container-tools_and_resources > div {
+    display: none; }
+  section#block-quicktabs-tools-and-resources ul.quicktabs-tabs {
+    padding: 0px;
+    margin: 0px;
+    margin-top: -116px;
+    margin-bottom: 10px;
+    position: absolute;
+    width: 1180px;
+    /*left:0px;*/
+    /*right:0px;*/
+    text-align: center; }
+    section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li {
       padding: 0px;
-      margin: 0px; }
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs ul li {
-        padding: 0px 0 0 30px;
-        margin: 0px;
-        background: transparent url("../images/link-tool.png") center center no-repeat;
-        background-position: left 0px; }
-    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .Top {
-      margin-bottom: 30px; }
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .Top br {
-        display: none; }
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .Top h2 {
-        margin-bottom: 30px; }
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .Top p {
-        font-size: 1.3em;
-        font-family: robotolight; }
-    @media only screen and (max-width: 988px) {
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
-        width: 50%;
-        margin-bottom: 20px; } }
-    @media only screen and (max-width: 640px) {
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
-        width: 100%;
-        margin-bottom: 10px; } }
-    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-      margin: 0 10px;
-      padding: 40px;
-      background: #fff;
-      height: 1000px;
-      overflow-y: hidden; }
-      @media only screen and (max-width: 768px) {
-        section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-          height: 1150px; } }
-      @media only screen and (max-width: 640px) {
-        section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-          height: auto !important;
-          padding: 20px 30px;
-          margin: 0px; } }
-      @media only screen and (max-width: 480px) {
-        section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-          padding: 10px 20px; } }
-    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
-      font-size: 22px;
-      margin: 0px;
-      font-weight: bold; }
-      @media only screen and (max-width: 640px) {
-        section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
-          padding-right: 30px;
-          line-height: 30px;
-          font-size: 1.2em;
-          background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
-          cursor: pointer; } }
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
-        border-top: 4px solid #b6bec0;
-        content: "";
-        display: block;
-        width: 100px;
-        margin: 15px 0 40px 2px; }
-        @media only screen and (max-width: 640px) {
-          section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
-            margin: 5px 0 10px 2px;
-            border-top: 3px solid #b6bec0; } }
-    @media only screen and (max-width: 640px) {
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
-        background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
-    @media only screen and (max-width: 640px) {
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
-        display: none; } }
-    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
-      display: none; }
-    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a {
-      margin-top: 40px;
-      border: 2px solid white;
-      background: transparent;
-      padding: 16px 35px 16px;
+      margin: 0px 3px;
+      width: 227px;
       display: inline-block;
-      border-radius: 100px;
-      color: white;
-      font-size: 14px;
-      text-transform: uppercase;
-      font-family: "montserratregular", sans-serif;
-      line-height: 14px;
-      border-color: #0d252c;
-      background-color: #0d252c; }
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a:after {
-        background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
-        display: inline-block;
-        width: 9px;
-        height: 15px;
-        content: '';
-        margin: 0 0 -2px 10px; }
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a:hover {
-        text-decoration: none;
-        background: transparent;
-        border: 2px solid #0d252c; }
-    @media only screen and (max-width: 988px) {
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .group-right {
-        float: left;
-        margin-top: 20px; } }
-    @media only screen and (max-width: 640px) {
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .group-right {
-        margin-top: 0px; } }
-    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-      height: auto; }
-    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a {
-      border-color: #0d252c;
-      background-color: #0d252c; }
-      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a:hover, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a:focus, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a:active {
-        background-color: #0d252c; }
-    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .Top {
-      display: none; }
+      text-align: left;
+      float: left; }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li a {
+        background: white;
+        display: block;
+        width: auto;
+        font: normal 18px "montserratregular", sans-serif;
+        padding-left: 70px;
+        /*text-align: center;*/
+        text-transform: uppercase;
+        white-space: normal;
+        margin: 0px;
+        height: 70px;
+        border: 1px solid #0d252c;
+        line-height: 18px;
+        letter-spacing: -0.9px;
+        padding-top: 25px; }
+        section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li a:hover {
+          background-color: #fff;
+          text-decoration: none;
+          /*border-bottom-width: 8px;*/ }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(1) a {
+        border-color: #30aeb6;
+        background: transparent url("../images/block-patent.png") left center no-repeat;
+        background-size: 60px auto;
+        background-color: #30aeb6;
+        color: white; }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(1).active, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(1):hover, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(1):focus, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(1):active {
+        padding-bottom: 20px;
+        background: transparent url("../images/dwn-arrow-patent.png") center bottom no-repeat; }
+        section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(1).active a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(1):hover a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(1):focus a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(1):active a {
+          color: #30aeb6;
+          background-color: #fff;
+          border-bottom: 8px solid #30aeb6;
+          padding-top: 20px;
+          /*text-align: center;*/
+          /*            border-bottom-width: 8px;*/ }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(2) a {
+        border-color: #de4326;
+        background: transparent url("../images/block-tm.png") left center no-repeat;
+        background-size: 60px auto;
+        background-color: #de4326;
+        color: white; }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(2).active, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(2):hover, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(2):focus, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(2):active {
+        padding-bottom: 20px;
+        background: transparent url("../images/dwn-arrow-tm.png") center bottom no-repeat; }
+        section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(2).active a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(2):hover a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(2):focus a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(2):active a {
+          color: #de4326;
+          background-color: #fff;
+          border-bottom: 8px solid #de4326;
+          padding-top: 20px;
+          /*text-align: center;*/
+          /*            border-bottom-width: 8px;*/ }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(3) a {
+        border-color: #84c98f;
+        background: transparent url("../images/block-design.png") left center no-repeat;
+        background-size: 60px auto;
+        background-color: #84c98f;
+        color: white; }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(3).active, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(3):hover, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(3):focus, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(3):active {
+        padding-bottom: 20px;
+        background: transparent url("../images/dwn-arrow-design.png") center bottom no-repeat; }
+        section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(3).active a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(3):hover a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(3):focus a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(3):active a {
+          color: #84c98f;
+          background-color: #fff;
+          border-bottom: 8px solid #84c98f;
+          padding-top: 20px;
+          /*text-align: center;*/
+          /*            border-bottom-width: 8px;*/ }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4) a {
+        border-color: #f1ac1e;
+        background: transparent url("../images/block-pbr.png") left center no-repeat;
+        background-size: 60px auto;
+        background-color: #f1ac1e;
+        color: white; }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4).active, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):hover, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):focus, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):active {
+        padding-bottom: 20px;
+        background: transparent url("../images/dwn-arrow-pbr.png") center bottom no-repeat; }
+        section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4).active a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):hover a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):focus a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):active a {
+          color: #f1ac1e;
+          background-color: #fff;
+          border-bottom: 8px solid #f1ac1e;
+          padding-top: 20px;
+          /*text-align: center;*/
+          /*            border-bottom-width: 8px;*/ }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4) a {
+        /*line-height: 17px;*/
+        padding-top: 16px;
+        padding-left: 64px; }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4).active a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):hover a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):focus a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(4):active a {
+        padding-top: 14px !important; }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5) a {
+        border-color: #612166;
+        background: transparent url("../images/icon.png") left center no-repeat;
+        background-size: 60px auto;
+        background-color: #612166;
+        color: white; }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5).active, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5):hover, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5):focus, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5):active {
+        padding-bottom: 20px;
+        background: transparent url("../images/dwn-arrow-purple.png") center bottom no-repeat; }
+        section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5).active a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5):hover a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5):focus a, section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5):active a {
+          color: #612166;
+          background-color: #fff;
+          border-bottom: 8px solid #612166;
+          padding-top: 20px;
+          /*text-align: center;*/
+          /*            border-bottom-width: 8px;*/ }
+      section#block-quicktabs-tools-and-resources ul.quicktabs-tabs li:nth-child(5) a {
+        background-image: none;
+        padding-left: 0px;
+        text-align: center; }
   section#block-quicktabs-tools-and-resources .pane-case-studies {
     padding: 55px 0px 75px; }
     @media only screen and (max-width: 640px) {
@@ -6110,3 +5939,1689 @@ section#block-quicktabs-tools-and-resources {
                   margin-top: -380px; }
       section#block-quicktabs-tools-and-resources .pane-case-studies .pane-content img {
         /*box-shadow: 0 0 2px #000;*/ }
+  section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources {
+    padding: 55px 0px 75px;
+    background: transparent url("../images/tablet_v2.jpg") center center no-repeat;
+    background-size: cover;
+    background: transparent; }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible {
+      text-align: center; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+        width: 25%; }
+        @media only screen and (max-width: 1018px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+            width: 50%; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region:nth-child(3) {
+              clear: both; } }
+        @media only screen and (max-width: 480px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+            width: 100%; } }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: #fff none repeat scroll 0 0;
+          margin: 0 10px;
+          padding-bottom: 20px;
+          padding: 0 0 20px;
+          border-bottom: 6px solid #30aeb6;
+          /*min-height: 500px;*/ }
+          @media only screen and (max-width: 480px) {
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+              margin-left: 0px;
+              margin-bottom: -10px;
+              margin-right: 0px;
+              border-bottom: 0px;
+              background: white url("../images/arrow-down-charcoal-transparent.png") 95% 31px no-repeat;
+              padding: 0px; }
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside.open {
+                background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
+                padding: 0 0 20px;
+                border-bottom: 6px solid #30aeb6; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+            margin-top: 40px;
+            display: inline-block; }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+                margin: 13px;
+                float: left;
+                width: 45px;
+                height: 45px; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+            font-size: 18px;
+            overflow: hidden;
+            padding: 0 10px;
+            text-align: center;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            white-space: nowrap;
+            width: 100%; }
+            @media only screen and (max-width: 992px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                height: 60px;
+                line-height: 25px; } }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                margin: 0px;
+                line-height: 77px;
+                text-align: left;
+                position: absolute;
+                margin: -74px 0 0 70px;
+                height: 73px;
+                overflow: hidden;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 150px; } }
+            @media only screen and (max-width: 780px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                /*width:200px;*/ } }
+            @media only screen and (max-width: 680px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 150px; } }
+            @media only screen and (max-width: 570px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 100px; } }
+            @media only screen and (max-width: 480px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 63%; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+            list-style: none; }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+                display: block; } }
+            @media only screen and (max-width: 480px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+                display: none; } }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li {
+              text-align: left; }
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li a {
+                text-decoration: underline; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .bs-vert-callout {
+            min-height: auto; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region {
+        width: 100%;
+        color: #fff; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region h2 {
+          margin-bottom: 40px;
+          color: #fff; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: transparent;
+          font: normal 20px "robotolight", sans-serif;
+          padding-bottom: 40px;
+          min-height: 10px;
+          border-bottom: 0px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region {
+        width: 100%; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: transparent;
+          font: normal 20px "robotolight", sans-serif;
+          min-height: 10px;
+          border-bottom: 0px; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
+            margin-top: 40px;
+            border: 2px solid white;
+            background: transparent;
+            padding: 16px 35px 16px;
+            display: inline-block;
+            border-radius: 100px;
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: "montserratregular", sans-serif;
+            line-height: 14px;
+            border-color: white;
+            cursor: pointer; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
+              background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+              display: inline-block;
+              width: 9px;
+              height: 15px;
+              content: '';
+              margin: 0 0 -2px 10px; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
+              text-decoration: none;
+              background: transparent;
+              border: 2px solid #0d252c; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
+              border-color: white; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul {
+        padding: 0px;
+        margin: 0px;
+        color: #0d252c;
+        list-style: none;
+        padding-top: 15px; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li {
+          background: #fff;
+          border: 0px;
+          padding: 14px;
+          font: normal 16px "robotoregular", sans-serif;
+          margin-top: 2px;
+          font-size: 16px; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li a {
+            /*font-size: 14px;*/ }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.patents {
+            border-left: 10px solid #30aeb6; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.trade-marks {
+            border-left: 10px solid #de4326; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.designs {
+            border-left: 10px solid #84c98f; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.pbr {
+            border-left: 10px solid #f1ac1e; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.copyright {
+            border-left: 10px solid #704579; }
+        @media only screen and (max-width: 480px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul {
+            /*display:none;*/ } }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li {
+          /*margin-top: 18px;*/
+          padding: 0px 30px 15px 50px;
+          /*margin-bottom: 18px;*/
+          font-size: 16px;
+          background: transparent url("../images/link-tool.png") 17px 2px no-repeat;
+          line-height: 22px; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources h2, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources p {
+      color: #0d252c !important; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .Top {
+      display: none; }
+  section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs {
+    padding: 55px 0px 75px;
+    /*div[]*/ }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs ul {
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs ul li {
+        padding: 0px 0 0 30px;
+        margin: 0px;
+        background: transparent url("../images/link-tool.png") center center no-repeat;
+        background-position: left 0px; }
+    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .Top {
+      margin-bottom: 30px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .Top br {
+        display: none; }
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .Top h2 {
+        margin-bottom: 30px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .Top p {
+        font-size: 1.3em;
+        font-family: robotolight; }
+    @media only screen and (max-width: 988px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+        width: 50%;
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+        width: 100%;
+        margin-bottom: 10px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      margin: 0 10px;
+      padding: 40px;
+      background: #fff;
+      height: 1000px;
+      overflow-y: hidden; }
+      @media only screen and (max-width: 768px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          height: 1150px; } }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          height: auto !important;
+          padding: 20px 30px;
+          margin: 0px; } }
+      @media only screen and (max-width: 480px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          padding: 10px 20px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+      font-size: 22px;
+      margin: 0px;
+      font-weight: bold; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+          padding-right: 30px;
+          line-height: 30px;
+          font-size: 1.2em;
+          background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+          cursor: pointer; } }
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+        border-top: 4px solid #30aeb6;
+        content: "";
+        display: block;
+        width: 100px;
+        margin: 15px 0 40px 2px; }
+        @media only screen and (max-width: 640px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+            margin: 5px 0 10px 2px;
+            border-top: 3px solid #30aeb6; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
+        background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+        display: none; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
+      display: none; }
+    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a {
+      margin-top: 40px;
+      border: 2px solid white;
+      background: transparent;
+      padding: 16px 35px 16px;
+      display: inline-block;
+      border-radius: 100px;
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: "montserratregular", sans-serif;
+      line-height: 14px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a:after {
+        background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+        display: inline-block;
+        width: 9px;
+        height: 15px;
+        content: '';
+        margin: 0 0 -2px 10px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a:hover {
+        text-decoration: none;
+        background: transparent;
+        border: 2px solid #0d252c; }
+    @media only screen and (max-width: 988px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .group-right {
+        float: left;
+        margin-top: 20px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .group-right {
+        margin-top: 0px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      height: auto; }
+    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+      display: block; }
+    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+      background-image: none; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+          font-size: 1.5em;
+          cursor: auto; }
+          section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+            margin-bottom: 30px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a {
+      border-color: #0d252c;
+      background-color: #0d252c; }
+      section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a:hover, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a:focus, section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .panels-flexible-row-last a:active {
+        background-color: #0d252c; }
+    section#block-quicktabs-tools-and-resources .pane-bean-patents-faqs .Top {
+      display: none; }
+  section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p {
+    padding: 55px 0px 75px; }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .pane-content .panel-panel {
+      text-align: left; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .pane-content .panel-panel {
+          width: 100%;
+          margin-bottom: 20px; } }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .pane-content .panel-panel .inside {
+        margin: 0px 10px;
+        padding: 30px;
+        background: white;
+        border-left: 10px solid #30aeb6; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .pane-content .panel-panel .inside .pane-title {
+          font-size: 24px;
+          text-align: left; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .pane-content .panel-panel .inside a {
+          margin-top: 40px;
+          display: inline-block;
+          text-decoration: underline; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .pane-content .panel-panel .inside ul {
+          list-style: none;
+          margin: 0px;
+          padding: 0px; }
+          section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .pane-content .panel-panel .inside ul li {
+            margin: 0px;
+            padding-left: 40px; }
+            section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .pane-content .panel-panel .inside ul li a {
+              margin: 10px 0px; }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .pane-content .panel-panel.panel-col-first ul li {
+        background: transparent url("../images/link-form.png") left center no-repeat;
+        background-size: 30px auto;
+        margin-bottom: 5px; }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .pane-content .panel-panel.panel-col-last ul li {
+        background: transparent url("../images/link-manual.png") left 0px no-repeat;
+        background-size: 30px auto;
+        margin-bottom: 15px;
+        font-size: 0.9em; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-patents-p .pane-content .panel-panel.panel-col-last ul li a {
+          margin-top: 5px;
+          font: normal 16px "robotoregular", sans-serif; }
+  @media only screen and (max-width: 768px) {
+    section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-0 .pane-case-studies .pane-content {
+      height: 360px; } }
+  section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-0 .pane-case-studies .views-field-title, section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-0 .pane-case-studies .views-field-body {
+    background: transparent url("../images/transparent-pixel-teal.png") center center repeat; }
+  section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark {
+    padding: 55px 0px 75px;
+    background: transparent url("../images/tablet_v2.jpg") center center no-repeat;
+    background-size: cover;
+    background: transparent; }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible {
+      text-align: center; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+        width: 25%; }
+        @media only screen and (max-width: 1018px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+            width: 50%; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region:nth-child(3) {
+              clear: both; } }
+        @media only screen and (max-width: 480px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+            width: 100%; } }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: #fff none repeat scroll 0 0;
+          margin: 0 10px;
+          padding-bottom: 20px;
+          padding: 0 0 20px;
+          border-bottom: 6px solid #de4326;
+          /*min-height: 500px;*/ }
+          @media only screen and (max-width: 480px) {
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+              margin-left: 0px;
+              margin-bottom: -10px;
+              margin-right: 0px;
+              border-bottom: 0px;
+              background: white url("../images/arrow-down-charcoal-transparent.png") 95% 31px no-repeat;
+              padding: 0px; }
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside.open {
+                background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
+                padding: 0 0 20px;
+                border-bottom: 6px solid #de4326; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+            margin-top: 40px;
+            display: inline-block; }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+                margin: 13px;
+                float: left;
+                width: 45px;
+                height: 45px; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+            font-size: 18px;
+            overflow: hidden;
+            padding: 0 10px;
+            text-align: center;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            white-space: nowrap;
+            width: 100%; }
+            @media only screen and (max-width: 992px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                height: 60px;
+                line-height: 25px; } }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                margin: 0px;
+                line-height: 77px;
+                text-align: left;
+                position: absolute;
+                margin: -74px 0 0 70px;
+                height: 73px;
+                overflow: hidden;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 150px; } }
+            @media only screen and (max-width: 780px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                /*width:200px;*/ } }
+            @media only screen and (max-width: 680px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 150px; } }
+            @media only screen and (max-width: 570px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 100px; } }
+            @media only screen and (max-width: 480px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 63%; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+            list-style: none; }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+                display: block; } }
+            @media only screen and (max-width: 480px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+                display: none; } }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li {
+              text-align: left; }
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li a {
+                text-decoration: underline; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .bs-vert-callout {
+            min-height: auto; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region {
+        width: 100%;
+        color: #fff; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region h2 {
+          margin-bottom: 40px;
+          color: #fff; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: transparent;
+          font: normal 20px "robotolight", sans-serif;
+          padding-bottom: 40px;
+          min-height: 10px;
+          border-bottom: 0px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region {
+        width: 100%; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: transparent;
+          font: normal 20px "robotolight", sans-serif;
+          min-height: 10px;
+          border-bottom: 0px; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
+            margin-top: 40px;
+            border: 2px solid white;
+            background: transparent;
+            padding: 16px 35px 16px;
+            display: inline-block;
+            border-radius: 100px;
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: "montserratregular", sans-serif;
+            line-height: 14px;
+            border-color: white;
+            cursor: pointer; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
+              background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+              display: inline-block;
+              width: 9px;
+              height: 15px;
+              content: '';
+              margin: 0 0 -2px 10px; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
+              text-decoration: none;
+              background: transparent;
+              border: 2px solid #0d252c; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
+              border-color: white; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul {
+        padding: 0px;
+        margin: 0px;
+        color: #0d252c;
+        list-style: none;
+        padding-top: 15px; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li {
+          background: #fff;
+          border: 0px;
+          padding: 14px;
+          font: normal 16px "robotoregular", sans-serif;
+          margin-top: 2px;
+          font-size: 16px; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li a {
+            /*font-size: 14px;*/ }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.patents {
+            border-left: 10px solid #30aeb6; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.trade-marks {
+            border-left: 10px solid #de4326; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.designs {
+            border-left: 10px solid #84c98f; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.pbr {
+            border-left: 10px solid #f1ac1e; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.copyright {
+            border-left: 10px solid #704579; }
+        @media only screen and (max-width: 480px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul {
+            /*display:none;*/ } }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li {
+          /*margin-top: 18px;*/
+          padding: 0px 30px 15px 50px;
+          /*margin-bottom: 18px;*/
+          font-size: 16px;
+          background: transparent url("../images/link-tool.png") 17px 2px no-repeat;
+          line-height: 22px; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark h2, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark p {
+      color: #0d252c !important; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .Top {
+      display: none; }
+  section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs {
+    padding: 55px 0px 75px;
+    /*div[]*/ }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs ul {
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs ul li {
+        padding: 0px 0 0 30px;
+        margin: 0px;
+        background: transparent url("../images/link-tool.png") center center no-repeat;
+        background-position: left 0px; }
+    section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .Top {
+      margin-bottom: 30px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .Top br {
+        display: none; }
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .Top h2 {
+        margin-bottom: 30px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .Top p {
+        font-size: 1.3em;
+        font-family: robotolight; }
+    @media only screen and (max-width: 988px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+        width: 50%;
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+        width: 100%;
+        margin-bottom: 10px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      margin: 0 10px;
+      padding: 40px;
+      background: #fff;
+      height: 1000px;
+      overflow-y: hidden; }
+      @media only screen and (max-width: 768px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          height: 1150px; } }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          height: auto !important;
+          padding: 20px 30px;
+          margin: 0px; } }
+      @media only screen and (max-width: 480px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          padding: 10px 20px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+      font-size: 22px;
+      margin: 0px;
+      font-weight: bold; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+          padding-right: 30px;
+          line-height: 30px;
+          font-size: 1.2em;
+          background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+          cursor: pointer; } }
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+        border-top: 4px solid #de4326;
+        content: "";
+        display: block;
+        width: 100px;
+        margin: 15px 0 40px 2px; }
+        @media only screen and (max-width: 640px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+            margin: 5px 0 10px 2px;
+            border-top: 3px solid #de4326; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
+        background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+        display: none; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
+      display: none; }
+    section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .panels-flexible-row-last a {
+      margin-top: 40px;
+      border: 2px solid white;
+      background: transparent;
+      padding: 16px 35px 16px;
+      display: inline-block;
+      border-radius: 100px;
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: "montserratregular", sans-serif;
+      line-height: 14px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .panels-flexible-row-last a:after {
+        background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+        display: inline-block;
+        width: 9px;
+        height: 15px;
+        content: '';
+        margin: 0 0 -2px 10px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .panels-flexible-row-last a:hover {
+        text-decoration: none;
+        background: transparent;
+        border: 2px solid #0d252c; }
+    @media only screen and (max-width: 988px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .group-right {
+        float: left;
+        margin-top: 20px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .group-right {
+        margin-top: 0px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      height: auto; }
+    section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+      display: block; }
+    section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+      background-image: none; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+          font-size: 1.5em;
+          cursor: auto; }
+          section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+            margin-bottom: 30px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .panels-flexible-row-last a {
+      border-color: #0d252c;
+      background-color: #0d252c; }
+      section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .panels-flexible-row-last a:hover, section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .panels-flexible-row-last a:focus, section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .panels-flexible-row-last a:active {
+        background-color: #0d252c; }
+    section#block-quicktabs-tools-and-resources .pane-bean-trade-marks-faqs .Top {
+      display: none; }
+  section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar {
+    padding: 55px 0px 75px; }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .pane-content .panel-panel {
+      text-align: left; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .pane-content .panel-panel {
+          width: 100%;
+          margin-bottom: 20px; } }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .pane-content .panel-panel .inside {
+        margin: 0px 10px;
+        padding: 30px;
+        background: white;
+        border-left: 10px solid #de4326; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .pane-content .panel-panel .inside .pane-title {
+          font-size: 24px;
+          text-align: left; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .pane-content .panel-panel .inside a {
+          margin-top: 40px;
+          display: inline-block;
+          text-decoration: underline; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .pane-content .panel-panel .inside ul {
+          list-style: none;
+          margin: 0px;
+          padding: 0px; }
+          section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .pane-content .panel-panel .inside ul li {
+            margin: 0px;
+            padding-left: 40px; }
+            section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .pane-content .panel-panel .inside ul li a {
+              margin: 10px 0px; }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .pane-content .panel-panel.panel-col-first ul li {
+        background: transparent url("../images/link-form.png") left center no-repeat;
+        background-size: 30px auto;
+        margin-bottom: 5px; }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .pane-content .panel-panel.panel-col-last ul li {
+        background: transparent url("../images/link-manual.png") left 0px no-repeat;
+        background-size: 30px auto;
+        margin-bottom: 15px;
+        font-size: 0.9em; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-trade-mar .pane-content .panel-panel.panel-col-last ul li a {
+          margin-top: 5px;
+          font: normal 16px "robotoregular", sans-serif; }
+  @media only screen and (max-width: 768px) {
+    section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-1 .pane-case-studies .pane-content {
+      height: 360px; } }
+  section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-1 .pane-case-studies .views-field-title, section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-1 .pane-case-studies .views-field-body {
+    background: transparent url("../images/transparent-pixel-red.png") center center repeat; }
+  section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs {
+    padding: 55px 0px 75px;
+    background: transparent url("../images/tablet_v2.jpg") center center no-repeat;
+    background-size: cover;
+    background: transparent; }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible {
+      text-align: center; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+        width: 25%; }
+        @media only screen and (max-width: 1018px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+            width: 50%; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region:nth-child(3) {
+              clear: both; } }
+        @media only screen and (max-width: 480px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+            width: 100%; } }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: #fff none repeat scroll 0 0;
+          margin: 0 10px;
+          padding-bottom: 20px;
+          padding: 0 0 20px;
+          border-bottom: 6px solid #84c98f;
+          /*min-height: 500px;*/ }
+          @media only screen and (max-width: 480px) {
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+              margin-left: 0px;
+              margin-bottom: -10px;
+              margin-right: 0px;
+              border-bottom: 0px;
+              background: white url("../images/arrow-down-charcoal-transparent.png") 95% 31px no-repeat;
+              padding: 0px; }
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside.open {
+                background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
+                padding: 0 0 20px;
+                border-bottom: 6px solid #84c98f; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+            margin-top: 40px;
+            display: inline-block; }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+                margin: 13px;
+                float: left;
+                width: 45px;
+                height: 45px; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+            font-size: 18px;
+            overflow: hidden;
+            padding: 0 10px;
+            text-align: center;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            white-space: nowrap;
+            width: 100%; }
+            @media only screen and (max-width: 992px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                height: 60px;
+                line-height: 25px; } }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                margin: 0px;
+                line-height: 77px;
+                text-align: left;
+                position: absolute;
+                margin: -74px 0 0 70px;
+                height: 73px;
+                overflow: hidden;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 150px; } }
+            @media only screen and (max-width: 780px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                /*width:200px;*/ } }
+            @media only screen and (max-width: 680px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 150px; } }
+            @media only screen and (max-width: 570px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 100px; } }
+            @media only screen and (max-width: 480px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 63%; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+            list-style: none; }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+                display: block; } }
+            @media only screen and (max-width: 480px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+                display: none; } }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li {
+              text-align: left; }
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li a {
+                text-decoration: underline; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .bs-vert-callout {
+            min-height: auto; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region {
+        width: 100%;
+        color: #fff; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region h2 {
+          margin-bottom: 40px;
+          color: #fff; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: transparent;
+          font: normal 20px "robotolight", sans-serif;
+          padding-bottom: 40px;
+          min-height: 10px;
+          border-bottom: 0px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region {
+        width: 100%; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: transparent;
+          font: normal 20px "robotolight", sans-serif;
+          min-height: 10px;
+          border-bottom: 0px; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
+            margin-top: 40px;
+            border: 2px solid white;
+            background: transparent;
+            padding: 16px 35px 16px;
+            display: inline-block;
+            border-radius: 100px;
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: "montserratregular", sans-serif;
+            line-height: 14px;
+            border-color: white;
+            cursor: pointer; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
+              background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+              display: inline-block;
+              width: 9px;
+              height: 15px;
+              content: '';
+              margin: 0 0 -2px 10px; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
+              text-decoration: none;
+              background: transparent;
+              border: 2px solid #0d252c; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
+              border-color: white; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul {
+        padding: 0px;
+        margin: 0px;
+        color: #0d252c;
+        list-style: none;
+        padding-top: 15px; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li {
+          background: #fff;
+          border: 0px;
+          padding: 14px;
+          font: normal 16px "robotoregular", sans-serif;
+          margin-top: 2px;
+          font-size: 16px; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li a {
+            /*font-size: 14px;*/ }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li.patents {
+            border-left: 10px solid #30aeb6; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li.trade-marks {
+            border-left: 10px solid #de4326; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li.designs {
+            border-left: 10px solid #84c98f; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li.pbr {
+            border-left: 10px solid #f1ac1e; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li.copyright {
+            border-left: 10px solid #704579; }
+        @media only screen and (max-width: 480px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul {
+            /*display:none;*/ } }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li {
+          /*margin-top: 18px;*/
+          padding: 0px 30px 15px 50px;
+          /*margin-bottom: 18px;*/
+          font-size: 16px;
+          background: transparent url("../images/link-tool.png") 17px 2px no-repeat;
+          line-height: 22px; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs h2, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs p {
+      color: #0d252c !important; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .Top {
+      display: none; }
+  section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs {
+    padding: 55px 0px 75px;
+    /*div[]*/ }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs ul {
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs ul li {
+        padding: 0px 0 0 30px;
+        margin: 0px;
+        background: transparent url("../images/link-tool.png") center center no-repeat;
+        background-position: left 0px; }
+    section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .Top {
+      margin-bottom: 30px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .Top br {
+        display: none; }
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .Top h2 {
+        margin-bottom: 30px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .Top p {
+        font-size: 1.3em;
+        font-family: robotolight; }
+    @media only screen and (max-width: 988px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+        width: 50%;
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+        width: 100%;
+        margin-bottom: 10px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      margin: 0 10px;
+      padding: 40px;
+      background: #fff;
+      height: 1000px;
+      overflow-y: hidden; }
+      @media only screen and (max-width: 768px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          height: 1150px; } }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          height: auto !important;
+          padding: 20px 30px;
+          margin: 0px; } }
+      @media only screen and (max-width: 480px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          padding: 10px 20px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+      font-size: 22px;
+      margin: 0px;
+      font-weight: bold; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+          padding-right: 30px;
+          line-height: 30px;
+          font-size: 1.2em;
+          background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+          cursor: pointer; } }
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+        border-top: 4px solid #84c98f;
+        content: "";
+        display: block;
+        width: 100px;
+        margin: 15px 0 40px 2px; }
+        @media only screen and (max-width: 640px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+            margin: 5px 0 10px 2px;
+            border-top: 3px solid #84c98f; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
+        background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+        display: none; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
+      display: none; }
+    section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .panels-flexible-row-last a {
+      margin-top: 40px;
+      border: 2px solid white;
+      background: transparent;
+      padding: 16px 35px 16px;
+      display: inline-block;
+      border-radius: 100px;
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: "montserratregular", sans-serif;
+      line-height: 14px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .panels-flexible-row-last a:after {
+        background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+        display: inline-block;
+        width: 9px;
+        height: 15px;
+        content: '';
+        margin: 0 0 -2px 10px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .panels-flexible-row-last a:hover {
+        text-decoration: none;
+        background: transparent;
+        border: 2px solid #0d252c; }
+    @media only screen and (max-width: 988px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .group-right {
+        float: left;
+        margin-top: 20px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .group-right {
+        margin-top: 0px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      height: auto; }
+    section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+      display: block; }
+    section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+      background-image: none; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+          font-size: 1.5em;
+          cursor: auto; }
+          section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+            margin-bottom: 30px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .panels-flexible-row-last a {
+      border-color: #0d252c;
+      background-color: #0d252c; }
+      section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .panels-flexible-row-last a:hover, section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .panels-flexible-row-last a:focus, section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .panels-flexible-row-last a:active {
+        background-color: #0d252c; }
+    section#block-quicktabs-tools-and-resources .pane-bean-designs-faqs .Top {
+      display: none; }
+  section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p {
+    padding: 55px 0px 75px; }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .pane-content .panel-panel {
+      text-align: left; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .pane-content .panel-panel {
+          width: 100%;
+          margin-bottom: 20px; } }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .pane-content .panel-panel .inside {
+        margin: 0px 10px;
+        padding: 30px;
+        background: white;
+        border-left: 10px solid #84c98f; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .pane-content .panel-panel .inside .pane-title {
+          font-size: 24px;
+          text-align: left; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .pane-content .panel-panel .inside a {
+          margin-top: 40px;
+          display: inline-block;
+          text-decoration: underline; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .pane-content .panel-panel .inside ul {
+          list-style: none;
+          margin: 0px;
+          padding: 0px; }
+          section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .pane-content .panel-panel .inside ul li {
+            margin: 0px;
+            padding-left: 40px; }
+            section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .pane-content .panel-panel .inside ul li a {
+              margin: 10px 0px; }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .pane-content .panel-panel.panel-col-first ul li {
+        background: transparent url("../images/link-form.png") left center no-repeat;
+        background-size: 30px auto;
+        margin-bottom: 5px; }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .pane-content .panel-panel.panel-col-last ul li {
+        background: transparent url("../images/link-manual.png") left 0px no-repeat;
+        background-size: 30px auto;
+        margin-bottom: 15px;
+        font-size: 0.9em; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-designs-p .pane-content .panel-panel.panel-col-last ul li a {
+          margin-top: 5px;
+          font: normal 16px "robotoregular", sans-serif; }
+  @media only screen and (max-width: 768px) {
+    section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-2 .pane-case-studies .pane-content {
+      height: 360px; } }
+  section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-2 .pane-case-studies .views-field-title, section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-2 .pane-case-studies .views-field-body {
+    background: transparent url("../images/transparent-pixel-mint.png") center center repeat; }
+  section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr {
+    padding: 55px 0px 75px;
+    background: transparent url("../images/tablet_v2.jpg") center center no-repeat;
+    background-size: cover;
+    background: transparent; }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible {
+      text-align: center; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+        width: 25%; }
+        @media only screen and (max-width: 1018px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+            width: 50%; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region:nth-child(3) {
+              clear: both; } }
+        @media only screen and (max-width: 480px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+            width: 100%; } }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: #fff none repeat scroll 0 0;
+          margin: 0 10px;
+          padding-bottom: 20px;
+          padding: 0 0 20px;
+          border-bottom: 6px solid #f1ac1e;
+          /*min-height: 500px;*/ }
+          @media only screen and (max-width: 480px) {
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+              margin-left: 0px;
+              margin-bottom: -10px;
+              margin-right: 0px;
+              border-bottom: 0px;
+              background: white url("../images/arrow-down-charcoal-transparent.png") 95% 31px no-repeat;
+              padding: 0px; }
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside.open {
+                background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
+                padding: 0 0 20px;
+                border-bottom: 6px solid #f1ac1e; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+            margin-top: 40px;
+            display: inline-block; }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+                margin: 13px;
+                float: left;
+                width: 45px;
+                height: 45px; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+            font-size: 18px;
+            overflow: hidden;
+            padding: 0 10px;
+            text-align: center;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            white-space: nowrap;
+            width: 100%; }
+            @media only screen and (max-width: 992px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                height: 60px;
+                line-height: 25px; } }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                margin: 0px;
+                line-height: 77px;
+                text-align: left;
+                position: absolute;
+                margin: -74px 0 0 70px;
+                height: 73px;
+                overflow: hidden;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 150px; } }
+            @media only screen and (max-width: 780px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                /*width:200px;*/ } }
+            @media only screen and (max-width: 680px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 150px; } }
+            @media only screen and (max-width: 570px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 100px; } }
+            @media only screen and (max-width: 480px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 63%; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+            list-style: none; }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+                display: block; } }
+            @media only screen and (max-width: 480px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+                display: none; } }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li {
+              text-align: left; }
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li a {
+                text-decoration: underline; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .bs-vert-callout {
+            min-height: auto; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region {
+        width: 100%;
+        color: #fff; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region h2 {
+          margin-bottom: 40px;
+          color: #fff; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: transparent;
+          font: normal 20px "robotolight", sans-serif;
+          padding-bottom: 40px;
+          min-height: 10px;
+          border-bottom: 0px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region {
+        width: 100%; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: transparent;
+          font: normal 20px "robotolight", sans-serif;
+          min-height: 10px;
+          border-bottom: 0px; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
+            margin-top: 40px;
+            border: 2px solid white;
+            background: transparent;
+            padding: 16px 35px 16px;
+            display: inline-block;
+            border-radius: 100px;
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: "montserratregular", sans-serif;
+            line-height: 14px;
+            border-color: white;
+            cursor: pointer; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
+              background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+              display: inline-block;
+              width: 9px;
+              height: 15px;
+              content: '';
+              margin: 0 0 -2px 10px; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
+              text-decoration: none;
+              background: transparent;
+              border: 2px solid #0d252c; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
+              border-color: white; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul {
+        padding: 0px;
+        margin: 0px;
+        color: #0d252c;
+        list-style: none;
+        padding-top: 15px; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li {
+          background: #fff;
+          border: 0px;
+          padding: 14px;
+          font: normal 16px "robotoregular", sans-serif;
+          margin-top: 2px;
+          font-size: 16px; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li a {
+            /*font-size: 14px;*/ }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li.patents {
+            border-left: 10px solid #30aeb6; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li.trade-marks {
+            border-left: 10px solid #de4326; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li.designs {
+            border-left: 10px solid #84c98f; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li.pbr {
+            border-left: 10px solid #f1ac1e; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li.copyright {
+            border-left: 10px solid #704579; }
+        @media only screen and (max-width: 480px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul {
+            /*display:none;*/ } }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li {
+          /*margin-top: 18px;*/
+          padding: 0px 30px 15px 50px;
+          /*margin-bottom: 18px;*/
+          font-size: 16px;
+          background: transparent url("../images/link-tool.png") 17px 2px no-repeat;
+          line-height: 22px; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr h2, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr p {
+      color: #0d252c !important; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .Top {
+      display: none; }
+  section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs {
+    padding: 55px 0px 75px;
+    /*div[]*/ }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs ul {
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs ul li {
+        padding: 0px 0 0 30px;
+        margin: 0px;
+        background: transparent url("../images/link-tool.png") center center no-repeat;
+        background-position: left 0px; }
+    section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .Top {
+      margin-bottom: 30px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .Top br {
+        display: none; }
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .Top h2 {
+        margin-bottom: 30px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .Top p {
+        font-size: 1.3em;
+        font-family: robotolight; }
+    @media only screen and (max-width: 988px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+        width: 50%;
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+        width: 100%;
+        margin-bottom: 10px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      margin: 0 10px;
+      padding: 40px;
+      background: #fff;
+      height: 1000px;
+      overflow-y: hidden; }
+      @media only screen and (max-width: 768px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          height: 1150px; } }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          height: auto !important;
+          padding: 20px 30px;
+          margin: 0px; } }
+      @media only screen and (max-width: 480px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+          padding: 10px 20px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+      font-size: 22px;
+      margin: 0px;
+      font-weight: bold; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+          padding-right: 30px;
+          line-height: 30px;
+          font-size: 1.2em;
+          background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+          cursor: pointer; } }
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+        border-top: 4px solid #b6bec0;
+        content: "";
+        display: block;
+        width: 100px;
+        margin: 15px 0 40px 2px; }
+        @media only screen and (max-width: 640px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+            margin: 5px 0 10px 2px;
+            border-top: 3px solid #b6bec0; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
+        background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+        display: none; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
+      display: none; }
+    section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .panels-flexible-row-last a {
+      margin-top: 40px;
+      border: 2px solid white;
+      background: transparent;
+      padding: 16px 35px 16px;
+      display: inline-block;
+      border-radius: 100px;
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: "montserratregular", sans-serif;
+      line-height: 14px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .panels-flexible-row-last a:after {
+        background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+        display: inline-block;
+        width: 9px;
+        height: 15px;
+        content: '';
+        margin: 0 0 -2px 10px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .panels-flexible-row-last a:hover {
+        text-decoration: none;
+        background: transparent;
+        border: 2px solid #0d252c; }
+    @media only screen and (max-width: 988px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .group-right {
+        float: left;
+        margin-top: 20px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .group-right {
+        margin-top: 0px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      height: auto; }
+    section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+      display: block; }
+    section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+      background-image: none; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+          font-size: 1.5em;
+          cursor: auto; }
+          section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+            margin-bottom: 30px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .panels-flexible-row-last a {
+      border-color: #0d252c;
+      background-color: #0d252c; }
+      section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .panels-flexible-row-last a:hover, section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .panels-flexible-row-last a:focus, section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .panels-flexible-row-last a:active {
+        background-color: #0d252c; }
+    section#block-quicktabs-tools-and-resources .pane-bean-pbr-faqs .Top {
+      display: none; }
+  section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel {
+    padding: 55px 0px 75px; }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .pane-content .panel-panel {
+      text-align: left; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .pane-content .panel-panel {
+          width: 100%;
+          margin-bottom: 20px; } }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .pane-content .panel-panel .inside {
+        margin: 0px 10px;
+        padding: 30px;
+        background: white;
+        border-left: 10px solid #f1ac1e; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .pane-content .panel-panel .inside .pane-title {
+          font-size: 24px;
+          text-align: left; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .pane-content .panel-panel .inside a {
+          margin-top: 40px;
+          display: inline-block;
+          text-decoration: underline; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .pane-content .panel-panel .inside ul {
+          list-style: none;
+          margin: 0px;
+          padding: 0px; }
+          section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .pane-content .panel-panel .inside ul li {
+            margin: 0px;
+            padding-left: 40px; }
+            section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .pane-content .panel-panel .inside ul li a {
+              margin: 10px 0px; }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .pane-content .panel-panel.panel-col-first ul li {
+        background: transparent url("../images/link-form.png") left center no-repeat;
+        background-size: 30px auto;
+        margin-bottom: 5px; }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .pane-content .panel-panel.panel-col-last ul li {
+        background: transparent url("../images/link-manual.png") left 0px no-repeat;
+        background-size: 30px auto;
+        margin-bottom: 15px;
+        font-size: 0.9em; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-pbr-panel .pane-content .panel-panel.panel-col-last ul li a {
+          margin-top: 5px;
+          font: normal 16px "robotoregular", sans-serif; }
+  @media only screen and (max-width: 768px) {
+    section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-3 .pane-case-studies .pane-content {
+      height: 360px; } }
+  section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-3 .pane-case-studies .views-field-title, section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-3 .pane-case-studies .views-field-body {
+    background: transparent url("../images/transparent-pixel-yellow.png") center center repeat; }
+  section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc {
+    padding: 55px 0px 75px;
+    background: transparent url("../images/tablet_v2.jpg") center center no-repeat;
+    background-size: cover;
+    background: transparent; }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible {
+      text-align: center; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+        width: 25%; }
+        @media only screen and (max-width: 1018px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+            width: 50%; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region:nth-child(3) {
+              clear: both; } }
+        @media only screen and (max-width: 480px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+            width: 100%; } }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: #fff none repeat scroll 0 0;
+          margin: 0 10px;
+          padding-bottom: 20px;
+          padding: 0 0 20px;
+          border-bottom: 6px solid #612166;
+          /*min-height: 500px;*/ }
+          @media only screen and (max-width: 480px) {
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+              margin-left: 0px;
+              margin-bottom: -10px;
+              margin-right: 0px;
+              border-bottom: 0px;
+              background: white url("../images/arrow-down-charcoal-transparent.png") 95% 31px no-repeat;
+              padding: 0px; }
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside.open {
+                background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
+                padding: 0 0 20px;
+                border-bottom: 6px solid #612166; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+            margin-top: 40px;
+            display: inline-block; }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+                margin: 13px;
+                float: left;
+                width: 45px;
+                height: 45px; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+            font-size: 18px;
+            overflow: hidden;
+            padding: 0 10px;
+            text-align: center;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            white-space: nowrap;
+            width: 100%; }
+            @media only screen and (max-width: 992px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                height: 60px;
+                line-height: 25px; } }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                margin: 0px;
+                line-height: 77px;
+                text-align: left;
+                position: absolute;
+                margin: -74px 0 0 70px;
+                height: 73px;
+                overflow: hidden;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 150px; } }
+            @media only screen and (max-width: 780px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                /*width:200px;*/ } }
+            @media only screen and (max-width: 680px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 150px; } }
+            @media only screen and (max-width: 570px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 100px; } }
+            @media only screen and (max-width: 480px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+                width: 63%; } }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+            list-style: none; }
+            @media only screen and (max-width: 768px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+                display: block; } }
+            @media only screen and (max-width: 480px) {
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+                display: none; } }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li {
+              text-align: left; }
+              section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li a {
+                text-decoration: underline; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .bs-vert-callout {
+            min-height: auto; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region {
+        width: 100%;
+        color: #fff; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region h2 {
+          margin-bottom: 40px;
+          color: #fff; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: transparent;
+          font: normal 20px "robotolight", sans-serif;
+          padding-bottom: 40px;
+          min-height: 10px;
+          border-bottom: 0px; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region {
+        width: 100%; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside {
+          background: transparent;
+          font: normal 20px "robotolight", sans-serif;
+          min-height: 10px;
+          border-bottom: 0px; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
+            margin-top: 40px;
+            border: 2px solid white;
+            background: transparent;
+            padding: 16px 35px 16px;
+            display: inline-block;
+            border-radius: 100px;
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: "montserratregular", sans-serif;
+            line-height: 14px;
+            border-color: white;
+            cursor: pointer; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
+              background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+              display: inline-block;
+              width: 9px;
+              height: 15px;
+              content: '';
+              margin: 0 0 -2px 10px; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
+              text-decoration: none;
+              background: transparent;
+              border: 2px solid #0d252c; }
+            section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
+              border-color: white; }
+      section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul {
+        padding: 0px;
+        margin: 0px;
+        color: #0d252c;
+        list-style: none;
+        padding-top: 15px; }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li {
+          background: #fff;
+          border: 0px;
+          padding: 14px;
+          font: normal 16px "robotoregular", sans-serif;
+          margin-top: 2px;
+          font-size: 16px; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li a {
+            /*font-size: 14px;*/ }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li.patents {
+            border-left: 10px solid #30aeb6; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li.trade-marks {
+            border-left: 10px solid #de4326; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li.designs {
+            border-left: 10px solid #84c98f; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li.pbr {
+            border-left: 10px solid #f1ac1e; }
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li.copyright {
+            border-left: 10px solid #704579; }
+        @media only screen and (max-width: 480px) {
+          section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul {
+            /*display:none;*/ } }
+        section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li {
+          /*margin-top: 18px;*/
+          padding: 0px 30px 15px 50px;
+          /*margin-bottom: 18px;*/
+          font-size: 16px;
+          background: transparent url("../images/link-tool.png") 17px 2px no-repeat;
+          line-height: 22px; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc h2, section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc p {
+      color: #0d252c !important; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .Top {
+      display: none; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panels-flexible-region-inside-first .tools-resources-list li {
+      padding-left: 30px !important;
+      background-image: none; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panels-flexible-region-inside {
+      padding-bottom: 0px !important; }
+    section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .Bottom a {
+      background: #0d252c !important;
+      border-color: #0d252c !important; }
+  section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p {
+    padding: 55px 0px 75px; }
+    @media only screen and (max-width: 640px) {
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p {
+        padding: 27.5px 0px 27.5px; } }
+    section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .pane-content .panel-panel {
+      text-align: left; }
+      @media only screen and (max-width: 640px) {
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .pane-content .panel-panel {
+          width: 100%;
+          margin-bottom: 20px; } }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .pane-content .panel-panel .inside {
+        margin: 0px 10px;
+        padding: 30px;
+        background: white;
+        border-left: 10px solid #612166; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .pane-content .panel-panel .inside .pane-title {
+          font-size: 24px;
+          text-align: left; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .pane-content .panel-panel .inside a {
+          margin-top: 40px;
+          display: inline-block;
+          text-decoration: underline; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .pane-content .panel-panel .inside ul {
+          list-style: none;
+          margin: 0px;
+          padding: 0px; }
+          section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .pane-content .panel-panel .inside ul li {
+            margin: 0px;
+            padding-left: 40px; }
+            section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .pane-content .panel-panel .inside ul li a {
+              margin: 10px 0px; }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .pane-content .panel-panel.panel-col-first ul li {
+        background: transparent url("../images/link-form.png") left center no-repeat;
+        background-size: 30px auto;
+        margin-bottom: 5px; }
+      section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .pane-content .panel-panel.panel-col-last ul li {
+        background: transparent url("../images/link-manual.png") left 0px no-repeat;
+        background-size: 30px auto;
+        margin-bottom: 15px;
+        font-size: 0.9em; }
+        section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .pane-content .panel-panel.panel-col-last ul li a {
+          margin-top: 5px;
+          font: normal 16px "robotoregular", sans-serif; }
+  @media only screen and (max-width: 768px) {
+    section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-4 .pane-case-studies .pane-content {
+      height: 360px; } }
+  section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-4 .pane-case-studies .views-field-title, section#block-quicktabs-tools-and-resources #quicktabs-tabpage-tools_and_resources-4 .pane-case-studies .views-field-body {
+    background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat; }
