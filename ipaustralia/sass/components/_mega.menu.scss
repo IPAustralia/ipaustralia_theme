@@ -52,26 +52,7 @@ header {
                     }
                     /*@include background-image('arrow-down-charcoal.png', right, center, $charcoal);*/
                 }
-                &.open {
-                    > a{
-                        &:first-child  {
-                            background: $off-white;
-                            color: $charcoal !important;
-                            border-color: $off-white !important;
-                            @media only screen and (max-width: $break-point-medium - 1) {
-                                @include background-image('arrow-up-transparent.png', 90%, center, no-repeat, $charcoal);
-                                /*background-color:$charcoal !important;*/
-                                color:white !important;
-                                margin-bottom:-5px;
-                            }
-                        }
-
-                    }
-                    @media only screen and (max-width: $break-point-medium - 1) {
-                        background:$charcoal;
-                    }
-                }
-                &.active {
+                &.active{
                     background: $off-white;
                     a {
                         color: $charcoal;
@@ -132,6 +113,25 @@ header {
                             @include background-image('home.png');
                             cursor:pointer;
                         }
+                    }
+                }
+                &.open, &:hover {
+                    > a{
+                        &:first-child  {
+                            background: $off-white;
+                            color: $charcoal !important;
+                            border-color: $off-white !important;
+                            @media only screen and (max-width: $break-point-medium - 1) {
+                                @include background-image('arrow-up-transparent.png', 90%, center, no-repeat, $charcoal);
+                                /*background-color:$charcoal !important;*/
+                                color:white !important;
+                                margin-bottom:-5px;
+                            }
+                        }
+
+                    }
+                    @media only screen and (max-width: $break-point-medium - 1) {
+                        background:$charcoal;
                     }
                 }
 
@@ -213,7 +213,9 @@ header {
                     }
                 }
 
-
+                &:hover .dropdown-menu {
+                    display: block;
+                }
 
             }
 
@@ -323,7 +325,7 @@ header {
                     li {
                         float: left;
                         width: 33%;
-                        
+
                         @media only screen and (min-width: $break-point-medium + 1) {
                             &.expanded:nth-child(4n) {
                                 clear: both;

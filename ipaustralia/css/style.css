@@ -871,19 +871,6 @@ header nav .nav-tabs {
         /*@include background-image('arrow-down-charcoal.png', right, center, $charcoal);*/ }
         header nav .nav-tabs li.icon-home {
           display: none; } }
-    header nav .nav-tabs li.open > a:first-child {
-      background: #eff0f2;
-      color: #0d252c !important;
-      border-color: #eff0f2 !important; }
-      @media only screen and (max-width: 767px) {
-        header nav .nav-tabs li.open > a:first-child {
-          background: #0d252c url("../images/arrow-up-transparent.png") 90% center no-repeat;
-          /*background-color:$charcoal !important;*/
-          color: white !important;
-          margin-bottom: -5px; } }
-    @media only screen and (max-width: 767px) {
-      header nav .nav-tabs li.open {
-        background: #0d252c; } }
     header nav .nav-tabs li.active {
       background: #eff0f2; }
       header nav .nav-tabs li.active a {
@@ -927,6 +914,19 @@ header nav .nav-tabs {
         border: 0px !important;
         background: transparent url("../images/home.png") center center no-repeat;
         cursor: pointer; }
+    header nav .nav-tabs li.open > a:first-child, header nav .nav-tabs li:hover > a:first-child {
+      background: #eff0f2;
+      color: #0d252c !important;
+      border-color: #eff0f2 !important; }
+      @media only screen and (max-width: 767px) {
+        header nav .nav-tabs li.open > a:first-child, header nav .nav-tabs li:hover > a:first-child {
+          background: #0d252c url("../images/arrow-up-transparent.png") 90% center no-repeat;
+          /*background-color:$charcoal !important;*/
+          color: white !important;
+          margin-bottom: -5px; } }
+    @media only screen and (max-width: 767px) {
+      header nav .nav-tabs li.open, header nav .nav-tabs li:hover {
+        background: #0d252c; } }
     header nav .nav-tabs li a {
       padding: 19px 21px 15px 21px;
       display: block;
@@ -973,6 +973,8 @@ header nav .nav-tabs {
       border-left: 6px solid #84c98f !important; }
     header nav .nav-tabs li.tab-plant-breeder-rights a.highlight-box {
       border-left: 6px solid #f1ac1e !important; }
+    header nav .nav-tabs li:hover .dropdown-menu {
+      display: block; }
   @media only screen and (max-width: 992px) {
     header nav .nav-tabs {
       text-overflow: ellipsis;
