@@ -855,6 +855,13 @@ header nav #header-navigation-container {
         background: transparent url("../images/burger.png") center center no-repeat; } }
 header nav.navbar-default {
   background: #0d252c; }
+header nav.is_stuck {
+  bottom: auto !important;
+  left: 0;
+  position: fixed !important;
+  right: 0;
+  top: 0 !important;
+  z-index: 1000; }
 header nav .nav-tabs {
   border: 0px;
   margin: 0px; }
