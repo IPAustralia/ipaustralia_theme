@@ -547,6 +547,9 @@ article {
 .clear-float {
   clear: both; }
 
+.container .container {
+  width: auto; }
+
 /*@import "_tmp.scss";*/
 header .logo {
   margin: 0px;
