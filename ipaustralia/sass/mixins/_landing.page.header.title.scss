@@ -55,6 +55,10 @@ section#id_of_section {
                 margin-bottom: $gap-small;
                 margin-left: 2px;
             }
+            @media only screen and (max-width: $break-point-small) {
+                font:$title-h2-normal;
+                word-break: break-all;
+            }
         }
         .thick {
             display: none;

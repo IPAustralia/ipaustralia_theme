@@ -120,35 +120,7 @@
         }
     }
     #block-bean-need-help-choosing-the-right-ip {
-        padding: $gap-large 10px;
-        text-align: center;
-        color: white;
-        background-color: $purple;
-        font:$intro-text;
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
-        @media only screen and (max-width: $break-point-medium) {
-            padding: 40px 0px;
-        }
-        h2 {
-            color: white;
-        }
-        .bean-basic-content {
-            max-width: 80%;
-            margin: 0 auto;
-            @media only screen and (max-width: $break-point-medium) {
-                max-width: 90%;
-            }
-        }
-        .field-items {
-            a {
-                @include rounded-button-with-arrrow();
-                margin-top: $gap-medium;
-                &:hover {
-                    border-color:white;
-                }
-            }
-        }
+        @include full_width_block();
     }
     #block-bean-tools-and-resources-generic-bloc {
         padding: $gap-large 10px;

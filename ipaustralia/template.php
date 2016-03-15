@@ -21,10 +21,18 @@ function ipaustralia_preprocess_html(&$variables) {
   $node = menu_get_object();
   if (isset($node) && isset($variables['page']['content_top']['menu_block_8']) ||
   	isset($node) && isset($variables['page']['content_top']['menu_block_9']) ||
-  	isset($node) && isset($variables['page']['content_top']['menu_block_6']) ||
+  	isset($node) && isset($variables['page']['content_top']['menu_block_10']) ||
   	isset($node) && isset($variables['page']['content_top']['menu_block_7'])) {
     	$variables['classes_array'][] = 'application-process-visible';
   }
+
+
+ 	// add section classes for each ip right (section-patents, section-designs etc.)
+	$trail = menu_get_active_trail();
+	if (!empty($trail[1]['link_title'])) {
+		$variables['classes_array'][] = 'section-' . drupal_clean_css_identifier(strtolower($trail[1]['link_title']));
+	}
+
 }
 
 function ipaustralia_preprocess_page(&$vars, $hook) {
@@ -154,8 +162,10 @@ function ipaustralia_preprocess_block(&$vars) {
 	// some blocks need a <div class="container"> inside the <section>,
 	// wrapping the block content. add a theme suggestion for that.
 	if (in_array($bid, array(BLOCK_ID_FOOTER_MENU, BLOCK_ID_FOOTER_SUB_MENU)) ||
-		$vars['block']->region == 'content' || $vars['block']->region == 'content_top') {
+		$vars['block']->region == 'content') /*|| $vars['block']->region == 'content_top')*/ {
 		$vars['theme_hook_suggestions'][] = 'block__with_container';
+	} else if ($vars['block']->region == 'content_top') {
+		$vars['theme_hook_suggestions'][] = 'block__app_process';
 	}
 }
 

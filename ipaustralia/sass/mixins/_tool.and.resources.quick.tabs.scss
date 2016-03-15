@@ -1,0 +1,161 @@
+/*
+The main tabs on the page
+*/
+
+@mixin tools_and_resources_quick_tabs() {
+    padding:0px;
+    margin:0px;
+    margin-top: -116px;
+    margin-bottom: 10px;
+    position: absolute;
+    width:1180px;
+    /*left:0px;*/
+    /*right:0px;*/
+    text-align: center;
+
+    @media only screen and (max-width: 1200px) {
+        width:auto;
+        left:0px; 
+        right:0px;
+    }
+    @media only screen and (max-width: 450px) {
+        position: relative;
+        margin-top: 0px;
+    }
+    li {
+        padding:0px;
+        margin:0px 3px;
+        width: 227px;
+        display: inline-block;
+        text-align: left;
+        float: left;
+        @media only screen and (max-width: 1200px) {
+            width:19.4%;
+        }
+        @media only screen and (max-width: 1000px) {
+            margin:0px 1px;
+            width:19.7%;
+        }
+        @media only screen and (max-width: 680px) {
+            margin:0px;
+        }
+        @media only screen and (max-width: 450px) {
+            width: 100%;
+            &.active, &:hover, &:focus, &:active{
+                padding-bottom: 0px !important;
+            }
+        }
+        a {
+            background: white;
+            display: block;
+            width: auto;
+            font: $title-h6-normal;
+            padding-left: 70px;
+            /*text-align: center;*/
+            text-transform: uppercase;
+            white-space: normal;
+            margin:0px;
+            height: 70px;
+            border: 1px solid $charcoal;
+            line-height: 18px;
+            letter-spacing: -0.9px;
+            padding-top: 25px;
+            &:hover{
+                background-color: $white;
+                text-decoration: none;
+                /*border-bottom-width: 8px;*/
+            }
+            @media only screen and (max-width: 1200px) {
+                background-position-x: -9999px !important;
+                padding-left: 5px !important;
+                padding-right: 5px !important;
+                text-align: center;
+            }
+            @media only screen and (max-width: 1000px) {
+                padding-left: 2px !important;
+                padding-right: 2px !important;
+            }
+            @media only screen and (max-width: 680px) {
+                padding-top: 20px !important;
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+            @media only screen and (max-width: 450px) {
+                padding-top: 25px !important;
+                background-position-x: 0px !important;
+                text-align: left;
+                padding-left: 70px !important;
+            }
+
+
+        }
+        &:nth-child(1) {
+            @include tools_and_resources_quick_tabs_links($teal, $icon:'block-patent.png', $arrow:'dwn-arrow-patent.png');
+        }
+        &:nth-child(2) {
+            @include tools_and_resources_quick_tabs_links($red, $icon:'block-tm.png', $arrow:'dwn-arrow-tm.png');
+        }
+        &:nth-child(3) {
+            @include tools_and_resources_quick_tabs_links($mint, $icon:'block-design.png', $arrow:'dwn-arrow-design.png');
+        }
+        &:nth-child(4) {
+            @include tools_and_resources_quick_tabs_links($yellow, $icon:'block-pbr.png', $arrow:'dwn-arrow-pbr.png');
+            a {
+                /*line-height: 17px;*/
+                padding-top: 16px;
+                padding-left: 64px;
+                @media only screen and (max-width: 828px) {
+                    padding-top: 5px !important;
+                }
+                @media only screen and (max-width: 450px) {
+                    padding-top: 25px !important;
+                }
+
+            }
+            &.active, &:hover, &:focus, &:active{
+                a {
+                    padding-top: 14px !important;
+                    @media only screen and (max-width: 828px) {
+                        padding-top: 5px !important;
+                    }
+                }
+            }
+        }
+        &:nth-child(5) {
+            @include tools_and_resources_quick_tabs_links($purple, $arrow:'dwn-arrow-purple.png');
+            a {
+                background-image: none;
+                padding-left: 0px;
+                text-align: center;
+                @media only screen and (max-width: 450px) {
+                    text-align: left !important;
+                    /*padding-left: 0px !important;*/
+                }
+            }
+        }
+    }
+}
+
+
+/// This mixin is used only here so no need to create seperate scss file
+@mixin tools_and_resources_quick_tabs_links($color_to_use, $icon:'icon.png', $arrow:'arrow.png') {
+    a {
+        border-color: $color_to_use;
+        @include background-image($icon, $x:left);
+        background-size: 60px auto;
+        background-color: $color_to_use;
+        color:white;
+    }
+    &.active, &:hover, &:focus, &:active{
+        a {
+            color: $color_to_use;
+            background-color: $white;
+            border-bottom: 8px solid $color_to_use;
+            padding-top: 20px;
+            /*text-align: center;*/
+            /*            border-bottom-width: 8px;*/
+        }
+        padding-bottom: 20px;
+        @include background-image($arrow, $x:center, $y:bottom);
+    }
+}

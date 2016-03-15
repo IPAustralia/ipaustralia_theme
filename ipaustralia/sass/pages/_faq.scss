@@ -1,0 +1,14 @@
+section#block-quicktabs-faqs-quicktab {
+    background: $lighter-grey;
+    margin-top:150px;
+    @include  section_padding(20);
+
+    @media only screen and (max-width: 450px) {
+        margin-top:0px;
+    }
+
+    ul.quicktabs-tabs {
+        @include tools_and_resources_quick_tabs();
+         margin-top: -190px;
+    }
+}

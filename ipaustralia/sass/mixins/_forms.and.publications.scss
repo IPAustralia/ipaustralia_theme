@@ -1,0 +1,70 @@
+/*
+Used on the tools and resources landing page
+
+
+*/
+
+
+@mixin forms_and_publications($bordercolor:$teal) {
+    .pane-content, .center-wrapper {
+        .panel-panel {
+            text-align: left;
+            @media only screen and (max-width: $break-point-midsmall) {
+                width: 100%;
+                margin-bottom:20px;
+            }
+            .inside {
+                margin: 0px 10px;
+                padding: 30px;
+                background: white;
+                border-left: 10px solid $bordercolor;
+                .pane-title {
+                    font-size: 24px;
+                    text-align: left;
+                }
+                a{
+                    margin-top: $gap-medium;
+                    display: inline-block;
+                    text-decoration: underline;
+                }
+                ul {
+                    list-style: none;
+                    margin: 0px;
+                    padding:0px;
+                    li {
+                        margin: 0px;
+                        padding-left: 40px;
+                        a {
+                            margin: 10px 0px;
+                        }
+                    }
+                }
+
+
+            }
+            &.panel-col-first{
+                ul {
+                    li {
+                        @include background-image('link-form.png', $x:left, $y:center);
+                        background-size: 30px auto;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            &.panel-col-last{
+                ul {
+                    li {
+                        @include background-image('link-manual.png', $x:left, $y:0px);
+                        background-size: 30px auto;
+                        margin-bottom: 15px;
+                        font-size: 0.9em;
+                        a {
+                            margin-top: 5px;
+                            font: $body-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

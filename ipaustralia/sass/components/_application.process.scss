@@ -26,7 +26,7 @@ Applicaiton process on body
         li {
             width: 350px;
             cursor: pointer;
-            padding: 30px 45px 100px;
+            padding: 30px 45px 54px;
             display: inline-block;
             counter-increment: process-counter;
             margin:$gap-medium /2 0px;
@@ -66,7 +66,21 @@ Applicaiton process on body
             h4 {
                 /*font-size: 28px;*/
                 color:$charcoal;
-
+                height:89px;
+                overflow:hidden;
+                @media only screen and (max-width: $break-point-large + 200) {
+                    height: 65px;
+                    white-space: nowrap;
+                    text-overflow:ellipsis;
+                }
+                @media only screen and (max-width: $break-point-large) {
+                    height:89px;
+                    white-space: normal;
+                    line-height: 1em;
+                }
+                @media only screen and (max-width: $break-point-midsmall) {
+                   height:105px;
+                }
                 &::before {
                     font-size: 36px;
                     font-weight: 600;
@@ -74,6 +88,19 @@ Applicaiton process on body
                     content: counter(process-counter);
                     margin-bottom: 10px;
                     /*color: $mint;*/
+                    @media only screen and (max-width: $break-point-midsmall) {
+                        margin-top:5px;
+                    }
+                }
+            }
+            .breif-description {
+                height: 90px;
+                overflow: hidden;
+                @media only screen and (max-width: $break-point-large + 200) {
+                    height: 45px;
+                }
+                @media only screen and (max-width: $break-point-large) {
+                    height: 90px;
                 }
             }
             a {
@@ -104,7 +131,7 @@ Applicaiton process on body
                 }
             }
             .slick-arrow {
-                margin-top: -94px;
+                margin-top: -111px;
                 z-index: 100;
                 @media only screen and (max-width: $break-point-large - 100) {
                     display:none !important;

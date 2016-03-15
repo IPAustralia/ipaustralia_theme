@@ -8,7 +8,7 @@
     font-size: $font-size;
     text-transform: uppercase;
     font-family: $font-title-normal;
-    line-height: $font-size;
+    line-height: $font-size + 5;
     &:after {
         @include background-image($arrow-icon);
         display:inline-block;

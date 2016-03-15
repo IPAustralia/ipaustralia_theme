@@ -4,6 +4,7 @@ section#block-bean-patents-landing-block-new {
 
 section#block-bean-patents-anchor-menu-3 {
     @include landing_page_anchor_menu();
+    @include stick_sub_menu();
 }
 
 section#block-bean-understanding-patents-block {

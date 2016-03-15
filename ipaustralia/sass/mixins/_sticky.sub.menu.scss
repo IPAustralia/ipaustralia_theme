@@ -1,0 +1,14 @@
+/*
+apply sticky styling to sticky sub menu
+*/
+
+@mixin stick_sub_menu() {
+    &.is_stuck{
+        background: white none repeat scroll 0 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        display: block !important;
+        position: fixed !important;
+        top: 80px !important;
+        z-index: 100;
+    }
+}

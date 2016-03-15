@@ -5,7 +5,8 @@ div.title {
     background: #efefef;
     padding: 80px 0px;
     border-bottom: 2px solid white;
-    @include background-image('designs-banner.jpg');
+    @include background-image('tablet.jpg');
+    background-size: cover;
     h1 {
         color: white;
         border:0px;
@@ -16,5 +17,26 @@ div.title {
             border-top:6px solid white;
             width: 141px;
         }
+    }
+}
+
+body.section-patents {
+    div.title {
+        @include background-image('patents-landing.jpg');
+    }
+}
+body.section-trade-marks {
+    div.title {
+        @include background-image('tm-banner.jpg');
+    }
+}
+body.section-designs {
+    div.title {
+        @include background-image('designs-banner.jpg');
+    }
+}
+body.section-plant-breeders-rights {
+    div.title {
+        @include background-image('pbr-banner.jpg');
     }
 }

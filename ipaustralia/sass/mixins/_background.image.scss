@@ -1,3 +1,7 @@
-@mixin background-image($imagefile, $x:center, $y:center, $repeat:no-repeat, $background-color:transparent) {
-    background: $background-color url("../images/#{$imagefile}") $x $y $repeat;
+@mixin background-image($imagefile, $x:center, $y:center, $repeat:no-repeat, $background-color:transparent, $important:no) {
+    @if $important == yes {
+        background: $background-color url("../images/#{$imagefile}") $x $y $repeat !important;
+    } @else {
+        background: $background-color url("../images/#{$imagefile}") $x $y $repeat;
+    }
 }

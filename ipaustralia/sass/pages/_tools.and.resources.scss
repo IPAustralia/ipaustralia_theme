@@ -1,61 +1,178 @@
+@mixin block_keytools($color:$teal) {
+    @include section_padding(0, $gap-medium + 15);
+    @include  landing_page_tools_resources($color);
+    background: transparent;
+    h2,p {
+        color:$charcoal !important;
+    }
+    .Top {
+        display: none;
+    }
+}
+@mixin block_faq($color:$grey) {
+    @include section_padding(0, $gap-medium + 15);
+    @include landing_page_group_block_multiple($height:1000px, $underlinecolor:$color);
+
+    div[class*="with_top_and_bottom-main-row"] {
+        .panels-flexible-region{
+            > div {
+                height: auto;
+            }
+            p {
+                display: block;
+            }
+            h4, h3 {
+                background-image: none;
+                @media only screen and (max-width: $break-point-midsmall) {
+                    font-size: 1.5em;
+                    cursor: auto;
+                    &:after {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .panels-flexible-row-last {
+        a{
+            border-color: $charcoal;
+            background-color: $charcoal;
+            &:hover,&:focus, &:active{
+                background-color: $charcoal;
+            }
+        }
+    }
+    .Top {
+        display: none;
+    }
+}
+@mixin block_forms_publication($color:$teal) {
+    @include section_padding(0, $gap-medium + 15);
+    @include forms_and_publications($color);
+}
+@mixin block_case_studies($overlayimage:'transparent-pixel-charcoal.png'){
+    .pane-content {
+        @media only screen and (max-width: $break-point-medium) {
+            height: 360px;
+        }
+    }
+    .views-field-title,.views-field-body {
+        @include background-image($overlayimage, $repeat:repeat);
+    }
+}
+
 section#block-bean-tools-and-resources-landing-bloc {
     @include landing_page_header_title('tablet.jpg', $themecolor:$mint);
 
 }
 section#block-quicktabs-tools-and-resources{
     background: $lighter-grey;
+    margin-top:150px;
+    @media only screen and (max-width: 450px) {
+        margin-top:0px;
+    }
     h2 {
         margin-bottom: $gap-small;
     }
     .pane-title {
         text-align: center;
     }
-
     .panel-separator {
         height: 1px;
         border-top: 2px solid $white;
         margin: 0px;
     }
 
-    .pane-bean-tools-and-resources, .pane-bean-tools-and-resources-trade-mark {
-        @include section_padding(0, $gap-medium + 15);
-        @include  landing_page_tools_resources($mint);
-        background: transparent;
-        h2,p {
-            color:$charcoal !important;
-        }
-        .Top {
+
+    #quicktabs-container-tools_and_resources {
+        > div {
             display: none;
         }
     }
 
-    .pane-bean-patents-faqs {
-        @include section_padding(0, $gap-medium + 15);
-        @include landing_page_group_block_multiple($height:1000px);
-
-        div[class*="with_top_and_bottom-main-row"] {
-            .panels-flexible-region{
-                > div {
-                    height: auto;
-                }
-            }
-        }
-        .panels-flexible-row-last {
-            a{
-                border-color: $charcoal;
-                background-color: $charcoal;
-                &:hover,&:focus, &:active{
-                    background-color: $charcoal;
-                }
-            }
-        }
-        .Top {
-            display: none;
-        }
+    ul.quicktabs-tabs {
+        @include tools_and_resources_quick_tabs();
     }
 
+    // case studies class is common across all tabs
     .pane-case-studies {
         @include section_padding(0, $gap-medium + 15);
         @include landing_page_more_about('transparent-pixel-mint.png', $wrappercontainer1:pane-content, $wrappercontainer2:view-content, $imageheight:380px, $height:360px);
     }
+
+    /// Patents
+    .pane-bean-tools-and-resources{@include block_keytools($color:$teal)}
+    .pane-bean-patents-faqs {@include block_faq($teal)}
+    .pane-forms-and-publications-patents-p {@include block_forms_publication($teal)}
+    #quicktabs-tabpage-tools_and_resources-0 {
+        .pane-case-studies {
+            @include block_case_studies('transparent-pixel-teal.png');
+        }
+    }
+
+
+    /// Trandemarks
+    .pane-bean-tools-and-resources-trade-mark {@include block_keytools($color:$red)}
+    .pane-bean-trade-marks-faqs {@include block_faq($red)}
+    .pane-forms-and-publications-trade-mar {@include block_forms_publication($red)}
+    #quicktabs-tabpage-tools_and_resources-1 {
+        .pane-case-studies {
+            @include block_case_studies('transparent-pixel-red.png');
+        }
+    }
+
+    /// Design
+    .pane-bean-tools-and-resources-designs {@include block_keytools($color:$mint)}
+    .pane-bean-designs-faqs {@include block_faq($mint)}
+    .pane-forms-and-publications-designs-p {@include block_forms_publication($mint)}
+    #quicktabs-tabpage-tools_and_resources-2 {
+        .pane-case-studies {
+            @include block_case_studies('transparent-pixel-mint.png');
+        }
+    }
+
+    /// PBR
+    .pane-bean-tools-and-resources-pbr {@include block_keytools($color:$yellow)}
+    .pane-bean-pbr-faqs {@include block_faq($yellow)}
+    .pane-forms-and-publications-pbr-panel {@include block_forms_publication($yellow)}
+    #quicktabs-tabpage-tools_and_resources-3 {
+        .pane-case-studies {
+            @include block_case_studies('transparent-pixel-yellow.png');
+        }
+    }
+
+
+    /// General
+    .pane-bean-tools-and-resources-generic-bloc {
+        @include block_keytools($color:$purple);
+        .panels-flexible-region-inside-first {
+            .tools-resources-list {
+                li {
+                    padding-left: 30px !important;
+                    background-image: none ;
+                }
+            }
+        }
+
+
+        .panels-flexible-region-inside {
+            padding-bottom: 0px !important;
+        }
+        .Bottom {
+            a{
+                background: $charcoal !important;
+                border-color: $charcoal !important;
+            }
+        }
+    }
+    .pane-forms-and-publications-general-p {@include block_forms_publication($purple)}
+    #quicktabs-tabpage-tools_and_resources-4 {
+        .pane-case-studies {
+            @include block_case_studies('transparent-pixel-purple_v2.png');
+        }
+    }
+
+
+
+
 }

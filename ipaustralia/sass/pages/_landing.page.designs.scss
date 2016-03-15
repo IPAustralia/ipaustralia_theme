@@ -4,6 +4,7 @@ section#block-bean-designs-landing-block-0 {
 
 section#block-bean-designs-anchor-menu {
     @include landing_page_anchor_menu();
+    @include stick_sub_menu();
 }
 
 section#block-bean-understanding-designs-block {

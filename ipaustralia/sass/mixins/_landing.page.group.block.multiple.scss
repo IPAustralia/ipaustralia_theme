@@ -11,7 +11,7 @@ section#id_of_section {
 }
 
 */
-@mixin landing_page_group_block_multiple($background:$white, $height:350px) {
+@mixin landing_page_group_block_multiple($background:$white, $height:350px, $underlinecolor:$grey) {
     ul {
         list-style: none;
         padding: 0px;
@@ -78,14 +78,14 @@ section#id_of_section {
                 }
 
                 &:after {
-                    border-top: 4px solid $grey;
+                    border-top: 4px solid $underlinecolor;
                     content: "";
                     display: block;
                     width: 100px;
                     margin: 15px 0 $gap-medium 2px;
                     @media only screen and (max-width: $break-point-midsmall) {
                         margin: 5px 0 10px 2px;
-                        border-top: 3px solid $grey;
+                        border-top: 3px solid $underlinecolor;
                     }
                 }
             }
@@ -110,8 +110,6 @@ section#id_of_section {
         a{
             margin-top: $gap-medium;
             @include rounded-button-with-arrrow();
-            border-color: $charcoal;
-            background-color: $charcoal;
         }
     }
 

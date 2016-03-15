@@ -18,6 +18,9 @@
                 padding-bottom: 13px;
                 margin-bottom: 14px;;
                 margin-right: -1px;
+                @media only screen and (max-width: $break-point-large+200) {
+                    width:33.3%;
+                }
                 &.active {
                     @include background-image('dwn-arrow-charcoal.png', center, bottom);
                     a {
@@ -118,6 +121,7 @@
     }
 
     .Top {
+        width: 97%;
         .panels-flexible-row-inside {
             .panels-flexible-region {
                 width:100%;

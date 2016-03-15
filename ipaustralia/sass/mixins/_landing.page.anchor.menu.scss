@@ -12,11 +12,11 @@ section#id_of_section {
 
 */
 @mixin landing_page_anchor_menu() {
-    .panels-flexible-region {
+    .panels-flexible-region, .bean-three-column-block {
         @media only screen and (max-width: $break-point-midsmall) {
             display: none;
         }
-        .panels-flexible-region-inside  {
+        .panels-flexible-region-inside, .group-left, .group-middle, .group-right  {
             text-align: center;
             padding:0px;
             a {
