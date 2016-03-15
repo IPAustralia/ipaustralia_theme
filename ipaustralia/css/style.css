@@ -914,19 +914,6 @@ header nav .nav-tabs {
           color: white !important; }
           header nav .nav-tabs li.active a.megamenu-tab-plant-breeders-rights:hover, header nav .nav-tabs li.active a.megamenu-tab-plant-breeders-rights:active, header nav .nav-tabs li.active a.megamenu-tab-plant-breeders-rights:focus {
             border-bottom: 4px solid #f1ac1e; }
-    header nav .nav-tabs li.icon-home :hover, header nav .nav-tabs li.icon-home.active {
-      /*@include background-image('home.png');*/
-      background-color: #0d252c; }
-    header nav .nav-tabs li.icon-home a {
-      display: none;
-      text-indent: -9999px;
-      background: transparent url("../images/home.png") center center no-repeat;
-      width: 70px;
-      display: block; }
-      header nav .nav-tabs li.icon-home a:hover, header nav .nav-tabs li.icon-home a:active, header nav .nav-tabs li.icon-home a:focus {
-        border: 0px !important;
-        background: transparent url("../images/home.png") center center no-repeat;
-        cursor: pointer; }
     header nav .nav-tabs li.open > a:first-child, header nav .nav-tabs li:hover > a:first-child {
       background: #eff0f2;
       color: #0d252c !important;
@@ -940,6 +927,19 @@ header nav .nav-tabs {
     @media only screen and (max-width: 767px) {
       header nav .nav-tabs li.open, header nav .nav-tabs li:hover {
         background: #0d252c; } }
+    header nav .nav-tabs li.icon-home :hover, header nav .nav-tabs li.icon-home.active {
+      /*@include background-image('home.png');*/
+      background-color: #0d252c; }
+    header nav .nav-tabs li.icon-home a {
+      display: none;
+      text-indent: -9999px;
+      background: transparent url("../images/home.png") center center no-repeat;
+      width: 70px;
+      display: block; }
+      header nav .nav-tabs li.icon-home a:hover, header nav .nav-tabs li.icon-home a:active, header nav .nav-tabs li.icon-home a:focus {
+        border: 0px !important;
+        background: transparent url("../images/home.png") center center no-repeat;
+        cursor: pointer; }
     header nav .nav-tabs li a {
       padding: 19px 21px 15px 21px;
       display: block;
