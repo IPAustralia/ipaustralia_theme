@@ -4,6 +4,7 @@ section#block-bean-trade-marks-landing-block-0 {
 
 section#block-bean-trade-marks-anchor-menu {
     @include landing_page_anchor_menu();
+    @include stick_sub_menu();
 }
 
 section#block-bean-understanding-trade-marks-new {

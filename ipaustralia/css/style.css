@@ -192,6 +192,9 @@ Used on the tools and resources landing page
 /*
 The main tabs on the page
 */
+/*
+apply sticky styling to sticky sub menu
+*/
 /* Slider */
 .slick-slider {
   position: relative;
@@ -3389,6 +3392,13 @@ section#block-bean-patents-anchor-menu-3 .panels-flexible-region .panels-flexibl
       text-decoration: none;
       background-color: #eff0f2;
       border-bottom: 6px solid #0d252c; }
+section#block-bean-patents-anchor-menu-3.is_stuck {
+  background: white none repeat scroll 0 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: block !important;
+  position: fixed !important;
+  top: 81px !important;
+  z-index: 100; }
 
 section#block-bean-understanding-patents-block {
   background: #eff0f2;
@@ -4000,6 +4010,13 @@ section#block-bean-trade-marks-anchor-menu .panels-flexible-region .panels-flexi
       text-decoration: none;
       background-color: #eff0f2;
       border-bottom: 6px solid #0d252c; }
+section#block-bean-trade-marks-anchor-menu.is_stuck {
+  background: white none repeat scroll 0 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: block !important;
+  position: fixed !important;
+  top: 81px !important;
+  z-index: 100; }
 
 section#block-bean-understanding-trade-marks-new {
   background: #eff0f2;
@@ -4602,6 +4619,13 @@ section#block-bean-designs-anchor-menu .panels-flexible-region .panels-flexible-
       text-decoration: none;
       background-color: #eff0f2;
       border-bottom: 6px solid #0d252c; }
+section#block-bean-designs-anchor-menu.is_stuck {
+  background: white none repeat scroll 0 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: block !important;
+  position: fixed !important;
+  top: 81px !important;
+  z-index: 100; }
 
 section#block-bean-understanding-designs-block {
   background: #eff0f2;
@@ -5239,6 +5263,13 @@ section#block-bean-pbr-anchor-menu .panels-flexible-region .panels-flexible-regi
       text-decoration: none;
       background-color: #eff0f2;
       border-bottom: 6px solid #0d252c; }
+section#block-bean-pbr-anchor-menu.is_stuck {
+  background: white none repeat scroll 0 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: block !important;
+  position: fixed !important;
+  top: 81px !important;
+  z-index: 100; }
 
 section#block-bean-understanding-pbr {
   background: #eff0f2;

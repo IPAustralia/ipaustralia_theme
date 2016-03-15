@@ -4,6 +4,7 @@ section#block-bean-pbr-landing-block-0 {
 
 section#block-bean-pbr-anchor-menu {
     @include landing_page_anchor_menu();
+    @include stick_sub_menu();
 }
 
 section#block-bean-understanding-pbr {

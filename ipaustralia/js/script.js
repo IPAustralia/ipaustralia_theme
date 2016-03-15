@@ -566,9 +566,16 @@ function openCloseGroups($object) {
 function stickyMenu() {
     // Set sticky only when on large screen
     if (jQuery('.bp-medium').length > 0) {
-        jQuery(".navbar-default").trigger("sticky_kit:detach")
+        jQuery(".navbar-default").trigger("sticky_kit:detach");
+        jQuery("#block-bean-patents-anchor-menu-3").trigger("sticky_kit:detach");
+        jQuery("#block-bean-trade-marks-anchor-menu").trigger("sticky_kit:detach");
+        jQuery("#block-bean-designs-anchor-menu").trigger("sticky_kit:detach");
+        jQuery("#block-bean-pbr-anchor-menu").trigger("sticky_kit:detach");
     } else {
         jQuery(".navbar-default").stick_in_parent();
+        jQuery("#block-bean-patents-anchor-menu-3").stick_in_parent();
+        jQuery("#block-bean-trade-marks-anchor-menu").stick_in_parent();
+        jQuery("#block-bean-pbr-anchor-menu").stick_in_parent();
     }
 }
 
