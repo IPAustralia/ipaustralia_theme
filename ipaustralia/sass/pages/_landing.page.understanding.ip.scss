@@ -23,7 +23,8 @@ section#block-bean-how-ip-can-work-for-you {
     .panel-col-last {
         li {
             @include background-image('link-tool.png', $important:yes);
-            background-position: left 1px !important;
+            background-position: left 0px !important;
+            line-height: 20px;
         }
     }
     .panel-col-last, .panel-col-first  {

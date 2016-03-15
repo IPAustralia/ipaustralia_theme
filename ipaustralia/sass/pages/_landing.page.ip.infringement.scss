@@ -42,3 +42,12 @@ section#block-bean-ip-infringement-other-block {
     padding-bottom: $gap-large;
 }
 
+section#block-bean-unsolicited-invoices-block {
+    @include full_width_block();
+    #unsolicited-invoices {display: none;}
+    .container {
+        .container {
+            width: auto;
+        }
+    }
+}

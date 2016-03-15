@@ -8538,6 +8538,55 @@ section#block-bean-ip-infringement-other-block {
       background: transparent;
       border: 2px solid #0d252c; }
 
+section#block-bean-unsolicited-invoices-block {
+  padding: 80px 10px;
+  text-align: center;
+  color: white;
+  background-color: #612166;
+  font: normal 20px "robotolight", sans-serif;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+  @media only screen and (max-width: 768px) {
+    section#block-bean-unsolicited-invoices-block {
+      padding: 40px 0px; } }
+  section#block-bean-unsolicited-invoices-block h2 {
+    color: white; }
+  section#block-bean-unsolicited-invoices-block .bean-basic-content {
+    max-width: 80%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 768px) {
+      section#block-bean-unsolicited-invoices-block .bean-basic-content {
+        max-width: 90%; } }
+  section#block-bean-unsolicited-invoices-block .field-items a {
+    border: 2px solid white;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px;
+    margin-top: 40px; }
+    section#block-bean-unsolicited-invoices-block .field-items a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-unsolicited-invoices-block .field-items a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
+    section#block-bean-unsolicited-invoices-block .field-items a:hover {
+      border-color: white; }
+  section#block-bean-unsolicited-invoices-block #unsolicited-invoices {
+    display: none; }
+  section#block-bean-unsolicited-invoices-block .container .container {
+    width: auto; }
+
 section#block-bean-understanding-ip-landing-page-bl {
   background: transparent url("../images/tablet.jpg") center center no-repeat;
   background-size: cover;
@@ -8865,7 +8914,8 @@ section#block-bean-how-ip-can-work-for-you {
         font: normal 16px "robotoregular", sans-serif; }
   section#block-bean-how-ip-can-work-for-you .panel-col-last li {
     background: transparent url("../images/link-tool.png") center center no-repeat !important;
-    background-position: left 1px !important; }
+    background-position: left 0px !important;
+    line-height: 20px; }
   section#block-bean-how-ip-can-work-for-you .panel-col-last .inside, section#block-bean-how-ip-can-work-for-you .panel-col-first .inside {
     min-height: 550px; }
     @media only screen and (max-width: 640px) {
