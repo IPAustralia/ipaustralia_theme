@@ -1784,7 +1784,7 @@ Applicaiton process on body
     .breadcrumbs ol li {
       line-height: 25px; }
       .breadcrumbs ol li:last-child.active {
-        display: none; }
+        /*display: none;*/ }
       @media only screen and (max-width: 768px) {
         .breadcrumbs ol li {
           letter-spacing: -0.5px; } }
@@ -2651,7 +2651,8 @@ section#block-bean-about-us-landing-block {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-about-us-landing-block .panels-flexible-region-first h2, section#block-bean-about-us-landing-block .field-name-field-bean-body h2 {
-          font: normal 44px "montserratregular", sans-serif; } }
+          font: normal 44px "montserratregular", sans-serif;
+          word-break: break-all; } }
     section#block-bean-about-us-landing-block .panels-flexible-region-first .thick, section#block-bean-about-us-landing-block .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-about-us-landing-block .panels-flexible-region-first p, section#block-bean-about-us-landing-block .field-name-field-bean-body p {
@@ -3323,7 +3324,8 @@ section#block-bean-patents-landing-block-new {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-patents-landing-block-new .panels-flexible-region-first h2, section#block-bean-patents-landing-block-new .field-name-field-bean-body h2 {
-          font: normal 44px "montserratregular", sans-serif; } }
+          font: normal 44px "montserratregular", sans-serif;
+          word-break: break-all; } }
     section#block-bean-patents-landing-block-new .panels-flexible-region-first .thick, section#block-bean-patents-landing-block-new .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-patents-landing-block-new .panels-flexible-region-first p, section#block-bean-patents-landing-block-new .field-name-field-bean-body p {
@@ -3941,7 +3943,8 @@ section#block-bean-trade-marks-landing-block-0 {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first h2, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body h2 {
-          font: normal 44px "montserratregular", sans-serif; } }
+          font: normal 44px "montserratregular", sans-serif;
+          word-break: break-all; } }
     section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first p, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body p {
@@ -4550,7 +4553,8 @@ section#block-bean-designs-landing-block-0 {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-designs-landing-block-0 .panels-flexible-region-first h2, section#block-bean-designs-landing-block-0 .field-name-field-bean-body h2 {
-          font: normal 44px "montserratregular", sans-serif; } }
+          font: normal 44px "montserratregular", sans-serif;
+          word-break: break-all; } }
     section#block-bean-designs-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-designs-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-designs-landing-block-0 .panels-flexible-region-first p, section#block-bean-designs-landing-block-0 .field-name-field-bean-body p {
@@ -5194,7 +5198,8 @@ section#block-bean-pbr-landing-block-0 {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-pbr-landing-block-0 .panels-flexible-region-first h2, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body h2 {
-          font: normal 44px "montserratregular", sans-serif; } }
+          font: normal 44px "montserratregular", sans-serif;
+          word-break: break-all; } }
     section#block-bean-pbr-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-pbr-landing-block-0 .panels-flexible-region-first p, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body p {
@@ -5854,7 +5859,8 @@ section#block-bean-tools-and-resources-landing-bloc {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2 {
-          font: normal 44px "montserratregular", sans-serif; } }
+          font: normal 44px "montserratregular", sans-serif;
+          word-break: break-all; } }
     section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first .thick, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first p, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body p {
@@ -7896,7 +7902,8 @@ section#block-bean-ip-infringement-landing-block {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-ip-infringement-landing-block .panels-flexible-region-first h2, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body h2 {
-          font: normal 44px "montserratregular", sans-serif; } }
+          font: normal 44px "montserratregular", sans-serif;
+          word-break: break-all; } }
     section#block-bean-ip-infringement-landing-block .panels-flexible-region-first .thick, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-ip-infringement-landing-block .panels-flexible-region-first p, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body p {
@@ -8409,7 +8416,8 @@ section#block-bean-understanding-ip-landing-page-bl {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-first h2, section#block-bean-understanding-ip-landing-page-bl .field-name-field-bean-body h2 {
-          font: normal 44px "montserratregular", sans-serif; } }
+          font: normal 44px "montserratregular", sans-serif;
+          word-break: break-all; } }
     section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-first .thick, section#block-bean-understanding-ip-landing-page-bl .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-first p, section#block-bean-understanding-ip-landing-page-bl .field-name-field-bean-body p {

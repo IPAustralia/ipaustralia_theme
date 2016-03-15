@@ -11,7 +11,7 @@
             line-height:25px;
             &:last-child {
                 &.active {
-                    display: none;
+                    /*display: none;*/
                 }
             }
             @media only screen and (max-width: $break-point-medium) {
