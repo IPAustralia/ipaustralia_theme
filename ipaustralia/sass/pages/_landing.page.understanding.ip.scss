@@ -1,0 +1,69 @@
+section#block-bean-understanding-ip-landing-page-bl {
+    @include landing_page_header_title('tablet.jpg', $themecolor:$mint);
+}
+
+section#block-bean-understanding-ip-anchor-block {
+    @include landing_page_anchor_menu();
+    @include stick_sub_menu();
+}
+
+section#block-bean-getting-started-with-ip-block {
+    background: $lighter-grey;
+    @include  section_padding(20);
+    @include  landing_page_group_block();
+}
+
+section#block-bean-need-help-choosing-the-right-ip {
+    @include full_width_block();
+}
+section#block-bean-how-ip-can-work-for-you {
+    background: $lighter-grey;
+    @include  section_padding(20);
+    @include  forms_and_publications($bordercolor:$purple);
+    .panel-col-last {
+        li {
+            @include background-image('link-tool.png', $important:yes);
+            background-position: left 1px !important;
+        }
+    }
+    .panel-col-last, .panel-col-first  {
+        .inside{
+            min-height: 550px;
+            @media only screen and (max-width: $break-point-midsmall) {
+                min-height: inherit;
+            }
+        }
+    }
+}
+section#block-bean-commercialise-your-ip {
+    background: $white;
+    @include  section_padding(20);
+    @include  landing_page_group_block_multiple($background: $lighter-grey);
+}
+
+
+
+/*
+section#block-bean-designs-application-process {
+    background: $color_willow_brook_approx;
+    @include  section_padding(20);
+    .applicaiton-process-wrapper {
+        @include application-process(6, $color:$mint, $imagefolder:design);
+    }
+}
+
+section#block-bean-managing-your-design-block {
+    background: $white;
+    @include  section_padding(20);
+    @include  landing_page_group_block($background: $lighter-grey);
+}
+
+section#block-bean-tools-and-resources-designs {
+    @include  section_padding(20);
+    @include  landing_page_tools_resources($mint);
+}
+
+section#block-panels-mini-more-about-designs-2-col-panel {
+    @include  section_padding(20);
+    @include landing_page_more_about('transparent-pixel-mint.png');
+}*/

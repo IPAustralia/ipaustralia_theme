@@ -5,7 +5,8 @@ div.title {
     background: #efefef;
     padding: 80px 0px;
     border-bottom: 2px solid white;
-    @include background-image('designs-banner.jpg');
+    @include background-image('tablet.jpg');
+    background-size: cover;
     h1 {
         color: white;
         border:0px;

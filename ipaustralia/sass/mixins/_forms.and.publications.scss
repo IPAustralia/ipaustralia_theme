@@ -6,7 +6,7 @@ Used on the tools and resources landing page
 
 
 @mixin forms_and_publications($bordercolor:$teal) {
-    .pane-content {
+    .pane-content, .center-wrapper {
         .panel-panel {
             text-align: left;
             @media only screen and (max-width: $break-point-midsmall) {

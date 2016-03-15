@@ -2,6 +2,12 @@ section#block-bean-ip-infringement-landing-block {
     @include landing_page_header_title('tablet.jpg', $themecolor:$mint);
 }
 
+
+section#block-bean-ip-infringement-anchor-block {
+    @include landing_page_anchor_menu();
+    @include stick_sub_menu();
+}
+
 section#block-bean-enforcing-your-ip-block {
     background: $lighter-grey;
     @include  section_padding(20);
@@ -17,6 +23,12 @@ section#block-bean-enforcing-your-ip-block {
 
 section#block-bean-infringing-on-others-ip-block {
     @include full_width_block();
+    #infringing-on-others-ip {display: none;}
+    .container {
+        .container {
+            width: auto;
+        }
+    }
 }
 
 section#block-bean-going-to-court-block {

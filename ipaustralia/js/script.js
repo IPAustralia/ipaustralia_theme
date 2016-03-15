@@ -571,11 +571,16 @@ function stickyMenu() {
         jQuery("#block-bean-trade-marks-anchor-menu").trigger("sticky_kit:detach");
         jQuery("#block-bean-designs-anchor-menu").trigger("sticky_kit:detach");
         jQuery("#block-bean-pbr-anchor-menu").trigger("sticky_kit:detach");
+        jQuery("#block-bean-ip-infringement-anchor-block").trigger("sticky_kit:detach");
+        jQuery("#block-bean-understanding-ip-anchor-block").trigger("sticky_kit:detach");
     } else {
         jQuery(".navbar-default").stick_in_parent();
         jQuery("#block-bean-patents-anchor-menu-3").stick_in_parent();
         jQuery("#block-bean-trade-marks-anchor-menu").stick_in_parent();
+        jQuery("#block-bean-designs-anchor-menu").stick_in_parent();
         jQuery("#block-bean-pbr-anchor-menu").stick_in_parent();
+        jQuery("#block-bean-ip-infringement-anchor-block").stick_in_parent();
+        jQuery("#block-bean-understanding-ip-anchor-block").stick_in_parent();
     }
 }
 
