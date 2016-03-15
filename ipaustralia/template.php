@@ -25,6 +25,14 @@ function ipaustralia_preprocess_html(&$variables) {
   	isset($node) && isset($variables['page']['content_top']['menu_block_7'])) {
     	$variables['classes_array'][] = 'application-process-visible';
   }
+
+
+ 	// add section classes for each ip right (section-patents, section-designs etc.)
+	$trail = menu_get_active_trail();
+	if (!empty($trail[1]['link_title'])) {
+		$variables['classes_array'][] = 'section-' . drupal_clean_css_identifier(strtolower($trail[1]['link_title']));
+	}
+
 }
 
 function ipaustralia_preprocess_page(&$vars, $hook) {
