@@ -556,13 +556,13 @@ header .logo {
   padding: 0px; }
   @media only screen and (max-width: 992px) {
     header .logo {
-      width: 40%; } }
+      width: 39%; } }
   @media only screen and (max-width: 768px) {
     header .logo {
-      width: 40%; } }
+      width: 39%; } }
   @media only screen and (max-width: 640px) {
     header .logo {
-      width: 60%; } }
+      width: 50%; } }
   header .logo img {
     margin-top: 40px;
     width: 84%; }
@@ -582,7 +582,8 @@ header .header {
     @media only screen and (max-width: 992px) {
       header .header .header-right {
         float: right;
-        width: 60%; } }
+        width: 61%;
+        padding: 0px; } }
     header .header .header-right section {
       float: right;
       margin-top: 20px;
@@ -599,7 +600,7 @@ header .header {
             line-height: 10px; }
       @media only screen and (max-width: 992px) {
         header .header .header-right section {
-          margin-left: 10px; }
+          margin-left: 5px; }
           header .header .header-right section.block-search-api-page {
             width: 200px; } }
       @media only screen and (max-width: 767px) {
@@ -718,7 +719,7 @@ header .header {
         background: transparent url("../images/arrow-right-online-services.png") right center no-repeat; }
   header .header .responsive-search-icon {
     position: absolute;
-    width: 45px;
+    width: 35px;
     height: 45px;
     right: 65px;
     top: 22px;
@@ -727,6 +728,19 @@ header .header {
     text-indent: -9999px;
     background-size: auto 22px; }
     header .header .responsive-search-icon.opened {
+      background: transparent url("../images/close-cross.png") center center no-repeat;
+      background-size: auto auto; }
+  header .header .responsive-chat-icon {
+    position: absolute;
+    width: 35px;
+    height: 45px;
+    right: 110px;
+    top: 22px;
+    cursor: pointer;
+    background: transparent url("../images/balloon.png") center center no-repeat;
+    text-indent: -9999px;
+    background-size: auto 22px; }
+    header .header .responsive-chat-icon.opened {
       background: transparent url("../images/close-cross.png") center center no-repeat;
       background-size: auto auto; }
 
@@ -1554,17 +1568,29 @@ div.title {
       border-top: 6px solid white;
       width: 141px; }
 
+body.section-patents div.title {
+  background: transparent url("../images/patents-landing.jpg") center center no-repeat; }
+
+body.section-trade-marks div.title {
+  background: transparent url("../images/tm-banner.jpg") center center no-repeat; }
+
+body.section-designs div.title {
+  background: transparent url("../images/designs-banner.jpg") center center no-repeat; }
+
+body.section-plant-breeders-rights div.title {
+  background: transparent url("../images/pbr-banner.jpg") center center no-repeat; }
+
 /*
 applicaiton process menu steps
 */
-#block-menu-block-6 {
+.application-process-menu {
   background-color: #eff0f2;
   margin: 0 0 50px 0;
   height: 296px;
   overflow: hidden; }
-  #block-menu-block-6 .block-title, #block-menu-block-6 h2 {
+  .application-process-menu .block-title, .application-process-menu h2 {
     display: none; }
-  #block-menu-block-6 ul li {
+  .application-process-menu ul li {
     text-align: center;
     counter-increment: process-counter;
     width: 198px;
@@ -1574,13 +1600,13 @@ applicaiton process menu steps
     background-position: 0px 116px;
     background-repeat: repeat-x;
     /*opacity:0.4;*/ }
-    #block-menu-block-6 ul li:first-child {
+    .application-process-menu ul li:first-child {
       background-position: 100px 116px;
       background-repeat: no-repeat; }
-    #block-menu-block-6 ul li:last-child {
+    .application-process-menu ul li:last-child {
       background-position: -100px 116px;
       background-repeat: no-repeat; }
-    #block-menu-block-6 ul li a {
+    .application-process-menu ul li a {
       height: 297px;
       padding: 177px 20px 0;
       display: block;
@@ -1588,78 +1614,195 @@ applicaiton process menu steps
       background: transparent url("../images/dummy-image.png") center center no-repeat;
       background-size: 128px auto !important;
       background-position: center 40px !important; }
-      #block-menu-block-6 ul li a::before {
+      .application-process-menu ul li a::before {
         font-size: 34px;
         font-weight: 600;
         display: block;
         content: counter(process-counter); }
-    #block-menu-block-6 ul li.active {
+    .application-process-menu ul li.active {
       background-color: rgba(255, 255, 255, 0.4);
       opacity: 1; }
-      #block-menu-block-6 ul li.active a::before {
+      .application-process-menu ul li.active a::before {
         color: #0d252c; }
-    #block-menu-block-6 ul li.slick-current, #block-menu-block-6 ul li:hover, #block-menu-block-6 ul li:active, #block-menu-block-6 ul li:focus {
+    .application-process-menu ul li.slick-current, .application-process-menu ul li:hover, .application-process-menu ul li:active, .application-process-menu ul li:focus {
       /*opacity:1;*/ }
-    #block-menu-block-6 ul li:nth-child(8) a {
+    .application-process-menu ul li:nth-child(8) a {
       background: transparent url("../images/application-process/_generic/8.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(7) a {
+    .application-process-menu ul li:nth-child(7) a {
       background: transparent url("../images/application-process/_generic/7.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(6) a {
+    .application-process-menu ul li:nth-child(6) a {
       background: transparent url("../images/application-process/_generic/6.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(5) a {
+    .application-process-menu ul li:nth-child(5) a {
       background: transparent url("../images/application-process/_generic/5.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(4) a {
+    .application-process-menu ul li:nth-child(4) a {
       background: transparent url("../images/application-process/_generic/4.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(3) a {
+    .application-process-menu ul li:nth-child(3) a {
       background: transparent url("../images/application-process/_generic/3.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(2) a {
+    .application-process-menu ul li:nth-child(2) a {
       background: transparent url("../images/application-process/_generic/2.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(1) a {
+    .application-process-menu ul li:nth-child(1) a {
       background: transparent url("../images/application-process/_generic/1.png") center center no-repeat; }
-  #block-menu-block-6 ul .slick-arrow {
+  .application-process-menu ul .slick-arrow {
     margin-top: -31px;
     z-index: 100; }
     @media only screen and (max-width: 892px) {
-      #block-menu-block-6 ul .slick-arrow {
+      .application-process-menu ul .slick-arrow {
         display: none !important; } }
 
-#block-menu-block-6 {
-  background-color: #dff0d8; }
-  #block-menu-block-6 ul li {
+body.section-patents .application-process-menu {
+  background-color: #c3e6e8; }
+  body.section-patents .application-process-menu ul li {
     display: none; }
-    #block-menu-block-6 ul li a::before {
-      color: #84c98f; }
-    #block-menu-block-6 ul li:nth-child(8) {
+    body.section-patents .application-process-menu ul li a::before {
+      color: #30aeb6; }
+    body.section-patents .application-process-menu ul li:nth-child(8) {
       display: block; }
-      #block-menu-block-6 ul li:nth-child(8) a {
+      body.section-patents .application-process-menu ul li:nth-child(8) a {
         background: transparent url("../images/application-process/design/8.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(7) {
+    body.section-patents .application-process-menu ul li:nth-child(7) {
       display: block; }
-      #block-menu-block-6 ul li:nth-child(7) a {
+      body.section-patents .application-process-menu ul li:nth-child(7) a {
         background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(6) {
+    body.section-patents .application-process-menu ul li:nth-child(6) {
       display: block; }
-      #block-menu-block-6 ul li:nth-child(6) a {
+      body.section-patents .application-process-menu ul li:nth-child(6) a {
         background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(5) {
+    body.section-patents .application-process-menu ul li:nth-child(5) {
       display: block; }
-      #block-menu-block-6 ul li:nth-child(5) a {
+      body.section-patents .application-process-menu ul li:nth-child(5) a {
         background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(4) {
+    body.section-patents .application-process-menu ul li:nth-child(4) {
       display: block; }
-      #block-menu-block-6 ul li:nth-child(4) a {
+      body.section-patents .application-process-menu ul li:nth-child(4) a {
         background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(3) {
+    body.section-patents .application-process-menu ul li:nth-child(3) {
       display: block; }
-      #block-menu-block-6 ul li:nth-child(3) a {
+      body.section-patents .application-process-menu ul li:nth-child(3) a {
         background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(2) {
+    body.section-patents .application-process-menu ul li:nth-child(2) {
       display: block; }
-      #block-menu-block-6 ul li:nth-child(2) a {
+      body.section-patents .application-process-menu ul li:nth-child(2) a {
         background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
-    #block-menu-block-6 ul li:nth-child(1) {
+    body.section-patents .application-process-menu ul li:nth-child(1) {
       display: block; }
-      #block-menu-block-6 ul li:nth-child(1) a {
+      body.section-patents .application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
+
+body.section-trade-marks .application-process-menu {
+  background-color: #f2dede; }
+  body.section-trade-marks .application-process-menu ul li {
+    display: none; }
+    body.section-trade-marks .application-process-menu ul li a::before {
+      color: #de4326; }
+    body.section-trade-marks .application-process-menu ul li:nth-child(8) {
+      display: block; }
+      body.section-trade-marks .application-process-menu ul li:nth-child(8) a {
+        background: transparent url("../images/application-process/design/8.png") center center no-repeat; }
+    body.section-trade-marks .application-process-menu ul li:nth-child(7) {
+      display: block; }
+      body.section-trade-marks .application-process-menu ul li:nth-child(7) a {
+        background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
+    body.section-trade-marks .application-process-menu ul li:nth-child(6) {
+      display: block; }
+      body.section-trade-marks .application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
+    body.section-trade-marks .application-process-menu ul li:nth-child(5) {
+      display: block; }
+      body.section-trade-marks .application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
+    body.section-trade-marks .application-process-menu ul li:nth-child(4) {
+      display: block; }
+      body.section-trade-marks .application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
+    body.section-trade-marks .application-process-menu ul li:nth-child(3) {
+      display: block; }
+      body.section-trade-marks .application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
+    body.section-trade-marks .application-process-menu ul li:nth-child(2) {
+      display: block; }
+      body.section-trade-marks .application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
+    body.section-trade-marks .application-process-menu ul li:nth-child(1) {
+      display: block; }
+      body.section-trade-marks .application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
+
+body.section-designs .application-process-menu {
+  background-color: #dff0d8; }
+  body.section-designs .application-process-menu ul li {
+    display: none; }
+    body.section-designs .application-process-menu ul li a::before {
+      color: #84c98f; }
+    body.section-designs .application-process-menu ul li:nth-child(8) {
+      display: block; }
+      body.section-designs .application-process-menu ul li:nth-child(8) a {
+        background: transparent url("../images/application-process/design/8.png") center center no-repeat; }
+    body.section-designs .application-process-menu ul li:nth-child(7) {
+      display: block; }
+      body.section-designs .application-process-menu ul li:nth-child(7) a {
+        background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
+    body.section-designs .application-process-menu ul li:nth-child(6) {
+      display: block; }
+      body.section-designs .application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
+    body.section-designs .application-process-menu ul li:nth-child(5) {
+      display: block; }
+      body.section-designs .application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
+    body.section-designs .application-process-menu ul li:nth-child(4) {
+      display: block; }
+      body.section-designs .application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
+    body.section-designs .application-process-menu ul li:nth-child(3) {
+      display: block; }
+      body.section-designs .application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
+    body.section-designs .application-process-menu ul li:nth-child(2) {
+      display: block; }
+      body.section-designs .application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
+    body.section-designs .application-process-menu ul li:nth-child(1) {
+      display: block; }
+      body.section-designs .application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
+
+body.section-plant-breeders-rights .application-process-menu {
+  background-color: #fdedce; }
+  body.section-plant-breeders-rights .application-process-menu ul li {
+    display: none; }
+    body.section-plant-breeders-rights .application-process-menu ul li a::before {
+      color: #f1ac1e; }
+    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(8) {
+      display: block; }
+      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(8) a {
+        background: transparent url("../images/application-process/design/8.png") center center no-repeat; }
+    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(7) {
+      display: block; }
+      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(7) a {
+        background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
+    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(6) {
+      display: block; }
+      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
+    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(5) {
+      display: block; }
+      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
+    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(4) {
+      display: block; }
+      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
+    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(3) {
+      display: block; }
+      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
+    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(2) {
+      display: block; }
+      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
+    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(1) {
+      display: block; }
+      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(1) a {
         background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
 
 /*
@@ -1733,6 +1876,9 @@ Applicaiton process on body
           height: 89px;
           white-space: normal;
           line-height: 1em; } }
+      @media only screen and (max-width: 640px) {
+        .applicaiton-process-wrapper ul li h4 {
+          height: 105px; } }
       .applicaiton-process-wrapper ul li h4::before {
         font-size: 36px;
         font-weight: 600;
@@ -1740,6 +1886,9 @@ Applicaiton process on body
         content: counter(process-counter);
         margin-bottom: 10px;
         /*color: $mint;*/ }
+        @media only screen and (max-width: 640px) {
+          .applicaiton-process-wrapper ul li h4::before {
+            margin-top: 5px; } }
     .applicaiton-process-wrapper ul li .breif-description {
       height: 90px;
       overflow: hidden; }
@@ -1829,6 +1978,10 @@ Applicaiton process on body
   article h2 {
     font-size: 24px;
     line-height: 28px; } }
+@media only screen and (max-width: 768px) {
+  article h3 {
+    font-size: 20px;
+    line-height: 22px; } }
 
 .front h2 {
   font-size: 38px; }
@@ -2504,153 +2657,122 @@ Applicaiton process on body
 .page-search .search-snippet-info h4 {
   font-size: 15px; }
 
-/*.page-tools-resources-case-studies {
-    .views-row {
-        background: $color_athens_gray_approx;
-        margin-bottom: 10px;
-        .panel-col-last {
-            padding-top: 22px;
-            width: 70%;
-            .views-field-field-date {
-                color: $color_mountain_mist_approx;
-                margin-bottom: 10px;
-            }
-        }
-        .panel-col-first {
-            width: 23%;
-            img {
-                margin: 30px;
-                width: 140px;
-                height: 140px;
-            }
-        }
-        .views-field-title a {
-            color: $color_firefly_approx;
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: underline;
-        }
-    }
-    .views-field-field-date {
-        color: $color_mountain_mist_approx;
-        margin-bottom: 10px;
-    }
-}
-.page-tools-resources-publications---reports {
-    .views-row {
-        background: $color_athens_gray_approx;
-        margin-bottom: 10px;
-        .panel-col-first {
-            width: 23%;
-            img {
-                margin: 30px;
-                width: 140px;
-                height: 140px;
-            }
-        }
-        .panel-col-last {
-            width: 70%;
-            padding-top: 30px;
-        }
-        .date-display-single {
-            color: $color_mountain_mist_approx;
-        }
-        .views-field-title a {
-            color: $color_firefly_approx;
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: underline;
-        }
-    }
-    .views-label-field-publish-online-date {
-        color: $color_mountain_mist_approx;
-    }
-}
+.page-tools-resources-case-studies .views-row {
+  background: #eff0f2;
+  margin-bottom: 10px; }
+  .page-tools-resources-case-studies .views-row .panel-col-last {
+    padding-top: 22px;
+    width: 70%; }
+    .page-tools-resources-case-studies .views-row .panel-col-last .views-field-field-date {
+      color: #999;
+      margin-bottom: 10px; }
+  .page-tools-resources-case-studies .views-row .panel-col-first {
+    width: 23%; }
+    .page-tools-resources-case-studies .views-row .panel-col-first img {
+      margin: 30px;
+      width: 140px;
+      height: 140px; }
+  .page-tools-resources-case-studies .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline; }
+.page-tools-resources-case-studies .views-field-field-date {
+  color: #999;
+  margin-bottom: 10px; }
+
+.page-tools-resources-publications---reports .views-row {
+  background: #eff0f2;
+  margin-bottom: 10px; }
+  .page-tools-resources-publications---reports .views-row .panel-col-first {
+    width: 23%; }
+    .page-tools-resources-publications---reports .views-row .panel-col-first img {
+      margin: 30px;
+      width: 140px;
+      height: 140px; }
+  .page-tools-resources-publications---reports .views-row .panel-col-last {
+    width: 70%;
+    padding-top: 30px; }
+  .page-tools-resources-publications---reports .views-row .date-display-single {
+    color: #999; }
+  .page-tools-resources-publications---reports .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline; }
+.page-tools-resources-publications---reports .views-label-field-publish-online-date {
+  color: #999; }
+
 .page-tools-resources-pdf-forms .views-row {
-    background: $color_athens_gray_approx;
-    margin-bottom: 10px;
-    padding: 20px;
-    .date-display-single {
-        color: $color_mountain_mist_approx;
-    }
-    .views-label-field-publish-online-date {
-        display: none;
-    }
-    .views-field-title a {
-        color: $color_firefly_approx;
-        font-size: 24px;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-}
+  background: #eff0f2;
+  margin-bottom: 10px;
+  padding: 20px; }
+  .page-tools-resources-pdf-forms .views-row .date-display-single {
+    color: #999; }
+  .page-tools-resources-pdf-forms .views-row .views-label-field-publish-online-date {
+    display: none; }
+  .page-tools-resources-pdf-forms .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline; }
+
 .page-tools-resources-patents-forms .views-row {
-    background: $color_athens_gray_approx;
-    margin-bottom: 10px;
-    padding: 20px;
-    .date-display-single {
-        color: $color_mountain_mist_approx;
-    }
-    .views-label-field-publish-online-date {
-        display: none;
-    }
-    .views-field-title a {
-        color: $color_firefly_approx;
-        font-size: 24px;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-}
+  background: #eff0f2;
+  margin-bottom: 10px;
+  padding: 20px; }
+  .page-tools-resources-patents-forms .views-row .date-display-single {
+    color: #999; }
+  .page-tools-resources-patents-forms .views-row .views-label-field-publish-online-date {
+    display: none; }
+  .page-tools-resources-patents-forms .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline; }
+
 .page-tools-resources-trade-marks-forms .views-row {
-    background: $color_athens_gray_approx;
-    margin-bottom: 10px;
-    padding: 20px;
-    .date-display-single {
-        color: $color_mountain_mist_approx;
-    }
-    .views-label-field-publish-online-date {
-        display: none;
-    }
-    .views-field-title a {
-        color: $color_firefly_approx;
-        font-size: 24px;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-}
+  background: #eff0f2;
+  margin-bottom: 10px;
+  padding: 20px; }
+  .page-tools-resources-trade-marks-forms .views-row .date-display-single {
+    color: #999; }
+  .page-tools-resources-trade-marks-forms .views-row .views-label-field-publish-online-date {
+    display: none; }
+  .page-tools-resources-trade-marks-forms .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline; }
+
 .page-tools-resources-designs-forms .views-row {
-    background: $color_athens_gray_approx;
-    margin-bottom: 10px;
-    padding: 20px;
-    .date-display-single {
-        color: $color_mountain_mist_approx;
-    }
-    .views-label-field-publish-online-date {
-        display: none;
-    }
-    .views-field-title a {
-        color: $color_firefly_approx;
-        font-size: 24px;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-}
+  background: #eff0f2;
+  margin-bottom: 10px;
+  padding: 20px; }
+  .page-tools-resources-designs-forms .views-row .date-display-single {
+    color: #999; }
+  .page-tools-resources-designs-forms .views-row .views-label-field-publish-online-date {
+    display: none; }
+  .page-tools-resources-designs-forms .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline; }
+
 .page-tools-resources-pbr-forms .views-row {
-    background: $color_athens_gray_approx;
-    margin-bottom: 10px;
-    padding: 20px;
-    .date-display-single {
-        color: $color_mountain_mist_approx;
-    }
-    .views-label-field-publish-online-date {
-        display: none;
-    }
-    .views-field-title a {
-        color: $color_firefly_approx;
-        font-size: 24px;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-}*/
+  background: #eff0f2;
+  margin-bottom: 10px;
+  padding: 20px; }
+  .page-tools-resources-pbr-forms .views-row .date-display-single {
+    color: #999; }
+  .page-tools-resources-pbr-forms .views-row .views-label-field-publish-online-date {
+    display: none; }
+  .page-tools-resources-pbr-forms .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline; }
+
 section#block-bean-about-us-landing-block {
   background: transparent url("../images/contact-us-banner.jpg") center center no-repeat;
   background-size: cover;
@@ -8884,3 +9006,198 @@ section#block-panels-mini-more-about-designs-2-col-panel {
     @include  section_padding(20);
     @include landing_page_more_about('transparent-pixel-mint.png');
 }*/
+section#block-quicktabs-faqs-quicktab {
+  background: #eff0f2;
+  margin-top: 150px;
+  padding: 80px 0px 100px; }
+  @media only screen and (max-width: 640px) {
+    section#block-quicktabs-faqs-quicktab {
+      padding: 40px 0px 60px; } }
+  @media only screen and (max-width: 450px) {
+    section#block-quicktabs-faqs-quicktab {
+      margin-top: 0px; } }
+  section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs {
+    padding: 0px;
+    margin: 0px;
+    margin-top: -116px;
+    margin-bottom: 10px;
+    position: absolute;
+    width: 1180px;
+    /*left:0px;*/
+    /*right:0px;*/
+    text-align: center;
+    margin-top: -190px; }
+    @media only screen and (max-width: 1200px) {
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs {
+        width: auto;
+        left: 0px;
+        right: 0px; } }
+    @media only screen and (max-width: 450px) {
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs {
+        position: relative;
+        margin-top: 0px; } }
+    section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li {
+      padding: 0px;
+      margin: 0px 3px;
+      width: 227px;
+      display: inline-block;
+      text-align: left;
+      float: left; }
+      @media only screen and (max-width: 1200px) {
+        section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li {
+          width: 19.4%; } }
+      @media only screen and (max-width: 1000px) {
+        section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li {
+          margin: 0px 1px;
+          width: 19.7%; } }
+      @media only screen and (max-width: 680px) {
+        section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li {
+          margin: 0px; } }
+      @media only screen and (max-width: 450px) {
+        section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li {
+          width: 100%; }
+          section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li.active, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:hover, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:focus, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:active {
+            padding-bottom: 0px !important; } }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li a {
+        background: white;
+        display: block;
+        width: auto;
+        font: normal 18px "montserratregular", sans-serif;
+        padding-left: 70px;
+        /*text-align: center;*/
+        text-transform: uppercase;
+        white-space: normal;
+        margin: 0px;
+        height: 70px;
+        border: 1px solid #0d252c;
+        line-height: 18px;
+        letter-spacing: -0.9px;
+        padding-top: 25px; }
+        section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li a:hover {
+          background-color: #fff;
+          text-decoration: none;
+          /*border-bottom-width: 8px;*/ }
+        @media only screen and (max-width: 1200px) {
+          section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li a {
+            background-position-x: -9999px !important;
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+            text-align: center; } }
+        @media only screen and (max-width: 1000px) {
+          section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li a {
+            padding-left: 2px !important;
+            padding-right: 2px !important; } }
+        @media only screen and (max-width: 680px) {
+          section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li a {
+            padding-top: 20px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important; } }
+        @media only screen and (max-width: 450px) {
+          section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li a {
+            padding-top: 25px !important;
+            background-position-x: 0px !important;
+            text-align: left;
+            padding-left: 70px !important; } }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(1) a {
+        border-color: #30aeb6;
+        background: transparent url("../images/block-patent.png") left center no-repeat;
+        background-size: 60px auto;
+        background-color: #30aeb6;
+        color: white; }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(1).active, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(1):hover, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(1):focus, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(1):active {
+        padding-bottom: 20px;
+        background: transparent url("../images/dwn-arrow-patent.png") center bottom no-repeat; }
+        section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(1).active a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(1):hover a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(1):focus a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(1):active a {
+          color: #30aeb6;
+          background-color: #fff;
+          border-bottom: 8px solid #30aeb6;
+          padding-top: 20px;
+          /*text-align: center;*/
+          /*            border-bottom-width: 8px;*/ }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(2) a {
+        border-color: #de4326;
+        background: transparent url("../images/block-tm.png") left center no-repeat;
+        background-size: 60px auto;
+        background-color: #de4326;
+        color: white; }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(2).active, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(2):hover, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(2):focus, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(2):active {
+        padding-bottom: 20px;
+        background: transparent url("../images/dwn-arrow-tm.png") center bottom no-repeat; }
+        section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(2).active a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(2):hover a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(2):focus a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(2):active a {
+          color: #de4326;
+          background-color: #fff;
+          border-bottom: 8px solid #de4326;
+          padding-top: 20px;
+          /*text-align: center;*/
+          /*            border-bottom-width: 8px;*/ }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(3) a {
+        border-color: #84c98f;
+        background: transparent url("../images/block-design.png") left center no-repeat;
+        background-size: 60px auto;
+        background-color: #84c98f;
+        color: white; }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(3).active, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(3):hover, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(3):focus, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(3):active {
+        padding-bottom: 20px;
+        background: transparent url("../images/dwn-arrow-design.png") center bottom no-repeat; }
+        section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(3).active a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(3):hover a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(3):focus a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(3):active a {
+          color: #84c98f;
+          background-color: #fff;
+          border-bottom: 8px solid #84c98f;
+          padding-top: 20px;
+          /*text-align: center;*/
+          /*            border-bottom-width: 8px;*/ }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4) a {
+        border-color: #f1ac1e;
+        background: transparent url("../images/block-pbr.png") left center no-repeat;
+        background-size: 60px auto;
+        background-color: #f1ac1e;
+        color: white; }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4).active, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):hover, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):focus, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):active {
+        padding-bottom: 20px;
+        background: transparent url("../images/dwn-arrow-pbr.png") center bottom no-repeat; }
+        section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4).active a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):hover a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):focus a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):active a {
+          color: #f1ac1e;
+          background-color: #fff;
+          border-bottom: 8px solid #f1ac1e;
+          padding-top: 20px;
+          /*text-align: center;*/
+          /*            border-bottom-width: 8px;*/ }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4) a {
+        /*line-height: 17px;*/
+        padding-top: 16px;
+        padding-left: 64px; }
+        @media only screen and (max-width: 828px) {
+          section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4) a {
+            padding-top: 5px !important; } }
+        @media only screen and (max-width: 450px) {
+          section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4) a {
+            padding-top: 25px !important; } }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4).active a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):hover a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):focus a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):active a {
+        padding-top: 14px !important; }
+        @media only screen and (max-width: 828px) {
+          section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4).active a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):hover a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):focus a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(4):active a {
+            padding-top: 5px !important; } }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5) a {
+        border-color: #612166;
+        background: transparent url("../images/icon.png") left center no-repeat;
+        background-size: 60px auto;
+        background-color: #612166;
+        color: white; }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5).active, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5):hover, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5):focus, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5):active {
+        padding-bottom: 20px;
+        background: transparent url("../images/dwn-arrow-purple.png") center bottom no-repeat; }
+        section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5).active a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5):hover a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5):focus a, section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5):active a {
+          color: #612166;
+          background-color: #fff;
+          border-bottom: 8px solid #612166;
+          padding-top: 20px;
+          /*text-align: center;*/
+          /*            border-bottom-width: 8px;*/ }
+      section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5) a {
+        background-image: none;
+        padding-left: 0px;
+        text-align: center; }
+        @media only screen and (max-width: 450px) {
+          section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5) a {
+            text-align: left !important;
+            /*padding-left: 0px !important;*/ } }

@@ -2,7 +2,7 @@
 applicaiton process menu steps
 */
 
-#block-menu-block-6 {
+.application-process-menu{
     background-color: $lighter-grey;
     margin: 0 0 50px 0;
     height:296px;
@@ -39,7 +39,7 @@ applicaiton process menu steps
                 @include background-image('dummy-image.png');
                 background-size: 128px auto !important;
                 background-position: center 40px !important;
-                
+
 
                 &::before {
                     font-size: 34px;
@@ -82,6 +82,25 @@ applicaiton process menu steps
     }
 }
 
-#block-menu-block-6 {
-    @include application-process-menu($steps:8, $backgroundcolor:$color_willow_brook_approx, $imagefolder:design, $color:$mint);
+
+
+body.section-patents {
+    .application-process-menu {
+        @include application-process-menu($steps:8, $backgroundcolor:$color_jagged_ice_approx, $imagefolder:design, $color:$teal);
+    }   
+}
+body.section-trade-marks {
+    .application-process-menu {
+        @include application-process-menu($steps:8, $backgroundcolor:$color_vanilla_ice_approx, $imagefolder:design, $color:$red);
+    }   
+}
+body.section-designs {
+    .application-process-menu {
+        @include application-process-menu($steps:8, $backgroundcolor:$color_willow_brook_approx, $imagefolder:design, $color:$mint);
+    }   
+}
+body.section-plant-breeders-rights {
+    .application-process-menu {
+        @include application-process-menu($steps:8, $backgroundcolor:$color_oasis_approx, $imagefolder:design, $color:$yellow);
+    }   
 }

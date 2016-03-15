@@ -52,11 +52,19 @@ jQuery(document).on('click', '.bp-midsmall .group-middle h4', function () {
 jQuery(document).on('click', '.bp-midsmall .group-right h4', function () {
     openCloseGroups(jQuery(this));
 });
+jQuery(document).on('click', '.header-chat-link ', function (event) {
+    event.preventDefault();
+    triggerChat();
+});
 jQuery(document).on('click', '.bp-midsmall .panels-flexible-region h4', function () {
     openCloseGroups(jQuery(this));
 });
-jQuery(document).on('mouseup', 'section#block-quicktabs-tools-and-resources .quicktabs-style-nostyle a', function () {
+jQuery(document).on('mouseup', 'section#block-quicktabs-tools-and-resources .quicktabs-style-nostyle > li a', function () {
     //using mouse up since click is already used and prevented for element
+
+    var $url = jQuery(this).attr("href");
+//    alert($url);
+    history.pushState({}, '', $url);
 
     jQuery(this).parent('li').siblings('li').removeClass('active');
     jQuery(this).parent('li').addClass('active');
@@ -68,6 +76,7 @@ jQuery(document).on('mouseup', 'section#block-quicktabs-tools-and-resources .qui
 
 
 });
+
 function toolsAndResourcesTabsCheck() {
     if (jQuery('section#block-quicktabs-tools-and-resources').length > 0) {
         var $active_page = "#" + jQuery('section#block-quicktabs-tools-and-resources .quicktabs-style-nostyle li.active a').attr('id').replace("-tab-", "-tabpage-");
@@ -84,6 +93,7 @@ function resizing() {
     removeJsAppliedStyles();
     equaliseElementsHeight();
     showSearchIcon();
+    showChatIcon();
     slickSlides();
     slideApplicationProcess();
     stickyMenu();
@@ -283,6 +293,28 @@ function showSearchIcon() {
         }
     });
 }
+function showChatIcon() {
+    /*
+     * On Reponsive device add element to trgger chat
+     */
+    jQuery('.responsive-chat-icon').remove();
+
+    if (jQuery('.bp-medium').length > 0) {
+        jQuery('header#navbar .header > .container').prepend('<div class="responsive-chat-icon">chat</div>');
+        jQuery('.block-search-api-page').css('width', jQuery(document).width() - 30 + 'px');
+    } else {
+        jQuery('.responsive-chat-icon').remove();
+        jQuery('.block-search-api-page').removeAttr('style');
+    }
+
+    jQuery(document).on('click', '.responsive-chat-icon', function () {
+        triggerChat();
+    });
+}
+function triggerChat() {
+    console.log('Chat link clicked. Add JS funciton here');
+}
+
 function slickSlides() {
     if (jQuery('.bp-medium_ipad').length > 0) {
         slideHomeMain('attach');
@@ -336,7 +368,7 @@ function slideApplicationProcess() {
     var $break_point_midsmall = "640"; /*Mobile Landscape*/
     var $break_point_small = "480"; /*Mobile*/
 
-    var $element = '#block-menu-block-6 ul';
+    var $element = 'section.application-process-menu ul';
     var $centermode = false;
     var $initialSlide = 0;
     var $slidesToShow = 6;

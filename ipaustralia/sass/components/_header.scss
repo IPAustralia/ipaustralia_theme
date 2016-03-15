@@ -3,13 +3,13 @@ header{
         margin: 0px;
         padding:0px;
         @media only screen and (max-width: $break-point-large) {
-            width:40%;
+            width:39%;
         }
         @media only screen and (max-width: $break-point-medium) {
-            width:40%;
+            width:39%;
         }
         @media only screen and (max-width: $break-point-midsmall) {
-            width:60%;
+            width:50%;
         }
         img {
             margin-top: 40px;
@@ -31,7 +31,8 @@ header{
             padding-right: 0px;
             @media only screen and (max-width: $break-point-large) {
                 float:right;
-                width:60%;
+                width:61%;
+                padding:0px;
             } 
             section{
                 float: right;
@@ -51,7 +52,7 @@ header{
                     }
                 }
                 @media only screen and (max-width: $break-point-large) {
-                    margin-left:10px;
+                    margin-left:5px;
                     &.block-search-api-page {
                         width:200px;
                     }
@@ -191,12 +192,27 @@ header{
         }
         .responsive-search-icon{
             position: absolute;
-            width: 45px;
+            width: 35px;
             height: 45px;
             right: 65px;
             top: 22px;
             cursor: pointer;
             @include background-image('link-search-26px.png');
+            text-indent: -9999px;
+            background-size: auto 22px;
+            &.opened {
+                @include background-image('close-cross.png');
+                background-size: auto auto;
+            }
+        }
+        .responsive-chat-icon{
+            position: absolute;
+            width: 35px;
+            height: 45px;
+            right: 110px;
+            top: 22px;
+            cursor: pointer;
+            @include background-image('balloon.png');
             text-indent: -9999px;
             background-size: auto 22px;
             &.opened {

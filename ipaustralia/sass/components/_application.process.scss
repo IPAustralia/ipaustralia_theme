@@ -78,6 +78,9 @@ Applicaiton process on body
                     white-space: normal;
                     line-height: 1em;
                 }
+                @media only screen and (max-width: $break-point-midsmall) {
+                   height:105px;
+                }
                 &::before {
                     font-size: 36px;
                     font-weight: 600;
@@ -85,6 +88,9 @@ Applicaiton process on body
                     content: counter(process-counter);
                     margin-bottom: 10px;
                     /*color: $mint;*/
+                    @media only screen and (max-width: $break-point-midsmall) {
+                        margin-top:5px;
+                    }
                 }
             }
             .breif-description {

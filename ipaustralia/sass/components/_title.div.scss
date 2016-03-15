@@ -19,3 +19,24 @@ div.title {
         }
     }
 }
+
+body.section-patents {
+    div.title {
+        @include background-image('patents-landing.jpg');
+    }
+}
+body.section-trade-marks {
+    div.title {
+        @include background-image('tm-banner.jpg');
+    }
+}
+body.section-designs {
+    div.title {
+        @include background-image('designs-banner.jpg');
+    }
+}
+body.section-plant-breeders-rights {
+    div.title {
+        @include background-image('pbr-banner.jpg');
+    }
+}

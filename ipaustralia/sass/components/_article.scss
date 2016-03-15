@@ -9,4 +9,10 @@ article {
             line-height:28px;
         }   
     }
+    h3 {
+        @media only screen and (max-width: $break-point-medium) {
+            font-size:20px;
+            line-height:22px;
+        }   
+    }
 }
