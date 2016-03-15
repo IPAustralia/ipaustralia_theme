@@ -142,7 +142,7 @@ header {
                         }
                     }
                 }
-                
+
                 a {
                     padding: 19px 21px 15px 21px;
                     display: block;
@@ -227,7 +227,7 @@ header {
 
             }
 
-            @media only screen and (max-width: $break-point-large) {
+            @media only screen and (max-width: $break-point-xlarge) {
                 text-overflow:ellipsis;
                 white-space: nowrap ;
                 overflow:hidden;
@@ -316,7 +316,9 @@ header {
                     &:hover {
                     }
                     @media only screen and (max-width: $break-point-medium - 1) {
-                        display:none;
+                        margin: 0px;
+                        border: 0px !important;
+                        width: 100%;
                     }
                 }
 
@@ -363,11 +365,17 @@ header {
                                 width:100%;
                                 padding: 20px!important;
                                 margin:0px;
+                                font-weight: bold;
                                 background:none;
+                                background-color:$lighter-grey !important;
+                                color:$charcoal !important;
                             }
                         }
                         .megamenu-level-3 {
                             padding:0px;
+                            @media only screen and (max-width: $break-point-medium - 1) {
+                                background-color:transparent !important;
+                            }
                             li {
                                 width: 100%;
                                 a{
@@ -379,10 +387,24 @@ header {
                                     &:hover {
                                         text-decoration: none;
                                     }
+                                    @media only screen and (max-width: $break-point-medium - 1) {
+                                        float:none;
+                                        font:$body-text;
+                                        width:100%;
+                                        padding: 20px 20px 20px 40px !important;
+                                        margin:0px;
+                                        font-weight: normal;
+                                        background:none;
+                                        text-decoration: none;
+                                        @include background-image('arrow-right-charcoal-transparent.png', $x:20px);
+                                        background-size:auto 10px;
+                                        background-color:$lighter-grey !important;
+                                        color:$charcoal !important;
+                                    }
                                 }
                             }
                             @media only screen and (max-width: $break-point-medium - 1) {
-                                display:none;
+                                /*display:none;*/
                             }
                         }
                         &.highlight-box {

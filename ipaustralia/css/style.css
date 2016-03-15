@@ -988,7 +988,7 @@ header nav .nav-tabs {
       border-left: 6px solid #f1ac1e !important; }
     header nav .nav-tabs li:hover .dropdown-menu {
       display: block; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1200px) {
     header nav .nav-tabs {
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -1076,7 +1076,9 @@ header nav .nav-tabs {
         border: 2px solid #0d252c; }
       @media only screen and (max-width: 767px) {
         header nav .nav-tabs .dropdown-menu .learn-more {
-          display: none; } }
+          margin: 0px;
+          border: 0px !important;
+          width: 100%; } }
     header nav .nav-tabs .dropdown-menu .megamenu-level-2 {
       clear: both;
       padding: 40px 0px;
@@ -1118,9 +1120,15 @@ header nav .nav-tabs {
               width: 100%;
               padding: 20px !important;
               margin: 0px;
-              background: none; } }
+              font-weight: bold;
+              background: none;
+              background-color: #eff0f2 !important;
+              color: #0d252c !important; } }
         header nav .nav-tabs .dropdown-menu .megamenu-level-2 li .megamenu-level-3 {
           padding: 0px; }
+          @media only screen and (max-width: 767px) {
+            header nav .nav-tabs .dropdown-menu .megamenu-level-2 li .megamenu-level-3 {
+              background-color: transparent !important; } }
           header nav .nav-tabs .dropdown-menu .megamenu-level-2 li .megamenu-level-3 li {
             width: 100%; }
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li .megamenu-level-3 li a {
@@ -1131,9 +1139,23 @@ header nav .nav-tabs {
               margin: 0px; }
               header nav .nav-tabs .dropdown-menu .megamenu-level-2 li .megamenu-level-3 li a:hover {
                 text-decoration: none; }
+              @media only screen and (max-width: 767px) {
+                header nav .nav-tabs .dropdown-menu .megamenu-level-2 li .megamenu-level-3 li a {
+                  float: none;
+                  font: normal 16px "robotoregular", sans-serif;
+                  width: 100%;
+                  padding: 20px 20px 20px 40px !important;
+                  margin: 0px;
+                  font-weight: normal;
+                  background: none;
+                  text-decoration: none;
+                  background: transparent url("../images/arrow-right-charcoal-transparent.png") 20px center no-repeat;
+                  background-size: auto 10px;
+                  background-color: #eff0f2 !important;
+                  color: #0d252c !important; } }
           @media only screen and (max-width: 767px) {
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li .megamenu-level-3 {
-              display: none; } }
+              /*display:none;*/ } }
         header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box {
           padding-right: 10px; }
           header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box.top-margin a {
@@ -1188,44 +1210,47 @@ header nav .nav-tabs {
   /*    border-top-style: solid;
       border-top-width: 5px;*/ }
 
-.region-sidebar-first.well {
-  background-color: #fff !important;
-  border: 0 none;
-  border-radius: 0 !important;
-  box-shadow: 0 1px 1px transparent inset !important;
-  min-height: 20px !important;
-  padding: 0 !important; }
-  .region-sidebar-first.well ul li:first-child {
-    border-top: 6px solid #000; }
-  .region-sidebar-first.well ul li.active > a, .region-sidebar-first.well ul li.active:hover {
-    background: #eff0f2; }
-  .region-sidebar-first.well ul li a {
-    font-family: robotobold, sans-serif;
-    color: #000;
-    text-transform: uppercase;
-    padding: 20px 15px;
-    border-bottom: 2px dotted #eff0f2; }
-    .region-sidebar-first.well ul li a:hover {
-      background: transparent;
-      text-decoration: underline; }
-  .region-sidebar-first.well ul li li:first-child {
-    border-top: 0px; }
-  .region-sidebar-first.well ul li li a {
-    /*border:0px;*/
-    /*border-top: 2px dotted $lighter-grey;*/
-    padding: 20px 35px; }
-    .region-sidebar-first.well ul li li a:before {
-      content: '>';
-      font-family: sans-serif;
-      width: 15px;
-      font-size: 9px;
-      display: inline-block;
-      opacity: 0.7;
-      margin-left: -15px; }
-
-/* side nav diplay none */
-.region-sidebar-first .sidenav-hide {
-  display: none; }
+aside {
+  /* side nav diplay none */ }
+  aside .region-sidebar-first.well {
+    background-color: #fff !important;
+    border: 0 none;
+    border-radius: 0 !important;
+    box-shadow: 0 1px 1px transparent inset !important;
+    min-height: 20px !important;
+    padding: 0 !important; }
+    aside .region-sidebar-first.well ul li:first-child {
+      border-top: 6px solid #000; }
+    aside .region-sidebar-first.well ul li.active > a, aside .region-sidebar-first.well ul li.active:hover {
+      background: #eff0f2; }
+    aside .region-sidebar-first.well ul li a {
+      font-family: robotobold, sans-serif;
+      color: #000;
+      text-transform: uppercase;
+      padding: 20px 15px;
+      border-bottom: 2px dotted #eff0f2; }
+      aside .region-sidebar-first.well ul li a:hover {
+        background: transparent;
+        text-decoration: underline; }
+    aside .region-sidebar-first.well ul li li:first-child {
+      border-top: 0px; }
+    aside .region-sidebar-first.well ul li li a {
+      /*border:0px;*/
+      /*border-top: 2px dotted $lighter-grey;*/
+      padding: 20px 35px; }
+      aside .region-sidebar-first.well ul li li a:before {
+        content: '>';
+        font-family: sans-serif;
+        width: 15px;
+        font-size: 9px;
+        display: inline-block;
+        opacity: 0.7;
+        margin-left: -15px; }
+  aside .region-sidebar-first .sidenav-hide {
+    display: none; }
+  @media only screen and (max-width: 640px) {
+    aside {
+      display: none; } }
 
 .messages .alert-block {
   border-radius: 0px;
@@ -1795,6 +1820,15 @@ Applicaiton process on body
       content: "> ";
       font-family: sans-serif;
       padding: 0 1px; }
+
+@media only screen and (max-width: 640px) {
+  article {
+    padding: 0px;
+    margin: 0px -20px; } }
+@media only screen and (max-width: 768px) {
+  article h2 {
+    font-size: 24px;
+    line-height: 28px; } }
 
 .front h2 {
   font-size: 38px; }
