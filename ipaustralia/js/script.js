@@ -605,6 +605,7 @@ function stickyMenu() {
         jQuery("#block-bean-pbr-anchor-menu").trigger("sticky_kit:detach");
         jQuery("#block-bean-ip-infringement-anchor-block").trigger("sticky_kit:detach");
         jQuery("#block-bean-understanding-ip-anchor-block").trigger("sticky_kit:detach");
+        jQuery("#block-bean-about-us-anchor-menu").trigger("sticky_kit:detach");
     } else {
         jQuery(".navbar-default").stick_in_parent();
         jQuery("#block-bean-patents-anchor-menu-3").stick_in_parent();
@@ -613,24 +614,17 @@ function stickyMenu() {
         jQuery("#block-bean-pbr-anchor-menu").stick_in_parent();
         jQuery("#block-bean-ip-infringement-anchor-block").stick_in_parent();
         jQuery("#block-bean-understanding-ip-anchor-block").stick_in_parent();
+        jQuery("#block-bean-about-us-anchor-menu").stick_in_parent();
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//bold the "IP Australia" in the footer
+jQuery(document).ready(function () {
+        jQuery('#block-menu-menu-footer-sub-menu > h2.title').html(function (i, html) {
+            return html.replace(/(\w+\s\w+)/, '<strong>$1</strong>')
+    });
+});
 
 
 

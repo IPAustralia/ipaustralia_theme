@@ -1,0 +1,16 @@
+.rhs-side-nav {
+    font-family: $font-body-bold;
+    color: $white;
+    text-transform: uppercase;
+    padding: $gap-medium;
+    background-color: $color_firefly_approx;
+    max-height: 60px;
+    ul {
+        li{
+            list-style:none;
+            a {
+                color: $white;
+            }
+        }
+    }
+}

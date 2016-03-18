@@ -277,7 +277,7 @@ header {
 
                 i {
                     float: left;
-                    height: 120px;
+                    height: 80px;
                     width: 90px;
                     &.icon-patents {
                         @include background-image('mm-icon-patent.gif', left, top);
@@ -312,7 +312,7 @@ header {
                 .learn-more {
                     @include rounded-button-with-arrrow(transparent,$charcoal, 16px, 'arrow-right-charcoal-transparent.png');
                     float: right;
-                    margin-bottom:70px;
+                    margin-bottom:20px;
                     &:hover {
                     }
                     @media only screen and (max-width: $break-point-medium - 1) {
@@ -324,7 +324,7 @@ header {
 
                 .megamenu-level-2 {
                     clear: both;
-                    padding: $gap-medium 0px;
+                    padding: $gap-small 0px;
                     margin-top: $gap-medium;
                     border-top:2px dotted #c5c9cc;
                     @media only screen and (max-width: $break-point-medium - 1) {
@@ -380,7 +380,7 @@ header {
                                 width: 100%;
                                 a{
                                     font:$body-text;
-                                    line-height: 40px;
+                                    line-height: 30px;
                                     background: none;
                                     text-decoration: underline;
                                     margin:0px;
