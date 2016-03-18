@@ -1,0 +1,128 @@
+/*fonts*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+h1, h2, h3, h4 {font-family: 'Montserrat', sans-serif;}
+a {
+color: #977100;
+text-decoration: underline;
+}
+a:hover{
+color: #977100;
+text-decoration: none;
+}
+
+.popular-design {color:#fff; font-weight:bold; font-size:20px}
+.noteDes {color:#1d252c; background-color:#84c98f; padding:5px 10px;}
+.boxPopDes, .box1PopDes { border-left:2px solid #84c98f !important; border-right: 2px solid #84c98f !important;  border-top:1px solid #84c98f !important; }
+.boxImpDes {background-color:#84c98f;}
+
+.popular-patent {color:#fff; font-weight:bold; font-size:20px}
+.notePat {color:#1d252c; background-color:#30aeb6; padding:5px 10px;}
+.boxPopPat, .box1PopPat { border-left:2px solid #30aeb6 !important; border-right: 2px solid #30aeb6 !important;  border-top:1px solid #30aeb6 !important; }
+.boxImpPat {background-color:#30aeb6;}
+
+.popular-pbr {color:#fff; font-weight:bold; font-size:20px}
+.notePBR {color:#1d252c; background-color:#f1ac1e; padding:5px 10px;}
+.boxPopPBR, .box1PopPBR { border-left:2px solid #f1ac1e !important; border-right: 2px solid #f1ac1e !important;  border-top:1px solid #f1ac1e !important; }
+.boxImpPBR {background-color:#f1ac1e;}
+
+.popular-tm {color:#fff; font-weight:bold; font-size:20px}
+.noteTM {color:#1d252c; background-color:#de4326; padding:5px 10px;}
+.boxPopTM, .box1PopTM { border-left:2px solid #de4326 !important; border-right: 2px solid #de4326 !important;  border-top:1px solid #de4326 !important; }
+.boxImpTM {background-color:#de4326;}
+
+td { text-align:center !important; } 
+.centreme {text-align:center;}
+.left-wrap {text-align:left;}
+.boxer {
+display: table;
+border-collapse: collapse;
+width:95%;
+margin-left:15px;
+}
+.boxer .box-row {
+display: table-row;
+}
+.boxer .box, .boxer .box1, .boxer .boxImpDes, .boxer .boxImpPat, .boxer .boxPopDes, .boxer .boxPopPat, .boxer .box1PopDes, .boxer .box1PopPat, .boxer .boxImpPBR, .boxer .boxPopPBR, .boxer .box1PopPBR,  .boxer .boxImpTM, .boxer .boxPopTM, .boxer .box1PopTM, .boxer boxOne {
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+border: 1px solid #f1f1f1;
+padding-top:5px;
+padding-bottom;5px;
+}
+.boxer .box2 {
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+border: 1px solid #fff;
+border-bottom: 1px solid #f1f1f1;
+padding-top:5px;
+padding-bottom;5px;
+background-color:#fff;
+}
+.box1, .box1Pop { background-color:#f1f1f1;}
+.imp {font-weight:bold; color:white;}
+.box, .boxImp, .boxPop {width:22%;}
+.oneTotal, .twoTotal, .threeTotal, .partTwoTotal { font-family: 'Montserrat', sans-serrif; font-weight:bold;}
+.applyOne, .applyTwo, .applyThree, .oneRegisterTotal, .twoRegisterTotal, .threeRegisterTotal, .oneRenewTotal, .twoRenewTotal, .threeRenewTotal {font-weight:bold; font-size:20px; color:#fff; }
+.selecttable {
+display: table;
+border-collapse: collapse;
+}
+.selecttable .single-row {
+display: table-row;
+}
+.selecttable .boxentry {
+display: table-cell;
+text-align: left;
+vertical-align: top;
+border: 0px solid black;
+width:50%;
+}
+/**animation**/
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+/*slide left*/
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+/*slide right*/
+.animation-element.slide-right {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(100px, 0px, 0px);
+  -webkit-transform: translate3d(100px, 0px, 0px);
+  -o-transform: translate(100px, 0px);
+  -ms-transform: translate(100px, 0px);
+  transform: translate3d(100px, 0px, 0px);
+}
+.animation-element.slide-right.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}

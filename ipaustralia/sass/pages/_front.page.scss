@@ -18,7 +18,7 @@
         padding: $gap-large 10px;
         background: $off-white;
         text-align: center;
-        @include background-image('women-with-tablet-merged.jpg', center,top,no-repeat, $charcoal);
+        @include background-image('women-with-tablet_v2.jpg', center,top,no-repeat, $charcoal);
         background-size: cover;
         @media only screen and (max-width: $break-point-medium) {
             padding: 10px 0px;
@@ -127,7 +127,7 @@
         background: $charcoal;
         color:white;
         text-align:center;
-        @include background-image('tablet_v2.jpg', center,center,no-repeat, $charcoal);
+        @include background-image('tablet.jpg', center,center,no-repeat, $charcoal);
         background-size: cover;
         @media only screen and (max-width: $break-point-medium) {
             padding: $gap-large/2 10px;
