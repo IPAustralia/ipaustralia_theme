@@ -339,7 +339,7 @@ function slideHomeMain($action) {
                 dots: true
             });
         } catch (exp) {
-//            console.log('Attaching slick issue');
+            //console.log('Attaching slick issue');
         }
     } else {
         try {
@@ -347,7 +347,7 @@ function slideHomeMain($action) {
                 jQuery($element).slick('unslick');
             }
         } catch (exp) {
-//            console.log('Attaching slick issue');
+            //console.log('Attaching slick issue');
         }
     }
 
@@ -458,7 +458,7 @@ function slideApplicationProcess() {
         });
 
     } catch (exp) {
-//            console.log('Attaching slick issue');
+            //console.log('Attaching slick issue');
     }
 //    $($element).on('edge', function (event, slick, direction) {
 //        console.log('edge was hit')
@@ -621,7 +621,7 @@ function stickyMenu() {
 
 //bold the "IP Australia" in the footer
 jQuery(document).ready(function () {
-        jQuery('#block-menu-menu-footer-sub-menu > h2.title').html(function (i, html) {
+        jQuery('h2.block-title').html(function (i, html) {
             return html.replace(/(\w+\s\w+)/, '<strong>$1</strong>')
     });
 });

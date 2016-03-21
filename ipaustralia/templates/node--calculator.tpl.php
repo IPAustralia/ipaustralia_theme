@@ -80,8 +80,9 @@
  */
 ?>
 <?php
-  drupal_add_css(path_to_theme() . '/interactives/calculator/pricing.css');
-  drupal_add_js(path_to_theme() . '/interactives/calculator/pricing.js');
+  $theme_path = drupal_get_path('theme', 'ipaustralia');
+  drupal_add_css($theme_path . '/interactives/calculator/pricing.css');
+  drupal_add_js($theme_path . '/interactives/calculator/pricing.js');
 ?>
 <article id="node-<?php print $node->nid; ?>" class="landing<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>

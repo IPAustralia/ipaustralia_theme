@@ -31,9 +31,12 @@ section#block-panels-mini-more-about-patents-2-col-panel {
 
 /// tmp styling 
 section#block-bean-all-about-patents-block {
+    background: #C3e6e8;
     padding: $gap-large 0px;
     text-align:center;
+
     ul{
+        background: $white;
         display: inline-block;
         padding: 0px;
         margin: 0px;
@@ -52,5 +55,4 @@ section#block-bean-all-about-patents-block {
     a {
         color: $charcoal;
     }
-
 }

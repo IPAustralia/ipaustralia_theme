@@ -15,7 +15,7 @@ h1 {
 h2 {
     color: $color_shark_approx;
     font-family: $font-title-normal;
-    font-size: 38px;
+    font-size: 32px;
     line-height: 42px;
     font-weight: 600;
     margin-top: 0px;
@@ -123,16 +123,20 @@ article {
     padding: 0 30px;
     line-height: 24px;
     h2 {
-        margin-top: 40px;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 15px;
         &:first-child {
             margin-top: 0px;
         }
     }
     h3 {
-        margin-top: 40px;
-        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
         letter-spacing: 1px
+    }
+    .field-name-field-publish-online-date {
+        float: right;
+        margin-top: 25px;
     }
 }
 

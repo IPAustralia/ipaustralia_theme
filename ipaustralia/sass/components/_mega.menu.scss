@@ -141,6 +141,12 @@ header {
                             cursor:pointer;
                         }
                     }
+                    @media only screen and (max-width: $break-point-large - 50) {
+                       display: none;
+                    }
+                    @media only screen and (max-width: $break-point-medium - 1) {
+                       display: block;
+                    }
                 }
 
                 a {
@@ -154,6 +160,18 @@ header {
                     border: 0px;
                     margin:0px;
                     border-radius:0px;
+                    @media only screen and (max-width: $break-point-xlarge - 1) {
+                        padding: 19px 10px 15px 10px;
+                    }
+                    @media only screen and (max-width: $break-point-large - 1) {
+                        padding: 19px 5px 15px 5px;
+                    }
+                    @media only screen and (max-width: $break-point-large - 150) {
+                       font-size: 14px;
+                    }
+                    @media only screen and (max-width: $break-point-medium - 1) {
+                       font-size: 16px;
+                    }
                     &:hover {
                         text-decoration: none;
                         border: 0px;
@@ -444,7 +462,7 @@ header {
                                     @include background-image('link-apply.png', 15px, center, no-repeat, white); 
                                 }
                                 &.manual-icon {
-                                    @include background-image('link-fees.png', 15px, center, no-repeat, white); 
+                                    @include background-image('link-manual.png', 15px, center, no-repeat, white); 
                                 }
                                 &.fees-icon {
                                     @include background-image('link-fees.png', 15px, center, no-repeat, white); 
