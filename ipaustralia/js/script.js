@@ -378,9 +378,9 @@ function slideApplicationProcess() {
 //        $centermode = true;
 
     }
-    if ($index > -1) {
+/*    if ($index > -1) {
         $initialSlide = $index;
-    }
+    }*/
 
 
     try {
@@ -482,7 +482,7 @@ function slideApplicationProcessBody($action) {
         var $index = parseInt(jQuery($element).find('li.active').index());
 
         if ($index > $slidesToShow - 1) {
-//        $centermode = true;
+            $centermode = true;
 
         }
         if ($index > -1) {
