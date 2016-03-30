@@ -39,5 +39,10 @@
     border-color: $color_shark_approx !important;
 }
 .bs-callout {
-    border-left-width: 5px !important;
+    border-left: 5px solid !important;
+}
+ul.tools-resources-list {
+    li.bs-callout.bs-vert-callout-purple {
+        border-left: 5px solid $color_eminence_approx !important;
+    }
 }
