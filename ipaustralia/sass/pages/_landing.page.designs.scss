@@ -16,7 +16,7 @@ section#block-bean-understanding-designs-block {
 section#block-bean-designs-application-process {
     background: $color_willow_brook_approx;
     @include  section_padding(20);
-    .applicaiton-process-wrapper {
+    .application-process-wrapper {
         @include application-process(6, $color:$mint, $imagefolder:design);
     }
 }

@@ -1,7 +1,7 @@
 /*
 Applicaiton process on body
 */
-.applicaiton-process-wrapper {
+.application-process-wrapper {
     h2,.description,p  {
         text-align: center;
     }
@@ -93,7 +93,7 @@ Applicaiton process on body
                     }
                 }
             }
-            .breif-description {
+            .brief-description {
                 height: 90px;
                 overflow: hidden;
                 @media only screen and (max-width: $break-point-large + 200) {

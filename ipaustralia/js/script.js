@@ -1273,3 +1273,10 @@ function equalHeight($container) {
         return this
     }
 }).call(this);
+
+
+//adding stripes to tables and other content
+(function () {
+    jQuery('div.field-name-body table tr:even').css('background-color','#e1e1e1');
+    jQuery('div.field-name-body dl dt:even, div.field-name-body dl dd:even').css('background-color','#e1e1e1');
+});

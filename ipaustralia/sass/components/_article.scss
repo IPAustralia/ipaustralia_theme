@@ -15,4 +15,18 @@ article {
             line-height:22px;
         }   
     }
+    table {
+        border-color: $charcoal;
+        tr:nth-child(even) {
+            background: $light-grey;
+        }
+        tr {
+            td, th {
+                padding: 5px 1%;
+                vertical-align: top;
+                text-align: left;
+                word-wrap: break-word;
+            }
+        }
+    }
 }

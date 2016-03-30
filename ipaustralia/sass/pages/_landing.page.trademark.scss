@@ -13,6 +13,14 @@ section#block-bean-understanding-trade-marks-new {
     @include  landing_page_group_block_multiple();
 }
 
+section#block-bean-trade-marks-application-process {
+    background: $color_vanilla_ice_approx;
+    @include  section_padding(20);
+    .application-process-wrapper {
+        @include application-process(5, $color:$red, $imagefolder:trade_marks);
+    }
+}
+
 section#block-bean-managing-your-trade-mark-block {
     background: $white;
     @include  section_padding(20);
@@ -28,28 +36,3 @@ section#block-panels-mini-more-about-trade-marks-2-column- {
     @include landing_page_more_about('transparent-pixel-red.png');
 }
 
-/// tmp styling 
-section#block-bean-all-about-trade-marks-block {
-    padding: $gap-large 0px;
-    text-align:center;
-    ul{
-        display: inline-block;
-        padding: 0px;
-        margin: 0px;
-        list-style:none;
-        max-width:250px;
-        margin: 0px $gap-medium $gap-medium;
-        @media only screen and (max-width: $break-point-medium) {
-            display:none;
-        }
-        li {
-            a {
-
-            }
-        }
-    }
-    a {
-        color: $charcoal;
-    }
-
-}

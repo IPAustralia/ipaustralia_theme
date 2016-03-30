@@ -1487,7 +1487,10 @@ aside {
   border-color: #1d252c !important; }
 
 .bs-callout {
-  border-left-width: 5px !important; }
+  border-left: 5px solid !important; }
+
+ul.tools-resources-list li.bs-callout.bs-vert-callout-purple {
+  border-left: 5px solid #704579 !important; }
 
 #block-panels-mini-consultations-and-twitter-feed-2 {
   padding: 80px 10px;
@@ -1727,38 +1730,26 @@ body.section-trade-marks .application-process-menu {
     display: none; }
     body.section-trade-marks .application-process-menu ul li a::before {
       color: #de4326; }
-    body.section-trade-marks .application-process-menu ul li:nth-child(8) {
-      display: block; }
-      body.section-trade-marks .application-process-menu ul li:nth-child(8) a {
-        background: transparent url("../images/application-process/design/8.png") center center no-repeat; }
-    body.section-trade-marks .application-process-menu ul li:nth-child(7) {
-      display: block; }
-      body.section-trade-marks .application-process-menu ul li:nth-child(7) a {
-        background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
-    body.section-trade-marks .application-process-menu ul li:nth-child(6) {
-      display: block; }
-      body.section-trade-marks .application-process-menu ul li:nth-child(6) a {
-        background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
     body.section-trade-marks .application-process-menu ul li:nth-child(5) {
       display: block; }
       body.section-trade-marks .application-process-menu ul li:nth-child(5) a {
-        background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
+        background: transparent url("../images/application-process/trade_marks/5.png") center center no-repeat; }
     body.section-trade-marks .application-process-menu ul li:nth-child(4) {
       display: block; }
       body.section-trade-marks .application-process-menu ul li:nth-child(4) a {
-        background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
+        background: transparent url("../images/application-process/trade_marks/4.png") center center no-repeat; }
     body.section-trade-marks .application-process-menu ul li:nth-child(3) {
       display: block; }
       body.section-trade-marks .application-process-menu ul li:nth-child(3) a {
-        background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
+        background: transparent url("../images/application-process/trade_marks/3.png") center center no-repeat; }
     body.section-trade-marks .application-process-menu ul li:nth-child(2) {
       display: block; }
       body.section-trade-marks .application-process-menu ul li:nth-child(2) a {
-        background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
+        background: transparent url("../images/application-process/trade_marks/2.png") center center no-repeat; }
     body.section-trade-marks .application-process-menu ul li:nth-child(1) {
       display: block; }
       body.section-trade-marks .application-process-menu ul li:nth-child(1) a {
-        background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
+        background: transparent url("../images/application-process/trade_marks/1.png") center center no-repeat; }
 
 body.section-designs .application-process-menu {
   background-color: #dff0d8; }
@@ -1833,14 +1824,14 @@ body.section-plant-breeders-rights .application-process-menu {
 /*
 Applicaiton process on body
 */
-.applicaiton-process-wrapper h2, .applicaiton-process-wrapper .description, .applicaiton-process-wrapper p {
+.application-process-wrapper h2, .application-process-wrapper .description, .application-process-wrapper p {
   text-align: center; }
-.applicaiton-process-wrapper h2 {
+.application-process-wrapper h2 {
   margin: 0 0 30px; }
-.applicaiton-process-wrapper .description {
+.application-process-wrapper .description {
   font-size: 1.3em;
   font-family: robotolight; }
-.applicaiton-process-wrapper ul {
+.application-process-wrapper ul {
   background: transparent url("../images/application-process/_generic/background-line-9.png") center center no-repeat;
   background-size: 100% auto;
   background-position: right 140px;
@@ -1849,9 +1840,9 @@ Applicaiton process on body
   padding: 0px;
   margin: 0px; }
   @media only screen and (max-width: 992px) {
-    .applicaiton-process-wrapper ul {
+    .application-process-wrapper ul {
       background: transparent; } }
-  .applicaiton-process-wrapper ul li {
+  .application-process-wrapper ul li {
     width: 350px;
     cursor: pointer;
     padding: 30px 45px 54px;
@@ -1859,18 +1850,18 @@ Applicaiton process on body
     counter-increment: process-counter;
     margin: 20px 0px; }
     @media only screen and (max-width: 1192px) {
-      .applicaiton-process-wrapper ul li {
+      .application-process-wrapper ul li {
         padding: 30px 25px 2px;
         width: 310px; } }
     @media only screen and (max-width: 768px) {
-      .applicaiton-process-wrapper ul li {
+      .application-process-wrapper ul li {
         /*padding: 30px 15px 20px;*/
         width: 210px; } }
     @media only screen and (max-width: 480px) {
-      .applicaiton-process-wrapper ul li {
+      .application-process-wrapper ul li {
         padding: 30px 15px 20px;
         width: 180px; } }
-    .applicaiton-process-wrapper ul li .image {
+    .application-process-wrapper ul li .image {
       width: 182px;
       height: 182px;
       background: #fff;
@@ -1879,32 +1870,32 @@ Applicaiton process on body
       background-color: #fff !important;
       background-size: 182px 182px !important; }
       @media only screen and (max-width: 640px) {
-        .applicaiton-process-wrapper ul li .image {
+        .application-process-wrapper ul li .image {
           width: 150px;
           height: 150px; } }
-    .applicaiton-process-wrapper ul li:hover .image {
+    .application-process-wrapper ul li:hover .image {
       background-size: 190px 190px !important;
       box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
       transition: all 0.2s ease-in-out; }
-    .applicaiton-process-wrapper ul li h4 {
+    .application-process-wrapper ul li h4 {
       /*font-size: 28px;*/
       color: #0d252c;
       height: 89px;
       overflow: hidden; }
       @media only screen and (max-width: 1192px) {
-        .applicaiton-process-wrapper ul li h4 {
+        .application-process-wrapper ul li h4 {
           height: 65px;
           white-space: nowrap;
           text-overflow: ellipsis; } }
       @media only screen and (max-width: 992px) {
-        .applicaiton-process-wrapper ul li h4 {
+        .application-process-wrapper ul li h4 {
           height: 89px;
           white-space: normal;
           line-height: 1em; } }
       @media only screen and (max-width: 640px) {
-        .applicaiton-process-wrapper ul li h4 {
+        .application-process-wrapper ul li h4 {
           height: 105px; } }
-      .applicaiton-process-wrapper ul li h4::before {
+      .application-process-wrapper ul li h4::before {
         font-size: 36px;
         font-weight: 600;
         display: block;
@@ -1912,42 +1903,42 @@ Applicaiton process on body
         margin-bottom: 10px;
         /*color: $mint;*/ }
         @media only screen and (max-width: 640px) {
-          .applicaiton-process-wrapper ul li h4::before {
+          .application-process-wrapper ul li h4::before {
             margin-top: 5px; } }
-    .applicaiton-process-wrapper ul li .breif-description {
+    .application-process-wrapper ul li .brief-description {
       height: 90px;
       overflow: hidden; }
       @media only screen and (max-width: 1192px) {
-        .applicaiton-process-wrapper ul li .breif-description {
+        .application-process-wrapper ul li .brief-description {
           height: 45px; } }
       @media only screen and (max-width: 992px) {
-        .applicaiton-process-wrapper ul li .breif-description {
+        .application-process-wrapper ul li .brief-description {
           height: 90px; } }
-    .applicaiton-process-wrapper ul li a {
+    .application-process-wrapper ul li a {
       display: inline-block;
       margin-top: 15px;
       text-decoration: underline;
       background: transparent url("../images/arrow-right-golden-transparent.png") center center no-repeat;
       background-position: right center;
       padding-right: 15px; }
-  .applicaiton-process-wrapper ul.slick-slider li {
+  .application-process-wrapper ul.slick-slider li {
     background: transparent url("../images/application-process-bar.png") center center no-repeat;
     background-position: 0px 116px;
     background-repeat: repeat-x;
     /*opacity:0.4;*/ }
-    .applicaiton-process-wrapper ul.slick-slider li:first-child {
+    .application-process-wrapper ul.slick-slider li:first-child {
       background-position: 100px 116px;
       background-repeat: no-repeat; }
-    .applicaiton-process-wrapper ul.slick-slider li:last-child {
+    .application-process-wrapper ul.slick-slider li:last-child {
       background-position: -100px 116px;
       background-repeat: no-repeat; }
-  .applicaiton-process-wrapper ul.slick-slider .slick-arrow {
+  .application-process-wrapper ul.slick-slider .slick-arrow {
     margin-top: -111px;
     z-index: 100; }
     @media only screen and (max-width: 892px) {
-      .applicaiton-process-wrapper ul.slick-slider .slick-arrow {
+      .application-process-wrapper ul.slick-slider .slick-arrow {
         display: none !important; } }
-.applicaiton-process-wrapper .button {
+.application-process-wrapper .button {
   border: 2px solid black;
   background: black;
   padding: 16px 35px 16px;
@@ -1960,14 +1951,14 @@ Applicaiton process on body
   line-height: 19px;
   margin: 0 auto 80px;
   color: white; }
-  .applicaiton-process-wrapper .button:after {
+  .application-process-wrapper .button:after {
     background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
     display: inline-block;
     width: 9px;
     height: 15px;
     content: '';
     margin: 0 0 -2px 10px; }
-  .applicaiton-process-wrapper .button:hover {
+  .application-process-wrapper .button:hover {
     text-decoration: none;
     background: black;
     border: 2px solid #0d252c; }
@@ -2007,6 +1998,15 @@ Applicaiton process on body
   article h3 {
     font-size: 20px;
     line-height: 22px; } }
+article table {
+  border-color: #0d252c; }
+  article table tr:nth-child(even) {
+    background: #e5e8ec; }
+  article table tr td, article table tr th {
+    padding: 5px 1%;
+    vertical-align: top;
+    text-align: left;
+    word-wrap: break-word; }
 
 .front h2 {
   font-size: 38px; }
@@ -4318,6 +4318,44 @@ section#block-bean-understanding-trade-marks-new {
     section#block-bean-understanding-trade-marks-new .group-right {
       margin-top: 0px; } }
 
+section#block-bean-trade-marks-application-process {
+  background: #f2dede;
+  padding: 80px 0px 100px; }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-trade-marks-application-process {
+      padding: 40px 0px 60px; } }
+  section#block-bean-trade-marks-application-process .application-process-wrapper ul {
+    background: transparent url("../images/application-process/_generic/background-line-5.png") center center no-repeat;
+    background-size: 100% auto;
+    background-position: right 140px; }
+    @media only screen and (max-width: 992px) {
+      section#block-bean-trade-marks-application-process .application-process-wrapper ul {
+        background: transparent; } }
+    section#block-bean-trade-marks-application-process .application-process-wrapper ul li {
+      display: none; }
+      section#block-bean-trade-marks-application-process .application-process-wrapper ul li h4::before {
+        color: #de4326; }
+      section#block-bean-trade-marks-application-process .application-process-wrapper ul li:nth-child(5) {
+        display: inline-block; }
+        section#block-bean-trade-marks-application-process .application-process-wrapper ul li:nth-child(5) .image {
+          background: transparent url("../images/application-process/trade_marks/5.png") center center no-repeat; }
+      section#block-bean-trade-marks-application-process .application-process-wrapper ul li:nth-child(4) {
+        display: inline-block; }
+        section#block-bean-trade-marks-application-process .application-process-wrapper ul li:nth-child(4) .image {
+          background: transparent url("../images/application-process/trade_marks/4.png") center center no-repeat; }
+      section#block-bean-trade-marks-application-process .application-process-wrapper ul li:nth-child(3) {
+        display: inline-block; }
+        section#block-bean-trade-marks-application-process .application-process-wrapper ul li:nth-child(3) .image {
+          background: transparent url("../images/application-process/trade_marks/3.png") center center no-repeat; }
+      section#block-bean-trade-marks-application-process .application-process-wrapper ul li:nth-child(2) {
+        display: inline-block; }
+        section#block-bean-trade-marks-application-process .application-process-wrapper ul li:nth-child(2) .image {
+          background: transparent url("../images/application-process/trade_marks/2.png") center center no-repeat; }
+      section#block-bean-trade-marks-application-process .application-process-wrapper ul li:nth-child(1) {
+        display: inline-block; }
+        section#block-bean-trade-marks-application-process .application-process-wrapper ul li:nth-child(1) .image {
+          background: transparent url("../images/application-process/trade_marks/1.png") center center no-repeat; }
+
 section#block-bean-managing-your-trade-mark-block {
   background: #fff;
   padding: 80px 0px 100px; }
@@ -4686,22 +4724,6 @@ section#block-panels-mini-more-about-trade-marks-2-column- {
     section#block-panels-mini-more-about-trade-marks-2-column- .container img {
       /*box-shadow: 0 0 2px #000;*/ }
 
-section#block-bean-all-about-trade-marks-block {
-  padding: 80px 0px;
-  text-align: center; }
-  section#block-bean-all-about-trade-marks-block ul {
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    max-width: 250px;
-    margin: 0px 40px 40px; }
-    @media only screen and (max-width: 768px) {
-      section#block-bean-all-about-trade-marks-block ul {
-        display: none; } }
-  section#block-bean-all-about-trade-marks-block a {
-    color: #0d252c; }
-
 section#block-bean-designs-landing-block-0 {
   background: transparent url("../images/designs-banner.jpg") center center no-repeat;
   background-size: cover;
@@ -4943,40 +4965,40 @@ section#block-bean-designs-application-process {
   @media only screen and (max-width: 640px) {
     section#block-bean-designs-application-process {
       padding: 40px 0px 60px; } }
-  section#block-bean-designs-application-process .applicaiton-process-wrapper ul {
+  section#block-bean-designs-application-process .application-process-wrapper ul {
     background: transparent url("../images/application-process/_generic/background-line-6.png") center center no-repeat;
     background-size: 100% auto;
     background-position: right 140px; }
     @media only screen and (max-width: 992px) {
-      section#block-bean-designs-application-process .applicaiton-process-wrapper ul {
+      section#block-bean-designs-application-process .application-process-wrapper ul {
         background: transparent; } }
-    section#block-bean-designs-application-process .applicaiton-process-wrapper ul li {
+    section#block-bean-designs-application-process .application-process-wrapper ul li {
       display: none; }
-      section#block-bean-designs-application-process .applicaiton-process-wrapper ul li h4::before {
+      section#block-bean-designs-application-process .application-process-wrapper ul li h4::before {
         color: #84c98f; }
-      section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(6) {
+      section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(6) {
         display: inline-block; }
-        section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(6) .image {
+        section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(6) .image {
           background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
-      section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(5) {
+      section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(5) {
         display: inline-block; }
-        section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(5) .image {
+        section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(5) .image {
           background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
-      section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(4) {
+      section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(4) {
         display: inline-block; }
-        section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(4) .image {
+        section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(4) .image {
           background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
-      section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(3) {
+      section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(3) {
         display: inline-block; }
-        section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(3) .image {
+        section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(3) .image {
           background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
-      section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(2) {
+      section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(2) {
         display: inline-block; }
-        section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(2) .image {
+        section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(2) .image {
           background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
-      section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(1) {
+      section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(1) {
         display: inline-block; }
-        section#block-bean-designs-application-process .applicaiton-process-wrapper ul li:nth-child(1) .image {
+        section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(1) .image {
           background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
 
 section#block-bean-managing-your-design-block {
@@ -8141,12 +8163,12 @@ section#block-bean-ip-infringement-landing-block {
         padding-right: 10px; }
 
 @media only screen and (max-width: 640px) {
-  section#block-bean-ip-infringement-anchor-block .panels-flexible-region, section#block-bean-ip-infringement-anchor-block .bean-three-column-block {
+  section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block {
     display: none; } }
-section#block-bean-ip-infringement-anchor-block .panels-flexible-region .panels-flexible-region-inside, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-left, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-middle, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-right, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .panels-flexible-region-inside, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-left, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-middle, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-right {
+section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .panels-flexible-region-inside, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-left, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-middle, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-right, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .panels-flexible-region-inside, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-left, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-middle, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-right {
   text-align: center;
   padding: 0px; }
-  section#block-bean-ip-infringement-anchor-block .panels-flexible-region .panels-flexible-region-inside a, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-left a, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-middle a, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-right a, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .panels-flexible-region-inside a, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-left a, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-middle a, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-right a {
+  section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .panels-flexible-region-inside a, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-left a, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-middle a, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-right a, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .panels-flexible-region-inside a, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-left a, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-middle a, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-right a {
     color: #0d252c;
     text-transform: uppercase;
     font-size: 0.9em;
@@ -8155,11 +8177,11 @@ section#block-bean-ip-infringement-anchor-block .panels-flexible-region .panels-
     display: inline-block;
     border-bottom: 6px solid white;
     width: 100%; }
-    section#block-bean-ip-infringement-anchor-block .panels-flexible-region .panels-flexible-region-inside a:hover, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .panels-flexible-region-inside a:active, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .panels-flexible-region-inside a:focus, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-left a:hover, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-left a:active, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-left a:focus, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-middle a:hover, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-middle a:active, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-middle a:focus, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-right a:hover, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-right a:active, section#block-bean-ip-infringement-anchor-block .panels-flexible-region .group-right a:focus, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .panels-flexible-region-inside a:hover, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .panels-flexible-region-inside a:active, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .panels-flexible-region-inside a:focus, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-left a:hover, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-left a:active, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-left a:focus, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-middle a:hover, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-middle a:active, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-middle a:focus, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-right a:hover, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-right a:active, section#block-bean-ip-infringement-anchor-block .bean-three-column-block .group-right a:focus {
+    section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .panels-flexible-region-inside a:hover, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .panels-flexible-region-inside a:active, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .panels-flexible-region-inside a:focus, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-left a:hover, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-left a:active, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-left a:focus, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-middle a:hover, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-middle a:active, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-middle a:focus, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-right a:hover, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-right a:active, section#block-bean-ip-infringement-anchor-block-0 .panels-flexible-region .group-right a:focus, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .panels-flexible-region-inside a:hover, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .panels-flexible-region-inside a:active, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .panels-flexible-region-inside a:focus, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-left a:hover, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-left a:active, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-left a:focus, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-middle a:hover, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-middle a:active, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-middle a:focus, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-right a:hover, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-right a:active, section#block-bean-ip-infringement-anchor-block-0 .bean-three-column-block .group-right a:focus {
       text-decoration: none;
       background-color: #eff0f2;
       border-bottom: 6px solid #0d252c; }
-section#block-bean-ip-infringement-anchor-block.is_stuck {
+section#block-bean-ip-infringement-anchor-block-0.is_stuck {
   background: white none repeat scroll 0 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   display: block !important;
@@ -9278,5 +9300,23 @@ section#block-quicktabs-faqs-quicktab {
           section#block-quicktabs-faqs-quicktab ul.quicktabs-tabs li:nth-child(5) a {
             text-align: left !important;
             /*padding-left: 0px !important;*/ } }
+
+.az-listing li {
+  display: inline;
+  background: 0;
+  padding: 0 4px;
+  font-weight: bold; }
+
+dl {
+  margin: 0 0 1em 0; }
+  dl dt {
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 1.1em; }
+  dl dd {
+    padding: 0 15px 12px 15px;
+    margin: 0; }
+
+/*dl dd p, #content dl dd p { margin: 0 !important; }*/
 
 /*# sourceMappingURL=style.css.map */
