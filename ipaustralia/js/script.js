@@ -604,7 +604,7 @@ function stickyMenu() {
         jQuery("#block-bean-designs-anchor-menu").trigger("sticky_kit:detach");
         jQuery("#block-bean-pbr-anchor-menu").trigger("sticky_kit:detach");
         jQuery("#block-bean-ip-infringement-anchor-block").trigger("sticky_kit:detach");
-        jQuery("#block-bean-understanding-ip-anchor-block").trigger("sticky_kit:detach");
+        jQuery("#block-bean-understanding-ip-anchor-block-0").trigger("sticky_kit:detach");
         jQuery("#block-bean-about-us-anchor-menu").trigger("sticky_kit:detach");
     } else {
         jQuery(".navbar-default").stick_in_parent();
@@ -1276,7 +1276,7 @@ function equalHeight($container) {
 
 
 //adding stripes to tables and other content
-(function () {
+/*(function () {
     jQuery('div.field-name-body table tr:even').css('background-color','#e1e1e1');
     jQuery('div.field-name-body dl dt:even, div.field-name-body dl dd:even').css('background-color','#e1e1e1');
-});
+});*/

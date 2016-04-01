@@ -1,4 +1,68 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+a { color:#000;}
+a:hover { color:#000;text-decoration:none;}
+.row-type { 
+	padding: 5px 0px;
+	height: 150px;
+	overflow:hidden;
+}
+.row-patent {background-color:#30aeb6;color:#fff;height:150px;}
+.row-trademark{background-color:#de4326;color:#fff;height:150px;}
+.row-design{background-color:#84c98f;color:#1d252c;height:150px;}
+.row-pbr{background-color:#f1ac1e;color:#1d252c;height:150px;}
+.row-other{background-color:#fff;color:#1d252c;height:150px;}
+.little{font-size:24px;text-style:inital;}
+
+@media screen and (min-width: 1000px) {
+.letterp {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#30aeb6;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
+.lettert {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#de4326;height:400px;width:400px;padding-top:122px;margin-top:-250px;}
+.letterd {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#84c98f;height:400px;width:400px;padding-top:128px;margin-top:-220px;}
+.letterpbr {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#f1ac1e;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
+.letterc {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:125px;margin-top:-220px;}
+.lettero {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:130px;margin-top:-250px;}
+}
+
+@media screen and (max-width: 992px) {
+.letterp {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#30aeb6;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
+.lettert {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#de4326;height:400px;width:400px;padding-top:122px;margin-top:-250px;}
+.letterd {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#84c98f;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
+.letterpbr {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#f1ac1e;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
+.letterc {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:125px;margin-top:-220px;}
+.lettero {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:130px;margin-top:-250px;}
+}
+
+@media screen and (max-width: 768px) {
+.smtxt {padding-right:30%;}
+.smtxtb {padding-right:20%;}
+.letterp {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#30aeb6;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
+.lettert {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#de4326;height:400px;width:400px;padding-top:136px;margin-top:-230px;}
+.letterd {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#84c98f;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
+.letterpbr {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#f1ac1e;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
+.letterc {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:125px;margin-top:-220px;}
+.lettero {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:135px;margin-top:-280px;}
+.tmhead {display:none;}
+.tmbody {display:inline !important;}
+}
+
+@media screen and (max-width: 640px) {
+.smtxt {padding-right:30%;}
+.smtxtb {padding-right:20%;}
+.letterp {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:250px;border-radius:50%;border-color:#30aeb6;height:400px;width:400px;padding-top:125px;margin-top:-280px;}
+.lettert {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:250px;border-radius:50%;border-color:#de4326;height:400px;width:400px;padding-top:136px;margin-top:-230px;}
+.letterd {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:250px;border-radius:50%;border-color:#84c98f;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
+.letterpbr {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:250px;border-radius:50%;border-color:#f1ac1e;height:400px;width:400px;padding-top:125px;margin-top:-280px;}
+.letterc {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:250px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:135px;margin-top:-260px;}
+.lettero {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:250px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:135px;margin-top:-280px;}
+.tmhead {display:none;}
+.tmbody {display:inline !important;}
+}
+
+.tmbody {display:none;}
+.typesimg {display:block; margin:auto;}
+.therestrainer{border:2px solid #fff;background-color:#1d252c;}
+.desc{padding-left:35px;color:#fff;}
+
 
 h1, h2, h3, h4, a{
 font-family: 'Montserrat', sans-serif;

@@ -30,3 +30,45 @@ article {
         }
     }
 }
+
+/*section specific styling */
+    .section-patents {
+        article {
+            table {
+                border-color: $charcoal;
+                tr:nth-child(even) {
+                    background: #BFEEFF;
+                }
+            }
+        }
+    }
+    .section-designs {
+        article {
+            table {
+                border-color: $charcoal;
+                tr:nth-child(even) {
+                    background: $color_willow_brook_approx;
+                }
+            }
+        }
+    }
+    .section-trade-marks {
+        article {
+            table {
+                border-color: $charcoal;
+                tr:nth-child(even) {
+                    background: $color_vanilla_ice_approx;
+                }
+            }
+        }
+    }
+    .section-plant-breeders-rights {
+        article {
+            table {
+                border-color: $charcoal;
+                tr:nth-child(even) {
+                    background: #FFE5B0;
+                }
+            }
+        }
+    }

@@ -21,11 +21,13 @@
         }
     }
     .field-items {
-        a {
-            @include rounded-button-with-arrrow();
-            margin-top: $gap-medium;
-            &:hover {
-                border-color:white;
+        p {
+            a { 
+                @include rounded-button-with-arrrow();
+                margin-top: $gap-medium;
+                &:hover {
+                    border-color:white;
+                }
             }
         }
     }

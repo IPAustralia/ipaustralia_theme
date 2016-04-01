@@ -23,7 +23,7 @@ section#block-bean-enforcing-your-ip-block {
 
 section#block-bean-infringing-on-others-ip-block {
     @include full_width_block();
-    #infringing-on-others-ip {display: none;}
+    /*#infringing-on-others-ip {display: none;}*/
     .container {
         .container {
             width: auto;
@@ -44,7 +44,7 @@ section#block-bean-ip-infringement-other-block {
 
 section#block-bean-unsolicited-invoices-block {
     @include full_width_block();
-    #unsolicited-invoices {display: none;}
+    /*#unsolicited-invoices {display: none;}*/
     .container {
         .container {
             width: auto;
