@@ -2008,6 +2008,27 @@ article table {
     text-align: left;
     word-wrap: break-word; }
 
+/*section specific styling */
+.section-patents article table {
+  border-color: #0d252c; }
+  .section-patents article table tr:nth-child(even) {
+    background: #BFEEFF; }
+
+.section-designs article table {
+  border-color: #0d252c; }
+  .section-designs article table tr:nth-child(even) {
+    background: #dff0d8; }
+
+.section-trade-marks article table {
+  border-color: #0d252c; }
+  .section-trade-marks article table tr:nth-child(even) {
+    background: #f2dede; }
+
+.section-plant-breeders-rights article table {
+  border-color: #0d252c; }
+  .section-plant-breeders-rights article table tr:nth-child(even) {
+    background: #FFE5B0; }
+
 .front h2 {
   font-size: 38px; }
   @media only screen and (max-width: 768px) {
@@ -2224,7 +2245,7 @@ article table {
     @media only screen and (max-width: 768px) {
       .front #block-bean-need-help-choosing-the-right-ip .bean-basic-content {
         max-width: 90%; } }
-  .front #block-bean-need-help-choosing-the-right-ip .field-items a {
+  .front #block-bean-need-help-choosing-the-right-ip .field-items p a {
     border: 2px solid white;
     background: transparent;
     padding: 16px 35px 16px;
@@ -2236,18 +2257,18 @@ article table {
     font-family: "montserratregular", sans-serif;
     line-height: 19px;
     margin-top: 40px; }
-    .front #block-bean-need-help-choosing-the-right-ip .field-items a:after {
+    .front #block-bean-need-help-choosing-the-right-ip .field-items p a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
       content: '';
       margin: 0 0 -2px 10px; }
-    .front #block-bean-need-help-choosing-the-right-ip .field-items a:hover {
+    .front #block-bean-need-help-choosing-the-right-ip .field-items p a:hover {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
-    .front #block-bean-need-help-choosing-the-right-ip .field-items a:hover {
+    .front #block-bean-need-help-choosing-the-right-ip .field-items p a:hover {
       border-color: white; }
 .front #block-bean-tools-and-resources-generic-bloc {
   padding: 80px 10px;
@@ -8323,7 +8344,7 @@ section#block-bean-infringing-on-others-ip-block {
     @media only screen and (max-width: 768px) {
       section#block-bean-infringing-on-others-ip-block .bean-basic-content {
         max-width: 90%; } }
-  section#block-bean-infringing-on-others-ip-block .field-items a {
+  section#block-bean-infringing-on-others-ip-block .field-items p a {
     border: 2px solid white;
     background: transparent;
     padding: 16px 35px 16px;
@@ -8335,18 +8356,18 @@ section#block-bean-infringing-on-others-ip-block {
     font-family: "montserratregular", sans-serif;
     line-height: 19px;
     margin-top: 40px; }
-    section#block-bean-infringing-on-others-ip-block .field-items a:after {
+    section#block-bean-infringing-on-others-ip-block .field-items p a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
       content: '';
       margin: 0 0 -2px 10px; }
-    section#block-bean-infringing-on-others-ip-block .field-items a:hover {
+    section#block-bean-infringing-on-others-ip-block .field-items p a:hover {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
-    section#block-bean-infringing-on-others-ip-block .field-items a:hover {
+    section#block-bean-infringing-on-others-ip-block .field-items p a:hover {
       border-color: white; }
   section#block-bean-infringing-on-others-ip-block #infringing-on-others-ip {
     display: none; }
@@ -8594,7 +8615,8 @@ section#block-bean-unsolicited-invoices-block {
   background-color: #612166;
   font: normal 20px "robotolight", sans-serif;
   border-top: 2px solid white;
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid white;
+  /*#unsolicited-invoices {display: none;}*/ }
   @media only screen and (max-width: 768px) {
     section#block-bean-unsolicited-invoices-block {
       padding: 40px 0px; } }
@@ -8606,7 +8628,7 @@ section#block-bean-unsolicited-invoices-block {
     @media only screen and (max-width: 768px) {
       section#block-bean-unsolicited-invoices-block .bean-basic-content {
         max-width: 90%; } }
-  section#block-bean-unsolicited-invoices-block .field-items a {
+  section#block-bean-unsolicited-invoices-block .field-items p a {
     border: 2px solid white;
     background: transparent;
     padding: 16px 35px 16px;
@@ -8618,21 +8640,19 @@ section#block-bean-unsolicited-invoices-block {
     font-family: "montserratregular", sans-serif;
     line-height: 19px;
     margin-top: 40px; }
-    section#block-bean-unsolicited-invoices-block .field-items a:after {
+    section#block-bean-unsolicited-invoices-block .field-items p a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
       content: '';
       margin: 0 0 -2px 10px; }
-    section#block-bean-unsolicited-invoices-block .field-items a:hover {
+    section#block-bean-unsolicited-invoices-block .field-items p a:hover {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
-    section#block-bean-unsolicited-invoices-block .field-items a:hover {
+    section#block-bean-unsolicited-invoices-block .field-items p a:hover {
       border-color: white; }
-  section#block-bean-unsolicited-invoices-block #unsolicited-invoices {
-    display: none; }
   section#block-bean-unsolicited-invoices-block .container .container {
     width: auto; }
 
@@ -8890,7 +8910,7 @@ section#block-bean-need-help-choosing-the-right-ip {
     @media only screen and (max-width: 768px) {
       section#block-bean-need-help-choosing-the-right-ip .bean-basic-content {
         max-width: 90%; } }
-  section#block-bean-need-help-choosing-the-right-ip .field-items a {
+  section#block-bean-need-help-choosing-the-right-ip .field-items p a {
     border: 2px solid white;
     background: transparent;
     padding: 16px 35px 16px;
@@ -8902,18 +8922,18 @@ section#block-bean-need-help-choosing-the-right-ip {
     font-family: "montserratregular", sans-serif;
     line-height: 19px;
     margin-top: 40px; }
-    section#block-bean-need-help-choosing-the-right-ip .field-items a:after {
+    section#block-bean-need-help-choosing-the-right-ip .field-items p a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
       content: '';
       margin: 0 0 -2px 10px; }
-    section#block-bean-need-help-choosing-the-right-ip .field-items a:hover {
+    section#block-bean-need-help-choosing-the-right-ip .field-items p a:hover {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
-    section#block-bean-need-help-choosing-the-right-ip .field-items a:hover {
+    section#block-bean-need-help-choosing-the-right-ip .field-items p a:hover {
       border-color: white; }
 
 section#block-bean-how-ip-can-work-for-you {

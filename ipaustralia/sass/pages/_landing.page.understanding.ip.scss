@@ -37,9 +37,9 @@ section#block-bean-how-ip-can-work-for-you {
     }
 }
 section#block-bean-commercialise-your-ip {
-    background: $white;
+    background: $lighter-grey;
     @include  section_padding(20);
-    @include  landing_page_group_block_multiple($background: $lighter-grey);
+    @include  landing_page_group_block();
 }
 
 

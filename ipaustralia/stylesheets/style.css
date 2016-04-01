@@ -2008,6 +2008,27 @@ article table {
     text-align: left;
     word-wrap: break-word; }
 
+/*section specific styling */
+.section-patents article table {
+  border-color: #0d252c; }
+  .section-patents article table tr:nth-child(even) {
+    background: #BFEEFF; }
+
+.section-designs article table {
+  border-color: #0d252c; }
+  .section-designs article table tr:nth-child(even) {
+    background: #dff0d8; }
+
+.section-trade-marks article table {
+  border-color: #0d252c; }
+  .section-trade-marks article table tr:nth-child(even) {
+    background: #f2dede; }
+
+.section-plant-breeders-rights article table {
+  border-color: #0d252c; }
+  .section-plant-breeders-rights article table tr:nth-child(even) {
+    background: #FFE5B0; }
+
 .front h2 {
   font-size: 38px; }
   @media only screen and (max-width: 768px) {
@@ -2224,7 +2245,7 @@ article table {
     @media only screen and (max-width: 768px) {
       .front #block-bean-need-help-choosing-the-right-ip .bean-basic-content {
         max-width: 90%; } }
-  .front #block-bean-need-help-choosing-the-right-ip .field-items a {
+  .front #block-bean-need-help-choosing-the-right-ip .field-items p a {
     border: 2px solid white;
     background: transparent;
     padding: 16px 35px 16px;
@@ -2236,18 +2257,18 @@ article table {
     font-family: "montserratregular", sans-serif;
     line-height: 19px;
     margin-top: 40px; }
-    .front #block-bean-need-help-choosing-the-right-ip .field-items a:after {
+    .front #block-bean-need-help-choosing-the-right-ip .field-items p a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
       content: '';
       margin: 0 0 -2px 10px; }
-    .front #block-bean-need-help-choosing-the-right-ip .field-items a:hover {
+    .front #block-bean-need-help-choosing-the-right-ip .field-items p a:hover {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
-    .front #block-bean-need-help-choosing-the-right-ip .field-items a:hover {
+    .front #block-bean-need-help-choosing-the-right-ip .field-items p a:hover {
       border-color: white; }
 .front #block-bean-tools-and-resources-generic-bloc {
   padding: 80px 10px;
@@ -8311,7 +8332,8 @@ section#block-bean-infringing-on-others-ip-block {
   background-color: #612166;
   font: normal 20px "robotolight", sans-serif;
   border-top: 2px solid white;
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid white;
+  /*#infringing-on-others-ip {display: none;}*/ }
   @media only screen and (max-width: 768px) {
     section#block-bean-infringing-on-others-ip-block {
       padding: 40px 0px; } }
@@ -8323,7 +8345,7 @@ section#block-bean-infringing-on-others-ip-block {
     @media only screen and (max-width: 768px) {
       section#block-bean-infringing-on-others-ip-block .bean-basic-content {
         max-width: 90%; } }
-  section#block-bean-infringing-on-others-ip-block .field-items a {
+  section#block-bean-infringing-on-others-ip-block .field-items p a {
     border: 2px solid white;
     background: transparent;
     padding: 16px 35px 16px;
@@ -8335,21 +8357,19 @@ section#block-bean-infringing-on-others-ip-block {
     font-family: "montserratregular", sans-serif;
     line-height: 19px;
     margin-top: 40px; }
-    section#block-bean-infringing-on-others-ip-block .field-items a:after {
+    section#block-bean-infringing-on-others-ip-block .field-items p a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
       content: '';
       margin: 0 0 -2px 10px; }
-    section#block-bean-infringing-on-others-ip-block .field-items a:hover {
+    section#block-bean-infringing-on-others-ip-block .field-items p a:hover {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
-    section#block-bean-infringing-on-others-ip-block .field-items a:hover {
+    section#block-bean-infringing-on-others-ip-block .field-items p a:hover {
       border-color: white; }
-  section#block-bean-infringing-on-others-ip-block #infringing-on-others-ip {
-    display: none; }
   section#block-bean-infringing-on-others-ip-block .container .container {
     width: auto; }
 
@@ -8594,7 +8614,8 @@ section#block-bean-unsolicited-invoices-block {
   background-color: #612166;
   font: normal 20px "robotolight", sans-serif;
   border-top: 2px solid white;
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid white;
+  /*#unsolicited-invoices {display: none;}*/ }
   @media only screen and (max-width: 768px) {
     section#block-bean-unsolicited-invoices-block {
       padding: 40px 0px; } }
@@ -8606,7 +8627,7 @@ section#block-bean-unsolicited-invoices-block {
     @media only screen and (max-width: 768px) {
       section#block-bean-unsolicited-invoices-block .bean-basic-content {
         max-width: 90%; } }
-  section#block-bean-unsolicited-invoices-block .field-items a {
+  section#block-bean-unsolicited-invoices-block .field-items p a {
     border: 2px solid white;
     background: transparent;
     padding: 16px 35px 16px;
@@ -8618,21 +8639,19 @@ section#block-bean-unsolicited-invoices-block {
     font-family: "montserratregular", sans-serif;
     line-height: 19px;
     margin-top: 40px; }
-    section#block-bean-unsolicited-invoices-block .field-items a:after {
+    section#block-bean-unsolicited-invoices-block .field-items p a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
       content: '';
       margin: 0 0 -2px 10px; }
-    section#block-bean-unsolicited-invoices-block .field-items a:hover {
+    section#block-bean-unsolicited-invoices-block .field-items p a:hover {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
-    section#block-bean-unsolicited-invoices-block .field-items a:hover {
+    section#block-bean-unsolicited-invoices-block .field-items p a:hover {
       border-color: white; }
-  section#block-bean-unsolicited-invoices-block #unsolicited-invoices {
-    display: none; }
   section#block-bean-unsolicited-invoices-block .container .container {
     width: auto; }
 
@@ -8890,7 +8909,7 @@ section#block-bean-need-help-choosing-the-right-ip {
     @media only screen and (max-width: 768px) {
       section#block-bean-need-help-choosing-the-right-ip .bean-basic-content {
         max-width: 90%; } }
-  section#block-bean-need-help-choosing-the-right-ip .field-items a {
+  section#block-bean-need-help-choosing-the-right-ip .field-items p a {
     border: 2px solid white;
     background: transparent;
     padding: 16px 35px 16px;
@@ -8902,18 +8921,18 @@ section#block-bean-need-help-choosing-the-right-ip {
     font-family: "montserratregular", sans-serif;
     line-height: 19px;
     margin-top: 40px; }
-    section#block-bean-need-help-choosing-the-right-ip .field-items a:after {
+    section#block-bean-need-help-choosing-the-right-ip .field-items p a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
       content: '';
       margin: 0 0 -2px 10px; }
-    section#block-bean-need-help-choosing-the-right-ip .field-items a:hover {
+    section#block-bean-need-help-choosing-the-right-ip .field-items p a:hover {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
-    section#block-bean-need-help-choosing-the-right-ip .field-items a:hover {
+    section#block-bean-need-help-choosing-the-right-ip .field-items p a:hover {
       border-color: white; }
 
 section#block-bean-how-ip-can-work-for-you {
@@ -8972,9 +8991,8 @@ section#block-bean-how-ip-can-work-for-you {
         min-height: inherit; } }
 
 section#block-bean-commercialise-your-ip {
-  background: #fff;
-  padding: 80px 0px 100px;
-  /*div[]*/ }
+  background: #eff0f2;
+  padding: 80px 0px 100px; }
   @media only screen and (max-width: 640px) {
     section#block-bean-commercialise-your-ip {
       padding: 40px 0px 60px; } }
@@ -8984,95 +9002,82 @@ section#block-bean-commercialise-your-ip {
     margin: 0px; }
     section#block-bean-commercialise-your-ip ul li {
       padding: 0px 0 0 30px;
-      margin: 0px;
+      margin: 3px 0px;
       background: transparent url("../images/link-tool.png") center center no-repeat;
-      background-position: left 0px; }
-  section#block-bean-commercialise-your-ip .Top {
+      background-position: left 1px; }
+  section#block-bean-commercialise-your-ip .group-header {
     margin-bottom: 30px; }
-    section#block-bean-commercialise-your-ip .Top br {
+    section#block-bean-commercialise-your-ip .group-header br {
       display: none; }
-    section#block-bean-commercialise-your-ip .Top h2 {
-      margin-bottom: 30px; }
-    section#block-bean-commercialise-your-ip .Top p {
+    section#block-bean-commercialise-your-ip .group-header h2, section#block-bean-commercialise-your-ip .group-header h3 {
+      margin-bottom: 30px;
+      text-align: center;
+      color: #0d252c; }
+    section#block-bean-commercialise-your-ip .group-header p {
       font-size: 1.3em;
-      font-family: robotolight; }
+      font-family: robotolight;
+      color: #0d252c; }
   @media only screen and (max-width: 988px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
-      width: 50%;
-      margin-bottom: 20px; } }
+    section#block-bean-commercialise-your-ip .group-left, section#block-bean-commercialise-your-ip .group-middle, section#block-bean-commercialise-your-ip .group-right {
+      width: 50%; } }
   @media only screen and (max-width: 640px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+    section#block-bean-commercialise-your-ip .group-left, section#block-bean-commercialise-your-ip .group-middle, section#block-bean-commercialise-your-ip .group-right {
       width: 100%;
       margin-bottom: 10px; } }
-  section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-    margin: 0 10px;
+  section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
+    margin: 0 20px;
     padding: 40px;
-    background: #eff0f2;
+    background: #fff;
     height: 350px;
     overflow-y: hidden; }
     @media only screen and (max-width: 768px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
         height: 500px; } }
     @media only screen and (max-width: 640px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-        height: auto !important;
+      section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
+        height: auto;
         padding: 20px 30px;
         margin: 0px; } }
     @media only screen and (max-width: 480px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
         padding: 10px 20px; } }
-  section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+  section#block-bean-commercialise-your-ip .group-left .media-element-container, section#block-bean-commercialise-your-ip .group-middle .media-element-container, section#block-bean-commercialise-your-ip .group-right .media-element-container {
+    text-align: center;
+    margin-bottom: 30px; }
+    section#block-bean-commercialise-your-ip .group-left .media-element-container img, section#block-bean-commercialise-your-ip .group-middle .media-element-container img, section#block-bean-commercialise-your-ip .group-right .media-element-container img {
+      display: inline-block; }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-commercialise-your-ip .group-left .media-element-container, section#block-bean-commercialise-your-ip .group-middle .media-element-container, section#block-bean-commercialise-your-ip .group-right .media-element-container {
+        display: none; } }
+  section#block-bean-commercialise-your-ip .group-left h3, section#block-bean-commercialise-your-ip .group-left h4, section#block-bean-commercialise-your-ip .group-middle h3, section#block-bean-commercialise-your-ip .group-middle h4, section#block-bean-commercialise-your-ip .group-right h3, section#block-bean-commercialise-your-ip .group-right h4 {
     font-size: 22px;
     margin: 0px;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+      section#block-bean-commercialise-your-ip .group-left h3, section#block-bean-commercialise-your-ip .group-left h4, section#block-bean-commercialise-your-ip .group-middle h3, section#block-bean-commercialise-your-ip .group-middle h4, section#block-bean-commercialise-your-ip .group-right h3, section#block-bean-commercialise-your-ip .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
-        background: #eff0f2 url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+        background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+    section#block-bean-commercialise-your-ip .group-left h3:after, section#block-bean-commercialise-your-ip .group-left h4:after, section#block-bean-commercialise-your-ip .group-middle h3:after, section#block-bean-commercialise-your-ip .group-middle h4:after, section#block-bean-commercialise-your-ip .group-right h3:after, section#block-bean-commercialise-your-ip .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+        section#block-bean-commercialise-your-ip .group-left h3:after, section#block-bean-commercialise-your-ip .group-left h4:after, section#block-bean-commercialise-your-ip .group-middle h3:after, section#block-bean-commercialise-your-ip .group-middle h4:after, section#block-bean-commercialise-your-ip .group-right h3:after, section#block-bean-commercialise-your-ip .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
+  section#block-bean-commercialise-your-ip .group-left .open h4, section#block-bean-commercialise-your-ip .group-middle .open h4, section#block-bean-commercialise-your-ip .group-right .open h4 {
+    background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
   @media only screen and (max-width: 640px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
-      background: #eff0f2 url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
-  @media only screen and (max-width: 640px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+    section#block-bean-commercialise-your-ip .group-left p, section#block-bean-commercialise-your-ip .group-middle p, section#block-bean-commercialise-your-ip .group-right p {
       display: none; } }
-  section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
+  section#block-bean-commercialise-your-ip .group-left .thin, section#block-bean-commercialise-your-ip .group-middle .thin, section#block-bean-commercialise-your-ip .group-right .thin {
     display: none; }
-  section#block-bean-commercialise-your-ip .panels-flexible-row-last a {
-    margin-top: 40px;
-    border: 2px solid white;
-    background: transparent;
-    padding: 16px 35px 16px;
-    display: inline-block;
-    border-radius: 100px;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-family: "montserratregular", sans-serif;
-    line-height: 19px; }
-    section#block-bean-commercialise-your-ip .panels-flexible-row-last a:after {
-      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
-      display: inline-block;
-      width: 9px;
-      height: 15px;
-      content: '';
-      margin: 0 0 -2px 10px; }
-    section#block-bean-commercialise-your-ip .panels-flexible-row-last a:hover {
-      text-decoration: none;
-      background: transparent;
-      border: 2px solid #0d252c; }
   @media only screen and (max-width: 988px) {
     section#block-bean-commercialise-your-ip .group-right {
       float: left;
@@ -9080,6 +9085,29 @@ section#block-bean-commercialise-your-ip {
   @media only screen and (max-width: 640px) {
     section#block-bean-commercialise-your-ip .group-right {
       margin-top: 0px; } }
+  section#block-bean-commercialise-your-ip .group-footer a {
+    margin-top: 40px;
+    border: 2px solid #0d252c;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: #0d252c;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px; }
+    section#block-bean-commercialise-your-ip .group-footer a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-commercialise-your-ip .group-footer a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
 
 /*
 section#block-bean-designs-application-process {
