@@ -494,10 +494,8 @@ h6 {
   line-height: 24px; }
 
 a {
-  outline: 0;
   color: #977100; }
   a:active, a:focus, a:visited {
-    outline: 0;
     color: #977100;
     text-decoration: none;
     background: transparent; }
@@ -534,6 +532,12 @@ article {
   margin-top: -10px;
   padding: 0 30px;
   line-height: 24px; }
+  article a {
+    text-decoration: underline; }
+    article a:active, article a:focus, article a:visited {
+      text-decoration: underline; }
+    article a:hover {
+      text-decoration: none; }
   article h2 {
     margin-top: 20px;
     margin-bottom: 15px; }
@@ -546,6 +550,10 @@ article {
   article .field-name-field-publish-online-date {
     float: right;
     margin-top: 25px; }
+  article dl dt:nth-of-type(even) {
+    background: #eff0f2; }
+  article dl dd:nth-of-type(even) {
+    background: #eff0f2; }
 
 .clear-float {
   clear: both; }
@@ -1205,6 +1213,8 @@ header nav .nav-tabs {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap; }
+            header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a:hover {
+              border-left: 6px solid #0d252c; }
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a:after {
               content: '  ';
               float: right;
@@ -1901,6 +1911,7 @@ Applicaiton process on body
         display: block;
         content: counter(process-counter);
         margin-bottom: 10px;
+        margin-top: 10px;
         /*color: $mint;*/ }
         @media only screen and (max-width: 640px) {
           .application-process-wrapper ul li h4::before {
@@ -2818,6 +2829,21 @@ article table {
     font-size: 24px;
     font-weight: bold;
     text-decoration: underline; }
+
+.view-foi-disclosure-log .views-row {
+  background: #eff0f2;
+  padding: 5px 20px 15px;
+  margin-bottom: 10px; }
+
+.view-id-official_notices .views-row {
+  background: #eff0f2;
+  padding: 5px 20px 15px;
+  margin-bottom: 10px; }
+
+article.node-official-notice .field-name-field-publication-name-and-date .field-item {
+  background: #eff0f2;
+  padding: 15px;
+  margin-bottom: 10px; }
 
 section#block-bean-about-us-landing-block {
   background: transparent url("../images/contact-us-banner.jpg") center center no-repeat;
@@ -8991,7 +9017,7 @@ section#block-bean-how-ip-can-work-for-you {
         min-height: inherit; } }
 
 section#block-bean-commercialise-your-ip {
-  background: #eff0f2;
+  background: #fff;
   padding: 80px 0px 100px; }
   @media only screen and (max-width: 640px) {
     section#block-bean-commercialise-your-ip {
@@ -9027,7 +9053,7 @@ section#block-bean-commercialise-your-ip {
   section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
     margin: 0 20px;
     padding: 40px;
-    background: #fff;
+    background: #eff0f2;
     height: 350px;
     overflow-y: hidden; }
     @media only screen and (max-width: 768px) {
@@ -9059,7 +9085,7 @@ section#block-bean-commercialise-your-ip {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
-        background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+        background: #eff0f2 url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
     section#block-bean-commercialise-your-ip .group-left h3:after, section#block-bean-commercialise-your-ip .group-left h4:after, section#block-bean-commercialise-your-ip .group-middle h3:after, section#block-bean-commercialise-your-ip .group-middle h4:after, section#block-bean-commercialise-your-ip .group-right h3:after, section#block-bean-commercialise-your-ip .group-right h4:after {
       border-top: 4px solid #b6bec0;
@@ -9072,7 +9098,7 @@ section#block-bean-commercialise-your-ip {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-commercialise-your-ip .group-left .open h4, section#block-bean-commercialise-your-ip .group-middle .open h4, section#block-bean-commercialise-your-ip .group-right .open h4 {
-    background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
+    background: #eff0f2 url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
   @media only screen and (max-width: 640px) {
     section#block-bean-commercialise-your-ip .group-left p, section#block-bean-commercialise-your-ip .group-middle p, section#block-bean-commercialise-your-ip .group-right p {
       display: none; } }

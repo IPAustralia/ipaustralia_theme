@@ -87,6 +87,7 @@ Applicaiton process on body
                     display: block;
                     content: counter(process-counter);
                     margin-bottom: 10px;
+                    margin-top: 10px;
                     /*color: $mint;*/
                     @media only screen and (max-width: $break-point-midsmall) {
                         margin-top:5px;

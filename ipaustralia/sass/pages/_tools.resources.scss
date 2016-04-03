@@ -145,3 +145,29 @@
         text-decoration: underline;
     }
 }
+
+.view-foi-disclosure-log {
+    .views-row {
+    background: $color_athens_gray_approx;
+    padding: 5px 20px 15px;
+    margin-bottom: 10px;  
+    }
+}
+.view-id-official_notices {
+    .views-row {
+    background: $color_athens_gray_approx;
+    padding: 5px 20px 15px;
+    margin-bottom: 10px;  
+    }
+}
+article.node-official-notice {
+    .field-name-field-publication-name-and-date {
+        .field-item {
+            background: $color_athens_gray_approx;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+

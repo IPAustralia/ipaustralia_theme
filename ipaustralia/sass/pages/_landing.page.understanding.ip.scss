@@ -36,13 +36,12 @@ section#block-bean-how-ip-can-work-for-you {
         }
     }
 }
+
 section#block-bean-commercialise-your-ip {
-    background: $lighter-grey;
+    background: $white;
     @include  section_padding(20);
-    @include  landing_page_group_block();
+    @include  landing_page_group_block($background: $lighter-grey);
 }
-
-
 
 /*
 section#block-bean-designs-application-process {

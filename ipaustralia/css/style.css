@@ -494,10 +494,8 @@ h6 {
   line-height: 24px; }
 
 a {
-  outline: 0;
   color: #977100; }
   a:active, a:focus, a:visited {
-    outline: 0;
     color: #977100;
     text-decoration: none;
     background: transparent; }
@@ -534,6 +532,12 @@ article {
   margin-top: -10px;
   padding: 0 30px;
   line-height: 24px; }
+  article a {
+    text-decoration: underline; }
+    article a:active, article a:focus, article a:visited {
+      text-decoration: underline; }
+    article a:hover {
+      text-decoration: none; }
   article h2 {
     margin-top: 20px;
     margin-bottom: 15px; }
@@ -546,6 +550,10 @@ article {
   article .field-name-field-publish-online-date {
     float: right;
     margin-top: 25px; }
+  article dl dt:nth-of-type(even) {
+    background: #eff0f2; }
+  article dl dd:nth-of-type(even) {
+    background: #eff0f2; }
 
 .clear-float {
   clear: both; }
@@ -1205,6 +1213,8 @@ header nav .nav-tabs {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap; }
+            header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a:hover {
+              border-left: 6px solid #0d252c; }
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a:after {
               content: '  ';
               float: right;
@@ -1901,6 +1911,7 @@ Applicaiton process on body
         display: block;
         content: counter(process-counter);
         margin-bottom: 10px;
+        margin-top: 10px;
         /*color: $mint;*/ }
         @media only screen and (max-width: 640px) {
           .application-process-wrapper ul li h4::before {
@@ -2818,6 +2829,21 @@ article table {
     font-size: 24px;
     font-weight: bold;
     text-decoration: underline; }
+
+.view-foi-disclosure-log .views-row {
+  background: #eff0f2;
+  padding: 5px 20px 15px;
+  margin-bottom: 10px; }
+
+.view-id-official_notices .views-row {
+  background: #eff0f2;
+  padding: 5px 20px 15px;
+  margin-bottom: 10px; }
+
+article.node-official-notice .field-name-field-publication-name-and-date .field-item {
+  background: #eff0f2;
+  padding: 15px;
+  margin-bottom: 10px; }
 
 section#block-bean-about-us-landing-block {
   background: transparent url("../images/contact-us-banner.jpg") center center no-repeat;
@@ -8332,7 +8358,8 @@ section#block-bean-infringing-on-others-ip-block {
   background-color: #612166;
   font: normal 20px "robotolight", sans-serif;
   border-top: 2px solid white;
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid white;
+  /*#infringing-on-others-ip {display: none;}*/ }
   @media only screen and (max-width: 768px) {
     section#block-bean-infringing-on-others-ip-block {
       padding: 40px 0px; } }
@@ -8369,8 +8396,6 @@ section#block-bean-infringing-on-others-ip-block {
       border: 2px solid #0d252c; }
     section#block-bean-infringing-on-others-ip-block .field-items p a:hover {
       border-color: white; }
-  section#block-bean-infringing-on-others-ip-block #infringing-on-others-ip {
-    display: none; }
   section#block-bean-infringing-on-others-ip-block .container .container {
     width: auto; }
 
@@ -8993,8 +9018,7 @@ section#block-bean-how-ip-can-work-for-you {
 
 section#block-bean-commercialise-your-ip {
   background: #fff;
-  padding: 80px 0px 100px;
-  /*div[]*/ }
+  padding: 80px 0px 100px; }
   @media only screen and (max-width: 640px) {
     section#block-bean-commercialise-your-ip {
       padding: 40px 0px 60px; } }
@@ -9004,95 +9028,82 @@ section#block-bean-commercialise-your-ip {
     margin: 0px; }
     section#block-bean-commercialise-your-ip ul li {
       padding: 0px 0 0 30px;
-      margin: 0px;
+      margin: 3px 0px;
       background: transparent url("../images/link-tool.png") center center no-repeat;
-      background-position: left 0px; }
-  section#block-bean-commercialise-your-ip .Top {
+      background-position: left 1px; }
+  section#block-bean-commercialise-your-ip .group-header {
     margin-bottom: 30px; }
-    section#block-bean-commercialise-your-ip .Top br {
+    section#block-bean-commercialise-your-ip .group-header br {
       display: none; }
-    section#block-bean-commercialise-your-ip .Top h2 {
-      margin-bottom: 30px; }
-    section#block-bean-commercialise-your-ip .Top p {
+    section#block-bean-commercialise-your-ip .group-header h2, section#block-bean-commercialise-your-ip .group-header h3 {
+      margin-bottom: 30px;
+      text-align: center;
+      color: #0d252c; }
+    section#block-bean-commercialise-your-ip .group-header p {
       font-size: 1.3em;
-      font-family: robotolight; }
+      font-family: robotolight;
+      color: #0d252c; }
   @media only screen and (max-width: 988px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
-      width: 50%;
-      margin-bottom: 20px; } }
+    section#block-bean-commercialise-your-ip .group-left, section#block-bean-commercialise-your-ip .group-middle, section#block-bean-commercialise-your-ip .group-right {
+      width: 50%; } }
   @media only screen and (max-width: 640px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+    section#block-bean-commercialise-your-ip .group-left, section#block-bean-commercialise-your-ip .group-middle, section#block-bean-commercialise-your-ip .group-right {
       width: 100%;
       margin-bottom: 10px; } }
-  section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-    margin: 0 10px;
+  section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
+    margin: 0 20px;
     padding: 40px;
     background: #eff0f2;
     height: 350px;
     overflow-y: hidden; }
     @media only screen and (max-width: 768px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
         height: 500px; } }
     @media only screen and (max-width: 640px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-        height: auto !important;
+      section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
+        height: auto;
         padding: 20px 30px;
         margin: 0px; } }
     @media only screen and (max-width: 480px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
         padding: 10px 20px; } }
-  section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+  section#block-bean-commercialise-your-ip .group-left .media-element-container, section#block-bean-commercialise-your-ip .group-middle .media-element-container, section#block-bean-commercialise-your-ip .group-right .media-element-container {
+    text-align: center;
+    margin-bottom: 30px; }
+    section#block-bean-commercialise-your-ip .group-left .media-element-container img, section#block-bean-commercialise-your-ip .group-middle .media-element-container img, section#block-bean-commercialise-your-ip .group-right .media-element-container img {
+      display: inline-block; }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-commercialise-your-ip .group-left .media-element-container, section#block-bean-commercialise-your-ip .group-middle .media-element-container, section#block-bean-commercialise-your-ip .group-right .media-element-container {
+        display: none; } }
+  section#block-bean-commercialise-your-ip .group-left h3, section#block-bean-commercialise-your-ip .group-left h4, section#block-bean-commercialise-your-ip .group-middle h3, section#block-bean-commercialise-your-ip .group-middle h4, section#block-bean-commercialise-your-ip .group-right h3, section#block-bean-commercialise-your-ip .group-right h4 {
     font-size: 22px;
     margin: 0px;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+      section#block-bean-commercialise-your-ip .group-left h3, section#block-bean-commercialise-your-ip .group-left h4, section#block-bean-commercialise-your-ip .group-middle h3, section#block-bean-commercialise-your-ip .group-middle h4, section#block-bean-commercialise-your-ip .group-right h3, section#block-bean-commercialise-your-ip .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #eff0f2 url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+    section#block-bean-commercialise-your-ip .group-left h3:after, section#block-bean-commercialise-your-ip .group-left h4:after, section#block-bean-commercialise-your-ip .group-middle h3:after, section#block-bean-commercialise-your-ip .group-middle h4:after, section#block-bean-commercialise-your-ip .group-right h3:after, section#block-bean-commercialise-your-ip .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+        section#block-bean-commercialise-your-ip .group-left h3:after, section#block-bean-commercialise-your-ip .group-left h4:after, section#block-bean-commercialise-your-ip .group-middle h3:after, section#block-bean-commercialise-your-ip .group-middle h4:after, section#block-bean-commercialise-your-ip .group-right h3:after, section#block-bean-commercialise-your-ip .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
+  section#block-bean-commercialise-your-ip .group-left .open h4, section#block-bean-commercialise-your-ip .group-middle .open h4, section#block-bean-commercialise-your-ip .group-right .open h4 {
+    background: #eff0f2 url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
   @media only screen and (max-width: 640px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
-      background: #eff0f2 url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
-  @media only screen and (max-width: 640px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+    section#block-bean-commercialise-your-ip .group-left p, section#block-bean-commercialise-your-ip .group-middle p, section#block-bean-commercialise-your-ip .group-right p {
       display: none; } }
-  section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
+  section#block-bean-commercialise-your-ip .group-left .thin, section#block-bean-commercialise-your-ip .group-middle .thin, section#block-bean-commercialise-your-ip .group-right .thin {
     display: none; }
-  section#block-bean-commercialise-your-ip .panels-flexible-row-last a {
-    margin-top: 40px;
-    border: 2px solid white;
-    background: transparent;
-    padding: 16px 35px 16px;
-    display: inline-block;
-    border-radius: 100px;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-family: "montserratregular", sans-serif;
-    line-height: 19px; }
-    section#block-bean-commercialise-your-ip .panels-flexible-row-last a:after {
-      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
-      display: inline-block;
-      width: 9px;
-      height: 15px;
-      content: '';
-      margin: 0 0 -2px 10px; }
-    section#block-bean-commercialise-your-ip .panels-flexible-row-last a:hover {
-      text-decoration: none;
-      background: transparent;
-      border: 2px solid #0d252c; }
   @media only screen and (max-width: 988px) {
     section#block-bean-commercialise-your-ip .group-right {
       float: left;
@@ -9100,6 +9111,29 @@ section#block-bean-commercialise-your-ip {
   @media only screen and (max-width: 640px) {
     section#block-bean-commercialise-your-ip .group-right {
       margin-top: 0px; } }
+  section#block-bean-commercialise-your-ip .group-footer a {
+    margin-top: 40px;
+    border: 2px solid #0d252c;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: #0d252c;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px; }
+    section#block-bean-commercialise-your-ip .group-footer a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-commercialise-your-ip .group-footer a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
 
 /*
 section#block-bean-designs-application-process {
