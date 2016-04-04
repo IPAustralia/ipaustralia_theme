@@ -96,7 +96,7 @@ body.section-trade-marks {
 }
 body.section-designs {
     .application-process-menu {
-        @include application-process-menu($steps:6, $backgroundcolor:$color_willow_brook_approx, $imagefolder:design, $color:$mint);
+        @include application-process-menu($steps:7, $backgroundcolor:$color_willow_brook_approx, $imagefolder:design, $color:$mint);
     }   
 }
 body.section-plant-breeders-rights {

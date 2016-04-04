@@ -1769,6 +1769,10 @@ body.section-designs .application-process-menu {
     display: none; }
     body.section-designs .application-process-menu ul li a::before {
       color: #84c98f; }
+    body.section-designs .application-process-menu ul li:nth-child(7) {
+      display: block; }
+      body.section-designs .application-process-menu ul li:nth-child(7) a {
+        background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
     body.section-designs .application-process-menu ul li:nth-child(6) {
       display: block; }
       body.section-designs .application-process-menu ul li:nth-child(6) a {
@@ -5015,7 +5019,7 @@ section#block-bean-designs-application-process {
     section#block-bean-designs-application-process {
       padding: 40px 0px 60px; } }
   section#block-bean-designs-application-process .application-process-wrapper ul {
-    background: transparent url("../images/application-process/_generic/background-line-6.png") center center no-repeat;
+    background: transparent url("../images/application-process/_generic/background-line-7.png") center center no-repeat;
     background-size: 100% auto;
     background-position: right 140px; }
     @media only screen and (max-width: 992px) {
@@ -5025,6 +5029,10 @@ section#block-bean-designs-application-process {
       display: none; }
       section#block-bean-designs-application-process .application-process-wrapper ul li h4::before {
         color: #84c98f; }
+      section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(7) {
+        display: inline-block; }
+        section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(7) .image {
+          background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
       section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(6) {
         display: inline-block; }
         section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(6) .image {
