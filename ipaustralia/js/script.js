@@ -1275,6 +1275,29 @@ function equalHeight($container) {
 }).call(this);
 
 
+
+
+/*    jQuery('ul.megamenu > li.open > a').click(function(){
+        var urlLocation = jquery(this).find('a').attr('href');
+        console.log(urlLocation);
+        window.location.href = urlLocation;
+    });*/
+
+jQuery( document ).ready(function() {
+    jQuery("a.dropdown-toggle").click(function(){
+/*        var expandCheck = jQuery(this).attr("aria-expanded");
+        console.log(expandCheck);
+        var urlLocation = jQuery(this).attr("href");
+        console.log(urlLocation);
+        if (expandCheck == "true") {
+            window.location.href = urlLocation;
+        }*/
+        //var urlLocation = jquery(this).find('a').attr('href');
+/*        console.log('dsrfgdf');
+        alert('dsrfgdf');*/
+        //window.location.href = urlLocation;
+    });
+});
 //adding stripes to tables and other content
 /*(function () {
     jQuery('div.field-name-body table tr:even').css('background-color','#e1e1e1');

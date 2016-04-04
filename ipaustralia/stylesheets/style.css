@@ -939,16 +939,18 @@ header nav .nav-tabs {
           color: white !important; }
           header nav .nav-tabs li.active a.megamenu-tab-plant-breeders-rights:hover, header nav .nav-tabs li.active a.megamenu-tab-plant-breeders-rights:active, header nav .nav-tabs li.active a.megamenu-tab-plant-breeders-rights:focus {
             border-bottom: 4px solid #f1ac1e; }
-    header nav .nav-tabs li.open > a:first-child, header nav .nav-tabs li:hover > a:first-child {
-      background: #eff0f2;
-      color: #0d252c !important;
-      border-color: #eff0f2 !important; }
-      @media only screen and (max-width: 767px) {
-        header nav .nav-tabs li.open > a:first-child, header nav .nav-tabs li:hover > a:first-child {
-          background: #0d252c url("../images/arrow-up-transparent.png") 90% center no-repeat;
-          /*background-color:$charcoal !important;*/
-          color: white !important;
-          margin-bottom: -5px; } }
+    header nav .nav-tabs li.open > a, header nav .nav-tabs li:hover > a {
+      z-index: 991; }
+      header nav .nav-tabs li.open > a:first-child, header nav .nav-tabs li:hover > a:first-child {
+        background: #eff0f2;
+        color: #0d252c !important;
+        border-color: #eff0f2 !important; }
+        @media only screen and (max-width: 767px) {
+          header nav .nav-tabs li.open > a:first-child, header nav .nav-tabs li:hover > a:first-child {
+            background: #0d252c url("../images/arrow-up-transparent.png") 90% center no-repeat;
+            /*background-color:$charcoal !important;*/
+            color: white !important;
+            margin-bottom: -5px; } }
     @media only screen and (max-width: 767px) {
       header nav .nav-tabs li.open, header nav .nav-tabs li:hover {
         background: #0d252c; } }
@@ -1027,6 +1029,8 @@ header nav .nav-tabs {
       border-left: 6px solid #de4326 !important; }
     header nav .nav-tabs li.tab-designs a.highlight-box {
       border-left: 6px solid #84c98f !important; }
+    header nav .nav-tabs li.tab-plant-breeder-rights a.highlight-box {
+      border-left: 6px solid #f1ac1e !important; }
     header nav .nav-tabs li.tab-plant-breeder-rights a.highlight-box {
       border-left: 6px solid #f1ac1e !important; }
     header nav .nav-tabs li:hover .dropdown-menu {
@@ -1213,8 +1217,6 @@ header nav .nav-tabs {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap; }
-            header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a:hover {
-              border-left: 6px solid #0d252c; }
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a:after {
               content: '  ';
               float: right;

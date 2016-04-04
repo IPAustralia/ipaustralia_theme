@@ -105,7 +105,8 @@ header {
                     }
                 }
                 &.open, &:hover {
-                    > a{
+                    > a {
+                        z-index: 991;
                         &:first-child  {
                             background: $off-white;
                             color: $charcoal !important;
@@ -238,6 +239,14 @@ header {
                         }   
                     }
                 }
+                &.tab-plant-breeder-rights {
+                    a{
+                        &.highlight-box {
+                            border-left: 6px solid $yellow !important;
+                        }   
+                    }
+                }
+
 
                 &:hover .dropdown-menu {
                     display: block;
@@ -442,9 +451,6 @@ header {
                                 overflow:hidden;
                                 text-overflow:ellipsis;
                                 white-space:nowrap;
-                                &:hover {
-                                    border-left: 6px solid $charcoal;
-                                }
                                 &:after {
                                     content:'  ';
                                     float: right;
