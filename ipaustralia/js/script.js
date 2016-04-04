@@ -1275,30 +1275,20 @@ function equalHeight($container) {
 }).call(this);
 
 
-
-
-/*    jQuery('ul.megamenu > li.open > a').click(function(){
-        var urlLocation = jquery(this).find('a').attr('href');
-        console.log(urlLocation);
-        window.location.href = urlLocation;
-    });*/
-
+//makes the megamenu top navigation clickable when already toggled.
 jQuery( document ).ready(function() {
     jQuery("a.dropdown-toggle").click(function(){
-/*        var expandCheck = jQuery(this).attr("aria-expanded");
-        console.log(expandCheck);
+        var expandCheck = jQuery(this).attr("aria-expanded");
         var urlLocation = jQuery(this).attr("href");
-        console.log(urlLocation);
+        //check if toggled, if so change the url.
         if (expandCheck == "true") {
             window.location.href = urlLocation;
-        }*/
-        //var urlLocation = jquery(this).find('a').attr('href');
-/*        console.log('dsrfgdf');
-        alert('dsrfgdf');*/
-        //window.location.href = urlLocation;
+        }
     });
 });
-//adding stripes to tables and other content
+
+//adding stripes to tables and other content.
+//Disabled as added to the css instead.
 /*(function () {
     jQuery('div.field-name-body table tr:even').css('background-color','#e1e1e1');
     jQuery('div.field-name-body dl dt:even, div.field-name-body dl dd:even').css('background-color','#e1e1e1');
