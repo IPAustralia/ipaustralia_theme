@@ -1896,7 +1896,7 @@ Applicaiton process on body
     .application-process-wrapper ul li h4 {
       /*font-size: 28px;*/
       color: #0d252c;
-      height: 89px;
+      height: 99px;
       overflow: hidden; }
       @media only screen and (max-width: 1192px) {
         .application-process-wrapper ul li h4 {
@@ -2743,6 +2743,37 @@ article table {
 .page-tools-resources-case-studies .views-field-field-date {
   color: #999;
   margin-bottom: 10px; }
+
+.page-about-us-news-and-community-news .views-row {
+  background: #eff0f2;
+  margin-bottom: 10px; }
+  .page-about-us-news-and-community-news .views-row .panel-col-last {
+    padding-top: 22px;
+    width: 70%; }
+    .page-about-us-news-and-community-news .views-row .panel-col-last .views-field-field-news-date {
+      color: #999;
+      margin-bottom: 10px; }
+  .page-about-us-news-and-community-news .views-row .panel-col-first {
+    width: 23%; }
+    .page-about-us-news-and-community-news .views-row .panel-col-first img {
+      margin: 30px;
+      width: 140px;
+      height: 140px; }
+  .page-about-us-news-and-community-news .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline; }
+.page-about-us-news-and-community-news .views-field-field-tags ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px; }
+  .page-about-us-news-and-community-news .views-field-field-tags ul li {
+    display: inline-block;
+    background: #0d252c;
+    color: #fff;
+    padding: 5px;
+    margin: 0px 0px 0px 5px; }
 
 .page-tools-resources-publications---reports .views-row {
   background: #eff0f2;
