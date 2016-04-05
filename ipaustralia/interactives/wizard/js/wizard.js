@@ -24,15 +24,13 @@ jQuery(function() {
 	$("#reset").click( function() {
 	back();
 	});
-	document.getElementById('tt1').title="This could be a tooltip at some stage I guess."
-    $('.ans').on("click", function(e) {  
-        $(this).addClass("selected-this").siblings().removeClass("selected-this");
-    });
-    console.log("alive")
+	$('.ans').on("click", function() {
+		$(".ans.selectedWiz").removeClass("selectedWiz");
+		$(this).addClass('selectedWiz');
+	});
 });
 
 //$("#elementID").css({ display: "block" });
-
 
 
 
@@ -337,39 +335,39 @@ function update(idElement) {
 //**START CHECK RADIOBOX STATE 
 function cnt() {
 	stepstyle();
-	if(window.location.href.indexOf("#s1") > -1) {
+	if(window.location.href.indexOf("#s01") > -1) {
 	update(2); 
 	parent.location.hash = ''
 	}
-	else if(window.location.href.indexOf("#s2") > -1) {
+	else if(window.location.href.indexOf("#s02") > -1) {
 	update(3);
 	parent.location.hash = ''
 	}
-	else if(window.location.href.indexOf("#s3") > -1) {
+	else if(window.location.href.indexOf("#s03") > -1) {
 	update(4);
 	parent.location.hash = ''
 	}
-	else if(window.location.href.indexOf("#s4") > -1) {
+	else if(window.location.href.indexOf("#s04") > -1) {
 	update(5);
 	parent.location.hash = ''
 	}
-	else if(window.location.href.indexOf("#s5") > -1) {
+	else if(window.location.href.indexOf("#s05") > -1) {
 	update(6); 
 	parent.location.hash = ''
 	}
-	else if(window.location.href.indexOf("#s6") > -1) {
+	else if(window.location.href.indexOf("#s06") > -1) {
 	update(7);
 	parent.location.hash = ''
 	}
-	else if(window.location.href.indexOf("#s7") > -1) {
+	else if(window.location.href.indexOf("#s07") > -1) {
 	update(8);
 	parent.location.hash = ''
 	}
-	else if(window.location.href.indexOf("#s8") > -1) {
+	else if(window.location.href.indexOf("#s08") > -1) {
 	update(9);
 	parent.location.hash = ''
 	}
-	else if(window.location.href.indexOf("#s9") > -1) {
+	else if(window.location.href.indexOf("#s09") > -1) {
 	update(10); 
 	parent.location.hash = ''
 	}
