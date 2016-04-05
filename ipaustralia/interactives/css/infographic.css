@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+h1, h2, h3, h4, a{
+font-family: 'Montserrat', sans-serif;
+}
+.cnt a { color:#977100 !important; text-decoration:underline;}
+.cnt a:hover{ color:#977100 !important; text-decoration:none;}
+a:hover{ color:#977100 !important; text-decoration:none !important;}
+.wrapper {max-width:1180px; padding-left:20px; padding-right:20px; margin:auto;}
+.regcolor {color:#1d252c !important; text-decoration:none;}
+.mowerheader {background:url("../images/grass-header.jpg") no-repeat;  background-size: 100% 100%; margin:0 -30rem;}
+.head-space h1 {color:#fff;}
+.ptlk {color:#30aeb6;}
+.tmlk {color:#de4326;}
+.dslk {color:#84c98f;}
+.pbrlk {color:#f1ac1e;}
+.iplk {color:#704579;}
+.fnote { font-size:11px;}
+.cap { font-size:11px;font-style:italic;width:300px;}
+.capr { font-size:11px;font-style:italic;text-align:right;}
+.quote { font-style: italic; padding-left:10%; padding-right:10%;}
+.hist-nav {width:100%;display:inline-block;background-color:#1d252c;color:#fff;padding-top:2%;padding-bottom:2%;}
+.hist-nav a {padding-left:5%;padding-right:5%; color:977100;}
+.wwipathead {background-image:url(../images/wwi/wwi-patent.jpg);}
+.wwitmhead {background-image:url(../images/wwi/wwi-tm.jpg);}
+.wwidshead {background-image:url(../images/wwi/wwi-design.jpg);}
+
+.ed-header {color:#1d252c;}
+.ed-morning { background:url("../images/everyday-morning.png") no-repeat;}
+.ed-afternoon {background:url("../images/everyday-afternoon.png") no-repeat;}
+.ed-evening {background:url("../images/everyday-evening.png") no-repeat;}
+.ed-night {background:url("../images/everyday-night.png") no-repeat;}
+.ed-nav {width:100%;display:inline-block;background-color:#1d252c;color:#fff;padding-top:2%;padding-bottom:2%;padding-right:5%;}
+.ed-nav a {padding-left:5%;padding-right:5%;margin-left:5%; color:#977100;text-decoration:underline;}
+.ed-nav a:hover {color:#977100; text-decoration:none;}
+.header {background-color:#1d252c;} /* <-- this is same styling as ip-rights-wwi. ok to merge */
+.nextbox { /* <-- this is same styling as ip-rights-wwi. ok to merge */
+	background-color: #1d252c;
+	color: #fff;
+	padding-bottom:46px;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+.nextbox h3 { 
+	padding: 0px;
+	color:#fff;
+	text-align: center;
+}
+
+.stretch { background-size:contain; color:#fff;height:250px;}
+
+.row {padding-bottom:40px; padding-top:40px;}
+
+.row-process{height:300px; padding-top:40px; padding-bottom:40px;}
+.head-space {padding:40px;}
+div.thick {
+  height:4px;
+  border:0;
+  color:#fff;
+  background-color:#fff;
+  width:150px;
+  text-align:left;
+  margin-bottom:10px;
+  }
+  div.thickgrey {
+  height:4px;
+  border:0;
+  color:#b6bec1;
+  background-color:#b6bec1;
+  width:150px;
+  text-align:left;
+  margin-bottom:10px;
+  }
+.stretch { background-size:center; color:#fff;height:250px; background-position:center;}
+
+.tpatent {color:#30aeb6 !important; background-color:#30aeb6 !important;}
+.ttm {color:#de4326 !important; background-color:#de4326 !important;}
+.tdesign {color:#84c98f !important; background-color:#84c98f !important;}
+.tpbr {color:#f1ac1e !important; background-color:#f1ac1e !important;}
+.tmore {color:#704579 !important; background-color:#704579 !important;}
+.left {/*background-color: #eef0f1;*/
+border-left-style: solid; 
+border-left-width:4px; 
+border-left-color:#de4326;
+border-right-style: solid; 
+border-right-width:4px; 
+border-right-color:#eef0f1;
+border-bottom-style: solid; 
+border-bottom-width:4px; 
+border-bottom-color:#de4326;
+}
+.right {
+border-right-style: solid; 
+border-right-width:4px; 
+border-right-color:#de4326;
+border-left-style: solid; 
+border-left-width:4px; 
+border-left-color:#eef0f1;
+border-bottom-style: solid; 
+border-bottom-width:4px; 
+border-bottom-color:#de4326;
+}
+/*animation*/
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+/*slide left*/
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+/*slide right*/
+.animation-element.slide-right {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(100px, 0px, 0px);
+  -webkit-transform: translate3d(100px, 0px, 0px);
+  -o-transform: translate(100px, 0px);
+  -ms-transform: translate(100px, 0px);
+  transform: translate3d(100px, 0px, 0px);
+}
+
+.animation-element.slide-right.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}

@@ -1,13 +1,7 @@
 // Content is in a display:none div classed 'responses' at the bottom of the html for this page
-// You will need to copy/add more else if statements to fit your content
-// #default is the initial state of content
-// #title = title text for slide
-// #maincontent is primary div
-// #step1/2/etc is position indicator above main content under heading
+// You will need to copy/add more else if statements to fit your content - scripting caters for any combination of 40 total responses
 
-backid=0
-
-jQuery(document).ready(function() { 
+jQuery(function() { 
   jQuery('#qTable li.q').on('click',function() {
 	//add css class for selected
 	jQuery(this).addClass('selectedAnswer').siblings().removeClass('selectedAnswer');								
@@ -20,15 +14,33 @@ jQuery(document).ready(function() {
 	var qNext = ' tr:nth-child(' + italNum + ')'; 
 	jQuery('#qTable' + qNext).fadeIn(800);
 	})
-})
+	//generate steps
+	jQuery(stepsinit)
+	//generate tooltips
+	jQuery('[data-toggle="tooltip"]').tooltip()
+	$("#continue").click( function() {
+	cnt();
+	});
+	$("#reset").click( function() {
+	back();
+	});
+	document.getElementById('tt1').title="This could be a tooltip at some stage I guess."
+    $('.ans').on("click", function(e) {  
+        $(this).addClass("selected-this").siblings().removeClass("selected-this");
+    });
+    console.log("alive")
+});
+
+//$("#elementID").css({ display: "block" });
+
+
+
+
 
 
 //***START TOOLTIPS
-jQuery(function () {
-	jQuery('[data-toggle="tooltip"]').tooltip()
-})
 jQuery('body').on('click', function (e) {
-    //only works with buttons
+    //only works with buttons types
     if (jQuery(e.target).data('toggle') !== 'popover'
         && jQuery(e.target).parents('.popover.in').length === 0) { 
         jQuery('[data-toggle="popover"]').popover('hide');
@@ -40,7 +52,7 @@ jQuery('body').on('click', function (e) {
 function back() {
 	jQuery('#info-steps li').first().addClass("is-active").siblings().removeClass("is-active");
 	update(1);
-	return false;
+   parent.location.hash = ''
 	}
 //**END RESET
 
@@ -60,15 +72,12 @@ function stepsinit() {
 	jQuery('#info-steps li').first().addClass("is-active");
 	}	
 }
-jQuery(stepsinit)
 //***END INDEX GENERATION
 
-//* START ACTIVE INDEX STYLING
+//* START INDEX STYLING
 function stepstyle(){
 	jQuery('#info-steps li.is-active').next().addClass("is-active").siblings().removeClass();
 }
-
-
 //** END INDEX STYLING
 
 //** WARNING: MANY IF STATEMENTS LIVE BELOW 
@@ -326,167 +335,167 @@ function update(idElement) {
 //** END CONTENT UPDATE
 
 //**START CHECK RADIOBOX STATE 
-function nxt() {
+function cnt() {
 	stepstyle();
-	if (jQuery('#op1').is(":checked")) {
+	if(window.location.href.indexOf("#s1") > -1) {
 	update(2); 
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op2').is(":checked")) {
+	else if(window.location.href.indexOf("#s2") > -1) {
 	update(3);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op3').is(":checked")) {
+	else if(window.location.href.indexOf("#s3") > -1) {
 	update(4);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op4').is(":checked")) {
+	else if(window.location.href.indexOf("#s4") > -1) {
 	update(5);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op5').is(":checked")) {
+	else if(window.location.href.indexOf("#s5") > -1) {
 	update(6); 
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op6').is(":checked")) {
+	else if(window.location.href.indexOf("#s6") > -1) {
 	update(7);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op7').is(":checked")) {
+	else if(window.location.href.indexOf("#s7") > -1) {
 	update(8);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op8').is(":checked")) {
+	else if(window.location.href.indexOf("#s8") > -1) {
 	update(9);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op9').is(":checked")) {
+	else if(window.location.href.indexOf("#s9") > -1) {
 	update(10); 
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op10').is(":checked")) {
+	else if(window.location.href.indexOf("#s10") > -1) {
 	update(11);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op11').is(":checked")) {
+	else if(window.location.href.indexOf("#s11") > -1) {
 	update(12);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op12').is(":checked")) {
+	else if(window.location.href.indexOf("#s12") > -1) {
 	update(13);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op13').is(":checked")) {
+	else if(window.location.href.indexOf("#s13") > -1) {
 	update(14); 
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op14').is(":checked")) {
+	else if(window.location.href.indexOf("#s14") > -1) {
 	update(15);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op15').is(":checked")) {
+	else if(window.location.href.indexOf("#s15") > -1) {
 	update(16);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op16').is(":checked")) {
+	else if(window.location.href.indexOf("#s16") > -1) {
 	update(17);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op17').is(":checked")) {
+	else if(window.location.href.indexOf("#s17") > -1) {
 	update(18); 
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op18').is(":checked")) {
+	else if(window.location.href.indexOf("#s18") > -1) {
 	update(19);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op19').is(":checked")) {
+	else if(window.location.href.indexOf("#s19") > -1) {
 	update(20);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op20').is(":checked")) {
+	else if(window.location.href.indexOf("#s20") > -1) {
 	update(21);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op21').is(":checked")) {
+	else if(window.location.href.indexOf("#s21") > -1) {
 	update(22);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op22').is(":checked")) {
+	else if(window.location.href.indexOf("#s22") > -1) {
 	update(23);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op23').is(":checked")) {
+	else if(window.location.href.indexOf("#s23") > -1) {
 	update(24);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op24').is(":checked")) {
+	else if(window.location.href.indexOf("#s24") > -1) {
 	update(25); 
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op25').is(":checked")) {
+	else if(window.location.href.indexOf("#s25") > -1) {
 	update(26);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op26').is(":checked")) {
+	else if(window.location.href.indexOf("#s26") > -1) {
 	update(27);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op27').is(":checked")) {
+	else if(window.location.href.indexOf("#s27") > -1) {
 	update(28);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op28').is(":checked")) {
+	else if(window.location.href.indexOf("#s28") > -1) {
 	update(29); 
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op29').is(":checked")) {
+	else if(window.location.href.indexOf("#s29") > -1) {
 	update(30);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op30').is(":checked")) {
+	else if(window.location.href.indexOf("#s30") > -1) {
 	update(31);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op31').is(":checked")) {
+	else if(window.location.href.indexOf("#s31") > -1) {
 	update(32);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op32').is(":checked")) {
+	else if(window.location.href.indexOf("#s32") > -1) {
 	update(33); 
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op33').is(":checked")) {
+	else if(window.location.href.indexOf("#s33") > -1) {
 	update(34);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op34').is(":checked")) {
+	else if(window.location.href.indexOf("#s34") > -1) {
 	update(35);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op35').is(":checked")) {
+	else if(window.location.href.indexOf("#s35") > -1) {
 	update(36);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op36').is(":checked")) {
+	else if(window.location.href.indexOf("#s36") > -1) {
 	update(37); 
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op37').is(":checked")) {
+	else if(window.location.href.indexOf("#s37") > -1) {
 	update(38);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op38').is(":checked")) {
+	else if(window.location.href.indexOf("#s38") > -1) {
 	update(39);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op39').is(":checked")) {
+	else if(window.location.href.indexOf("#s39") > -1) {
 	update(40);
-	return false;
+	parent.location.hash = ''
 	}
-	else if (jQuery('#op40').is(":checked")) {
+	else if(window.location.href.indexOf("#s40") > -1) {
 	update(41);
-	return false;
+	parent.location.hash = ''
 	}
 	}
 //**END CHECK RADIOBOX STATE 
