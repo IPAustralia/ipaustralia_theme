@@ -15,32 +15,32 @@ a:hover { color:#000;text-decoration:none;}
 .little{font-size:24px;text-style:inital;}
 
 @media screen and (min-width: 1000px) {
-.letterp {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#30aeb6;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
-.lettert {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#de4326;height:400px;width:400px;padding-top:122px;margin-top:-250px;}
-.letterd {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#84c98f;height:400px;width:400px;padding-top:128px;margin-top:-220px;}
-.letterpbr {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#f1ac1e;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
-.letterc {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:125px;margin-top:-220px;}
-.lettero {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:130px;margin-top:-250px;}
+.letterp {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#30aeb6;height:400px;width:400px;padding-top:125px;margin-top:-270px;}
+.lettert {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#de4326;height:400px;width:400px;padding-top:122px;margin-top:-275px;}
+.letterd {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#84c98f;height:400px;width:400px;padding-top:128px;margin-top:-235px;}
+.letterpbr {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#f1ac1e;height:400px;width:400px;padding-top:125px;margin-top:-275px;}
+.letterc {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:125px;margin-top:-235px;}
+.lettero {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:130px;margin-top:-288px;}
 }
 
 @media screen and (max-width: 992px) {
-.letterp {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#30aeb6;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
-.lettert {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#de4326;height:400px;width:400px;padding-top:122px;margin-top:-250px;}
-.letterd {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#84c98f;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
-.letterpbr {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#f1ac1e;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
-.letterc {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:125px;margin-top:-220px;}
-.lettero {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:130px;margin-top:-250px;}
+.letterp {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#30aeb6;height:400px;width:400px;padding-top:125px;margin-top:-270px;padding-right:70px !important;}
+.lettert {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#de4326;height:400px;width:400px;padding-top:122px;margin-top:-275px;padding-right:70px !important;}
+.letterd {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#84c98f;height:400px;width:400px;padding-top:125px;margin-top:-270px;padding-right:70px !important;}
+.letterpbr {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#f1ac1e;height:400px;width:400px;padding-top:125px;margin-top:-275px;padding-right:70px !important;}
+.letterc {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:125px;margin-top:-235px;padding-right:70px !important;}
+.lettero {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:130px;margin-top:-288px;padding-right:70px !important;}
 }
 
 @media screen and (max-width: 768px) {
-.smtxt {padding-right:30%;}
+.smtxt {padding-right:30%;margin-right:160px;}
 .smtxtb {padding-right:20%;}
-.letterp {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#30aeb6;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
-.lettert {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#de4326;height:400px;width:400px;padding-top:136px;margin-top:-230px;}
-.letterd {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#84c98f;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
-.letterpbr {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#f1ac1e;height:400px;width:400px;padding-top:125px;margin-top:-250px;}
-.letterc {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:125px;margin-top:-220px;}
-.lettero {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:135px;margin-top:-280px;}
+.letterp {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#30aeb6;height:400px;width:400px;padding-top:125px;margin-top:-250px;padding-right:220px !important;}
+.lettert {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#de4326;height:400px;width:400px;padding-top:136px;margin-top:-230px;padding-right:220px !important;}
+.letterd {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#84c98f;height:400px;width:400px;padding-top:125px;margin-top:-250px;padding-right:220px !important;}
+.letterpbr {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#f1ac1e;height:400px;width:400px;padding-top:125px;margin-top:-250px;padding-right:220px !important;}
+.letterc {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:125px;margin-top:-220px;padding-right:220px !important;}
+.lettero {border: 5px solid; background-color:#1d252c;float:left;margin-left:70%;display:inline;padding-right:150px;border-radius:50%;border-color:#fff;height:400px;width:400px;padding-top:130px;margin-top:-280px;padding-right:220px !important;}
 .tmhead {display:none;}
 .tmbody {display:inline !important;}
 }
