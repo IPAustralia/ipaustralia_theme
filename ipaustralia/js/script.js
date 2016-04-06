@@ -61,8 +61,7 @@ jQuery(document).on('click', '.bp-midsmall .panels-flexible-region h4', function
 });
 jQuery(document).on('mouseup', 'section#block-quicktabs-tools-and-resources .quicktabs-style-nostyle > li a', function () {
     //using mouse up since click is already used and prevented for element
-//check if mobile device
-checkMobile();
+
 
     var $url = jQuery(this).attr("href");
 //    alert($url);

@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-a { color:#000;}
+article a { color:#000;}
 a:hover { color:#000;text-decoration:none;}
 .row-type { 
 	padding: 5px 0px;
@@ -64,13 +64,13 @@ a:hover { color:#000;text-decoration:none;}
 .desc{padding-left:35px;color:#fff;}
 
 
-h1, h2, h3, h4, a{
+article h1, article h2, article h3, article h4, article a{
 font-family: 'Montserrat', sans-serif;
 }
 .cnt a { color:#977100 !important; text-decoration:underline;}
 .cnt a:hover{ color:#977100 !important; text-decoration:none;}
-a:hover{ color:#977100 !important; text-decoration:none !important;}
-.wrapper {max-width:1180px; padding-left:20px; padding-right:20px; margin:auto;}
+article a:hover{ color:#977100 !important; text-decoration:none !important;}
+article .wrapper {max-width:1180px; padding-left:20px; padding-right:20px; margin:auto;}
 .regcolor {color:#1d252c !important; text-decoration:none;}
 .mowerheader {background:url("../images/grass-header.jpg") no-repeat;  background-size: 100% 100%; margin:0 -30rem;}
 .head-space h1 {color:#fff;}
@@ -97,7 +97,7 @@ a:hover{ color:#977100 !important; text-decoration:none !important;}
 .ed-nav {width:100%;display:inline-block;background-color:#1d252c;color:#fff;padding-top:2%;padding-bottom:2%;padding-right:5%;}
 .ed-nav a {padding-left:5%;padding-right:5%;margin-left:5%; color:#977100;text-decoration:underline;}
 .ed-nav a:hover {color:#977100; text-decoration:none;}
-.header {background-color:#1d252c;} /* <-- this is same styling as ip-rights-wwi. ok to merge */
+article .header {background-color:#1d252c;} /* <-- this is same styling as ip-rights-wwi. ok to merge */
 .nextbox { /* <-- this is same styling as ip-rights-wwi. ok to merge */
 	background-color: #1d252c;
 	color: #fff;
@@ -113,7 +113,7 @@ a:hover{ color:#977100 !important; text-decoration:none !important;}
 
 .stretch { background-size:contain; color:#fff;height:250px;}
 
-.row {padding-bottom:40px; padding-top:40px;}
+article .row {padding-bottom:40px; padding-top:40px;}
 
 .row-process{height:300px; padding-top:40px; padding-bottom:40px;}
 .head-space {padding:40px;}
@@ -135,14 +135,14 @@ div.thick {
   text-align:left;
   margin-bottom:10px;
   }
-.stretch { background-size:center; color:#fff;height:250px; background-position:center;}
+article .stretch { background-size:center; color:#fff;height:250px; background-position:center;}
 
 .tpatent {color:#30aeb6 !important; background-color:#30aeb6 !important;}
 .ttm {color:#de4326 !important; background-color:#de4326 !important;}
 .tdesign {color:#84c98f !important; background-color:#84c98f !important;}
 .tpbr {color:#f1ac1e !important; background-color:#f1ac1e !important;}
 .tmore {color:#704579 !important; background-color:#704579 !important;}
-.left {/*background-color: #eef0f1;*/
+article .left {/*background-color: #eef0f1;*/
 border-left-style: solid; 
 border-left-width:4px; 
 border-left-color:#de4326;
@@ -153,7 +153,7 @@ border-bottom-style: solid;
 border-bottom-width:4px; 
 border-bottom-color:#de4326;
 }
-.right {
+article .right {
 border-right-style: solid; 
 border-right-width:4px; 
 border-right-color:#de4326;
