@@ -85,9 +85,9 @@ article .wrapper {max-width:1180px; padding-left:20px; padding-right:20px; margi
 .quote { font-style: italic; padding-left:10%; padding-right:10%;}
 .hist-nav {width:100%;display:inline-block;background-color:#1d252c;color:#fff;padding-top:2%;padding-bottom:2%;}
 .hist-nav a {padding-left:5%;padding-right:5%; color:977100;}
-.wwipathead {background-image:url(../images/wwi/wwi-patent.jpg);}
-.wwitmhead {background-image:url(../images/wwi/wwi-tm.jpg);}
-.wwidshead {background-image:url(../images/wwi/wwi-design.jpg);}
+.wwipathead {background-image:url(sites/g/files/net856/themes/site/ipaustralia/interactives/images/wwi/wwi-patent.jpg);}
+.wwitmhead {background-image:url(sites/g/files/net856/themes/site/ipaustralia/interactives/images/wwi/wwi-tm.jpg);}
+.wwidshead {background-image:url(sites/g/files/net856/themes/site/ipaustralia/interactives/images/wwi/wwi-design.jpg);}
 
 .ed-header {color:#1d252c;}
 .ed-morning { background:url("../images/everyday-morning.png") no-repeat;}
