@@ -9,8 +9,8 @@ jQuery(function(){
         if(checked){
 
             jQuery('ans1').show();
-			
-			jQuery('ans1').slideUp();
+            
+            jQuery('ans1').slideUp();
             
             jQuery('ans1').removeClass('toggle-active');
     }

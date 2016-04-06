@@ -1,27 +1,4 @@
-#maincontent a.reallink {
-	font-size:14px;
-	color:#977100;
-
-}
-
-#maincontent a.reallink:hover {
-	font-size:14px;
-	color:#977100;
-	text-decoration:underline;
-}
-
-#maincontent a {
-	font-size:14px;
-	color:#1d252c;
-
-}
-
-#maincontent a:hover {
-	font-size:14px;
-	color:#1d252c;
-	text-decoration:none;
-}
-#qTable { border-spacing:0.5em; margin-left:20%; margin-right:20%;}
+			#qTable { border-spacing:0.5em; margin-left:20%; margin-right:20%;}
 #qTable ul {width:100%;}
 #qTable li.q {
 	text-align:center;
@@ -162,7 +139,7 @@ i {display:none}
 			a:visited { color:#977100; text-decoration:none;}
 			radio { display:none;}
 			
-			.ans {
+			label {
 				padding-left:20px; 
 				padding-right:25px; 
 				width:100%; 
@@ -178,40 +155,7 @@ i {display:none}
 				font-weight:bold;
 				cursor:pointer;}
 			
-			.ans:hover {
-				padding-left:20px; 
-				padding-right:25px; 
-				width:100%; 
-				list-style-position:inside; 
-				list-style:none; 
-				background:#fff;
-				margin-bottom:15px; 
-				padding-top:10px; 
-				padding-bottom:10px; 
-				min-height:60px; 
-				border:#1d252c 1px solid; 
-				color:#1d252c; 
-				font-weight:bold;
-				cursor:pointer;
-			}
-			.selectedWiz {
-				padding-left:20px; 
-				padding-right:25px; 
-				width:100%; 
-				list-style-position:inside; 
-				list-style:none; 
-				background:#fff;
-				margin-bottom:15px; 
-				padding-top:10px; 
-				padding-bottom:10px; 
-				min-height:60px; 
-				border:#1d252c 1px solid; 
-				color:#1d252c; 
-				font-weight:bold;
-				cursor:pointer;
-			}
-			
-			.ans:active {
+			label:hover {
 				padding-left:20px; 
 				padding-right:25px; 
 				width:100%; 
@@ -326,7 +270,7 @@ i {display:none}
 				background:url(../images/sprite.png) -23px top no-repeat;
 			}
 			
-			resptxt {
+			input:checked + label {
 				padding-left:20px; 
 				padding-right:25px; 
 				width:100%; 
