@@ -1295,14 +1295,14 @@ jQuery( document ).ready(function() {
         jQuery(this).toggleClass("meganav-hover");
     });*/
     jQuery("a.dropdown-toggle").click(function(){
-        //var expandCheck = jQuery(this).attr("aria-expanded");
+        var expandCheck = jQuery(this).attr("aria-expanded");
         var urlLocation = jQuery(this).attr("href");
 
         //check if toggled, if so change the url.
 /*        if (expandCheck == "true" || (jQuery(this).hasClass("meganav-hover"))) {
             window.location.href = urlLocation;
         }*/
-        if (/*expandCheck == "true" || */(jQuery('html').hasClass("no-touch"))) {
+        if (expandCheck == "true" || (jQuery('html').hasClass("no-touch"))) {
             window.location.href = urlLocation;
         }
     });
