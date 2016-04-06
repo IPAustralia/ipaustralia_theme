@@ -1166,10 +1166,10 @@ header nav .nav-tabs {
         display: none; } }
     header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title p {
       position: absolute;
-      margin: 30px 90px;
+      margin: 30px 90px 30px 0px;
       padding-right: 180px;
       font-size: 16px; }
-      @media only screen and (max-width: 1092px) {
+      @media only screen and (max-width: 1200px) {
         header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title p {
           display: none; } }
     header nav .nav-tabs .dropdown-menu .learn-more {
@@ -1325,6 +1325,12 @@ header nav .nav-tabs {
 
 .region-sidebar-first .sidenav-hide {
   display: none; }
+
+header nav .nav-tabs li.tab-patents .dropdown-menu .megamenu-tab-contents__title p,
+header nav .nav-tabs li.tab-trade-marks .dropdown-menu .megamenu-tab-contents__title p,
+header nav .nav-tabs li.tab-designs .dropdown-menu .megamenu-tab-contents__title p,
+header nav .nav-tabs li.tab-plant-breeder-rights .dropdown-menu .megamenu-tab-contents__title p {
+  margin: 30px 90px 30px 90px; }
 
 /* Garths css */
 /* ide nav code */
@@ -2818,6 +2824,23 @@ article table {
 .page-tools-resources-case-studies .views-field-field-date {
   color: #999;
   margin-bottom: 10px; }
+
+.page-tools-resources-pbr-journals .views-row, .page-tools-resources-patent-journals .views-row {
+  background: #eff0f2;
+  margin-bottom: 10px; }
+  .page-tools-resources-pbr-journals .views-row .panel-col-last, .page-tools-resources-patent-journals .views-row .panel-col-last {
+    padding-top: 22px;
+    width: 70%; }
+    .page-tools-resources-pbr-journals .views-row .panel-col-last .views-field-field-date, .page-tools-resources-patent-journals .views-row .panel-col-last .views-field-field-date {
+      color: #0d252c;
+      margin-bottom: 10px;
+      font-size: 20px; }
+  .page-tools-resources-pbr-journals .views-row .panel-col-first, .page-tools-resources-patent-journals .views-row .panel-col-first {
+    width: 23%; }
+    .page-tools-resources-pbr-journals .views-row .panel-col-first img, .page-tools-resources-patent-journals .views-row .panel-col-first img {
+      margin: 30px;
+      width: 140px;
+      height: 140px; }
 
 .page-about-us-news-and-community-news .views-row {
   background: #eff0f2;

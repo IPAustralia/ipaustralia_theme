@@ -1,3 +1,4 @@
+//case studies
 .page-tools-resources-case-studies {
     .views-row {
         background: $color_athens_gray_approx;
@@ -30,6 +31,35 @@
         margin-bottom: 10px;
     }
 }
+
+//pbr journals
+.page-tools-resources-pbr-journals, .page-tools-resources-patent-journals {
+    .views-row {
+        background: $color_athens_gray_approx;
+        margin-bottom: 10px;
+        .panel-col-last {
+            padding-top: 22px;
+            width: 70%;
+            .views-field-field-date {
+                color: $charcoal;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+        }
+        .panel-col-first {
+            width: 23%;
+            img {
+                margin: 30px;
+                width: 140px;
+                height: 140px;
+            }
+        }
+    }
+}
+
+
+
+//news
 .page-about-us-news-and-community-news {
     .views-row {
         background: $color_athens_gray_approx;
@@ -72,6 +102,8 @@
         }
     }
 }
+
+//reports
 .page-tools-resources-publications---reports {
     .views-row {
         background: $color_athens_gray_approx;
@@ -102,6 +134,8 @@
         color: $color_mountain_mist_approx;
     }
 }
+
+//forms
 .page-tools-resources-pdf-forms .views-row {
     background: $color_athens_gray_approx;
     margin-bottom: 10px;
@@ -188,6 +222,8 @@
     }
 }
 
+
+//foi
 .view-foi-disclosure-log {
     .views-row {
     background: $color_athens_gray_approx;
