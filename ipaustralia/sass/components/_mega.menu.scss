@@ -251,6 +251,8 @@ header {
                 &:hover .dropdown-menu {
                     display: block;
                 }
+                p {
+                }
 
             }
 
@@ -334,6 +336,15 @@ header {
                     }
                     @media only screen and (max-width: $break-point-medium - 1) {
                         display:none;
+                    }
+                    p {
+                        position: absolute;
+                        margin: 30px 90px;
+                        padding-right: 300px;
+                        font-size: 16px;
+                        @media only screen and (max-width: $break-point-large + 100) {
+                            display:none;
+                        }
                     }
                 }
                 .learn-more {

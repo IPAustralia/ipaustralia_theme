@@ -85,10 +85,6 @@
   drupal_add_css($theme_path . '/interactives/infographic/css/infographic.css');
   drupal_add_js($theme_path . '/interactives/infographic/js/infographic.js');
 ?>
-<script>
-var themePath = <?php $theme_path ?>
-alert(themePath);
-</script>
 
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>

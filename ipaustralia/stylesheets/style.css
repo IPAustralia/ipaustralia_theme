@@ -1164,6 +1164,14 @@ header nav .nav-tabs {
     @media only screen and (max-width: 767px) {
       header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title {
         display: none; } }
+    header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title p {
+      position: absolute;
+      margin: 30px 90px;
+      padding-right: 300px;
+      font-size: 16px; }
+      @media only screen and (max-width: 1092px) {
+        header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title p {
+          display: none; } }
     header nav .nav-tabs .dropdown-menu .learn-more {
       border: 2px solid #0d252c;
       background: transparent;

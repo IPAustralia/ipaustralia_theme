@@ -14,6 +14,8 @@ a:hover { color:#000;text-decoration:none;}
 .row-other{background-color:#fff;color:#1d252c;height:150px;}
 .little{font-size:24px;text-style:inital;}
 
+.typeh2 {color:#fff;}
+
 @media screen and (min-width: 1000px) {
 .letterp {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#30aeb6;height:400px;width:400px;padding-top:125px;margin-top:-270px;}
 .lettert {border: 5px solid; background-color:#1d252c;float:left;margin-left:75%;display:inline;padding-right:150px;border-radius:50%;border-color:#de4326;height:400px;width:400px;padding-top:122px;margin-top:-275px;}
@@ -64,12 +66,12 @@ a:hover { color:#000;text-decoration:none;}
 .desc{padding-left:35px;color:#fff;}
 
 
-h1, h2, h3, h4, a{
+article.node-infographic h1, article.node-infographic h2, article.node-infographic h3, article.node-infographic h4, article.node-infographic a{
 font-family: 'Montserrat', sans-serif;
 }
 .cnt a { color:#977100 !important; text-decoration:underline;}
 .cnt a:hover{ color:#977100 !important; text-decoration:none;}
-a:hover{ color:#977100 !important; text-decoration:none !important;}
+article.node-infographic a:hover{ color:#977100 !important; text-decoration:none !important;}
 .wrapper {max-width:1180px; padding-left:20px; padding-right:20px; margin:auto;}
 .regcolor {color:#1d252c !important; text-decoration:none;}
 .mowerheader {background:url("../images/grass-header.jpg") no-repeat;  background-size: 100% 100%; margin:0 -30rem;}
@@ -97,7 +99,7 @@ a:hover{ color:#977100 !important; text-decoration:none !important;}
 .ed-nav {width:100%;display:inline-block;background-color:#1d252c;color:#fff;padding-top:2%;padding-bottom:2%;padding-right:5%;}
 .ed-nav a {padding-left:5%;padding-right:5%;margin-left:5%; color:#977100;text-decoration:underline;}
 .ed-nav a:hover {color:#977100; text-decoration:none;}
-.header {background-color:#1d252c;} /* <-- this is same styling as ip-rights-wwi. ok to merge */
+article.node-infographic .header {background-color:#1d252c;} /* <-- this is same styling as ip-rights-wwi. ok to merge */
 .nextbox { /* <-- this is same styling as ip-rights-wwi. ok to merge */
 	background-color: #1d252c;
 	color: #fff;
