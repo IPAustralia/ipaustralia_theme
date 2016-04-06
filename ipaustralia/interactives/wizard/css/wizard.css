@@ -291,7 +291,7 @@ i {display:none}
 			.tthidden {display:none;float:right;position:relative;top:-1%;transform:translateY(1%);outline:none;margin-left:-60px;cursor:default;}
 			.chk {float:left;position:relative;top:-5%;transform:translateY(5%);outline:none;margin-left:-60px;cursor:default;}
 			.chk {float:left;position:relative;top:-10%;transform:translateY(10%);outline:none;cursor:default;}
-
+			.lidot {list-style:initial !important; list-style-type: initial !important;}
 			.tooltip{
 				position:absolute;
 				z-index:1020;
