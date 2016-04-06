@@ -19,7 +19,7 @@
 	border-color: #0d252c;
 	margin-right: 27px;
 	cursor: pointer;	}
-		
+#title {color:#fff;}		
 #qTable li.q:hover { 
 	text-align:center;
 	float:left;
@@ -93,7 +93,7 @@ i {display:none}
 				padding-top:40px;
 				background-position: center;
 				background-size: 1920px 5px;
-				background-image: url('../images/stepsbg.png');
+				background-image: url(/sites/g/files/net856/themes/site/ipaustralia/interactives/images/wizard/stepsbg.png);
 				background-repeat:no-repeat;
 			}
 			
@@ -263,11 +263,11 @@ i {display:none}
 				height:22px;
 				margin:-1px 4px 0 0;
 				vertical-align:middle;    
-				background:url(../images/sprite.png) left top no-repeat;
+				background:url(/sites/g/files/net856/themes/site/ipaustralia/interactives/images/wizard/sprite.png) left top no-repeat;
 				cursor:pointer;
 			}
 			input[type="radio"]:checked + label span {
-				background:url(../images/sprite.png) -23px top no-repeat;
+				background:url(/sites/g/files/net856/themes/site/ipaustralia/interactives/images/wizard/sprite.png) -23px top no-repeat;
 			}
 			
 			input:checked + label {
