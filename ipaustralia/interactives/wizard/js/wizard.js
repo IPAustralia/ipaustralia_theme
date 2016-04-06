@@ -16,6 +16,7 @@ jQuery(function() {
 	var italNum =  jQuery(this).find('i').text();
 	var qNext = ' tr:nth-child(' + italNum + ')'; 
 	jQuery('#qTable' + qNext).fadeIn(800);
+	$("html,body").animate({scrollTop: $('#qTable tr:last').offset().top +350});
 	})
 	//generate steps
 	jQuery(stepsinit)

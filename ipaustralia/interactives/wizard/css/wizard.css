@@ -269,7 +269,7 @@ i {display:none}
 			input[type="radio"]:checked + label span {
 				background:url(/sites/g/files/net856/themes/site/ipaustralia/interactives/images/wizard/sprite.png) -23px top no-repeat;
 			}
-			
+			.cont{width:30% !important;margin-left:35% !important;}
 			input:checked + label {
 				padding-left:20px; 
 				padding-right:25px; 
