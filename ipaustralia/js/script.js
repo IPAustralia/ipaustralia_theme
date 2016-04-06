@@ -61,6 +61,8 @@ jQuery(document).on('click', '.bp-midsmall .panels-flexible-region h4', function
 });
 jQuery(document).on('mouseup', 'section#block-quicktabs-tools-and-resources .quicktabs-style-nostyle > li a', function () {
     //using mouse up since click is already used and prevented for element
+//check if mobile device
+checkMobile();
 
     var $url = jQuery(this).attr("href");
 //    alert($url);
@@ -76,6 +78,21 @@ jQuery(document).on('mouseup', 'section#block-quicktabs-tools-and-resources .qui
 
 
 });
+
+//Check Mobile Devices
+function mobileCheck(){
+    //Check Device
+    var isTouch = ('ontouchstart' in document.documentElement);
+    //Check Device //All Touch Devices
+    if ( isTouch ) {
+        jQuery('html').addClass('touch');
+    }
+    else {
+        jQuery('html').addClass('no-touch');
+    };
+};
+//run function
+mobileCheck();
 
 function toolsAndResourcesTabsCheck() {
     if (jQuery('section#block-quicktabs-tools-and-resources').length > 0) {
@@ -257,14 +274,10 @@ function addTwitterFeed() {
         return t;
     }(document, "script", "twitter-wjs"));
 //end twitter feed script
-
-
-
-
-
-
-
 }
+
+
+
 function showSearchIcon() {
     /*
      * On Reponsive device add element to show the search box
@@ -1275,13 +1288,21 @@ function equalHeight($container) {
 }).call(this);
 
 
+
 //makes the megamenu top navigation clickable when already toggled.
 jQuery( document ).ready(function() {
+    jQuery("a.dropdown-toggle").hover(function () {
+        jQuery(this).toggleClass("meganav-hover");
+    });
     jQuery("a.dropdown-toggle").click(function(){
         var expandCheck = jQuery(this).attr("aria-expanded");
         var urlLocation = jQuery(this).attr("href");
+
         //check if toggled, if so change the url.
-        if (expandCheck == "true") {
+/*        if (expandCheck == "true" || (jQuery(this).hasClass("meganav-hover"))) {
+            window.location.href = urlLocation;
+        }*/
+        if (expandCheck == "true" || (jQuery('html').hasClass("no-touch"))) {
             window.location.href = urlLocation;
         }
     });
@@ -1293,3 +1314,4 @@ jQuery( document ).ready(function() {
     jQuery('div.field-name-body table tr:even').css('background-color','#e1e1e1');
     jQuery('div.field-name-body dl dt:even, div.field-name-body dl dd:even').css('background-color','#e1e1e1');
 });*/
+

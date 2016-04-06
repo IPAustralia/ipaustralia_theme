@@ -157,6 +157,18 @@ article {
     }
 }
 
+a {
+    &.blue-rounded-button {
+        @include rounded-button-with-arrrow($background-color:#31b0d5, $line-color:$white);
+    }
+    &.white-rounded-button {
+        @include rounded-button-with-arrrow($line-color:$white);
+    }
+    &.charcoal-rounded-button {
+        @include rounded-button-with-arrrow($background-color:$charcoal);
+    }
+}
+
 .clear-float {
     clear: both;
 }

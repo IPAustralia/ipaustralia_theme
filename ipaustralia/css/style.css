@@ -555,6 +555,73 @@ article {
   article dl dd:nth-of-type(even) {
     background: #eff0f2; }
 
+a.blue-rounded-button {
+  border: 2px solid #fff;
+  background: #31b0d5;
+  padding: 16px 35px 16px;
+  display: inline-block;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "montserratregular", sans-serif;
+  line-height: 19px; }
+  a.blue-rounded-button:after {
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    content: '';
+    margin: 0 0 -2px 10px; }
+  a.blue-rounded-button:hover {
+    text-decoration: none;
+    background: #31b0d5;
+    border: 2px solid #0d252c; }
+a.white-rounded-button {
+  border: 2px solid #fff;
+  background: transparent;
+  padding: 16px 35px 16px;
+  display: inline-block;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "montserratregular", sans-serif;
+  line-height: 19px; }
+  a.white-rounded-button:after {
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    content: '';
+    margin: 0 0 -2px 10px; }
+  a.white-rounded-button:hover {
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #0d252c; }
+a.charcoal-rounded-button {
+  border: 2px solid white;
+  background: #0d252c;
+  padding: 16px 35px 16px;
+  display: inline-block;
+  border-radius: 100px;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "montserratregular", sans-serif;
+  line-height: 19px; }
+  a.charcoal-rounded-button:after {
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    content: '';
+    margin: 0 0 -2px 10px; }
+  a.charcoal-rounded-button:hover {
+    text-decoration: none;
+    background: #0d252c;
+    border: 2px solid #0d252c; }
+
 .clear-float {
   clear: both; }
 
@@ -2765,12 +2832,14 @@ article table {
     font-weight: bold;
     text-decoration: underline; }
 .page-about-us-news-and-community-news .views-field-field-tags ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0;
+  margin-top: 10px; }
   .page-about-us-news-and-community-news .views-field-field-tags ul li {
     display: inline-block;
     background: #0d252c;
     color: #fff;
-    padding: 3px;
+    padding: 5px;
     margin: 0px 0px 0px 5px; }
 
 .page-tools-resources-publications---reports .views-row {
