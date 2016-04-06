@@ -251,8 +251,6 @@ header {
                 &:hover .dropdown-menu {
                     display: block;
                 }
-                p {
-                }
 
             }
 
@@ -283,7 +281,7 @@ header {
                 margin-top: 0 !important;
                 position: absolute;
                 width: 100%;
-                padding:40px;
+                padding: 20px 40px;
                 @media only screen and (max-width: $break-point-medium - 1) {
                     position:relative;
                     box-shadow:none;
@@ -340,7 +338,7 @@ header {
                     p {
                         position: absolute;
                         margin: 30px 90px;
-                        padding-right: 300px;
+                        padding-right: 180px;
                         font-size: 16px;
                         @media only screen and (max-width: $break-point-large + 100) {
                             display:none;

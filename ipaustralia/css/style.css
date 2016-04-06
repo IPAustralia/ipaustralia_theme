@@ -1123,7 +1123,7 @@ header nav .nav-tabs {
     margin-top: 0 !important;
     position: absolute;
     width: 100%;
-    padding: 40px; }
+    padding: 20px 40px; }
     @media only screen and (max-width: 767px) {
       header nav .nav-tabs .dropdown-menu {
         position: relative;
@@ -1167,7 +1167,7 @@ header nav .nav-tabs {
     header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title p {
       position: absolute;
       margin: 30px 90px;
-      padding-right: 300px;
+      padding-right: 180px;
       font-size: 16px; }
       @media only screen and (max-width: 1092px) {
         header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title p {
