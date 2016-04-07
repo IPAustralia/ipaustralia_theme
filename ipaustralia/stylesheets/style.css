@@ -4257,22 +4257,32 @@ section#block-panels-mini-more-about-patents-2-col-panel {
       /*box-shadow: 0 0 2px #000;*/ }
 
 section#block-bean-all-about-patents-block {
-  background: #C3e6e8;
+  background: #30aeb6;
   padding: 80px 0px;
   text-align: center; }
-  section#block-bean-all-about-patents-block ul {
-    background: #fff;
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    max-width: 250px;
-    margin: 0px 40px 40px; }
+  section#block-bean-all-about-patents-block .panels-flexible-region-inside {
+    /*         margin: 0 20px;
+            padding: 40px;
+            background: $white;
+            height: 350px;
+            overflow-y: hidden; */ }
     @media only screen and (max-width: 768px) {
-      section#block-bean-all-about-patents-block ul {
-        display: none; } }
-  section#block-bean-all-about-patents-block a {
-    color: #0d252c; }
+      section#block-bean-all-about-patents-block .panels-flexible-region-inside .panels-flexible-region {
+        width: 100% !important;
+        float: none; } }
+    section#block-bean-all-about-patents-block .panels-flexible-region-inside h2 {
+      color: #fff;
+      padding: 30px; }
+    section#block-bean-all-about-patents-block .panels-flexible-region-inside ul {
+      background: #fff;
+      padding: 20px;
+      list-style: none; }
+      section#block-bean-all-about-patents-block .panels-flexible-region-inside ul li.main-list-item-patent ul li {
+        text-align: left;
+        padding: 0px 0 0 30px;
+        margin: 0px;
+        background: transparent url("../images/link-tool.png") center center no-repeat;
+        background-position: left 0px; }
 
 section#block-bean-trade-marks-landing-block-0 {
   background: transparent url("../images/tm-banner.jpg") center center no-repeat;
@@ -6201,21 +6211,57 @@ section#block-panels-mini-more-about-pbr-2-col-panel {
       /*box-shadow: 0 0 2px #000;*/ }
 
 section#block-bean-all-about-pbr-block {
+  background: #f1ac1e;
   padding: 80px 0px;
   text-align: center; }
-  section#block-bean-all-about-pbr-block ul {
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    max-width: 250px;
-    margin: 0px 40px 40px; }
+  section#block-bean-all-about-pbr-block .panels-flexible-region-inside {
+    /*         margin: 0 20px;
+            padding: 40px;
+            background: $white;
+            height: 350px;
+            overflow-y: hidden; */ }
     @media only screen and (max-width: 768px) {
-      section#block-bean-all-about-pbr-block ul {
-        display: none; } }
-  section#block-bean-all-about-pbr-block a {
-    color: #0d252c; }
+      section#block-bean-all-about-pbr-block .panels-flexible-region-inside .panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-4th_row_left {
+        width: 100%;
+        float: none; } }
+    section#block-bean-all-about-pbr-block .panels-flexible-region-inside h2 {
+      color: #fff;
+      padding: 30px; }
+    section#block-bean-all-about-pbr-block .panels-flexible-region-inside ul {
+      background: #fff;
+      padding: 20px;
+      list-style: none; }
+      section#block-bean-all-about-pbr-block .panels-flexible-region-inside ul li.main-list-item-pbr ul li {
+        text-align: left;
+        padding: 0px 0 0 30px;
+        margin: 0px;
+        background: transparent url("../images/link-tool.png") center center no-repeat;
+        background-position: left 0px; }
 
+/* section#block-bean-all-about-pbr-block {
+    padding: $gap-large 0px;
+    text-align:center;
+    ul{
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        list-style:none;
+        max-width:250px;
+        margin: 0px $gap-medium $gap-medium;
+        @media only screen and (max-width: $break-point-medium) {
+            display:none;
+        }
+        li {
+            a {
+
+            }
+        }
+    }
+    a {
+        color: $charcoal;
+    }
+
+} */
 section#block-bean-tools-and-resources-landing-bloc {
   background: transparent url("../images/tablet.jpg") center center no-repeat;
   background-size: cover;

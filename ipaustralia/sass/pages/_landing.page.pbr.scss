@@ -39,6 +39,50 @@ section#block-panels-mini-more-about-pbr-2-col-panel {
 
 /// tmp styling 
 section#block-bean-all-about-pbr-block {
+    background: $yellow;
+    //background: #C3e6e8;
+    padding: $gap-large 0px;
+    text-align:center;
+
+
+    .panels-flexible-region-inside {
+        .panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-4th_row_left {
+            @media only screen and (max-width: $break-point-medium) {
+                width:100%;
+                float:none;
+            }
+        }
+/*         margin: 0 20px;
+        padding: 40px;
+        background: $white;
+        height: 350px;
+        overflow-y: hidden; */
+        h2 {
+            color: $white;
+            padding: 30px;
+        }
+        ul {
+            background: $white;
+            padding: 20px;
+            list-style: none;
+            li.main-list-item-pbr {
+                ul {
+                    li {
+                        text-align: left;
+                        padding: 0px 0 0 30px;
+                        margin: 0px;
+                        background: transparent url("../images/link-tool.png") center center no-repeat;
+                        background-position: left 0px;
+                        a {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* section#block-bean-all-about-pbr-block {
     padding: $gap-large 0px;
     text-align:center;
     ul{
@@ -61,4 +105,4 @@ section#block-bean-all-about-pbr-block {
         color: $charcoal;
     }
 
-}
+} */

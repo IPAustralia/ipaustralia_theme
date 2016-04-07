@@ -142,6 +142,14 @@ function equaliseElementsHeight() {
     equalHeight('section#block-quicktabs-tools-and-resources .pane-forms-and-publications-general-p .inside'); // landing page tools and resources
     equalHeight('.footer li.expanded');
 
+    equalHeight('section#block-bean-all-about-patents-block .panels-flexible-row-four_rows_with_1_x_3_x_3_x_2_columns-1 .panels-flexible-region-inside .list-content'); // landing page tools and resources
+    equalHeight('section#block-bean-all-about-patents-block .panels-flexible-row-four_rows_with_1_x_3_x_3_x_2_columns-2 .panels-flexible-region-inside .list-content');
+    equalHeight('section#block-bean-all-about-patents-block .panels-flexible-row-four_rows_with_1_x_3_x_3_x_2_columns-3 .panels-flexible-region-inside .list-content');
+
+    equalHeight('section#block-bean-all-about-pbr-block .panels-flexible-row-four_rows_with_1_x_3_x_3_x_2_columns-1 .panels-flexible-region-inside .list-content');
+    equalHeight('section#block-bean-all-about-pbr-block .panels-flexible-row-four_rows_with_1_x_3_x_3_x_2_columns-2 .panels-flexible-region-inside .list-content');
+    equalHeight('section#block-bean-all-about-pbr-block .panels-flexible-row-four_rows_with_1_x_3_x_3_x_2_columns-3 .panels-flexible-region-inside .list-content');
+
     setTimeout(function () {
         equalHeight('#block-panels-mini-consultations-and-twitter-feed-2 .panel-panel .inside');
     }, 500);
