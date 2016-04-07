@@ -60,7 +60,7 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
 	//drupal_set_message(t('Example error message.'), 'error');
 	//drupal_set_message(t('Example normal message 1.'), 'status');
 	//drupal_set_message(t('Example normal message 2.'), 'status');
-	drupal_set_message(t('We are developing this website (currently in beta) and would <a target="_blank" href="/node/1111">welcome your feedback</a>. For the full website refer to <a href="http://www.ipaustralia.gov.au/" title="IP Australia website">www.ipaustralia.gov.au</a>.'), 'warning');
+	drupal_set_message(t('Welcome to our new website. We&rsquo;ve moved things around a little based on our research and feedback. Let us know what you think, email <a href="mailto:webadmin@ipaustralia.gov.au">webadmin@ipaustralia.gov.au</a>.'), 'warning');
 }
 
 function ipaustralia_menu_block_tree_alter(&$tree, &$config) {

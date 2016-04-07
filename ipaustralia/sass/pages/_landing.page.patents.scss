@@ -31,28 +31,50 @@ section#block-panels-mini-more-about-patents-2-col-panel {
 
 /// tmp styling 
 section#block-bean-all-about-patents-block {
-    background: #C3e6e8;
+    background: $teal;
+    //background: #C3e6e8;
     padding: $gap-large 0px;
     text-align:center;
 
-    ul{
-        background: $white;
-        display: inline-block;
-        padding: 0px;
-        margin: 0px;
-        list-style:none;
-        max-width:250px;
-        margin: 0px $gap-medium $gap-medium;
-        @media only screen and (max-width: $break-point-medium) {
-            display:none;
-        }
-        li {
-            a {
 
+    .panels-flexible-region-inside {
+        //.panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-2nd_row_left,
+        //.panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-2nd_row_centre,
+        //.panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-2nd_row_right,
+        //.panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-3rd_row_left
+        .panels-flexible-region {
+            @media only screen and (max-width: $break-point-medium) {
+                width:100% !important;
+                float:none;
             }
         }
-    }
-    a {
-        color: $charcoal;
+/*         margin: 0 20px;
+        padding: 40px;
+        background: $white;
+        height: 350px;
+        overflow-y: hidden; */
+        h2 {
+            color: $white;
+            padding: 30px;
+        }
+        ul {
+            background: $white;
+            padding: 20px;
+            list-style: none;
+            li.main-list-item-patent {
+                ul {
+                    li {
+                        text-align: left;
+                        padding: 0px 0 0 30px;
+                        margin: 0px;
+                        background: transparent url("../images/link-tool.png") center center no-repeat;
+                        background-position: left 0px;
+                        a {
+
+                        }
+                    }
+                }
+            }
+        }
     }
 }

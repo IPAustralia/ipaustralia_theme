@@ -64,11 +64,11 @@ h6 {
 }
 
 a {
-    outline: 0;
+    //outline: 0;
     color: $gold;
 
     &:active, &:focus, &:visited {
-        outline: 0;
+        //outline: 0;
         color: $gold;
         text-decoration: none;
         background: transparent;
@@ -122,6 +122,15 @@ article {
     margin-top: -10px;
     padding: 0 30px;
     line-height: 24px;
+    a {
+        text-decoration: underline;
+        &:active, &:focus, &:visited {
+            text-decoration: underline;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
     h2 {
         margin-top: 20px;
         margin-bottom: 15px;
@@ -138,9 +147,29 @@ article {
         float: right;
         margin-top: 25px;
     }
+    dl {
+        dt:nth-of-type(even) {
+            background: $color_athens_gray_approx;
+        }
+        dd:nth-of-type(even) {
+            background: $color_athens_gray_approx;
+        }
+    }
 }
 
-.clear-float{
+a {
+    &.blue-rounded-button {
+        @include rounded-button-with-arrrow($background-color:#31b0d5, $line-color:$white);
+    }
+    &.white-rounded-button {
+        @include rounded-button-with-arrrow($line-color:$white);
+    }
+    &.charcoal-rounded-button {
+        @include rounded-button-with-arrrow($background-color:$charcoal);
+    }
+}
+
+.clear-float {
     clear: both;
 }
 

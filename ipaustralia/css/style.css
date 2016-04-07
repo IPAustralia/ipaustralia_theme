@@ -494,10 +494,8 @@ h6 {
   line-height: 24px; }
 
 a {
-  outline: 0;
   color: #977100; }
   a:active, a:focus, a:visited {
-    outline: 0;
     color: #977100;
     text-decoration: none;
     background: transparent; }
@@ -534,6 +532,12 @@ article {
   margin-top: -10px;
   padding: 0 30px;
   line-height: 24px; }
+  article a {
+    text-decoration: underline; }
+    article a:active, article a:focus, article a:visited {
+      text-decoration: underline; }
+    article a:hover {
+      text-decoration: none; }
   article h2 {
     margin-top: 20px;
     margin-bottom: 15px; }
@@ -546,6 +550,77 @@ article {
   article .field-name-field-publish-online-date {
     float: right;
     margin-top: 25px; }
+  article dl dt:nth-of-type(even) {
+    background: #eff0f2; }
+  article dl dd:nth-of-type(even) {
+    background: #eff0f2; }
+
+a.blue-rounded-button {
+  border: 2px solid #fff;
+  background: #31b0d5;
+  padding: 16px 35px 16px;
+  display: inline-block;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "montserratregular", sans-serif;
+  line-height: 19px; }
+  a.blue-rounded-button:after {
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    content: '';
+    margin: 0 0 -2px 10px; }
+  a.blue-rounded-button:hover {
+    text-decoration: none;
+    background: #31b0d5;
+    border: 2px solid #0d252c; }
+a.white-rounded-button {
+  border: 2px solid #fff;
+  background: transparent;
+  padding: 16px 35px 16px;
+  display: inline-block;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "montserratregular", sans-serif;
+  line-height: 19px; }
+  a.white-rounded-button:after {
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    content: '';
+    margin: 0 0 -2px 10px; }
+  a.white-rounded-button:hover {
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #0d252c; }
+a.charcoal-rounded-button {
+  border: 2px solid white;
+  background: #0d252c;
+  padding: 16px 35px 16px;
+  display: inline-block;
+  border-radius: 100px;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "montserratregular", sans-serif;
+  line-height: 19px; }
+  a.charcoal-rounded-button:after {
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    content: '';
+    margin: 0 0 -2px 10px; }
+  a.charcoal-rounded-button:hover {
+    text-decoration: none;
+    background: #0d252c;
+    border: 2px solid #0d252c; }
 
 .clear-float {
   clear: both; }
@@ -931,16 +1006,18 @@ header nav .nav-tabs {
           color: white !important; }
           header nav .nav-tabs li.active a.megamenu-tab-plant-breeders-rights:hover, header nav .nav-tabs li.active a.megamenu-tab-plant-breeders-rights:active, header nav .nav-tabs li.active a.megamenu-tab-plant-breeders-rights:focus {
             border-bottom: 4px solid #f1ac1e; }
-    header nav .nav-tabs li.open > a:first-child, header nav .nav-tabs li:hover > a:first-child {
-      background: #eff0f2;
-      color: #0d252c !important;
-      border-color: #eff0f2 !important; }
-      @media only screen and (max-width: 767px) {
-        header nav .nav-tabs li.open > a:first-child, header nav .nav-tabs li:hover > a:first-child {
-          background: #0d252c url("../images/arrow-up-transparent.png") 90% center no-repeat;
-          /*background-color:$charcoal !important;*/
-          color: white !important;
-          margin-bottom: -5px; } }
+    header nav .nav-tabs li.open > a, header nav .nav-tabs li:hover > a {
+      z-index: 991; }
+      header nav .nav-tabs li.open > a:first-child, header nav .nav-tabs li:hover > a:first-child {
+        background: #eff0f2;
+        color: #0d252c !important;
+        border-color: #eff0f2 !important; }
+        @media only screen and (max-width: 767px) {
+          header nav .nav-tabs li.open > a:first-child, header nav .nav-tabs li:hover > a:first-child {
+            background: #0d252c url("../images/arrow-up-transparent.png") 90% center no-repeat;
+            /*background-color:$charcoal !important;*/
+            color: white !important;
+            margin-bottom: -5px; } }
     @media only screen and (max-width: 767px) {
       header nav .nav-tabs li.open, header nav .nav-tabs li:hover {
         background: #0d252c; } }
@@ -1021,6 +1098,8 @@ header nav .nav-tabs {
       border-left: 6px solid #84c98f !important; }
     header nav .nav-tabs li.tab-plant-breeder-rights a.highlight-box {
       border-left: 6px solid #f1ac1e !important; }
+    header nav .nav-tabs li.tab-plant-breeder-rights a.highlight-box {
+      border-left: 6px solid #f1ac1e !important; }
     header nav .nav-tabs li:hover .dropdown-menu {
       display: block; }
   @media only screen and (max-width: 1200px) {
@@ -1044,7 +1123,7 @@ header nav .nav-tabs {
     margin-top: 0 !important;
     position: absolute;
     width: 100%;
-    padding: 40px; }
+    padding: 20px 40px; }
     @media only screen and (max-width: 767px) {
       header nav .nav-tabs .dropdown-menu {
         position: relative;
@@ -1085,6 +1164,14 @@ header nav .nav-tabs {
     @media only screen and (max-width: 767px) {
       header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title {
         display: none; } }
+    header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title p {
+      position: absolute;
+      margin: 30px 90px 30px 0px;
+      padding-right: 180px;
+      font-size: 16px; }
+      @media only screen and (max-width: 1200px) {
+        header nav .nav-tabs .dropdown-menu .megamenu-tab-contents__title p {
+          display: none; } }
     header nav .nav-tabs .dropdown-menu .learn-more {
       border: 2px solid #0d252c;
       background: transparent;
@@ -1238,6 +1325,12 @@ header nav .nav-tabs {
 
 .region-sidebar-first .sidenav-hide {
   display: none; }
+
+header nav .nav-tabs li.tab-patents .dropdown-menu .megamenu-tab-contents__title p,
+header nav .nav-tabs li.tab-trade-marks .dropdown-menu .megamenu-tab-contents__title p,
+header nav .nav-tabs li.tab-designs .dropdown-menu .megamenu-tab-contents__title p,
+header nav .nav-tabs li.tab-plant-breeder-rights .dropdown-menu .megamenu-tab-contents__title p {
+  margin: 30px 90px 30px 90px; }
 
 /* Garths css */
 /* ide nav code */
@@ -1757,6 +1850,10 @@ body.section-designs .application-process-menu {
     display: none; }
     body.section-designs .application-process-menu ul li a::before {
       color: #84c98f; }
+    body.section-designs .application-process-menu ul li:nth-child(7) {
+      display: block; }
+      body.section-designs .application-process-menu ul li:nth-child(7) a {
+        background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
     body.section-designs .application-process-menu ul li:nth-child(6) {
       display: block; }
       body.section-designs .application-process-menu ul li:nth-child(6) a {
@@ -1880,7 +1977,7 @@ Applicaiton process on body
     .application-process-wrapper ul li h4 {
       /*font-size: 28px;*/
       color: #0d252c;
-      height: 89px;
+      height: 99px;
       overflow: hidden; }
       @media only screen and (max-width: 1192px) {
         .application-process-wrapper ul li h4 {
@@ -1901,6 +1998,7 @@ Applicaiton process on body
         display: block;
         content: counter(process-counter);
         margin-bottom: 10px;
+        margin-top: 10px;
         /*color: $mint;*/ }
         @media only screen and (max-width: 640px) {
           .application-process-wrapper ul li h4::before {
@@ -2727,6 +2825,54 @@ article table {
   color: #999;
   margin-bottom: 10px; }
 
+.page-tools-resources-pbr-journals .views-row, .page-tools-resources-patent-journals .views-row {
+  background: #eff0f2;
+  margin-bottom: 10px; }
+  .page-tools-resources-pbr-journals .views-row .panel-col-last, .page-tools-resources-patent-journals .views-row .panel-col-last {
+    padding-top: 22px;
+    width: 70%; }
+    .page-tools-resources-pbr-journals .views-row .panel-col-last .views-field-field-date, .page-tools-resources-patent-journals .views-row .panel-col-last .views-field-field-date {
+      color: #0d252c;
+      margin-bottom: 10px;
+      font-size: 20px; }
+  .page-tools-resources-pbr-journals .views-row .panel-col-first, .page-tools-resources-patent-journals .views-row .panel-col-first {
+    width: 23%; }
+    .page-tools-resources-pbr-journals .views-row .panel-col-first img, .page-tools-resources-patent-journals .views-row .panel-col-first img {
+      margin: 30px;
+      width: 140px;
+      height: 140px; }
+
+.page-about-us-news-and-community-news .views-row {
+  background: #eff0f2;
+  margin-bottom: 10px; }
+  .page-about-us-news-and-community-news .views-row .panel-col-last {
+    padding-top: 22px;
+    width: 70%; }
+    .page-about-us-news-and-community-news .views-row .panel-col-last .views-field-field-news-date {
+      color: #999;
+      margin-bottom: 10px; }
+  .page-about-us-news-and-community-news .views-row .panel-col-first {
+    width: 23%; }
+    .page-about-us-news-and-community-news .views-row .panel-col-first img {
+      margin: 30px;
+      width: 140px;
+      height: 140px; }
+  .page-about-us-news-and-community-news .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline; }
+.page-about-us-news-and-community-news .views-field-field-tags ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px; }
+  .page-about-us-news-and-community-news .views-field-field-tags ul li {
+    display: inline-block;
+    background: #0d252c;
+    color: #fff;
+    padding: 5px;
+    margin: 0px 0px 0px 5px; }
+
 .page-tools-resources-publications---reports .views-row {
   background: #eff0f2;
   margin-bottom: 10px; }
@@ -2818,6 +2964,21 @@ article table {
     font-size: 24px;
     font-weight: bold;
     text-decoration: underline; }
+
+.view-foi-disclosure-log .views-row {
+  background: #eff0f2;
+  padding: 5px 20px 15px;
+  margin-bottom: 10px; }
+
+.view-id-official_notices .views-row {
+  background: #eff0f2;
+  padding: 5px 20px 15px;
+  margin-bottom: 10px; }
+
+article.node-official-notice .field-name-field-publication-name-and-date .field-item {
+  background: #eff0f2;
+  padding: 15px;
+  margin-bottom: 10px; }
 
 section#block-bean-about-us-landing-block {
   background: transparent url("../images/contact-us-banner.jpg") center center no-repeat;
@@ -4096,22 +4257,32 @@ section#block-panels-mini-more-about-patents-2-col-panel {
       /*box-shadow: 0 0 2px #000;*/ }
 
 section#block-bean-all-about-patents-block {
-  background: #C3e6e8;
+  background: #30aeb6;
   padding: 80px 0px;
   text-align: center; }
-  section#block-bean-all-about-patents-block ul {
-    background: #fff;
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    max-width: 250px;
-    margin: 0px 40px 40px; }
+  section#block-bean-all-about-patents-block .panels-flexible-region-inside {
+    /*         margin: 0 20px;
+            padding: 40px;
+            background: $white;
+            height: 350px;
+            overflow-y: hidden; */ }
     @media only screen and (max-width: 768px) {
-      section#block-bean-all-about-patents-block ul {
-        display: none; } }
-  section#block-bean-all-about-patents-block a {
-    color: #0d252c; }
+      section#block-bean-all-about-patents-block .panels-flexible-region-inside .panels-flexible-region {
+        width: 100% !important;
+        float: none; } }
+    section#block-bean-all-about-patents-block .panels-flexible-region-inside h2 {
+      color: #fff;
+      padding: 30px; }
+    section#block-bean-all-about-patents-block .panels-flexible-region-inside ul {
+      background: #fff;
+      padding: 20px;
+      list-style: none; }
+      section#block-bean-all-about-patents-block .panels-flexible-region-inside ul li.main-list-item-patent ul li {
+        text-align: left;
+        padding: 0px 0 0 30px;
+        margin: 0px;
+        background: transparent url("../images/link-tool.png") center center no-repeat;
+        background-position: left 0px; }
 
 section#block-bean-trade-marks-landing-block-0 {
   background: transparent url("../images/tm-banner.jpg") center center no-repeat;
@@ -4987,7 +5158,7 @@ section#block-bean-designs-application-process {
     section#block-bean-designs-application-process {
       padding: 40px 0px 60px; } }
   section#block-bean-designs-application-process .application-process-wrapper ul {
-    background: transparent url("../images/application-process/_generic/background-line-6.png") center center no-repeat;
+    background: transparent url("../images/application-process/_generic/background-line-7.png") center center no-repeat;
     background-size: 100% auto;
     background-position: right 140px; }
     @media only screen and (max-width: 992px) {
@@ -4997,6 +5168,10 @@ section#block-bean-designs-application-process {
       display: none; }
       section#block-bean-designs-application-process .application-process-wrapper ul li h4::before {
         color: #84c98f; }
+      section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(7) {
+        display: inline-block; }
+        section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(7) .image {
+          background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
       section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(6) {
         display: inline-block; }
         section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(6) .image {
@@ -6036,21 +6211,57 @@ section#block-panels-mini-more-about-pbr-2-col-panel {
       /*box-shadow: 0 0 2px #000;*/ }
 
 section#block-bean-all-about-pbr-block {
+  background: #f1ac1e;
   padding: 80px 0px;
   text-align: center; }
-  section#block-bean-all-about-pbr-block ul {
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    max-width: 250px;
-    margin: 0px 40px 40px; }
+  section#block-bean-all-about-pbr-block .panels-flexible-region-inside {
+    /*         margin: 0 20px;
+            padding: 40px;
+            background: $white;
+            height: 350px;
+            overflow-y: hidden; */ }
     @media only screen and (max-width: 768px) {
-      section#block-bean-all-about-pbr-block ul {
-        display: none; } }
-  section#block-bean-all-about-pbr-block a {
-    color: #0d252c; }
+      section#block-bean-all-about-pbr-block .panels-flexible-region-inside .panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-4th_row_left {
+        width: 100%;
+        float: none; } }
+    section#block-bean-all-about-pbr-block .panels-flexible-region-inside h2 {
+      color: #fff;
+      padding: 30px; }
+    section#block-bean-all-about-pbr-block .panels-flexible-region-inside ul {
+      background: #fff;
+      padding: 20px;
+      list-style: none; }
+      section#block-bean-all-about-pbr-block .panels-flexible-region-inside ul li.main-list-item-pbr ul li {
+        text-align: left;
+        padding: 0px 0 0 30px;
+        margin: 0px;
+        background: transparent url("../images/link-tool.png") center center no-repeat;
+        background-position: left 0px; }
 
+/* section#block-bean-all-about-pbr-block {
+    padding: $gap-large 0px;
+    text-align:center;
+    ul{
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        list-style:none;
+        max-width:250px;
+        margin: 0px $gap-medium $gap-medium;
+        @media only screen and (max-width: $break-point-medium) {
+            display:none;
+        }
+        li {
+            a {
+
+            }
+        }
+    }
+    a {
+        color: $charcoal;
+    }
+
+} */
 section#block-bean-tools-and-resources-landing-bloc {
   background: transparent url("../images/tablet.jpg") center center no-repeat;
   background-size: cover;
@@ -8332,7 +8543,8 @@ section#block-bean-infringing-on-others-ip-block {
   background-color: #612166;
   font: normal 20px "robotolight", sans-serif;
   border-top: 2px solid white;
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid white;
+  /*#infringing-on-others-ip {display: none;}*/ }
   @media only screen and (max-width: 768px) {
     section#block-bean-infringing-on-others-ip-block {
       padding: 40px 0px; } }
@@ -8369,8 +8581,6 @@ section#block-bean-infringing-on-others-ip-block {
       border: 2px solid #0d252c; }
     section#block-bean-infringing-on-others-ip-block .field-items p a:hover {
       border-color: white; }
-  section#block-bean-infringing-on-others-ip-block #infringing-on-others-ip {
-    display: none; }
   section#block-bean-infringing-on-others-ip-block .container .container {
     width: auto; }
 
@@ -8993,8 +9203,7 @@ section#block-bean-how-ip-can-work-for-you {
 
 section#block-bean-commercialise-your-ip {
   background: #fff;
-  padding: 80px 0px 100px;
-  /*div[]*/ }
+  padding: 80px 0px 100px; }
   @media only screen and (max-width: 640px) {
     section#block-bean-commercialise-your-ip {
       padding: 40px 0px 60px; } }
@@ -9004,95 +9213,82 @@ section#block-bean-commercialise-your-ip {
     margin: 0px; }
     section#block-bean-commercialise-your-ip ul li {
       padding: 0px 0 0 30px;
-      margin: 0px;
+      margin: 3px 0px;
       background: transparent url("../images/link-tool.png") center center no-repeat;
-      background-position: left 0px; }
-  section#block-bean-commercialise-your-ip .Top {
+      background-position: left 1px; }
+  section#block-bean-commercialise-your-ip .group-header {
     margin-bottom: 30px; }
-    section#block-bean-commercialise-your-ip .Top br {
+    section#block-bean-commercialise-your-ip .group-header br {
       display: none; }
-    section#block-bean-commercialise-your-ip .Top h2 {
-      margin-bottom: 30px; }
-    section#block-bean-commercialise-your-ip .Top p {
+    section#block-bean-commercialise-your-ip .group-header h2, section#block-bean-commercialise-your-ip .group-header h3 {
+      margin-bottom: 30px;
+      text-align: center;
+      color: #0d252c; }
+    section#block-bean-commercialise-your-ip .group-header p {
       font-size: 1.3em;
-      font-family: robotolight; }
+      font-family: robotolight;
+      color: #0d252c; }
   @media only screen and (max-width: 988px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
-      width: 50%;
-      margin-bottom: 20px; } }
+    section#block-bean-commercialise-your-ip .group-left, section#block-bean-commercialise-your-ip .group-middle, section#block-bean-commercialise-your-ip .group-right {
+      width: 50%; } }
   @media only screen and (max-width: 640px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+    section#block-bean-commercialise-your-ip .group-left, section#block-bean-commercialise-your-ip .group-middle, section#block-bean-commercialise-your-ip .group-right {
       width: 100%;
       margin-bottom: 10px; } }
-  section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-    margin: 0 10px;
+  section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
+    margin: 0 20px;
     padding: 40px;
     background: #eff0f2;
     height: 350px;
     overflow-y: hidden; }
     @media only screen and (max-width: 768px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
         height: 500px; } }
     @media only screen and (max-width: 640px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-        height: auto !important;
+      section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
+        height: auto;
         padding: 20px 30px;
         margin: 0px; } }
     @media only screen and (max-width: 480px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+      section#block-bean-commercialise-your-ip .group-left > div, section#block-bean-commercialise-your-ip .group-middle > div, section#block-bean-commercialise-your-ip .group-right > div {
         padding: 10px 20px; } }
-  section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+  section#block-bean-commercialise-your-ip .group-left .media-element-container, section#block-bean-commercialise-your-ip .group-middle .media-element-container, section#block-bean-commercialise-your-ip .group-right .media-element-container {
+    text-align: center;
+    margin-bottom: 30px; }
+    section#block-bean-commercialise-your-ip .group-left .media-element-container img, section#block-bean-commercialise-your-ip .group-middle .media-element-container img, section#block-bean-commercialise-your-ip .group-right .media-element-container img {
+      display: inline-block; }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-commercialise-your-ip .group-left .media-element-container, section#block-bean-commercialise-your-ip .group-middle .media-element-container, section#block-bean-commercialise-your-ip .group-right .media-element-container {
+        display: none; } }
+  section#block-bean-commercialise-your-ip .group-left h3, section#block-bean-commercialise-your-ip .group-left h4, section#block-bean-commercialise-your-ip .group-middle h3, section#block-bean-commercialise-your-ip .group-middle h4, section#block-bean-commercialise-your-ip .group-right h3, section#block-bean-commercialise-your-ip .group-right h4 {
     font-size: 22px;
     margin: 0px;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: left; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+      section#block-bean-commercialise-your-ip .group-left h3, section#block-bean-commercialise-your-ip .group-left h4, section#block-bean-commercialise-your-ip .group-middle h3, section#block-bean-commercialise-your-ip .group-middle h4, section#block-bean-commercialise-your-ip .group-right h3, section#block-bean-commercialise-your-ip .group-right h4 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #eff0f2 url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+    section#block-bean-commercialise-your-ip .group-left h3:after, section#block-bean-commercialise-your-ip .group-left h4:after, section#block-bean-commercialise-your-ip .group-middle h3:after, section#block-bean-commercialise-your-ip .group-middle h4:after, section#block-bean-commercialise-your-ip .group-right h3:after, section#block-bean-commercialise-your-ip .group-right h4:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+        section#block-bean-commercialise-your-ip .group-left h3:after, section#block-bean-commercialise-your-ip .group-left h4:after, section#block-bean-commercialise-your-ip .group-middle h3:after, section#block-bean-commercialise-your-ip .group-middle h4:after, section#block-bean-commercialise-your-ip .group-right h3:after, section#block-bean-commercialise-your-ip .group-right h4:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
+  section#block-bean-commercialise-your-ip .group-left .open h4, section#block-bean-commercialise-your-ip .group-middle .open h4, section#block-bean-commercialise-your-ip .group-right .open h4 {
+    background: #eff0f2 url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
   @media only screen and (max-width: 640px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
-      background: #eff0f2 url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
-  @media only screen and (max-width: 640px) {
-    section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+    section#block-bean-commercialise-your-ip .group-left p, section#block-bean-commercialise-your-ip .group-middle p, section#block-bean-commercialise-your-ip .group-right p {
       display: none; } }
-  section#block-bean-commercialise-your-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
+  section#block-bean-commercialise-your-ip .group-left .thin, section#block-bean-commercialise-your-ip .group-middle .thin, section#block-bean-commercialise-your-ip .group-right .thin {
     display: none; }
-  section#block-bean-commercialise-your-ip .panels-flexible-row-last a {
-    margin-top: 40px;
-    border: 2px solid white;
-    background: transparent;
-    padding: 16px 35px 16px;
-    display: inline-block;
-    border-radius: 100px;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-family: "montserratregular", sans-serif;
-    line-height: 19px; }
-    section#block-bean-commercialise-your-ip .panels-flexible-row-last a:after {
-      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
-      display: inline-block;
-      width: 9px;
-      height: 15px;
-      content: '';
-      margin: 0 0 -2px 10px; }
-    section#block-bean-commercialise-your-ip .panels-flexible-row-last a:hover {
-      text-decoration: none;
-      background: transparent;
-      border: 2px solid #0d252c; }
   @media only screen and (max-width: 988px) {
     section#block-bean-commercialise-your-ip .group-right {
       float: left;
@@ -9100,6 +9296,29 @@ section#block-bean-commercialise-your-ip {
   @media only screen and (max-width: 640px) {
     section#block-bean-commercialise-your-ip .group-right {
       margin-top: 0px; } }
+  section#block-bean-commercialise-your-ip .group-footer a {
+    margin-top: 40px;
+    border: 2px solid #0d252c;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: #0d252c;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px; }
+    section#block-bean-commercialise-your-ip .group-footer a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-commercialise-your-ip .group-footer a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
 
 /*
 section#block-bean-designs-application-process {

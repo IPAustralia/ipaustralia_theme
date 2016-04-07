@@ -105,7 +105,8 @@ header {
                     }
                 }
                 &.open, &:hover {
-                    > a{
+                    > a {
+                        z-index: 991;
                         &:first-child  {
                             background: $off-white;
                             color: $charcoal !important;
@@ -238,6 +239,14 @@ header {
                         }   
                     }
                 }
+                &.tab-plant-breeder-rights {
+                    a{
+                        &.highlight-box {
+                            border-left: 6px solid $yellow !important;
+                        }   
+                    }
+                }
+
 
                 &:hover .dropdown-menu {
                     display: block;
@@ -272,7 +281,7 @@ header {
                 margin-top: 0 !important;
                 position: absolute;
                 width: 100%;
-                padding:40px;
+                padding: 20px 40px;
                 @media only screen and (max-width: $break-point-medium - 1) {
                     position:relative;
                     box-shadow:none;
@@ -325,6 +334,15 @@ header {
                     }
                     @media only screen and (max-width: $break-point-medium - 1) {
                         display:none;
+                    }
+                    p {
+                        position: absolute;
+                        margin: 30px 90px 30px 0px;
+                        padding-right: 180px;
+                        font-size: 16px;
+                        @media only screen and (max-width: $break-point-xlarge) {
+                            display:none;
+                        }
                     }
                 }
                 .learn-more {
@@ -496,3 +514,9 @@ header {
 .region-sidebar-first .sidenav-hide {
     display:none;
 }
+//removes padding on non ip right descriptive text in megamenu
+header nav .nav-tabs li.tab-patents .dropdown-menu .megamenu-tab-contents__title p,
+header nav .nav-tabs li.tab-trade-marks .dropdown-menu .megamenu-tab-contents__title p,
+header nav .nav-tabs li.tab-designs .dropdown-menu .megamenu-tab-contents__title p, 
+header nav .nav-tabs li.tab-plant-breeder-rights .dropdown-menu .megamenu-tab-contents__title p {margin: 30px 90px 30px 90px;}
+
