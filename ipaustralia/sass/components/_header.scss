@@ -205,7 +205,8 @@ header{
                 background-size: auto auto;
             }
         }
-        .responsive-chat-icon{
+        .responsive-chat-icon {
+            display: none;
             position: absolute;
             width: 35px;
             height: 45px;
