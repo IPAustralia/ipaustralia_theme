@@ -633,7 +633,7 @@ function stickyMenu() {
         jQuery("#block-bean-designs-anchor-menu").stick_in_parent();
         jQuery("#block-bean-pbr-anchor-menu").stick_in_parent();
         jQuery("#block-bean-ip-infringement-anchor-block").stick_in_parent();
-        jQuery("#block-bean-understanding-ip-anchor-block").stick_in_parent();
+        jQuery("#block-bean-understanding-ip-anchor-block-0").stick_in_parent();
         jQuery("#block-bean-about-us-anchor-menu").stick_in_parent();
     }
 }
