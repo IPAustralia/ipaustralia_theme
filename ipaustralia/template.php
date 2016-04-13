@@ -60,7 +60,8 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
 	//drupal_set_message(t('Example error message.'), 'error');
 	//drupal_set_message(t('Example normal message 1.'), 'status');
 	//drupal_set_message(t('Example normal message 2.'), 'status');
-	drupal_set_message(t('Welcome to our new website. We&rsquo;ve moved things around a little based on our research and feedback. Let us know what you think, email <a href="mailto:webadmin@ipaustralia.gov.au">webadmin@ipaustralia.gov.au</a>.'), 'warning');
+	drupal_set_message(t('We wish to advise all customers that eServices is currently unavailable due to a system issue. We are working hard to identify and resolve this issue as soon as possible. We sincerely apologise for any inconvenience caused. Please see our <a href="https://www.ipaustralia.gov.au/about-us/about-this-site/system-availability">System availability page</a> for further updates.'), 'error');
+/*	drupal_set_message(t('Welcome to our new website. We&rsquo;ve moved things around a little based on user research and feedback. Let us know what you think, email <a href="mailto:webadmin@ipaustralia.gov.au">webadmin@ipaustralia.gov.au</a>.'), 'warning');*/
 }
 
 function ipaustralia_menu_block_tree_alter(&$tree, &$config) {
