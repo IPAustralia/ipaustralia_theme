@@ -248,4 +248,9 @@ article.node-official-notice {
     }
 }
 
+//ip-report-2016
+section#block-bean-ip-report-anchor-menu {
+    @include landing_page_anchor_menu();
+    @include stick_sub_menu();
+}
 
