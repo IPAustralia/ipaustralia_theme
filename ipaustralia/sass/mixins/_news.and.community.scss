@@ -24,6 +24,7 @@
                 &.active {
                     @include background-image('dwn-arrow-charcoal.png', center, bottom);
                     a {
+                        text-decoration: none;
                         background: white;
                         color: $charcoal;
                         border-bottom: 7px solid $charcoal;

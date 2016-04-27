@@ -14,6 +14,7 @@
                 overflow: hidden;
             }
             a {
+                text-decoration: none;
                 background: $background-color;
                 padding: 27px 10px;
                 color:$font-color;
@@ -27,10 +28,6 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                &:hover {
-                    text-decoration: none;
-                }
-
             }
             &.active {
                 a {

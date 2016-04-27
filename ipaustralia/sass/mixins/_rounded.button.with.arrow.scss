@@ -9,6 +9,7 @@
     text-transform: uppercase;
     font-family: $font-title-normal;
     line-height: $font-size + 5;
+    text-decoration: none;
     &:after {
         @include background-image($arrow-icon);
         display:inline-block;

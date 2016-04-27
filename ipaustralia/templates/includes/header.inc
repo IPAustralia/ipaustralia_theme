@@ -45,3 +45,4 @@
     <?php endif; ?>
 
 </header>
+<img id="print-logo" src="<?php print $logo; ?>" alt="<?php print t('IP Australia'); ?>" />

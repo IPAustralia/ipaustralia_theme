@@ -4,6 +4,7 @@ section#block-bean-about-us-landing-block {
 
 section#block-bean-about-us-anchor-menu {
     @include landing_page_anchor_menu();
+    @include stick_sub_menu();
 }
 
 section#block-bean-what-we-do-block {

@@ -32,6 +32,40 @@
     }
 }
 
+//Video
+.page-tools-resources-video {
+    .views-row {
+        background: $color_athens_gray_approx;
+        margin-bottom: 10px;
+        .panel-col-last {
+            padding-top: 22px;
+            width: 70%;
+            .views-field-field-date {
+                color: $color_mountain_mist_approx;
+                margin-bottom: 10px;
+            }
+        }
+        .panel-col-first {
+            width: 23%;
+            img {
+                margin: 30px;
+                width: 140px;
+                height: 140px;
+            }
+        }
+        .views-field-title a {
+            color: $color_firefly_approx;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+    .views-field-field-date {
+        color: $color_mountain_mist_approx;
+        margin-bottom: 10px;
+    }
+}
+
 //pbr journals
 .page-tools-resources-pbr-journals, .page-tools-resources-patent-journals {
     .views-row {
