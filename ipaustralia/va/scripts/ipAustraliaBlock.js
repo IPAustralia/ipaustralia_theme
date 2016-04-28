@@ -11,8 +11,11 @@
  *
  * Date: Thu Sep 20 2012 21:13:05 GMT-0400 (Eastern Daylight Time)
  */
-   NinaVars = { welcome : "Hello. I'm Alex, IP Australia's virtual assistant. I'm here to help you start your trademark enquiries. I can show you where to view your <a href='/about-us/about-this-site/disclaimer' target='_blank'>privacy information</a>. "
-    		};
+ NinaVars = {welcome : "Hello. I'm Alex, IP Australia's virtual assistant. I'm here to help you start your trademark enquiries. I can show you where to view your <a href='/about-us/about-this-site/disclaimer' target='_blank'>privacy information</a>. "};
+ if (getParameterByName('preprod')) {
+ 	NinaVars.preprod = true;
+ }
+
 
 (function( window, undefined ) {
 var
