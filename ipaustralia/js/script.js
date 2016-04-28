@@ -333,7 +333,7 @@ function showChatIcon() {
     });
 }
 function triggerChat() {
-    console.log('Chat link clicked. Add JS funciton here');
+    initialize();
 }
 
 function slickSlides() {

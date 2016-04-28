@@ -832,7 +832,6 @@ header .header {
       background: transparent url("../images/close-cross.png") center center no-repeat;
       background-size: auto auto; }
   header .header .responsive-chat-icon {
-    display: none;
     position: absolute;
     width: 35px;
     height: 45px;
