@@ -332,8 +332,10 @@ function showChatIcon() {
         triggerChat();
     });
 }
+
 function triggerChat() {
     initialize();
+    jQuery(".responsive-chat-icon").toggleClass("opened");
 }
 
 function slickSlides() {
