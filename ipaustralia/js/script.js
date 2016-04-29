@@ -1320,11 +1320,3 @@ jQuery( document ).ready(function() {
         }
     });
 });
-
-//adding stripes to tables and other content.
-//Disabled as added to the css instead.
-/*(function () {
-    jQuery('div.field-name-body table tr:even').css('background-color','#e1e1e1');
-    jQuery('div.field-name-body dl dt:even, div.field-name-body dl dd:even').css('background-color','#e1e1e1');
-});*/
-

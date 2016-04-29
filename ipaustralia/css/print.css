@@ -1,5 +1,5 @@
 @media print {
-	header, footer, video, audio, object, ul.menu.nav, .video-filter {display:none;}
+	header, footer, video, audio, object, ul.menu.nav, .video-filter, .application-process-menu {display:none;}
 	#print-logo {display:block; margin: 20px 0;}
 	.not-front .main-container .overlay > .container {margin:0px;}
 	div.title {padding:0px;}
