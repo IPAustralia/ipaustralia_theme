@@ -11,7 +11,7 @@ if(getParameterByName('preprod')) {
 }
 
 // add skip link to Alex
-if (($ab.length()) > 0 ) {
+if (($ab.length > 0 ) {
     //only if #ipAustralia-block for alex is on the page.
     jQuery("#skip-link").append('<a id="skip-to-alex" href="#" class="element-invisible element-focusable toc-filter-processed">Skip to Virtual Assistant</a>');
 }
