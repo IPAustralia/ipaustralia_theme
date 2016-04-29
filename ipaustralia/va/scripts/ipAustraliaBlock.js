@@ -11,31 +11,7 @@
  *
  * Date: Thu Sep 20 2012 21:13:05 GMT-0400 (Eastern Daylight Time)
  */
-
-NinaVars = { 
-    welcome: "Hello. I'm Alex, IP Australia's virtual assistant. I'm here to help you start your trademark enquiries. I can show you where to view your <a href='/about-us/agency-overview/privacy-policy'>privacy information.</a>"
-};
-if(getParameterByName('preprod')){
-   NinaVars.preprod = true;
-   }
-
-function getParameterByName(name, url) {
-    //this function is typically used to return a boolean
-    if (!url) url = window.location.href;
-    url = url.toLowerCase(); // This is just to avoid case sensitiveness  
-    name = name.replace(/[\[\]]/g, "\\$&").toLowerCase();// This is just to avoid case sensitiveness for query parameter name
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    if(decodeURIComponent(results[2].replace(/\+/g, " ")) === "true"){
-        return true; //return boolean for NinaVars
-    } else {
-        return false;
-        //return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-}
-
+ 
 
 (function( window, undefined ) {
 var
