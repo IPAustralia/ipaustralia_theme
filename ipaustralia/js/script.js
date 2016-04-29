@@ -318,6 +318,7 @@ function showChatIcon() {
     /*
      * On Reponsive device add element to trgger chat
      */
+
     jQuery('.responsive-chat-icon').remove();
 
     if (jQuery('.bp-medium').length > 0) {
