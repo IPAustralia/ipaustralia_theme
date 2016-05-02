@@ -10,21 +10,6 @@ if(getParameterByName('preprod')) {
    NinaVars.preprod = true;
 }
 
-// add skip link to Alex
-jQuery( document ).ready(function() {
-    var $ab = jQuery("#ipAustralia-block");
-    if ($ab.length) {
-        //only if #ipAustralia-block for alex is on the page.
-        jQuery("#skip-link").append('<a id="skip-to-alex" href="#" class="element-invisible element-focusable">Skip to Virtual Assistant</a>');
-    }
-});
-jQuery("#skip-to-alex").click(function(){
-    //attempt to focus on alex
-    va.focusFromSkipLinks;
-    console.log("alex-skip");
-});
-
-
 function getParameterByName(name, url) {
     //this function is typically used to return a boolean
     if (!url) url = window.location.href;
@@ -42,11 +27,37 @@ function getParameterByName(name, url) {
     }
 }
 
-/*function alexFocus() {
-    if (!$ab.hasClass("nwNormal")||!$ab.hasClass("nwExpand1")) {
-        va.open();
+window.ipa = window.ipa || {};
+window.ipa.virtualAssistant = window.ipa.virtualAssistant || {};
+
+jQuery( document ).ready(function() {
+
+    var va = window.ipa.virtualAssistant;
+
+    va.OPEN_ALEX_TEXT = "Open Alex virtual assistant. Ask questions to get help around the site.";
+    va.CLOSE_ALEX_TEXT = "Close Alex virtual assistant";
+    va.EXPAND_ALEX_TEXT = "Expand Alex virtual assistant for a larger view";
+    va.CONTRACT_ALEXT_TEXT = "Contract Alex virtual assistant";
+    va.ASK_ALEX_TEXT = "Enter question for Alex virtual assistant";
+
+    var $ab = jQuery("#ipAustralia-block");
+
+    if ($ab.length) {
+        //only if #ipAustralia-block for alex is on the page, add the skip to link.
+        jQuery("#skip-link").append('<a id="skip-to-alex" href="#" class="element-invisible element-focusable">Skip to Virtual Assistant</a>');
     }
-    var lastMessage = $ab.find('.nw_Conversation').find('.nw_AgentSays, .nw_UserSays').last();
-    lastMessage.focus();
-};
-*/
+
+    jQuery("#skip-to-alex").click(function(){
+        //attempt to focus on alex
+        alexFocus();
+    });
+
+    function alexFocus() {
+        if (!$ab.hasClass("nwNormal")||!$ab.hasClass("nwExpand1")) {
+            va.open();
+        }
+        var lastMessage = $ab.find('.nw_Conversation').find('.nw_AgentSays, .nw_UserSays').last();
+        lastMessage.focus();
+    };
+});
+
