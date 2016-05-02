@@ -2,24 +2,26 @@
 *   Custom code for Alex for IP Australia.
 *
 */
-var $ab = jQuery("#ipAustralia-block");
 NinaVars = { 
-    welcome: "Hello. I'm Alex, IP Australia's virtual assistant. I'm here to help you start your trademark enquiries. I can show you where to view your <a href='/about-us/agency-overview/privacy-policy'>privacy information.</a>"
+    welcome: "Hello. I'm Alex, IP Australia's virtual assistant. As I am new to IP Australia, please be aware that I am still <strong>learning</strong> and can <strong>only</strong> assist with general trade mark information during this time.  You can view important information about your <a href='/about-us/agency-overview/privacy-policy'>privacy.</a>"
 };
+
 if(getParameterByName('preprod')) {
    NinaVars.preprod = true;
 }
 
 // add skip link to Alex
 jQuery( document ).ready(function() {
-    if ($ab.length > 0) {
+    var $ab = jQuery("#ipAustralia-block");
+    if ($ab.length) {
         //only if #ipAustralia-block for alex is on the page.
-        jQuery("#skip-link").append('<a id="skip-to-alex" href="#" class="element-invisible element-focusable toc-filter-processed">Skip to Virtual Assistant</a>');
+        jQuery("#skip-link").append('<a id="skip-to-alex" href="#" class="element-invisible element-focusable">Skip to Virtual Assistant</a>');
     }
 });
 jQuery("#skip-to-alex").click(function(){
     //attempt to focus on alex
-    alexFocus();
+    va.focusFromSkipLinks;
+    console.log("alex-skip");
 });
 
 
@@ -40,10 +42,11 @@ function getParameterByName(name, url) {
     }
 }
 
-function alexFocus() {
-/*    if (!va.isOpen()) {
+/*function alexFocus() {
+    if (!$ab.hasClass("nwNormal")||!$ab.hasClass("nwExpand1")) {
         va.open();
-    }*/
+    }
     var lastMessage = $ab.find('.nw_Conversation').find('.nw_AgentSays, .nw_UserSays').last();
     lastMessage.focus();
 };
+*/
