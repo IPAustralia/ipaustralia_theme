@@ -321,7 +321,7 @@ function showChatIcon() {
 
     jQuery('.responsive-chat-icon').remove();
 
-    if (jQuery('.bp-medium').length > 0) {
+    if (jQuery('.bp-medium').length > 0 && jQuery("body").hasClass("section-trade-marks")) {
         jQuery('header#navbar .header > .container').prepend('<div class="responsive-chat-icon">chat</div>');
         jQuery('.block-search-api-page').css('width', jQuery(document).width() - 30 + 'px');
     } else {
