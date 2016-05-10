@@ -11,8 +11,6 @@
  *
  * Date: Thu Sep 20 2012 21:13:05 GMT-0400 (Eastern Daylight Time)
  */
- 
-
 (function( window, undefined ) {
 var
 	// A central reference to the root jQuery(document)
@@ -9890,12 +9888,12 @@ window.Nina.config.newConfig = function(agentConfig) {
              * The version of the UI. Injected by Grunt based on package.json and build #
              * @type {string}
              */
-            version: "ipAustraliaBlock-201603310045",
+            version: "ipAustraliaBlock-201605051948",
             /**
              * The date and time the build of the UI took place. Automatically generated during build in the client's Gruntfile
              * @type {string}
              */
-            date: "2016-04-12 18:50",
+            date: "2016-05-05 20:00",
             /**
              * The maximum length of a user query
              * @type {int}
@@ -11807,7 +11805,7 @@ window.Nina.helper.newDebug = function(_ui, _cookiesJar) {
             }
 		},
 		getUIVersion: function() {
-			return "ipAustraliaBlock-201603310045";
+			return "ipAustraliaBlock-201605051948";
 		},
 		switchPreprodMode: function(reload) {
 			reload = (reload !== "undefined") ? reload : true;
@@ -15381,515 +15379,659 @@ window.Nina.ui.newSurvey = function(_agentId, _config, _botService, _cookiesJar)
 
 window.NinaVars = window.NinaVars || {};
 
-(function() {
-	"use strict";
-	var $ = Nina.$,
-		c, di, bs, dh, ui, tr, qs, fm, urlh, isFirstInteraction ,firstTime;
+(function () {
+    "use strict";
+    var $ = Nina.$,
+        c, di, bs, dh, ui, tr, qs, fm, urlh, isFirstInteraction, firstTime;
 
-	/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-	 *                                               *
-	 *      Assistant configuration                  *
-	 *                                               *
-	 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+    /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+     *                                               *
+     *      Assistant configuration                  *
+     *                                               *
+     *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
-	var config = Nina.config.newConfig({
-		ws: {
-			preprod: {
-				houstonURL: "https://agent-preprod.nuance-va.com/houston/houston.html",
-				houstonURL_IE89: "https://agent-preprod.nuance-va.com/houston/houston_ie89.js",
-				base_url: {
-					"MA": "https://agent-preprod-ma.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/",
-					"WA": "https://agent-preprod-ma.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/"
-				},
-				use_smart_router: false,
-				smart_router_endpoint: "",
-				sr_agent_endpoint: "",
-				debug: true
-			},
-			prod: {
-				houstonURL: "https://agent.nuance-va.com/houston/houston.html",
-				houstonURL_IE89: "https://agent.nuance-va.com/houston/houston_ie89.js",
-				base_url: {
-					"MA": "https://agent-ma.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/",
-					"WA": "https://agent-ma.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/"
-				},
-				use_smart_router: false,
-				smart_router_endpoint: "",
-				sr_agent_endpoint: "",
-				debug: false
-			},
-			timeoutQuery: 15,
-			errorMessage: "Error while contacting service",
-			urltoolong: "Error request URL too long",
-			tooManyQueries: "Too many pending queries",
-			maxQueries: 16,
-			sendReferrer: false
+    var config = Nina.config.newConfig({
+        ws: {
+            preprod: {
+                houstonURL: "https://agent-preprod.nuance-va.com/houston/houston.html",
+                houstonURL_IE89: "https://agent-preprod.nuance-va.com/houston/houston_ie89.js",
+                base_url: {
+                    "MA": "https://agent-preprod-ma.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/",
+                    "WA": "https://agent-preprod-wa.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/"
+                },
+                use_smart_router: false,
+                smart_router_endpoint: "",
+                sr_agent_endpoint: "",
+                debug: true
+            },
+            prod: {
+                houstonURL: "https://agent.nuance-va.com/houston/houston.html",
+                houstonURL_IE89: "https://agent.nuance-va.com/houston/houston_ie89.js",
+                base_url: {
+                    "MA": "https://agent-ma.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/",
+                    "WA": "https://agent-wa.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/"
+                },
+                use_smart_router: false,
+                smart_router_endpoint: "",
+                sr_agent_endpoint: "",
+                debug: false
+            },
+            timeoutQuery: 15,
+            errorMessage: "Error while contacting service",
+            urltoolong: "Error request URL too long",
+            tooManyQueries: "Too many pending queries",
+            maxQueries: 16,
+            sendReferrer: false
 
-		},
-		cookies: {
-			timeoutInteraction: 5 * 60 * 1000,
-			lifeTimePersist: 30 * 24 * 60 * 60 * 1000,
-			restrictDomain: false,
-			restrictPath: false,
-			secure: true
-		},
-		firstMessage: {
-			transcriptMessage: "<span class=\"nw_TranscriptLink\">Click here to retrieve the chat transcript.</span>",
-			welcome: function() {
-				if (NinaVars.welcome) {
-					var obj = NinaVars.welcome;
-					delete NinaVars.welcome;
-					return $.isArray(obj) ? obj[Math.floor(Math.random() * obj.length)] : obj.toString();
-				} else {
-					return "Hello, I'm Nina, Nuance's virtual assistant. I'm here to help with your general enquiries.";
-				}
-			}
-		},
-		ui: {
-			maxInputLength: 110,
-			maxThrsholdLine: 29,
-			headerAgent: "",
-			headerUser: ""
-		},
-		dom: {
-			agentHTML: " <div id=\"ipAustralia-block\" class=\"nw_Agent\"> <div id=\"nw_Header\" class=\"nw_Header\"> <div class=\"nw_AvtContainer\"> <div class=\"nw_Avatar\"></div> </div> <div class=\"nw_AgentHeader\">ASK ALEX FOR HELP</div> <div class=\"nw_Controls\"> <a href=\"#\" class=\"button nw_Expand\" aira-live=\"polite\" title=\"Exapnd virtual assistant for a larger view\" aria-label=\"Exapnd virtual assistant for a larger view\" id=\"ex\"></a> <a href=\"#\" class=\"button nwOpen\" aira-live=\"polite\" title=\"Open virtual assistant to get help around the site.\" aria-label=\"Open virtual assistant to get help around the site.\" id=\"cl\"></a> </div> </div> <div class=\"nw_Dialog\"> <div class=\"nw_Conversation\"> <div class=\"nw_ConversationText\"></div> </div> <div class=\"nw_Input\" role=\"form\"> <textarea class=\"nw_UserInputField\" onfocus=\"this.placeholder=''\" onblur=\"this.placeholder='Ask questions about trade marks'\" placeholder=\"Ask questions about trade marks\" rows=\"2\"/> <div class='nw_UserSubmit'> <button class='nw_SubmitBtn' id=\"sendBtn\">SEND</button> </div> </div> </div> </div> ",
-			agentMinHTML: ""
-		}
-	});
+        },
+        cookies: {
+            timeoutInteraction: 5 * 60 * 1000,
+            lifeTimePersist: 30 * 24 * 60 * 60 * 1000,
+            restrictDomain: false,
+            restrictPath: false,
+            secure: true
+        },
+        firstMessage: {
+            transcriptMessage: "<span class=\"nw_TranscriptLink\">Click here to retrieve the chat transcript.</span>",
+            welcome: function () {
+                if (NinaVars.welcome) {
+                    var obj = NinaVars.welcome;
+                    delete NinaVars.welcome;
+                    return $.isArray(obj) ? obj[Math.floor(Math.random() * obj.length)] : obj.toString();
+                } else {
+                    return "Hello, I'm Nina, Nuance's virtual assistant. I'm here to help with your general enquiries.";
+                }
+            }
+        },
+        ui: {
+            maxInputLength: 110,
+            maxThrsholdLine: 29,
+            headerAgent: "",
+            headerUser: ""
+        },
+        dom: {
+            agentHTML: " <div id=\"ipAustralia-block\" class=\"nw_Agent\" tabindex=\"1\" role=\"presentation\"> <div id=\"nw_Header\" class=\"nw_Header\" tabindex=\"1\" role=\"navigation\"> <div class=\"nw_AvtContainer\" role=\"navigation\"> <div class=\"nw_Avatar\"></div> </div> <div class=\"nw_AgentHeader\" role=\"navigation\">ASK ALEX FOR HELP</div> <div class=\"nw_Controls\" role=\"navigation\"> <a href=\"#\" class=\"button nw_Expand\" aira-live=\"polite\" title=\"Exapnd virtual assistant for a larger view\" aria-label=\"Exapnd virtual assistant for a larger view\" id=\"ex\" tabindex=\"1\" accesskey=\"e\"></a> <a href=\"#\" class=\"button nwOpen\" aira-live=\"polite\" title=\"Open virtual assistant to get help around the site.\" aria-label=\"Open virtual assistant to get help around the site.\" id=\"cl\" tabindex=\"1\" accesskey=\"c\"></a> </div> </div> <div class=\"nw_Dialog\" role=\"dialog\"> <div class=\"nw_Conversation\" role=\"navigation\" aira-live=\"polite\"> <div class=\"nw_ConversationText\" role=\"navigation\" aira-live=\"polite\"></div> </div> <div class=\"nw_Input\" role=\"form\" role=\"navigation\" aira-live=\"polite\" aira-label=\" Enter question for Alex virtual assistant\"> <textarea class=\"nw_UserInputField\" onfocus=\"this.placeholder=''\" onblur=\"this.placeholder='Ask questions about trade marks'\" placeholder=\"Ask questions about trade marks\" rows=\"2\"/> <div class='nw_UserSubmit' role=\"navigation\" aira-live=\"polite\" aira-label=\" Press enter or click on SEND button\"> <button class='nw_SubmitBtn' id=\"sendBtn\">SEND</button> </div> </div> </div> </div> ",
+            agentMinHTML: ""
+        }
+    });
 
+    /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+     *                                               *
+     *      Modules instanciation                    *
+     *                                               *
+     *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
-
-
-
-	/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-	 *                                               *
-	 *      Modules instanciation                    *
-	 *                                               *
-	 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
-
-	c = Nina.storage.newCookiesJar(config.agentId, config.cookies);
-	di = Nina.ui.DOMInject(config.agentId, config.dom);
-	bs = Nina.ws.newJBotService(config.ws, c);
-	dh = Nina.ui.newDisplayHistory(config.agentId, config.ui, c);
-	ui = Nina.ui.newUIHandler(config.agentId, config.ui, bs, dh);
-	tr = Nina.ws.newJTranscriptService(config.ws);
-	qs = Nina.ws.newJQualificationService(config.ws, c);
-	fm = Nina.ui.newFirstMessage(config.firstMessage, c, ui, tr);
-	urlh = Nina.ui.newURLHandler(config.popup, config.url, ui);
+    c = Nina.storage.newCookiesJar(config.agentId, config.cookies);
+    di = Nina.ui.DOMInject(config.agentId, config.dom);
+    bs = Nina.ws.newJBotService(config.ws, c);
+    dh = Nina.ui.newDisplayHistory(config.agentId, config.ui, c);
+    ui = Nina.ui.newUIHandler(config.agentId, config.ui, bs, dh);
+    tr = Nina.ws.newJTranscriptService(config.ws);
+    qs = Nina.ws.newJQualificationService(config.ws, c);
+    fm = Nina.ui.newFirstMessage(config.firstMessage, c, ui, tr);
+    urlh = Nina.ui.newURLHandler(config.popup, config.url, ui);
 
 
     /* passing origin variable */
-    ui.addInputHandler(function(){
+    ui.addInputHandler(function () {
         return {
             origin: document.location.href
         };
     });
-    
+
     /* passing source variable */
-    if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+    if (navigator.userAgent.match(/(iPod|iPhone|Android)/)) {
         NinaVars.source = "mobile";
     } else {
         NinaVars.source = "desktop";
     }
 
-    if("UICallback" in Nina) Nina.UICallback({ $: $, cookieJar: c, botservice: bs, uihandler: ui });
+    if ("UICallback" in Nina) Nina.UICallback({
+        $: $,
+        cookieJar: c,
+        botservice: bs,
+        uihandler: ui
+    });
     Nina.debug = Nina.helper.newDebug(ui, c);
-    
-     
+
+
     window.ipa = window.ipa || {};
-	window.ipa.virtualAssistant = window.ipa.virtualAssistant || {};
+    window.ipa.virtualAssistant = window.ipa.virtualAssistant || {};
 
 
 
-	$(document).ready(function() {
+    $(document).ready(function () {
 
-		var isMobile = window.matchMedia("only screen and (max-width: 768px)");
-        var isDesktop=window.matchMedia("only screen and (min-width: 769px)");
-		var isMobileNavigator = false;
+        var isMobile = window.matchMedia("only screen and (max-width: 768px)");
+        var isDesktop = window.matchMedia("only screen and (min-width: 769px)");
+        var isMobileNavigator = false;
         var va = window.ipa.virtualAssistant;
+        var isIPad = false; // used to check if device is IPAD
+        va.OPEN_ALEX_TEXT = "Open Alex virtual assistant. Ask questions to get help around the site.";
+        va.CLOSE_ALEX_TEXT = "Close Alex virtual assistant";
+        va.EXPAND_ALEX_TEXT = "Expand Alex virtual assistant for a larger view";
+        va.CONTRACT_ALEXT_TEXT = "Contract Alex virtual assistant";
+        va.ASK_ALEX_TEXT = "Enter question for Alex virtual assistant";
 
-		va.OPEN_ALEX_TEXT = "Open Alex virtual assistant. Ask questions to get help around the site.";
-		va.CLOSE_ALEX_TEXT = "Close Alex virtual assistant";
-		va.EXPAND_ALEX_TEXT = "Expand Alex virtual assistant for a larger view";
-		va.CONTRACT_ALEXT_TEXT = "Contract Alex virtual assistant";
-		va.ASK_ALEX_TEXT = "Enter question for Alex virtual assistant";
+        var $ab = $('#ipAustralia-block');
 
-		var $ab = $('#ipAustralia-block');
-		
         isFirstInteraction = !c.isOngoingSession();
-		firstTime = isFirstInteraction;
-		
-        if (!!navigator.userAgent.match(/iPad|iPhone|Android|BlackBerry|Windows Phone|webOS/i)) {
+        firstTime = isFirstInteraction;
+        if (!!navigator.userAgent.match(/iPhone|Android|BlackBerry|Windows Phone|webOS/i)) {
             isMobileNavigator = true;
         }
+        if (navigator.userAgent.match(/iPad/)) {
+            isIPad = true;
+        }
 
-       
-		if (isFirstInteraction) {
-			if (!isDesktop.matches || isMobileNavigator) { // this condition for Mobile
-       
-				$("#ipAustralia-block").addClass("nw_initial");
-				$(".nw_Input").addClass("nw_initial");
-				$('#ex').addClass('nw_Expand nw_initial');
-				$('#cl').addClass('nwOpen');
-				setLabel($('#cl'), va.OPEN_ALEX_TEXT);
-                firstTime = false;
-			} else {
-              
-				$("#ipAustralia-block").addClass("nw_initial");
-				$(".nw_Expand").addClass("nw_initial");
-				$(".nw_Input").addClass("nw_initial");
-			}
-		} else {
-			if (!isDesktop.matches || isMobileNavigator) {
-				$ab.addClass('nwMinimize');
-				$('.nw_Dialog').addClass('nwMinimize');
-				$('#ex').addClass('nw_initial');
-                
-			} else {
-				$("#nw_Header").addClass("nwMinimize");
-				$(".nw_Dialog").addClass("nwMinimize nwClosed");
-				$("#ex").removeClass('nw_Expand nw_collapse');
-				
-			}
-
-		}
-		if (shouldShowAlex()) {
-			confirmAlex();
-		} else {
-			$ab.remove();
-			return;
-		}
-
-		function confirmAlex() {
-			var confirmClass = 'alex-display-confirmed';
-			$ab.addClass(confirmClass);
-			$('.btn-ask').addClass(confirmClass);
-			$('#skip-link-alex').addClass(confirmClass);
-		}
-
-
-		function shouldShowAlex() {
-
-			var greylist = [
-				"/law/",
-				"/tax-professionals/",
-				"/newsroom/smallbusiness/",
-				"/calculators-and-tools/host"
-			];
-
-			var urlpath = window.location.pathname.toLowerCase();
-
-			if (insideSiteArea(urlpath, greylist)) {
-
-				return alexConversationStarted();
-			} else {
-				return true;
-			}
-		}
-
-
-		function insideSiteArea(url, siteAreas) {
-			for (var i = 0; i < siteAreas.length; i++) {
-				var siteArea = siteAreas[i];
-
-				var match = url.slice(0, siteArea.length) == siteArea;
-				if (match) return true;
-			}
-
-			return false;
-		}
-
-		function alexConversationStarted() {
-
-			var cookie = getAlexCookieValue();
-
-			if (cookie === null) return false;
-
-			var sessionSavedValue = '"sci"';
-			return cookie.indexOf(sessionSavedValue) >= 0;
-		}
-
-		function getAlexCookieValue() {
-
-			var alexSessionCookieName = "Nina-ipAustralia-block-session";
-			var cookies = document.cookie.split(";");
-			for (var i = 0; i < cookies.length; i++) {
-				var cookie = cookies[i].trim().split("=");
-
-				var name = cookie[0];
-				if (name !== alexSessionCookieName) continue;
-
-				var content = unescape(cookie[1]);
-				return content;
-			}
-
-			return null; // no alex cookie found.
-		}
-
-
-		function setLabel($jqObject, text) {
-			$jqObject
-				.attr("title", text)
-				.attr("aria-label", text);
-		}
-
-		$ab.find(".nw_ConversationText").attr("aria-live", "polite");
-		setLabel($ab.find(".nw_UserInputField"), va.ASK_ALEX_TEXT);
-		setLabel($ab.find(".nw_Close"), va.OPEN_ALEX_TEXT);
-		setLabel($ab.find(".nw_Expand"), va.EXPAND_ALEX_TEXT);
-
-		$ab.find(".nw_UserInputField").keydown(function(event) {
-
-			var varLength = $(".nw_UserInputField").val().trim().length;
-			if (event.which == 13) {
-				if (isFirstInteraction && firstTime && varLength > 0) {
-					$ab.removeClass('nw_initial');
-					$(".nw_Expand").removeClass('nw_initial');
-					$(".nw_Input").removeClass('nw_initial');
-					$('#ipAustralia-block').addClass('nwSend');
-					$('.nw_Dialog').addClass('nwSend');
-					$('.nw_Conversation').addClass('nwSend');
-					$('#cl').removeClass('nwOpen');
-					$('#cl').addClass('nw_Close');
-					setLabel($('#cl'), va.CLOSE_ALEX_TEXT);
-					firstTime = false;
-				} else if (!firstTime) {
-
-					$('#ipAustralia-block').removeClass('nwSend');
-					$('.nw_Dialog').removeClass('nwSend');
-					$ab.removeClass('nw_initial');
-					$('.nw_Conversation').removeClass('nwSend');
-					$ab.addClass('nwNormal');
-					$('.nw_Dialog').addClass('nwNormal');
-					$('.nw_Conversation').addClass('nwNormal');
-				}
-
-				if ($('.nw_UserInputField').hasClass('nwAutosize2')) {
-					$('.nw_UserInputField').removeClass('nwAutosize2');
-					$('.nw_UserInputField').addClass('nwAutosize1');
-				}
-
-				event.preventDefault();
-				return false;
-			}
-
-			if (event.keyCode == 8) {
-                
-                    
-               
-				if (isDesktop.matches && !isMobileNavigator) {
-					if (varLength > 29) {
-
-						$('.nw_UserInputField').removeClass('nwAutosize1');
-						$('.nw_UserInputField').addClass('nwAutosize2');
-
-					}else {
-
-						$('.nw_UserInputField').removeClass('nwAutosize2');
-						$('.nw_UserInputField').addClass('nwAutosize1');
-					}
-				} else {
-					$('.nw_UserInputField').removeClass('nwAutosize2');
-					$('.nw_UserInputField').addClass('nwAutosize1');
-				}
-			}
-		});
-
-		$(".nw_UserInputField").keypress(function(event) {
-			var varLength = $(this).val().trim().length;
-
-			if (isDesktop.matches && !isMobileNavigator) {
-				if (varLength > 29) {
-					$('.nw_UserInputField').removeClass('nwAutosize1');
-					$('.nw_UserInputField').addClass('nwAutosize2');
-				} else {
-					$('.nw_UserInputField').removeClass('nwAutosize2');
-					$('.nw_UserInputField').addClass('nwAutosize1');
-				}
-			} else {
-				$('.nw_UserInputField').removeClass('nwAutosize2');
-				$('.nw_UserInputField').addClass('nwAutosize1');
-			}
-		});
-
-		var expandClick = true;
-
-		$("#ex").click(function(event) {
-
-			event.preventDefault();
-			event.stopPropagation();
-			$ab.toggleClass("expanded");
-			var isExpanded = $ab.hasClass("expanded");
-			$ab.removeClass('nwNormal');
-
-			if (isExpanded) {
-				$ab.removeClass("nwSend nwNormal nwClosed");
-				$('.nw_Dialog').removeClass('nwNormal');
-				$('.nw_Conversation').removeClass('nwNormal nwSend');
-				$('.nw_Dialog').removeClass('nwSend nwClosed');
-				$ab.addClass('nwExpand1');
-				$('.nw_Dialog').addClass('nwExpand1');
-				$('.nw_Conversation').addClass('nwExpand1');
-
-			} else {
-				$ab.removeClass('nwExpand1');
-                $ab.addClass('nwNormal');
-				$('.nw_Dialog').addClass('nwNormal');
-				$('.nw_Conversation').addClass('nwNormal');
-			}
-
-			
-            if($('#ex').hasClass('nw_Expand')){
-                $('.nw_Expand.button').removeClass('nw_Expand');
-				$(this).addClass('nw_collapse');
-                setLabel($('#ex'), va.CONTRACT_ALEXT_TEXT);
+        if (isFirstInteraction) {
+            if (!isDesktop.matches || isMobileNavigator) { // this condition for Mobile
+                $('#ipAustralia-block , .nw_Input').addClass('nw_initial');
+                $('#ex').addClass('nw_Expand nw_initial');
+                $('#cl').addClass('nwOpen');
+                setLabel($('#cl'), va.OPEN_ALEX_TEXT);
+            } else {
+                $("#ipAustralia-block , .nw_Expand ,.nw_Input").addClass("nw_initial");
             }
-            else{
-                $('.nw_collapse.button').removeClass('nw_collapse');
-				$(this).addClass('nw_Expand');
-                 setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
+        } else {
+            if (!isDesktop.matches || isMobileNavigator) {
+                $('#ipAustralia-block ,.nw_Dialog').addClass('nwMinimize');
+                $('#ex').addClass('nw_initial');
+            } else {
+                $('#nw_Header').addClass('nwMinimize');
+                $('.nw_Dialog').addClass('nwMinimize nwClosed');
+                $('#ex').removeClass('nw_Expand nw_collapse');
             }
-            
-			return false;
-		});
 
-		$('.nw_SubmitBtn').click(function(event) {
-			var varLength = $(".nw_UserInputField").val().trim().length;
-			if (isFirstInteraction && firstTime && varLength > 0) {
-				$ab.removeClass('nw_initial');
-				$(".nw_Expand").removeClass('nw_initial');
-				$(".nw_Input").removeClass('nw_initial');
-				$('#ipAustralia-block').addClass('nwSend');
-				$('.nw_Dialog').addClass('nwSend');
-				$('.nw_Conversation').addClass('nwSend');
-				$('#cl').removeClass('nwOpen');
-				$('#cl').addClass('nw_Close');
-				setLabel($('#cl'), va.CLOSE_ALEX_TEXT);
-				firstTime = false;
-			} else if (!firstTime && $ab.hasClass('nwSend')) {
-				$('#ipAustralia-block').removeClass('nwSend');
-				$('.nw_Dialog').removeClass('nwSend');
-				$('.nw_Conversation').removeClass('nwSend');
-				$ab.addClass('nwNormal');
-				$('.nw_Dialog').addClass('nwNormal');
-				$('.nw_Conversation').addClass('nwNormal');
-				firstTime = false;
-			}
+        }
+        if (shouldShowAlex()) {
+            confirmAlex();
+        } else {
+            $ab.remove();
+            return;
+        }
+
+        function confirmAlex() {
+            var confirmClass = 'alex-display-confirmed';
+            $ab.addClass(confirmClass);
+            $('.btn-ask').addClass(confirmClass);
+            $('#skip-link-alex').addClass(confirmClass);
+        }
 
 
-		});
+        function shouldShowAlex() {
 
-		$("#cl ,#nw_Header").click(function(event) {
-            event.preventDefault();
-			event.stopPropagation();
-           if (!isFirstInteraction && !firstTime) {
-            	va.open();
-                firstTime = true;
-			} else if (!isFirstInteraction && firstTime) {
-            	va.close();
-				firstTime = false;
-			} else {
-				if (firstTime) {
-			        va.open();
-					firstTime = false;
-				} else if (va.isOpen() && !firstTime) {
-			        va.close();
-				} else {
-            		va.open();
-				}
-			}
-			return false;
+            // pages where VA is not supposed to be shown
+            /*var greylist = [
+            	"/law/",
+            	"/tax-professionals/",
+            	"/newsroom/smallbusiness/",
+            	"/calculators-and-tools/host"
+            ];*/
+            // Added the pages where Alex is to be shown  
 
-		});
+            var whiteList = [
+                //following are to support Nuance preprod and ui-dev domains
+                "/ipa/",
+                "/ps/ipa/",
+                "/trade-marks",
+                "/trade-marks/"
 
-		$ab.keydown(function(event) {
-			if (!va.isOpen()) {
-				return;
-			}
+            ];
 
-			if (event.which == 27) { // escape key
-				va.close();
-			}
-		});
+            var urlpath = window.location.pathname.toLowerCase();
 
-		va.isOpen = function() {
+            if (insideSiteArea(urlpath, whiteList)) {
 
-			return !$ab.hasClass("closed");
-		};
+                return true;
+            } else {
+                return alexConversationStarted();
+            }
+        }
 
 
-		va.open = function() {
-            $ab.removeClass("closed nwClosed nw_initial");
-			$('.nw_Dialog').removeClass('nwClosed nwMinimize');
-			$('.nw_Expand').removeClass('nwClosed');
-			$('#ex').removeClass('nw_initial');
-			$(".nw_Input").removeClass('nw_initial');
-			$("#nw_Header").removeClass("nwMinimize");
-			$('#ex').addClass('nw_Expand');
-			$('#ipAustralia-block').addClass("nwNormal");
-			$('.nw_Dialog').addClass('nwNormal');
-			$('.nw_Conversation').addClass('nwNormal');
-			$('#cl').removeClass('nwOpen');
-			$('#cl').addClass('nw_Close');
-			setLabel($ab.find(".nw_Close"), va.CLOSE_ALEX_TEXT);
-		};
+        function insideSiteArea(url, siteAreas) {
+            for (var i = 0; i < siteAreas.length; i++) {
+                var siteArea = siteAreas[i];
+                var match = url.slice(0, siteArea.length) == siteArea;
+                if (match) return true;
+            }
 
-		va.close = function() {
-            if ($ab.hasClass("expanded")) {
-				$ab.removeClass("expanded");
-			}
-			$('.nw_Expand.button').addClass('nw_initial');
-			$('#ex').removeClass('nw_collapse nwNormal');
-			$ab.removeClass('nwSend nwExpand1 nwNormal');
-			$('#ipAustralia-block').addClass('nwClosed closed');
-			$('.nw_Dialog').addClass('nwClosed');
-			$('#cl').removeClass('nw_Close');
-			$('#cl').addClass('nwOpen');
-			setLabel($('#cl'), va.OPEN_ALEX_TEXT);
-		};
+            return false;
+        }
+
+        function alexConversationStarted() {
+
+            var cookie = getAlexCookieValue();
+            if (cookie === null) return false;
+            var sessionSavedValue = '"sci"';
+            return cookie.indexOf(sessionSavedValue) >= 0;
+        }
+
+        function getAlexCookieValue() {
+
+            var alexSessionCookieName = "Nina-ipAustralia-block-session";
+            var cookies = document.cookie.split(";");
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim().split("=");
+                var name = cookie[0];
+                if (name !== alexSessionCookieName) continue;
+                var content = unescape(cookie[1]);
+                return content;
+            }
+            return null; // no alex cookie found.
+        }
 
 
-		va.focusFromSkipLinks = function() {
-			if (!va.isOpen()) {
-				va.open();
-			}
-			var lastMessage = $ab.find('.nw_Conversation').find('.nw_AgentSays, .nw_UserSays').last();
-			lastMessage.focus();
-		};
+        function setLabel($jqObject, text) {
+            $jqObject
+                .attr("title", text)
+                .attr("aria-label", text);
+        }
 
-});
+        $ab.find(".nw_ConversationText").attr("aria-live", "polite");
+        setLabel($ab.find(".nw_UserInputField"), va.ASK_ALEX_TEXT);
+        setLabel($ab.find(".nw_Close"), va.OPEN_ALEX_TEXT);
+        setLabel($ab.find(".nw_Expand"), va.EXPAND_ALEX_TEXT);
 
-	window.initialize = function() {
-        
-        firstTime=false;
-		if(jQuery('#ipAustralia-block').hasClass('open') || jQuery('#ipAustralia-block').hasClass('nwNormal') ||
-                 jQuery('#ipAustralia-block').hasClass('nwSend') ||jQuery('#ipAustralia-block').hasClass('nwExpand1')) {
-                    $('#ipAustralia-block').removeClass('open nwNormal nwExpand1 expanded nwSend');
-                    $('.nw_Dialog').removeClass('nwNormal nwSend open nwNormal nwExpand1');
-                    $('.nw_Conversation').removeClass('nwNormal nwExpand1 open');
-                    $('#ipAustralia-block').addClass('closed'); 
-                    $('#ex').removeClass('nw_collapse');
-                    $('#ex').addClass('nw_initial');
-                    $('#cl').addClass('nwOpen');  
-                 
-              }
-              else{
-                    $('#ipAustralia-block').removeClass('closed nw_initial nwClosed ');
-                    $('.nw_Input').removeClass('nw_initial');  
-                    $('.nw_Dialog').removeClass('nwClosed');
-                    $('#ipAustralia-block').addClass('nwNormal');
-                    $('.nw_Dialog').addClass('nwNormal');  
-                    $('.nw_Conversation').addClass('nwNormal');
+        $ab.find(".nw_UserInputField").keydown(function (event) {
+            var varLength = $(".nw_UserInputField").val().trim().length;
+            if (event.which == 13) { // enter key pressed
+                if (isFirstInteraction && firstTime && varLength > 0) {
+                    $('#ipAustralia-block ,.nw_Expand ,.nw_Input').removeClass('nw_initial');
+                    $('#ipAustralia-block ,.nw_Dialog ,.nw_Conversation').addClass('nwSend');
                     $('#cl').removeClass('nwOpen');
                     $('#cl').addClass('nw_Close');
-                    $('#ex').removeClass('nw_initial');
-                    $('#ex').addClass('nw_Expand');
-                    if(!isFirstInteraction){
-                        firstTime=true;
+                    setLabel($('#cl'), va.CLOSE_ALEX_TEXT);
+                    firstTime = false;
+                } else if (!firstTime) {
+                    $('#ipAustralia-block,.nw_Dialog ,.nw_Conversation').removeClass('nwSend');
+                    $ab.removeClass('nw_initial');
+                    $('#ipAustralia-block , .nw_Dialog ,.nw_Conversation').addClass('nwNormal');
+                }
+                if ($('.nw_UserInputField').hasClass('nwAutosize2')) {
+                    $('.nw_UserInputField').removeClass('nwAutosize2');
+                    $('.nw_UserInputField').addClass('nwAutosize1');
+                }
+
+                // written for WCAG , assign tab index for all the divs under conversationTexts .
+                $('.nw_ConversationText div').each(function (index) {
+                    $(this).attr('tabindex', 0);
+                    $(".nw_UserInputField").focus();
+                });
+
+                event.preventDefault();
+                return false;
+            }
+
+            if (event.keyCode == 8) { // backspace
+                if ((isDesktop.matches && !isMobileNavigator) || isIPad) {
+                    if (varLength > 29) {
+
+                        $('.nw_UserInputField').removeClass('nwAutosize1');
+                        $('.nw_UserInputField').addClass('nwAutosize2');
+
+                    } else {
+
+                        $('.nw_UserInputField').removeClass('nwAutosize2');
+                        $('.nw_UserInputField').addClass('nwAutosize1');
                     }
-                  
-                    
-              }   
-	};
+                } else {
+                    $('.nw_UserInputField').removeClass('nwAutosize2');
+                    $('.nw_UserInputField').addClass('nwAutosize1');
+                }
+            }
+        });
+
+        // written for WCAG, pressed enter on Header will open VA. Same as .click() event
+        $('#nw_Header').bind('keydown', function (event) {
+            if (event.which == 13) { //Enter key pressed
+                $('#nw_Header').click();
+            }
+        });
+
+        // written for WCAG, pressed enter on nw_TranscriptLink , .click() event will be fired.
+        $('.nw_SystemSays').on('keydown', function (event) {
+            if (event.which == 13) { //Enter key pressed
+                $('.nw_TranscriptLink').click();
+            }
+        });
+
+        // written for WCAG, pressed enter on expand icon will expand the VA. Same as .click() event
+        $('#ex').bind('keydown', function (event) {
+            if (event.which == 13) { //Enter key pressed
+                event.preventDefault();
+                event.stopPropagation();
+                $ab.toggleClass("expanded");
+                var isExpanded = $ab.hasClass("expanded");
+                $ab.removeClass('nwNormal');
+
+                if (isExpanded) {
+                    $ab.removeClass("nwSend nwNormal nwClosed");
+                    $('.nw_Conversation').removeClass('nwNormal nwSend');
+                    $('.nw_Dialog').removeClass('nwSend nwClosed');
+                    if (isIPad) {
+                        $ab.addClass('ipadExpand');
+                    } else {
+                        $ab.addClass('nwExpand1');
+                    }
+                    $('.nw_Dialog').addClass('nwExpand1');
+                    $('.nw_Conversation').addClass('nwExpand1');
+                } else {
+                    if (isIPad) {
+                        $ab.removeClass('ipadExpand');
+                    } else {
+                        $ab.removeClass('nwExpand1');
+                    }
+                    $('#ipAustralia-block ,.nw_Dialog ,.nw_Conversation').addClass('nwNormal');
+
+                }
+
+                if ($('#ex').hasClass('nw_Expand')) {
+                    $('.nw_Expand.button').removeClass('nw_Expand');
+                    $(this).addClass('nw_collapse');
+                    setLabel($('#ex'), va.CONTRACT_ALEXT_TEXT);
+                } else {
+                    $('.nw_collapse.button').removeClass('nw_collapse');
+                    $(this).addClass('nw_Expand');
+                    setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
+                }
+
+                return false;
+            }
+        });
+
+        // written for WCAG, pressed enter on close/open icon will open/close the VA. Same as .click() event
+        $('#cl').bind('keydown', function (event) {
+            if (event.which == 13) { //Enter key pressed
+                event.preventDefault();
+                event.stopPropagation();
+                if (!isFirstInteraction && !firstTime) {
+                    va.open();
+                    if(isIPad){ va.iPadOpen();}
+                    firstTime = true;
+                } else if (!isFirstInteraction && firstTime) {
+                    va.close();
+                    if(isIPad){ va.iPadClose();}
+                    firstTime = false;
+                } else {
+                    if (firstTime) {
+                        va.open();
+                        if(isIPad){ va.iPadOpen();}
+                        firstTime = false;
+                    } else if (va.isOpen() && !firstTime) {
+                        va.close();
+                        if(isIPad){ va.iPadClose();}
+                    } else {
+                        va.open();
+                        if(isIPad){ va.iPadOpen();}
+                    }
+                }
+                return false;
+            }
+        });
+
+        // written for WCAG , to maintain tab index
+        $(".nw_AgentSays").focus(function (event) {
+            $("#cl").attr('tabindex', 0);
+        });
+
+        $("#cl").focus(function (event) {
+            $("#ex").attr('tabindex', 0);
+        });
+
+        $("#ex").focus(function (event) {
+            $("#nw_Header").attr('tabindex', 0);
+        });
+
+
+        $('.nw_UserInputField').focus(function (event) {
+
+            $('.nw_AgentLastAnswer').attr('tabindex', 0);
+        });
+
+        $('.nw_SystemSays').focus(function (event) {
+            $('#cl').attr('tabindex', 0);
+        });
+
+        $(".nw_UserInputField").keypress(function (event) {
+            var varLength = $(this).val().trim().length;
+            // added condition for iPad , since ipad shld have all the fucntionality same as Desktop view
+            if ((isDesktop.matches && !isMobileNavigator) || isIPad) {
+                if (varLength > 29) {
+                    $('.nw_UserInputField').removeClass('nwAutosize1');
+                    $('.nw_UserInputField').addClass('nwAutosize2');
+                } else {
+                    $('.nw_UserInputField').removeClass('nwAutosize2');
+                    $('.nw_UserInputField').addClass('nwAutosize1');
+                }
+            } else {
+                $('.nw_UserInputField').removeClass('nwAutosize2');
+                $('.nw_UserInputField').addClass('nwAutosize1');
+            }
+        });
+
+
+        $("#ex").click(function (event) { // handler for Expand / shrink icon click
+
+            event.preventDefault();
+            event.stopPropagation();
+            $ab.toggleClass("expanded");
+            var isExpanded = $ab.hasClass("expanded");
+            $ab.removeClass('nwNormal');
+            if (isExpanded) {
+                $('#ipAustralia-block ,.nw_Dialog').removeClass("nwSend nwNormal nwClosed");
+                $('.nw_Conversation').removeClass('nwNormal nwSend');
+                if (isIPad) {
+                    $ab.addClass('ipadExpand');
+
+                } else {
+                    $ab.addClass('nwExpand1');
+                }
+                $('.nw_Dialog,.nw_Conversation').addClass('nwExpand1');
+            } else {
+                if (isIPad) {
+                    $ab.removeClass('ipadExpand');
+                } else {
+                    $ab.removeClass('nwExpand1');
+                }
+                $('.nw_Dialog ,.nw_Conversation').removeClass('nwExpand1');
+                $('#ipAustralia-block,.nw_Dialog ,.nw_Conversation').addClass('nwNormal');
+
+            }
+            if ($('#ex').hasClass('nw_Expand')) {
+                $('.nw_Expand.button').removeClass('nw_Expand');
+                $(this).addClass('nw_collapse');
+                setLabel($('#ex'), va.CONTRACT_ALEXT_TEXT);
+            } else {
+                $('.nw_collapse.button').removeClass('nw_collapse');
+                $(this).addClass('nw_Expand');
+                setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
+            }
+
+            return false;
+        });
+
+
+        $('.nw_SubmitBtn').click(function (event) { // handler for Submit button click
+            var varLength = $(".nw_UserInputField").val().trim().length;
+            if (isFirstInteraction && firstTime && varLength > 0) {
+                $('#ipAustralia-block ,.nw_Expand,.nw_Input ').removeClass('nw_initial');
+                $('#ipAustralia-block ,.nw_Dialog,.nw_Conversation').addClass('nwSend');
+                $('#cl').removeClass('nwOpen');
+                $('#cl').addClass('nw_Close');
+                setLabel($('#cl'), va.CLOSE_ALEX_TEXT);
+                firstTime = false;
+            } else if (!firstTime && $ab.hasClass('nwSend')) {
+                $('#ipAustralia-block,.nw_Dialog,.nw_Conversation').removeClass('nwSend');
+                $('#ipAustralia-block ,.nw_Dialog,.nw_Conversation').addClass('nwNormal');
+                firstTime = false;
+            }
+            if ($('.nw_UserInputField').hasClass('nwAutosize2')) {
+                $('.nw_UserInputField').removeClass('nwAutosize2');
+                $('.nw_UserInputField').addClass('nwAutosize1');
+            }
+
+        });
+
+        $("#cl,#nw_Header").click(function (event) {
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (!isFirstInteraction && !firstTime) {
+                va.open();
+                if(isIPad){ va.iPadOpen();} 
+                firstTime = true;
+            } else if (!isFirstInteraction && firstTime) {
+                va.close();
+                if(isIPad){ va.iPadClose();}
+                firstTime = false;
+            } else {
+                if (firstTime) {
+                    va.open();
+                    if(isIPad){ va.iPadOpen();}
+                    firstTime = false;
+                } else if (va.isOpen() && !firstTime) {
+                    va.close();
+                    if(isIPad){ va.iPadClose();}
+                } else {
+                    va.open();
+                    if(isIPad){ va.iPadOpen();}
+                }
+            }
+            return false;
+
+        });
+
+        $ab.keydown(function (event) {
+            if (!va.isOpen()) {
+                return;
+            }
+
+            if (event.which == 27) { // escape key
+                va.close();
+            }
+        });
+
+        // function written to check if VA is open 
+        va.isOpen = function () {
+
+            return !$ab.hasClass("closed");
+        };
+
+
+        va.open = function () {
+
+            event.preventDefault();
+            event.stopPropagation();
+            $ab.removeClass("closed nwClosed nw_initial");
+            $('.nw_Dialog').removeClass('nwClosed nwMinimize');
+            $('.nw_Expand').removeClass('nwClosed');
+            $('#ex , .nw_Input').removeClass('nw_initial');
+            $("#nw_Header").removeClass("nwMinimize");
+            $('#ex').addClass('nw_Expand');
+            $('#ipAustralia-block,.nw_Dialog ,.nw_Conversation').addClass("nwNormal");
+            $('#cl').removeClass('nwOpen');
+            $('#cl').addClass('nw_Close');
+            setLabel($ab.find(".nw_Close"), va.CLOSE_ALEX_TEXT);
+
+            // written for WCAG , assign tab index for all the divs under conversationTexts .
+            $('.nw_ConversationText div').each(function (index) {
+                $(this).attr('tabindex', 0);
+                $(".nw_UserInputField").focus();
+            });         
+            
+            //iPad scrolling issue fix. calculate current scoll height and add Css top property
+            if(isIPad){ va.iPadOpen();}
+        };
+
+        va.close = function () {
+            if ($ab.hasClass("expanded")) {
+                $ab.removeClass("expanded");
+            }
+            $('.nw_Expand.button').addClass('nw_initial');
+            $('#ex').removeClass('nw_collapse nwNormal');
+            $ab.removeClass('nwSend nwExpand1 nwNormal');
+            if ($ab.hasClass('ipadExpand') || isIPad) {
+
+                $ab.removeClass('ipadExpand');
+            }
+            $('#ipAustralia-block').addClass('nwClosed closed');
+            $('.nw_Dialog').addClass('nwClosed');
+            $('#cl').removeClass('nw_Close');
+            $('#cl').addClass('nwOpen');
+            setLabel($('#cl'), va.OPEN_ALEX_TEXT);
+            
+            if(isIPad){ va.iPadClose();}
+        };
+
+
+        va.focusFromSkipLinks = function () {
+            if (!va.isOpen()) {
+                va.open();
+            }
+            var lastMessage = $ab.find('.nw_Conversation').find('.nw_AgentSays, .nw_UserSays').last();
+            lastMessage.focus();
+        };
+        
+        va.iPadOpen = function() {            
+            var divBlock = $('#ipAustralia-block');
+            var scrollTopiPad = document.body.scrollTop;
+            divBlock.removeProp('position');
+            if(scrollTopiPad == 0 || scrollTopiPad < 180){ //this to ensure VA sits nicely and without the header being chopped off
+                divBlock.css({'top':'180px', 'position': 'absolute', 'left': 'auto', 'bottom': 'auto'});
+            } else {
+                divBlock.css({'top':scrollTopiPad-140, 'position': 'absolute', 'left': 'auto', 'bottom': 'auto'});
+            }
+            divBlock.css('animation-name','').css('animation-duration','');
+            window.scrollTo(0, document.body.scrollTop + 40); //to ensure input box displays well above the keyboard. Note will not work if users have configured split view or set the keyboard to appear at the top of the screen
+        };
+        
+        va.iPadClose = function() {            
+            var divBlock = $('#ipAustralia-block');
+            divBlock.css('top', '').css('position', 'fixed').css('left', '').css('bottom', '').css('animation-name', 'ease').css('animation-duration', '2s');
+            va.hideKeyboard();
+        };
+
+        va.hideKeyboard = function () {
+            document.activeElement.blur();
+            $("input, textarea").blur();
+        };
+    });
+
+    window.initialize = function () { //  handler to invoke VA in mobile view
+
+        firstTime = false;
+        if ($('#ipAustralia-block').hasClass('open') || $('#ipAustralia-block').hasClass('nwNormal') ||
+            $('#ipAustralia-block').hasClass('nwSend') || $('#ipAustralia-block').hasClass('nwExpand1') || $('#ipAustralia-block').hasClass('ipadExpand')) {
+            $('#ipAustralia-block').removeClass('open nwNormal ipadExpand nwExpand1 expanded nwSend');
+            $('.nw_Dialog').removeClass('nwNormal nwSend open nwNormal nwExpand1');
+            $('.nw_Conversation').removeClass('nwNormal nwExpand1 open');
+            $('#ipAustralia-block').addClass('closed');
+            $('#ex').removeClass('nw_collapse');
+            $('#ex').addClass('nw_initial');
+            $('#cl').addClass('nwOpen');
+            $('.responsive-chat-icon').removeClass('responsive-chat-icon-close');
+
+        } else {
+            $('.responsive-chat-icon').addClass('responsive-chat-icon-close');
+            $('#ipAustralia-block').removeClass('closed nw_initial nwClosed ');
+            $('.nw_Input').removeClass('nw_initial');
+            $('.nw_Dialog').removeClass('nwClosed');
+            $('#ipAustralia-block,.nw_Dialog,.nw_Conversation').addClass('nwNormal');
+            $('#cl').removeClass('nwOpen');
+            $('#cl').addClass('nw_Close');
+            $('#ex').removeClass('nw_initial');
+            $('#ex').addClass('nw_Expand');
+            // Added following line for WCAG
+            $(".nw_UserInputField").focus();
+            if (!isFirstInteraction) {
+                firstTime = true;
+            }
+        }
+        event.preventDefault();
+        event.stopPropagation();
+    };
 
 })();
