@@ -9888,12 +9888,12 @@ window.Nina.config.newConfig = function(agentConfig) {
              * The version of the UI. Injected by Grunt based on package.json and build #
              * @type {string}
              */
-            version: "ipAustraliaBlock-201605051948",
+            version: "ipAustraliaBlock-201605091539",
             /**
              * The date and time the build of the UI took place. Automatically generated during build in the client's Gruntfile
              * @type {string}
              */
-            date: "2016-05-05 20:00",
+            date: "2016-05-09 15:44",
             /**
              * The maximum length of a user query
              * @type {int}
@@ -11805,7 +11805,7 @@ window.Nina.helper.newDebug = function(_ui, _cookiesJar) {
             }
 		},
 		getUIVersion: function() {
-			return "ipAustraliaBlock-201605051948";
+			return "ipAustraliaBlock-201605091539";
 		},
 		switchPreprodMode: function(reload) {
 			reload = (reload !== "undefined") ? reload : true;
@@ -15450,7 +15450,7 @@ window.NinaVars = window.NinaVars || {};
             headerUser: ""
         },
         dom: {
-            agentHTML: " <div id=\"ipAustralia-block\" class=\"nw_Agent\" tabindex=\"1\" role=\"presentation\"> <div id=\"nw_Header\" class=\"nw_Header\" tabindex=\"1\" role=\"navigation\"> <div class=\"nw_AvtContainer\" role=\"navigation\"> <div class=\"nw_Avatar\"></div> </div> <div class=\"nw_AgentHeader\" role=\"navigation\">ASK ALEX FOR HELP</div> <div class=\"nw_Controls\" role=\"navigation\"> <a href=\"#\" class=\"button nw_Expand\" aira-live=\"polite\" title=\"Exapnd virtual assistant for a larger view\" aria-label=\"Exapnd virtual assistant for a larger view\" id=\"ex\" tabindex=\"1\" accesskey=\"e\"></a> <a href=\"#\" class=\"button nwOpen\" aira-live=\"polite\" title=\"Open virtual assistant to get help around the site.\" aria-label=\"Open virtual assistant to get help around the site.\" id=\"cl\" tabindex=\"1\" accesskey=\"c\"></a> </div> </div> <div class=\"nw_Dialog\" role=\"dialog\"> <div class=\"nw_Conversation\" role=\"navigation\" aira-live=\"polite\"> <div class=\"nw_ConversationText\" role=\"navigation\" aira-live=\"polite\"></div> </div> <div class=\"nw_Input\" role=\"form\" role=\"navigation\" aira-live=\"polite\" aira-label=\" Enter question for Alex virtual assistant\"> <textarea class=\"nw_UserInputField\" onfocus=\"this.placeholder=''\" onblur=\"this.placeholder='Ask questions about trade marks'\" placeholder=\"Ask questions about trade marks\" rows=\"2\"/> <div class='nw_UserSubmit' role=\"navigation\" aira-live=\"polite\" aira-label=\" Press enter or click on SEND button\"> <button class='nw_SubmitBtn' id=\"sendBtn\">SEND</button> </div> </div> </div> </div> ",
+            agentHTML: "<div id=\"ipAustralia-block\" class=\"nw_Agent\" role=\"presentation\"> <div id=\"nw_Header\" class=\"nw_Header\" role=\"navigation\"> <div class=\"nw_AvtContainer\" role=\"navigation\"> <div class=\"nw_Avatar\"></div> </div> <div class=\"nw_AgentHeader\" role=\"navigation\">ASK ALEX FOR HELP</div> <div class=\"nw_Controls\" role=\"navigation\"> <a href=\"#\" class=\"button nw_Expand\" aira-live=\"polite\" title=\"Exapnd virtual assistant for a larger view\" aria-label=\"Exapnd virtual assistant for a larger view\" id=\"ex\" accesskey=\"e\"></a> <a href=\"#\" class=\"button nwOpen\" aira-live=\"polite\" title=\"Open virtual assistant to get help around the site.\" aria-label=\"Open virtual assistant to get help around the site.\" id=\"cl\" accesskey=\"c\"></a> </div> </div> <div class=\"nw_Dialog\" role=\"dialog\"> <div class=\"nw_Conversation\" role=\"navigation\" aira-live=\"polite\"> <div class=\"nw_ConversationText\" role=\"navigation\" aira-live=\"polite\"></div> </div> <div class=\"nw_Input\" role=\"form\" role=\"navigation\" aira-live=\"polite\" aira-label=\" Enter question for Alex virtual assistant\"> <textarea class=\"nw_UserInputField\" onfocus=\"this.placeholder=''\" onblur=\"this.placeholder='Ask questions about trade marks'\" placeholder=\"Ask questions about trade marks\" rows=\"2\"/> <div class='nw_UserSubmit' role=\"navigation\" aira-live=\"polite\" aira-label=\" Press enter or click on SEND button\"> <button class='nw_SubmitBtn' id=\"sendBtn\">SEND</button> </div> </div> </div> </div> ",
             agentMinHTML: ""
         }
     });
@@ -15576,7 +15576,6 @@ window.NinaVars = window.NinaVars || {};
                 "/ps/ipa/",
                 "/trade-marks",
                 "/trade-marks/"
-
             ];
 
             var urlpath = window.location.pathname.toLowerCase();

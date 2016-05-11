@@ -336,7 +336,7 @@ function showChatIcon() {
 
 function triggerChat() {
     initialize();
-    jQuery(".responsive-chat-icon").toggleClass("opened");
+    //jQuery(".responsive-chat-icon").toggleClass("opened");
 }
 
 function slickSlides() {

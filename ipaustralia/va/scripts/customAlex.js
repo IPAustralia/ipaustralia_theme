@@ -60,4 +60,3 @@ jQuery( document ).ready(function() {
         lastMessage.focus();
     };
 });
-
