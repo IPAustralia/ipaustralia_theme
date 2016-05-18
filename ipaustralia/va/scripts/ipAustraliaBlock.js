@@ -9823,7 +9823,7 @@ window.Nina.config.newConfig = function(agentConfig) {
              * @type {int}
              * @default 2
              */
-            domainLevel: 2,
+            domainLevel: 3,
             /**
              *  Should we restrict the cookie to the current path
              *  @type {boolean}
