@@ -4,7 +4,7 @@
 		.arrow_carrot-down{color:#1d252c !important; font-size:40px;}
 		.content h1 {display:none;}
 		.content-new-tm { margin:0 20%;}
-		.top-section {background:url("images/tm-banner.jpg") no-repeat;  background-size: 100% 100%; min-height:300px; margin:0 -60rem 30px;}
+		.top-section {background:url("/sites/g/files/net856/themes/site/ipaustralia/interactives/images/tm-banner.jpg") no-repeat;  background-size: 100% 100%; min-height:300px; margin:0 -60rem 30px;}
 		checkbox:hover{background-color:#1d252c;color:#eef0f1;}
 		div.thick {
 		height:4px;
@@ -270,7 +270,7 @@
 }
 
 .red-btn:after {
-		background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+		background: transparent url("/sites/g/files/net856/themes/site/ipaustralia/interactives/images/arrow-right-transparent.png") center center no-repeat;
 		display: inline-block;
 		width: 9px;
 		height: 15px;
@@ -315,7 +315,7 @@
 }
 .top-section-list li:nth-child(1):before{
 	content: '';
-	background: url("/images/question-mark.png");
+	background: url("/sites/g/files/net856/themes/site/ipaustralia/interactives/images/question-mark.png");
 	padding: 15px 15px 30px  ;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -325,7 +325,7 @@
 
 .top-section-list li:nth-child(2):before{
 	content: '';
-	background: url("/images/clock.png");
+	background: url("/sites/g/files/net856/themes/site/ipaustralia/interactives/images/clock.png");
 	padding: 15px 15px 30px  ;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -489,7 +489,7 @@
 
 .content-new-tm .dotted-innerlist{
 	border:none;
-	list-style-image:url("/images/tm_checklist/list-dot.png");
+	list-style-image:url("/sites/g/files/net856/themes/site/ipaustralia/interactives/images/list-dot.png");
 	padding: 0 60px;
 	margin-bottom: 0;
 }
@@ -503,7 +503,7 @@
 	line-height: 24px;
 }
 .content-new-tm .image-innerlist .image-innerlist-item:before{
-	background: url("/images/tm_checklist/document.png");
+	background: url("/sites/g/files/net856/themes/site/ipaustralia/interactives/images/document.png");
 	content: '';
 	width: 24px;
 	height: 30px;
