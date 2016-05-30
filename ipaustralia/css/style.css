@@ -2880,6 +2880,54 @@ article table {
   color: #999;
   margin-bottom: 10px; }
 
+.page-about-us-news-and-community-blog .views-row {
+  background: #eff0f2;
+  margin-bottom: 10px; }
+  .page-about-us-news-and-community-blog .views-row .panel-col-last {
+    padding-top: 22px;
+    width: 70%; }
+    .page-about-us-news-and-community-blog .views-row .panel-col-last .views-field-field-date {
+      color: #999;
+      margin-bottom: 10px; }
+  .page-about-us-news-and-community-blog .views-row .panel-col-first {
+    width: 23%; }
+    .page-about-us-news-and-community-blog .views-row .panel-col-first img {
+      margin: 30px;
+      width: 140px;
+      height: 140px; }
+  .page-about-us-news-and-community-blog .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline; }
+.page-about-us-news-and-community-blog .views-field-field-date {
+  color: #999;
+  margin-bottom: 10px; }
+
+.page-about-us-news-and-community-events .views-row {
+  background: #eff0f2;
+  margin-bottom: 10px; }
+  .page-about-us-news-and-community-events .views-row .panel-col-last {
+    padding-top: 22px;
+    width: 70%; }
+    .page-about-us-news-and-community-events .views-row .panel-col-last .views-field-field-date {
+      color: #999;
+      margin-bottom: 10px; }
+  .page-about-us-news-and-community-events .views-row .panel-col-first {
+    width: 23%; }
+    .page-about-us-news-and-community-events .views-row .panel-col-first img {
+      margin: 30px;
+      width: 140px;
+      height: 140px; }
+  .page-about-us-news-and-community-events .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline; }
+.page-about-us-news-and-community-events .views-field-field-date {
+  color: #999;
+  margin-bottom: 10px; }
+
 .page-tools-resources-pbr-journals .views-row, .page-tools-resources-patent-journals .views-row {
   background: #eff0f2;
   margin-bottom: 10px; }

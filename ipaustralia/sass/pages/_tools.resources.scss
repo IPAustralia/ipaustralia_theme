@@ -66,6 +66,74 @@
     }
 }
 
+//Blog
+ .page-about-us-news-and-community-blog {
+    .views-row {
+        background: $color_athens_gray_approx;
+        margin-bottom: 10px;
+        .panel-col-last {
+            padding-top: 22px;
+            width: 70%;
+            .views-field-field-date {
+                color: $color_mountain_mist_approx;
+                margin-bottom: 10px;
+            }
+        }
+        .panel-col-first {
+            width: 23%;
+            img {
+                margin: 30px;
+                width: 140px;
+                height: 140px;
+            }
+        }
+        .views-field-title a {
+            color: $color_firefly_approx;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+    .views-field-field-date {
+        color: $color_mountain_mist_approx;
+        margin-bottom: 10px;
+    }
+}
+
+//Events
+.page-about-us-news-and-community-events {
+    .views-row {
+        background: $color_athens_gray_approx;
+        margin-bottom: 10px;
+        .panel-col-last {
+            padding-top: 22px;
+            width: 70%;
+            .views-field-field-date {
+                color: $color_mountain_mist_approx;
+                margin-bottom: 10px;
+            }
+        }
+        .panel-col-first {
+            width: 23%;
+            img {
+                margin: 30px;
+                width: 140px;
+                height: 140px;
+            }
+        }
+        .views-field-title a {
+            color: $color_firefly_approx;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+    .views-field-field-date {
+        color: $color_mountain_mist_approx;
+        margin-bottom: 10px;
+    }
+}
+
 //pbr journals
 .page-tools-resources-pbr-journals, .page-tools-resources-patent-journals {
     .views-row {
@@ -262,14 +330,14 @@
     .views-row {
     background: $color_athens_gray_approx;
     padding: 5px 20px 15px;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
     }
 }
 .view-id-official_notices {
     .views-row {
     background: $color_athens_gray_approx;
     padding: 5px 20px 15px;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
     }
 }
 article.node-official-notice {
@@ -287,4 +355,3 @@ section#block-bean-ip-report-anchor-menu {
     @include landing_page_anchor_menu();
     @include stick_sub_menu();
 }
-
