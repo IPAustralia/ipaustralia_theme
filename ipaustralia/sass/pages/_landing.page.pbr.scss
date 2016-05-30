@@ -37,8 +37,8 @@ section#block-panels-mini-more-about-pbr-2-col-panel {
     @include landing_page_more_about('transparent-pixel-yellow.png');
 }
 
-/// tmp styling 
-section#block-bean-all-about-pbr-block {
+/// tmp styling
+section#block-bean-all-about-pbr-block, section#block-panels-mini-news-four-item-display, section#block-panels-mini-events-four-item-display, section#block-panels-mini-case-studies-four-item-display, section#block-panels-mini-official-notices-four-item-display,{
     background: $yellow;
     //background: #C3e6e8;
     padding: $gap-large 0px;
