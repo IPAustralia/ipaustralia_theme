@@ -1,0 +1,6 @@
+section#block-panels-mini-news-four-item-display, section#block-panels-mini-blog-four-item-display, section#block-panels-mini-events-four-item-display, section#block-panels-mini-case-studies-four-item-display, section#block-panels-mini-official-notices-four-item-displ {
+  padding: 80px 0px 100px;
+}
+section#block-bean-stay-informed-block {
+    @include full_width_block();
+}
