@@ -6367,32 +6367,32 @@ section#block-bean-all-about-pbr-block {
     }
 
 } */
-section#block-bean-tools-and-resources-landing-bloc {
+section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing {
   background: transparent url("../images/tablet.jpg") center center no-repeat;
   background-size: cover;
   padding: 80px 0px;
   color: white;
   border-bottom: 2px solid white; }
   @media only screen and (max-width: 992px) {
-    section#block-bean-tools-and-resources-landing-bloc {
+    section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing {
       padding: 26.66667px 0px; } }
-  section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body {
+  section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body, section#block-bean-tools-resources-landing .panels-flexible-region-first, section#block-bean-tools-resources-landing .field-name-field-bean-body {
     padding-right: 160px; }
     @media only screen and (max-width: 992px) {
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body, section#block-bean-tools-resources-landing .panels-flexible-region-first, section#block-bean-tools-resources-landing .field-name-field-bean-body {
         width: 60%;
         padding-right: 20px; } }
     @media only screen and (max-width: 640px) {
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body, section#block-bean-tools-resources-landing .panels-flexible-region-first, section#block-bean-tools-resources-landing .field-name-field-bean-body {
         width: 100%;
         padding-right: 0px; } }
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2 {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2, section#block-bean-tools-resources-landing .panels-flexible-region-first h2, section#block-bean-tools-resources-landing .field-name-field-bean-body h2 {
       color: white;
       font: normal 60px "montserratregular", sans-serif;
       font-weight: normal;
       text-transform: uppercase;
       position: relative; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2:after, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2:after {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2:after, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2:after, section#block-bean-tools-resources-landing .panels-flexible-region-first h2:after, section#block-bean-tools-resources-landing .field-name-field-bean-body h2:after {
         border-top: 6px solid white;
         content: "";
         display: block;
@@ -6400,61 +6400,674 @@ section#block-bean-tools-and-resources-landing-bloc {
         margin-bottom: 30px;
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
-        section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2 {
+        section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2, section#block-bean-tools-resources-landing .panels-flexible-region-first h2, section#block-bean-tools-resources-landing .field-name-field-bean-body h2 {
           font: normal 38px "montserratregular", sans-serif;
           word-break: break-all; } }
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first .thick, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body .thick {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first .thick, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body .thick, section#block-bean-tools-resources-landing .panels-flexible-region-first .thick, section#block-bean-tools-resources-landing .field-name-field-bean-body .thick {
       display: none; }
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first p, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body p {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first p, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body p, section#block-bean-tools-resources-landing .panels-flexible-region-first p, section#block-bean-tools-resources-landing .field-name-field-bean-body p {
       font: normal 20px "montserratregular", sans-serif;
       line-height: 1.5em;
       margin-bottom: 30px;
       font-family: robotolight; }
   @media only screen and (max-width: 992px) {
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last, section#block-bean-tools-resources-landing .panels-flexible-region-last {
       width: 40%; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .inside {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .inside, section#block-bean-tools-resources-landing .panels-flexible-region-last .inside {
         padding-left: 0px; } }
   @media only screen and (max-width: 640px) {
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last, section#block-bean-tools-resources-landing .panels-flexible-region-last {
       width: 100%; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .inside {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .inside, section#block-bean-tools-resources-landing .panels-flexible-region-last .inside {
         padding-left: 0px; } }
-  section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list {
+  section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list {
     padding: 0px;
     margin: 0px;
     color: #0d252c;
     list-style: none; }
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li {
       background: #fff;
       border: 0px;
       padding: 18px 14px;
       font: normal 16px "robotoregular", sans-serif;
       margin-top: 2px;
       font-size: 16px; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li a {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li a, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li a {
         /*font-size: 14px;*/ }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.patents {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.patents, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.trade-marks {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.trade-marks, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.trade-marks {
         border-left: 10px solid #de4326; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.designs {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.designs, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.designs {
         border-left: 10px solid #84c98f; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.pbr {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.pbr, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.pbr {
         border-left: 10px solid #f1ac1e; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.copyright {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.copyright, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.copyright {
         border-left: 10px solid #704579; }
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li {
       border-left-color: #84c98f !important;
       padding: 20px;
       background: white url("../images/arrow-right-online-services.png") right center no-repeat; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li:last-child {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li:last-child, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li:last-child {
         /*background-image: none;*/ }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li .sml-link-icon-more {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li .sml-link-icon-more, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li .sml-link-icon-more {
         display: none; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li a {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li a, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li a {
         color: #0d252c;
         padding-right: 10px; }
+
+#block-bean-tools-resources-selector {
+  padding: 80px 10px;
+  text-align: center;
+  color: white;
+  background-color: #612166;
+  font: normal 20px "robotolight", sans-serif;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+  @media only screen and (max-width: 768px) {
+    #block-bean-tools-resources-selector {
+      padding: 40px 0px; } }
+  #block-bean-tools-resources-selector h2 {
+    color: white; }
+  #block-bean-tools-resources-selector .bean-basic-content {
+    max-width: 80%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 768px) {
+      #block-bean-tools-resources-selector .bean-basic-content {
+        max-width: 90%; } }
+  #block-bean-tools-resources-selector .field-items p a {
+    border: 2px solid white;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px;
+    text-decoration: none;
+    margin-top: 40px; }
+    #block-bean-tools-resources-selector .field-items p a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    #block-bean-tools-resources-selector .field-items p a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
+    #block-bean-tools-resources-selector .field-items p a:hover {
+      border-color: white; }
+
+section#block-bean-tools-resources-useful-links, section#block-bean-tools-resources-new-to-ip {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+section#block-bean-tools-resources-ip-professionals {
+  padding: 80px 0px 100px;
+  background: transparent url("../images/tablet_v2.jpg") center center no-repeat;
+  background-size: cover;
+  text-align: left; }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-tools-resources-ip-professionals {
+      padding: 40px 0px 60px; } }
+  section#block-bean-tools-resources-ip-professionals .panel-flexible {
+    text-align: center; }
+    section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+      width: 25%; }
+      @media only screen and (max-width: 1018px) {
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+          width: 50%; }
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region:nth-child(3) {
+            clear: both; } }
+      @media only screen and (max-width: 480px) {
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+          width: 100%; } }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+        background: #fff none repeat scroll 0 0;
+        margin: 0 10px;
+        padding-bottom: 20px;
+        padding: 0 0 20px;
+        border-bottom: 6px solid #30aeb6;
+        /*min-height: 500px;*/ }
+        @media only screen and (max-width: 480px) {
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+            margin-left: 0px;
+            margin-bottom: -10px;
+            margin-right: 0px;
+            border-bottom: 0px;
+            background: white url("../images/arrow-down-charcoal-transparent.png") 95% 31px no-repeat;
+            padding: 0px; }
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside.open {
+              background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
+              padding: 0 0 20px;
+              border-bottom: 6px solid #30aeb6; } }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+          margin-top: 40px;
+          display: inline-block; }
+          @media only screen and (max-width: 768px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+              margin: 13px;
+              float: left;
+              width: 45px;
+              height: 45px; } }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+          font-size: 18px;
+          overflow: hidden;
+          padding: 0 10px;
+          text-align: center;
+          text-overflow: ellipsis;
+          text-transform: uppercase;
+          white-space: nowrap;
+          width: 100%; }
+          @media only screen and (max-width: 992px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              height: 60px;
+              line-height: 25px; } }
+          @media only screen and (max-width: 768px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              margin: 0px;
+              line-height: 77px;
+              text-align: left;
+              position: absolute;
+              margin: -74px 0 0 70px;
+              height: 73px;
+              overflow: hidden;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              width: 150px; } }
+          @media only screen and (max-width: 780px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              /*width:200px;*/ } }
+          @media only screen and (max-width: 680px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              width: 150px; } }
+          @media only screen and (max-width: 570px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              width: 100px; } }
+          @media only screen and (max-width: 480px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              width: 63%; } }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+          list-style: none; }
+          @media only screen and (max-width: 768px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+              display: block; } }
+          @media only screen and (max-width: 480px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+              display: none; } }
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li {
+            text-align: left; }
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li a {
+              text-decoration: underline; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .bs-vert-callout {
+          min-height: auto; }
+    section#block-bean-tools-resources-ip-professionals .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region {
+      width: 100%;
+      color: #fff; }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region h2 {
+        margin-bottom: 40px;
+        color: #fff; }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+        background: transparent;
+        font: normal 20px "robotolight", sans-serif;
+        padding-bottom: 40px;
+        min-height: 10px;
+        border-bottom: 0px; }
+    section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region {
+      width: 100%; }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside {
+        background: transparent;
+        font: normal 20px "robotolight", sans-serif;
+        min-height: 10px;
+        border-bottom: 0px; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
+          margin-top: 40px;
+          border: 2px solid white;
+          background: transparent;
+          padding: 16px 35px 16px;
+          display: inline-block;
+          border-radius: 100px;
+          color: white;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-family: "montserratregular", sans-serif;
+          line-height: 19px;
+          text-decoration: none;
+          border-color: white;
+          cursor: pointer; }
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
+            background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+            display: inline-block;
+            width: 9px;
+            height: 15px;
+            content: '';
+            margin: 0 0 -2px 10px; }
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
+            text-decoration: none;
+            background: transparent;
+            border: 2px solid #0d252c; }
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
+            border-color: white; }
+    section#block-bean-tools-resources-ip-professionals .panel-flexible ul {
+      padding: 0px;
+      margin: 0px;
+      color: #0d252c;
+      list-style: none;
+      padding-top: 15px; }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible ul li {
+        background: #fff;
+        border: 0px;
+        padding: 18px 14px;
+        font: normal 16px "robotoregular", sans-serif;
+        margin-top: 2px;
+        font-size: 16px; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li a {
+          /*font-size: 14px;*/ }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.patents {
+          border-left: 10px solid #30aeb6; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.trade-marks {
+          border-left: 10px solid #de4326; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.designs {
+          border-left: 10px solid #84c98f; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.pbr {
+          border-left: 10px solid #f1ac1e; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.copyright {
+          border-left: 10px solid #704579; }
+      @media only screen and (max-width: 480px) {
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul {
+          /*display:none;*/ } }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible ul li {
+        /*margin-top: 18px;*/
+        padding: 0px 30px 15px 50px;
+        /*margin-bottom: 18px;*/
+        font-size: 16px;
+        background: transparent url("../images/link-tool.png") 17px 2px no-repeat;
+        line-height: 22px; }
+
+section#block-bean-tools-resources-ip-professionals .bs-vert-callout {
+  background: #fff;
+  padding: 5px;
+  min-height: 685px;
+  border-bottom: 5px solid; }
+
+section#block-bean-tools-resources-ip-professionals h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px; }
+
+section#block-bean-tools-resources-ip-professionals ul li {
+  text-align: left; }
+
+section#block-bean-tools-resources-ip-professionals {
+  background: transparent url("../images/tablet_v2.jpg") center center no-repeat;
+  background-size: cover; }
+  section#block-bean-tools-resources-ip-professionals .panel-flexible {
+    text-align: center; }
+    section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+      width: 25%; }
+      @media only screen and (max-width: 1018px) {
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+          width: 50%; }
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region:nth-child(3) {
+            clear: both; } }
+      @media only screen and (max-width: 480px) {
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region {
+          width: 100%; } }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+        background: #fff none repeat scroll 0 0;
+        margin: 0 10px;
+        padding-bottom: 20px;
+        padding: 0 0 20px;
+        border-bottom: 6px solid #30aeb6;
+        /*min-height: 500px;*/ }
+        @media only screen and (max-width: 480px) {
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside {
+            margin-left: 0px;
+            margin-bottom: -10px;
+            margin-right: 0px;
+            border-bottom: 0px;
+            background: white url("../images/arrow-down-charcoal-transparent.png") 95% 31px no-repeat;
+            padding: 0px; }
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside.open {
+              background: white url("../images/arrow-up-charcoal-transparent.png") 95% 31px no-repeat;
+              padding: 0 0 20px;
+              border-bottom: 6px solid #30aeb6; } }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+          margin-top: 40px;
+          display: inline-block; }
+          @media only screen and (max-width: 768px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .file-full, section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .media-element {
+              margin: 13px;
+              float: left;
+              width: 45px;
+              height: 45px; } }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+          font-size: 18px;
+          overflow: hidden;
+          padding: 0 10px;
+          text-align: center;
+          text-overflow: ellipsis;
+          text-transform: uppercase;
+          white-space: nowrap;
+          width: 100%; }
+          @media only screen and (max-width: 992px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              height: 60px;
+              line-height: 25px; } }
+          @media only screen and (max-width: 768px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              margin: 0px;
+              line-height: 77px;
+              text-align: left;
+              position: absolute;
+              margin: -74px 0 0 70px;
+              height: 73px;
+              overflow: hidden;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              width: 150px; } }
+          @media only screen and (max-width: 780px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              /*width:200px;*/ } }
+          @media only screen and (max-width: 680px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              width: 150px; } }
+          @media only screen and (max-width: 570px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              width: 100px; } }
+          @media only screen and (max-width: 480px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside h3 {
+              width: 63%; } }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+          list-style: none; }
+          @media only screen and (max-width: 768px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+              display: block; } }
+          @media only screen and (max-width: 480px) {
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul {
+              display: none; } }
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li {
+            text-align: left; }
+            section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside ul li a {
+              text-decoration: underline; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .panels-flexible-row-inside .panels-flexible-region .inside .bs-vert-callout {
+          min-height: auto; }
+    section#block-bean-tools-resources-ip-professionals .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region {
+      width: 100%;
+      color: #fff; }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region h2 {
+        margin-bottom: 40px;
+        color: #fff; }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible .Top .panels-flexible-row-inside .panels-flexible-region .inside {
+        background: transparent;
+        font: normal 20px "robotolight", sans-serif;
+        padding-bottom: 40px;
+        min-height: 10px;
+        border-bottom: 0px; }
+    section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region {
+      width: 100%; }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside {
+        background: transparent;
+        font: normal 20px "robotolight", sans-serif;
+        min-height: 10px;
+        border-bottom: 0px; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a {
+          margin-top: 40px;
+          border: 2px solid white;
+          background: transparent;
+          padding: 16px 35px 16px;
+          display: inline-block;
+          border-radius: 100px;
+          color: white;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-family: "montserratregular", sans-serif;
+          line-height: 19px;
+          text-decoration: none;
+          border-color: white;
+          cursor: pointer; }
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:after {
+            background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+            display: inline-block;
+            width: 9px;
+            height: 15px;
+            content: '';
+            margin: 0 0 -2px 10px; }
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a:hover {
+            text-decoration: none;
+            background: transparent;
+            border: 2px solid #0d252c; }
+          section#block-bean-tools-resources-ip-professionals .panel-flexible .Bottom .panels-flexible-row-inside .panels-flexible-region .inside a :hover {
+            border-color: white; }
+    section#block-bean-tools-resources-ip-professionals .panel-flexible ul {
+      padding: 0px;
+      margin: 0px;
+      color: #0d252c;
+      list-style: none;
+      padding-top: 15px; }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible ul li {
+        background: #fff;
+        border: 0px;
+        padding: 18px 14px;
+        font: normal 16px "robotoregular", sans-serif;
+        margin-top: 2px;
+        font-size: 16px; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li a {
+          /*font-size: 14px;*/ }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.patents {
+          border-left: 10px solid #30aeb6; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.trade-marks {
+          border-left: 10px solid #de4326; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.designs {
+          border-left: 10px solid #84c98f; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.pbr {
+          border-left: 10px solid #f1ac1e; }
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.copyright {
+          border-left: 10px solid #704579; }
+      @media only screen and (max-width: 480px) {
+        section#block-bean-tools-resources-ip-professionals .panel-flexible ul {
+          /*display:none;*/ } }
+      section#block-bean-tools-resources-ip-professionals .panel-flexible ul li {
+        /*margin-top: 18px;*/
+        padding: 0px 30px 15px 50px;
+        /*margin-bottom: 18px;*/
+        font-size: 16px;
+        background: transparent url("../images/link-tool.png") 17px 2px no-repeat;
+        line-height: 22px; }
+
+section#block-bean-tools-resources-new-to-ip {
+  padding: 0px;
+  margin: 0px;
+  color: #0d252c;
+  list-style: none;
+  padding: 80px 0px 100px;
+  background: #eff0f2;
+  /*div[]*/ }
+  section#block-bean-tools-resources-new-to-ip li {
+    background: #fff;
+    border: 0px;
+    padding: 18px 14px;
+    font: normal 16px "robotoregular", sans-serif;
+    margin-top: 2px;
+    font-size: 16px; }
+    section#block-bean-tools-resources-new-to-ip li a {
+      /*font-size: 14px;*/ }
+    section#block-bean-tools-resources-new-to-ip li.patents {
+      border-left: 10px solid #30aeb6;
+      /*font-size: 15px;*/
+      border-left: 0px solid #30aeb6;
+      padding-left: 90px;
+      background: #fff url("../images/block-patent.png") left center no-repeat; }
+    section#block-bean-tools-resources-new-to-ip li.trade-marks {
+      border-left: 10px solid #de4326;
+      /*font-size: 15px;*/
+      border-left: 0px solid #de4326;
+      padding-left: 90px;
+      background: #fff url("../images/block-tm.png") left center no-repeat; }
+    section#block-bean-tools-resources-new-to-ip li.designs {
+      border-left: 10px solid #84c98f;
+      /*font-size: 15px;*/
+      border-left: 0px solid #84c98f;
+      padding-left: 90px;
+      background: #fff url("../images/block-design.png") left center no-repeat; }
+    section#block-bean-tools-resources-new-to-ip li.pbr {
+      border-left: 10px solid #f1ac1e;
+      /*font-size: 15px;*/
+      border-left: 0px solid #f1ac1e;
+      padding-left: 90px;
+      background: #fff url("../images/block-pbr.png") left center no-repeat; }
+    section#block-bean-tools-resources-new-to-ip li.copyright {
+      border-left: 10px solid #704579;
+      /*font-size: 15px;*/
+      border-left: 0px solid #704579;
+      padding-left: 90px;
+      background: #fff url("../images/block-copyright.png") left center no-repeat; }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-tools-resources-new-to-ip {
+      padding: 40px 0px 80px; } }
+  section#block-bean-tools-resources-new-to-ip ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-tools-resources-new-to-ip ul li {
+      padding: 0px 0 0 30px;
+      margin: 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 0px; }
+  section#block-bean-tools-resources-new-to-ip .Top {
+    margin-bottom: 30px; }
+    section#block-bean-tools-resources-new-to-ip .Top br {
+      display: none; }
+    section#block-bean-tools-resources-new-to-ip .Top h2 {
+      margin-bottom: 30px; }
+    section#block-bean-tools-resources-new-to-ip .Top p {
+      font-size: 1.3em;
+      font-family: robotolight; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+      width: 50%;
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+      width: 100%;
+      margin-bottom: 10px; } }
+  section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+    margin: 0 10px;
+    padding: 40px;
+    background: #fff;
+    height: 350px;
+    overflow-y: hidden; }
+    @media only screen and (max-width: 768px) {
+      section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+        height: 500px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+        height: auto !important;
+        padding: 20px 30px;
+        margin: 0px; } }
+    @media only screen and (max-width: 480px) {
+      section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+        padding: 10px 20px; } }
+  section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+    font-size: 22px;
+    margin: 0px;
+    font-weight: bold; }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
+        padding-right: 30px;
+        line-height: 30px;
+        font-size: 1.2em;
+        background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+        cursor: pointer; } }
+    section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+      border-top: 4px solid #b6bec0;
+      content: "";
+      display: block;
+      width: 100px;
+      margin: 15px 0 40px 2px; }
+      @media only screen and (max-width: 640px) {
+        section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
+          margin: 5px 0 10px 2px;
+          border-top: 3px solid #b6bec0; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
+      background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
+      display: none; } }
+  section#block-bean-tools-resources-new-to-ip div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
+    display: none; }
+  section#block-bean-tools-resources-new-to-ip .panels-flexible-row-last a {
+    margin-top: 40px;
+    border: 2px solid white;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px;
+    text-decoration: none; }
+    section#block-bean-tools-resources-new-to-ip .panels-flexible-row-last a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-tools-resources-new-to-ip .panels-flexible-row-last a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-tools-resources-new-to-ip .group-right {
+      float: left;
+      margin-top: 20px; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-tools-resources-new-to-ip .group-right {
+      margin-top: 0px; } }
+
+section#block-bean-tools-resources-new-to-ip ul li {
+  background: white url("../images/arrow-right-online-services.png") right center no-repeat;
+  border-left: 10px solid #612166;
+  padding-left: 20px;
+  margin-bottom: 5px; }
+
+section#block-bean-tools-resources-new-to-ip li.patents {
+  background: white url("../images/arrow-right-online-services.png") right center no-repeat;
+  border-left: 10px solid #30aeb6;
+  padding-left: 20px;
+  margin-bottom: 5px; }
+
+section#block-bean-tools-resources-new-to-ip li.trade-marks {
+  background: white url("../images/arrow-right-online-services.png") right center no-repeat;
+  border-left: 10px solid #de4326;
+  padding-left: 20px;
+  margin-bottom: 5px; }
+
+section#block-bean-tools-resources-new-to-ip li.designs {
+  background: white url("../images/arrow-right-online-services.png") right center no-repeat;
+  border-left: 10px solid #84c98f;
+  padding-left: 20px;
+  margin-bottom: 5px; }
+
+section#block-bean-tools-resources-new-to-ip li.pbr {
+  background: white url("../images/arrow-right-online-services.png") right center no-repeat;
+  border-left: 10px solid #f1ac1e;
+  padding-left: 20px;
+  margin-bottom: 5px; }
+
+section#block-bean-tools-resources-new-to-ip ul li {
+  padding: 20px;
+  background: white url("../images/arrow-right-online-services.png") right center no-repeat; }
 
 section#block-quicktabs-tools-and-resources {
   background: #eff0f2;
