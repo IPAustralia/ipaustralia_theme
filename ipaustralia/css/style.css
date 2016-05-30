@@ -6363,28 +6363,28 @@ section#block-panels-mini-more-about-pbr-2-col-panel {
     section#block-panels-mini-more-about-pbr-2-col-panel .container img {
       /*box-shadow: 0 0 2px #000;*/ }
 
-section#block-bean-all-about-pbr-block, section#block-panels-mini-news-four-item-display, section#block-panels-mini-events-four-item-display, section#block-panels-mini-case-studies-four-item-display, section#block-panels-mini-official-notices-four-item-display {
+section#block-bean-all-about-pbr-block {
   background: #f1ac1e;
   padding: 80px 0px;
   text-align: center; }
-  section#block-bean-all-about-pbr-block .panels-flexible-region-inside, section#block-panels-mini-news-four-item-display .panels-flexible-region-inside, section#block-panels-mini-events-four-item-display .panels-flexible-region-inside, section#block-panels-mini-case-studies-four-item-display .panels-flexible-region-inside, section#block-panels-mini-official-notices-four-item-display .panels-flexible-region-inside {
+  section#block-bean-all-about-pbr-block .panels-flexible-region-inside {
     /*         margin: 0 20px;
             padding: 40px;
             background: $white;
             height: 350px;
             overflow-y: hidden; */ }
     @media only screen and (max-width: 768px) {
-      section#block-bean-all-about-pbr-block .panels-flexible-region-inside .panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-4th_row_left, section#block-panels-mini-news-four-item-display .panels-flexible-region-inside .panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-4th_row_left, section#block-panels-mini-events-four-item-display .panels-flexible-region-inside .panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-4th_row_left, section#block-panels-mini-case-studies-four-item-display .panels-flexible-region-inside .panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-4th_row_left, section#block-panels-mini-official-notices-four-item-display .panels-flexible-region-inside .panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-4th_row_left {
+      section#block-bean-all-about-pbr-block .panels-flexible-region-inside .panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-4th_row_left {
         width: 100%;
         float: none; } }
-    section#block-bean-all-about-pbr-block .panels-flexible-region-inside h2, section#block-panels-mini-news-four-item-display .panels-flexible-region-inside h2, section#block-panels-mini-events-four-item-display .panels-flexible-region-inside h2, section#block-panels-mini-case-studies-four-item-display .panels-flexible-region-inside h2, section#block-panels-mini-official-notices-four-item-display .panels-flexible-region-inside h2 {
+    section#block-bean-all-about-pbr-block .panels-flexible-region-inside h2 {
       color: #fff;
       padding: 30px; }
-    section#block-bean-all-about-pbr-block .panels-flexible-region-inside ul, section#block-panels-mini-news-four-item-display .panels-flexible-region-inside ul, section#block-panels-mini-events-four-item-display .panels-flexible-region-inside ul, section#block-panels-mini-case-studies-four-item-display .panels-flexible-region-inside ul, section#block-panels-mini-official-notices-four-item-display .panels-flexible-region-inside ul {
+    section#block-bean-all-about-pbr-block .panels-flexible-region-inside ul {
       background: #fff;
       padding: 20px;
       list-style: none; }
-      section#block-bean-all-about-pbr-block .panels-flexible-region-inside ul li.main-list-item-pbr ul li, section#block-panels-mini-news-four-item-display .panels-flexible-region-inside ul li.main-list-item-pbr ul li, section#block-panels-mini-events-four-item-display .panels-flexible-region-inside ul li.main-list-item-pbr ul li, section#block-panels-mini-case-studies-four-item-display .panels-flexible-region-inside ul li.main-list-item-pbr ul li, section#block-panels-mini-official-notices-four-item-display .panels-flexible-region-inside ul li.main-list-item-pbr ul li {
+      section#block-bean-all-about-pbr-block .panels-flexible-region-inside ul li.main-list-item-pbr ul li {
         text-align: left;
         padding: 0px 0 0 30px;
         margin: 0px;
@@ -6463,6 +6463,32 @@ section#block-bean-stay-informed-block {
       border: 2px solid #0d252c; }
     section#block-bean-stay-informed-block .field-items p a:hover {
       border-color: white; }
+
+section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td {
+  width: 25%;
+  padding: 0px 10px;
+  vertical-align: top;
+  position: relative; }
+
+section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td img {
+  height: 260px;
+  width: 100%; }
+
+section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td .views-field-title {
+  font: normal 18px "montserratregular", sans-serif;
+  font-size: 21px;
+  height: 100px;
+  letter-spacing: -1.2px;
+  line-height: 23px;
+  overflow: hidden;
+  margin-top: -100px;
+  line-height: 20px; }
+
+section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td .views-field-title, section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td .views-field-body {
+  background: transparent url("../images/transparent-pixel-yellow.png") center center repeat;
+  color: #fff;
+  padding: 20px;
+  position: relative; }
 
 section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing {
   background: transparent url("../images/tablet.jpg") center center no-repeat;

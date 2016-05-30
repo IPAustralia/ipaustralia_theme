@@ -4,3 +4,35 @@ section#block-panels-mini-news-four-item-display, section#block-panels-mini-blog
 section#block-bean-stay-informed-block {
     @include full_width_block();
 }
+
+section#block-panels-mini-news-four-item-display, section#block-panels-mini-events-four-item-display, section#block-panels-mini-case-studies-four-item-display, section#block-panels-mini-official-notices-four-item-display {
+
+}
+
+section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td {
+  width: 25%;
+  padding: 0px 10px;
+  vertical-align: top;
+  position:relative;
+}
+
+section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td img {
+  height:260px;
+  width:100%;
+}
+section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td .views-field-title {
+  font: normal 18px "montserratregular", sans-serif;
+font-size: 21px;
+height: 100px;
+letter-spacing: -1.2px;
+line-height: 23px;
+overflow: hidden;
+margin-top: -100px;
+line-height: 20px;
+}
+section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td .views-field-title, section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td .views-field-body {
+  background: transparent url("../images/transparent-pixel-yellow.png") center center repeat;
+      color: #fff;
+      padding: 20px;
+      position: relative;
+}
