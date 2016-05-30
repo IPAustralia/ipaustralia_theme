@@ -105,7 +105,7 @@ function toolsAndResourcesTabsCheck() {
 function resizing() {
     /*
      *  Do action on resizing window or document
-     *  This is normally is used on mobile devices when rotating 
+     *  This is normally is used on mobile devices when rotating
      */
     removeJsAppliedStyles();
     equaliseElementsHeight();
@@ -124,6 +124,8 @@ function equaliseElementsHeight() {
     equalHeight('section#block-bean-tools-and-resources-trade-mark .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-bean-tools-and-resources-designs .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-bean-tools-and-resources-pbr .panels-flexible-region-inside'); // landing page tools and resources
+
+    equalHeight('section#block-bean-tools-and-resources-ip-professionals .panels-flexible-region-inside'); // landing page tools and resources
 
     equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panels-flexible-region-inside'); // landing page tools and resources
@@ -780,14 +782,14 @@ function equalHeight($container) {
  \__ \ | | (__|   < _ | \__ \
  |___/_|_|\___|_|\_(_)/ |___/
  |__/
- 
+
  Version: 1.5.9
  Author: Ken Wheeler
  Website: http://kenwheeler.github.io
  Docs: http://kenwheeler.github.io/slick
  Repo: http://github.com/kenwheeler/slick
  Issues: http://github.com/kenwheeler/slick/issues
- 
+
  */
 !function (a) {
     "use strict";
