@@ -125,7 +125,7 @@ function equaliseElementsHeight() {
     equalHeight('section#block-bean-tools-and-resources-designs .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-bean-tools-and-resources-pbr .panels-flexible-region-inside'); // landing page tools and resources
 
-    equalHeight('section#block-bean-tools-and-resources-ip-professionals .panels-flexible-region-inside'); // landing page tools and resources
+    equalHeight('section#block-bean-tools-resources-ip-professionals .panels-flexible-region-inside'); // landing page tools and resources
 
     equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panels-flexible-region-inside'); // landing page tools and resources
