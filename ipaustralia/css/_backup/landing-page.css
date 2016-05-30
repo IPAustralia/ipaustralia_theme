@@ -1276,13 +1276,13 @@ background-size: 100% auto;
 }
 /* end about us intro block */
 /* start about us in page nav */
-#block-bean-about-us-anchor-menu {
+#block-bean-about-us-anchor-menu, #block-bean-news-and-community-landing-page- {
   height:72px;
   text-transform:uppercase;
   padding-top:25px;
   text-align:center;
 }
-#block-bean-about-us-anchor-menu a {
+#block-bean-about-us-anchor-menu a, #block-bean-news-and-community-landing-page- a {
   color:#0d252c;
 }
 /* end about us in page nav */
