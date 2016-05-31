@@ -160,7 +160,7 @@ padding: 6px 20px;
             }
             div[class*="body"] {
                 @include news-community-texts-four;
-                height: 240px;
+                height: 140px;
                 overflow: hidden;
                 display: none;
                 text-overflow: ellipsis;
