@@ -88,7 +88,7 @@ padding: 6px 20px;
                 }
             }
             div[class*="date"] {
-                @include news-community-texts;
+                @include news-community-texts-four;
                 padding-top:23px;
                 height:44px;
                 text-overflow: ellipsis;
@@ -99,7 +99,7 @@ padding: 6px 20px;
                 margin-top: -140px;
             }
             div[class*="title"],  div[class*="location"]{
-                @include news-community-texts;
+                @include news-community-texts-four;
                 clear: both;
                 font:$title-h5;
                 font-family:$font-title-normal;
@@ -114,10 +114,10 @@ padding: 6px 20px;
                 }
             }
             div[class*="location"] {
-                @include news-community-texts;
+                @include news-community-texts-four;
             }
             div[class*="body"] {
-                @include news-community-texts;
+                @include news-community-texts-four;
                 height: 240px;
                 overflow: hidden;
                 display: none;
