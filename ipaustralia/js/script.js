@@ -633,6 +633,7 @@ function stickyMenu() {
         jQuery("#block-bean-understanding-ip-anchor-block").trigger("sticky_kit:detach");
         jQuery("#block-bean-about-us-anchor-menu").trigger("sticky_kit:detach");
         jQuery("#block-bean-ip-report-anchor-menu").trigger("sticky_kit:detach");
+        jQuery("#block-bean-news-and-community-landing-page-").trigger("sticky_kit:detach");
     } else {
         jQuery(".navbar-default").stick_in_parent();
         jQuery("#block-bean-patents-anchor-menu-3").stick_in_parent();
@@ -643,6 +644,8 @@ function stickyMenu() {
         jQuery("#block-bean-understanding-ip-anchor-block").stick_in_parent();
         jQuery("#block-bean-about-us-anchor-menu").stick_in_parent();
         jQuery("#block-bean-ip-report-anchor-menu").stick_in_parent();
+        jQuery("#block-bean-news-and-community-landing-page-").stick_in_parent();
+
     }
 }
 
