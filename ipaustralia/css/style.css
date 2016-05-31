@@ -6490,20 +6490,20 @@ section#block-panels-mini-news-four-item-display .container > div .center-wrappe
   padding: 20px;
   position: relative; }
 
-section#block-panels-mini-news-four-item-display {
+section#block-panels-mini-news-four-item-display, section#block-panels-mini-blog-four-item-display, section#block-panels-mini-events-four-item-display, section#block-panels-mini-case-studies-four-item-display, section#block-panels-mini-official-notices-four-item-displ {
   color: #0d252c;
   margin-left: 0px !important; }
-  section#block-panels-mini-news-four-item-display .views-view-grid td {
+  section#block-panels-mini-news-four-item-display .views-view-grid td, section#block-panels-mini-blog-four-item-display .views-view-grid td, section#block-panels-mini-events-four-item-display .views-view-grid td, section#block-panels-mini-case-studies-four-item-display .views-view-grid td, section#block-panels-mini-official-notices-four-item-displ .views-view-grid td {
     position: relative;
     vertical-align: top;
     width: 25%; }
-    section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="image"] {
+    section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="image"], section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="image"], section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="image"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="image"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="image"] {
       position: relative;
       z-index: 10; }
-      section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="image"] img {
+      section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="image"] img, section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="image"] img, section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="image"] img, section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="image"] img, section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="image"] img {
         display: inline-block;
         height: 280px; }
-    section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="date"] {
+    section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="date"], section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="date"], section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="date"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="date"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="date"] {
       text-align: left;
       background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
       padding: 0px 20px;
@@ -6518,9 +6518,9 @@ section#block-panels-mini-news-four-item-display {
       text-overflow: ellipsis;
       overflow: hidden;
       margin-top: -140px; }
-      section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="date"] span[class*="label "] {
+      section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="date"] span[class*="label "], section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="date"] span[class*="label "], section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="date"] span[class*="label "], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="date"] span[class*="label "], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="date"] span[class*="label "] {
         float: left; }
-    section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="title"], section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="location"] {
+    section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="title"], section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="location"], section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="title"], section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="location"], section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="title"], section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="location"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="title"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="location"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="title"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="location"] {
       text-align: left;
       background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
       padding: 0px 20px;
@@ -6538,10 +6538,10 @@ section#block-panels-mini-news-four-item-display {
       text-overflow: ellipsis;
       text-decoration: underline;
       padding: 6px 20px; }
-      section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="title"] a, section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="location"] a {
+      section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="title"] a, section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="location"] a, section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="title"] a, section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="location"] a, section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="title"] a, section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="location"] a, section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="title"] a, section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="location"] a, section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="title"] a, section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="location"] a {
         color: white;
         text-decoration: underline; }
-    section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="location"] {
+    section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="location"], section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="location"], section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="location"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="location"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="location"] {
       text-align: left;
       background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
       padding: 0px 20px;
@@ -6551,7 +6551,7 @@ section#block-panels-mini-news-four-item-display {
       display: block;
       position: relative;
       z-index: 100; }
-    section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="body"] {
+    section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="body"], section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="body"], section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="body"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="body"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="body"] {
       text-align: left;
       background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
       padding: 0px 20px;
@@ -6565,10 +6565,26 @@ section#block-panels-mini-news-four-item-display {
       overflow: hidden;
       display: none;
       text-overflow: ellipsis; }
-    section#block-panels-mini-news-four-item-display .views-view-grid td:hover div[class*="date"] {
+    section#block-panels-mini-news-four-item-display .views-view-grid td:hover div[class*="date"], section#block-panels-mini-blog-four-item-display .views-view-grid td:hover div[class*="date"], section#block-panels-mini-events-four-item-display .views-view-grid td:hover div[class*="date"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td:hover div[class*="date"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td:hover div[class*="date"] {
       margin-top: -280px; }
-    section#block-panels-mini-news-four-item-display .views-view-grid td:hover div[class*="body"] {
+    section#block-panels-mini-news-four-item-display .views-view-grid td:hover div[class*="body"], section#block-panels-mini-blog-four-item-display .views-view-grid td:hover div[class*="body"], section#block-panels-mini-events-four-item-display .views-view-grid td:hover div[class*="body"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td:hover div[class*="body"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td:hover div[class*="body"] {
       display: block; }
+
+section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="date"] {
+  text-align: left;
+  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
+  padding: 0px 20px;
+  margin: 0 auto;
+  color: white;
+  width: 280px;
+  display: block;
+  position: relative;
+  z-index: 100;
+  padding-top: 23px;
+  height: 44px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: -140px; }
 
 section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing {
   background: transparent url("../images/tablet.jpg") center center no-repeat;
