@@ -6485,6 +6485,44 @@ section#block-bean-stay-informed-block {
   margin-top: -100px;
   line-height: 20px; }
 
+.page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="title"], .page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="location"], .page-node-61311 section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="title"], .page-node-61311 section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="location"], .page-node-61311 section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="title"] {
+  text-align: left;
+  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
+  padding: 0px 20px;
+  margin: 0 auto;
+  color: white;
+  width: 280px;
+  display: block;
+  position: relative;
+  z-index: 100;
+  clear: both;
+  font: normal 20px "montserratbold", sans-serif;
+  font-family: "montserratregular", sans-serif;
+  height: 95px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: underline;
+  padding: 6px 20px; }
+
+.page-node-61311 section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="location"], .page-node-61311 section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="title"], .page-node-61311 section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="location"], .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="title"], .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="location"] {
+  text-align: left;
+  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
+  padding: 0px 20px;
+  margin: 0 auto;
+  color: white;
+  width: 280px;
+  display: block;
+  position: relative;
+  z-index: 100;
+  clear: both;
+  font: normal 20px "montserratbold", sans-serif;
+  font-family: "montserratregular", sans-serif;
+  height: 95px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: underline;
+  padding: 6px 20px; }
+
 .page-node-61311 section#block-panels-mini-news-four-item-display, .page-node-61311 section#block-panels-mini-blog-four-item-display, .page-node-61311 section#block-panels-mini-events-four-item-display, .page-node-61311 section#block-panels-mini-case-studies-four-item-display, .page-node-61311 section#block-panels-mini-official-notices-four-item-displ {
   color: #0d252c;
   margin-left: 0px !important; }
