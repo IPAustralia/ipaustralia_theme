@@ -36,3 +36,71 @@ section#block-panels-mini-more-about-pbr-2-col-panel .container > div .center-wr
       padding: 20px;
       position: relative;
 }
+
+
+section#block-panels-mini-more-about-pbr-2-col-panel {
+    color: $charcoal;
+    margin-left:0px !important;
+    .views-view-grid {
+        td {
+            position: relative;
+            vertical-align: top;
+            width: 25%;
+
+
+            div[class*="image"] {
+                position:relative;
+                z-index:10;
+                img {
+                    display: inline-block;
+                    height: 280px;
+                }
+            }
+            div[class*="date"] {
+                @include news-community-texts;
+                padding-top:23px;
+                height:44px;
+                text-overflow: ellipsis;
+                overflow:hidden;
+                span[class*="label "] {
+                    float: left;
+                }
+                margin-top: -140px;
+            }
+            div[class*="title"],  div[class*="location"]{
+                @include news-community-texts;
+                clear: both;
+                font:$title-h5;
+                font-family:$font-title-normal;
+                height:95px !important;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-decoration: underline;
+                padding:6px 20px;
+                a {
+                    color:white;
+                    text-decoration: underline;
+                }
+            }
+            div[class*="location"] {
+                @include news-community-texts;
+            }
+            div[class*="body"] {
+                @include news-community-texts;
+                height: 240px;
+                overflow: hidden;
+                display: none;
+                text-overflow: ellipsis;
+
+            }
+            &:hover {
+                div[class*="date"] {
+                    margin-top: -280px
+                }
+                div[class*="body"] {
+                    display: block;
+                }
+            }
+        }
+    }
+}
