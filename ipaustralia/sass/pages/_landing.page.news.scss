@@ -5,6 +5,8 @@ section#block-bean-stay-informed-block {
     @include full_width_block();
 }
 
+
+
 .page-node-61311 section#block-panels-mini-news-four-item-display .container > div .center-wrapper table td, .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td {
   width: 25%;
   padding: 0px 10px;
@@ -77,6 +79,7 @@ padding: 6px 20px;
             position: relative;
             vertical-align: top;
             width: 25%;
+            padding-right:15px;
 
 
             div[class*="image"] {
