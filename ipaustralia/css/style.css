@@ -6464,6 +6464,9 @@ section#block-bean-stay-informed-block {
     section#block-bean-stay-informed-block .field-items p a:hover {
       border-color: white; }
 
+section#block-panels-mini-case-studies-four-item-display, section#block-panels-mini-blog-four-item-display {
+  background-color: #eff0f2; }
+
 .page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="body"], .page-node-61311 section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="body"], .page-node-61311 section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="body"], .page-node-61311 section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="body"], .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="body"] {
   text-align: left;
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
