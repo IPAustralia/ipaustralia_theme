@@ -3108,7 +3108,7 @@ section#block-bean-ip-report-anchor-menu.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 100; }
+  z-index: 200; }
 
 @media only screen and (max-width: 640px) {
   section#block-bean-news-and-community-landing-page- .panels-flexible-region, section#block-bean-news-and-community-landing-page- .bean-three-column-block {
@@ -3135,7 +3135,7 @@ section#block-bean-news-and-community-landing-page-.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 100; }
+  z-index: 200; }
 
 section#block-bean-about-us-landing-block {
   background: transparent url("../images/contact-us-banner.jpg") center center no-repeat;
@@ -3251,7 +3251,7 @@ section#block-bean-about-us-anchor-menu.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 100; }
+  z-index: 200; }
 
 section#block-bean-what-we-do-block {
   background: #eff0f2;
@@ -3935,7 +3935,7 @@ section#block-bean-patents-anchor-menu-3.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 100; }
+  z-index: 200; }
 
 section#block-bean-understanding-patents-block {
   background: #eff0f2;
@@ -4569,7 +4569,7 @@ section#block-bean-trade-marks-anchor-menu.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 100; }
+  z-index: 200; }
 
 section#block-bean-understanding-trade-marks-new {
   background: #eff0f2;
@@ -5204,7 +5204,7 @@ section#block-bean-designs-anchor-menu.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 100; }
+  z-index: 200; }
 
 section#block-bean-understanding-designs-block {
   background: #eff0f2;
@@ -5856,7 +5856,7 @@ section#block-bean-pbr-anchor-menu.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 100; }
+  z-index: 200; }
 
 section#block-bean-understanding-pbr {
   background: #eff0f2;
@@ -6516,11 +6516,11 @@ section#block-panels-mini-case-studies-four-item-display, section#block-panels-m
   position: relative;
   padding-right: 15px; }
 
-.page-node-61311 section#block-panels-mini-news-four-item-display .container > div .center-wrapper table td img, .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td img {
+.page-node-61311 section#block-panels-mini-news-four-item-display .container > div .center-wrapper table td img, .page-node-61311 section#block-panels-mini-case-studies-four-item-display .container > div .center-wrapper table td img, .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td img {
   height: 260px;
   width: 100%; }
 
-.page-node-61311 section#block-panels-mini-news-four-item-display .container > div .center-wrapper table td .views-field-title, .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td .views-field-title {
+.page-node-61311 section#block-panels-mini-news-four-item-display .container > div .center-wrapper table td .views-field-title, .page-node-61311 section#block-panels-mini-case-studies-four-item-display .container > div .center-wrapper table td .views-field-title, .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td .views-field-title {
   font: normal 18px "montserratregular", sans-serif;
   font-size: 21px;
   height: 100px;
@@ -6668,7 +6668,7 @@ section#block-panels-mini-case-studies-four-item-display, section#block-panels-m
     .page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td:hover div[class*="body"], .page-node-61311 section#block-panels-mini-blog-four-item-display .views-view-grid td:hover div[class*="body"], .page-node-61311 section#block-panels-mini-events-four-item-display .views-view-grid td:hover div[class*="body"], .page-node-61311 section#block-panels-mini-case-studies-four-item-display .views-view-grid td:hover div[class*="body"], .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td:hover div[class*="body"] {
       display: block; }
 
-.page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="date"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="date"] {
+.page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="date"], section#block-panels-mini-case-studies-four-item-displ .views-view-grid td div[class*="date"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="date"] {
   text-align: left;
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
   padding: 0px 20px;
@@ -9463,7 +9463,7 @@ section#block-bean-ip-infringement-anchor-block-0.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 100; }
+  z-index: 200; }
 
 section#block-bean-enforcing-your-ip-block {
   background: #eff0f2;
@@ -10029,7 +10029,7 @@ section#block-bean-understanding-ip-anchor-block.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 100; }
+  z-index: 200; }
 
 section#block-bean-getting-started-with-ip-block {
   background: #eff0f2;
