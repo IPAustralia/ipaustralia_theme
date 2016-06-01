@@ -6697,7 +6697,7 @@ section#block-panels-mini-case-studies-four-item-display, section#block-panels-m
   position: relative;
   z-index: 100;
   padding-top: 23px;
-  height: 44px;
+  height: 140px;
   text-overflow: ellipsis;
   overflow: hidden;
   margin-top: -140px; }
@@ -6720,7 +6720,7 @@ section#block-panels-mini-case-studies-four-item-display, section#block-panels-m
   overflow: hidden;
   margin-top: -140px; }
 
-section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="title"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="date"] {
+/* section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="title"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="date"] {
   text-align: left;
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
   padding: 0px 20px;
@@ -6734,8 +6734,8 @@ section#block-panels-mini-case-studies-four-item-display .views-view-grid td div
   height: 140px;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin-top: -140px; }
-
+  margin-top: -140px;
+}
 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="title"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="date"] {
   text-align: left;
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
@@ -6750,8 +6750,8 @@ section#block-panels-mini-official-notices-four-item-displ .views-view-grid td d
   height: 140px;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin-top: -140px; }
-
+  margin-top: -140px;
+} */
 .page-node-61311 section#block-panels-mini-case-studies-four-item-display .views-view-grid td:hover div[class*="title"], .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td:hover div[class*="title"] {
   margin-top: -280px; }
 
