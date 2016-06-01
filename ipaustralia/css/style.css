@@ -6847,7 +6847,48 @@ section#block-bean-careers-landing-page-block {
 section#block-panels-mini-current-vacancies-four-panel-dis .panel-2col .panel-col-first {
   width: 100%; }
 
-section#block-panels-mini-current-vacancies-four-panel-dis
+section#block-panels-mini-current-vacancies-four-panel-dis {
+  padding: 80px 0px 100px; }
+
+section#block-bean-understanding-pbr .panel-2col .panel-col-first h4:after {
+  border-top: 4px solid #b6bec0;
+  content: "";
+  display: block;
+  width: 100px;
+  margin: 15px 0 40px 2px; }
+
+/* section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="title"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="date"] {
+  text-align: left;
+  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
+  padding: 0px 20px;
+  margin: 0 auto;
+  color: white;
+  width: 280px;
+  display: block;
+  position: relative;
+  z-index: 100;
+  padding-top: 44px;
+  height: 140px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: -140px;
+}
+section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="title"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="date"] {
+  text-align: left;
+  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
+  padding: 0px 20px;
+  margin: 0 auto;
+  color: white;
+  width: 280px;
+  display: block;
+  position: relative;
+  z-index: 100;
+  padding-top: 44px;
+  height: 140px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: -140px;
+} */
 .page-node-61311 section#block-panels-mini-case-studies-four-item-display .views-view-grid td:hover div[class*="title"], .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td:hover div[class*="title"] {
   margin-top: -280px; }
 
