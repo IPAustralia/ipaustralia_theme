@@ -6720,7 +6720,7 @@ section#block-panels-mini-case-studies-four-item-display, section#block-panels-m
   overflow: hidden;
   margin-top: -140px; }
 
-section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="title"] {
+section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="title"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="date"] {
   text-align: left;
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
   padding: 0px 20px;
@@ -6736,7 +6736,7 @@ section#block-panels-mini-case-studies-four-item-display .views-view-grid td div
   overflow: hidden;
   margin-top: -140px; }
 
-section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="title"] {
+section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="title"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="date"] {
   text-align: left;
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
   padding: 0px 20px;
