@@ -233,12 +233,12 @@ section#block-panels-mini-case-studies-four-item-display .views-view-grid td div
   position: relative;
   z-index: 100;
   padding-top: 44px;
-  height: 44px;
+  height: 140px;
   text-overflow: ellipsis;
   overflow: hidden;
   margin-top: -140px;
 }
-section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="date"]  {
+section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="title"]  {
   text-align: left;
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
   padding: 0px 20px;
@@ -249,11 +249,11 @@ section#block-panels-mini-official-notices-four-item-displ .views-view-grid td d
   position: relative;
   z-index: 100;
   padding-top: 44px;
-  height: 280px;
+  height: 140px;
   text-overflow: ellipsis;
   overflow: hidden;
   margin-top: -140px;
 }
-.page-node-61311 section#block-panels-mini-case-studies-four-item-display  .views-view-grid td:hover div[class*="date"], .page-node-61311 section#block-panels-mini-official-notices-four-item-displ  .views-view-grid td:hover div[class*="date"] {
+.page-node-61311 section#block-panels-mini-case-studies-four-item-display  .views-view-grid td:hover div[class*="title"], .page-node-61311 section#block-panels-mini-official-notices-four-item-displ  .views-view-grid td:hover div[class*="title"] {
     margin-top: -280px;
 }
