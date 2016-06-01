@@ -65,7 +65,7 @@ section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-re
     @include landing_page_header_title('tablet.jpg', $themecolor:$mint);
 
 }
-#block-bean-tools-resources-selector {
+#block-bean-tools-resources-selector, #block-bean-careers-promotional-block {
     @include full_width_block();
 }
 section#block-bean-tools-resources-useful-links, section#block-bean-tools-resources-new-to-ip {

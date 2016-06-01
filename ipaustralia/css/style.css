@@ -6844,7 +6844,7 @@ section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-re
         color: #0d252c;
         padding-right: 10px; }
 
-#block-bean-tools-resources-selector {
+#block-bean-tools-resources-selector, #block-bean-careers-promotional-block {
   padding: 80px 10px;
   text-align: center;
   color: white;
@@ -6853,17 +6853,17 @@ section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-re
   border-top: 2px solid white;
   border-bottom: 2px solid white; }
   @media only screen and (max-width: 768px) {
-    #block-bean-tools-resources-selector {
+    #block-bean-tools-resources-selector, #block-bean-careers-promotional-block {
       padding: 40px 0px; } }
-  #block-bean-tools-resources-selector h2 {
+  #block-bean-tools-resources-selector h2, #block-bean-careers-promotional-block h2 {
     color: white; }
-  #block-bean-tools-resources-selector .bean-basic-content {
+  #block-bean-tools-resources-selector .bean-basic-content, #block-bean-careers-promotional-block .bean-basic-content {
     max-width: 80%;
     margin: 0 auto; }
     @media only screen and (max-width: 768px) {
-      #block-bean-tools-resources-selector .bean-basic-content {
+      #block-bean-tools-resources-selector .bean-basic-content, #block-bean-careers-promotional-block .bean-basic-content {
         max-width: 90%; } }
-  #block-bean-tools-resources-selector .field-items p a {
+  #block-bean-tools-resources-selector .field-items p a, #block-bean-careers-promotional-block .field-items p a {
     border: 2px solid white;
     background: transparent;
     padding: 16px 35px 16px;
@@ -6876,18 +6876,18 @@ section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-re
     line-height: 19px;
     text-decoration: none;
     margin-top: 40px; }
-    #block-bean-tools-resources-selector .field-items p a:after {
+    #block-bean-tools-resources-selector .field-items p a:after, #block-bean-careers-promotional-block .field-items p a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
       content: '';
       margin: 0 0 -2px 10px; }
-    #block-bean-tools-resources-selector .field-items p a:hover {
+    #block-bean-tools-resources-selector .field-items p a:hover, #block-bean-careers-promotional-block .field-items p a:hover {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
-    #block-bean-tools-resources-selector .field-items p a:hover {
+    #block-bean-tools-resources-selector .field-items p a:hover, #block-bean-careers-promotional-block .field-items p a:hover {
       border-color: white; }
 
 section#block-bean-tools-resources-useful-links, section#block-bean-tools-resources-new-to-ip {
