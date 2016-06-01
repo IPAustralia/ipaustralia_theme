@@ -929,7 +929,7 @@
 /* end More about.. styling */
 
 /* start Tools and resources Intro */
-.node-type-landing-page #block-bean-tools-and-resources-landing-bloc, .node-type-landing-page #block-bean-careers-title-block {
+.node-type-landing-page #block-bean-tools-and-resources-landing-bloc {
   background: #1d252c url("../images/tablet.jpg") center center no-repeat;
   background-size: 100% auto;
   padding: 60px 10px 80px 20px;

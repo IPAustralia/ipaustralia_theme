@@ -6720,67 +6720,159 @@ section#block-panels-mini-case-studies-four-item-display, section#block-panels-m
   overflow: hidden;
   margin-top: -140px; }
 
-/* section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="title"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="date"] {
-  text-align: left;
-  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
-  padding: 0px 20px;
-  margin: 0 auto;
-  color: white;
-  width: 280px;
-  display: block;
-  position: relative;
-  z-index: 100;
-  padding-top: 44px;
-  height: 140px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin-top: -140px;
-}
-section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="title"], section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="date"] {
-  text-align: left;
-  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
-  padding: 0px 20px;
-  margin: 0 auto;
-  color: white;
-  width: 280px;
-  display: block;
-  position: relative;
-  z-index: 100;
-  padding-top: 44px;
-  height: 140px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin-top: -140px;
-} */
+section#block-bean-careers-landing-page-block {
+  background: #eff0f2;
+  padding: 80px 0px 100px; }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-careers-landing-page-block {
+      padding: 40px 0px 60px; } }
+  section#block-bean-careers-landing-page-block ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    section#block-bean-careers-landing-page-block ul li {
+      padding: 0px 0 0 30px;
+      margin: 3px 0px;
+      background: transparent url("../images/link-tool.png") center center no-repeat;
+      background-position: left 1px; }
+  section#block-bean-careers-landing-page-block .group-header {
+    margin-bottom: 30px; }
+    section#block-bean-careers-landing-page-block .group-header br {
+      display: none; }
+    section#block-bean-careers-landing-page-block .group-header h2, section#block-bean-careers-landing-page-block .group-header h3 {
+      margin-bottom: 30px;
+      text-align: center;
+      color: #0d252c; }
+    section#block-bean-careers-landing-page-block .group-header p {
+      font-size: 1.3em;
+      font-family: robotolight;
+      color: #0d252c; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-careers-landing-page-block .group-left, section#block-bean-careers-landing-page-block .group-middle, section#block-bean-careers-landing-page-block .group-right {
+      width: 50%; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-careers-landing-page-block .group-left, section#block-bean-careers-landing-page-block .group-middle, section#block-bean-careers-landing-page-block .group-right {
+      width: 100%;
+      margin-bottom: 10px; } }
+  section#block-bean-careers-landing-page-block .group-left > div, section#block-bean-careers-landing-page-block .group-middle > div, section#block-bean-careers-landing-page-block .group-right > div {
+    margin: 0 20px;
+    padding: 40px;
+    background: #fff;
+    height: 350px;
+    overflow-y: hidden; }
+    @media only screen and (max-width: 768px) {
+      section#block-bean-careers-landing-page-block .group-left > div, section#block-bean-careers-landing-page-block .group-middle > div, section#block-bean-careers-landing-page-block .group-right > div {
+        height: 500px; } }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-careers-landing-page-block .group-left > div, section#block-bean-careers-landing-page-block .group-middle > div, section#block-bean-careers-landing-page-block .group-right > div {
+        height: auto;
+        padding: 20px 30px;
+        margin: 0px; } }
+    @media only screen and (max-width: 480px) {
+      section#block-bean-careers-landing-page-block .group-left > div, section#block-bean-careers-landing-page-block .group-middle > div, section#block-bean-careers-landing-page-block .group-right > div {
+        padding: 10px 20px; } }
+  section#block-bean-careers-landing-page-block .group-left .media-element-container, section#block-bean-careers-landing-page-block .group-middle .media-element-container, section#block-bean-careers-landing-page-block .group-right .media-element-container {
+    text-align: center;
+    margin-bottom: 30px; }
+    section#block-bean-careers-landing-page-block .group-left .media-element-container img, section#block-bean-careers-landing-page-block .group-middle .media-element-container img, section#block-bean-careers-landing-page-block .group-right .media-element-container img {
+      display: inline-block; }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-careers-landing-page-block .group-left .media-element-container, section#block-bean-careers-landing-page-block .group-middle .media-element-container, section#block-bean-careers-landing-page-block .group-right .media-element-container {
+        display: none; } }
+  section#block-bean-careers-landing-page-block .group-left h3, section#block-bean-careers-landing-page-block .group-left h4, section#block-bean-careers-landing-page-block .group-middle h3, section#block-bean-careers-landing-page-block .group-middle h4, section#block-bean-careers-landing-page-block .group-right h3, section#block-bean-careers-landing-page-block .group-right h4 {
+    font-size: 22px;
+    margin: 0px;
+    font-weight: bold;
+    text-align: left; }
+    @media only screen and (max-width: 640px) {
+      section#block-bean-careers-landing-page-block .group-left h3, section#block-bean-careers-landing-page-block .group-left h4, section#block-bean-careers-landing-page-block .group-middle h3, section#block-bean-careers-landing-page-block .group-middle h4, section#block-bean-careers-landing-page-block .group-right h3, section#block-bean-careers-landing-page-block .group-right h4 {
+        padding-right: 30px;
+        line-height: 30px;
+        font-size: 1.2em;
+        background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+        cursor: pointer; } }
+    section#block-bean-careers-landing-page-block .group-left h3:after, section#block-bean-careers-landing-page-block .group-left h4:after, section#block-bean-careers-landing-page-block .group-middle h3:after, section#block-bean-careers-landing-page-block .group-middle h4:after, section#block-bean-careers-landing-page-block .group-right h3:after, section#block-bean-careers-landing-page-block .group-right h4:after {
+      border-top: 4px solid #b6bec0;
+      content: "";
+      display: block;
+      width: 100px;
+      margin: 15px 0 40px 2px; }
+      @media only screen and (max-width: 640px) {
+        section#block-bean-careers-landing-page-block .group-left h3:after, section#block-bean-careers-landing-page-block .group-left h4:after, section#block-bean-careers-landing-page-block .group-middle h3:after, section#block-bean-careers-landing-page-block .group-middle h4:after, section#block-bean-careers-landing-page-block .group-right h3:after, section#block-bean-careers-landing-page-block .group-right h4:after {
+          margin: 5px 0 10px 2px;
+          border-top: 3px solid #b6bec0; } }
+  section#block-bean-careers-landing-page-block .group-left .open h4, section#block-bean-careers-landing-page-block .group-middle .open h4, section#block-bean-careers-landing-page-block .group-right .open h4 {
+    background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-careers-landing-page-block .group-left p, section#block-bean-careers-landing-page-block .group-middle p, section#block-bean-careers-landing-page-block .group-right p {
+      display: none; } }
+  section#block-bean-careers-landing-page-block .group-left .thin, section#block-bean-careers-landing-page-block .group-middle .thin, section#block-bean-careers-landing-page-block .group-right .thin {
+    display: none; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-careers-landing-page-block .group-right {
+      float: left;
+      margin-top: 20px; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-careers-landing-page-block .group-right {
+      margin-top: 0px; } }
+  section#block-bean-careers-landing-page-block .group-footer a {
+    margin-top: 40px;
+    border: 2px solid #0d252c;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: #0d252c;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px;
+    text-decoration: none; }
+    section#block-bean-careers-landing-page-block .group-footer a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-careers-landing-page-block .group-footer a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
+
+section#block-panels-mini-current-vacancies-four-panel-dis .panel-2col .panel-col-first {
+  width: 100%; }
+
+section#block-panels-mini-current-vacancies-four-panel-dis
 .page-node-61311 section#block-panels-mini-case-studies-four-item-display .views-view-grid td:hover div[class*="title"], .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td:hover div[class*="title"] {
   margin-top: -280px; }
 
-section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing {
+section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing, section#block-bean-careers-title-block {
   background: transparent url("../images/tablet.jpg") center center no-repeat;
   background-size: cover;
   padding: 80px 0px;
   color: white;
   border-bottom: 2px solid white; }
   @media only screen and (max-width: 992px) {
-    section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing {
+    section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing, section#block-bean-careers-title-block {
       padding: 26.66667px 0px; } }
-  section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body, section#block-bean-tools-resources-landing .panels-flexible-region-first, section#block-bean-tools-resources-landing .field-name-field-bean-body {
+  section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body, section#block-bean-tools-resources-landing .panels-flexible-region-first, section#block-bean-tools-resources-landing .field-name-field-bean-body, section#block-bean-careers-title-block .panels-flexible-region-first, section#block-bean-careers-title-block .field-name-field-bean-body {
     padding-right: 160px; }
     @media only screen and (max-width: 992px) {
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body, section#block-bean-tools-resources-landing .panels-flexible-region-first, section#block-bean-tools-resources-landing .field-name-field-bean-body {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body, section#block-bean-tools-resources-landing .panels-flexible-region-first, section#block-bean-tools-resources-landing .field-name-field-bean-body, section#block-bean-careers-title-block .panels-flexible-region-first, section#block-bean-careers-title-block .field-name-field-bean-body {
         width: 60%;
         padding-right: 20px; } }
     @media only screen and (max-width: 640px) {
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body, section#block-bean-tools-resources-landing .panels-flexible-region-first, section#block-bean-tools-resources-landing .field-name-field-bean-body {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body, section#block-bean-tools-resources-landing .panels-flexible-region-first, section#block-bean-tools-resources-landing .field-name-field-bean-body, section#block-bean-careers-title-block .panels-flexible-region-first, section#block-bean-careers-title-block .field-name-field-bean-body {
         width: 100%;
         padding-right: 0px; } }
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2, section#block-bean-tools-resources-landing .panels-flexible-region-first h2, section#block-bean-tools-resources-landing .field-name-field-bean-body h2 {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2, section#block-bean-tools-resources-landing .panels-flexible-region-first h2, section#block-bean-tools-resources-landing .field-name-field-bean-body h2, section#block-bean-careers-title-block .panels-flexible-region-first h2, section#block-bean-careers-title-block .field-name-field-bean-body h2 {
       color: white;
       font: normal 60px "montserratregular", sans-serif;
       font-weight: normal;
       text-transform: uppercase;
       position: relative; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2:after, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2:after, section#block-bean-tools-resources-landing .panels-flexible-region-first h2:after, section#block-bean-tools-resources-landing .field-name-field-bean-body h2:after {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2:after, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2:after, section#block-bean-tools-resources-landing .panels-flexible-region-first h2:after, section#block-bean-tools-resources-landing .field-name-field-bean-body h2:after, section#block-bean-careers-title-block .panels-flexible-region-first h2:after, section#block-bean-careers-title-block .field-name-field-bean-body h2:after {
         border-top: 6px solid white;
         content: "";
         display: block;
@@ -6788,59 +6880,59 @@ section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-re
         margin-bottom: 30px;
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
-        section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2, section#block-bean-tools-resources-landing .panels-flexible-region-first h2, section#block-bean-tools-resources-landing .field-name-field-bean-body h2 {
+        section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2, section#block-bean-tools-resources-landing .panels-flexible-region-first h2, section#block-bean-tools-resources-landing .field-name-field-bean-body h2, section#block-bean-careers-title-block .panels-flexible-region-first h2, section#block-bean-careers-title-block .field-name-field-bean-body h2 {
           font: normal 38px "montserratregular", sans-serif;
           word-break: break-all; } }
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first .thick, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body .thick, section#block-bean-tools-resources-landing .panels-flexible-region-first .thick, section#block-bean-tools-resources-landing .field-name-field-bean-body .thick {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first .thick, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body .thick, section#block-bean-tools-resources-landing .panels-flexible-region-first .thick, section#block-bean-tools-resources-landing .field-name-field-bean-body .thick, section#block-bean-careers-title-block .panels-flexible-region-first .thick, section#block-bean-careers-title-block .field-name-field-bean-body .thick {
       display: none; }
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first p, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body p, section#block-bean-tools-resources-landing .panels-flexible-region-first p, section#block-bean-tools-resources-landing .field-name-field-bean-body p {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first p, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body p, section#block-bean-tools-resources-landing .panels-flexible-region-first p, section#block-bean-tools-resources-landing .field-name-field-bean-body p, section#block-bean-careers-title-block .panels-flexible-region-first p, section#block-bean-careers-title-block .field-name-field-bean-body p {
       font: normal 20px "montserratregular", sans-serif;
       line-height: 1.5em;
       margin-bottom: 30px;
       font-family: robotolight; }
   @media only screen and (max-width: 992px) {
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last, section#block-bean-tools-resources-landing .panels-flexible-region-last {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last, section#block-bean-tools-resources-landing .panels-flexible-region-last, section#block-bean-careers-title-block .panels-flexible-region-last {
       width: 40%; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .inside, section#block-bean-tools-resources-landing .panels-flexible-region-last .inside {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .inside, section#block-bean-tools-resources-landing .panels-flexible-region-last .inside, section#block-bean-careers-title-block .panels-flexible-region-last .inside {
         padding-left: 0px; } }
   @media only screen and (max-width: 640px) {
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last, section#block-bean-tools-resources-landing .panels-flexible-region-last {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last, section#block-bean-tools-resources-landing .panels-flexible-region-last, section#block-bean-careers-title-block .panels-flexible-region-last {
       width: 100%; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .inside, section#block-bean-tools-resources-landing .panels-flexible-region-last .inside {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .inside, section#block-bean-tools-resources-landing .panels-flexible-region-last .inside, section#block-bean-careers-title-block .panels-flexible-region-last .inside {
         padding-left: 0px; } }
-  section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list {
+  section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list {
     padding: 0px;
     margin: 0px;
     color: #0d252c;
     list-style: none; }
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li {
       background: #fff;
       border: 0px;
       padding: 18px 14px;
       font: normal 16px "robotoregular", sans-serif;
       margin-top: 2px;
       font-size: 16px; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li a, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li a {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li a, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li a, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li a {
         /*font-size: 14px;*/ }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.patents, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.patents {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.patents, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.patents, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.trade-marks, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.trade-marks {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.trade-marks, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.trade-marks, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li.trade-marks {
         border-left: 10px solid #de4326; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.designs, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.designs {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.designs, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.designs, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li.designs {
         border-left: 10px solid #84c98f; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.pbr, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.pbr {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.pbr, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.pbr, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li.pbr {
         border-left: 10px solid #f1ac1e; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.copyright, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.copyright {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.copyright, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.copyright, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li.copyright {
         border-left: 10px solid #704579; }
-    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li {
+    section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li {
       border-left-color: #84c98f !important;
       padding: 20px;
       background: white url("../images/arrow-right-online-services.png") right center no-repeat; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li:last-child, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li:last-child {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li:last-child, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li:last-child, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li:last-child {
         /*background-image: none;*/ }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li .sml-link-icon-more, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li .sml-link-icon-more {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li .sml-link-icon-more, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li .sml-link-icon-more, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li .sml-link-icon-more {
         display: none; }
-      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li a, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li a {
+      section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li a, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li a, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li a {
         color: #0d252c;
         padding-right: 10px; }
 

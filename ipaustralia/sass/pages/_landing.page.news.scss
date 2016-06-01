@@ -223,6 +223,15 @@ padding: 6px 20px;
     overflow: hidden;
     margin-top: -140px;
 }
+section#block-bean-careers-landing-page-block {
+    background: $lighter-grey;
+    @include  section_padding(20);
+    @include  landing_page_group_block();
+}
+section#block-panels-mini-current-vacancies-four-panel-dis .panel-2col .panel-col-first {
+    width: 100%;
+}
+section#block-panels-mini-current-vacancies-four-panel-dis
 /* section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="title"], section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="date"] {
   text-align: left;
   background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
