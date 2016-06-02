@@ -20,14 +20,25 @@ section#block-bean-careers-block {
     @include  landing_page_group_block($height:500px, $color: $white);
 }
 
-section#block-bean-accountability-and-reporting{
+section#block-bean-accountability-and-reporting, section#block-bean-working-with-us {
     background: $charcoal;
     @include  section_padding(20);
     @include  landing_page_group_block($color:$white);
     border-top: $section-line-sperator;
     border-bottom: $section-line-sperator;
 }
-
+section#block-bean-working-with-us .group-footer p {
+  font-size: 1.3em;
+    font-family: robotolight;
+    color: #fff;
+}
+section#block-bean-working-with-us .group-left > div, section#block-bean-working-with-us .group-middle > div, section#block-bean-working-with-us .group-right > div {
+    margin: 0 20px;
+    padding: 40px;
+    background: #fff;
+    height: 750px;
+    overflow-y: hidden;
+  }
 section#block-panels-mini-news-and-community-homepage-pane{
     @include section_padding(20);
     @include news_and_community_inner_page($overlayimage:'transparent-pixel-purple_v2.png');
