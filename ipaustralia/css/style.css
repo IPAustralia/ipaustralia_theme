@@ -3615,6 +3615,12 @@ section#block-bean-working-with-us .group-footer p {
   font-family: robotolight;
   color: #fff; }
 
+section#block-bean-working-with-us .group-header h2, section#block-bean-accountability-and-reporting .group-header h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+  padding: 40px; }
+
 section#block-bean-working-with-us .group-left > div, section#block-bean-working-with-us .group-middle > div, section#block-bean-working-with-us .group-right > div {
   margin: 0 20px;
   padding: 40px;
