@@ -6,6 +6,7 @@
 
 define('BLOCK_ID_FOOTER_MENU', 'menu_block-1');
 define('BLOCK_ID_FOOTER_SUB_MENU', 'menu-menu-footer-sub-menu');
+define('BLOCK_ID_IP_TOOLKIT_FOOTER_SUB_MENU', 'menu-menu-footer-ip-toolkit-sub-menu');
 define('BLOCK_ID_TWITTER', 'twitter_block-1');
 define('MENU_BLOCK_DELTA_SIBLINGS', 2);
 
@@ -162,7 +163,7 @@ function ipaustralia_preprocess_block(&$vars) {
 	$bid = $vars['block']->module . '-' . $vars['block']->delta;
 	// some blocks need a <div class="container"> inside the <section>,
 	// wrapping the block content. add a theme suggestion for that.
-	if (in_array($bid, array(BLOCK_ID_FOOTER_MENU, BLOCK_ID_FOOTER_SUB_MENU)) ||
+	if (in_array($bid, array(BLOCK_ID_FOOTER_MENU, BLOCK_ID_FOOTER_SUB_MENU, BLOCK_ID_IP_TOOLKIT_FOOTER_SUB_MENU)) ||
 		$vars['block']->region == 'content') /*|| $vars['block']->region == 'content_top')*/ {
 		$vars['theme_hook_suggestions'][] = 'block__with_container';
 	} else if ($vars['block']->region == 'content_top') {
