@@ -1,0 +1,47 @@
+.ip-toolkit-section {
+  .header .header-right section.block-search-api-page {
+    margin-top: 60px;
+  }
+  .navbar-default, .breadcrumbs {
+    display: none;
+  }
+}
+
+.view-id-ip_toolkit_structure.view-display-id-block_1,
+.view-id-ip_toolkit_structure.view-display-id-block_2 {
+  background-color: $white;
+  box-shadow: 0 1px 1px transparent inset;
+  min-height: 20px;
+  padding: 0;
+  h3 a {
+    border-top: 6px solid $black;
+    font-size: 16px;
+    font-family: robotobold, sans-serif;
+  }
+  a {
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+    font-family: robotobold, sans-serif;
+    color: $black;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    border-bottom: 2px dotted $lighter-grey;
+    &:hover {
+      background: $lighter-grey;
+      text-decoration: underline;
+    }
+  }
+  .views-row a {
+    padding: 20px 35px;
+    &:before {
+      content: '>';
+      font-family: sans-serif;
+      width: 15px;
+      font-size: 9px;
+      display: inline-block;
+      opacity: 0.7;
+      margin-left: -15px;
+    }
+  }
+}

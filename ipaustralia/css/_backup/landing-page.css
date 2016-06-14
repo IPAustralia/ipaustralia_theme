@@ -935,14 +935,14 @@
   padding: 60px 10px 80px 20px;
   color:#FFF;
 }
-.node-type-landing-page #block-bean-tools-and-resources-landing-bloc .content {
+.node-type-landing-page #block-bean-tools-and-resources-landing-bloc .content, .node-type-landing-page #block-bean-careers-title-block .content {
   width: 66%;
   text-align: left;
 }
-.node-type-landing-page #block-bean-tools-and-resources-landing-bloc .content p {
+.node-type-landing-page #block-bean-tools-and-resources-landing-bloc .content p, .node-type-landing-page #block-bean-careers-title-block .content p {
   font: normal 20px "robotolight", sans-serif;
 }
-.node-type-landing-page #block-bean-tools-and-resources-landing-bloc .content h2 {
+.node-type-landing-page #block-bean-tools-and-resources-landing-bloc .content h2, .node-type-landing-page #block-bean-careers-title-block, .content h2 {
   color:#FFF;
   text-transform: uppercase;
   font: normal 60px "montserratregular", sans-serif;
@@ -1069,6 +1069,9 @@
   color:#FFF;
 }
 
+.page-node-62126 .panel-2col .panel-col-first {
+width:100%;
+}
 
 @media only screen and (max-width: 768px) {
   .node-type-landing-page #block-bean-tools-and-resources-landing-bloc .content  {
@@ -1276,13 +1279,13 @@ background-size: 100% auto;
 }
 /* end about us intro block */
 /* start about us in page nav */
-#block-bean-about-us-anchor-menu {
+#block-bean-about-us-anchor-menu, #block-bean-news-and-community-landing-page- {
   height:72px;
   text-transform:uppercase;
   padding-top:25px;
   text-align:center;
 }
-#block-bean-about-us-anchor-menu a {
+#block-bean-about-us-anchor-menu a, #block-bean-news-and-community-landing-page- a {
   color:#0d252c;
 }
 /* end about us in page nav */
