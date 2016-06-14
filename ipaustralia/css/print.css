@@ -1,0 +1,13 @@
+@media print {
+	header, footer, video, audio, object, ul.menu.nav, .video-filter, .application-process-menu {display:none;}
+	#print-logo {display:block; margin: 20px 0;}
+	.not-front .main-container .overlay > .container {margin:0px;}
+	div.title {padding:0px;}
+	article {padding: 0px;line-height: 20px;}
+	h1 {font-size: 32px; margin: 0px; padding: 0px;}
+	h2 {font-size: 28px;}
+	h3 {font-size: 24px;}
+	h4 {font-size: 20px;}
+	h5 {font-size: 20px;}
+	h6 {font-size: 20px;}
+}

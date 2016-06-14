@@ -1,3 +1,4 @@
+//test
 jQuery(window).load(function () {
     resizing();
 });
@@ -104,7 +105,7 @@ function toolsAndResourcesTabsCheck() {
 function resizing() {
     /*
      *  Do action on resizing window or document
-     *  This is normally is used on mobile devices when rotating 
+     *  This is normally is used on mobile devices when rotating
      */
     removeJsAppliedStyles();
     equaliseElementsHeight();
@@ -123,6 +124,10 @@ function equaliseElementsHeight() {
     equalHeight('section#block-bean-tools-and-resources-trade-mark .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-bean-tools-and-resources-designs .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-bean-tools-and-resources-pbr .panels-flexible-region-inside'); // landing page tools and resources
+
+    equalHeight('section#block-bean-tools-resources-ip-professionals .panels-flexible-region-inside'); // landing page tools and resources
+
+    equalHeight('#block-bean-careers-landing-page-block .field-item.even'); // landing page careers
 
     equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panels-flexible-region-inside'); // landing page tools and resources
     equalHeight('section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panels-flexible-region-inside'); // landing page tools and resources
@@ -317,9 +322,10 @@ function showChatIcon() {
     /*
      * On Reponsive device add element to trgger chat
      */
+
     jQuery('.responsive-chat-icon').remove();
 
-    if (jQuery('.bp-medium').length > 0) {
+    if (jQuery('.bp-medium').length > 0 && jQuery("body").hasClass("section-trade-marks")) {
         jQuery('header#navbar .header > .container').prepend('<div class="responsive-chat-icon">chat</div>');
         jQuery('.block-search-api-page').css('width', jQuery(document).width() - 30 + 'px');
     } else {
@@ -331,8 +337,10 @@ function showChatIcon() {
         triggerChat();
     });
 }
+
 function triggerChat() {
-    console.log('Chat link clicked. Add JS funciton here');
+    initialize();
+    //jQuery(".responsive-chat-icon").toggleClass("opened");
 }
 
 function slickSlides() {
@@ -623,18 +631,23 @@ function stickyMenu() {
         jQuery("#block-bean-trade-marks-anchor-menu").trigger("sticky_kit:detach");
         jQuery("#block-bean-designs-anchor-menu").trigger("sticky_kit:detach");
         jQuery("#block-bean-pbr-anchor-menu").trigger("sticky_kit:detach");
-        jQuery("#block-bean-ip-infringement-anchor-block").trigger("sticky_kit:detach");
-        jQuery("#block-bean-understanding-ip-anchor-block-0").trigger("sticky_kit:detach");
+        jQuery("#block-bean-ip-infringement-anchor-block-0").trigger("sticky_kit:detach");
+        jQuery("#block-bean-understanding-ip-anchor-block").trigger("sticky_kit:detach");
         jQuery("#block-bean-about-us-anchor-menu").trigger("sticky_kit:detach");
+        jQuery("#block-bean-ip-report-anchor-menu").trigger("sticky_kit:detach");
+        jQuery("#block-bean-news-and-community-landing-page-").trigger("sticky_kit:detach");
     } else {
         jQuery(".navbar-default").stick_in_parent();
         jQuery("#block-bean-patents-anchor-menu-3").stick_in_parent();
         jQuery("#block-bean-trade-marks-anchor-menu").stick_in_parent();
         jQuery("#block-bean-designs-anchor-menu").stick_in_parent();
         jQuery("#block-bean-pbr-anchor-menu").stick_in_parent();
-        jQuery("#block-bean-ip-infringement-anchor-block").stick_in_parent();
+        jQuery("#block-bean-ip-infringement-anchor-block-0").stick_in_parent();
         jQuery("#block-bean-understanding-ip-anchor-block").stick_in_parent();
         jQuery("#block-bean-about-us-anchor-menu").stick_in_parent();
+        jQuery("#block-bean-ip-report-anchor-menu").stick_in_parent();
+        jQuery("#block-bean-news-and-community-landing-page-").stick_in_parent();
+
     }
 }
 
@@ -774,14 +787,14 @@ function equalHeight($container) {
  \__ \ | | (__|   < _ | \__ \
  |___/_|_|\___|_|\_(_)/ |___/
  |__/
- 
+
  Version: 1.5.9
  Author: Ken Wheeler
  Website: http://kenwheeler.github.io
  Docs: http://kenwheeler.github.io/slick
  Repo: http://github.com/kenwheeler/slick
  Issues: http://github.com/kenwheeler/slick/issues
- 
+
  */
 !function (a) {
     "use strict";
@@ -1314,11 +1327,3 @@ jQuery( document ).ready(function() {
         }
     });
 });
-
-//adding stripes to tables and other content.
-//Disabled as added to the css instead.
-/*(function () {
-    jQuery('div.field-name-body table tr:even').css('background-color','#e1e1e1');
-    jQuery('div.field-name-body dl dt:even, div.field-name-body dl dd:even').css('background-color','#e1e1e1');
-});*/
-

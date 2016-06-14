@@ -1,3 +1,12 @@
+
+
+<?php
+  $theme_path = drupal_get_path('theme', 'ipaustralia');
+?>
+<script type="text/javascript">var path = <?php echo "'$theme_path'" ?>;
+ jQuery.getScript(path + "/js/ios-fix.js", function(){
+});</script>
+
 <?php include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/header.inc"; ?>
 
 <div class="main-container">
