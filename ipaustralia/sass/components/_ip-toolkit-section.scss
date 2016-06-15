@@ -5,6 +5,11 @@
   .navbar-default, .breadcrumbs {
     display: none;
   }
+  aside {
+    @media only screen and (max-width: $break-point-midsmall) {
+      display: block;
+    }
+  }
 }
 
 .view-id-ip_toolkit_structure.view-display-id-block_1,
@@ -43,5 +48,35 @@
       opacity: 0.7;
       margin-left: -15px;
     }
+  }
+}
+
+.view-id-ip_toolkit_page.view-display-id-block_1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .label-above {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.node-ip-toolkit-case-study.node-teaser {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .field-name-title {
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle;
+    h2 {
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 0;
+    }
+  }
+  .field-name-field-image {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5%;
   }
 }
