@@ -9,7 +9,7 @@
   font-size: 18px;
   right: 10%;
   bottom: 0px;
-  line-height: 15px;
+  line-height: 18px;
   -moz-box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
@@ -136,7 +136,8 @@
 #ipAustralia-block .nw_Conversation {
   position: absolute;
   top: 60px;
-  bottom: 75px;
+  /*bottom: 75px;*/
+  bottom: 104px;
   left: 0;
   right: 0;
   padding: 10px;
@@ -193,7 +194,7 @@
   font-size: 16px;
   font-family: calibri;
   color: #1D252C;
-  width: 80%;
+  /*width: 80%;*/
 }
 #ipAustralia-block .nw_AgentSays:before {
   content: ' ';
@@ -222,7 +223,7 @@
   word-wrap: break-word;
   font-size: 16px;
   font-family: calibri;
-  width: 80%;
+  /*width: 80%;*/
 }
 #ipAustralia-block .nw_UserSays:before {
   content: ' ';
@@ -457,6 +458,152 @@
 #ipAustralia-block .nw_Expand.button.nw_initial {
   display: none;
 }
+#ipAustralia-block .nw_AgentStatus {
+  height: 16px;
+  display: block;
+  position: absolute;
+  bottom: 72px;
+  left: 20px;
+  width: 90%;
+}
+#ipAustralia-block .nw_StatusMessage {
+  /* position: absolute; */
+  margin-top: -3px;
+  /* margin-bottom: 2px; */
+  left: 10px;
+  font-family: "calibri";
+  font-weight: 300;
+  font-size: 14px;
+  color: #B6BEC0;
+  bottom: 78px;
+  left: 29px;
+}
+#ipAustralia-block .nw_StatusVisibility {
+  display: inline-block;
+}
+#ipAustralia-block .nw_StatusVisibilityNone {
+  display: none;
+}
+#ipAustralia-block .nw_LiveAgentHeader {
+  background-color: #612166;
+  height: 60px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  display: table;
+  cursor: pointer;
+}
+#ipAustralia-block .nw_LiveAgentHeader .nw_AvtContainer {
+  display: none;
+}
+#ipAustralia-block .nw_LiveAgentHeader .nw_Avatar {
+  display: none;
+}
+#ipAustralia-block .nw_LiveAgentHeader .nw_AgentHeader {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  display: table-cell;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 6px;
+  padding-left: 26px;
+}
+#ipAustralia-block .nw_LiveAgentHeader .nw_Controls {
+  display: table-cell;
+  width: 125px;
+}
+#ipAustralia-block .nw_LiveAgentHeader .nw_Controls .button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  vertical-align: middle;
+  display: inline-block;
+  /*outline: none;*/
+}
+#ipAustralia-block .nw_LiveAgentHeader .nw_Controls .button:focus {
+  border: 1px dotted;
+  border-color: #ddffee !important;
+}
+#ipAustralia-block .nw_LiveAgentHeader .nw_Expand {
+  background-image: url("../images/ui/expand-white.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: block;
+}
+#ipAustralia-block .nw_LiveAgentHeader .nw_collapse {
+  background-image: url("../images/ui/shrink-white.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+#ipAustralia-block .nw_LiveAgentHeader .nw_Close {
+  background-image: url("../images/ui/close-white.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 46px;
+  top: 15px;
+  background-color: transparent;
+}
+#ipAustralia-block .nw_LiveAgentHeader .nwOpen {
+  background-image: url("../images/ui/open-white.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  position: absolute;
+  /*right: 5px;
+  top: 15px;*/
+  right: 46px;
+  top: 15px;
+  background-color: transparent;
+}
+#ipAustralia-block .nw_LiveAgentHeader .nw_closeCross {
+  background-image: url("../images/ui/end-white.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  background-color: transparent;
+}
+#ipAustralia-block .transitionPhase {
+  background-color: bisque;
+  position: absolute;
+  bottom: 112px;
+  font-size: 13px;
+  border-top-style: dotted;
+  border-top-width: thin;
+  padding-left: 20px;
+}
+#ipAustralia-block .nw_transitionPhase {
+  height: 50%;
+  display: inline-block;
+}
+#ipAustralia-block .dcw {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#ipAustralia-block #dcw-container {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+#ipAustralia-block .dcw-iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+#ipAustralia-block #myObject {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#ipAustralia-block #endChatMobile {
+  display: none;
+}
 
 @media screen and (max-width: 767px) {
   #ipAustralia-block {
@@ -509,7 +656,7 @@
     -webkit-overflow-scrolling: touch;
     width: initial;
     top: 0px;
-    bottom: 10em;
+    bottom: 11em;
     position: absolute;
     overflow-x: hidden;
   }
@@ -616,8 +763,45 @@
     background-size: auto 22px;
   }
 
+  .responsive-chat-icon-liveagent {
+    background: transparent url("../images/ui/close.png") center center no-repeat !important;
+    background-size: auto 22px;
+  }
+
+  .responsive-chat-icon-liveagent-close {
+    background: transparent url("../images/ui/open.png") center center no-repeat !important;
+    background-size: auto 22px;
+  }
+
   header .header .responsive-search-icon {
     display: block !important;
+  }
+
+  #ipAustralia-block .nw_AgentStatus {
+    position: absolute;
+    bottom: 176px;
+  }
+
+  #ipAustralia-block #endChatMobile {
+    position: absolute;
+    /* left: 139px; */
+    /* padding-left: 146px;*/
+    border-bottom: grey;
+    border-bottom-style: dotted;
+    width: 100%;
+    border-width: thin;
+    display: inline-block;
+    font-family: calibri;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  #ipAustralia-block .nw_StatusVisibility {
+    display: inline-block;
+  }
+
+  #ipAustralia-block .nw_StatusVisibilityNone {
+    display: none !important;
   }
 }
 @media screen and (min-width: 769px) {
@@ -628,30 +812,78 @@
   header .header .responsive-search-icon {
     display: none !important;
   }
+
+  #ipAustralia-block .nw_StatusVisibility {
+    display: inline-block;
+  }
+
+  #ipAustralia-block .nw_StatusVisibilityNone {
+    display: none;
+  }
 }
 @media screen and (device-aspect-ratio: 375 / 667) {
   #ipAustralia-block .nw_AgentSays.alex_Welcome {
     width: 75%;
+  }
+
+  #ipAustralia-block .nw_StatusVisibility {
+    display: inline-block;
+  }
+
+  #ipAustralia-block .nw_StatusVisibilityNone {
+    display: none;
   }
 }
 @media screen and (device-aspect-ratio: 16 / 9) {
   #ipAustralia-block .nw_AgentSays.alex_Welcome {
     width: 75%;
   }
+
+  #ipAustralia-block .nw_StatusVisibility {
+    display: inline-block;
+  }
+
+  #ipAustralia-block .nw_StatusVisibilityNone {
+    display: none;
+  }
 }
 @media screen and (device-aspect-ratio: 9 / 16) {
   #ipAustralia-block .nw_AgentSays.alex_Welcome {
     width: 75%;
+  }
+
+  #ipAustralia-block .nw_StatusVisibility {
+    display: inline-block;
+  }
+
+  #ipAustralia-block .nw_StatusVisibilityNone {
+    display: none;
   }
 }
 @media screen and (device-aspect-ratio: 40 / 71) {
   #ipAustralia-block .nw_AgentSays.alex_Welcome {
     width: 70%;
   }
+
+  #ipAustralia-block .nw_StatusVisibility {
+    display: inline-block;
+  }
+
+  #ipAustralia-block .nw_StatusVisibilityNone {
+    display: none;
+  }
 }
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
   #ipAustralia-block .nw_AgentSays.alex_Welcome {
     width: 70%;
+  }
+
+  #ipAustralia-block .nw_StatusVisibility {
+    display: inline-block;
+  }
+
+  #ipAustralia-block .nw_StatusVisibilityNone {
+    display: none;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
