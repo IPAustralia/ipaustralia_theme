@@ -84,6 +84,7 @@
   $theme_path = drupal_get_path('theme', 'ipaustralia');
   drupal_add_css($theme_path . '/interactives/checklist/css/checklist.css');
   drupal_add_js($theme_path . '/interactives/checklist/js/checklist.js');
+  drupal_add_css($theme_path . '/interactives/checklist/css/font-style.css');
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
