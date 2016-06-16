@@ -1,22 +1,10 @@
-@mixin news-community-texts {
+@mixin news-community-texts ($box-width:380px){
     text-align: left;
     @include background-image('transparent-pixel-purple_v2.png', center, center, repeat);
     padding: 0px 20px;
-    margin: 0 auto;
+    //margin: 0 auto;
     color: white;
-    width: 380px;
-    display:block;
-    position:relative;
-    z-index: 100;
-}
-
-@mixin news-community-texts-four {
-    text-align: left;
-    @include background-image('transparent-pixel-purple_v2.png', center, center, repeat);
-    padding: 0px 20px;
-    margin: 0 auto;
-    color: white;
-    width: 280px;
+    width: $box-width;
     display:block;
     position:relative;
     z-index: 100;

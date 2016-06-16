@@ -22,7 +22,7 @@
         padding: 0 !important;
     }
     h3.title {
-        text-decoration: underline;
+        decoration: underline;
     }
     .search-result h3 a {
         color: #od252c;
@@ -40,4 +40,18 @@
             font-size: 15px;
         }
     }
+}
+
+section#block-bean-search-ip-rights .panels-flexible-row-four_column_panel_with_top_and_bottom-main-row .panels-flexible-region-inside {
+   padding-right: 0;
+   padding: 20px;
+   background: #fff;
+   height: 150px;
+   /* overflow-y: hidden; */
+   margin-right: 15px;
+   margin-bottom:20px;
+}
+
+section#block-bean-search-ip-rights {
+height:300px;
 }

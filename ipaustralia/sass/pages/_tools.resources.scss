@@ -204,6 +204,93 @@
         }
     }
 }
+//official notices
+.page-about-us-news-and-community-official-notice {
+    .views-row {
+        background: $color_athens_gray_approx;
+        margin-bottom: 10px;
+        .panel-col-last {
+            padding-top: 22px;
+            width: 70%;
+            .views-field-field-news-date {
+                color: $color_mountain_mist_approx;
+                margin-bottom: 10px;
+            }
+        }
+        .panel-col-first {
+            width: 23%;
+            img {
+                margin: 30px;
+                width: 140px;
+                height: 140px;
+            }
+        }
+        .views-field-title a {
+            color: $color_firefly_approx;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+    .views-field-field-tags {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            li {
+                display: inline-block;
+                background: $charcoal;
+                color: $white;
+                padding: 5px;
+                margin: 0px 0px 0px 5px;
+            }
+        }
+    }
+}
+
+//current vacancies
+.page-current-vacancies-listing {
+    .views-row {
+        background: $color_athens_gray_approx;
+        margin-bottom: 10px;
+        .panel-col-last {
+            padding-top: 22px;
+            width: 70%;
+            .views-field-field-news-date {
+                color: $color_mountain_mist_approx;
+                margin-bottom: 10px;
+            }
+        }
+        .panel-col-first {
+            width: 23%;
+            img {
+                margin: 30px;
+                width: 140px;
+                height: 140px;
+            }
+        }
+        .views-field-title a {
+            color: $color_firefly_approx;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+    .views-field-field-tags {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            li {
+                display: inline-block;
+                background: $charcoal;
+                color: $white;
+                padding: 5px;
+                margin: 0px 0px 0px 5px;
+            }
+        }
+    }
+}
 
 //reports
 .page-tools-resources-publications---reports {
@@ -350,6 +437,7 @@ article.node-official-notice {
     }
 }
 
+
 //ip-report-2016
 section#block-bean-ip-report-anchor-menu {
     @include landing_page_anchor_menu();
@@ -358,4 +446,8 @@ section#block-bean-ip-report-anchor-menu {
 section#block-bean-news-and-community-landing-page- {
     @include landing_page_anchor_menu();
     @include stick_sub_menu();
+}
+
+section#block-panels-mini-case-studies-four-item-display, section#block-panels-mini-official-notices-four-item-displ {
+    @include landing_page_more_about();
 }
