@@ -9822,8 +9822,6 @@ window.Nina.config.newConfig = function(agentConfig) {
              * Number of . composing the TLD (not always 2 as ".something.co.uk" shows it) starting from the end.
              * @type {int}
              * @default 2
-             * Altered this value to 3 to ensure .ipaustralia.gov.au domain registers the cookie correctly
-             * the default value of 2 didn't work as it was set for .gov.au which was invalid
              */
             domainLevel: 3,
             /**
@@ -9890,12 +9888,12 @@ window.Nina.config.newConfig = function(agentConfig) {
              * The version of the UI. Injected by Grunt based on package.json and build #
              * @type {string}
              */
-            version: "ipAustraliaBlock-201606141535",
+            version: "ipAustraliaBlock-201605091539",
             /**
              * The date and time the build of the UI took place. Automatically generated during build in the client's Gruntfile
              * @type {string}
              */
-            date: "2016-06-15 01:08",
+            date: "2016-05-09 15:44",
             /**
              * The maximum length of a user query
              * @type {int}
@@ -11807,7 +11805,7 @@ window.Nina.helper.newDebug = function(_ui, _cookiesJar) {
             }
 		},
 		getUIVersion: function() {
-			return "ipAustraliaBlock-201606141535";
+			return "ipAustraliaBlock-201605091539";
 		},
 		switchPreprodMode: function(reload) {
 			reload = (reload !== "undefined") ? reload : true;
@@ -15449,12 +15447,10 @@ window.NinaVars = window.NinaVars || {};
             maxInputLength: 110,
             maxThrsholdLine: 29,
             headerAgent: "",
-            headerUser: "",
-             botIsTyping:""
-            
+            headerUser: ""
         },
         dom: {
-            agentHTML: "<div id=\"ipAustralia-block\" class=\"nw_Agent\" role=\"presentation\"> <div id=\"nw_Header\" class=\"nw_Header\" role=\"navigation\"> <div class=\"nw_AvtContainer\" role=\"navigation\"> <div class=\"nw_Avatar\"></div> </div> <div class=\"nw_AgentHeader\" role=\"navigation\">ASK ALEX FOR HELP</div> <div class=\"nw_Controls\" role=\"navigation\"> <a href=\"#\" class=\"button nw_Expand\" aira-live=\"polite\" title=\"Exapnd virtual assistant for a larger view\" aria-label=\"Exapnd virtual assistant for a larger view\" id=\"ex\" accesskey=\"e\"></a> <a href=\"#\" class=\"button nwOpen\" aira-live=\"polite\" title=\"Open virtual assistant to get help around the site.\" aria-label=\"Open virtual assistant to get help around the site.\" id=\"cl\" accesskey=\"c\"></a> </div> </div> <div class=\"nw_Dialog\" role=\"dialog\"> <div class=\"nw_Conversation\" role=\"navigation\" aira-live=\"polite\"> <div class=\"nw_ConversationText\" role=\"navigation\" aira-live=\"polite\"></div> </div> <div class=\"nw_AgentStatus\"> <div class=\"nw_StatusMessage\"></div> </div> <div class=\"nw_Input\" role=\"form\" role=\"navigation\" aira-live=\"polite\" aira-label=\" Enter question for Alex virtual assistant\"> <textarea class=\"nw_UserInputField\" onfocus=\"this.placeholder=''\" onblur=\"this.placeholder='Ask questions about trade marks'\" placeholder=\"Ask questions about trade marks\" rows=\"2\"/> <div class='nw_UserSubmit' role=\"navigation\" aira-live=\"polite\" aira-label=\" Press enter or click on SEND button\"> <button class='nw_SubmitBtn' id=\"sendBtn\">SEND</button> </div> </div> <div id=\"dcw\" class=\"dcw\" /> </div> </div> ",
+            agentHTML: "<div id=\"ipAustralia-block\" class=\"nw_Agent\" role=\"presentation\"> <div id=\"nw_Header\" class=\"nw_Header\" role=\"navigation\"> <div class=\"nw_AvtContainer\" role=\"navigation\"> <div class=\"nw_Avatar\"></div> </div> <div class=\"nw_AgentHeader\" role=\"navigation\">ASK ALEX FOR HELP</div> <div class=\"nw_Controls\" role=\"navigation\"> <a href=\"#\" class=\"button nw_Expand\" aira-live=\"polite\" title=\"Exapnd virtual assistant for a larger view\" aria-label=\"Exapnd virtual assistant for a larger view\" id=\"ex\" accesskey=\"e\"></a> <a href=\"#\" class=\"button nwOpen\" aira-live=\"polite\" title=\"Open virtual assistant to get help around the site.\" aria-label=\"Open virtual assistant to get help around the site.\" id=\"cl\" accesskey=\"c\"></a> </div> </div> <div class=\"nw_Dialog\" role=\"dialog\"> <div class=\"nw_Conversation\" role=\"navigation\" aira-live=\"polite\"> <div class=\"nw_ConversationText\" role=\"navigation\" aira-live=\"polite\"></div> </div> <div class=\"nw_Input\" role=\"form\" role=\"navigation\" aira-live=\"polite\" aira-label=\" Enter question for Alex virtual assistant\"> <textarea class=\"nw_UserInputField\" onfocus=\"this.placeholder=''\" onblur=\"this.placeholder='Ask questions about trade marks'\" placeholder=\"Ask questions about trade marks\" rows=\"2\"/> <div class='nw_UserSubmit' role=\"navigation\" aira-live=\"polite\" aira-label=\" Press enter or click on SEND button\"> <button class='nw_SubmitBtn' id=\"sendBtn\">SEND</button> </div> </div> </div> </div> ",
             agentMinHTML: ""
         }
     });
@@ -15483,31 +15479,6 @@ window.NinaVars = window.NinaVars || {};
         };
     });
 
-    /* passing activeSite variable */
-    if (NinaVars.preprod) {
-        var temphoustonURL = "https://agent-preprod.nuance-va.com/houston/houston.html";
-        var temphoustonURL_IE89 = "https://agent-preprod.nuance-va.com/houston/houston_ie89.js";
-    } else {
-        var temphoustonURL = "https://agent.nuance-va.com/houston/houston.html";
-        var temphoustonURL_IE89 = "https://agent.nuance-va.com/houston/houston_ie89.js";
-    }
-
-    $.get(temphoustonURL, function (site) {
-        setActiveSite(site);
-    });
-
-
-    function setActiveSite(site) {
-
-        site = site.trim();
-
-        window.NinaVars.activeSite = site;
-
-        return;
-    }
-
-
-
     /* passing source variable */
     if (navigator.userAgent.match(/(iPod|iPhone|Android)/)) {
         NinaVars.source = "mobile";
@@ -15528,7 +15499,7 @@ window.NinaVars = window.NinaVars || {};
     window.ipa.virtualAssistant = window.ipa.virtualAssistant || {};
 
 
- var isLiveAgent = false;
+
     $(document).ready(function () {
 
         var isMobile = window.matchMedia("only screen and (max-width: 768px)");
@@ -15537,14 +15508,9 @@ window.NinaVars = window.NinaVars || {};
         var va = window.ipa.virtualAssistant;
         var isIPad = false; // used to check if device is IPAD
         va.OPEN_ALEX_TEXT = "Open Alex virtual assistant. Ask questions to get help around the site.";
-        va.OPEN_LIVE_AGENT = "Open Live Agent. Ask questions to Agent";
-        va.MINIMIZE_LIVE_AGENT = "Minimize Live Agent Window ";
-        va.END_LIVE_AGENT_CHAT = "End Chat With Live Agent";
         va.CLOSE_ALEX_TEXT = "Close Alex virtual assistant";
         va.EXPAND_ALEX_TEXT = "Expand Alex virtual assistant for a larger view";
-        va.EXPAND_LIVE_AGENT = "Expand Live Agent Window for Larger View";
         va.CONTRACT_ALEXT_TEXT = "Contract Alex virtual assistant";
-        va.CONTRACT_LIVE_AGENT = "Contract Live Agent Window";
         va.ASK_ALEX_TEXT = "Enter question for Alex virtual assistant";
 
         var $ab = $('#ipAustralia-block');
@@ -15667,18 +15633,9 @@ window.NinaVars = window.NinaVars || {};
         setLabel($ab.find(".nw_Close"), va.OPEN_ALEX_TEXT);
         setLabel($ab.find(".nw_Expand"), va.EXPAND_ALEX_TEXT);
 
-        function hasWhiteSpace(s) {
-            return /^\s/g.test(s);
-        }
         $ab.find(".nw_UserInputField").keydown(function (event) {
             var varLength = $(".nw_UserInputField").val().trim().length;
-            var userText = $('.nw_UserInputField').val();
-            if (event.which == 13 && hasWhiteSpace(userText)) {
-                $('.nw_UserInputField').val(userText.replace(/(^\s+|\s+$)/g, ''));
-
-                event.preventDefault();
-                event.stopPropagation();
-            } else if (event.which == 13 && userText.length > 0) {
+            if (event.which == 13) { // enter key pressed
                 if (isFirstInteraction && firstTime && varLength > 0) {
                     $('#ipAustralia-block ,.nw_Expand ,.nw_Input').removeClass('nw_initial');
                     $('#ipAustralia-block ,.nw_Dialog ,.nw_Conversation').addClass('nwSend');
@@ -15695,7 +15652,7 @@ window.NinaVars = window.NinaVars || {};
                     $('.nw_UserInputField').removeClass('nwAutosize2');
                     $('.nw_UserInputField').addClass('nwAutosize1');
                 }
-                $('.nw_AgentStatus').addClass('nw_StatusVisibilityNone');
+
                 // written for WCAG , assign tab index for all the divs under conversationTexts .
                 $('.nw_ConversationText div').each(function (index) {
                     $(this).attr('tabindex', 0);
@@ -15751,7 +15708,7 @@ window.NinaVars = window.NinaVars || {};
                 if (isExpanded) {
                     $ab.removeClass("nwSend nwNormal nwClosed");
                     $('.nw_Conversation').removeClass('nwNormal nwSend');
-                    $('.nw_Dialog').removeClass('nwNormal nwSend nwClosed');
+                    $('.nw_Dialog').removeClass('nwSend nwClosed');
                     if (isIPad) {
                         $ab.addClass('ipadExpand');
                     } else {
@@ -15772,20 +15729,11 @@ window.NinaVars = window.NinaVars || {};
                 if ($('#ex').hasClass('nw_Expand')) {
                     $('.nw_Expand.button').removeClass('nw_Expand');
                     $(this).addClass('nw_collapse');
-                    if (!isLiveAgent) {
-                        setLabel($('#ex'), va.CONTRACT_ALEXT_TEXT);
-                    } else {
-                        setLabel($('#ex'), va.CONTRACT_LIVE_AGENT);
-                    }
-
+                    setLabel($('#ex'), va.CONTRACT_ALEXT_TEXT);
                 } else {
                     $('.nw_collapse.button').removeClass('nw_collapse');
                     $(this).addClass('nw_Expand');
-                    if (!isLiveAgent) {
-                        setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
-                    } else {
-                        setLabel($('#ex'), va.EXPAND_LIVE_AGENT);
-                    }
+                    setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
                 }
 
                 return false;
@@ -15799,33 +15747,23 @@ window.NinaVars = window.NinaVars || {};
                 event.stopPropagation();
                 if (!isFirstInteraction && !firstTime) {
                     va.open();
-                    if (isIPad) {
-                        va.iPadOpen();
-                    }
+                    if(isIPad){ va.iPadOpen();}
                     firstTime = true;
                 } else if (!isFirstInteraction && firstTime) {
                     va.close();
-                    if (isIPad) {
-                        va.iPadClose();
-                    }
+                    if(isIPad){ va.iPadClose();}
                     firstTime = false;
                 } else {
                     if (firstTime) {
                         va.open();
-                        if (isIPad) {
-                            va.iPadOpen();
-                        }
+                        if(isIPad){ va.iPadOpen();}
                         firstTime = false;
                     } else if (va.isOpen() && !firstTime) {
                         va.close();
-                        if (isIPad) {
-                            va.iPadClose();
-                        }
+                        if(isIPad){ va.iPadClose();}
                     } else {
                         va.open();
-                        if (isIPad) {
-                            va.iPadOpen();
-                        }
+                        if(isIPad){ va.iPadOpen();}
                     }
                 }
                 return false;
@@ -15849,25 +15787,6 @@ window.NinaVars = window.NinaVars || {};
         $('.nw_UserInputField').focus(function (event) {
 
             $('.nw_AgentLastAnswer').attr('tabindex', 0);
-
-            if (isIPad) {
-                va.iPadOpen();
-            }
-            if (!$('#ipAustralia-block').hasClass('nw_initial') || !('.nw_StatusMessage').text().toLowerCase.indexOf('bot') > 0) {
-                $('.nw_AgentStatus').addClass('nw_StatusVisibilityNone');
-            }
-        });
-
-        
-
-        $('.nw_UserInputField').focusout(function (event) {
-            $('.nw_AgentStatus').addClass('nw_StatusVisibilityNone');
-        });
-
-        $('.nw_UserInputField').blur(function (event) {
-            if (isIPad) {
-                va.iPadClose();
-            }
         });
 
         $('.nw_SystemSays').focus(function (event) {
@@ -15876,7 +15795,7 @@ window.NinaVars = window.NinaVars || {};
 
         $(".nw_UserInputField").keypress(function (event) {
             var varLength = $(this).val().trim().length;
-            // added condition for iPad , since ipad shld have all the functionality same as Desktop view
+            // added condition for iPad , since ipad shld have all the fucntionality same as Desktop view
             if ((isDesktop.matches && !isMobileNavigator) || isIPad) {
                 if (varLength > 29) {
                     $('.nw_UserInputField').removeClass('nwAutosize1');
@@ -15889,12 +15808,6 @@ window.NinaVars = window.NinaVars || {};
                 $('.nw_UserInputField').removeClass('nwAutosize2');
                 $('.nw_UserInputField').addClass('nwAutosize1');
             }
-            if (!$('#ipAustralia-block').hasClass('nw_initial')) {
-                $('.nw_AgentStatus').removeClass('nw_StatusVisibilityNone');
-            } else {
-                $('.nw_AgentStatus').addClass('nw_StatusVisibilityNone');
-            }
-
         });
 
 
@@ -15907,59 +15820,32 @@ window.NinaVars = window.NinaVars || {};
             $ab.removeClass('nwNormal');
             if (isExpanded) {
                 $('#ipAustralia-block ,.nw_Dialog').removeClass("nwSend nwNormal nwClosed");
-                if (!isLiveAgent) {
-                    $('.nw_Conversation').removeClass('nwNormal nwSend');
-                } else {
-                    // live Agent;
-                    $('.iwt-received-messages-panel').removeClass('nwNormal');
-                }
-
-                
+                $('.nw_Conversation').removeClass('nwNormal nwSend');
                 if (isIPad) {
                     $ab.addClass('ipadExpand');
 
                 } else {
                     $ab.addClass('nwExpand1');
                 }
-                
-                 if (!isLiveAgent) {
-                    $('.nw_Dialog,.nw_Conversation').addClass('nwExpand1');
-                } else {
-                    $('.nw_Dialog,.iwt-received-messages-panel').addClass('nwExpand1');
-                }
-                
+                $('.nw_Dialog,.nw_Conversation').addClass('nwExpand1');
             } else {
                 if (isIPad) {
                     $ab.removeClass('ipadExpand');
                 } else {
                     $ab.removeClass('nwExpand1');
                 }
-                 if (!isLiveAgent) {
-                    $('.nw_Dialog ,.iwt-received-messages-panel').removeClass('nwExpand1');
-                    $('#ipAustralia-block,.nw_Dialog ,.nw_Conversation').addClass('nwNormal');
-                } else {
-                    $('.nw_Dialog ,.iwt-received-messages-panel').removeClass('nwExpand1');
-                    $('#ipAustralia-block,.nw_Dialog ,.iwt-received-messages-panel').addClass('nwNormal');
-                }
+                $('.nw_Dialog ,.nw_Conversation').removeClass('nwExpand1');
+                $('#ipAustralia-block,.nw_Dialog ,.nw_Conversation').addClass('nwNormal');
 
             }
             if ($('#ex').hasClass('nw_Expand')) {
                 $('.nw_Expand.button').removeClass('nw_Expand');
                 $(this).addClass('nw_collapse');
-                if (!isLiveAgent) {
-                    setLabel($('#ex'), va.CONTRACT_ALEXT_TEXT);
-                } else {
-                    setLabel($('#ex'), va.CONTRACT_LIVE_AGENT);
-                }
+                setLabel($('#ex'), va.CONTRACT_ALEXT_TEXT);
             } else {
                 $('.nw_collapse.button').removeClass('nw_collapse');
                 $(this).addClass('nw_Expand');
-                if (!isLiveAgent) {
-                    setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
-                } else {
-                    setLabel($('#ex'), va.EXPAND_LIVE_AGENT);
-                }
-
+                setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
             }
 
             return false;
@@ -15968,14 +15854,6 @@ window.NinaVars = window.NinaVars || {};
 
         $('.nw_SubmitBtn').click(function (event) { // handler for Submit button click
             var varLength = $(".nw_UserInputField").val().trim().length;
-             var userText = $('.nw_UserInputField').val();
-            if (hasWhiteSpace(userText)) {
-                 $('.nw_UserInputField').val(userText.replace(/(^\s+|\s+$)/g, ''));
-
-                event.preventDefault();
-                event.stopPropagation();
-            }
-            else if(varLength > 0){
             if (isFirstInteraction && firstTime && varLength > 0) {
                 $('#ipAustralia-block ,.nw_Expand,.nw_Input ').removeClass('nw_initial');
                 $('#ipAustralia-block ,.nw_Dialog,.nw_Conversation').addClass('nwSend');
@@ -15988,60 +15866,42 @@ window.NinaVars = window.NinaVars || {};
                 $('#ipAustralia-block ,.nw_Dialog,.nw_Conversation').addClass('nwNormal');
                 firstTime = false;
             }
-        }
             if ($('.nw_UserInputField').hasClass('nwAutosize2')) {
                 $('.nw_UserInputField').removeClass('nwAutosize2');
                 $('.nw_UserInputField').addClass('nwAutosize1');
             }
-            
-            $('.nw_AgentStatus').addClass('nw_StatusVisibilityNone');
 
         });
 
         $("#cl,#nw_Header").click(function (event) {
+
             event.preventDefault();
             event.stopPropagation();
-            closeIcon_HeaderClick();
 
-
-        });
-
-        // written this function to rebind the click handler for Header.
-        function closeIcon_HeaderClick() {
             if (!isFirstInteraction && !firstTime) {
                 va.open();
-                if (isIPad) {
-                    va.iPadOpen();
-                }
+                if(isIPad){ va.iPadOpen();} 
                 firstTime = true;
             } else if (!isFirstInteraction && firstTime) {
                 va.close();
-                if (isIPad) {
-                    va.iPadClose();
-                }
+                if(isIPad){ va.iPadClose();}
                 firstTime = false;
             } else {
                 if (firstTime) {
                     va.open();
-                    if (isIPad) {
-                        va.iPadOpen();
-                    }
+                    if(isIPad){ va.iPadOpen();}
                     firstTime = false;
                 } else if (va.isOpen() && !firstTime) {
                     va.close();
-                    if (isIPad) {
-                        va.iPadClose();
-                    }
+                    if(isIPad){ va.iPadClose();}
                 } else {
                     va.open();
-                    if (isIPad) {
-                        va.iPadOpen();
-                    }
+                    if(isIPad){ va.iPadOpen();}
                 }
             }
-
             return false;
-        }
+
+        });
 
         $ab.keydown(function (event) {
             if (!va.isOpen()) {
@@ -16061,7 +15921,9 @@ window.NinaVars = window.NinaVars || {};
 
 
         va.open = function () {
-            
+
+            event.preventDefault();
+            event.stopPropagation();
             $ab.removeClass("closed nwClosed nw_initial");
             $('.nw_Dialog').removeClass('nwClosed nwMinimize');
             $('.nw_Expand').removeClass('nwClosed');
@@ -16080,19 +15942,16 @@ window.NinaVars = window.NinaVars || {};
             });         
             
             //iPad scrolling issue fix. calculate current scoll height and add Css top property
-            if (isIPad) {
-                va.iPadOpen();
-            }
+            if(isIPad){ va.iPadOpen();}
         };
 
         va.close = function () {
-
             if ($ab.hasClass("expanded")) {
                 $ab.removeClass("expanded");
             }
             $('.nw_Expand.button').addClass('nw_initial');
-            $('#ex').removeClass('nw_collapse nwNormal nwExpand1 nw_Expand');
-            $ab.removeClass('nwSend nwExpand1 nwNormal nw_Expand');
+            $('#ex').removeClass('nw_collapse nwNormal');
+            $ab.removeClass('nwSend nwExpand1 nwNormal');
             if ($ab.hasClass('ipadExpand') || isIPad) {
 
                 $ab.removeClass('ipadExpand');
@@ -16101,15 +15960,9 @@ window.NinaVars = window.NinaVars || {};
             $('.nw_Dialog').addClass('nwClosed');
             $('#cl').removeClass('nw_Close');
             $('#cl').addClass('nwOpen');
-            if (!isLiveAgent) {
-                setLabel($('#cl'), va.OPEN_ALEX_TEXT);
-            } else {
-                setLabel($('#cl'), va.OPEN_LIVE_AGENT);
-            }
-
-            if (isIPad) {
-                va.iPadClose();
-            }
+            setLabel($('#cl'), va.OPEN_ALEX_TEXT);
+            
+            if(isIPad){ va.iPadClose();}
         };
 
 
@@ -16125,27 +15978,10 @@ window.NinaVars = window.NinaVars || {};
             var divBlock = $('#ipAustralia-block');
             var scrollTopiPad = document.body.scrollTop;
             divBlock.removeProp('position');
-            if (firstTime) {
-                divBlock.css({
-                    'top': scrollTopiPad + 200,
-                    'position': 'absolute',
-                    'left': 'auto',
-                    'bottom': 'auto'
-                });
-            } else if (scrollTopiPad == 0 || scrollTopiPad < 180) { //this to ensure VA sits nicely and without the header being chopped off
-                divBlock.css({
-                    'top': '180px',
-                    'position': 'absolute',
-                    'left': 'auto',
-                    'bottom': 'auto'
-                });
+            if(scrollTopiPad == 0 || scrollTopiPad < 180){ //this to ensure VA sits nicely and without the header being chopped off
+                divBlock.css({'top':'180px', 'position': 'absolute', 'left': 'auto', 'bottom': 'auto'});
             } else {
-                divBlock.css({
-                    'top': scrollTopiPad - 140,
-                    'position': 'absolute',
-                    'left': 'auto',
-                    'bottom': 'auto'
-                });
+                divBlock.css({'top':scrollTopiPad-140, 'position': 'absolute', 'left': 'auto', 'bottom': 'auto'});
             }
             divBlock.css('animation-name','').css('animation-duration','');
             window.scrollTo(0, document.body.scrollTop + 40); //to ensure input box displays well above the keyboard. Note will not work if users have configured split view or set the keyboard to appear at the top of the screen
@@ -16161,158 +15997,6 @@ window.NinaVars = window.NinaVars || {};
             document.activeElement.blur();
             $("input, textarea").blur();
         };
-
-        //var baseUrl = "https://dcomdev-nsw.ccaas.datacom.com.au/I3Root/IPA/chat.html";
-
-
-       
-
-        $(document).on('click', '#ininChatLink', function () {
-            // click on Chat Link Should disable the the yes and No link provided..
-            //<a href="#" data-vtz-link-type="Dialog" data-vtz-jump="1f5a5864-24c0-418f-b42f-c46883f969b9">Yes</a>
-            //<a href="#" data-vtz-link-type="Dialog" data-vtz-jump="e95959a6-ba07-4ba4-9435-e932a14fd778" disabled="true">No</a>            
-            var chatUrl = $(this).attr('data-iframe-source');
-            $(this).removeAttr('data-iframe-source');
-            $(this).removeAttr('href');
-            $(this).attr('id', 'noUse');
-            $(this).attr('disabled', 'disabled');
-            $('#noUse').css('textDecoration', 'none');
-            $(this).replaceWith('<textclass id="nw_AgentSays">now</text>');
-
-            //replaced the <a> with <div> tag so that user cannot click on the yes or no link for "Would you like to chat with a live agent now? ". 
-
-            $('a[data-vtz-jump="e95959a6-ba07-4ba4-9435-e932a14fd778"]').replaceWith("<text data-vtz-jump='e95959a6-ba07-4ba4-9435-e932a14fd778' class='nw_AgentSays'>No</text>");
-            $('a[data-vtz-jump="1f5a5864-24c0-418f-b42f-c46883f969b9"]').replaceWith("<text data-vtz-jump='1f5a5864-24c0-418f-b42f-c46883f969b9' class='nw_AgentSays'>Yes</text>");
-            
-            if (chatUrl != undefined && chatUrl.length > 0) {
-                $('#nw_Header').unbind('click');
-                $('.nw_AgentHeader').text(" ASK LIVE AGENT");
-                $('.nw_Conversation').removeClass('nwNormal');
-                $('.transitionPhase').remove();
-                $('.nw_Conversation').addClass('nw_StatusVisibilityNone');
-                $('.nw_Input').addClass('nw_StatusVisibilityNone');
-                $('#nw_Header').removeClass('nw_Header');
-                $('#nw_Header').addClass('nw_LiveAgentHeader');
-                var newControl = "<a href='#' id='cross' class='button nw_closeCross'></a>";
-                $(newControl).appendTo('.nw_Controls');
-                isLiveAgent = true;
-                $('.dcw').show();
-                var snippet =
-                    '<!--[if (gte IE 9)|!(IE)]><!--><script src="js/external/require.min.js" data-main="js/main.js" type="text/javascript"></script> <div id="myObject"><iframe name="chatInfofrm" id="chatInfofrm" class="dcw-iframe" src="' + chatUrl + '"></iframe></div><![endif]-->' +
-                    '</div>';
-
-            var snippetbutton = '<div id="dcw-chatbutton-container"><div class="hr" style="width: 120px;"><hr /></div><div id="dcw-chatbutton" class="dcw-startChatButton"><i class="fa">&#xf075;</i>&nbsp;Chat with us</div></div>';
-            //chatContainerPanel
-
-            $(".dcw").html(snippet);
-            if (isLiveAgent) {
-                $('.responsive-chat-icon').addClass('responsive-chat-icon-liveagent-close');
-            } else {
-                $('.responsive-chat-icon').removeClass('responsive-chat-icon-close responsive-chat-icon-liveagent responsive-chat-icon-liveagent-close');
-            }
-            // create div dynamically , and show the end chat link.
-
-            var endChatLink = "<div id='endChatMobile' style='text-align: center'><strong>LIVE CHAT </strong>(<a href='#' id='endChat'><strong>END CHAT<strong></a>)</div>";
-
-            $('.nw_Dialog').append(endChatLink);
-            //}
-
-            $('iframe#chatInfofrm').ready(function () {
-                $(function () {
-
-                    var f = $('#chatInfofrm');
-                    f.load(function () {
-                        var frame = document.getElementsByName('chatInfofrm');
-                    })
-                });
-
-                });
-                setLabel($('#ex'), va.EXPAND_LIVE_AGENT);
-                setLabel($('#cl'), va.MINIMIZE_LIVE_AGENT);
-                setLabel($('#cross'), va.END_LIVE_AGENT_CHAT);
-                event.preventDefault();
-                event.stopPropagation();
-            }
-
-        });
-
-
-        // endChat for Mobile View
-        $(document).on('click', '#endChat', function () {
-
-            setLabel($('#cl'), va.END_LIVE_AGENT_CHAT);
-            $('#endChatMobile').remove();
-            $('#nw_Header').bind('click', closeIcon_HeaderClick);
-            if(window.confirm('Are you sure you want to exit your Live Chat session?')){
-                $( '#chatInfofrm' ).attr( 'src', 'parent.location.href'); //simply reload
-                setLabel($('#cl'), va.END_LIVE_AGENT_CHAT);
-                // remove the DIV that Provides the link to endChat in mobile View
-                $('#endChatMobile').remove();
-                $('#nw_Header').bind('click', closeIcon_HeaderClick);
-                $('#nw_Header').removeClass('nw_LiveAgentHeader');
-                $('#nw_Header').addClass('nw_Header');
-                $('.nw_Conversation,.nw_Input ').removeClass('nw_StatusVisibilityNone nw_transitionPhase');
-                $('.nw_AgentHeader').text(" ASK ALEX FOR HELP");
-                $('.nw_Conversation').addClass('nwNormal');
-                $('.nw_Controls').find('#cross').remove();
-                isLiveAgent = false;
-
-                $('.dcw').hide();
-                $('#endChatMobile').remove();
-                $('.responsive-chat-icon').addClass('responsive-chat-icon-close');
-                $('.responsive-chat-icon').removeClass(' responsive-chat-icon-liveagent responsive-chat-icon-liveagent-close');
-           
-
-setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
-            setLabel($('#cl'), va.CLOSE_ALEX_TEXT);
-
-            }
-        });
-
-
-        $(document).on('click', '#cross', function () {
-            
-            
-            
-            if(window.confirm('Are you sure you want to exit your Live Chat session?')){
-                $( '#chatInfofrm' ).attr( 'src', 'parent.location.href'); //simply reload
-                setLabel($('#cl'), va.END_LIVE_AGENT_CHAT);
-                // remove the DIV that Provides the link to endChat in mobile View
-                $('#endChatMobile').remove();
-                $('#nw_Header').bind('click', closeIcon_HeaderClick);
-                $('#nw_Header').removeClass('nw_LiveAgentHeader');
-                $('#nw_Header').addClass('nw_Header');
-                $('.nw_Conversation,.nw_Input ').removeClass('nw_StatusVisibilityNone nw_transitionPhase');
-                $('.nw_AgentHeader').text(" ASK ALEX FOR HELP");
-                $('.nw_Conversation').addClass('nwNormal');
-                $('.nw_Controls').find('#cross').remove();
-                isLiveAgent = false;
-
-                $('.dcw').hide();
-                $('#endChatMobile').remove();
-                $('.responsive-chat-icon').addClass('responsive-chat-icon-close');
-                $('.responsive-chat-icon').removeClass(' responsive-chat-icon-liveagent responsive-chat-icon-liveagent-close');
-           
-
-setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
-            setLabel($('#cl'), va.CLOSE_ALEX_TEXT);
-
-            }
-            event.preventDefault();
-            event.stopPropagation();
-
-        });
-
-        function guid() {
-            function s4() {
-                return Math.floor((1 + Math.random()) * 0x10000)
-                    .toString(16)
-                    .substring(1);
-            }
-            return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-                s4() + '-' + s4() + s4() + s4();
-        }
-
     });
 
     window.initialize = function () { //  handler to invoke VA in mobile view
@@ -16327,23 +16011,10 @@ setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
             $('#ex').removeClass('nw_collapse');
             $('#ex').addClass('nw_initial');
             $('#cl').addClass('nwOpen');
-            if (!isLiveAgent) {
-                $('.responsive-chat-icon').removeClass('responsive-chat-icon-close responsive-chat-icon-liveagent responsive-chat-icon-liveagent-close');
-
-            } else {
-                $('.responsive-chat-icon').addClass('responsive-chat-icon-liveagent');
-                $('.responsive-chat-icon').removeClass('responsive-chat-icon-liveagent-close');
-            }
+            $('.responsive-chat-icon').removeClass('responsive-chat-icon-close');
 
         } else {
-            if (!isLiveAgent) {
-                $('.responsive-chat-icon').addClass('responsive-chat-icon-close');
-                $('.responsive-chat-icon').removeClass('responsive-chat-icon-liveagent responsive-chat-icon-liveagent-close');
-            } else {
-                //$('.responsive-chat-icon').addClass('responsive-chat-icon-liveagent');
-                $('.responsive-chat-icon').addClass('responsive-chat-icon-liveagent-close');
-            }
-
+            $('.responsive-chat-icon').addClass('responsive-chat-icon-close');
             $('#ipAustralia-block').removeClass('closed nw_initial nwClosed ');
             $('.nw_Input').removeClass('nw_initial');
             $('.nw_Dialog').removeClass('nwClosed');

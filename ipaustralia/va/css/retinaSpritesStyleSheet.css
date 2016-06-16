@@ -51,7 +51,7 @@
 }
 #ipAustralia-block .nw_Header .nw_Avatar {
   background-color: transparent;
-  background-image: url('../images/ui-s97737329ac.png');
+  background-image: url('../images/ui-s9adae61c5f.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 67px 147px;
@@ -98,8 +98,8 @@
   border-color: #ddffee !important;
 }
 #ipAustralia-block .nw_Header .nw_Expand {
-  background-image: url('../images/ui-s97737329ac.png');
-  background-position: 0 -134px;
+  background-image: url('../images/ui-s9adae61c5f.png');
+  background-position: 0 -224px;
   background-repeat: no-repeat;
   background-size: 25px 25px;
   background-attachment: scroll;
@@ -116,8 +116,8 @@
   }
 }
 #ipAustralia-block .nw_Header .nw_collapse {
-  background-image: url('../images/ui-s97737329ac.png');
-  background-position: 0 -250px;
+  background-image: url('../images/ui-s9adae61c5f.png');
+  background-position: 0 -400px;
   background-repeat: no-repeat;
   background-size: 25px 25px;
   background-attachment: scroll;
@@ -134,8 +134,8 @@
   }
 }
 #ipAustralia-block .nw_Header .nw_Close {
-  background-image: url('../images/ui-s97737329ac.png');
-  background-position: 0 -92px;
+  background-image: url('../images/ui-s9adae61c5f.png');
+  background-position: 0 -122px;
   background-repeat: no-repeat;
   background-size: 25px 25px;
   background-attachment: scroll;
@@ -155,8 +155,8 @@
   }
 }
 #ipAustralia-block .nw_Header .nwOpen {
-  background-image: url('../images/ui-s97737329ac.png');
-  background-position: 0 -208px;
+  background-image: url('../images/ui-s9adae61c5f.png');
+  background-position: 0 -328px;
   background-repeat: no-repeat;
   background-size: 25px 25px;
   background-attachment: scroll;
@@ -638,7 +638,7 @@
   #ipAustralia-block .nw_AgentSays .nw_Welcome:after {
     content: '';
     background-color: transparent;
-    background-image: url('../images/ui-s97737329ac.png');
+    background-image: url('../images/ui-s9adae61c5f.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 67px 147px;

@@ -4,17 +4,21 @@ section#block-panels-mini-news-four-item-display, section#block-panels-mini-blog
 section#block-bean-stay-informed-block {
     @include full_width_block();
 }
-
 section#block-panels-mini-case-studies-four-item-display, section#block-panels-mini-news-four-item-display, section#block-panels-mini-events-four-item-display {
   background-color:#eff0f2;
 }
 
-
-.page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="body"], .page-node-61311 section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="body"], .page-node-61311 section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="body"], .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="body"] {
+/*.page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="body"],
+.page-node-61311 section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="body"],
+.page-node-61311 section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="body"],
+.page-node-61311 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="body"],
+.page-node-62346 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="body"],
+.page-node-61311 section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="body"],
+.page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis .views-view-grid td div[class*="body"] {
 text-align: left;
 background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
 padding: 0px 20px;
-margin: 0 auto;
+//margin: 0 auto;
 color: white;
 width: 280px;
 display: block;
@@ -25,51 +29,72 @@ overflow: hidden;
 display: none;
 text-overflow: ellipsis;
 }
+*/
 
-.page-node-61311 section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="body"], .page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis .views-view-grid td div[class*="body"] {
-  text-align: left;
-  background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
-  padding: 0px 20px;
-  margin: 0 auto;
-  color: white;
-  width: 280px;
-  display: block;
-  position: relative;
-  z-index: 100;
-  height: 180px;
-  overflow: hidden;
-  display: none;
-  text-overflow: ellipsis;
+
+.page-node-61311 section#block-panels-mini-case-studies-four-item-display .container,
+.page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container,
+.page-node-62346 section#block-panels-mini-official-notices-four-item-displ .container,
+.page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis .container {
+  overflow-x: visible;
+  overflow: visible;
+  height: 420px;
+  > div {
+    overflow-x: visible;
+    overflow: visible;
+  }
 }
 
-.page-node-61311 section#block-panels-mini-news-four-item-display .container > div .center-wrapper table td, .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td, .page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis .container > div .center-wrapper table td {
-  width: 25%;
+.page-node-61311 section#block-panels-mini-news-four-item-display .container > div .center-wrapper table td,
+.page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td,
+.page-node-62346 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td,
+.page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis .container > div .center-wrapper table td {
+  //width: 25%;
+  width: 280px;
   padding: 0px 10px;
   vertical-align: top;
   position:relative;
   padding-right:15px;
 }
 
-.page-node-61311 section#block-panels-mini-news-four-item-display .container > div .center-wrapper table td img, .page-node-61311 section#block-panels-mini-case-studies-four-item-display .container > div .center-wrapper table td img, .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td img, .page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis .container > div .center-wrapper table td img {
+.page-node-61311 section#block-panels-mini-news-four-item-display .container > div .center-wrapper table td img,
+.page-node-61311 section#block-panels-mini-case-studies-four-item-display .container > div .center-wrapper table td img,
+.page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td img,
+.page-node-62346 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td img,
+.page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis .container > div .center-wrapper table td img,
+.page-node-61311 section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td img {
   height:260px;
   width:100%;
 }
-.page-node-61311 section#block-panels-mini-news-four-item-display .container > div .center-wrapper table td .views-field-title, .page-node-61311 section#block-panels-mini-case-studies-four-item-display .container > div .center-wrapper table td .views-field-title, .page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td .views-field-title, .page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis .container > div .center-wrapper table td .views-field-title {
+.page-node-61311 section#block-panels-mini-news-four-item-display .container > div .center-wrapper table td .views-field-title,
+.page-node-61311 section#block-panels-mini-case-studies-four-item-display .container > div .center-wrapper table td .views-field-title,
+.page-node-61311 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td .views-field-title,
+.page-node-62346 section#block-panels-mini-official-notices-four-item-displ .container > div .center-wrapper table td .views-field-title,
+.page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis .container > div .center-wrapper table td .views-field-title,
+.page-node-61311 section#block-panels-mini-blog-four-item-display .container > div .center-wrapper table td .views-field-title {
   font: normal 18px "montserratregular", sans-serif;
-font-size: 21px;
-height: 100px;
-letter-spacing: -1.2px;
-line-height: 23px;
-overflow: hidden;
-margin-top: -100px;
-line-height: 20px;
+  font-size: 21px;
+  height: 100px;
+  letter-spacing: -1.2px;
+  line-height: 23px;
+  overflow: hidden;
+  margin-top: -100px;
+  line-height: 20px;
 }
-
-.page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="title"], .page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="location"]{
+.page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="title"],
+.page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="location"],
+.page-node-61311 section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="title"],
+.page-node-61311 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="title"],
+.page-node-62346 section#block-panels-mini-official-notices-four-item-displ .views-view-grid td div[class*="title"],
+.page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis .views-view-grid td div[class*="title"],
+.page-node-61311 section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="title"],
+.page-node-61311 section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="location"],
+.page-node-61311 section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="title"],
+.page-node-61311 section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="location"] {
   text-align: left;
 background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
 padding: 0px 20px;
-margin: 0 auto;
+//margin: 0 auto;
 color: white;
 width: 280px;
 display: block;
@@ -78,41 +103,28 @@ z-index: 100;
 clear: both;
 font: normal 20px "montserratbold", sans-serif;
 font-family: "montserratregular", sans-serif;
-height: 95px !important;
+//height: 95px !important;
+height: 95px;
 overflow: hidden;
 text-overflow: ellipsis;
 text-decoration: underline;
 padding: 6px 20px;
 }
 
-.page-node-61311 section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="title"], .page-node-61311 section#block-panels-mini-blog-four-item-display .views-view-grid td div[class*="location"], .page-node-61311 section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="title"], .page-node-61311 section#block-panels-mini-events-four-item-display .views-view-grid td div[class*="location"] {
-  text-align: left;
-background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
-padding: 0px 20px;
-margin: 0 auto;
-color: white;
-width: 280px;
-display: block;
-position: relative;
-z-index: 100;
-clear: both;
-font: normal 20px "montserratbold", sans-serif;
-font-family: "montserratregular", sans-serif;
-height: 95px !important;
-overflow: hidden;
-text-overflow: ellipsis;
-text-decoration: underline;
-padding: 6px 20px;
-}
-
-.page-node-61311 section#block-panels-mini-news-four-item-display, .page-node-61311 section#block-panels-mini-blog-four-item-display, .page-node-61311 section#block-panels-mini-events-four-item-display, {
+.page-node-61311 section#block-panels-mini-news-four-item-display,
+.page-node-61311 section#block-panels-mini-blog-four-item-display,
+.page-node-61311 section#block-panels-mini-events-four-item-display,
+.page-node-61311 section#block-panels-mini-case-studies-four-item-display,
+.page-node-61311 section#block-panels-mini-official-notices-four-item-displ,
+.page-node-62346 section#block-panels-mini-official-notices-four-item-displ,
+.page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis, {
     color: $charcoal;
     margin-left:0px !important;
     .views-view-grid {
         td {
             position: relative;
             vertical-align: top;
-            width: 25%;
+            width: 280px;
             padding-right:15px;
 
 
@@ -125,9 +137,9 @@ padding: 6px 20px;
                 }
             }
             div[class*="date"] {
-                @include news-community-texts-four;
+                @include news-community-texts(280px);
                 padding-top:23px;
-                height:44px;
+                height:45px;
                 text-overflow: ellipsis;
                 overflow:hidden;
                 span[class*="label "] {
@@ -135,12 +147,14 @@ padding: 6px 20px;
                 }
                 margin-top: -140px;
             }
+
             div[class*="title"],  div[class*="location"]{
-                @include news-community-texts-four;
+                @include news-community-texts(280px);
                 clear: both;
                 font:$title-h5;
                 font-family:$font-title-normal;
-                height:95px !important;
+                //height:95px !important;
+                height: 95px;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 text-decoration: underline;
@@ -151,10 +165,10 @@ padding: 6px 20px;
                 }
             }
             div[class*="location"] {
-                @include news-community-texts-four;
+                @include news-community-texts(280px);
             }
             div[class*="body"] {
-                @include news-community-texts-four;
+                @include news-community-texts(280px);
                 height: 140px;
                 overflow: hidden;
                 display: none;
@@ -172,9 +186,16 @@ padding: 6px 20px;
         }
     }
 }
-.page-node-61311 section#block-panels-mini-case-studies-four-item-display, .page-node-61311 section#block-panels-mini-official-notices-four-item-displ {
+//specific for case studies to fill box
+.page-node-61311 section#block-panels-mini-case-studies-four-item-display .views-view-grid td div[class*="body"]{
+  height: 187px;
+}
+.page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis,
+.page-node-61311 section#block-panels-mini-case-studies-four-item-display,
+.page-node-61311 section#block-panels-mini-official-notices-four-item-displ,
+.page-node-62346 section#block-panels-mini-official-notices-four-item-displ {
   div[class*="title"] {
-      @include news-community-texts-four;
+      @include news-community-texts(280px);
       padding-top:23px;
       height:140px;
       text-overflow: ellipsis;
@@ -182,13 +203,14 @@ padding: 6px 20px;
       span[class*="label "] {
           float: left;
       }
-      margin-top: -140px;
+      margin-top: -93px;
   }
 }
-#block-bean-careers-landing-page-block .field-item.even {
-    background-color: #fff;
-    padding: 40px;
+.page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis {
+  div[class*="title"] {
+    margin-top: -95px;
   }
+}
 .page-node-61311 section#block-panels-mini-news-four-item-display .views-view-grid td div[class*="date"] {
     text-align: left;
     background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat;
@@ -255,6 +277,75 @@ section#block-panels-mini-official-notices-four-item-displ .views-view-grid td d
   overflow: hidden;
   margin-top: -140px;
 } */
-.page-node-61311 section#block-panels-mini-case-studies-four-item-display  .views-view-grid td:hover div[class*="title"], .page-node-61311 section#block-panels-mini-official-notices-four-item-displ  .views-view-grid td:hover div[class*="title"] {
+.page-node-61311 section#block-panels-mini-case-studies-four-item-display  .views-view-grid td:hover div[class*="title"] {
     margin-top: -280px;
+}
+//offset for date
+  .page-node-62126, .page-node-61311, .page-node-62346 {
+   section#block-panels-mini-official-notices-four-item-displ,
+   section#block-panels-mini-current-vacancies-four-panel-dis {
+      .views-view-grid td:hover div[class*="title"] {
+        margin-top: -235px;
+        height: 235px;
+      }
+   }
+ }
+ .page-node-62126 section#block-panels-mini-current-vacancies-four-panel-dis,
+ .page-node-61311 section#block-panels-mini-official-notices-four-item-displ,
+ .page-node-62346 section#block-panels-mini-official-notices-four-item-displ {
+   td {
+       &:hover {
+         div[class*="date"] {
+           margin-top: -280px !important;
+         }
+       }
+     }
+
+     .panels-flexible-row-191-main-row,
+     .panels-flexible-row-186-main-row,
+     .panels-flexible-row-206-main-row  {
+       margin-bottom: 120px;
+     }
+ }
+
+// legislation  4 block
+section#block-bean-legislation-landing-block {
+    background: $lighter-grey;
+    @include  section_padding(20);
+    @include  landing_page_group_block_multiple();
+}
+
+section#block-bean-legislation-landing-block div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+    margin: 0 10px;
+    padding: 40px;
+    background: #fff;
+    height: 350px;
+    overflow-y: hidden;
+}
+section#block-bean-legislation-landing-block .panels-flexible-four_column_panel_4 .panels-flexible-region-inside {
+    padding-right: 0;
+    padding: 30px;
+    background: #fff;
+    height: 415px;
+    /* overflow-y: hidden; */
+    margin-right: 15px;
+}
+section#block-bean-legislation-landing-block h4:after {
+    border-top: 4px solid #b6bec0;
+    content: "";
+    display: block;
+    width: 100px;
+    margin: 15px 0 40px 2px;
+}
+
+.node-type-landing-page {
+  .panels-flexible-row-206-main-row,
+  .panels-flexible-row-191-main-row {
+    //min-height: 280px;
+  }
+  .panels-flexible-row-191-main-row-inside {
+    overflow: visible;
+    overflow-x: visible;
+  }
+
 }

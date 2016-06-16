@@ -61,11 +61,11 @@
     }
 }
 
-section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing, section#block-bean-careers-title-block {
+section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing, section#block-bean-careers-title-block, section#block-bean-legislation-landing-page-title-b {
     @include landing_page_header_title('tablet.jpg', $themecolor:$mint);
 
 }
-#block-bean-tools-resources-selector, #block-bean-careers-promotional-block {
+#block-bean-tools-resources-selector, #block-bean-careers-promotional-block, #block-bean-pharmaceutical-patents-review-ri {
     @include full_width_block();
 }
 section#block-bean-tools-resources-useful-links, section#block-bean-tools-resources-new-to-ip {
