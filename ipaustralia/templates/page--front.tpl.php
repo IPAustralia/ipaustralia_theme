@@ -1,6 +1,6 @@
 <!-- ClickTale Top part -->
 <script type="text/javascript">
-//var WRInitTime=(new Date()).getTime();
+var WRInitTime=(new Date()).getTime();
 </script>
 <!-- ClickTale end of Top part -->
 
@@ -41,6 +41,6 @@
 
 <!-- ClickTale Bottom part -->
 <script type='text/javascript'>
-//document.write(unescape("%3Cscript%20src='"+(document.location.protocol=='https:'? "https://cdnssl.clicktale.net/www/ptc/8dd11315-763a-4246-bb54-dfc6d9cb1206.js":"http://cdn.clicktale.net/www/ptc/8dd11315-763a-4246-bb54-dfc6d9cb1206.js") + "'%20type='text/javascript'%3E%3C/script%3E"));
+document.write(unescape("%3Cscript%20src='"+(document.location.protocol=='https:'? "https://cdnssl.clicktale.net/www/ptc/8dd11315-763a-4246-bb54-dfc6d9cb1206.js":"http://cdn.clicktale.net/www/ptc/8dd11315-763a-4246-bb54-dfc6d9cb1206.js") + "'%20type='text/javascript'%3E%3C/script%3E"));
 </script>
 <!-- ClickTale end of Bottom part -->

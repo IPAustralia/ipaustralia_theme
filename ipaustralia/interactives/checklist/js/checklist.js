@@ -20,3 +20,9 @@ jQuery(function(){
         jQuery(this).toggleClass("toggle-active");
     });
 });
+
+jQuery(function(){
+    if (jQuery('toggle').hasClass('color-copyright')){
+        (jQuery('arrow_carrot-down').addClass('whitearrow'));
+    }
+});
