@@ -3061,31 +3061,31 @@ section#block-bean-search-ip-rights {
     padding: 5px;
     margin: 0px 0px 0px 5px; }
 
-.page-current-vacancies-listing .views-row {
+.page-about-us-careers-current-vacancies-listing .views-row {
   background: #eff0f2;
   margin-bottom: 10px; }
-  .page-current-vacancies-listing .views-row .panel-col-last {
+  .page-about-us-careers-current-vacancies-listing .views-row .panel-col-last {
     padding-top: 22px;
     width: 70%; }
-    .page-current-vacancies-listing .views-row .panel-col-last .views-field-field-news-date {
+    .page-about-us-careers-current-vacancies-listing .views-row .panel-col-last .views-field-field-news-date {
       color: #999;
       margin-bottom: 10px; }
-  .page-current-vacancies-listing .views-row .panel-col-first {
+  .page-about-us-careers-current-vacancies-listing .views-row .panel-col-first {
     width: 23%; }
-    .page-current-vacancies-listing .views-row .panel-col-first img {
+    .page-about-us-careers-current-vacancies-listing .views-row .panel-col-first img {
       margin: 30px;
       width: 140px;
       height: 140px; }
-  .page-current-vacancies-listing .views-row .views-field-title a {
+  .page-about-us-careers-current-vacancies-listing .views-row .views-field-title a {
     color: #0d252c;
     font-size: 24px;
     font-weight: bold;
     text-decoration: underline; }
-.page-current-vacancies-listing .views-field-field-tags ul {
+.page-about-us-careers-current-vacancies-listing .views-field-field-tags ul {
   list-style: none;
   padding: 0;
   margin-top: 10px; }
-  .page-current-vacancies-listing .views-field-field-tags ul li {
+  .page-about-us-careers-current-vacancies-listing .views-field-field-tags ul li {
     display: inline-block;
     background: #0d252c;
     color: #fff;
@@ -7319,6 +7319,9 @@ section#block-bean-legislation-landing-block h4:after {
 .node-type-landing-page .panels-flexible-row-191-main-row-inside {
   overflow: visible;
   overflow-x: visible; }
+
+#block-bean-careers-landing-page-block .field-item {
+  background-color: #fff; }
 
 section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing, section#block-bean-careers-title-block, section#block-bean-legislation-landing-page-title-b {
   background: transparent url("../images/tablet.jpg") center center no-repeat;
