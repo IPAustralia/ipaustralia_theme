@@ -7321,7 +7321,8 @@ section#block-bean-legislation-landing-block h4:after {
   overflow-x: visible; }
 
 #block-bean-careers-landing-page-block .field-item {
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 40px; }
 
 section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing, section#block-bean-careers-title-block, section#block-bean-legislation-landing-page-title-b {
   background: transparent url("../images/tablet.jpg") center center no-repeat;
