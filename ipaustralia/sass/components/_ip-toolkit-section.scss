@@ -63,8 +63,13 @@
 .node-ip-toolkit-case-study.node-teaser {
   padding-top: 10px;
   padding-bottom: 10px;
-  .field-name-title {
+  .group-left {
     width: 65%;
+  }
+  .group-right {
+    width: 30%;
+  }
+  .field-name-title {
     display: inline-block;
     vertical-align: middle;
     h2 {
@@ -74,9 +79,74 @@
     }
   }
   .field-name-field-image {
-    width: 30%;
     display: inline-block;
     vertical-align: middle;
     padding-right: 5%;
+  }
+}
+
+.view-id-ip_toolkit_structure.view-display-id-block {
+  .views-row {
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.taxonomy-term.vocabulary-ip-toolkit-structure {
+  .field-name-title {
+    text-decoration: underline;
+    font: $title-h4-normal;
+    height: 60px;
+    padding-top: 15px;
+    position: relative;
+    top: -60px;
+    background: rgba(239, 240, 242, 0.7);
+    width: 280px;
+    display: inline-block;
+    cursor: pointer;
+    a {
+      color: $white;
+    }
+  }
+  .field-name-field-image {
+    img {
+      display: inline-block;
+    }
+  }
+}
+
+.view-id-ip_toolkit_structure.view-display-id-panel_pane_1, .view-id-ip_toolkit_page.view-display-id-block {
+  .views-row {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 48%;
+    &:nth-child(odd) {
+      margin-right: 2%;
+    }
+    @media only screen and (max-width: $break-point-midsmall) {
+      display: block;
+      width: 100%;
+    }
+    a {
+      background: $lighter-grey;
+      color: $color_shark_approx;
+      display: inline-block;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 15px;
+      text-align: left;
+      text-decoration: none;
+      width: 100%;
+      min-height: 100px;
+      &:after {
+        border-top: 4px solid $grey;
+        content: "";
+        display: block;
+        width: 100px;
+        margin: 15px 0 0 2px;
+      }
+    }
   }
 }
