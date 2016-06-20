@@ -3526,45 +3526,58 @@ article table tr td, article table tr th {
   font-weight: bold;
 }
 
-/* line 63, ../sass/components/_ip-toolkit-section.scss */
+/* line 64, ../sass/components/_ip-toolkit-section.scss */
+.field-name-field-ip-toolkit-case-studies .label-above {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 70, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.node-teaser {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 66, ../sass/components/_ip-toolkit-section.scss */
+/* line 73, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.node-teaser .group-left {
-  width: 65%;
+  float: none;
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3%;
 }
-/* line 69, ../sass/components/_ip-toolkit-section.scss */
+/* line 80, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.node-teaser .group-right {
-  width: 30%;
+  float: none;
+  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
 }
-/* line 72, ../sass/components/_ip-toolkit-section.scss */
+/* line 86, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.node-teaser .field-name-title {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 75, ../sass/components/_ip-toolkit-section.scss */
+/* line 89, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.node-teaser .field-name-title h2 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
   margin-bottom: 0;
 }
-/* line 81, ../sass/components/_ip-toolkit-section.scss */
-.node-ip-toolkit-case-study.node-teaser .field-name-field-image {
-  display: inline-block;
-  vertical-align: middle;
-  padding-right: 5%;
+/* line 95, ../sass/components/_ip-toolkit-section.scss */
+.node-ip-toolkit-case-study.node-teaser .field-name-body {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-/* line 89, ../sass/components/_ip-toolkit-section.scss */
+/* line 103, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-block .views-row {
   width: 49%;
   display: inline-block;
   text-align: center;
 }
 
-/* line 97, ../sass/components/_ip-toolkit-section.scss */
+/* line 111, ../sass/components/_ip-toolkit-section.scss */
 .taxonomy-term.vocabulary-ip-toolkit-structure .field-name-title {
   text-decoration: underline;
   font: normal 24px "montserratregular", sans-serif;
@@ -3577,34 +3590,34 @@ article table tr td, article table tr th {
   display: inline-block;
   cursor: pointer;
 }
-/* line 108, ../sass/components/_ip-toolkit-section.scss */
+/* line 122, ../sass/components/_ip-toolkit-section.scss */
 .taxonomy-term.vocabulary-ip-toolkit-structure .field-name-title a {
   color: white;
 }
-/* line 113, ../sass/components/_ip-toolkit-section.scss */
+/* line 127, ../sass/components/_ip-toolkit-section.scss */
 .taxonomy-term.vocabulary-ip-toolkit-structure .field-name-field-image img {
   display: inline-block;
 }
 
-/* line 120, ../sass/components/_ip-toolkit-section.scss */
+/* line 134, ../sass/components/_ip-toolkit-section.scss */
+.view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .view-content, .view-id-ip_toolkit_page.view-display-id-block .view-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+/* line 139, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row, .view-id-ip_toolkit_page.view-display-id-block .views-row {
-  float: left;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 48%;
 }
-/* line 125, ../sass/components/_ip-toolkit-section.scss */
-.view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row:nth-child(odd), .view-id-ip_toolkit_page.view-display-id-block .views-row:nth-child(odd) {
-  margin-right: 2%;
-}
 @media only screen and (max-width: 640px) {
-  /* line 120, ../sass/components/_ip-toolkit-section.scss */
+  /* line 139, ../sass/components/_ip-toolkit-section.scss */
   .view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row, .view-id-ip_toolkit_page.view-display-id-block .views-row {
-    display: block;
     width: 100%;
   }
 }
-/* line 132, ../sass/components/_ip-toolkit-section.scss */
+/* line 146, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row a, .view-id-ip_toolkit_page.view-display-id-block .views-row a {
   background: #eff0f2;
   color: #1d252c;
@@ -3615,10 +3628,48 @@ article table tr td, article table tr th {
   text-align: left;
   text-decoration: none;
   width: 100%;
-  min-height: 100px;
+  min-height: 110px;
 }
-/* line 143, ../sass/components/_ip-toolkit-section.scss */
+/* line 12, ../sass/mixins/_block-links.scss */
 .view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row a:after, .view-id-ip_toolkit_page.view-display-id-block .views-row a:after {
+  border-top: 4px solid #b6bec0;
+  content: "";
+  display: block;
+  width: 100px;
+  margin: 15px 0 0 2px;
+}
+
+/* line 153, ../sass/components/_ip-toolkit-section.scss */
+.pane-custom.block-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+/* line 159, ../sass/components/_ip-toolkit-section.scss */
+.pane-custom.block-links ul li {
+  list-style: none;
+  width: 48%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+/* line 167, ../sass/components/_ip-toolkit-section.scss */
+.pane-custom.block-links a {
+  background: #eff0f2;
+  color: #1d252c;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+  min-height: 110px;
+}
+/* line 12, ../sass/mixins/_block-links.scss */
+.pane-custom.block-links a:after {
   border-top: 4px solid #b6bec0;
   content: "";
   display: block;

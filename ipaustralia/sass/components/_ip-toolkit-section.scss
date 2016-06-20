@@ -60,28 +60,42 @@
   }
 }
 
+.field-name-field-ip-toolkit-case-studies {
+  .label-above {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
 .node-ip-toolkit-case-study.node-teaser {
   padding-top: 10px;
   padding-bottom: 10px;
   .group-left {
-    width: 65%;
+    float: none;
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3%;
   }
   .group-right {
-    width: 30%;
+    float: none;
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
   }
   .field-name-title {
     display: inline-block;
     vertical-align: middle;
     h2 {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 1.2;
       margin-bottom: 0;
     }
   }
-  .field-name-field-image {
-    display: inline-block;
-    vertical-align: middle;
-    padding-right: 5%;
+  .field-name-body {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -117,36 +131,40 @@
 }
 
 .view-id-ip_toolkit_structure.view-display-id-panel_pane_1, .view-id-ip_toolkit_page.view-display-id-block {
+  .view-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
   .views-row {
-    float: left;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 48%;
-    &:nth-child(odd) {
-      margin-right: 2%;
-    }
     @media only screen and (max-width: $break-point-midsmall) {
-      display: block;
       width: 100%;
     }
     a {
-      background: $lighter-grey;
-      color: $color_shark_approx;
-      display: inline-block;
-      font-size: 22px;
-      font-weight: bold;
-      padding: 15px;
-      text-align: left;
-      text-decoration: none;
-      width: 100%;
-      min-height: 100px;
-      &:after {
-        border-top: 4px solid $grey;
-        content: "";
-        display: block;
-        width: 100px;
-        margin: 15px 0 0 2px;
-      }
+      @include block-links;
     }
+  }
+}
+
+.pane-custom.block-links {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    li {
+      list-style: none;
+      width: 48%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 0;
+    }
+  }
+  a {
+    @include block-links;
   }
 }
