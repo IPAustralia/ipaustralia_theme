@@ -36,9 +36,21 @@
       background: $lighter-grey;
       text-decoration: underline;
     }
+    @media only screen and (min-width: $break-point-medium) and (max-width: $break-point-large) {
+      font-size: 12px;
+    }
+    @media only screen and (min-width: $break-point-large) and (max-width: $break-point-xlarge) {
+      font-size: 13px;
+    }
   }
   .views-row a {
     padding: 20px 35px;
+    @media only screen and (min-width: $break-point-medium) and (max-width: $break-point-large) {
+      padding: 20px 0px 20px 20px;
+    }
+    @media only screen and (min-width: $break-point-large) and (max-width: $break-point-xlarge) {
+      padding: 20px 30px;
+    }
     &:before {
       content: '>';
       font-family: sans-serif;
@@ -99,6 +111,36 @@
   }
 }
 
+.node-ip-toolkit-case-study.view-mode-sidebar {
+  font-size: 13px;
+  .label-above {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .field {
+    margin-top: 20px;
+  }
+  blockquote {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .field-name-field-quote-author {
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+.node-ip-toolkit-case-study {
+  .field-name-field-image {
+    margin-top: 20px;
+    .field-name-field-caption {
+      font-style: italic;
+      font-size: 12px;
+    }
+  }
+}
+
 .view-id-ip_toolkit_structure.view-display-id-block {
   .views-row {
     width: 49%;
@@ -134,12 +176,14 @@
   .view-content {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: stretch;
   }
   .views-row {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 48%;
+    background: $lighter-grey;
     @media only screen and (max-width: $break-point-midsmall) {
       width: 100%;
     }
@@ -155,7 +199,8 @@
     padding: 0;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: stretch;
     li {
       list-style: none;
       width: 48%;
