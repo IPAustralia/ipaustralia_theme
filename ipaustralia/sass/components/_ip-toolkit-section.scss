@@ -1,14 +1,83 @@
 .ip-toolkit-section {
-  .header .header-right section.block-search-api-page {
-    margin-top: 60px;
+  .header {
+    .logo {
+      width: 25%;
+      @media only screen and (max-width: $break-point-medium) {
+        width: 32%;
+      }
+      @media only screen and (max-width: $break-point-midsmall) {
+        width: 38%;
+      }
+      @media only screen and (max-width: $break-point-small) {
+        width: 47%;
+      }
+      img {
+        width: 88%;
+        @media only screen and (max-width: $break-point-small) {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+    .header-right {
+      width: 33%;
+      float: right;
+      section.block-search-api-page {
+        margin-top: 60px;
+      }
+    }
   }
-  .navbar-default, .breadcrumbs {
+  .iptoolkit-logo {
+    display: inline-block;
+    width: 22%;
+    margin-top: 40px;
+    float: left;
+    @media only screen and (max-width: $break-point-medium) {
+      width: 27%;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    @media only screen and (max-width: $break-point-midsmall) {
+      width: 35%;
+      margin-top: 15px;
+    }
+    @media only screen and (max-width: $break-point-small) {
+      width: 46%;
+      clear: both;
+      margin-top: 0;
+    }
+  }
+  .navbar-default .menu.megamenu.megamenu-level-1, .breadcrumbs {
     display: none;
   }
   aside {
     @media only screen and (max-width: $break-point-midsmall) {
       display: block;
     }
+  }
+  .region-nav {
+    li {
+      display: inline-block;
+      @media only screen and (max-width: $break-point-medium - 1) {
+        display: block;
+      }
+      a {
+        padding: 19px 21px 15px 21px;
+        display: block;
+        cursor: pointer;
+        color: $white;
+        font: normal 16px 'montserratregular', sans-serif;
+        line-height: 46px;
+        &:hover {
+          text-decoration: none;
+          background: transparent;
+        }
+        &:active, &:focus{
+          background: $charcoal;
+        }
+      }
+    }
+
   }
 }
 
@@ -35,12 +104,6 @@
     &:hover {
       background: $lighter-grey;
       text-decoration: underline;
-    }
-    @media only screen and (min-width: $break-point-medium) and (max-width: $break-point-large) {
-      font-size: 12px;
-    }
-    @media only screen and (min-width: $break-point-large) and (max-width: $break-point-xlarge) {
-      font-size: 13px;
     }
   }
   .views-row a {
@@ -142,10 +205,18 @@
 }
 
 .view-id-ip_toolkit_structure.view-display-id-block {
+  .view-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 20px;
+  }
   .views-row {
-    width: 49%;
-    display: inline-block;
     text-align: center;
+    @media only screen and (min-width: $break-point-medium) and (max-width: $break-point-large) {
+      width: 48%;
+    }
   }
 }
 
@@ -158,7 +229,7 @@
     position: relative;
     top: -60px;
     background: rgba(239, 240, 242, 0.7);
-    width: 280px;
+    width: 100%;
     display: inline-block;
     cursor: pointer;
     a {
@@ -207,6 +278,7 @@
       margin-top: 10px;
       margin-bottom: 10px;
       margin-left: 0;
+      background: $lighter-grey;
     }
   }
   a {

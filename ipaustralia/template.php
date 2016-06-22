@@ -37,6 +37,12 @@ function ipaustralia_preprocess_html(&$variables) {
 }
 
 function ipaustralia_preprocess_page(&$vars, $hook) {
+
+	$vars['iptoolkit_logo'] = theme('image', array(
+		'path' => drupal_get_path('theme', 'ipaustralia') . '/images/DIIS_logo.png',
+		'attributes' => array('class' => 'iptoolkit-logo'),
+	));
+
 	// override the default primary nav render array. see
 	// template.inc:template_preprocess_page() and
 	// page.vars.php:bootstrap_preprocess_page() for where these variables are
