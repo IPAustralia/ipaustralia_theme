@@ -1,0 +1,18 @@
+@mixin block-links {
+  background: $lighter-grey;
+  color: $color_shark_approx;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+  &:after {
+    border-top: 4px solid $grey;
+    content: "";
+    display: block;
+    width: 100px;
+    margin: 15px 0 0 2px;
+  }
+}
