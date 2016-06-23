@@ -21,6 +21,9 @@ header{
             }
         }
     }
+    .iptoolkit-logo {
+        display: none;
+    }
     .header {
         padding: 0 0 $gap-small 0px;
         @media only screen and (max-width: $break-point-medium - 1) {
@@ -33,7 +36,7 @@ header{
                 float:right;
                 width:61%;
                 padding:0px;
-            } 
+            }
             section{
                 float: right;
                 margin-top: 20px;
@@ -56,7 +59,7 @@ header{
                     &.block-search-api-page {
                         width:200px;
                     }
-                } 
+                }
                 @media only screen and (max-width: $break-point-medium - 1) {
                     display:none;
                     &.block-search-api-page {
@@ -64,7 +67,7 @@ header{
                         width: 100%;
 
                     }
-                } 
+                }
 
             }
             a {
@@ -118,11 +121,11 @@ header{
                     @media only screen and (max-width: $break-point-large) {
                         width: 140px;
                         padding: 13px 15px 15px;
-                    } 
+                    }
                     @media only screen and (max-width: $break-point-medium - 1) {
                         width: 80%;
                         padding: 13px 15px 15px;
-                    } 
+                    }
                 }
                 .form-group {
                     margin:0px;
@@ -172,7 +175,7 @@ header{
                         display: none;
                     }
                     .field-item {
-                        border: 1px solid $grey;  
+                        border: 1px solid $grey;
                         @include background-image('icon-online-services.png', 19px);
                         a {
                             display: block;
@@ -183,7 +186,7 @@ header{
                             text-decoration: none;
                             text-transform: uppercase;
                             @include background-image('arrow-right-online-services.png', right)
-                        }  
+                        }
                     }
 
                 }
