@@ -38,10 +38,31 @@ function ipaustralia_preprocess_html(&$variables) {
 
 function ipaustralia_preprocess_page(&$vars, $hook) {
 
-	$vars['iptoolkit_logo'] = theme('image', array(
-		'path' => drupal_get_path('theme', 'ipaustralia') . '/images/DIIS_logo.png',
-		'attributes' => array('class' => 'iptoolkit-logo'),
-	));
+  // Add Ip Toolkit Logo.
+  $vars['iptoolkit_logo'] = theme('image', array(
+    'path' => drupal_get_path('theme', 'ipaustralia') . '/images/DIIS_logo.png',
+    'attributes' => array('class' => 'iptoolkit-logo'),
+  ));
+
+  // Add class to determine whether to use cookies or not.
+  if (isset($vars['node'])){
+    $items = field_get_items('node', $vars['node'], 'field_ip_toolkit_section');
+    $parents = array();
+    foreach ($items as $item) {
+      $item_parents = taxonomy_get_parents($item['tid']);
+      $name = reset($item_parents)->name;
+      if (!in_array($name, $parents)) {
+        $parents[] = $name;
+      }
+    }
+    if (count($parents) >= 2) {
+      if (!isset($vars['page_classes'])) {
+        $vars['page_classes'] = array();
+      }
+      $vars['page_classes'][] = 'multiple-personas';
+    }
+  }
+
 
 	// override the default primary nav render array. see
 	// template.inc:template_preprocess_page() and

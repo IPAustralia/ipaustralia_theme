@@ -6,7 +6,7 @@ var WRInitTime=(new Date()).getTime();
 
 <?php include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/header.inc"; ?>
 
-<div class="main-container">
+<div class="main-container <?php if (isset($page_classes)): print implode(' ', $page_classes); endif; ?>">
 
   <div class="overlay" />
 

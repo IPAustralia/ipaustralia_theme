@@ -81,6 +81,19 @@
   }
 }
 
+.ip-toolkit-section {
+  &.persona-researcher {
+    .multiple-personas .view-id-ip_toolkit_structure.view-display-id-block_2 {
+      display: none;
+    }
+  }
+  &.persona-entrepreneur {
+    .multiple-personas .view-id-ip_toolkit_structure.view-display-id-block_1 {
+      display: none;
+    }
+  }
+}
+
 .view-id-ip_toolkit_structure.view-display-id-block_1,
 .view-id-ip_toolkit_structure.view-display-id-block_2 {
   background-color: $white;
