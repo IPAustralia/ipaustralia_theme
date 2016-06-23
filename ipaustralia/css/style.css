@@ -890,89 +890,93 @@ header .logo img {
   }
 }
 /* line 24, ../sass/components/_header.scss */
+header .iptoolkit-logo {
+  display: none;
+}
+/* line 27, ../sass/components/_header.scss */
 header .header {
   padding: 0 0 30px 0px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 24, ../sass/components/_header.scss */
+  /* line 27, ../sass/components/_header.scss */
   header .header {
     padding-bottom: 10px;
     border-bottom: 2px solid #0d252c;
   }
 }
-/* line 30, ../sass/components/_header.scss */
+/* line 33, ../sass/components/_header.scss */
 header .header .header-right {
   padding-right: 0px;
 }
 @media only screen and (max-width: 992px) {
-  /* line 30, ../sass/components/_header.scss */
+  /* line 33, ../sass/components/_header.scss */
   header .header .header-right {
     float: right;
     width: 61%;
     padding: 0px;
   }
 }
-/* line 37, ../sass/components/_header.scss */
+/* line 40, ../sass/components/_header.scss */
 header .header .header-right section {
   float: right;
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 41, ../sass/components/_header.scss */
+/* line 44, ../sass/components/_header.scss */
 header .header .header-right section ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
-/* line 45, ../sass/components/_header.scss */
+/* line 48, ../sass/components/_header.scss */
 header .header .header-right section ul li {
   float: left;
 }
-/* line 47, ../sass/components/_header.scss */
+/* line 50, ../sass/components/_header.scss */
 header .header .header-right section ul li a {
   display: block;
   color: #0d252c;
   line-height: 10px;
 }
 @media only screen and (max-width: 992px) {
-  /* line 37, ../sass/components/_header.scss */
+  /* line 40, ../sass/components/_header.scss */
   header .header .header-right section {
     margin-left: 5px;
   }
-  /* line 56, ../sass/components/_header.scss */
+  /* line 59, ../sass/components/_header.scss */
   header .header .header-right section.block-search-api-page {
     width: 200px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 37, ../sass/components/_header.scss */
+  /* line 40, ../sass/components/_header.scss */
   header .header .header-right section {
     display: none;
   }
-  /* line 62, ../sass/components/_header.scss */
+  /* line 65, ../sass/components/_header.scss */
   header .header .header-right section.block-search-api-page {
     width: 100%;
   }
 }
-/* line 70, ../sass/components/_header.scss */
+/* line 73, ../sass/components/_header.scss */
 header .header .header-right a {
   color: #0d252c;
 }
-/* line 73, ../sass/components/_header.scss */
+/* line 76, ../sass/components/_header.scss */
 header .header .header-right .block-govcms-text-resize {
   width: 66px;
 }
-/* line 75, ../sass/components/_header.scss */
+/* line 78, ../sass/components/_header.scss */
 header .header .header-right .block-govcms-text-resize ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
-/* line 79, ../sass/components/_header.scss */
+/* line 82, ../sass/components/_header.scss */
 header .header .header-right .block-govcms-text-resize ul li {
   float: left;
 }
-/* line 81, ../sass/components/_header.scss */
+/* line 84, ../sass/components/_header.scss */
 header .header .header-right .block-govcms-text-resize ul li a {
   display: block;
   text-indent: -9999px;
@@ -981,29 +985,29 @@ header .header .header-right .block-govcms-text-resize ul li a {
   height: 19px;
   background: transparent url("../images/font-size-sprite.png") left bottom no-repeat;
 }
-/* line 88, ../sass/components/_header.scss */
+/* line 91, ../sass/components/_header.scss */
 header .header .header-right .block-govcms-text-resize ul li a.font-small {
   width: 11px;
   background-position: 0px 0px;
 }
-/* line 92, ../sass/components/_header.scss */
+/* line 95, ../sass/components/_header.scss */
 header .header .header-right .block-govcms-text-resize ul li a.font-large {
   width: 14px;
   background-position: -23px 0px;
 }
-/* line 96, ../sass/components/_header.scss */
+/* line 99, ../sass/components/_header.scss */
 header .header .header-right .block-govcms-text-resize ul li a.reset {
   width: 32px;
   background-position: -50px 0px;
 }
-/* line 104, ../sass/components/_header.scss */
+/* line 107, ../sass/components/_header.scss */
 header .header .header-right .block-search-api-page {
   background: #eff0f2 none repeat scroll 0 0;
   clear: both;
   padding: 0;
   width: 360px;
 }
-/* line 109, ../sass/components/_header.scss */
+/* line 112, ../sass/components/_header.scss */
 header .header .header-right .block-search-api-page input.form-text {
   background: transparent none repeat scroll 0 0;
   border: 0 none;
@@ -1044,24 +1048,24 @@ header .header .header-right .block-search-api-page input.form-text:placeholder-
   color: #0d252c;
 }
 @media only screen and (max-width: 992px) {
-  /* line 109, ../sass/components/_header.scss */
+  /* line 112, ../sass/components/_header.scss */
   header .header .header-right .block-search-api-page input.form-text {
     width: 140px;
     padding: 13px 15px 15px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 109, ../sass/components/_header.scss */
+  /* line 112, ../sass/components/_header.scss */
   header .header .header-right .block-search-api-page input.form-text {
     width: 80%;
     padding: 13px 15px 15px;
   }
 }
-/* line 127, ../sass/components/_header.scss */
+/* line 130, ../sass/components/_header.scss */
 header .header .header-right .block-search-api-page .form-group {
   margin: 0px;
 }
-/* line 130, ../sass/components/_header.scss */
+/* line 133, ../sass/components/_header.scss */
 header .header .header-right .block-search-api-page .form-submit {
   background: transparent url("../images/link-search-26px.png") center center no-repeat;
   border: medium none;
@@ -1072,49 +1076,49 @@ header .header .header-right .block-search-api-page .form-submit {
   text-indent: -9999px;
   width: 33px;
 }
-/* line 139, ../sass/components/_header.scss */
+/* line 142, ../sass/components/_header.scss */
 header .header .header-right .block-search-api-page .form-submit:active {
   box-shadow: none;
 }
-/* line 145, ../sass/components/_header.scss */
+/* line 148, ../sass/components/_header.scss */
 header .header .header-right .block-menu li {
   padding: 10px 10px 10px 0px;
 }
-/* line 148, ../sass/components/_header.scss */
+/* line 151, ../sass/components/_header.scss */
 header .header .header-right .block-menu a {
   /*font-weight: 600;*/
   font-size: 14px;
   padding: 0px 10px 0 0;
   border-right: 1px solid #0d252c;
 }
-/* line 153, ../sass/components/_header.scss */
+/* line 156, ../sass/components/_header.scss */
 header .header .header-right .block-menu a:hover {
   background: transparent;
   text-decoration: underline;
 }
-/* line 157, ../sass/components/_header.scss */
+/* line 160, ../sass/components/_header.scss */
 header .header .header-right .block-menu a:focus {
   background: transparent;
 }
-/* line 161, ../sass/components/_header.scss */
+/* line 164, ../sass/components/_header.scss */
 header .header .header-right .block-menu .last {
   padding-right: 0px;
 }
-/* line 163, ../sass/components/_header.scss */
+/* line 166, ../sass/components/_header.scss */
 header .header .header-right .block-menu .last a {
   padding-right: 0px;
   border: none;
 }
-/* line 171, ../sass/components/_header.scss */
+/* line 174, ../sass/components/_header.scss */
 header .header .header-right .block-bean .bean-link .field-label {
   display: none;
 }
-/* line 174, ../sass/components/_header.scss */
+/* line 177, ../sass/components/_header.scss */
 header .header .header-right .block-bean .bean-link .field-item {
   border: 1px solid #b6bec0;
   background: transparent url("../images/icon-online-services.png") 19px center no-repeat;
 }
-/* line 177, ../sass/components/_header.scss */
+/* line 180, ../sass/components/_header.scss */
 header .header .header-right .block-bean .bean-link .field-item a {
   display: block;
   font-family: "montserratbold", sans-serif;
@@ -1125,7 +1129,7 @@ header .header .header-right .block-bean .bean-link .field-item a {
   text-transform: uppercase;
   background: transparent url("../images/arrow-right-online-services.png") right center no-repeat;
 }
-/* line 193, ../sass/components/_header.scss */
+/* line 196, ../sass/components/_header.scss */
 header .header .responsive-search-icon {
   position: absolute;
   width: 35px;
@@ -1137,12 +1141,12 @@ header .header .responsive-search-icon {
   text-indent: -9999px;
   background-size: auto 22px;
 }
-/* line 203, ../sass/components/_header.scss */
+/* line 206, ../sass/components/_header.scss */
 header .header .responsive-search-icon.opened {
   background: transparent url("../images/close-cross.png") center center no-repeat;
   background-size: auto auto;
 }
-/* line 208, ../sass/components/_header.scss */
+/* line 211, ../sass/components/_header.scss */
 header .header .responsive-chat-icon {
   position: absolute;
   width: 35px;
@@ -1154,7 +1158,7 @@ header .header .responsive-chat-icon {
   text-indent: -9999px;
   background-size: auto 22px;
 }
-/* line 219, ../sass/components/_header.scss */
+/* line 222, ../sass/components/_header.scss */
 header .header .responsive-chat-icon.opened {
   background: transparent url("../images/close-cross.png") center center no-repeat;
   background-size: auto auto;
@@ -3450,22 +3454,127 @@ article table tr td, article table tr th {
   display: none;
 }
 
-/* line 2, ../sass/components/_ip-toolkit-section.scss */
+/* line 3, ../sass/components/_ip-toolkit-section.scss */
+.ip-toolkit-section .header .logo {
+  width: 25%;
+}
+@media only screen and (max-width: 768px) {
+  /* line 3, ../sass/components/_ip-toolkit-section.scss */
+  .ip-toolkit-section .header .logo {
+    width: 32%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  /* line 3, ../sass/components/_ip-toolkit-section.scss */
+  .ip-toolkit-section .header .logo {
+    width: 38%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 3, ../sass/components/_ip-toolkit-section.scss */
+  .ip-toolkit-section .header .logo {
+    width: 47%;
+  }
+}
+/* line 14, ../sass/components/_ip-toolkit-section.scss */
+.ip-toolkit-section .header .logo img {
+  width: 88%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 14, ../sass/components/_ip-toolkit-section.scss */
+  .ip-toolkit-section .header .logo img {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+/* line 22, ../sass/components/_ip-toolkit-section.scss */
+.ip-toolkit-section .header .header-right {
+  width: 33%;
+  float: right;
+}
+/* line 25, ../sass/components/_ip-toolkit-section.scss */
 .ip-toolkit-section .header .header-right section.block-search-api-page {
   margin-top: 60px;
 }
-/* line 5, ../sass/components/_ip-toolkit-section.scss */
-.ip-toolkit-section .navbar-default, .ip-toolkit-section .breadcrumbs {
+/* line 30, ../sass/components/_ip-toolkit-section.scss */
+.ip-toolkit-section .iptoolkit-logo {
+  display: inline-block;
+  width: 22%;
+  margin-top: 40px;
+  float: left;
+}
+@media only screen and (max-width: 768px) {
+  /* line 30, ../sass/components/_ip-toolkit-section.scss */
+  .ip-toolkit-section .iptoolkit-logo {
+    width: 27%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  /* line 30, ../sass/components/_ip-toolkit-section.scss */
+  .ip-toolkit-section .iptoolkit-logo {
+    width: 35%;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 30, ../sass/components/_ip-toolkit-section.scss */
+  .ip-toolkit-section .iptoolkit-logo {
+    width: 46%;
+    clear: both;
+    margin-top: 0;
+  }
+}
+/* line 50, ../sass/components/_ip-toolkit-section.scss */
+.ip-toolkit-section .navbar-default .menu.megamenu.megamenu-level-1, .ip-toolkit-section .breadcrumbs {
   display: none;
 }
 @media only screen and (max-width: 640px) {
-  /* line 8, ../sass/components/_ip-toolkit-section.scss */
+  /* line 53, ../sass/components/_ip-toolkit-section.scss */
   .ip-toolkit-section aside {
     display: block;
   }
 }
+/* line 59, ../sass/components/_ip-toolkit-section.scss */
+.ip-toolkit-section .region-nav li {
+  display: inline-block;
+}
+@media only screen and (max-width: 767px) {
+  /* line 59, ../sass/components/_ip-toolkit-section.scss */
+  .ip-toolkit-section .region-nav li {
+    display: block;
+  }
+}
+/* line 64, ../sass/components/_ip-toolkit-section.scss */
+.ip-toolkit-section .region-nav li a {
+  padding: 19px 21px 15px 21px;
+  display: block;
+  cursor: pointer;
+  color: white;
+  font: normal 16px 'montserratregular', sans-serif;
+  line-height: 46px;
+}
+/* line 71, ../sass/components/_ip-toolkit-section.scss */
+.ip-toolkit-section .region-nav li a:hover {
+  text-decoration: none;
+  background: transparent;
+}
+/* line 75, ../sass/components/_ip-toolkit-section.scss */
+.ip-toolkit-section .region-nav li a:active, .ip-toolkit-section .region-nav li a:focus {
+  background: #0d252c;
+}
 
-/* line 16, ../sass/components/_ip-toolkit-section.scss */
+/* line 86, ../sass/components/_ip-toolkit-section.scss */
+.ip-toolkit-section.persona-researcher .multiple-personas .view-id-ip_toolkit_structure.view-display-id-block_2 {
+  display: none;
+}
+/* line 91, ../sass/components/_ip-toolkit-section.scss */
+.ip-toolkit-section.persona-entrepreneur .multiple-personas .view-id-ip_toolkit_structure.view-display-id-block_1 {
+  display: none;
+}
+
+/* line 98, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-block_1,
 .view-id-ip_toolkit_structure.view-display-id-block_2 {
   background-color: white;
@@ -3473,14 +3582,14 @@ article table tr td, article table tr th {
   min-height: 20px;
   padding: 0;
 }
-/* line 21, ../sass/components/_ip-toolkit-section.scss */
+/* line 103, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-block_1 h3 a,
 .view-id-ip_toolkit_structure.view-display-id-block_2 h3 a {
   border-top: 6px solid black;
   font-size: 16px;
   font-family: robotobold, sans-serif;
 }
-/* line 26, ../sass/components/_ip-toolkit-section.scss */
+/* line 108, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-block_1 a,
 .view-id-ip_toolkit_structure.view-display-id-block_2 a {
   display: inline-block;
@@ -3492,46 +3601,32 @@ article table tr td, article table tr th {
   padding: 20px 15px;
   border-bottom: 2px dotted #eff0f2;
 }
-/* line 35, ../sass/components/_ip-toolkit-section.scss */
+/* line 117, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-block_1 a:hover,
 .view-id-ip_toolkit_structure.view-display-id-block_2 a:hover {
   background: #eff0f2;
   text-decoration: underline;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 26, ../sass/components/_ip-toolkit-section.scss */
-  .view-id-ip_toolkit_structure.view-display-id-block_1 a,
-  .view-id-ip_toolkit_structure.view-display-id-block_2 a {
-    font-size: 12px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 26, ../sass/components/_ip-toolkit-section.scss */
-  .view-id-ip_toolkit_structure.view-display-id-block_1 a,
-  .view-id-ip_toolkit_structure.view-display-id-block_2 a {
-    font-size: 13px;
-  }
-}
-/* line 46, ../sass/components/_ip-toolkit-section.scss */
+/* line 122, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-block_1 .views-row a,
 .view-id-ip_toolkit_structure.view-display-id-block_2 .views-row a {
   padding: 20px 35px;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 46, ../sass/components/_ip-toolkit-section.scss */
+  /* line 122, ../sass/components/_ip-toolkit-section.scss */
   .view-id-ip_toolkit_structure.view-display-id-block_1 .views-row a,
   .view-id-ip_toolkit_structure.view-display-id-block_2 .views-row a {
     padding: 20px 0px 20px 20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 46, ../sass/components/_ip-toolkit-section.scss */
+  /* line 122, ../sass/components/_ip-toolkit-section.scss */
   .view-id-ip_toolkit_structure.view-display-id-block_1 .views-row a,
   .view-id-ip_toolkit_structure.view-display-id-block_2 .views-row a {
     padding: 20px 30px;
   }
 }
-/* line 54, ../sass/components/_ip-toolkit-section.scss */
+/* line 130, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-block_1 .views-row a:before,
 .view-id-ip_toolkit_structure.view-display-id-block_2 .views-row a:before {
   content: '>';
@@ -3543,29 +3638,29 @@ article table tr td, article table tr th {
   margin-left: -15px;
 }
 
-/* line 66, ../sass/components/_ip-toolkit-section.scss */
+/* line 142, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_page.view-display-id-block_1 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 69, ../sass/components/_ip-toolkit-section.scss */
+/* line 145, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_page.view-display-id-block_1 .label-above {
   font-size: 25px;
   font-weight: bold;
 }
 
-/* line 76, ../sass/components/_ip-toolkit-section.scss */
+/* line 152, ../sass/components/_ip-toolkit-section.scss */
 .field-name-field-ip-toolkit-case-studies .label-above {
   font-size: 25px;
   font-weight: bold;
 }
 
-/* line 82, ../sass/components/_ip-toolkit-section.scss */
+/* line 158, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.node-teaser {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 85, ../sass/components/_ip-toolkit-section.scss */
+/* line 161, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.node-teaser .group-left {
   float: none;
   width: 25%;
@@ -3573,74 +3668,86 @@ article table tr td, article table tr th {
   vertical-align: middle;
   margin-right: 3%;
 }
-/* line 92, ../sass/components/_ip-toolkit-section.scss */
+/* line 168, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.node-teaser .group-right {
   float: none;
   width: 70%;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 98, ../sass/components/_ip-toolkit-section.scss */
+/* line 174, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.node-teaser .field-name-title {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 101, ../sass/components/_ip-toolkit-section.scss */
+/* line 177, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.node-teaser .field-name-title h2 {
   font-size: 16px;
   line-height: 1.2;
   margin-bottom: 0;
 }
-/* line 107, ../sass/components/_ip-toolkit-section.scss */
+/* line 183, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.node-teaser .field-name-body {
   font-size: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 114, ../sass/components/_ip-toolkit-section.scss */
+/* line 190, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.view-mode-sidebar {
   font-size: 13px;
 }
-/* line 116, ../sass/components/_ip-toolkit-section.scss */
+/* line 192, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.view-mode-sidebar .label-above {
   font-size: 16px;
   font-weight: bold;
 }
-/* line 120, ../sass/components/_ip-toolkit-section.scss */
+/* line 196, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.view-mode-sidebar .field {
   margin-top: 20px;
 }
-/* line 123, ../sass/components/_ip-toolkit-section.scss */
+/* line 199, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.view-mode-sidebar blockquote {
   font-size: 14px;
   margin-bottom: 0;
 }
-/* line 127, ../sass/components/_ip-toolkit-section.scss */
+/* line 203, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study.view-mode-sidebar .field-name-field-quote-author {
   font-style: italic;
   font-size: 12px;
   margin-top: 5px;
 }
 
-/* line 135, ../sass/components/_ip-toolkit-section.scss */
+/* line 211, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study .field-name-field-image {
   margin-top: 20px;
 }
-/* line 137, ../sass/components/_ip-toolkit-section.scss */
+/* line 213, ../sass/components/_ip-toolkit-section.scss */
 .node-ip-toolkit-case-study .field-name-field-image .field-name-field-caption {
   font-style: italic;
   font-size: 12px;
 }
 
-/* line 145, ../sass/components/_ip-toolkit-section.scss */
+/* line 221, ../sass/components/_ip-toolkit-section.scss */
+.view-id-ip_toolkit_structure.view-display-id-block .view-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-top: 20px;
+}
+/* line 228, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-block .views-row {
-  width: 49%;
-  display: inline-block;
   text-align: center;
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 228, ../sass/components/_ip-toolkit-section.scss */
+  .view-id-ip_toolkit_structure.view-display-id-block .views-row {
+    width: 48%;
+  }
+}
 
-/* line 153, ../sass/components/_ip-toolkit-section.scss */
+/* line 237, ../sass/components/_ip-toolkit-section.scss */
 .taxonomy-term.vocabulary-ip-toolkit-structure .field-name-title {
   text-decoration: underline;
   font: normal 24px "montserratregular", sans-serif;
@@ -3649,27 +3756,27 @@ article table tr td, article table tr th {
   position: relative;
   top: -60px;
   background: rgba(239, 240, 242, 0.7);
-  width: 280px;
+  width: 100%;
   display: inline-block;
   cursor: pointer;
 }
-/* line 164, ../sass/components/_ip-toolkit-section.scss */
+/* line 248, ../sass/components/_ip-toolkit-section.scss */
 .taxonomy-term.vocabulary-ip-toolkit-structure .field-name-title a {
   color: white;
 }
-/* line 169, ../sass/components/_ip-toolkit-section.scss */
+/* line 253, ../sass/components/_ip-toolkit-section.scss */
 .taxonomy-term.vocabulary-ip-toolkit-structure .field-name-field-image img {
   display: inline-block;
 }
 
-/* line 176, ../sass/components/_ip-toolkit-section.scss */
+/* line 260, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .view-content, .view-id-ip_toolkit_page.view-display-id-block .view-content {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: stretch;
 }
-/* line 182, ../sass/components/_ip-toolkit-section.scss */
+/* line 266, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row, .view-id-ip_toolkit_page.view-display-id-block .views-row {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -3677,12 +3784,12 @@ article table tr td, article table tr th {
   background: #eff0f2;
 }
 @media only screen and (max-width: 640px) {
-  /* line 182, ../sass/components/_ip-toolkit-section.scss */
+  /* line 266, ../sass/components/_ip-toolkit-section.scss */
   .view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row, .view-id-ip_toolkit_page.view-display-id-block .views-row {
     width: 100%;
   }
 }
-/* line 190, ../sass/components/_ip-toolkit-section.scss */
+/* line 274, ../sass/components/_ip-toolkit-section.scss */
 .view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row a, .view-id-ip_toolkit_page.view-display-id-block .views-row a {
   background: #eff0f2;
   color: #1d252c;
@@ -3703,7 +3810,7 @@ article table tr td, article table tr th {
   margin: 15px 0 0 2px;
 }
 
-/* line 197, ../sass/components/_ip-toolkit-section.scss */
+/* line 281, ../sass/components/_ip-toolkit-section.scss */
 .pane-custom.block-links ul {
   margin: 0;
   padding: 0;
@@ -3712,15 +3819,16 @@ article table tr td, article table tr th {
   justify-content: space-between;
   align-items: stretch;
 }
-/* line 204, ../sass/components/_ip-toolkit-section.scss */
+/* line 288, ../sass/components/_ip-toolkit-section.scss */
 .pane-custom.block-links ul li {
   list-style: none;
   width: 48%;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 0;
+  background: #eff0f2;
 }
-/* line 212, ../sass/components/_ip-toolkit-section.scss */
+/* line 297, ../sass/components/_ip-toolkit-section.scss */
 .pane-custom.block-links a {
   background: #eff0f2;
   color: #1d252c;
