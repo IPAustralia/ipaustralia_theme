@@ -9,6 +9,7 @@ jQuery(document).ready(function () {
     setBreakPoints();
     addTwitterFeed();
     toolsAndResourcesTabsCheck();
+    personaCookies();
 });
 jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-bloc h3', function () {
     openCloseToolsResources(jQuery(this));
@@ -661,9 +662,38 @@ jQuery(document).ready(function () {
     });
 });
 
+/**
+ * Function to get the value of a cookie.
+ */
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 
+/**
+ * Function to set cookies and add classes to body based on cookie value.
+ */
+function personaCookies() {
+  if (window.location.href.indexOf("entrepreneur") > -1) {
+    document.cookie = "persona=entrepreneur";
+  } else if (window.location.href.indexOf("researcher") > -1) {
+    document.cookie = "persona=researcher";
+  }
 
-
+  if (getCookie('persona')) {
+    jQuery('body').addClass('persona-' + getCookie('persona'));
+  }
+}
 
 
 

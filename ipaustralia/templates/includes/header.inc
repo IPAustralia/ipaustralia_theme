@@ -8,6 +8,9 @@
                     <img src="<?php print $logo; ?>" alt="<?php print t('IP Australia'); ?>" />
                 </a>
             <?php endif; ?>
+            <?php if (isset($iptoolkit_logo)) :?>
+                <?php print $iptoolkit_logo; ?>
+            <?php endif; ?>
             <div class="col-md-8 header-right">
                 <?php print render($page['header']); ?>
             </div>
@@ -29,6 +32,9 @@
         <div class="container navbar-collapse collapse" id="header-navigation-container">
             <?php if (!empty($primary_nav)): ?>
                 <?php print render($primary_nav); ?>
+            <?php endif; ?>
+            <?php if (!empty($page['nav'])): ?>
+                <?php print render($page['nav']); ?>
             <?php endif; ?>
         </div>
 
