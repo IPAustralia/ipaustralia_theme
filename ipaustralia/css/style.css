@@ -2090,7 +2090,7 @@ Applicaiton process on body
       display: inline-block;
       border-radius: 1000px;
       background-color: #fff !important;
-      background-size: 182px 182px !important; }
+      background-size: 200px 200px !important; }
       @media only screen and (max-width: 640px) {
         .application-process-wrapper ul li .image {
           width: 150px;
