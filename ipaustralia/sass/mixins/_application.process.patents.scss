@@ -1,0 +1,19 @@
+//modified _application.process.scss mixin to suit design on patent landing page. 
+
+@mixin pat-process-menu($steps:4, $imagefolder:pat-gen) {
+    ul{
+        li {
+            display:none;
+            $i: $steps;
+            @while $i > 0 {
+                &:nth-child(#{$i}) {
+                    display:block;
+                    a{
+                        @include background-image('application-process/#{$imagefolder}/#{$i}.png');
+                    }
+                }
+                $i: $i - 1;
+            }
+        }
+    }
+}

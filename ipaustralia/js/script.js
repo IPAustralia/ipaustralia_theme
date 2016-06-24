@@ -102,6 +102,8 @@ function toolsAndResourcesTabsCheck() {
     }
 
 }
+
+
 function resizing() {
     /*
      *  Do action on resizing window or document

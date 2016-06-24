@@ -10,4 +10,7 @@
 	h4 {font-size: 20px;}
 	h5 {font-size: 20px;}
 	h6 {font-size: 20px;}
+	#ipAustralia-block {display:none;}
+	p {page-break-inside: avoid;}
+	
 }

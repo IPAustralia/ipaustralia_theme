@@ -1805,44 +1805,152 @@ applicaiton process menu steps
       .application-process-menu ul .slick-arrow {
         display: none !important; } }
 
-body.section-patents .application-process-menu {
+#block-menu-block-13.application-process-menu {
   background-color: #c3e6e8; }
-  body.section-patents .application-process-menu ul li {
+  #block-menu-block-13.application-process-menu ul li {
     display: none; }
-    body.section-patents .application-process-menu ul li a::before {
+    #block-menu-block-13.application-process-menu ul li a::before {
       color: #30aeb6; }
-    body.section-patents .application-process-menu ul li:nth-child(8) {
+    #block-menu-block-13.application-process-menu ul li:nth-child(6) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(8) a {
-        background: transparent url("../images/application-process/design/8.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(7) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/pat-inn/6.png") center center no-repeat; }
+    #block-menu-block-13.application-process-menu ul li:nth-child(5) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(7) a {
-        background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(6) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/pat-inn/5.png") center center no-repeat; }
+    #block-menu-block-13.application-process-menu ul li:nth-child(4) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(6) a {
-        background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(5) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/pat-inn/4.png") center center no-repeat; }
+    #block-menu-block-13.application-process-menu ul li:nth-child(3) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(5) a {
-        background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(4) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/pat-inn/3.png") center center no-repeat; }
+    #block-menu-block-13.application-process-menu ul li:nth-child(2) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(4) a {
-        background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(3) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/pat-inn/2.png") center center no-repeat; }
+    #block-menu-block-13.application-process-menu ul li:nth-child(1) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(3) a {
-        background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(2) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/pat-inn/1.png") center center no-repeat; }
+
+#block-menu-block-14.application-process-menu {
+  background-color: #c3e6e8; }
+  #block-menu-block-14.application-process-menu ul li {
+    display: none; }
+    #block-menu-block-14.application-process-menu ul li a::before {
+      color: #30aeb6; }
+    #block-menu-block-14.application-process-menu ul li:nth-child(4) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(2) a {
-        background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(1) {
+      #block-menu-block-14.application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/pat-prov/4.png") center center no-repeat; }
+    #block-menu-block-14.application-process-menu ul li:nth-child(3) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(1) a {
-        background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
+      #block-menu-block-14.application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/pat-prov/3.png") center center no-repeat; }
+    #block-menu-block-14.application-process-menu ul li:nth-child(2) {
+      display: block; }
+      #block-menu-block-14.application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/pat-prov/2.png") center center no-repeat; }
+    #block-menu-block-14.application-process-menu ul li:nth-child(1) {
+      display: block; }
+      #block-menu-block-14.application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/pat-prov/1.png") center center no-repeat; }
+
+#block-menu-block-15.application-process-menu {
+  background-color: #c3e6e8; }
+  #block-menu-block-15.application-process-menu ul li {
+    display: none; }
+    #block-menu-block-15.application-process-menu ul li a::before {
+      color: #30aeb6; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(7) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(7) a {
+        background: transparent url("../images/application-process/pat-int/7.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(6) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/pat-int/6.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(5) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/pat-int/5.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(4) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/pat-int/4.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(3) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/pat-int/3.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(2) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/pat-int/2.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(1) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/pat-int/1.png") center center no-repeat; }
+
+#block-menu-block-12.application-process-menu {
+  background-color: #c3e6e8; }
+  #block-menu-block-12.application-process-menu ul li {
+    display: none; }
+    #block-menu-block-12.application-process-menu ul li a::before {
+      color: #30aeb6; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(5) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/pat-std/5.png") center center no-repeat; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(4) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/pat-std/4.png") center center no-repeat; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(3) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/pat-std/3.png") center center no-repeat; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(2) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/pat-std/2.png") center center no-repeat; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(1) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/pat-std/1.png") center center no-repeat; }
+
+body.section-plant-breeders-rights-new .application-process-menu {
+  background-color: #fdedce; }
+  body.section-plant-breeders-rights-new .application-process-menu ul li {
+    display: none; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li a::before {
+      color: #f1ac1e; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(6) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/pbr/6.png") center center no-repeat; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(5) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/pbr/5.png") center center no-repeat; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(4) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/pbr/4.png") center center no-repeat; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(3) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/pbr/3.png") center center no-repeat; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(2) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/pbr/2.png") center center no-repeat; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(1) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/pbr/1.png") center center no-repeat; }
 
 body.section-trade-marks .application-process-menu {
   background-color: #f2dede; }
@@ -1912,38 +2020,30 @@ body.section-plant-breeders-rights .application-process-menu {
     display: none; }
     body.section-plant-breeders-rights .application-process-menu ul li a::before {
       color: #f1ac1e; }
-    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(8) {
-      display: block; }
-      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(8) a {
-        background: transparent url("../images/application-process/design/8.png") center center no-repeat; }
-    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(7) {
-      display: block; }
-      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(7) a {
-        background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(6) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(6) a {
-        background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/6.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(5) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(5) a {
-        background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/5.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(4) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(4) a {
-        background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/4.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(3) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(3) a {
-        background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/3.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(2) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(2) a {
-        background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/2.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(1) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(1) a {
-        background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/1.png") center center no-repeat; }
 
 /*
 Applicaiton process on body
@@ -2200,6 +2300,126 @@ article table {
       display: inline-block;
       opacity: 0.7;
       margin-left: -15px; }
+
+.application-process-patents ul {
+  background-size: 100% auto;
+  background-position: right 140px;
+  text-align: center;
+  list-style: none;
+  padding: 0px;
+  margin: 0px; }
+  @media only screen and (max-width: 992px) {
+    .application-process-patents ul {
+      background: transparent; } }
+  .application-process-patents ul li {
+    width: 350px;
+    cursor: pointer;
+    padding: 30px 45px 54px;
+    display: inline-block;
+    counter-increment: process-counter;
+    margin: 20px 0px; }
+    @media only screen and (max-width: 1192px) {
+      .application-process-patents ul li {
+        padding: 30px 25px 2px;
+        width: 310px; } }
+    @media only screen and (max-width: 768px) {
+      .application-process-patents ul li {
+        /*padding: 30px 15px 20px;*/
+        width: 210px; } }
+    @media only screen and (max-width: 480px) {
+      .application-process-patents ul li {
+        padding: 30px 15px 20px;
+        width: 180px; } }
+    .application-process-patents ul li .image {
+      width: 182px;
+      height: 182px;
+      background: #fff;
+      display: inline-block;
+      border-radius: 1000px;
+      background-color: #fff !important;
+      background-size: 182px 182px !important; }
+      @media only screen and (max-width: 640px) {
+        .application-process-patents ul li .image {
+          width: 150px;
+          height: 150px; } }
+    .application-process-patents ul li:hover .image {
+      background-size: 190px 190px !important;
+      box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
+      transition: all 0.2s ease-in-out; }
+    .application-process-patents ul li h4 {
+      /*font-size: 28px;*/
+      color: #0d252c;
+      height: 99px;
+      overflow: hidden; }
+      @media only screen and (max-width: 1192px) {
+        .application-process-patents ul li h4 {
+          height: 65px;
+          white-space: nowrap;
+          text-overflow: ellipsis; } }
+      @media only screen and (max-width: 992px) {
+        .application-process-patents ul li h4 {
+          height: 89px;
+          white-space: normal;
+          line-height: 1em; } }
+      @media only screen and (max-width: 640px) {
+        .application-process-patents ul li h4 {
+          height: 105px; } }
+      .application-process-patents ul li h4::before {
+        font-size: 36px;
+        font-weight: 600;
+        display: block;
+        content: counter(process-counter);
+        margin-bottom: 10px;
+        margin-top: 10px;
+        /*color: $mint;*/ }
+        @media only screen and (max-width: 640px) {
+          .application-process-patents ul li h4::before {
+            margin-top: 5px; } }
+    .application-process-patents ul li a {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: underline;
+      background-position: right center;
+      padding-right: 15px; }
+  .application-process-patents ul.slick-slider li {
+    /*opacity:0.4;*/ }
+    .application-process-patents ul.slick-slider li:first-child {
+      background-position: 100px 116px;
+      background-repeat: no-repeat; }
+    .application-process-patents ul.slick-slider li:last-child {
+      background-position: -100px 116px;
+      background-repeat: no-repeat; }
+  .application-process-patents ul.slick-slider .slick-arrow {
+    margin-top: -111px;
+    z-index: 100; }
+    @media only screen and (max-width: 892px) {
+      .application-process-patents ul.slick-slider .slick-arrow {
+        display: none !important; } }
+.application-process-patents .button {
+  border: 2px solid black;
+  background: black;
+  padding: 16px 35px 16px;
+  display: inline-block;
+  border-radius: 100px;
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "montserratregular", sans-serif;
+  line-height: 19px;
+  text-decoration: none;
+  margin: 0 auto 80px;
+  color: white; }
+  .application-process-patents .button:after {
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    content: '';
+    margin: 0 0 -2px 10px; }
+  .application-process-patents .button:hover {
+    text-decoration: none;
+    background: black;
+    border: 2px solid #0d252c; }
 
 .front h2 {
   font-size: 38px; }
@@ -4133,6 +4353,51 @@ section#block-bean-patents-anchor-menu-3.is_stuck {
   top: 80px !important;
   z-index: 200; }
 
+section#block-bean-patentoverview .img1:before {
+  background-image: url("../images/application-process/pat-gen/1.png");
+  background-size: 100% auto;
+  content: ".";
+  display: block;
+  background-repeat: no-repeat;
+  min-height: 181px; }
+section#block-bean-patentoverview .img1 {
+  margin: auto;
+  max-width: 60%;
+  padding-bottom: 1%; }
+section#block-bean-patentoverview .img2:before {
+  background-image: url("../images/application-process/pat-gen/2.png");
+  background-size: 100% auto;
+  content: ".";
+  display: block;
+  background-repeat: no-repeat;
+  min-height: 181px; }
+section#block-bean-patentoverview .img2 {
+  margin: auto;
+  max-width: 60%;
+  padding-bottom: 1%; }
+section#block-bean-patentoverview .img3:before {
+  background-image: url("../images/application-process/pat-gen/3.png");
+  background-size: 100% auto;
+  content: ".";
+  display: block;
+  background-repeat: no-repeat;
+  min-height: 181px; }
+section#block-bean-patentoverview .img3 {
+  margin: auto;
+  max-width: 60%;
+  padding-bottom: 1%; }
+section#block-bean-patentoverview .img4:before {
+  background-image: url("../images/application-process/pat-gen/4.png");
+  background-size: 100% auto;
+  content: ".";
+  display: block;
+  background-repeat: no-repeat;
+  min-height: 181px; }
+section#block-bean-patentoverview .img4 {
+  margin: auto;
+  max-width: 60%;
+  padding-bottom: 1%; }
+
 section#block-bean-understanding-patents-block {
   background: #eff0f2;
   padding: 80px 0px 100px; }
@@ -4252,6 +4517,42 @@ section#block-bean-understanding-patents-block {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
+
+.patoverviewcontent {
+  text-align: center; }
+
+section#block-bean-patentoverview {
+  background-color: #c0e8ea;
+  padding: 80px 0; }
+
+.patwrap {
+  display: flex;
+  flex-wrap: no-wrap; }
+
+.boxes {
+  background-color: #fff;
+  width: 25%;
+  padding: 20px;
+  margin: 10px 5px; }
+
+.boxes a {
+  color: #fff;
+  text-decoration: none !important; }
+
+.boxes a:hover {
+  color: #fff;
+  text-decoration: underline !important; }
+
+.boxes .links {
+  background-color: #00829c;
+  width: 100%;
+  padding: 5px 0; }
+
+.boxes h3 {
+  height: 64px; }
+
+.boxes .proctext {
+  min-height: 110px; }
 
 section#block-bean-managing-your-patent-block {
   background: #fff;
@@ -4651,6 +4952,74 @@ section#block-bean-all-about-patents-block {
         background: transparent url("../images/link-tool.png") center center no-repeat;
         background-position: left 0px; }
 
+@media screen and (min-width: 768px) {
+  body .patwrap {
+    display: flex;
+    flex-wrap: no-wrap; }
+
+  body .boxes {
+    background-color: #fff;
+    width: 25%;
+    padding: 20px;
+    margin: 10px 5px; } }
+@media screen and (max-width: 1200px) {
+  body .img1:before {
+    min-height: 150px; }
+
+  body .img2:before {
+    min-height: 150px; }
+
+  body .img3:before {
+    min-height: 150px; }
+
+  body .img4:before {
+    min-height: 150px; } }
+@media screen and (max-width: 992px) {
+  body .img1:before {
+    min-height: 120px; }
+
+  body .img2:before {
+    min-height: 120px; }
+
+  body .img3:before {
+    min-height: 120px; }
+
+  body .img4:before {
+    min-height: 120px; } }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  body .img1:before {
+    min-height: 80px; }
+
+  body .img2:before {
+    min-height: 80px; }
+
+  body .img3:before {
+    min-height: 80px; }
+
+  body .img4:before {
+    min-height: 80px; } }
+@media screen and (max-width: 768px) {
+  .patwrap {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .boxes {
+    background-color: #fff;
+    width: 46%;
+    padding: 20px;
+    margin: 10px 5px; }
+
+  body .img1:before {
+    min-height: 181px; }
+
+  body .img2:before {
+    min-height: 181px; }
+
+  body .img3:before {
+    min-height: 181px; }
+
+  body .img4:before {
+    min-height: 181px; } }
 section#block-bean-trade-marks-landing-block-0 {
   background: transparent url("../images/tm-banner.jpg") center center no-repeat;
   background-size: cover;
@@ -6175,46 +6544,46 @@ section#block-bean-understanding-pbr {
       border: 2px solid #0d252c; }
 
 section#block-bean-pbr-application-process {
-  background: #dff0d8;
+  background: #fdedce;
   padding: 80px 0px 100px; }
   @media only screen and (max-width: 640px) {
     section#block-bean-pbr-application-process {
       padding: 40px 0px 60px; } }
-  section#block-bean-pbr-application-process .applicaiton-process-wrapper ul {
+  section#block-bean-pbr-application-process .application-process-wrapper ul {
     background: transparent url("../images/application-process/_generic/background-line-6.png") center center no-repeat;
     background-size: 100% auto;
     background-position: right 140px; }
     @media only screen and (max-width: 992px) {
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul {
+      section#block-bean-pbr-application-process .application-process-wrapper ul {
         background: transparent; } }
-    section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li {
+    section#block-bean-pbr-application-process .application-process-wrapper ul li {
       display: none; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li h4::before {
+      section#block-bean-pbr-application-process .application-process-wrapper ul li h4::before {
         color: #f1ac1e; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(6) {
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(6) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(6) .image {
-          background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(5) {
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(6) .image {
+          background: transparent url("../images/application-process/pbr/6.png") center center no-repeat; }
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(5) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(5) .image {
-          background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(4) {
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(5) .image {
+          background: transparent url("../images/application-process/pbr/5.png") center center no-repeat; }
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(4) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(4) .image {
-          background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(3) {
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(4) .image {
+          background: transparent url("../images/application-process/pbr/4.png") center center no-repeat; }
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(3) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(3) .image {
-          background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(2) {
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(3) .image {
+          background: transparent url("../images/application-process/pbr/3.png") center center no-repeat; }
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(2) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(2) .image {
-          background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(1) {
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(2) .image {
+          background: transparent url("../images/application-process/pbr/2.png") center center no-repeat; }
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(1) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(1) .image {
-          background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(1) .image {
+          background: transparent url("../images/application-process/pbr/1.png") center center no-repeat; }
 
 section#block-bean-managing-you-pbr-block {
   background: #fff;
