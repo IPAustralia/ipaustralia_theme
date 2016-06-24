@@ -172,7 +172,7 @@ section#block-bean-all-about-patents-block {
         }
     }
 }
-@media screen and (min-width:$break-point-medium) {
+/*@media screen and (min-width:$break-point-medium) {
     body .patwrap {
     display:flex;
     flex-wrap:no-wrap;
@@ -183,48 +183,54 @@ section#block-bean-all-about-patents-block {
     padding:20px;
     margin: 10px 5px;
     }
-}
+}*/
 @media screen and (max-width:1200px) {
-    body .img1:before { 
+    section#block-bean-patentoverview {
+    .img1:before { 
         min-height:150px;
     }
-    body .img2:before { 
+    .img2:before { 
         min-height:150px;
     }
-    body .img3:before { 
+    .img3:before { 
         min-height:150px;
     }
-    body .img4:before { 
+    .img4:before { 
         min-height:150px;
     }
+}
 }
 @media screen and (max-width:992px) {
-    body .img1:before { 
+    section#block-bean-patentoverview {
+    .img1:before { 
         min-height:120px;
     }
-    body .img2:before { 
+    .img2:before { 
         min-height:120px;
     }
-    body .img3:before { 
+    .img3:before { 
         min-height:120px;
     }
-    body .img4:before { 
+    .img4:before { 
         min-height:120px;
-    }    
+    }   
+    } 
 }
-@media screen and (min-width:769px) and (max-width:991px) {
-    body .img1:before { 
+@media screen and (max-width:991px) {
+    section#block-bean-patentoverview {
+    .img1:before { 
         min-height:80px;
     }
-    body .img2:before { 
+    .img2:before { 
         min-height:80px;
     }
-    body .img3:before { 
+    .img3:before { 
         min-height:80px;
     }
-    body .img4:before { 
+    .img4:before { 
         min-height:80px;
-    }    
+    }  
+    }  
 }
 @media screen and (max-width:$break-point-medium) {
     .patwrap {
@@ -237,16 +243,18 @@ section#block-bean-all-about-patents-block {
     padding:20px;
     margin: 10px 5px;
     }
-    body .img1:before { 
+    section#block-bean-patentoverview {
+    .img1:before { 
         min-height:181px;
     }
-    body .img2:before { 
+    .img2:before { 
         min-height:181px;
     }
-    body .img3:before { 
+    .img3:before { 
         min-height:181px;
     }
-    body .img4:before { 
+    .img4:before { 
         min-height:181px;
+    }
     }    
 }
