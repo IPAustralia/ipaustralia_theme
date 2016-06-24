@@ -53,19 +53,21 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
   // Add class to determine whether to use cookies or not.
   if (isset($vars['node'])) {
     $items = field_get_items('node', $vars['node'], 'field_ip_toolkit_section');
-    $parents = array();
-    foreach ($items as $item) {
-      $item_parents = taxonomy_get_parents($item['tid']);
-      $name = reset($item_parents)->name;
-      if (!in_array($name, $parents)) {
-        $parents[] = $name;
+    if ($items) {
+      $parents = array();
+      foreach ($items as $item) {
+        $item_parents = taxonomy_get_parents($item['tid']);
+        $name = reset($item_parents)->name;
+        if (!in_array($name, $parents)) {
+          $parents[] = $name;
+        }
       }
-    }
-    if (count($parents) >= 2) {
-      if (!isset($vars['page_classes'])) {
-        $vars['page_classes'] = array();
+      if (count($parents) >= 2) {
+        if (!isset($vars['page_classes'])) {
+          $vars['page_classes'] = array();
+        }
+        $vars['page_classes'][] = 'multiple-personas';
       }
-      $vars['page_classes'][] = 'multiple-personas';
     }
   }
 
