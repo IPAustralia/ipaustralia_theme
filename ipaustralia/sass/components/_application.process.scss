@@ -50,7 +50,7 @@ Applicaiton process on body
                 display:inline-block;
                 border-radius: 1000px;
                 background-color: $white !important;
-                background-size: 182px 182px !important;
+                background-size: 200px 200px !important; //increased from 182px to 200px for pbr
                 @media only screen and (max-width: $break-point-midsmall) {
                     width: 150px;
                     height:150px;
