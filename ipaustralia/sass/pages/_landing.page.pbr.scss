@@ -8,17 +8,10 @@ section#block-bean-pbr-anchor-menu {
     @include stick_sub_menu();
 }
 
-//delete after release
-section#block-bean-understanding-pbr {
-    background: $lighter-grey;
-    @include  section_padding(20);
-    @include  landing_page_group_block();
-}
-
 section#block-bean-understanding-pbr-0 {
     background: $lighter-grey;
     @include  section_padding(20);
-    @include  landing_page_group_block_multiple();
+    @include  landing_page_group_block_multiple(390px);
 }
 
 section#block-bean-pbr-application-process {
