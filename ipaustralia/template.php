@@ -238,7 +238,10 @@ function ipaustralia_form_views_exposed_form_alter(&$form, &$form_state, $form_i
   $terms = taxonomy_get_tree($vocab->vid);
   $options = array('' => '- Any -');
   foreach ($terms as $term) {
-    $options[$term->tid] = $term->name;
+    $nodes = taxonomy_select_nodes($term->tid);
+    if (!empty($nodes)) {
+      $options[$term->tid] = $term->name;
+    }
   }
   if ($form_state['view']->name == 'site_search') {
     _ipaustralia_search_text_to_select($form['search_api_aggregation_1'], $options);
