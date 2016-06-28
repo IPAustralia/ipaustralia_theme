@@ -2,7 +2,6 @@ section#block-bean-pbr-landing-block-0 {
     @include landing_page_header_title('pbr-banner.jpg', $themecolor:$yellow);
 }
 
-
 section#block-bean-pbr-anchor-menu {
     @include landing_page_anchor_menu();
     @include stick_sub_menu();
