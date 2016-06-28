@@ -5060,64 +5060,62 @@ article table tr td, article table tr th {
   text-decoration: underline;
   font-size: 24px;
 }
-/* line 33, ../sass/pages/_search.scss */
+/* line 32, ../sass/pages/_search.scss */
 .page-search .search-snippet-info h2 {
   font-size: 15px;
 }
-/* line 36, ../sass/pages/_search.scss */
+/* line 35, ../sass/pages/_search.scss */
 .page-search .search-snippet-info h3 {
   font-size: 15px;
 }
-/* line 39, ../sass/pages/_search.scss */
+/* line 38, ../sass/pages/_search.scss */
 .page-search .search-snippet-info h4 {
   font-size: 15px;
 }
 
-/* line 45, ../sass/pages/_search.scss */
+/* line 44, ../sass/pages/_search.scss */
 section#block-bean-search-ip-rights .panels-flexible-row-four_column_panel_with_top_and_bottom-main-row .panels-flexible-region-inside {
-  padding-right: 0;
   padding: 20px;
-  background: #fff;
+  background: white;
   height: 150px;
-  /* overflow-y: hidden; */
   margin-right: 15px;
   margin-bottom: 20px;
 }
 
-/* line 55, ../sass/pages/_search.scss */
+/* line 52, ../sass/pages/_search.scss */
 section#block-bean-search-ip-rights {
   height: 300px;
 }
 
-/* line 60, ../sass/pages/_search.scss */
+/* line 57, ../sass/pages/_search.scss */
 .view-site-search.view-display-id-page .view-filters {
   margin-bottom: 30px;
 }
-/* line 62, ../sass/pages/_search.scss */
+/* line 59, ../sass/pages/_search.scss */
 .view-site-search.view-display-id-page .view-filters .form-type-select .form-select {
   height: 34px;
 }
-/* line 66, ../sass/pages/_search.scss */
+/* line 63, ../sass/pages/_search.scss */
 .view-site-search.view-display-id-page .node-teaser {
   display: block;
   background: #eff0f2;
   padding: 35px;
   margin-bottom: 10px;
 }
-/* line 71, ../sass/pages/_search.scss */
+/* line 68, ../sass/pages/_search.scss */
 .view-site-search.view-display-id-page .node-teaser header h2 {
   text-decoration: underline;
   font-size: 24px;
 }
-/* line 75, ../sass/pages/_search.scss */
+/* line 72, ../sass/pages/_search.scss */
 .view-site-search.view-display-id-page .node-teaser img, .view-site-search.view-display-id-page .node-teaser iframe {
   display: none;
 }
-/* line 78, ../sass/pages/_search.scss */
+/* line 75, ../sass/pages/_search.scss */
 .view-site-search.view-display-id-page .node-teaser footer {
   padding-bottom: 0;
 }
-/* line 82, ../sass/pages/_search.scss */
+/* line 79, ../sass/pages/_search.scss */
 .view-site-search.view-display-id-page article {
   margin-top: 0;
 }
