@@ -236,7 +236,7 @@ function ipaustralia_form_search_api_page_search_form_default_search_alter(&$for
 function ipaustralia_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
   $vocab = taxonomy_vocabulary_machine_name_load('business_areas');
   $terms = taxonomy_get_tree($vocab->vid);
-  $options = array();
+  $options = array('' => '- Any -');
   foreach ($terms as $term) {
     $options[$term->tid] = $term->name;
   }
