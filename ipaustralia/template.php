@@ -231,6 +231,30 @@ function ipaustralia_form_search_api_page_search_form_default_search_alter(&$for
 }
 
 /**
+ * Implements hook_form_alter().
+ */
+function ipaustralia_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  $vocab = taxonomy_vocabulary_machine_name_load('business_areas');
+  $terms = taxonomy_get_tree($vocab->vid);
+  $options = array();
+  foreach ($terms as $term) {
+    $options[$term->tid] = $term->name;
+  }
+  if ($form_state['view']->name == 'site_search') {
+    _ipaustralia_search_text_to_select($form['search_api_aggregation_1'], $options);
+  }
+}
+
+/**
+ * Alter textfield to be a selectlist with options.
+ */
+function _ipaustralia_search_text_to_select(&$form_item, $options) {
+  $form_item['#type'] = 'select';
+  $form_item['#size'] = 1;
+  $form_item['#options'] = $options;
+}
+
+/**
  * Implements hook_theme().
  */
 function ipaustralia_theme($existing, $type, $theme, $path) {

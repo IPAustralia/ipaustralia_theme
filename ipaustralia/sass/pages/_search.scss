@@ -56,9 +56,12 @@ section#block-bean-search-ip-rights {
 height:300px;
 }
 
-.view-site-search {
+.view-site-search.view-display-id-page {
   .view-filters {
     margin-bottom: 30px;
+    .form-type-select .form-select {
+      height: 34px;
+    }
   }
   .node-teaser {
     display: block;

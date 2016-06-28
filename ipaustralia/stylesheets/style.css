@@ -5085,27 +5085,31 @@ section#block-bean-search-ip-rights {
 }
 
 /* line 60, ../sass/pages/_search.scss */
-.view-site-search .view-filters {
+.view-site-search.view-display-id-page .view-filters {
   margin-bottom: 30px;
 }
-/* line 63, ../sass/pages/_search.scss */
-.view-site-search .node-teaser {
+/* line 62, ../sass/pages/_search.scss */
+.view-site-search.view-display-id-page .view-filters .form-type-select .form-select {
+  height: 34px;
+}
+/* line 66, ../sass/pages/_search.scss */
+.view-site-search.view-display-id-page .node-teaser {
   display: block;
   background: #eff0f2;
   padding: 35px;
   margin-bottom: 10px;
 }
-/* line 68, ../sass/pages/_search.scss */
-.view-site-search .node-teaser header h2 {
+/* line 71, ../sass/pages/_search.scss */
+.view-site-search.view-display-id-page .node-teaser header h2 {
   text-decoration: underline;
   font-size: 24px;
 }
-/* line 72, ../sass/pages/_search.scss */
-.view-site-search .node-teaser img {
+/* line 75, ../sass/pages/_search.scss */
+.view-site-search.view-display-id-page .node-teaser img {
   display: none;
 }
-/* line 76, ../sass/pages/_search.scss */
-.view-site-search article {
+/* line 79, ../sass/pages/_search.scss */
+.view-site-search.view-display-id-page article {
   margin-top: 0;
 }
 
