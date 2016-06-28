@@ -57,3 +57,4 @@ stylesheets[print][] = css/print.css
 ;;;;;;;;;;;;;;;;;;;;;
 
 scripts[] = js/script.js
+scripts[] = readspeaker/ReadSpeaker.js?pids=embhl
