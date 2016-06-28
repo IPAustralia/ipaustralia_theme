@@ -1166,7 +1166,7 @@ header .header .responsive-chat-icon.opened {
 
 /* line 1, ../sass/components/_footer.scss */
 footer {
-  padding: 0 0 80px 0px !important;
+  padding: 0 0 80px 0;
   margin: 0px !important;
   border: 0px !important;
 }
@@ -1320,6 +1320,11 @@ footer .block-menu .nav li.last a {
   padding-left: 50px;
   margin-top: 5px;
   padding-top: 8px;
+}
+
+/* line 140, ../sass/components/_footer.scss */
+footer.footer {
+  padding-bottom: 80px;
 }
 
 /* line 3, ../sass/components/_mega.menu.scss */
@@ -5105,10 +5110,14 @@ section#block-bean-search-ip-rights {
   font-size: 24px;
 }
 /* line 75, ../sass/pages/_search.scss */
-.view-site-search.view-display-id-page .node-teaser img {
+.view-site-search.view-display-id-page .node-teaser img, .view-site-search.view-display-id-page .node-teaser iframe {
   display: none;
 }
-/* line 79, ../sass/pages/_search.scss */
+/* line 78, ../sass/pages/_search.scss */
+.view-site-search.view-display-id-page .node-teaser footer {
+  padding-bottom: 0;
+}
+/* line 82, ../sass/pages/_search.scss */
 .view-site-search.view-display-id-page article {
   margin-top: 0;
 }

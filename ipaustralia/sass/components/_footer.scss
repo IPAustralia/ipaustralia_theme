@@ -1,5 +1,5 @@
 footer {
-    padding: 0 0 $gap-large 0px !important;
+    padding: 0 0 $gap-large 0;
     margin: 0px !important;
     border: 0px !important;
     .block-menu-block {
@@ -135,4 +135,8 @@ footer {
             padding-top: 8px;
         }
     }
+}
+
+footer.footer {
+  padding-bottom: 80px;
 }
