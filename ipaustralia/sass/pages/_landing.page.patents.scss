@@ -62,7 +62,7 @@ section#block-bean-patentoverview {
     }
 }
 
-section#block-bean-understanding-patents-block {
+section#block-bean-understanding-patents {
     background: $lighter-grey;
     @include  section_padding(20);
     @include  landing_page_group_block_multiple($height: 420px);
@@ -109,7 +109,7 @@ section#block-bean-patentoverview {
 section#block-bean-managing-your-patent-block {
     background: $white;
     @include  section_padding(20);
-    @include  landing_page_group_block($background: $lighter-grey);
+    @include  landing_page_group_block($background: $lighter-grey, $height:420px);
 }
 
 section#block-bean-tools-and-resources {
