@@ -1,4 +1,4 @@
-
+<!-- <script src="https://www.ipaustralia.gov.au/sites/g/files/net856/themes/site/ipaustralia/readspeaker/ReadSpeaker.js?pids=embhl" type="text/javascript"></script> -->
 <!-- ClickTale Top part -->
 <script type="text/javascript">
 var WRInitTime=(new Date()).getTime();
@@ -51,12 +51,12 @@ var WRInitTime=(new Date()).getTime();
     <section<?php print $content_column_class; ?>> 
       <a id="main-content"></a>
       <!-- begin readspeaker implementation -->
-      <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+<!--       <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
         <a rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker" href="https://app-as.readspeaker.com/cgi-bin/rsent?customerid=6064&amp;lang=en_au&amp;readid=block-system-main&amp;url=<?php print urlencode("https://".$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]);?>">
               <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen to this page</span></span></span>
               <span class="rsbtn_right rsimg rsplay rspart"></span>
           </a>
-      </div>
+      </div> -->
       <!-- end readspeaker implementation -->
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>

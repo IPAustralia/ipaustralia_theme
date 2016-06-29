@@ -10,7 +10,7 @@ section#block-bean-pbr-anchor-menu {
 section#block-bean-understanding-pbr-0 {
     background: $lighter-grey;
     @include  section_padding(20);
-    @include  landing_page_group_block_multiple(390px);
+    @include  landing_page_group_block_multiple($height: 390px);
 }
 
 section#block-bean-pbr-application-process {

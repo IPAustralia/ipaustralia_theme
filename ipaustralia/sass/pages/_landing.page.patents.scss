@@ -62,11 +62,17 @@ section#block-bean-patentoverview {
     }
 }
 
-
+//remove after patents content release
 section#block-bean-understanding-patents-block {
     background: $lighter-grey;
     @include  section_padding(20);
     @include  landing_page_group_block();
+}
+
+section#block-bean-understanding-patents-block-0 {
+    background: $lighter-grey;
+    @include  section_padding(20);
+    @include  landing_page_group_block_multiple($height: 420px);
 }
 
 .patoverviewcontent {

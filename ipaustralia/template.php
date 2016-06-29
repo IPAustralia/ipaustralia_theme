@@ -199,7 +199,7 @@ function ipaustralia_preprocess_block(&$vars) {
       BLOCK_ID_FOOTER_SUB_MENU,
       BLOCK_ID_IP_TOOLKIT_FOOTER_SUB_MENU,
   ));
-  if ($in_array || $vars['block']->region == 'content') {
+  if (($in_array || $vars['block']->region == 'content') && !($vars['block']->delta == 26)) {
     $vars['theme_hook_suggestions'][] = 'block__with_container';
   }
   elseif ($vars['block']->region == 'content_top') {
