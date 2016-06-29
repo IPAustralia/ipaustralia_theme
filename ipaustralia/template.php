@@ -57,9 +57,11 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
       $parents = array();
       foreach ($items as $item) {
         $item_parents = taxonomy_get_parents($item['tid']);
-        $name = reset($item_parents)->name;
-        if (!in_array($name, $parents)) {
-          $parents[] = $name;
+        if (!empty($item_parents)) {
+          $name = reset($item_parents)->name;
+          if (!in_array($name, $parents)) {
+            $parents[] = $name;
+          }
         }
       }
       if (count($parents) >= 2) {
@@ -228,6 +230,33 @@ function ipaustralia_preprocess_region(&$vars) {
 function ipaustralia_form_search_api_page_search_form_default_search_alter(&$form, &$form_state, $form_id) {
   // Update the placeholder text for the search form in the header.
   $form['keys_1']['#attributes']['placeholder'] = 'Search website';
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function ipaustralia_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  $vocab = taxonomy_vocabulary_machine_name_load('business_areas');
+  $terms = taxonomy_get_tree($vocab->vid);
+  $options = array('' => '- Any -');
+  foreach ($terms as $term) {
+    $nodes = taxonomy_select_nodes($term->tid);
+    if (!empty($nodes)) {
+      $options[$term->tid] = $term->name;
+    }
+  }
+  if ($form_state['view']->name == 'site_search') {
+    _ipaustralia_search_text_to_select($form['search_api_aggregation_1'], $options);
+  }
+}
+
+/**
+ * Alter textfield to be a selectlist with options.
+ */
+function _ipaustralia_search_text_to_select(&$form_item, $options) {
+  $form_item['#type'] = 'select';
+  $form_item['#size'] = 1;
+  $form_item['#options'] = $options;
 }
 
 /**

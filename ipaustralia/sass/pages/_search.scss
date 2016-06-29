@@ -1,57 +1,82 @@
 .page-search {
-    .search-info {
-        display: none;
+  .search-info {
+    display: none;
+  }
+  .search-snippet-info {
+    h1 {
+      font-size: 15px;
     }
-    .search-snippet-info {
-        h1 {
-            font-size: 15px;
-        }
-        img {
-            display: none;
-        }
+    img {
+      display: none;
     }
-    li.search-result {
-        display: block;
-        background: $color_athens_gray_approx;
-        padding: 35px;
-        margin-bottom: 10px;
+  }
+  li.search-result {
+    display: block;
+    background: $color_athens_gray_approx;
+    padding: 35px;
+    margin-bottom: 10px;
+  }
+  ol.search-results {
+    display: block;
+    list-style-type: none;
+    padding: 0 !important;
+  }
+  h3.title {
+    text-decoration: underline;
+  }
+  .search-result h3 a {
+    text-decoration: underline;
+    font-size: 24px;
+  }
+  .search-snippet-info {
+    h2 {
+      font-size: 15px;
     }
-    ol.search-results {
-        display: block;
-        list-style-type: none;
-        padding: 0 !important;
+    h3 {
+      font-size: 15px;
     }
-    h3.title {
-        decoration: underline;
+    h4 {
+      font-size: 15px;
     }
-    .search-result h3 a {
-        //color: #od252c;
-        text-decoration: underline;
-        font-size: 24px;
-    }
-    .search-snippet-info {
-        h2 {
-            font-size: 15px;
-        }
-        h3 {
-            font-size: 15px;
-        }
-        h4 {
-            font-size: 15px;
-        }
-    }
+  }
 }
 
 section#block-bean-search-ip-rights .panels-flexible-row-four_column_panel_with_top_and_bottom-main-row .panels-flexible-region-inside {
-   padding-right: 0;
    padding: 20px;
-   background: #fff;
+   background: $white;
    height: 150px;
-   /* overflow-y: hidden; */
    margin-right: 15px;
-   margin-bottom:20px;
+   margin-bottom: 20px;
 }
 
 section#block-bean-search-ip-rights {
-height:300px;
+  height: 300px;
+}
+
+.view-site-search.view-display-id-page {
+  .view-filters {
+    margin-bottom: 30px;
+    .form-type-select .form-select {
+      height: 34px;
+    }
+  }
+  .node-teaser {
+    display: block;
+    background: $color_athens_gray_approx;
+    padding: 35px;
+    margin-bottom: 10px;
+    header h2 {
+      text-decoration: underline;
+      font-size: 24px;
+    }
+    img, iframe {
+      display: none;
+    }
+    footer {
+      padding-bottom: 0;
+    }
+  }
+  article {
+    margin-top: 0;
+  }
 }
