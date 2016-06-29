@@ -4678,11 +4678,11 @@ section#block-bean-understanding-patents {
     margin: 0 10px;
     padding: 40px;
     background: #fff;
-    height: 420px;
+    height: 490px;
     overflow-y: hidden; }
     @media only screen and (max-width: 768px) {
       section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
-        height: 570px; } }
+        height: 640px; } }
     @media only screen and (max-width: 640px) {
       section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
         height: auto !important;

@@ -65,7 +65,7 @@ section#block-bean-patentoverview {
 section#block-bean-understanding-patents {
     background: $lighter-grey;
     @include  section_padding(20);
-    @include  landing_page_group_block_multiple($height: 420px);
+    @include  landing_page_group_block_multiple($height: 490px);
 }
 
 .patoverviewcontent {
