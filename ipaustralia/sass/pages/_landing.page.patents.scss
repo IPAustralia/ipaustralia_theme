@@ -14,14 +14,14 @@ section#block-bean-patentoverview {
         content: ".";
         display: block;
         background-repeat: no-repeat;
-        min-height: 181px;
+        min-height: 147px;
     }
     .img1 {
         margin:auto;
         max-width: 60%;
         padding-bottom: 1%;
     }
-    .img1:hover {
+    .img1:hover:before {
         background-size: 190px 190px !important;
         box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
         transition: all 0.2s ease-in-out;
@@ -34,14 +34,14 @@ section#block-bean-patentoverview {
         content: ".";
         display: block;
         background-repeat: no-repeat;
-        min-height: 181px;
+        min-height: 147px;
     }
     .img2 {
         margin:auto;
         max-width: 60%;
         padding-bottom: 1%;
     }
-    .img2:hover {
+    .img2:hover:before {
         background-size: 190px 190px !important;
         box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
         transition: all 0.2s ease-in-out;
@@ -54,14 +54,14 @@ section#block-bean-patentoverview {
         content: ".";
         display: block;
         background-repeat: no-repeat;
-        min-height: 181px;
+        min-height: 147px;
     }
     .img3 {
         margin:auto;
         max-width: 60%;
         padding-bottom: 1%;
     }
-    .img3:hover {
+    .img3:hover:before {
         background-size: 190px 190px !important;
         box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
         transition: all 0.2s ease-in-out;
@@ -74,14 +74,14 @@ section#block-bean-patentoverview {
         content: ".";
         display: block;
         background-repeat: no-repeat;
-        min-height: 181px;
+        min-height: 147px;
     }
     .img4 {
         margin:auto;
         max-width: 60%;
         padding-bottom: 1%;
     }
-    .img4:hover {
+    .img4:hover:before {
         background-size: 190px 190px !important;
         box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
         transition: all 0.2s ease-in-out;
@@ -90,10 +90,10 @@ section#block-bean-patentoverview {
 }
 
 
-section#block-bean-understanding-patents-block {
+section#block-bean-understanding-patents {
     background: $lighter-grey;
     @include  section_padding(20);
-    @include  landing_page_group_block();
+    @include  landing_page_group_block_multiple($height:480px);
 }
 
 .patoverviewcontent {
@@ -137,7 +137,7 @@ section#block-bean-patentoverview {
 section#block-bean-managing-your-patent-block {
     background: $white;
     @include  section_padding(20);
-    @include  landing_page_group_block($background: $lighter-grey);
+    @include  landing_page_group_block($background: $lighter-grey, $height:420px);
 }
 
 section#block-bean-tools-and-resources {
