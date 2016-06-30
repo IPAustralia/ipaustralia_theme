@@ -1902,6 +1902,10 @@ applicaiton process menu steps
     display: none; }
     #block-menu-block-12.application-process-menu ul li a::before {
       color: #30aeb6; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(6) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/pat-std/6.png") center center no-repeat; }
     #block-menu-block-12.application-process-menu ul li:nth-child(5) {
       display: block; }
       #block-menu-block-12.application-process-menu ul li:nth-child(5) a {
