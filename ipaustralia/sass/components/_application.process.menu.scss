@@ -92,7 +92,7 @@ applicaiton process menu steps
         @include application-process-menu($steps:7, $backgroundcolor:$color_jagged_ice_approx, $imagefolder:pat-int, $color:$teal);
     }  
 #block-menu-block-12.application-process-menu {
-        @include application-process-menu($steps:5, $backgroundcolor:$color_jagged_ice_approx, $imagefolder:pat-std, $color:$teal);
+        @include application-process-menu($steps:6, $backgroundcolor:$color_jagged_ice_approx, $imagefolder:pat-std, $color:$teal);
 }
 
 
