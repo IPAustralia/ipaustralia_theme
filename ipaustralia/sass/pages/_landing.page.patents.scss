@@ -21,6 +21,12 @@ section#block-bean-patentoverview {
         max-width: 60%;
         padding-bottom: 1%;
     }
+    .img1:hover {
+        background-size: 190px 190px !important;
+        box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
+        transition: all 0.2s ease-in-out;
+    }
+
     .img2:before {
         background-image: url("../images/application-process/pat-gen/2.png");
         background-size: 100% auto;
@@ -34,6 +40,12 @@ section#block-bean-patentoverview {
         max-width: 60%;
         padding-bottom: 1%;
     }
+    .img2:hover {
+        background-size: 190px 190px !important;
+        box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
+        transition: all 0.2s ease-in-out;
+    }
+
     .img3:before {
         background-image: url("../images/application-process/pat-gen/3.png");
         background-size: 100% auto;
@@ -47,6 +59,12 @@ section#block-bean-patentoverview {
         max-width: 60%;
         padding-bottom: 1%;
     }
+    .img3:hover {
+        background-size: 190px 190px !important;
+        box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
+        transition: all 0.2s ease-in-out;
+    }
+
     .img4:before {
         background-image: url("../images/application-process/pat-gen/4.png");
         background-size: 100% auto;
@@ -60,12 +78,18 @@ section#block-bean-patentoverview {
         max-width: 60%;
         padding-bottom: 1%;
     }
+    .img4:hover {
+        background-size: 190px 190px !important;
+        box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
+        transition: all 0.2s ease-in-out;
+    }
 }
 
-section#block-bean-understanding-patents {
+
+section#block-bean-understanding-patents-block {
     background: $lighter-grey;
     @include  section_padding(20);
-    @include  landing_page_group_block_multiple($height: 490px);
+    @include  landing_page_group_block();
 }
 
 .patoverviewcontent {
@@ -109,7 +133,7 @@ section#block-bean-patentoverview {
 section#block-bean-managing-your-patent-block {
     background: $white;
     @include  section_padding(20);
-    @include  landing_page_group_block($background: $lighter-grey, $height:420px);
+    @include  landing_page_group_block($background: $lighter-grey);
 }
 
 section#block-bean-tools-and-resources {

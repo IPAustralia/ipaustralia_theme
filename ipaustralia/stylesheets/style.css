@@ -1442,7 +1442,7 @@ aside {
     margin-top: 2px;
     font-size: 16px; }
     .resource-list-block li a {
-      /*font-size: 14px;*/ }
+      font-size: 14px; }
     .resource-list-block li.patents {
       border-left: 10px solid #30aeb6;
       /*font-size: 15px;*/
@@ -2662,8 +2662,16 @@ article table {
     width: 100px;
     margin: 15px 0 0 2px; }
 
+<<<<<<< Updated upstream
 #readspeaker_button1 {
   margin: 0 0 20px 30px; }
+=======
+.textwrap {
+  word-break: normal !important; }
+
+.breadcrumbs {
+  display: none; }
+>>>>>>> Stashed changes
 
 .front h2 {
   font-size: 38px; }
@@ -2818,7 +2826,7 @@ article table {
           margin-top: 2px;
           font-size: 16px; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.patents {
             border-left: 10px solid #30aeb6;
             /*font-size: 15px;*/
@@ -3059,7 +3067,7 @@ article table {
       margin-top: 2px;
       font-size: 16px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.trade-marks {
@@ -3095,7 +3103,7 @@ article table {
       margin-top: 2px;
       font-size: 16px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.trade-marks {
@@ -3813,8 +3821,7 @@ section#block-bean-about-us-landing-block {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-about-us-landing-block .panels-flexible-region-first h2, section#block-bean-about-us-landing-block .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-about-us-landing-block .panels-flexible-region-first .thick, section#block-bean-about-us-landing-block .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-about-us-landing-block .panels-flexible-region-first p, section#block-bean-about-us-landing-block .field-name-field-bean-body p {
@@ -3845,7 +3852,7 @@ section#block-bean-about-us-landing-block {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-about-us-landing-block .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-about-us-landing-block .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-about-us-landing-block .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -4514,8 +4521,7 @@ section#block-bean-patents-landing-block-new {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-patents-landing-block-new .panels-flexible-region-first h2, section#block-bean-patents-landing-block-new .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-patents-landing-block-new .panels-flexible-region-first .thick, section#block-bean-patents-landing-block-new .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-patents-landing-block-new .panels-flexible-region-first p, section#block-bean-patents-landing-block-new .field-name-field-bean-body p {
@@ -4546,7 +4552,7 @@ section#block-bean-patents-landing-block-new {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-patents-landing-block-new .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-patents-landing-block-new .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-patents-landing-block-new .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -4607,6 +4613,10 @@ section#block-bean-patentoverview .img1 {
   margin: auto;
   max-width: 60%;
   padding-bottom: 1%; }
+section#block-bean-patentoverview .img1:hover {
+  background-size: 190px 190px !important;
+  box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease-in-out; }
 section#block-bean-patentoverview .img2:before {
   background-image: url("../images/application-process/pat-gen/2.png");
   background-size: 100% auto;
@@ -4618,6 +4628,10 @@ section#block-bean-patentoverview .img2 {
   margin: auto;
   max-width: 60%;
   padding-bottom: 1%; }
+section#block-bean-patentoverview .img2:hover {
+  background-size: 190px 190px !important;
+  box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease-in-out; }
 section#block-bean-patentoverview .img3:before {
   background-image: url("../images/application-process/pat-gen/3.png");
   background-size: 100% auto;
@@ -4629,6 +4643,10 @@ section#block-bean-patentoverview .img3 {
   margin: auto;
   max-width: 60%;
   padding-bottom: 1%; }
+section#block-bean-patentoverview .img3:hover {
+  background-size: 190px 190px !important;
+  box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease-in-out; }
 section#block-bean-patentoverview .img4:before {
   background-image: url("../images/application-process/pat-gen/4.png");
   background-size: 100% auto;
@@ -4640,6 +4658,10 @@ section#block-bean-patentoverview .img4 {
   margin: auto;
   max-width: 60%;
   padding-bottom: 1%; }
+section#block-bean-patentoverview .img4:hover {
+  background-size: 190px 190px !important;
+  box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease-in-out; }
 
 section#block-bean-understanding-patents {
   background: #eff0f2;
@@ -5068,7 +5090,7 @@ section#block-bean-tools-and-resources {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-and-resources .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-and-resources .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-and-resources .panel-flexible ul li.trade-marks {
@@ -5278,8 +5300,7 @@ section#block-bean-trade-marks-landing-block-0 {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first h2, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first p, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body p {
@@ -5310,7 +5331,7 @@ section#block-bean-trade-marks-landing-block-0 {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -5789,7 +5810,7 @@ section#block-bean-tools-and-resources-trade-mark {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-and-resources-trade-mark .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-and-resources-trade-mark .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-and-resources-trade-mark .panel-flexible ul li.trade-marks {
@@ -5913,8 +5934,7 @@ section#block-bean-designs-landing-block-0 {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-designs-landing-block-0 .panels-flexible-region-first h2, section#block-bean-designs-landing-block-0 .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-designs-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-designs-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-designs-landing-block-0 .panels-flexible-region-first p, section#block-bean-designs-landing-block-0 .field-name-field-bean-body p {
@@ -5945,7 +5965,7 @@ section#block-bean-designs-landing-block-0 {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-designs-landing-block-0 .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-designs-landing-block-0 .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-designs-landing-block-0 .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -6437,7 +6457,7 @@ section#block-bean-tools-and-resources-designs {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-and-resources-designs .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-and-resources-designs .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-and-resources-designs .panel-flexible ul li.trade-marks {
@@ -6561,8 +6581,7 @@ section#block-bean-pbr-landing-block-0 {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-pbr-landing-block-0 .panels-flexible-region-first h2, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-pbr-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-pbr-landing-block-0 .panels-flexible-region-first p, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body p {
@@ -6593,7 +6612,7 @@ section#block-bean-pbr-landing-block-0 {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-pbr-landing-block-0 .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-pbr-landing-block-0 .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-pbr-landing-block-0 .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -6679,8 +6698,13 @@ section#block-bean-understanding-pbr-0 {
   section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
     margin: 0 10px;
     padding: 40px;
+<<<<<<< Updated upstream
     background: #fff;
     height: 390px;
+=======
+    background: 390px;
+    height: 350px;
+>>>>>>> Stashed changes
     overflow-y: hidden; }
     @media only screen and (max-width: 768px) {
       section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
@@ -6702,7 +6726,7 @@ section#block-bean-understanding-pbr-0 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
-        background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+        background: 390px url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
     section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
       border-top: 4px solid #b6bec0;
@@ -6716,7 +6740,7 @@ section#block-bean-understanding-pbr-0 {
           border-top: 3px solid #b6bec0; } }
   @media only screen and (max-width: 640px) {
     section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
-      background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
+      background: 390px url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
   @media only screen and (max-width: 640px) {
     section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
       display: none; } }
@@ -7076,7 +7100,7 @@ section#block-bean-tools-and-resources-pbr {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-and-resources-pbr .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-and-resources-pbr .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-and-resources-pbr .panel-flexible ul li.trade-marks {
@@ -7938,8 +7962,7 @@ section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-re
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2, section#block-bean-tools-resources-landing .panels-flexible-region-first h2, section#block-bean-tools-resources-landing .field-name-field-bean-body h2, section#block-bean-careers-title-block .panels-flexible-region-first h2, section#block-bean-careers-title-block .field-name-field-bean-body h2, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-first h2, section#block-bean-legislation-landing-page-title-b .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first .thick, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body .thick, section#block-bean-tools-resources-landing .panels-flexible-region-first .thick, section#block-bean-tools-resources-landing .field-name-field-bean-body .thick, section#block-bean-careers-title-block .panels-flexible-region-first .thick, section#block-bean-careers-title-block .field-name-field-bean-body .thick, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-first .thick, section#block-bean-legislation-landing-page-title-b .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first p, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body p, section#block-bean-tools-resources-landing .panels-flexible-region-first p, section#block-bean-tools-resources-landing .field-name-field-bean-body p, section#block-bean-careers-title-block .panels-flexible-region-first p, section#block-bean-careers-title-block .field-name-field-bean-body p, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-first p, section#block-bean-legislation-landing-page-title-b .field-name-field-bean-body p {
@@ -7970,7 +7993,7 @@ section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-re
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li a, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li a, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li a, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.patents, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.patents, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li.patents, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.trade-marks, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.trade-marks, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li.trade-marks, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -8204,7 +8227,7 @@ section#block-bean-tools-resources-ip-professionals {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.trade-marks {
@@ -8396,7 +8419,7 @@ section#block-bean-tools-resources-ip-professionals {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.trade-marks {
@@ -8434,7 +8457,7 @@ section#block-bean-tools-resources-new-to-ip {
     margin-top: 2px;
     font-size: 16px; }
     section#block-bean-tools-resources-new-to-ip li a {
-      /*font-size: 14px;*/ }
+      font-size: 14px; }
     section#block-bean-tools-resources-new-to-ip li.patents {
       border-left: 10px solid #30aeb6;
       /*font-size: 15px;*/
@@ -9034,7 +9057,7 @@ section#block-quicktabs-tools-and-resources {
           margin-top: 2px;
           font-size: 16px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.patents {
             border-left: 10px solid #30aeb6; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.trade-marks {
@@ -9397,7 +9420,7 @@ section#block-quicktabs-tools-and-resources {
           margin-top: 2px;
           font-size: 16px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.patents {
             border-left: 10px solid #30aeb6; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.trade-marks {
@@ -9760,7 +9783,7 @@ section#block-quicktabs-tools-and-resources {
           margin-top: 2px;
           font-size: 16px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li.patents {
             border-left: 10px solid #30aeb6; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li.trade-marks {
@@ -10123,7 +10146,7 @@ section#block-quicktabs-tools-and-resources {
           margin-top: 2px;
           font-size: 16px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li.patents {
             border-left: 10px solid #30aeb6; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li.trade-marks {
@@ -10486,7 +10509,7 @@ section#block-quicktabs-tools-and-resources {
           margin-top: 2px;
           font-size: 16px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li.patents {
             border-left: 10px solid #30aeb6; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li.trade-marks {
@@ -10615,8 +10638,7 @@ section#block-bean-ip-infringement-landing-block {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-ip-infringement-landing-block .panels-flexible-region-first h2, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-ip-infringement-landing-block .panels-flexible-region-first .thick, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-ip-infringement-landing-block .panels-flexible-region-first p, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body p {
@@ -10647,7 +10669,7 @@ section#block-bean-ip-infringement-landing-block {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -11181,8 +11203,7 @@ section#block-bean-understanding-ip-landing-page-bl {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-first h2, section#block-bean-understanding-ip-landing-page-bl .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-first .thick, section#block-bean-understanding-ip-landing-page-bl .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-first p, section#block-bean-understanding-ip-landing-page-bl .field-name-field-bean-body p {
@@ -11213,7 +11234,7 @@ section#block-bean-understanding-ip-landing-page-bl {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-last .tools-resources-list li.trade-marks {
