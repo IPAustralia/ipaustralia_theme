@@ -4623,7 +4623,8 @@ section#block-bean-patentoverview .img1 {
 section#block-bean-patentoverview .img1:hover {
   background-size: 190px 190px !important;
   box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  border-radius: 1000px; }
 section#block-bean-patentoverview .img2:before {
   background-image: url("../images/application-process/pat-gen/2.png");
   background-size: 100% auto;
@@ -4638,7 +4639,8 @@ section#block-bean-patentoverview .img2 {
 section#block-bean-patentoverview .img2:hover {
   background-size: 190px 190px !important;
   box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  border-radius: 1000px; }
 section#block-bean-patentoverview .img3:before {
   background-image: url("../images/application-process/pat-gen/3.png");
   background-size: 100% auto;
@@ -4653,7 +4655,8 @@ section#block-bean-patentoverview .img3 {
 section#block-bean-patentoverview .img3:hover {
   background-size: 190px 190px !important;
   box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  border-radius: 1000px; }
 section#block-bean-patentoverview .img4:before {
   background-image: url("../images/application-process/pat-gen/4.png");
   background-size: 100% auto;
@@ -4668,7 +4671,8 @@ section#block-bean-patentoverview .img4 {
 section#block-bean-patentoverview .img4:hover {
   background-size: 190px 190px !important;
   box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  border-radius: 1000px; }
 
 section#block-bean-understanding-patents-block {
   background: #eff0f2;
