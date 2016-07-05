@@ -29,6 +29,24 @@ article {
             }
         }
     }
+    //external links 
+    a {
+        &.external {
+            background: url(../images/cue-external-link.png) center right no-repeat;
+            padding-right: 20px;
+        }
+    }
+}
+//external links on landing pages
+.node-type-landing-page {
+    section.block {
+        a {
+            &.external {
+                background: url(../images/cue-external-link.png) center right no-repeat;
+                padding-right: 20px;
+            }
+        }
+    }
 }
 
 /*section specific styling */
@@ -79,3 +97,4 @@ article {
     .container ul li .media {
         overflow: visible;
     }
+

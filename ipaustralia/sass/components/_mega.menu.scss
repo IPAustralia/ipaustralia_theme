@@ -460,6 +460,9 @@ header {
                                 overflow:hidden;
                                 text-overflow:ellipsis;
                                 white-space:nowrap;
+                                &:hover {
+                                    border-left: 6px solid $charcoal;
+                                }
                                 &:after {
                                     content:'  ';
                                     float: right;
