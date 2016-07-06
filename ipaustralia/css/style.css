@@ -1318,6 +1318,8 @@ header nav .nav-tabs {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap; }
+            header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a:hover {
+              border-left: 6px solid #0d252c; }
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a:after {
               content: '  ';
               float: right;
@@ -1645,7 +1647,7 @@ ul.tools-resources-list li.bs-callout.bs-vert-callout-purple {
           #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-title, #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside h3 {
             margin-bottom: 10px; } }
       #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside a {
-        background: transparent url("../images/arrow-right-golden-transparent.png") right center no-repeat;
+        background: transparent url("../images/arrow-right-blue-transparent.png") right center no-repeat;
         padding-right: 20px;
         text-decoration: underline;
         margin-top: 35px;
@@ -2153,7 +2155,7 @@ Applicaiton process on body
       display: inline-block;
       margin-top: 15px;
       text-decoration: underline;
-      background: transparent url("../images/arrow-right-golden-transparent.png") center center no-repeat;
+      background: transparent url("../images/arrow-right-blue-transparent.png") center center no-repeat;
       background-position: right center;
       padding-right: 15px; }
   .application-process-wrapper ul.slick-slider li {
@@ -2277,7 +2279,7 @@ Applicaiton process on body
       display: inline-block;
       margin-top: 15px;
       text-decoration: underline;
-      background: transparent url("../images/arrow-right-golden-transparent.png") center center no-repeat;
+      background: transparent url("../images/arrow-right-blue-transparent.png") center center no-repeat;
       background-position: right center;
       padding-right: 15px; }
     .collaboration-steps ul li:nth-child(5) .image {
@@ -2376,6 +2378,13 @@ article table {
     vertical-align: top;
     text-align: left;
     word-wrap: break-word; }
+article a.external {
+  background: url(../images/cue-external-link.png) center right no-repeat;
+  padding-right: 20px; }
+
+.node-type-landing-page section.block a.external {
+  background: url(../images/cue-external-link.png) center right no-repeat;
+  padding-right: 20px; }
 
 /*section specific styling */
 .section-patents article table {
