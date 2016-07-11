@@ -609,6 +609,7 @@
   #ipAustralia-block {
     margin: 5.1em 0 0 0;
     width: 100% !important;
+    height: 100% !important;
     font-size: 18px;
     line-height: 22px;
     bottom: 0;
@@ -800,7 +801,7 @@
   }
 
   #ipAustralia-block .nw_StatusVisibilityNone {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (min-width: 768px) {
