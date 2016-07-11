@@ -1,9 +1,96 @@
 .ip-toolkit-section {
-  .header .header-right section.block-search-api-page {
-    margin-top: 60px;
+  .header {
+    .logo {
+      width: 25%;
+      @media only screen and (max-width: $break-point-medium) {
+        width: 32%;
+      }
+      @media only screen and (max-width: $break-point-midsmall) {
+        width: 38%;
+      }
+      @media only screen and (max-width: $break-point-small) {
+        width: 47%;
+      }
+      img {
+        width: 88%;
+        @media only screen and (max-width: $break-point-small) {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+    .header-right {
+      width: 33%;
+      float: right;
+      section.block-search-api-page {
+        margin-top: 60px;
+      }
+    }
   }
-  .navbar-default, .breadcrumbs {
+  .iptoolkit-logo {
+    display: inline-block;
+    width: 22%;
+    margin-top: 40px;
+    float: left;
+    @media only screen and (max-width: $break-point-medium) {
+      width: 27%;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    @media only screen and (max-width: $break-point-midsmall) {
+      width: 35%;
+      margin-top: 15px;
+    }
+    @media only screen and (max-width: $break-point-small) {
+      width: 46%;
+      clear: both;
+      margin-top: 0;
+    }
+  }
+  .navbar-default .menu.megamenu.megamenu-level-1, .breadcrumbs {
     display: none;
+  }
+  aside {
+    @media only screen and (max-width: $break-point-midsmall) {
+      display: block;
+    }
+  }
+  .region-nav {
+    li {
+      display: inline-block;
+      @media only screen and (max-width: $break-point-medium - 1) {
+        display: block;
+      }
+      a {
+        padding: 19px 21px 15px 21px;
+        display: block;
+        cursor: pointer;
+        color: $white;
+        font: normal 16px 'montserratregular', sans-serif;
+        line-height: 46px;
+        &:hover {
+          text-decoration: none;
+          background: transparent;
+        }
+        &:active, &:focus{
+          background: $charcoal;
+        }
+      }
+    }
+
+  }
+}
+
+.ip-toolkit-section {
+  &.persona-researcher {
+    .multiple-personas .view-id-ip_toolkit_structure.view-display-id-block_2 {
+      display: none;
+    }
+  }
+  &.persona-entrepreneur {
+    .multiple-personas .view-id-ip_toolkit_structure.view-display-id-block_1 {
+      display: none;
+    }
   }
 }
 
@@ -34,6 +121,12 @@
   }
   .views-row a {
     padding: 20px 35px;
+    @media only screen and (min-width: $break-point-medium) and (max-width: $break-point-large) {
+      padding: 20px 0px 20px 20px;
+    }
+    @media only screen and (min-width: $break-point-large) and (max-width: $break-point-xlarge) {
+      padding: 20px 30px;
+    }
     &:before {
       content: '>';
       font-family: sans-serif;
@@ -43,5 +136,165 @@
       opacity: 0.7;
       margin-left: -15px;
     }
+  }
+}
+
+.view-id-ip_toolkit_page.view-display-id-block_1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .label-above {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.field-name-field-ip-toolkit-case-studies {
+  .label-above {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.node-ip-toolkit-case-study.node-teaser {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .group-left {
+    float: none;
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3%;
+  }
+  .group-right {
+    float: none;
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .field-name-title {
+    display: inline-block;
+    vertical-align: middle;
+    h2 {
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 0;
+    }
+  }
+  .field-name-body {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.node-ip-toolkit-case-study.view-mode-sidebar {
+  font-size: 13px;
+  .label-above {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .field {
+    margin-top: 20px;
+  }
+  blockquote {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .field-name-field-quote-author {
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+.node-ip-toolkit-case-study {
+  .field-name-field-image {
+    margin-top: 20px;
+    .field-name-field-caption {
+      font-style: italic;
+      font-size: 12px;
+    }
+  }
+}
+
+.view-id-ip_toolkit_structure.view-display-id-block {
+  .view-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 20px;
+  }
+  .views-row {
+    text-align: center;
+    @media only screen and (min-width: $break-point-medium) and (max-width: $break-point-large) {
+      width: 48%;
+    }
+  }
+}
+
+.taxonomy-term.vocabulary-ip-toolkit-structure {
+  .field-name-title {
+    text-decoration: underline;
+    font: $title-h4-normal;
+    height: 60px;
+    padding-top: 15px;
+    position: relative;
+    top: -60px;
+    background: rgba(239, 240, 242, 0.7);
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    a {
+      color: $white;
+    }
+  }
+  .field-name-field-image {
+    img {
+      display: inline-block;
+    }
+  }
+}
+
+.view-id-ip_toolkit_structure.view-display-id-panel_pane_1, .view-id-ip_toolkit_page.view-display-id-block {
+  .view-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .views-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 48%;
+    background: $lighter-grey;
+    @media only screen and (max-width: $break-point-midsmall) {
+      width: 100%;
+    }
+    a {
+      @include block-links;
+    }
+  }
+}
+
+.pane-custom.block-links {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    li {
+      list-style: none;
+      width: 48%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 0;
+      background: $lighter-grey;
+    }
+  }
+  a {
+    @include block-links;
   }
 }

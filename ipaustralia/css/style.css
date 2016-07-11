@@ -546,7 +546,7 @@ div.main-container a {
   margin-top: 80px; }
   @media only screen and (max-width: 768px) {
     .not-front .main-container .overlay > .container {
-      margin-top: 40px; } }
+      margin-top: 20px; } }
 
 article {
   margin-top: -10px;
@@ -672,6 +672,8 @@ header .logo {
         width: 100%;
         margin-top: 15px;
         margin-bottom: 10px; } }
+header .iptoolkit-logo {
+  display: none; }
 header .header {
   padding: 0 0 30px 0px; }
   @media only screen and (max-width: 767px) {
@@ -1044,7 +1046,7 @@ header nav .nav-tabs {
     @media only screen and (max-width: 767px) {
       header nav .nav-tabs li.open, header nav .nav-tabs li:hover {
         background: #0d252c; } }
-    header nav .nav-tabs li.icon-home :hover, header nav .nav-tabs li.icon-home.active {
+    header nav .nav-tabs li.icon-home:hover, header nav .nav-tabs li.icon-home.active {
       /*@include background-image('home.png');*/
       background-color: #0d252c; }
     header nav .nav-tabs li.icon-home a {
@@ -1123,8 +1125,12 @@ header nav .nav-tabs {
       border-left: 6px solid #f1ac1e !important; }
     header nav .nav-tabs li.tab-plant-breeder-rights a.highlight-box {
       border-left: 6px solid #f1ac1e !important; }
-    header nav .nav-tabs li:hover .dropdown-menu {
-      display: block; }
+    @media only screen and (max-width: 768px -1) {
+      header nav .nav-tabs li:hover .dropdown-menu {
+        display: none; } }
+    @media only screen and (min-width: 768px) {
+      header nav .nav-tabs li:hover .dropdown-menu {
+        display: block; } }
   @media only screen and (max-width: 1200px) {
     header nav .nav-tabs {
       text-overflow: ellipsis;
@@ -1316,6 +1322,8 @@ header nav .nav-tabs {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap; }
+            header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a:hover {
+              border-left: 6px solid #0d252c; }
             header nav .nav-tabs .dropdown-menu .megamenu-level-2 li.highlight-box a:after {
               content: '  ';
               float: right;
@@ -1376,11 +1384,15 @@ aside {
     aside .region-sidebar-first.well ul li.active > a, aside .region-sidebar-first.well ul li.active:hover {
       background: #eff0f2; }
     aside .region-sidebar-first.well ul li a {
+      text-decoration: none;
       font-family: robotobold, sans-serif;
       color: #000;
       text-transform: uppercase;
       padding: 20px 15px;
       border-bottom: 2px dotted #eff0f2; }
+      @media only screen and (max-width: 640px) {
+        aside .region-sidebar-first.well ul li a {
+          padding: 5px 10px; } }
       aside .region-sidebar-first.well ul li a:hover {
         background: transparent;
         text-decoration: underline; }
@@ -1400,9 +1412,6 @@ aside {
         margin-left: -15px; }
   aside .region-sidebar-first .sidenav-hide {
     display: none; }
-  @media only screen and (max-width: 640px) {
-    aside {
-      display: none; } }
 
 .rhs-side-nav {
   font-family: "robotobold", sans-serif;
@@ -1440,7 +1449,7 @@ aside {
     margin-top: 2px;
     font-size: 16px; }
     .resource-list-block li a {
-      /*font-size: 14px;*/ }
+      font-size: 14px; }
     .resource-list-block li.patents {
       border-left: 10px solid #30aeb6;
       /*font-size: 15px;*/
@@ -1643,7 +1652,7 @@ ul.tools-resources-list li.bs-callout.bs-vert-callout-purple {
           #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside .pane-title, #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside h3 {
             margin-bottom: 10px; } }
       #block-panels-mini-consultations-and-twitter-feed-2 .panel-display .panel-panel .inside a {
-        background: transparent url("../images/arrow-right-golden-transparent.png") right center no-repeat;
+        background: transparent url("../images/arrow-right-blue-transparent.png") right center no-repeat;
         padding-right: 20px;
         text-decoration: underline;
         margin-top: 35px;
@@ -1713,11 +1722,19 @@ div.title {
   padding: 80px 0px;
   border-bottom: 2px solid white;
   background: transparent url("../images/tablet.jpg") center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-color: #202020; }
+  @media only screen and (max-width: 640px) {
+    div.title {
+      padding: 20px 0px; } }
   div.title h1 {
     color: white;
     border: 0px;
     margin: 0px; }
+    @media only screen and (max-width: 640px) {
+      div.title h1 {
+        font-size: 30px;
+        line-height: 40px; } }
     div.title h1:after {
       content: '';
       display: block;
@@ -1744,6 +1761,9 @@ applicaiton process menu steps
   margin: 0 0 50px 0;
   height: 296px;
   overflow: hidden; }
+  @media only screen and (max-width: 892px) {
+    .application-process-menu {
+      margin: 0 0 10px 0; } }
   .application-process-menu .block-title, .application-process-menu h2 {
     display: none; }
   .application-process-menu ul li {
@@ -1805,44 +1825,156 @@ applicaiton process menu steps
       .application-process-menu ul .slick-arrow {
         display: none !important; } }
 
-body.section-patents .application-process-menu {
+#block-menu-block-13.application-process-menu {
   background-color: #c3e6e8; }
-  body.section-patents .application-process-menu ul li {
+  #block-menu-block-13.application-process-menu ul li {
     display: none; }
-    body.section-patents .application-process-menu ul li a::before {
+    #block-menu-block-13.application-process-menu ul li a::before {
       color: #30aeb6; }
-    body.section-patents .application-process-menu ul li:nth-child(8) {
+    #block-menu-block-13.application-process-menu ul li:nth-child(6) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(8) a {
-        background: transparent url("../images/application-process/design/8.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(7) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/pat-inn/6.png") center center no-repeat; }
+    #block-menu-block-13.application-process-menu ul li:nth-child(5) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(7) a {
-        background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(6) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/pat-inn/5.png") center center no-repeat; }
+    #block-menu-block-13.application-process-menu ul li:nth-child(4) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(6) a {
-        background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(5) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/pat-inn/4.png") center center no-repeat; }
+    #block-menu-block-13.application-process-menu ul li:nth-child(3) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(5) a {
-        background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(4) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/pat-inn/3.png") center center no-repeat; }
+    #block-menu-block-13.application-process-menu ul li:nth-child(2) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(4) a {
-        background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(3) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/pat-inn/2.png") center center no-repeat; }
+    #block-menu-block-13.application-process-menu ul li:nth-child(1) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(3) a {
-        background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(2) {
+      #block-menu-block-13.application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/pat-inn/1.png") center center no-repeat; }
+
+#block-menu-block-14.application-process-menu {
+  background-color: #c3e6e8; }
+  #block-menu-block-14.application-process-menu ul li {
+    display: none; }
+    #block-menu-block-14.application-process-menu ul li a::before {
+      color: #30aeb6; }
+    #block-menu-block-14.application-process-menu ul li:nth-child(4) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(2) a {
-        background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
-    body.section-patents .application-process-menu ul li:nth-child(1) {
+      #block-menu-block-14.application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/pat-prov/4.png") center center no-repeat; }
+    #block-menu-block-14.application-process-menu ul li:nth-child(3) {
       display: block; }
-      body.section-patents .application-process-menu ul li:nth-child(1) a {
-        background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
+      #block-menu-block-14.application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/pat-prov/3.png") center center no-repeat; }
+    #block-menu-block-14.application-process-menu ul li:nth-child(2) {
+      display: block; }
+      #block-menu-block-14.application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/pat-prov/2.png") center center no-repeat; }
+    #block-menu-block-14.application-process-menu ul li:nth-child(1) {
+      display: block; }
+      #block-menu-block-14.application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/pat-prov/1.png") center center no-repeat; }
+
+#block-menu-block-15.application-process-menu {
+  background-color: #c3e6e8; }
+  #block-menu-block-15.application-process-menu ul li {
+    display: none; }
+    #block-menu-block-15.application-process-menu ul li a::before {
+      color: #30aeb6; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(7) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(7) a {
+        background: transparent url("../images/application-process/pat-int/7.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(6) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/pat-int/6.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(5) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/pat-int/5.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(4) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/pat-int/4.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(3) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/pat-int/3.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(2) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/pat-int/2.png") center center no-repeat; }
+    #block-menu-block-15.application-process-menu ul li:nth-child(1) {
+      display: block; }
+      #block-menu-block-15.application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/pat-int/1.png") center center no-repeat; }
+
+#block-menu-block-12.application-process-menu {
+  background-color: #c3e6e8; }
+  #block-menu-block-12.application-process-menu ul li {
+    display: none; }
+    #block-menu-block-12.application-process-menu ul li a::before {
+      color: #30aeb6; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(6) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/pat-std/6.png") center center no-repeat; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(5) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/pat-std/5.png") center center no-repeat; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(4) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/pat-std/4.png") center center no-repeat; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(3) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/pat-std/3.png") center center no-repeat; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(2) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/pat-std/2.png") center center no-repeat; }
+    #block-menu-block-12.application-process-menu ul li:nth-child(1) {
+      display: block; }
+      #block-menu-block-12.application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/pat-std/1.png") center center no-repeat; }
+
+body.section-plant-breeders-rights-new .application-process-menu {
+  background-color: #fdedce; }
+  body.section-plant-breeders-rights-new .application-process-menu ul li {
+    display: none; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li a::before {
+      color: #f1ac1e; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(6) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/pbr/6.png") center center no-repeat; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(5) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/pbr/5.png") center center no-repeat; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(4) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/pbr/4.png") center center no-repeat; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(3) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/pbr/3.png") center center no-repeat; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(2) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/pbr/2.png") center center no-repeat; }
+    body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(1) {
+      display: block; }
+      body.section-plant-breeders-rights-new .application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/pbr/1.png") center center no-repeat; }
 
 body.section-trade-marks .application-process-menu {
   background-color: #f2dede; }
@@ -1877,10 +2009,6 @@ body.section-designs .application-process-menu {
     display: none; }
     body.section-designs .application-process-menu ul li a::before {
       color: #84c98f; }
-    body.section-designs .application-process-menu ul li:nth-child(7) {
-      display: block; }
-      body.section-designs .application-process-menu ul li:nth-child(7) a {
-        background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
     body.section-designs .application-process-menu ul li:nth-child(6) {
       display: block; }
       body.section-designs .application-process-menu ul li:nth-child(6) a {
@@ -1912,38 +2040,30 @@ body.section-plant-breeders-rights .application-process-menu {
     display: none; }
     body.section-plant-breeders-rights .application-process-menu ul li a::before {
       color: #f1ac1e; }
-    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(8) {
-      display: block; }
-      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(8) a {
-        background: transparent url("../images/application-process/design/8.png") center center no-repeat; }
-    body.section-plant-breeders-rights .application-process-menu ul li:nth-child(7) {
-      display: block; }
-      body.section-plant-breeders-rights .application-process-menu ul li:nth-child(7) a {
-        background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(6) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(6) a {
-        background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/6.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(5) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(5) a {
-        background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/5.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(4) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(4) a {
-        background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/4.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(3) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(3) a {
-        background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/3.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(2) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(2) a {
-        background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/2.png") center center no-repeat; }
     body.section-plant-breeders-rights .application-process-menu ul li:nth-child(1) {
       display: block; }
       body.section-plant-breeders-rights .application-process-menu ul li:nth-child(1) a {
-        background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
+        background: transparent url("../images/application-process/pbr/1.png") center center no-repeat; }
 
 /*
 Applicaiton process on body
@@ -1955,6 +2075,14 @@ Applicaiton process on body
 .application-process-wrapper .description {
   font-size: 1.3em;
   font-family: robotolight; }
+.application-process-wrapper .biglink {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  background: none; }
 .application-process-wrapper ul {
   background: transparent url("../images/application-process/_generic/background-line-9.png") center center no-repeat;
   background-size: 100% auto;
@@ -1992,7 +2120,7 @@ Applicaiton process on body
       display: inline-block;
       border-radius: 1000px;
       background-color: #fff !important;
-      background-size: 182px 182px !important; }
+      background-size: 200px 200px !important; }
       @media only screen and (max-width: 640px) {
         .application-process-wrapper ul li .image {
           width: 150px;
@@ -2043,7 +2171,7 @@ Applicaiton process on body
       display: inline-block;
       margin-top: 15px;
       text-decoration: underline;
-      background: transparent url("../images/arrow-right-golden-transparent.png") center center no-repeat;
+      background: transparent url("../images/arrow-right-blue-transparent.png") center center no-repeat;
       background-position: right center;
       padding-right: 15px; }
   .application-process-wrapper ul.slick-slider li {
@@ -2085,6 +2213,139 @@ Applicaiton process on body
     content: '';
     margin: 0 0 -2px 10px; }
   .application-process-wrapper .button:hover {
+    text-decoration: none;
+    background: black;
+    border: 2px solid #0d252c; }
+
+.collaboration-steps h2, .collaboration-steps .description, .collaboration-steps p {
+  text-align: center; }
+.collaboration-steps h2 {
+  margin: 0 0 30px; }
+.collaboration-steps .description {
+  font-size: 1.3em;
+  font-family: robotolight; }
+.collaboration-steps ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .collaboration-steps ul li {
+    cursor: pointer;
+    padding: 30px 20px 54px;
+    display: inline-block;
+    vertical-align: top;
+    counter-increment: process-counter;
+    margin: 20px 0;
+    width: 240px; }
+    @media only screen and (max-width: 1192px) {
+      .collaboration-steps ul li {
+        padding: 30px 25px 2px; } }
+    @media only screen and (max-width: 768px) {
+      .collaboration-steps ul li {
+        width: 210px; } }
+    @media only screen and (max-width: 480px) {
+      .collaboration-steps ul li {
+        padding: 30px 15px 20px;
+        width: 180px; } }
+    .collaboration-steps ul li .image {
+      width: 150px;
+      height: 150px;
+      display: inline-block;
+      border-radius: 1000px;
+      background-color: #fff;
+      background-size: 150px 150px !important; }
+      @media only screen and (max-width: 640px) {
+        .collaboration-steps ul li .image {
+          width: 150px;
+          height: 150px; } }
+    .collaboration-steps ul li:hover .image {
+      background-size: 160px 160px !important;
+      box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
+      transition: all 0.2s ease-in-out; }
+    .collaboration-steps ul li h4 {
+      color: #0d252c;
+      line-height: 1.1; }
+      @media only screen and (max-width: 1192px) {
+        .collaboration-steps ul li h4 {
+          white-space: nowrap;
+          text-overflow: ellipsis; } }
+      @media only screen and (max-width: 992px) {
+        .collaboration-steps ul li h4 {
+          white-space: normal; } }
+      .collaboration-steps ul li h4::before {
+        font-size: 36px;
+        font-weight: 600;
+        display: block;
+        content: counter(process-counter);
+        margin-bottom: 10px;
+        margin-top: 10px; }
+        @media only screen and (max-width: 640px) {
+          .collaboration-steps ul li h4::before {
+            margin-top: 5px; } }
+    .collaboration-steps ul li .brief-description {
+      height: 90px;
+      overflow: hidden; }
+      @media only screen and (max-width: 1192px) {
+        .collaboration-steps ul li .brief-description {
+          height: 45px; } }
+      @media only screen and (max-width: 992px) {
+        .collaboration-steps ul li .brief-description {
+          height: 90px; } }
+    .collaboration-steps ul li a {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: underline;
+      background: transparent url("../images/arrow-right-blue-transparent.png") center center no-repeat;
+      background-position: right center;
+      padding-right: 15px; }
+    .collaboration-steps ul li:nth-child(5) .image {
+      background: transparent url("../images/collaboration-steps/step5.gif") center center no-repeat; }
+    .collaboration-steps ul li:nth-child(4) .image {
+      background: transparent url("../images/collaboration-steps/step4.gif") center center no-repeat; }
+    .collaboration-steps ul li:nth-child(3) .image {
+      background: transparent url("../images/collaboration-steps/step3.gif") center center no-repeat; }
+    .collaboration-steps ul li:nth-child(2) .image {
+      background: transparent url("../images/collaboration-steps/step2.gif") center center no-repeat; }
+    .collaboration-steps ul li:nth-child(1) .image {
+      background: transparent url("../images/collaboration-steps/step1.gif") center center no-repeat; }
+  .collaboration-steps ul.slick-slider li {
+    background: transparent url("../images/application-process-bar.png") center center no-repeat;
+    background-position: 0px 116px;
+    background-repeat: repeat-x; }
+    .collaboration-steps ul.slick-slider li:first-child {
+      background-position: 100px 116px;
+      background-repeat: no-repeat; }
+    .collaboration-steps ul.slick-slider li:last-child {
+      background-position: -100px 116px;
+      background-repeat: no-repeat; }
+  .collaboration-steps ul.slick-slider .slick-arrow {
+    margin-top: -111px;
+    z-index: 100; }
+    @media only screen and (max-width: 892px) {
+      .collaboration-steps ul.slick-slider .slick-arrow {
+        display: none !important; } }
+.collaboration-steps .button {
+  border: 2px solid black;
+  background: black;
+  padding: 16px 35px 16px;
+  display: inline-block;
+  border-radius: 100px;
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "montserratregular", sans-serif;
+  line-height: 19px;
+  text-decoration: none;
+  margin: 0 auto 80px;
+  color: white; }
+  .collaboration-steps .button:after {
+    background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    content: '';
+    margin: 0 0 -2px 10px; }
+  .collaboration-steps .button:hover {
     text-decoration: none;
     background: black;
     border: 2px solid #0d252c; }
@@ -2133,6 +2394,13 @@ article table {
     vertical-align: top;
     text-align: left;
     word-wrap: break-word; }
+article a.external {
+  background: url(../images/cue-external-link.png) center right no-repeat;
+  padding-right: 20px; }
+
+.node-type-landing-page section.block a.external {
+  background: url(../images/cue-external-link.png) center right no-repeat;
+  padding-right: 20px; }
 
 /*section specific styling */
 .section-patents article table {
@@ -2158,9 +2426,76 @@ article table {
 #print-logo {
   display: none; }
 
-.ip-toolkit-section .header .header-right section.block-search-api-page {
-  margin-top: 60px; }
-.ip-toolkit-section .navbar-default, .ip-toolkit-section .breadcrumbs {
+.container ul li .media {
+  overflow: visible; }
+
+.ip-toolkit-section .header .logo {
+  width: 25%; }
+  @media only screen and (max-width: 768px) {
+    .ip-toolkit-section .header .logo {
+      width: 32%; } }
+  @media only screen and (max-width: 640px) {
+    .ip-toolkit-section .header .logo {
+      width: 38%; } }
+  @media only screen and (max-width: 480px) {
+    .ip-toolkit-section .header .logo {
+      width: 47%; } }
+  .ip-toolkit-section .header .logo img {
+    width: 88%; }
+    @media only screen and (max-width: 480px) {
+      .ip-toolkit-section .header .logo img {
+        width: 100%;
+        margin-top: 10px; } }
+.ip-toolkit-section .header .header-right {
+  width: 33%;
+  float: right; }
+  .ip-toolkit-section .header .header-right section.block-search-api-page {
+    margin-top: 60px; }
+.ip-toolkit-section .iptoolkit-logo {
+  display: inline-block;
+  width: 22%;
+  margin-top: 40px;
+  float: left; }
+  @media only screen and (max-width: 768px) {
+    .ip-toolkit-section .iptoolkit-logo {
+      width: 27%;
+      margin-top: 15px;
+      margin-bottom: 10px; } }
+  @media only screen and (max-width: 640px) {
+    .ip-toolkit-section .iptoolkit-logo {
+      width: 35%;
+      margin-top: 15px; } }
+  @media only screen and (max-width: 480px) {
+    .ip-toolkit-section .iptoolkit-logo {
+      width: 46%;
+      clear: both;
+      margin-top: 0; } }
+.ip-toolkit-section .navbar-default .menu.megamenu.megamenu-level-1, .ip-toolkit-section .breadcrumbs {
+  display: none; }
+@media only screen and (max-width: 640px) {
+  .ip-toolkit-section aside {
+    display: block; } }
+.ip-toolkit-section .region-nav li {
+  display: inline-block; }
+  @media only screen and (max-width: 767px) {
+    .ip-toolkit-section .region-nav li {
+      display: block; } }
+  .ip-toolkit-section .region-nav li a {
+    padding: 19px 21px 15px 21px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font: normal 16px 'montserratregular', sans-serif;
+    line-height: 46px; }
+    .ip-toolkit-section .region-nav li a:hover {
+      text-decoration: none;
+      background: transparent; }
+    .ip-toolkit-section .region-nav li a:active, .ip-toolkit-section .region-nav li a:focus {
+      background: #0d252c; }
+
+.ip-toolkit-section.persona-researcher .multiple-personas .view-id-ip_toolkit_structure.view-display-id-block_2 {
+  display: none; }
+.ip-toolkit-section.persona-entrepreneur .multiple-personas .view-id-ip_toolkit_structure.view-display-id-block_1 {
   display: none; }
 
 .view-id-ip_toolkit_structure.view-display-id-block_1,
@@ -2191,6 +2526,14 @@ article table {
   .view-id-ip_toolkit_structure.view-display-id-block_1 .views-row a,
   .view-id-ip_toolkit_structure.view-display-id-block_2 .views-row a {
     padding: 20px 35px; }
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      .view-id-ip_toolkit_structure.view-display-id-block_1 .views-row a,
+      .view-id-ip_toolkit_structure.view-display-id-block_2 .views-row a {
+        padding: 20px 0px 20px 20px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .view-id-ip_toolkit_structure.view-display-id-block_1 .views-row a,
+      .view-id-ip_toolkit_structure.view-display-id-block_2 .views-row a {
+        padding: 20px 30px; } }
     .view-id-ip_toolkit_structure.view-display-id-block_1 .views-row a:before,
     .view-id-ip_toolkit_structure.view-display-id-block_2 .views-row a:before {
       content: '>';
@@ -2200,6 +2543,167 @@ article table {
       display: inline-block;
       opacity: 0.7;
       margin-left: -15px; }
+
+.view-id-ip_toolkit_page.view-display-id-block_1 {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .view-id-ip_toolkit_page.view-display-id-block_1 .label-above {
+    font-size: 25px;
+    font-weight: bold; }
+
+.field-name-field-ip-toolkit-case-studies .label-above {
+  font-size: 25px;
+  font-weight: bold; }
+
+.node-ip-toolkit-case-study.node-teaser {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .node-ip-toolkit-case-study.node-teaser .group-left {
+    float: none;
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3%; }
+  .node-ip-toolkit-case-study.node-teaser .group-right {
+    float: none;
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle; }
+  .node-ip-toolkit-case-study.node-teaser .field-name-title {
+    display: inline-block;
+    vertical-align: middle; }
+    .node-ip-toolkit-case-study.node-teaser .field-name-title h2 {
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 0; }
+  .node-ip-toolkit-case-study.node-teaser .field-name-body {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.node-ip-toolkit-case-study.view-mode-sidebar {
+  font-size: 13px; }
+  .node-ip-toolkit-case-study.view-mode-sidebar .label-above {
+    font-size: 16px;
+    font-weight: bold; }
+  .node-ip-toolkit-case-study.view-mode-sidebar .field {
+    margin-top: 20px; }
+  .node-ip-toolkit-case-study.view-mode-sidebar blockquote {
+    font-size: 14px;
+    margin-bottom: 0; }
+  .node-ip-toolkit-case-study.view-mode-sidebar .field-name-field-quote-author {
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 5px; }
+
+.node-ip-toolkit-case-study .field-name-field-image {
+  margin-top: 20px; }
+  .node-ip-toolkit-case-study .field-name-field-image .field-name-field-caption {
+    font-style: italic;
+    font-size: 12px; }
+
+.view-id-ip_toolkit_structure.view-display-id-block .view-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-top: 20px; }
+.view-id-ip_toolkit_structure.view-display-id-block .views-row {
+  text-align: center; }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .view-id-ip_toolkit_structure.view-display-id-block .views-row {
+      width: 48%; } }
+
+.taxonomy-term.vocabulary-ip-toolkit-structure .field-name-title {
+  text-decoration: underline;
+  font: normal 24px "montserratregular", sans-serif;
+  height: 60px;
+  padding-top: 15px;
+  position: relative;
+  top: -60px;
+  background: rgba(239, 240, 242, 0.7);
+  width: 100%;
+  display: inline-block;
+  cursor: pointer; }
+  .taxonomy-term.vocabulary-ip-toolkit-structure .field-name-title a {
+    color: #fff; }
+.taxonomy-term.vocabulary-ip-toolkit-structure .field-name-field-image img {
+  display: inline-block; }
+
+.view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .view-content, .view-id-ip_toolkit_page.view-display-id-block .view-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch; }
+.view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row, .view-id-ip_toolkit_page.view-display-id-block .views-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 48%;
+  background: #eff0f2; }
+  @media only screen and (max-width: 640px) {
+    .view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row, .view-id-ip_toolkit_page.view-display-id-block .views-row {
+      width: 100%; } }
+  .view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row a, .view-id-ip_toolkit_page.view-display-id-block .views-row a {
+    background: #eff0f2;
+    color: #1d252c;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    text-align: left;
+    text-decoration: none;
+    width: 100%; }
+    .view-id-ip_toolkit_structure.view-display-id-panel_pane_1 .views-row a:after, .view-id-ip_toolkit_page.view-display-id-block .views-row a:after {
+      border-top: 4px solid #b6bec0;
+      content: "";
+      display: block;
+      width: 100px;
+      margin: 15px 0 0 2px; }
+
+.pane-custom.block-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch; }
+  .pane-custom.block-links ul li {
+    list-style: none;
+    width: 48%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    background: #eff0f2; }
+.pane-custom.block-links a {
+  background: #eff0f2;
+  color: #1d252c;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: left;
+  text-decoration: none;
+  width: 100%; }
+  .pane-custom.block-links a:after {
+    border-top: 4px solid #b6bec0;
+    content: "";
+    display: block;
+    width: 100px;
+    margin: 15px 0 0 2px; }
+
+#readspeaker_button1 {
+  margin: 0 0 20px 30px; }
+
+.textwrap {
+  word-break: normal !important; }
+
+.nostyle {
+  text-decoration: none;
+  color: #000;
+  background: none; }
+
+.breadcrumbs {
+  display: none; }
 
 .front h2 {
   font-size: 38px; }
@@ -2354,7 +2858,7 @@ article table {
           margin-top: 2px;
           font-size: 16px; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           .front #block-quicktabs-homepage-main-tab .quicktabs-wrapper .quicktabs_main .panels-flexible-region-last .tools-resources-list li.patents {
             border-left: 10px solid #30aeb6;
             /*font-size: 15px;*/
@@ -2595,7 +3099,7 @@ article table {
       margin-top: 2px;
       font-size: 16px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .tools-resources-list li.trade-marks {
@@ -2631,7 +3135,7 @@ article table {
       margin-top: 2px;
       font-size: 16px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       .front #block-bean-tools-and-resources-generic-bloc .panel-flexible .panels-flexible-region-four_column_panel_with_top_and_bottom-left_region_1 .tools-resources-list li.trade-marks {
@@ -2864,7 +3368,6 @@ article table {
 .page-search h3.title {
   decoration: underline; }
 .page-search .search-result h3 a {
-  color: #od252c;
   text-decoration: underline;
   font-size: 24px; }
 .page-search .search-snippet-info h2 {
@@ -2892,6 +3395,9 @@ section#block-bean-search-ip-rights {
   .page-tools-resources-case-studies .views-row .panel-col-last {
     padding-top: 22px;
     width: 70%; }
+    @media only screen and (max-width: 480px) {
+      .page-tools-resources-case-studies .views-row .panel-col-last {
+        width: 100%; } }
     .page-tools-resources-case-studies .views-row .panel-col-last .views-field-field-date {
       color: #999;
       margin-bottom: 10px; }
@@ -2901,6 +3407,14 @@ section#block-bean-search-ip-rights {
       margin: 30px;
       width: 140px;
       height: 140px; }
+      @media only screen and (max-width: 1400px) {
+        .page-tools-resources-case-studies .views-row .panel-col-first img {
+          margin: 5px;
+          width: 100%;
+          height: auto; } }
+    @media only screen and (max-width: 480px) {
+      .page-tools-resources-case-studies .views-row .panel-col-first {
+        display: none; } }
   .page-tools-resources-case-studies .views-row .views-field-title a {
     color: #0d252c;
     font-size: 24px;
@@ -2916,6 +3430,9 @@ section#block-bean-search-ip-rights {
   .page-tools-resources-video .views-row .panel-col-last {
     padding-top: 22px;
     width: 70%; }
+    @media only screen and (max-width: 480px) {
+      .page-tools-resources-video .views-row .panel-col-last {
+        width: 100%; } }
     .page-tools-resources-video .views-row .panel-col-last .views-field-field-date {
       color: #999;
       margin-bottom: 10px; }
@@ -2925,6 +3442,14 @@ section#block-bean-search-ip-rights {
       margin: 30px;
       width: 140px;
       height: 140px; }
+      @media only screen and (max-width: 1400px) {
+        .page-tools-resources-video .views-row .panel-col-first img {
+          margin: 5px;
+          width: 100%;
+          height: auto; } }
+    @media only screen and (max-width: 480px) {
+      .page-tools-resources-video .views-row .panel-col-first {
+        display: none; } }
   .page-tools-resources-video .views-row .views-field-title a {
     color: #0d252c;
     font-size: 24px;
@@ -2940,6 +3465,9 @@ section#block-bean-search-ip-rights {
   .page-about-us-news-and-community-blog .views-row .panel-col-last {
     padding-top: 22px;
     width: 70%; }
+    @media only screen and (max-width: 480px) {
+      .page-about-us-news-and-community-blog .views-row .panel-col-last {
+        width: 100%; } }
     .page-about-us-news-and-community-blog .views-row .panel-col-last .views-field-field-date {
       color: #999;
       margin-bottom: 10px; }
@@ -2949,6 +3477,14 @@ section#block-bean-search-ip-rights {
       margin: 30px;
       width: 140px;
       height: 140px; }
+      @media only screen and (max-width: 1400px) {
+        .page-about-us-news-and-community-blog .views-row .panel-col-first img {
+          margin: 5px;
+          width: 100%;
+          height: auto; } }
+    @media only screen and (max-width: 480px) {
+      .page-about-us-news-and-community-blog .views-row .panel-col-first {
+        display: none; } }
   .page-about-us-news-and-community-blog .views-row .views-field-title a {
     color: #0d252c;
     font-size: 24px;
@@ -2964,6 +3500,9 @@ section#block-bean-search-ip-rights {
   .page-about-us-news-and-community-events .views-row .panel-col-last {
     padding-top: 22px;
     width: 70%; }
+    @media only screen and (max-width: 480px) {
+      .page-about-us-news-and-community-events .views-row .panel-col-last {
+        width: 100%; } }
     .page-about-us-news-and-community-events .views-row .panel-col-last .views-field-field-date {
       color: #999;
       margin-bottom: 10px; }
@@ -2973,6 +3512,14 @@ section#block-bean-search-ip-rights {
       margin: 30px;
       width: 140px;
       height: 140px; }
+      @media only screen and (max-width: 1400px) {
+        .page-about-us-news-and-community-events .views-row .panel-col-first img {
+          margin: 5px;
+          width: 100%;
+          height: auto; } }
+    @media only screen and (max-width: 480px) {
+      .page-about-us-news-and-community-events .views-row .panel-col-first {
+        display: none; } }
   .page-about-us-news-and-community-events .views-row .views-field-title a {
     color: #0d252c;
     font-size: 24px;
@@ -2988,6 +3535,9 @@ section#block-bean-search-ip-rights {
   .page-tools-resources-pbr-journals .views-row .panel-col-last, .page-tools-resources-patent-journals .views-row .panel-col-last {
     padding-top: 22px;
     width: 70%; }
+    @media only screen and (max-width: 480px) {
+      .page-tools-resources-pbr-journals .views-row .panel-col-last, .page-tools-resources-patent-journals .views-row .panel-col-last {
+        width: 100%; } }
     .page-tools-resources-pbr-journals .views-row .panel-col-last .views-field-field-date, .page-tools-resources-patent-journals .views-row .panel-col-last .views-field-field-date {
       color: #0d252c;
       margin-bottom: 10px;
@@ -2998,32 +3548,55 @@ section#block-bean-search-ip-rights {
       margin: 30px;
       width: 140px;
       height: 140px; }
+      @media only screen and (max-width: 1400px) {
+        .page-tools-resources-pbr-journals .views-row .panel-col-first img, .page-tools-resources-patent-journals .views-row .panel-col-first img {
+          margin: 5px;
+          width: 100%;
+          height: auto; } }
+    @media only screen and (max-width: 480px) {
+      .page-tools-resources-pbr-journals .views-row .panel-col-first, .page-tools-resources-patent-journals .views-row .panel-col-first {
+        display: none; } }
 
-.page-about-us-news-and-community-news .views-row {
+.view-id-news .views-row, .view-id-trade_mark_certification_rules .views-row, .view-id-education .views-row {
   background: #eff0f2;
   margin-bottom: 10px; }
-  .page-about-us-news-and-community-news .views-row .panel-col-last {
+  .view-id-news .views-row .panel-col-last, .view-id-trade_mark_certification_rules .views-row .panel-col-last, .view-id-education .views-row .panel-col-last {
     padding-top: 22px;
     width: 70%; }
-    .page-about-us-news-and-community-news .views-row .panel-col-last .views-field-field-news-date {
+    @media only screen and (max-width: 480px) {
+      .view-id-news .views-row .panel-col-last, .view-id-trade_mark_certification_rules .views-row .panel-col-last, .view-id-education .views-row .panel-col-last {
+        width: 100%; } }
+    .view-id-news .views-row .panel-col-last .views-field-field-news-date, .view-id-trade_mark_certification_rules .views-row .panel-col-last .views-field-field-news-date, .view-id-education .views-row .panel-col-last .views-field-field-news-date {
       color: #999;
       margin-bottom: 10px; }
-  .page-about-us-news-and-community-news .views-row .panel-col-first {
+  .view-id-news .views-row .panel-col-first, .view-id-trade_mark_certification_rules .views-row .panel-col-first, .view-id-education .views-row .panel-col-first {
     width: 23%; }
-    .page-about-us-news-and-community-news .views-row .panel-col-first img {
+    .view-id-news .views-row .panel-col-first img, .view-id-trade_mark_certification_rules .views-row .panel-col-first img, .view-id-education .views-row .panel-col-first img {
       margin: 30px;
       width: 140px;
       height: 140px; }
-  .page-about-us-news-and-community-news .views-row .views-field-title a {
+      @media only screen and (max-width: 1400px) {
+        .view-id-news .views-row .panel-col-first img, .view-id-trade_mark_certification_rules .views-row .panel-col-first img, .view-id-education .views-row .panel-col-first img {
+          margin: 5px;
+          width: 100%;
+          height: auto; } }
+    @media only screen and (max-width: 480px) {
+      .view-id-news .views-row .panel-col-first, .view-id-trade_mark_certification_rules .views-row .panel-col-first, .view-id-education .views-row .panel-col-first {
+        display: none; } }
+  .view-id-news .views-row .views-field-title a, .view-id-trade_mark_certification_rules .views-row .views-field-title a, .view-id-education .views-row .views-field-title a {
     color: #0d252c;
     font-size: 24px;
     font-weight: bold;
     text-decoration: underline; }
-.page-about-us-news-and-community-news .views-field-field-tags ul {
+  .view-id-news .views-row .views-label, .view-id-trade_mark_certification_rules .views-row .views-label, .view-id-education .views-row .views-label {
+    float: left;
+    margin-right: 5px; }
+
+.views-field-field-tags ul {
   list-style: none;
   padding: 0;
   margin-top: 10px; }
-  .page-about-us-news-and-community-news .views-field-field-tags ul li {
+  .views-field-field-tags ul li {
     display: inline-block;
     background: #0d252c;
     color: #fff;
@@ -3036,6 +3609,9 @@ section#block-bean-search-ip-rights {
   .page-about-us-news-and-community-official-notice .views-row .panel-col-last {
     padding-top: 22px;
     width: 70%; }
+    @media only screen and (max-width: 480px) {
+      .page-about-us-news-and-community-official-notice .views-row .panel-col-last {
+        width: 100%; } }
     .page-about-us-news-and-community-official-notice .views-row .panel-col-last .views-field-field-news-date {
       color: #999;
       margin-bottom: 10px; }
@@ -3045,6 +3621,14 @@ section#block-bean-search-ip-rights {
       margin: 30px;
       width: 140px;
       height: 140px; }
+      @media only screen and (max-width: 1400px) {
+        .page-about-us-news-and-community-official-notice .views-row .panel-col-first img {
+          margin: 5px;
+          width: 100%;
+          height: auto; } }
+    @media only screen and (max-width: 480px) {
+      .page-about-us-news-and-community-official-notice .views-row .panel-col-first {
+        display: none; } }
   .page-about-us-news-and-community-official-notice .views-row .views-field-title a {
     color: #0d252c;
     font-size: 24px;
@@ -3067,6 +3651,9 @@ section#block-bean-search-ip-rights {
   .page-about-us-careers-current-vacancies-listing .views-row .panel-col-last {
     padding-top: 22px;
     width: 70%; }
+    @media only screen and (max-width: 480px) {
+      .page-about-us-careers-current-vacancies-listing .views-row .panel-col-last {
+        width: 100%; } }
     .page-about-us-careers-current-vacancies-listing .views-row .panel-col-last .views-field-field-news-date {
       color: #999;
       margin-bottom: 10px; }
@@ -3076,6 +3663,14 @@ section#block-bean-search-ip-rights {
       margin: 30px;
       width: 140px;
       height: 140px; }
+      @media only screen and (max-width: 1400px) {
+        .page-about-us-careers-current-vacancies-listing .views-row .panel-col-first img {
+          margin: 5px;
+          width: 100%;
+          height: auto; } }
+    @media only screen and (max-width: 480px) {
+      .page-about-us-careers-current-vacancies-listing .views-row .panel-col-first {
+        display: none; } }
   .page-about-us-careers-current-vacancies-listing .views-row .views-field-title a {
     color: #0d252c;
     font-size: 24px;
@@ -3101,9 +3696,20 @@ section#block-bean-search-ip-rights {
       margin: 30px;
       width: 140px;
       height: 140px; }
+      @media only screen and (max-width: 1400px) {
+        .page-tools-resources-publications---reports .views-row .panel-col-first img {
+          margin: 5px;
+          width: 100%;
+          height: auto; } }
+    @media only screen and (max-width: 480px) {
+      .page-tools-resources-publications---reports .views-row .panel-col-first {
+        display: none; } }
   .page-tools-resources-publications---reports .views-row .panel-col-last {
     width: 70%;
     padding-top: 30px; }
+    @media only screen and (max-width: 480px) {
+      .page-tools-resources-publications---reports .views-row .panel-col-last {
+        width: 100%; } }
   .page-tools-resources-publications---reports .views-row .date-display-single {
     color: #999; }
   .page-tools-resources-publications---reports .views-row .views-field-title a {
@@ -3183,6 +3789,15 @@ section#block-bean-search-ip-rights {
     font-size: 24px;
     font-weight: bold;
     text-decoration: underline; }
+
+.field-name-field-online-services-link {
+  background: #eaeaea url(../images/eservices-forms.jpg) no-repeat right center;
+  padding: 10px;
+  min-height: 110px;
+  margin: 20px 0; }
+  @media only screen and (max-width: 992px) {
+    .field-name-field-online-services-link {
+      background: #eaeaea; } }
 
 .view-foi-disclosure-log .views-row {
   background: #eff0f2;
@@ -3350,8 +3965,7 @@ section#block-bean-about-us-landing-block {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-about-us-landing-block .panels-flexible-region-first h2, section#block-bean-about-us-landing-block .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-about-us-landing-block .panels-flexible-region-first .thick, section#block-bean-about-us-landing-block .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-about-us-landing-block .panels-flexible-region-first p, section#block-bean-about-us-landing-block .field-name-field-bean-body p {
@@ -3382,7 +3996,7 @@ section#block-bean-about-us-landing-block {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-about-us-landing-block .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-about-us-landing-block .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-about-us-landing-block .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -4051,8 +4665,7 @@ section#block-bean-patents-landing-block-new {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-patents-landing-block-new .panels-flexible-region-first h2, section#block-bean-patents-landing-block-new .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-patents-landing-block-new .panels-flexible-region-first .thick, section#block-bean-patents-landing-block-new .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-patents-landing-block-new .panels-flexible-region-first p, section#block-bean-patents-landing-block-new .field-name-field-bean-body p {
@@ -4083,7 +4696,7 @@ section#block-bean-patents-landing-block-new {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-patents-landing-block-new .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-patents-landing-block-new .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-patents-landing-block-new .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -4133,125 +4746,217 @@ section#block-bean-patents-anchor-menu-3.is_stuck {
   top: 80px !important;
   z-index: 200; }
 
-section#block-bean-understanding-patents-block {
+section#block-bean-patentoverview .img1:before {
+  background-image: url("../images/application-process/pat-gen/1.png");
+  background-size: 100% auto;
+  content: ".";
+  display: block;
+  background-repeat: no-repeat;
+  min-height: 147px; }
+section#block-bean-patentoverview .img1 {
+  margin: auto;
+  max-width: 60%;
+  padding-bottom: 1%; }
+section#block-bean-patentoverview .img1:hover:before {
+  background-size: 190px 190px !important;
+  box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease-in-out;
+  border-radius: 1000px; }
+section#block-bean-patentoverview .img2:before {
+  background-image: url("../images/application-process/pat-gen/2.png");
+  background-size: 100% auto;
+  content: ".";
+  display: block;
+  background-repeat: no-repeat;
+  min-height: 147px; }
+section#block-bean-patentoverview .img2 {
+  margin: auto;
+  max-width: 60%;
+  padding-bottom: 1%; }
+section#block-bean-patentoverview .img2:hover:before {
+  background-size: 190px 190px !important;
+  box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease-in-out;
+  border-radius: 1000px; }
+section#block-bean-patentoverview .img3:before {
+  background-image: url("../images/application-process/pat-gen/3.png");
+  background-size: 100% auto;
+  content: ".";
+  display: block;
+  background-repeat: no-repeat;
+  min-height: 147px; }
+section#block-bean-patentoverview .img3 {
+  margin: auto;
+  max-width: 60%;
+  padding-bottom: 1%; }
+section#block-bean-patentoverview .img3:hover:before {
+  background-size: 190px 190px !important;
+  box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease-in-out;
+  border-radius: 1000px; }
+section#block-bean-patentoverview .img4:before {
+  background-image: url("../images/application-process/pat-gen/4.png");
+  background-size: 100% auto;
+  content: ".";
+  display: block;
+  background-repeat: no-repeat;
+  min-height: 147px; }
+section#block-bean-patentoverview .img4 {
+  margin: auto;
+  max-width: 60%;
+  padding-bottom: 1%; }
+section#block-bean-patentoverview .img4:hover:before {
+  background-size: 190px 190px !important;
+  box-shadow: inset 0 0 0 16px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease-in-out;
+  border-radius: 1000px; }
+
+section#block-bean-understanding-patents {
   background: #eff0f2;
-  padding: 80px 0px 100px; }
+  padding: 80px 0px 100px;
+  /*div[]*/ }
   @media only screen and (max-width: 640px) {
-    section#block-bean-understanding-patents-block {
+    section#block-bean-understanding-patents {
       padding: 40px 0px 60px; } }
-  section#block-bean-understanding-patents-block ul {
+  section#block-bean-understanding-patents ul {
     list-style: none;
     padding: 0px;
     margin: 0px; }
-    section#block-bean-understanding-patents-block ul li {
+    section#block-bean-understanding-patents ul li {
       padding: 0px 0 0 30px;
-      margin: 3px 0px;
+      margin: 0px;
       background: transparent url("../images/link-tool.png") center center no-repeat;
-      background-position: left 1px; }
-  section#block-bean-understanding-patents-block .group-header {
+      background-position: left 0px; }
+  section#block-bean-understanding-patents .Top {
     margin-bottom: 30px; }
-    section#block-bean-understanding-patents-block .group-header br {
+    section#block-bean-understanding-patents .Top br {
       display: none; }
-    section#block-bean-understanding-patents-block .group-header h2, section#block-bean-understanding-patents-block .group-header h3 {
-      margin-bottom: 30px;
-      text-align: center;
-      color: #0d252c; }
-    section#block-bean-understanding-patents-block .group-header p {
+    section#block-bean-understanding-patents .Top h2 {
+      margin-bottom: 30px; }
+    section#block-bean-understanding-patents .Top p {
       font-size: 1.3em;
-      font-family: robotolight;
-      color: #0d252c; }
+      font-family: robotolight; }
   @media only screen and (max-width: 988px) {
-    section#block-bean-understanding-patents-block .group-left, section#block-bean-understanding-patents-block .group-middle, section#block-bean-understanding-patents-block .group-right {
-      width: 50%; } }
+    section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+      width: 50%;
+      margin-bottom: 20px; } }
   @media only screen and (max-width: 640px) {
-    section#block-bean-understanding-patents-block .group-left, section#block-bean-understanding-patents-block .group-middle, section#block-bean-understanding-patents-block .group-right {
+    section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
       width: 100%;
       margin-bottom: 10px; } }
-  section#block-bean-understanding-patents-block .group-left > div, section#block-bean-understanding-patents-block .group-middle > div, section#block-bean-understanding-patents-block .group-right > div {
-    margin: 0 20px;
+  section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+    margin: 0 10px;
     padding: 40px;
     background: #fff;
-    height: 350px;
+    height: 480px;
     overflow-y: hidden; }
     @media only screen and (max-width: 768px) {
-      section#block-bean-understanding-patents-block .group-left > div, section#block-bean-understanding-patents-block .group-middle > div, section#block-bean-understanding-patents-block .group-right > div {
-        height: 500px; } }
+      section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+        height: 630px; } }
     @media only screen and (max-width: 640px) {
-      section#block-bean-understanding-patents-block .group-left > div, section#block-bean-understanding-patents-block .group-middle > div, section#block-bean-understanding-patents-block .group-right > div {
-        height: auto;
+      section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+        height: auto !important;
         padding: 20px 30px;
         margin: 0px; } }
     @media only screen and (max-width: 480px) {
-      section#block-bean-understanding-patents-block .group-left > div, section#block-bean-understanding-patents-block .group-middle > div, section#block-bean-understanding-patents-block .group-right > div {
+      section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
         padding: 10px 20px; } }
-  section#block-bean-understanding-patents-block .group-left .media-element-container, section#block-bean-understanding-patents-block .group-middle .media-element-container, section#block-bean-understanding-patents-block .group-right .media-element-container {
-    text-align: center;
-    margin-bottom: 30px; }
-    section#block-bean-understanding-patents-block .group-left .media-element-container img, section#block-bean-understanding-patents-block .group-middle .media-element-container img, section#block-bean-understanding-patents-block .group-right .media-element-container img {
-      display: inline-block; }
-    @media only screen and (max-width: 640px) {
-      section#block-bean-understanding-patents-block .group-left .media-element-container, section#block-bean-understanding-patents-block .group-middle .media-element-container, section#block-bean-understanding-patents-block .group-right .media-element-container {
-        display: none; } }
-  section#block-bean-understanding-patents-block .group-left h3, section#block-bean-understanding-patents-block .group-left h4, section#block-bean-understanding-patents-block .group-middle h3, section#block-bean-understanding-patents-block .group-middle h4, section#block-bean-understanding-patents-block .group-right h3, section#block-bean-understanding-patents-block .group-right h4 {
+  section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
     font-size: 22px;
     margin: 0px;
-    font-weight: bold;
-    text-align: left; }
+    font-weight: bold; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-understanding-patents-block .group-left h3, section#block-bean-understanding-patents-block .group-left h4, section#block-bean-understanding-patents-block .group-middle h3, section#block-bean-understanding-patents-block .group-middle h4, section#block-bean-understanding-patents-block .group-right h3, section#block-bean-understanding-patents-block .group-right h4 {
+      section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-understanding-patents-block .group-left h3:after, section#block-bean-understanding-patents-block .group-left h4:after, section#block-bean-understanding-patents-block .group-middle h3:after, section#block-bean-understanding-patents-block .group-middle h4:after, section#block-bean-understanding-patents-block .group-right h3:after, section#block-bean-understanding-patents-block .group-right h4:after {
+    section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-understanding-patents-block .group-left h3:after, section#block-bean-understanding-patents-block .group-left h4:after, section#block-bean-understanding-patents-block .group-middle h3:after, section#block-bean-understanding-patents-block .group-middle h4:after, section#block-bean-understanding-patents-block .group-right h3:after, section#block-bean-understanding-patents-block .group-right h4:after {
+        section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
-  section#block-bean-understanding-patents-block .group-left .open h4, section#block-bean-understanding-patents-block .group-middle .open h4, section#block-bean-understanding-patents-block .group-right .open h4 {
-    background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
   @media only screen and (max-width: 640px) {
-    section#block-bean-understanding-patents-block .group-left p, section#block-bean-understanding-patents-block .group-middle p, section#block-bean-understanding-patents-block .group-right p {
+    section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
+      background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
       display: none; } }
-  section#block-bean-understanding-patents-block .group-left .thin, section#block-bean-understanding-patents-block .group-middle .thin, section#block-bean-understanding-patents-block .group-right .thin {
+  section#block-bean-understanding-patents div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
     display: none; }
-  @media only screen and (max-width: 988px) {
-    section#block-bean-understanding-patents-block .group-right {
-      float: left;
-      margin-top: 20px; } }
-  @media only screen and (max-width: 640px) {
-    section#block-bean-understanding-patents-block .group-right {
-      margin-top: 0px; } }
-  section#block-bean-understanding-patents-block .group-footer a {
+  section#block-bean-understanding-patents .panels-flexible-row-last a {
     margin-top: 40px;
-    border: 2px solid #0d252c;
+    border: 2px solid white;
     background: transparent;
     padding: 16px 35px 16px;
     display: inline-block;
     border-radius: 100px;
-    color: #0d252c;
+    color: white;
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
     line-height: 19px;
     text-decoration: none; }
-    section#block-bean-understanding-patents-block .group-footer a:after {
+    section#block-bean-understanding-patents .panels-flexible-row-last a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
       content: '';
       margin: 0 0 -2px 10px; }
-    section#block-bean-understanding-patents-block .group-footer a:hover {
+    section#block-bean-understanding-patents .panels-flexible-row-last a:hover {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-understanding-patents .group-right {
+      float: left;
+      margin-top: 20px; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-understanding-patents .group-right {
+      margin-top: 0px; } }
+
+.patoverviewcontent {
+  text-align: center; }
+
+section#block-bean-patentoverview {
+  background-color: #c0e8ea;
+  padding: 80px 0; }
+
+.patwrap {
+  display: flex;
+  flex-wrap: no-wrap; }
+
+.boxes {
+  background-color: #fff;
+  width: 25%;
+  padding: 20px;
+  margin: 10px 5px; }
+
+.boxes a {
+  color: #fff;
+  text-decoration: none !important; }
+
+.boxes a:hover {
+  color: #fff;
+  text-decoration: underline !important; }
+
+.boxes .links {
+  background-color: #00829c;
+  width: 100%;
+  padding: 5px 0; }
+
+.boxes h3 {
+  height: 64px; }
+
+.boxes .proctext {
+  min-height: 110px; }
 
 section#block-bean-managing-your-patent-block {
   background: #fff;
@@ -4291,11 +4996,11 @@ section#block-bean-managing-your-patent-block {
     margin: 0 20px;
     padding: 40px;
     background: #eff0f2;
-    height: 350px;
+    height: 420px;
     overflow-y: hidden; }
     @media only screen and (max-width: 768px) {
       section#block-bean-managing-your-patent-block .group-left > div, section#block-bean-managing-your-patent-block .group-middle > div, section#block-bean-managing-your-patent-block .group-right > div {
-        height: 500px; } }
+        height: 570px; } }
     @media only screen and (max-width: 640px) {
       section#block-bean-managing-your-patent-block .group-left > div, section#block-bean-managing-your-patent-block .group-middle > div, section#block-bean-managing-your-patent-block .group-right > div {
         height: auto;
@@ -4533,7 +5238,7 @@ section#block-bean-tools-and-resources {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-and-resources .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-and-resources .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-and-resources .panel-flexible ul li.trade-marks {
@@ -4651,6 +5356,64 @@ section#block-bean-all-about-patents-block {
         background: transparent url("../images/link-tool.png") center center no-repeat;
         background-position: left 0px; }
 
+/*@media screen and (min-width:$break-point-medium) {
+    body .patwrap {
+    display:flex;
+    flex-wrap:no-wrap;
+    }
+    body .boxes {
+    background-color:#fff;
+    width:25%;
+    padding:20px;
+    margin: 10px 5px;
+    }
+}*/
+@media screen and (max-width: 1200px) {
+  section#block-bean-patentoverview .img1:before {
+    min-height: 150px; }
+  section#block-bean-patentoverview .img2:before {
+    min-height: 150px; }
+  section#block-bean-patentoverview .img3:before {
+    min-height: 150px; }
+  section#block-bean-patentoverview .img4:before {
+    min-height: 150px; } }
+@media screen and (max-width: 992px) {
+  section#block-bean-patentoverview .img1:before {
+    min-height: 120px; }
+  section#block-bean-patentoverview .img2:before {
+    min-height: 120px; }
+  section#block-bean-patentoverview .img3:before {
+    min-height: 120px; }
+  section#block-bean-patentoverview .img4:before {
+    min-height: 120px; } }
+@media screen and (max-width: 991px) {
+  section#block-bean-patentoverview .img1:before {
+    min-height: 80px; }
+  section#block-bean-patentoverview .img2:before {
+    min-height: 80px; }
+  section#block-bean-patentoverview .img3:before {
+    min-height: 80px; }
+  section#block-bean-patentoverview .img4:before {
+    min-height: 80px; } }
+@media screen and (max-width: 768px) {
+  .patwrap {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .boxes {
+    background-color: #fff;
+    width: 46%;
+    padding: 20px;
+    margin: 10px 5px; }
+
+  section#block-bean-patentoverview .img1:before {
+    min-height: 181px; }
+  section#block-bean-patentoverview .img2:before {
+    min-height: 181px; }
+  section#block-bean-patentoverview .img3:before {
+    min-height: 181px; }
+  section#block-bean-patentoverview .img4:before {
+    min-height: 181px; } }
 section#block-bean-trade-marks-landing-block-0 {
   background: transparent url("../images/tm-banner.jpg") center center no-repeat;
   background-size: cover;
@@ -4685,8 +5448,7 @@ section#block-bean-trade-marks-landing-block-0 {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first h2, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-first p, section#block-bean-trade-marks-landing-block-0 .field-name-field-bean-body p {
@@ -4717,7 +5479,7 @@ section#block-bean-trade-marks-landing-block-0 {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-trade-marks-landing-block-0 .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -5196,7 +5958,7 @@ section#block-bean-tools-and-resources-trade-mark {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-and-resources-trade-mark .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-and-resources-trade-mark .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-and-resources-trade-mark .panel-flexible ul li.trade-marks {
@@ -5320,8 +6082,7 @@ section#block-bean-designs-landing-block-0 {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-designs-landing-block-0 .panels-flexible-region-first h2, section#block-bean-designs-landing-block-0 .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-designs-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-designs-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-designs-landing-block-0 .panels-flexible-region-first p, section#block-bean-designs-landing-block-0 .field-name-field-bean-body p {
@@ -5352,7 +6113,7 @@ section#block-bean-designs-landing-block-0 {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-designs-landing-block-0 .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-designs-landing-block-0 .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-designs-landing-block-0 .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -5529,7 +6290,7 @@ section#block-bean-designs-application-process {
     section#block-bean-designs-application-process {
       padding: 40px 0px 60px; } }
   section#block-bean-designs-application-process .application-process-wrapper ul {
-    background: transparent url("../images/application-process/_generic/background-line-7.png") center center no-repeat;
+    background: transparent url("../images/application-process/_generic/background-line-6.png") center center no-repeat;
     background-size: 100% auto;
     background-position: right 140px; }
     @media only screen and (max-width: 992px) {
@@ -5539,10 +6300,6 @@ section#block-bean-designs-application-process {
       display: none; }
       section#block-bean-designs-application-process .application-process-wrapper ul li h4::before {
         color: #84c98f; }
-      section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(7) {
-        display: inline-block; }
-        section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(7) .image {
-          background: transparent url("../images/application-process/design/7.png") center center no-repeat; }
       section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(6) {
         display: inline-block; }
         section#block-bean-designs-application-process .application-process-wrapper ul li:nth-child(6) .image {
@@ -5848,7 +6605,7 @@ section#block-bean-tools-and-resources-designs {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-and-resources-designs .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-and-resources-designs .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-and-resources-designs .panel-flexible ul li.trade-marks {
@@ -5972,8 +6729,7 @@ section#block-bean-pbr-landing-block-0 {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-pbr-landing-block-0 .panels-flexible-region-first h2, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-pbr-landing-block-0 .panels-flexible-region-first .thick, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-pbr-landing-block-0 .panels-flexible-region-first p, section#block-bean-pbr-landing-block-0 .field-name-field-bean-body p {
@@ -6004,7 +6760,7 @@ section#block-bean-pbr-landing-block-0 {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-pbr-landing-block-0 .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-pbr-landing-block-0 .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-pbr-landing-block-0 .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -6054,167 +6810,158 @@ section#block-bean-pbr-anchor-menu.is_stuck {
   top: 80px !important;
   z-index: 200; }
 
-section#block-bean-understanding-pbr {
+section#block-bean-understanding-pbr-0 {
   background: #eff0f2;
-  padding: 80px 0px 100px; }
+  padding: 80px 0px 100px;
+  /*div[]*/ }
   @media only screen and (max-width: 640px) {
-    section#block-bean-understanding-pbr {
+    section#block-bean-understanding-pbr-0 {
       padding: 40px 0px 60px; } }
-  section#block-bean-understanding-pbr ul {
+  section#block-bean-understanding-pbr-0 ul {
     list-style: none;
     padding: 0px;
     margin: 0px; }
-    section#block-bean-understanding-pbr ul li {
+    section#block-bean-understanding-pbr-0 ul li {
       padding: 0px 0 0 30px;
-      margin: 3px 0px;
+      margin: 0px;
       background: transparent url("../images/link-tool.png") center center no-repeat;
-      background-position: left 1px; }
-  section#block-bean-understanding-pbr .group-header {
+      background-position: left 0px; }
+  section#block-bean-understanding-pbr-0 .Top {
     margin-bottom: 30px; }
-    section#block-bean-understanding-pbr .group-header br {
+    section#block-bean-understanding-pbr-0 .Top br {
       display: none; }
-    section#block-bean-understanding-pbr .group-header h2, section#block-bean-understanding-pbr .group-header h3 {
-      margin-bottom: 30px;
-      text-align: center;
-      color: #0d252c; }
-    section#block-bean-understanding-pbr .group-header p {
+    section#block-bean-understanding-pbr-0 .Top h2 {
+      margin-bottom: 30px; }
+    section#block-bean-understanding-pbr-0 .Top p {
       font-size: 1.3em;
-      font-family: robotolight;
-      color: #0d252c; }
+      font-family: robotolight; }
   @media only screen and (max-width: 988px) {
-    section#block-bean-understanding-pbr .group-left, section#block-bean-understanding-pbr .group-middle, section#block-bean-understanding-pbr .group-right {
-      width: 50%; } }
+    section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
+      width: 50%;
+      margin-bottom: 20px; } }
   @media only screen and (max-width: 640px) {
-    section#block-bean-understanding-pbr .group-left, section#block-bean-understanding-pbr .group-middle, section#block-bean-understanding-pbr .group-right {
+    section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region {
       width: 100%;
       margin-bottom: 10px; } }
-  section#block-bean-understanding-pbr .group-left > div, section#block-bean-understanding-pbr .group-middle > div, section#block-bean-understanding-pbr .group-right > div {
-    margin: 0 20px;
+  section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+    margin: 0 10px;
     padding: 40px;
     background: #fff;
-    height: 350px;
+    height: 390px;
     overflow-y: hidden; }
     @media only screen and (max-width: 768px) {
-      section#block-bean-understanding-pbr .group-left > div, section#block-bean-understanding-pbr .group-middle > div, section#block-bean-understanding-pbr .group-right > div {
-        height: 500px; } }
+      section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+        height: 540px; } }
     @media only screen and (max-width: 640px) {
-      section#block-bean-understanding-pbr .group-left > div, section#block-bean-understanding-pbr .group-middle > div, section#block-bean-understanding-pbr .group-right > div {
-        height: auto;
+      section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
+        height: auto !important;
         padding: 20px 30px;
         margin: 0px; } }
     @media only screen and (max-width: 480px) {
-      section#block-bean-understanding-pbr .group-left > div, section#block-bean-understanding-pbr .group-middle > div, section#block-bean-understanding-pbr .group-right > div {
+      section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region > div {
         padding: 10px 20px; } }
-  section#block-bean-understanding-pbr .group-left .media-element-container, section#block-bean-understanding-pbr .group-middle .media-element-container, section#block-bean-understanding-pbr .group-right .media-element-container {
-    text-align: center;
-    margin-bottom: 30px; }
-    section#block-bean-understanding-pbr .group-left .media-element-container img, section#block-bean-understanding-pbr .group-middle .media-element-container img, section#block-bean-understanding-pbr .group-right .media-element-container img {
-      display: inline-block; }
-    @media only screen and (max-width: 640px) {
-      section#block-bean-understanding-pbr .group-left .media-element-container, section#block-bean-understanding-pbr .group-middle .media-element-container, section#block-bean-understanding-pbr .group-right .media-element-container {
-        display: none; } }
-  section#block-bean-understanding-pbr .group-left h3, section#block-bean-understanding-pbr .group-left h4, section#block-bean-understanding-pbr .group-middle h3, section#block-bean-understanding-pbr .group-middle h4, section#block-bean-understanding-pbr .group-right h3, section#block-bean-understanding-pbr .group-right h4 {
+  section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
     font-size: 22px;
     margin: 0px;
-    font-weight: bold;
-    text-align: left; }
+    font-weight: bold; }
     @media only screen and (max-width: 640px) {
-      section#block-bean-understanding-pbr .group-left h3, section#block-bean-understanding-pbr .group-left h4, section#block-bean-understanding-pbr .group-middle h3, section#block-bean-understanding-pbr .group-middle h4, section#block-bean-understanding-pbr .group-right h3, section#block-bean-understanding-pbr .group-right h4 {
+      section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4, section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3 {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
         background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
-    section#block-bean-understanding-pbr .group-left h3:after, section#block-bean-understanding-pbr .group-left h4:after, section#block-bean-understanding-pbr .group-middle h3:after, section#block-bean-understanding-pbr .group-middle h4:after, section#block-bean-understanding-pbr .group-right h3:after, section#block-bean-understanding-pbr .group-right h4:after {
+    section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
       border-top: 4px solid #b6bec0;
       content: "";
       display: block;
       width: 100px;
       margin: 15px 0 40px 2px; }
       @media only screen and (max-width: 640px) {
-        section#block-bean-understanding-pbr .group-left h3:after, section#block-bean-understanding-pbr .group-left h4:after, section#block-bean-understanding-pbr .group-middle h3:after, section#block-bean-understanding-pbr .group-middle h4:after, section#block-bean-understanding-pbr .group-right h3:after, section#block-bean-understanding-pbr .group-right h4:after {
+        section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h4:after, section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region h3:after {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
-  section#block-bean-understanding-pbr .group-left .open h4, section#block-bean-understanding-pbr .group-middle .open h4, section#block-bean-understanding-pbr .group-right .open h4 {
-    background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
   @media only screen and (max-width: 640px) {
-    section#block-bean-understanding-pbr .group-left p, section#block-bean-understanding-pbr .group-middle p, section#block-bean-understanding-pbr .group-right p {
+    section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .open h4 {
+      background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region p {
       display: none; } }
-  section#block-bean-understanding-pbr .group-left .thin, section#block-bean-understanding-pbr .group-middle .thin, section#block-bean-understanding-pbr .group-right .thin {
+  section#block-bean-understanding-pbr-0 div[class*="with_top_and_bottom-main-row"] .panels-flexible-region .thin {
     display: none; }
-  @media only screen and (max-width: 988px) {
-    section#block-bean-understanding-pbr .group-right {
-      float: left;
-      margin-top: 20px; } }
-  @media only screen and (max-width: 640px) {
-    section#block-bean-understanding-pbr .group-right {
-      margin-top: 0px; } }
-  section#block-bean-understanding-pbr .group-footer a {
+  section#block-bean-understanding-pbr-0 .panels-flexible-row-last a {
     margin-top: 40px;
-    border: 2px solid #0d252c;
+    border: 2px solid white;
     background: transparent;
     padding: 16px 35px 16px;
     display: inline-block;
     border-radius: 100px;
-    color: #0d252c;
+    color: white;
     font-size: 14px;
     text-transform: uppercase;
     font-family: "montserratregular", sans-serif;
     line-height: 19px;
     text-decoration: none; }
-    section#block-bean-understanding-pbr .group-footer a:after {
+    section#block-bean-understanding-pbr-0 .panels-flexible-row-last a:after {
       background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
       display: inline-block;
       width: 9px;
       height: 15px;
       content: '';
       margin: 0 0 -2px 10px; }
-    section#block-bean-understanding-pbr .group-footer a:hover {
+    section#block-bean-understanding-pbr-0 .panels-flexible-row-last a:hover {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
+  @media only screen and (max-width: 988px) {
+    section#block-bean-understanding-pbr-0 .group-right {
+      float: left;
+      margin-top: 20px; } }
+  @media only screen and (max-width: 640px) {
+    section#block-bean-understanding-pbr-0 .group-right {
+      margin-top: 0px; } }
 
 section#block-bean-pbr-application-process {
-  background: #dff0d8;
+  background: #fdedce;
   padding: 80px 0px 100px; }
   @media only screen and (max-width: 640px) {
     section#block-bean-pbr-application-process {
       padding: 40px 0px 60px; } }
-  section#block-bean-pbr-application-process .applicaiton-process-wrapper ul {
+  section#block-bean-pbr-application-process .application-process-wrapper ul {
     background: transparent url("../images/application-process/_generic/background-line-6.png") center center no-repeat;
     background-size: 100% auto;
     background-position: right 140px; }
     @media only screen and (max-width: 992px) {
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul {
+      section#block-bean-pbr-application-process .application-process-wrapper ul {
         background: transparent; } }
-    section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li {
+    section#block-bean-pbr-application-process .application-process-wrapper ul li {
       display: none; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li h4::before {
+      section#block-bean-pbr-application-process .application-process-wrapper ul li h4::before {
         color: #f1ac1e; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(6) {
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(6) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(6) .image {
-          background: transparent url("../images/application-process/design/6.png") center center no-repeat; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(5) {
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(6) .image {
+          background: transparent url("../images/application-process/pbr/6.png") center center no-repeat; }
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(5) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(5) .image {
-          background: transparent url("../images/application-process/design/5.png") center center no-repeat; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(4) {
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(5) .image {
+          background: transparent url("../images/application-process/pbr/5.png") center center no-repeat; }
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(4) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(4) .image {
-          background: transparent url("../images/application-process/design/4.png") center center no-repeat; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(3) {
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(4) .image {
+          background: transparent url("../images/application-process/pbr/4.png") center center no-repeat; }
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(3) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(3) .image {
-          background: transparent url("../images/application-process/design/3.png") center center no-repeat; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(2) {
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(3) .image {
+          background: transparent url("../images/application-process/pbr/3.png") center center no-repeat; }
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(2) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(2) .image {
-          background: transparent url("../images/application-process/design/2.png") center center no-repeat; }
-      section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(1) {
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(2) .image {
+          background: transparent url("../images/application-process/pbr/2.png") center center no-repeat; }
+      section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(1) {
         display: inline-block; }
-        section#block-bean-pbr-application-process .applicaiton-process-wrapper ul li:nth-child(1) .image {
-          background: transparent url("../images/application-process/design/1.png") center center no-repeat; }
+        section#block-bean-pbr-application-process .application-process-wrapper ul li:nth-child(1) .image {
+          background: transparent url("../images/application-process/pbr/1.png") center center no-repeat; }
 
 section#block-bean-managing-you-pbr-block {
   background: #fff;
@@ -6496,7 +7243,7 @@ section#block-bean-tools-and-resources-pbr {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-and-resources-pbr .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-and-resources-pbr .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-and-resources-pbr .panel-flexible ul li.trade-marks {
@@ -7321,7 +8068,8 @@ section#block-bean-legislation-landing-block h4:after {
   overflow-x: visible; }
 
 #block-bean-careers-landing-page-block .field-item {
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 40px; }
 
 section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-resources-landing, section#block-bean-careers-title-block, section#block-bean-legislation-landing-page-title-b {
   background: transparent url("../images/tablet.jpg") center center no-repeat;
@@ -7357,8 +8105,7 @@ section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-re
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first h2, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body h2, section#block-bean-tools-resources-landing .panels-flexible-region-first h2, section#block-bean-tools-resources-landing .field-name-field-bean-body h2, section#block-bean-careers-title-block .panels-flexible-region-first h2, section#block-bean-careers-title-block .field-name-field-bean-body h2, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-first h2, section#block-bean-legislation-landing-page-title-b .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first .thick, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body .thick, section#block-bean-tools-resources-landing .panels-flexible-region-first .thick, section#block-bean-tools-resources-landing .field-name-field-bean-body .thick, section#block-bean-careers-title-block .panels-flexible-region-first .thick, section#block-bean-careers-title-block .field-name-field-bean-body .thick, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-first .thick, section#block-bean-legislation-landing-page-title-b .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-first p, section#block-bean-tools-and-resources-landing-bloc .field-name-field-bean-body p, section#block-bean-tools-resources-landing .panels-flexible-region-first p, section#block-bean-tools-resources-landing .field-name-field-bean-body p, section#block-bean-careers-title-block .panels-flexible-region-first p, section#block-bean-careers-title-block .field-name-field-bean-body p, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-first p, section#block-bean-legislation-landing-page-title-b .field-name-field-bean-body p {
@@ -7389,7 +8136,7 @@ section#block-bean-tools-and-resources-landing-bloc, section#block-bean-tools-re
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li a, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li a, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li a, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.patents, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.patents, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li.patents, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-tools-and-resources-landing-bloc .panels-flexible-region-last .tools-resources-list li.trade-marks, section#block-bean-tools-resources-landing .panels-flexible-region-last .tools-resources-list li.trade-marks, section#block-bean-careers-title-block .panels-flexible-region-last .tools-resources-list li.trade-marks, section#block-bean-legislation-landing-page-title-b .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -7623,7 +8370,7 @@ section#block-bean-tools-resources-ip-professionals {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.trade-marks {
@@ -7815,7 +8562,7 @@ section#block-bean-tools-resources-ip-professionals {
         margin-top: 2px;
         font-size: 16px; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li a {
-          /*font-size: 14px;*/ }
+          font-size: 14px; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.patents {
           border-left: 10px solid #30aeb6; }
         section#block-bean-tools-resources-ip-professionals .panel-flexible ul li.trade-marks {
@@ -7853,7 +8600,7 @@ section#block-bean-tools-resources-new-to-ip {
     margin-top: 2px;
     font-size: 16px; }
     section#block-bean-tools-resources-new-to-ip li a {
-      /*font-size: 14px;*/ }
+      font-size: 14px; }
     section#block-bean-tools-resources-new-to-ip li.patents {
       border-left: 10px solid #30aeb6;
       /*font-size: 15px;*/
@@ -8453,7 +9200,7 @@ section#block-quicktabs-tools-and-resources {
           margin-top: 2px;
           font-size: 16px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.patents {
             border-left: 10px solid #30aeb6; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources .panel-flexible ul li.trade-marks {
@@ -8816,7 +9563,7 @@ section#block-quicktabs-tools-and-resources {
           margin-top: 2px;
           font-size: 16px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.patents {
             border-left: 10px solid #30aeb6; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-trade-mark .panel-flexible ul li.trade-marks {
@@ -9179,7 +9926,7 @@ section#block-quicktabs-tools-and-resources {
           margin-top: 2px;
           font-size: 16px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li.patents {
             border-left: 10px solid #30aeb6; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-designs .panel-flexible ul li.trade-marks {
@@ -9542,7 +10289,7 @@ section#block-quicktabs-tools-and-resources {
           margin-top: 2px;
           font-size: 16px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li.patents {
             border-left: 10px solid #30aeb6; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-pbr .panel-flexible ul li.trade-marks {
@@ -9905,7 +10652,7 @@ section#block-quicktabs-tools-and-resources {
           margin-top: 2px;
           font-size: 16px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li a {
-            /*font-size: 14px;*/ }
+            font-size: 14px; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li.patents {
             border-left: 10px solid #30aeb6; }
           section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc .panel-flexible ul li.trade-marks {
@@ -10034,8 +10781,7 @@ section#block-bean-ip-infringement-landing-block {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-ip-infringement-landing-block .panels-flexible-region-first h2, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-ip-infringement-landing-block .panels-flexible-region-first .thick, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-ip-infringement-landing-block .panels-flexible-region-first p, section#block-bean-ip-infringement-landing-block .field-name-field-bean-body p {
@@ -10066,7 +10812,7 @@ section#block-bean-ip-infringement-landing-block {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-ip-infringement-landing-block .panels-flexible-region-last .tools-resources-list li.trade-marks {
@@ -10600,8 +11346,7 @@ section#block-bean-understanding-ip-landing-page-bl {
         margin-left: 2px; }
       @media only screen and (max-width: 480px) {
         section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-first h2, section#block-bean-understanding-ip-landing-page-bl .field-name-field-bean-body h2 {
-          font: normal 38px "montserratregular", sans-serif;
-          word-break: break-all; } }
+          font: normal 38px "montserratregular", sans-serif; } }
     section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-first .thick, section#block-bean-understanding-ip-landing-page-bl .field-name-field-bean-body .thick {
       display: none; }
     section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-first p, section#block-bean-understanding-ip-landing-page-bl .field-name-field-bean-body p {
@@ -10632,7 +11377,7 @@ section#block-bean-understanding-ip-landing-page-bl {
       margin-top: 2px;
       font-size: 16px; }
       section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-last .tools-resources-list li a {
-        /*font-size: 14px;*/ }
+        font-size: 14px; }
       section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-last .tools-resources-list li.patents {
         border-left: 10px solid #30aeb6; }
       section#block-bean-understanding-ip-landing-page-bl .panels-flexible-region-last .tools-resources-list li.trade-marks {

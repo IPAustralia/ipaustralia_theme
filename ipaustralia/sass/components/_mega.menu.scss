@@ -125,7 +125,7 @@ header {
                     }
                 }
                 &.icon-home {
-                    :hover, &.active {
+                    &:hover, &.active {
                         /*@include background-image('home.png');*/
                         background-color:$charcoal;
                     }
@@ -246,12 +246,15 @@ header {
                         }   
                     }
                 }
-
-
                 &:hover .dropdown-menu {
-                    display: block;
+                    //display: block;
+                    @media only screen and (max-width: $break-point-medium -1) {
+                        display: none;
+                    }
+                    @media only screen and (min-width: $break-point-medium) {
+                        display: block;
+                    }
                 }
-
             }
 
             @media only screen and (max-width: $break-point-xlarge) {
@@ -460,6 +463,9 @@ header {
                                 overflow:hidden;
                                 text-overflow:ellipsis;
                                 white-space:nowrap;
+                                &:hover {
+                                    border-left: 6px solid $charcoal;
+                                }
                                 &:after {
                                     content:'  ';
                                     float: right;

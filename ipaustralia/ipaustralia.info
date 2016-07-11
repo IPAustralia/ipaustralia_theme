@@ -23,6 +23,7 @@ base theme = bootstrap
 
 regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
+regions[nav]            = 'Navigation'
 regions[help]           = 'Help'
 regions[content]        = 'Content'
 regions[sidebar_first]  = 'Left hand sidebar'
@@ -56,3 +57,4 @@ stylesheets[print][] = css/print.css
 ;;;;;;;;;;;;;;;;;;;;;
 
 scripts[] = js/script.js
+scripts[] = readspeaker/ReadSpeaker.js?pids=embhl

@@ -1,13 +1,14 @@
 <?php if ($element['#items'][0]['value']): ?>
 	<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
+		<img src="<?php echo base_path() . drupal_get_path('theme', 'ipaustralia') ?>/images/eservices-forms.jpg" alt="" />
 		<div>
+
 			<div class="field-label"<?php print $title_attributes; ?>>Online services</div>
 			<div class="field-items"<?php print $content_attributes; ?>>
 				<p><a href="https://services.ipaustralia.gov.au/ICMWebUI">Fill in and submit this form online using online services.</a></p>
 				<p>Using online services is secure, convenient, and can save you money.</p>
 			</div>
 		</div>
-		<img src="<?php echo base_path() . drupal_get_path('theme', 'ipaustralia') ?>/images/eservices-forms.jpg" alt="" />
 	</div>
 <?php else: ?>
 	<?php /* the below comment is actually required - if this field.tpl.php

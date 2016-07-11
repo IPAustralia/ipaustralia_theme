@@ -57,7 +57,7 @@ section#id_of_section {
             }
             @media only screen and (max-width: $break-point-small) {
                 font:$title-h2-normal;
-                word-break: break-all;
+                //word-break: break-all; <-- yuck, don't use this
             }
         }
         .thick {

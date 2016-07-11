@@ -9,6 +9,12 @@ jQuery(document).ready(function () {
     setBreakPoints();
     addTwitterFeed();
     toolsAndResourcesTabsCheck();
+    personaCookies();
+    externalLink();
+
+    if (jQuery('.application-process-menu').length){
+        jQuery('aside.col-sm-3').addClass('app-process-visible');
+    }
 });
 jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-bloc h3', function () {
     openCloseToolsResources(jQuery(this));
@@ -40,7 +46,7 @@ jQuery(document).on('click', '.bp-small section#block-quicktabs-tools-and-resour
 jQuery(document).on('click', '.bp-small section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc h3', function () {
     openCloseToolsResources(jQuery(this));
 });
-jQuery(document).on('click', '.applicaiton-process-wrapper li', function () {
+jQuery(document).on('click', '.application-process-wrapper li', function () {
     var $link = jQuery(this).find('a').attr('href');
     window.open($link, '_self');
 });
@@ -79,6 +85,25 @@ jQuery(document).on('mouseup', 'section#block-quicktabs-tools-and-resources .qui
 
 });
 
+//Check external links
+function externalLink(){
+    //if it does not contain ipaustralia.gov.au, does not start with "#" or "/" then run function.
+    jQuery('section a:not([href*=".ipaustralia.gov.au"]):not([href^="#"]):not([href^="/"])').each(function () {
+        //if no href is on the link
+        if (jQuery(this).attr('href') != undefined) {
+            if (jQuery(this).attr('title') != undefined) {
+                jQuery(this).attr('title', 'external link (new window) - ' + jQuery(this).attr('title'));
+                jQuery(this).addClass('external');
+                jQuery(this).attr('target', '_blank');
+            } else{
+                jQuery(this).attr('title', 'external link (new window)');
+                jQuery(this).addClass('external');
+                jQuery(this).attr('target', '_blank');
+            }
+        }
+    });
+};
+
 //Check Mobile Devices
 function mobileCheck(){
     //Check Device
@@ -102,6 +127,8 @@ function toolsAndResourcesTabsCheck() {
     }
 
 }
+
+
 function resizing() {
     /*
      *  Do action on resizing window or document
@@ -659,9 +686,38 @@ jQuery(document).ready(function () {
     });
 });
 
+/**
+ * Function to get the value of a cookie.
+ */
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 
+/**
+ * Function to set cookies and add classes to body based on cookie value.
+ */
+function personaCookies() {
+  if (window.location.href.indexOf("entrepreneur") > -1) {
+    document.cookie = "persona=entrepreneur";
+  } else if (window.location.href.indexOf("researcher") > -1) {
+    document.cookie = "persona=researcher";
+  }
 
-
+  if (getCookie('persona')) {
+    jQuery('body').addClass('persona-' + getCookie('persona'));
+  }
+}
 
 
 

@@ -1,3 +1,4 @@
+<!-- <script src="https://www.ipaustralia.gov.au/sites/g/files/net856/themes/site/ipaustralia/readspeaker/ReadSpeaker.js?pids=embhl" type="text/javascript"></script> -->
 <!-- ClickTale Top part -->
 <script type="text/javascript">
 var WRInitTime=(new Date()).getTime();
@@ -6,7 +7,7 @@ var WRInitTime=(new Date()).getTime();
 
 <?php include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/header.inc"; ?>
 
-<div class="main-container">
+<div class="main-container <?php if (isset($page_classes)): print implode(' ', $page_classes); endif; ?>">
 
   <div class="overlay" />
 
@@ -14,7 +15,7 @@ var WRInitTime=(new Date()).getTime();
     <div class="breadcrumbs">
       <div class="container">
          <?php print $breadcrumb; ?>
-         <!--a class="listen-to-this-page pull-right" href="http://www.example.com">Listen to this page</a-->
+         
       </div>
     </div>
   <?php endif; ?>
@@ -47,8 +48,16 @@ var WRInitTime=(new Date()).getTime();
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
 
-    <section<?php print $content_column_class; ?>>
+    <section<?php print $content_column_class; ?>> 
       <a id="main-content"></a>
+      <!-- begin readspeaker implementation -->
+<!--       <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+        <a rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker" href="https://app-as.readspeaker.com/cgi-bin/rsent?customerid=6064&amp;lang=en_au&amp;readid=block-system-main&amp;url=<?php print urlencode("https://".$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]);?>">
+              <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen to this page</span></span></span>
+              <span class="rsbtn_right rsimg rsplay rspart"></span>
+          </a>
+      </div> -->
+      <!-- end readspeaker implementation -->
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
@@ -58,6 +67,7 @@ var WRInitTime=(new Date()).getTime();
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+
       <?php print render($page['content']); ?>
     </section>
 

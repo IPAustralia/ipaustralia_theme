@@ -7,19 +7,20 @@ section#block-bean-pbr-anchor-menu {
     @include stick_sub_menu();
 }
 
-section#block-bean-understanding-pbr {
+section#block-bean-understanding-pbr-0 {
     background: $lighter-grey;
     @include  section_padding(20);
-    @include  landing_page_group_block();
+    @include  landing_page_group_block_multiple($height: 390px);
 }
 
 section#block-bean-pbr-application-process {
-    background: $color_willow_brook_approx;
+    background: $color_oasis_approx;
     @include  section_padding(20);
-    .applicaiton-process-wrapper {
-        @include application-process(6, $color:$yellow, $imagefolder:design);
+    .application-process-wrapper {
+        @include application-process(6, $color:$yellow, $imagefolder:pbr);
     }
 }
+
 
 section#block-bean-managing-you-pbr-block {
     background: $white;
