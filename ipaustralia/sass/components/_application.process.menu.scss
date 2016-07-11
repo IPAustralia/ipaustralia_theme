@@ -5,6 +5,9 @@ applicaiton process menu steps
 .application-process-menu {
     background-color: $lighter-grey;
     margin: 0 0 50px 0;
+    @media only screen and (max-width: $break-point-large - 100) {
+        margin: 0 0 10px 0;
+    }
     height:296px;
     overflow:hidden;
     .block-title, h2 {

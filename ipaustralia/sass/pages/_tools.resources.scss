@@ -6,6 +6,9 @@
         .panel-col-last {
             padding-top: 22px;
             width: 70%;
+            @media only screen and (max-width: $break-point-small) {
+                width: 100%;
+            }
             .views-field-field-date {
                 color: $color_mountain_mist_approx;
                 margin-bottom: 10px;
@@ -17,6 +20,14 @@
                 margin: 30px;
                 width: 140px;
                 height: 140px;
+                @media only screen and (max-width: $break-point-xlarge + 200) {
+                    margin: 5px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media only screen and (max-width: $break-point-small) {
+                display: none;
             }
         }
         .views-field-title a {
@@ -40,6 +51,9 @@
         .panel-col-last {
             padding-top: 22px;
             width: 70%;
+            @media only screen and (max-width: $break-point-small) {
+                width: 100%;
+            }
             .views-field-field-date {
                 color: $color_mountain_mist_approx;
                 margin-bottom: 10px;
@@ -51,6 +65,14 @@
                 margin: 30px;
                 width: 140px;
                 height: 140px;
+                @media only screen and (max-width: $break-point-xlarge + 200) {
+                    margin: 5px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media only screen and (max-width: $break-point-small) {
+                display: none;
             }
         }
         .views-field-title a {
@@ -74,6 +96,9 @@
         .panel-col-last {
             padding-top: 22px;
             width: 70%;
+            @media only screen and (max-width: $break-point-small) {
+                width: 100%;
+            }
             .views-field-field-date {
                 color: $color_mountain_mist_approx;
                 margin-bottom: 10px;
@@ -85,6 +110,14 @@
                 margin: 30px;
                 width: 140px;
                 height: 140px;
+                @media only screen and (max-width: $break-point-xlarge + 200) {
+                    margin: 5px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media only screen and (max-width: $break-point-small) {
+                display: none;
             }
         }
         .views-field-title a {
@@ -108,6 +141,9 @@
         .panel-col-last {
             padding-top: 22px;
             width: 70%;
+            @media only screen and (max-width: $break-point-small) {
+                width: 100%;
+            }
             .views-field-field-date {
                 color: $color_mountain_mist_approx;
                 margin-bottom: 10px;
@@ -119,6 +155,14 @@
                 margin: 30px;
                 width: 140px;
                 height: 140px;
+                @media only screen and (max-width: $break-point-xlarge + 200) {
+                    margin: 5px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media only screen and (max-width: $break-point-small) {
+                display: none;
             }
         }
         .views-field-title a {
@@ -142,6 +186,9 @@
         .panel-col-last {
             padding-top: 22px;
             width: 70%;
+            @media only screen and (max-width: $break-point-small) {
+                width: 100%;
+            }
             .views-field-field-date {
                 color: $charcoal;
                 margin-bottom: 10px;
@@ -154,6 +201,14 @@
                 margin: 30px;
                 width: 140px;
                 height: 140px;
+                @media only screen and (max-width: $break-point-xlarge + 200) {
+                    margin: 5px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media only screen and (max-width: $break-point-small) {
+                display: none;
             }
         }
     }
@@ -162,13 +217,16 @@
 
 
 //news
-.page-about-us-news-and-community-news {
+.view-id-news, .view-id-trade_mark_certification_rules, .view-id-education {
     .views-row {
         background: $color_athens_gray_approx;
         margin-bottom: 10px;
         .panel-col-last {
             padding-top: 22px;
             width: 70%;
+            @media only screen and (max-width: $break-point-small) {
+                width: 100%;
+            }
             .views-field-field-news-date {
                 color: $color_mountain_mist_approx;
                 margin-bottom: 10px;
@@ -180,6 +238,14 @@
                 margin: 30px;
                 width: 140px;
                 height: 140px;
+                @media only screen and (max-width: $break-point-xlarge + 200) {
+                    margin: 5px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media only screen and (max-width: $break-point-small) {
+                display: none;
             }
         }
         .views-field-title a {
@@ -188,19 +254,24 @@
             font-weight: bold;
             text-decoration: underline;
         }
+        .views-label {
+            float: left;
+            margin-right: 5px;
+        }
     }
-    .views-field-field-tags {
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 10px;
-            li {
-                display: inline-block;
-                background: $charcoal;
-                color: $white;
-                padding: 5px;
-                margin: 0px 0px 0px 5px;
-            }
+}
+//adds charcoal coloured tags across the views.
+.views-field-field-tags {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+        li {
+            display: inline-block;
+            background: $charcoal;
+            color: $white;
+            padding: 5px;
+            margin: 0px 0px 0px 5px;
         }
     }
 }
@@ -212,17 +283,29 @@
         .panel-col-last {
             padding-top: 22px;
             width: 70%;
+            @media only screen and (max-width: $break-point-small) {
+                width: 100%;
+            }
             .views-field-field-news-date {
                 color: $color_mountain_mist_approx;
                 margin-bottom: 10px;
             }
         }
         .panel-col-first {
+
             width: 23%;
             img {
                 margin: 30px;
                 width: 140px;
                 height: 140px;
+                @media only screen and (max-width: $break-point-xlarge + 200) {
+                    margin: 5px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media only screen and (max-width: $break-point-small) {
+                display: none;
             }
         }
         .views-field-title a {
@@ -256,6 +339,9 @@
         .panel-col-last {
             padding-top: 22px;
             width: 70%;
+            @media only screen and (max-width: $break-point-small) {
+                width: 100%;
+            }
             .views-field-field-news-date {
                 color: $color_mountain_mist_approx;
                 margin-bottom: 10px;
@@ -267,6 +353,14 @@
                 margin: 30px;
                 width: 140px;
                 height: 140px;
+                @media only screen and (max-width: $break-point-xlarge + 200) {
+                    margin: 5px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media only screen and (max-width: $break-point-small) {
+                display: none;
             }
         }
         .views-field-title a {
@@ -303,10 +397,21 @@
                 margin: 30px;
                 width: 140px;
                 height: 140px;
+                @media only screen and (max-width: $break-point-xlarge + 200) {
+                    margin: 5px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media only screen and (max-width: $break-point-small) {
+                display: none;
             }
         }
         .panel-col-last {
             width: 70%;
+            @media only screen and (max-width: $break-point-small) {
+                width: 100%;
+            }
             padding-top: 30px;
         }
         .date-display-single {
@@ -408,6 +513,16 @@
         font-size: 24px;
         font-weight: bold;
         text-decoration: underline;
+    }
+}
+
+.field-name-field-online-services-link {
+    background: #eaeaea url(../images/eservices-forms.jpg) no-repeat right center;
+    padding: 10px;
+    min-height: 110px;
+    margin: 20px 0;
+    @media only screen and (max-width: $break-point-large) {
+        background: #eaeaea;
     }
 }
 

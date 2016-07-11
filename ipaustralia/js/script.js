@@ -11,6 +11,10 @@ jQuery(document).ready(function () {
     toolsAndResourcesTabsCheck();
     personaCookies();
     externalLink();
+
+    if (jQuery('.application-process-menu').length){
+        jQuery('aside.col-sm-3').addClass('app-process-visible');
+    }
 });
 jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-bloc h3', function () {
     openCloseToolsResources(jQuery(this));
@@ -42,7 +46,7 @@ jQuery(document).on('click', '.bp-small section#block-quicktabs-tools-and-resour
 jQuery(document).on('click', '.bp-small section#block-quicktabs-tools-and-resources .pane-bean-tools-and-resources-generic-bloc h3', function () {
     openCloseToolsResources(jQuery(this));
 });
-jQuery(document).on('click', '.applicaiton-process-wrapper li', function () {
+jQuery(document).on('click', '.application-process-wrapper li', function () {
     var $link = jQuery(this).find('a').attr('href');
     window.open($link, '_self');
 });
