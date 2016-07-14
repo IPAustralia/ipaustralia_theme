@@ -9890,12 +9890,12 @@ window.Nina.config.newConfig = function(agentConfig) {
              * The version of the UI. Injected by Grunt based on package.json and build #
              * @type {string}
              */
-            version: "ipAustraliaBlock-201606231430",
+            version: "ipAustraliaBlock-201606301745",
             /**
              * The date and time the build of the UI took place. Automatically generated during build in the client's Gruntfile
              * @type {string}
              */
-            date: "2016-06-23 14:26",
+            date: "2016-06-30 18:50",
             /**
              * The maximum length of a user query
              * @type {int}
@@ -10192,16 +10192,16 @@ window.Nina.config.newConfig = function(agentConfig) {
              * "debug" (boolean) defines if we'll call the web service in debug mode (more information returned)
              */
             preprod: {
-								houstonURL: "https://agent-preprod.nuance-va.com/houston/houston.html",
-								houstonURL_IE89: "https://agent-preprod.nuance-va.com/houston/houston_ie89.js",
-								 base_url: {
-								 		"MA": "https://agent-preprod-ma.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/",
-								 		"WA": "https://agent-preprod-wa.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/"
-								 },
-								use_smart_router: false,
-								smart_router_endpoint: "",
-								sr_agent_endpoint: "",
-								debug: true
+                houstonURL: "https://agent-preprod.au.nod.nuance.com/houston/houston.html",
+                houstonURL_IE89: "https://agent-preprod.au.nod.nuance.com/houston/houston_ie89.js",
+                base_url: {
+                    "AS": "https://agent-preprod-as.au.nod.nuance.com/ipaustralia-service_au-englishus-WebBotRouter/",
+                    "AM": "https://agent-preprod-am.au.nod.nuance.com/ipaustralia-service_au-englishus-WebBotRouter/"
+                },
+                use_smart_router: false,
+                smart_router_endpoint: "",
+                sr_agent_endpoint: "",
+                debug: true
             },
             /**
              * The details for the production mode
@@ -10213,16 +10213,16 @@ window.Nina.config.newConfig = function(agentConfig) {
              * "debug" (boolean) defines if we'll call the web service in debug mode (more information returned)
              */
             prod: {
-							houstonURL: "https://agent.nuance-va.com/houston/houston.html",
-							houstonURL_IE89: "https://agent.nuance-va.com/houston/houston_ie89.js",
-                            base_url: {
-                                    "MA": "https://agent-ma.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/",
-                                    "WA": "https://agent-wa.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/"
-                            },
-							use_smart_router: false,
-							smart_router_endpoint: "",
-							sr_agent_endpoint: "",
-							debug: false
+                houstonURL: "https://agent.au.nod.nuance.com/houston/houston.html",
+                houstonURL_IE89: "https://agent.au.nod.nuance.com/houston/houston_ie89.js",
+                base_url: {
+                    "AS": "https://agent-as.au.nod.nuance.com/ipaustralia-service_au-englishus-WebBotRouter/",
+                    "AM": "https://agent-am.au.nod.nuance.com/ipaustralia-service_au-englishus-WebBotRouter/"
+                },
+                use_smart_router: false,
+                smart_router_endpoint: "",
+                sr_agent_endpoint: "",
+                debug: false
             },
             /**
              * # of seconds to wait before considering the service timed out
@@ -11807,7 +11807,7 @@ window.Nina.helper.newDebug = function(_ui, _cookiesJar) {
             }
 		},
 		getUIVersion: function() {
-			return "ipAustraliaBlock-201606231430";
+			return "ipAustraliaBlock-201606301745";
 		},
 		switchPreprodMode: function(reload) {
 			reload = (reload !== "undefined") ? reload : true;
@@ -15395,11 +15395,11 @@ window.NinaVars = window.NinaVars || {};
     var config = Nina.config.newConfig({
         ws: {
             preprod: {
-                houstonURL: "https://agent-preprod.nuance-va.com/houston/houston.html",
-                houstonURL_IE89: "https://agent-preprod.nuance-va.com/houston/houston_ie89.js",
+                houstonURL: "https://agent-preprod.au.nod.nuance.com/houston/houston.html",
+                houstonURL_IE89: "https://agent-preprod.au.nod.nuance.com/houston/houston_ie89.js",
                 base_url: {
-                    "MA": "https://agent-preprod-ma.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/",
-                    "WA": "https://agent-preprod-wa.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/"
+                    "AS": "https://agent-preprod-as.au.nod.nuance.com/ipaustralia-service_au-englishus-WebBotRouter/",
+                    "AM": "https://agent-preprod-am.au.nod.nuance.com/ipaustralia-service_au-englishus-WebBotRouter/"
                 },
                 use_smart_router: false,
                 smart_router_endpoint: "",
@@ -15407,11 +15407,11 @@ window.NinaVars = window.NinaVars || {};
                 debug: true
             },
             prod: {
-                houstonURL: "https://agent.nuance-va.com/houston/houston.html",
-                houstonURL_IE89: "https://agent.nuance-va.com/houston/houston_ie89.js",
+                houstonURL: "https://agent.au.nod.nuance.com/houston/houston.html",
+                houstonURL_IE89: "https://agent.au.nod.nuance.com/houston/houston_ie89.js",
                 base_url: {
-                    "MA": "https://agent-ma.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/",
-                    "WA": "https://agent-wa.nuance-va.com/ipaustralia-service_au-englishus-WebBotRouter/"
+                    "AS": "https://agent-as.au.nod.nuance.com/ipaustralia-service_au-englishus-WebBotRouter/",
+                    "AM": "https://agent-am.au.nod.nuance.com/ipaustralia-service_au-englishus-WebBotRouter/"
                 },
                 use_smart_router: false,
                 smart_router_endpoint: "",
@@ -15485,11 +15485,11 @@ window.NinaVars = window.NinaVars || {};
 
     /* passing activeSite variable */
     if (NinaVars.preprod) {
-        var temphoustonURL = "https://agent-preprod.nuance-va.com/houston/houston.html";
-        var temphoustonURL_IE89 = "https://agent-preprod.nuance-va.com/houston/houston_ie89.js";
+        var temphoustonURL = "https://agent-preprod.au.nod.nuance.com/houston/houston.html";
+        var temphoustonURL_IE89 = "https://agent-preprod.au.nod.nuance.com/houston/houston_ie89.js";
     } else {
-        var temphoustonURL = "https://agent.nuance-va.com/houston/houston.html";
-        var temphoustonURL_IE89 = "https://agent.nuance-va.com/houston/houston_ie89.js";
+        var temphoustonURL = "https://agent.au.nod.nuance.com/houston/houston.html";
+        var temphoustonURL_IE89 = "https://agent.au.nod.nuance.com/houston/houston_ie89.js";
     }
 
     $.get(temphoustonURL, function (site) {
@@ -15529,13 +15529,15 @@ window.NinaVars = window.NinaVars || {};
     window.ipa.virtualAssistant = window.ipa.virtualAssistant || {};
 
 
- var isLiveAgent = false;
+    var isLiveAgent = false;
+    var isMobileNavigator = false;
     $(document).ready(function () {
 
         var isMobile = window.matchMedia("only screen and (max-width: 768px)");
         var isDesktop = window.matchMedia("only screen and (min-width: 769px)");
-        var isMobileNavigator = false;
+
         var va = window.ipa.virtualAssistant;
+        var endChatSession = "~_End_Chat_Session";
         var isIPad = false; // used to check if device is IPAD
         va.OPEN_ALEX_TEXT = "Open Alex virtual assistant. Ask questions to get help around the site.";
         va.OPEN_LIVE_AGENT = "Open Live Agent. Ask questions to Agent";
@@ -15608,7 +15610,9 @@ window.NinaVars = window.NinaVars || {};
             var whiteList = [
                 //following are to support Nuance preprod and ui-dev domains
                 "/ipa/",
+                "/ipa_apac/",
                 "/ps/ipa/",
+                "/ps/ipa_usa/",
                 "/trade-marks"
             ];
 
@@ -15694,11 +15698,6 @@ window.NinaVars = window.NinaVars || {};
                 if ($('.nw_UserInputField').hasClass('nwAutosize2')) {
                     $('.nw_UserInputField').removeClass('nwAutosize2');
                     $('.nw_UserInputField').addClass('nwAutosize1');
-                }
-                if (!$('#ipAustralia-block').hasClass('nw_initial')) {
-                    $('.nw_AgentStatus').removeClass('nw_StatusVisibilityNone');
-                } else {
-                    $('.nw_AgentStatus').addClass('nw_StatusVisibilityNone');
                 }
                 // written for WCAG , assign tab index for all the divs under conversationTexts .
                 $('.nw_ConversationText div').each(function (index) {
@@ -15854,8 +15853,10 @@ window.NinaVars = window.NinaVars || {};
             if (isIPad) {
                 va.iPadOpen();
             }
-            if (!$('#ipAustralia-block').hasClass('nw_initial') || !$('.nw_StatusMessage').text().toLowerCase().indexOf('bot') > 0) {
+            if ($('#ipAustralia-block').hasClass('nw_initial')) {
                 $('.nw_AgentStatus').addClass('nw_StatusVisibilityNone');
+            } else {
+                $('.nw_AgentStatus').removeClass('nw_StatusVisibilityNone');
             }
         });
 
@@ -15889,11 +15890,6 @@ window.NinaVars = window.NinaVars || {};
             } else {
                 $('.nw_UserInputField').removeClass('nwAutosize2');
                 $('.nw_UserInputField').addClass('nwAutosize1');
-            }
-            if (!$('#ipAustralia-block').hasClass('nw_initial')) {
-                $('.nw_AgentStatus').removeClass('nw_StatusVisibilityNone');
-            } else {
-                $('.nw_AgentStatus').addClass('nw_StatusVisibilityNone');
             }
 
         });
@@ -15994,8 +15990,6 @@ window.NinaVars = window.NinaVars || {};
                 $('.nw_UserInputField').removeClass('nwAutosize2');
                 $('.nw_UserInputField').addClass('nwAutosize1');
             }
-            
-            $('.nw_AgentStatus').addClass('nw_StatusVisibilityNone');
 
         });
 
@@ -16183,8 +16177,6 @@ window.NinaVars = window.NinaVars || {};
                 $('.nw_AgentHeader').text(" ASK LIVE AGENT");
                 $('.nw_Conversation').removeClass('nwNormal');
                 $('.transitionPhase').remove();
-                $('.nw_Conversation').addClass('nw_StatusVisibilityNone');
-                $('.nw_Input').addClass('nw_StatusVisibilityNone');
                 $('#nw_Header').removeClass('nw_Header');
                 $('#nw_Header').addClass('nw_LiveAgentHeader');
                 var newControl = "<a href='#' id='cross' class='button nw_closeCross'></a>";
@@ -16192,11 +16184,8 @@ window.NinaVars = window.NinaVars || {};
                 isLiveAgent = true;
                 $('.dcw').show();
                 var snippet =
-                    '<!--[if (gte IE 9)|!(IE)]><!--><script src="js/external/require.min.js" data-main="js/main.js" type="text/javascript"></script> <div id="myObject"><iframe name="chatInfofrm" id="chatInfofrm" class="dcw-iframe" src="' + chatUrl + '"></iframe></div><![endif]-->' +
+                    '<!--[if (gte IE 9)|!(IE)]><!--><div id="myObject"><iframe name="chatInfofrm" id="chatInfofrm" class="dcw-iframe" src="' + chatUrl + '"></iframe></div><![endif]-->' +
                     '</div>';
-
-                var snippetbutton = '<div id="dcw-chatbutton-container"><div class="hr" style="width: 120px;"><hr /></div><div id="dcw-chatbutton" class="dcw-startChatButton"><i class="fa">&#xf075;</i>&nbsp;Chat with us</div></div>';
-                //chatContainerPanel
 
                 $(".dcw").html(snippet);
                 if (isLiveAgent) {
@@ -16211,15 +16200,6 @@ window.NinaVars = window.NinaVars || {};
                 $('.nw_Dialog').append(endChatLink);
                 //}
 
-                $('iframe#chatInfofrm').ready(function () {
-                    $(function () {
-
-                        var f = $('#chatInfofrm');
-                        f.load(function () {
-                            var frame = document.getElementsByName('chatInfofrm');
-                        })
-                    });
-                });
                 setLabel($('#ex'), va.EXPAND_LIVE_AGENT);
                 setLabel($('#cl'), va.MINIMIZE_LIVE_AGENT);
                 setLabel($('#cross'), va.END_LIVE_AGENT_CHAT);
@@ -16228,77 +16208,51 @@ window.NinaVars = window.NinaVars || {};
             }
         });
 
+        // ends live Chat and gets back to VA.
+        function endChat() {
+            if (window.confirm('Are you sure you want to exit your Live Chat session?')) {
+                $('#chatInfofrm').attr('src', parent.location.href); //simply reload the iFrame source to disconnect the active chat session
+                setLabel($('#cl'), va.END_LIVE_AGENT_CHAT);
+                // remove the DIV that Provides the link to endChat in mobile View
+                $('#endChatMobile').remove();
+                $('#nw_Header').bind('click', closeIcon_HeaderClick);
+                $('#nw_Header').removeClass('nw_LiveAgentHeader');
+                $('#nw_Header').addClass('nw_Header');
+                $('.nw_Conversation, .nw_Input').removeClass('nw_transitionPhase');
+                $('.nw_AgentHeader').text(" ASK ALEX FOR HELP");
+                $('.nw_Conversation').addClass('nwNormal');
+                $('.nw_Controls').find('#cross').remove();
+                isLiveAgent = false;
+
+                $('.dcw').hide();
+                $('#endChatMobile').remove();
+                $('.responsive-chat-icon').addClass('responsive-chat-icon-close');
+                $('.responsive-chat-icon').removeClass(' responsive-chat-icon-liveagent responsive-chat-icon-liveagent-close');
+                setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
+                setLabel($('#cl'), va.CLOSE_ALEX_TEXT);
+                // send some data to IQStudio to notify liveChat end.
+                ui.sendQuery("", endChatSession, {});
+
+            }
+        }
 
         // endChat for Mobile View
         $(document).on('click', '#endChat', function () {
-            if(window.confirm('Are you sure you want to exit your Live Chat session?')){
-                
-                $( '#chatInfofrm' ).attr( 'src', 'parent.location.href'); //simply reload the iFrame source to disconnect the active chat session
-                
-                setLabel($('#cl'), va.END_LIVE_AGENT_CHAT);
-                // remove the DIV that Provides the link to endChat in mobile View
-                $('#endChatMobile').remove();
-                $('#nw_Header').bind('click', closeIcon_HeaderClick);
-                $('#nw_Header').removeClass('nw_LiveAgentHeader');
-                $('#nw_Header').addClass('nw_Header');
-                $('.nw_Conversation, .nw_Input').removeClass('nw_StatusVisibilityNone nw_transitionPhase');
-                $('.nw_AgentHeader').text(" ASK ALEX FOR HELP");
-                $('.nw_Conversation').addClass('nwNormal');
-                $('.nw_Controls').find('#cross').remove();
-                isLiveAgent = false;
-
-                $('.dcw').hide();
-                $('#endChatMobile').remove();
-                $('.responsive-chat-icon').addClass('responsive-chat-icon-close');
-                $('.responsive-chat-icon').removeClass(' responsive-chat-icon-liveagent responsive-chat-icon-liveagent-close');
-                setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
-                setLabel($('#cl'), va.CLOSE_ALEX_TEXT);
-            }
+            endChat();
         });
 
         $(document).on('click', '#cross', function () {
-            if(window.confirm('Are you sure you want to exit your Live Chat session?')){
-                $( '#chatInfofrm' ).attr( 'src', 'parent.location.href'); //simply reload
-                setLabel($('#cl'), va.END_LIVE_AGENT_CHAT);
-                // remove the DIV that Provides the link to endChat in mobile View
-                $('#endChatMobile').remove();
-                $('#nw_Header').bind('click', closeIcon_HeaderClick);
-                $('#nw_Header').removeClass('nw_LiveAgentHeader');
-                $('#nw_Header').addClass('nw_Header');
-                $('.nw_Conversation, .nw_Input').removeClass('nw_StatusVisibilityNone nw_transitionPhase');
-                $('.nw_AgentHeader').text(" ASK ALEX FOR HELP");
-                $('.nw_Conversation').addClass('nwNormal');
-                $('.nw_Controls').find('#cross').remove();
-                isLiveAgent = false;
+            endChat();
 
-                $('.dcw').hide();
-                $('#endChatMobile').remove();
-                $('.responsive-chat-icon').addClass('responsive-chat-icon-close');
-                $('.responsive-chat-icon').removeClass(' responsive-chat-icon-liveagent responsive-chat-icon-liveagent-close');
-           
-                setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
-                setLabel($('#cl'), va.CLOSE_ALEX_TEXT);
-
-            }
-            event.preventDefault();
-            event.stopPropagation();
         });
-
-        function guid() {
-            function s4() {
-                return Math.floor((1 + Math.random()) * 0x10000)
-                    .toString(16)
-                    .substring(1);
-            }
-            return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-                s4() + '-' + s4() + s4() + s4();
-        }
-
     });
 
     window.initialize = function () { //  handler to invoke VA in mobile view
 
         firstTime = false;
+        if (!navigator.userAgent.match(/(iPhone)/) && isMobileNavigator) { 
+            $('#ipAustralia-block').css("height", "100%");
+        }
         if ($('#ipAustralia-block').hasClass('open') || $('#ipAustralia-block').hasClass('nwNormal') ||
             $('#ipAustralia-block').hasClass('nwSend') || $('#ipAustralia-block').hasClass('nwExpand1') || $('#ipAustralia-block').hasClass('ipadExpand')) {
             $('#ipAustralia-block').removeClass('open nwNormal ipadExpand nwExpand1 expanded nwSend');
