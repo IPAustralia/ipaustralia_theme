@@ -88,7 +88,7 @@ jQuery(document).on('mouseup', 'section#block-quicktabs-tools-and-resources .qui
 //Check external links
 function externalLink(){
     //if it does not contain ipaustralia.gov.au, does not start with "#" or "/" then run function.
-    jQuery('section a:not([href*=".ipaustralia.gov.au"]):not([href^="#"]):not([href^="/"])').each(function () {
+    jQuery('section a:not([href*=".ipaustralia.gov.au"]):not([href^="#"]):not([href^="/"]):not([href^="node/"])').each(function () {
         //if no href is on the link
         if (jQuery(this).attr('href') != undefined) {
             if (jQuery(this).attr('title') != undefined) {

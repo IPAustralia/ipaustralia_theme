@@ -8,84 +8,118 @@ section#block-bean-patents-anchor-menu-3 {
 }
 
 section#block-bean-patentoverview {
-    .img1:before {
-        background-image: url("../images/application-process/pat-gen/1.png");
-        background-size: 100% auto;
-        content: ".";
-        display: block;
-        background-repeat: no-repeat;
-        min-height: 147px;
-    }
-    .img1 {
-        margin:auto;
-        max-width: 60%;
-        padding-bottom: 1%;
-    }
-    .img1:hover:before {
-        background-size: 190px 190px !important;
-        box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
-        transition: all 0.2s ease-in-out;
-        border-radius:1000px;
-    }
+    background-color:#c0e8ea;
+    padding: 80px 0;
+    .patoverviewcontent {
+        text-align:center;
+        .patwrap {
+            display:flex;
+            flex-wrap: nowrap;
+            @media screen and (max-width:$break-point-medium) {
+                flex-wrap:wrap;
+            }
+            .boxes {
+                background-color:$white;
+                width:25%;
+                padding:20px;
+                margin: 10px 5px;
+                @media screen and (max-width:$break-point-medium) {
+                    background-color:$white;
+                    width:46%;
+                    padding:20px;
+                    margin: 10px 5px;
+                }
+                @media screen and (max-width:$break-point-small +100) {
+                    width:100%;
+                    padding:10px;
+                }
+                div {
+                    //max-width: 60%;
+                    padding-bottom: 1%;
+                    &:before {
+                        background-size: 100% auto;
+                        content: ".";
+                        display: block;
+                        background-repeat: no-repeat;
+                        height: 147px;
+                        width: 147px;
+                        border-radius:1000px;
+                        margin:auto;
+                        @media screen and (max-width:$break-point-xlarge) {
+                            height:150px;
+                            width:150px;
+                        }
+                        @media screen and (max-width:$break-point-large) {
+                            height:120px;
+                            width:120px;
+                        }
+                        @media screen and (max-width:$break-point-large -1) {
+                            height:80px;
+                            width:80px;
+                            background-size: 60% auto;
 
-    .img2:before {
-        background-image: url("../images/application-process/pat-gen/2.png");
-        background-size: 100% auto;
-        content: ".";
-        display: block;
-        background-repeat: no-repeat;
-        min-height: 147px;
-    }
-    .img2 {
-        margin:auto;
-        max-width: 60%;
-        padding-bottom: 1%;
-    }
-    .img2:hover:before {
-        background-size: 190px 190px !important;
-        box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
-        transition: all 0.2s ease-in-out;
-        border-radius:1000px;
-    }
-
-    .img3:before {
-        background-image: url("../images/application-process/pat-gen/3.png");
-        background-size: 100% auto;
-        content: ".";
-        display: block;
-        background-repeat: no-repeat;
-        min-height: 147px;
-    }
-    .img3 {
-        margin:auto;
-        max-width: 60%;
-        padding-bottom: 1%;
-    }
-    .img3:hover:before {
-        background-size: 190px 190px !important;
-        box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
-        transition: all 0.2s ease-in-out;
-        border-radius:1000px;
-    }
-
-    .img4:before {
-        background-image: url("../images/application-process/pat-gen/4.png");
-        background-size: 100% auto;
-        content: ".";
-        display: block;
-        background-repeat: no-repeat;
-        min-height: 147px;
-    }
-    .img4 {
-        margin:auto;
-        max-width: 60%;
-        padding-bottom: 1%;
-    }
-    .img4:hover:before {
-        background-size: 190px 190px !important;
-        box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
-        transition: all 0.2s ease-in-out;
-        border-radius:1000px;
+                        }
+                        @media screen and (max-width:$break-point-medium) {
+                            height:181px;
+                            width:181px;
+                            background-size: 100% auto;
+                        }
+                    }
+                    &:hover {
+                        &:before {
+                        background-size: 190px 190px !important;
+                        box-shadow: inset 0 0 0 16px rgba(0,0,0,0.7);
+                        transition: all 0.2s ease-in-out;
+                        border-radius:1000px;
+                        }
+                    }
+                    &.img1 {
+                        &:before {
+                            @include background-image('application-process/pat-gen/1.png')
+                        }
+                    }
+                    &.img2 {
+                        &:before {
+                            @include background-image('application-process/pat-gen/2.png')
+                        }
+                    }
+                    &.img3 {
+                        &:before {
+                            @include background-image('application-process/pat-gen/3.png')
+                        }
+                    }
+                    &.img4 {
+                        &:before {
+                        @include background-image('application-process/pat-gen/4.png')
+                        }
+                    }
+                }
+                a {
+                    color:$white;
+                    text-decoration:none !important;
+                    &:hover {
+                        text-decoration:underline !important;
+                    }
+                }
+                .links {
+                    background-color:#00829c;
+                    width:100%;
+                    padding:5px 0;
+                }
+                h3 {
+                    height:64px;
+                    @media screen and (max-width:$break-point-medium) {
+                        height:inherit;
+                    }
+                }
+                .proctext {
+                    min-height:110px;
+                    @media screen and (max-width:$break-point-small +100) {
+                        min-height:auto;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -96,43 +130,6 @@ section#block-bean-understanding-patents {
     @include  landing_page_group_block_multiple($height:480px);
 }
 
-.patoverviewcontent {
-    text-align:center;
-}
-section#block-bean-patentoverview {
-    background-color:#c0e8ea;
-    padding: 80px 0;
-}
-.patwrap {
-    display:flex;
-    flex-wrap:no-wrap;
-}
-.boxes {
-    background-color:#fff;
-    width:25%;
-    padding:20px;
-    margin: 10px 5px;
-}
-.boxes a {
-    color:#fff;
-    text-decoration:none !important;
-}
-.boxes a:hover {
-    color:#fff;
-    text-decoration:underline !important;
-}
-.boxes .links {
-    background-color:#00829c;
-    width:100%;
-    padding:5px 0;
-}
-.boxes h3 {
-    height:64px;
-}
-
-.boxes .proctext {
-    min-height:110px;
-}
 
 section#block-bean-managing-your-patent-block {
     background: $white;
@@ -148,140 +145,4 @@ section#block-bean-tools-and-resources {
 section#block-panels-mini-more-about-patents-2-col-panel {
     @include  section_padding(20);
     @include landing_page_more_about('transparent-pixel-teal.png');
-}
-
-/// tmp styling 
-section#block-bean-all-about-patents-block {
-    background: $teal;
-    //background: #C3e6e8;
-    padding: $gap-large 0px;
-    text-align:center;
-
-
-    .panels-flexible-region-inside {
-        //.panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-2nd_row_left,
-        //.panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-2nd_row_centre,
-        //.panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-2nd_row_right,
-        //.panels-flexible-region-four_rows_with_1_x_3_x_3_x_2_columns-3rd_row_left
-        .panels-flexible-region {
-            @media only screen and (max-width: $break-point-medium) {
-                width:100% !important;
-                float:none;
-            }
-        }
-/*         margin: 0 20px;
-        padding: 40px;
-        background: $white;
-        height: 350px;
-        overflow-y: hidden; */
-        h2 {
-            color: $white;
-            padding: 30px;
-        }
-        ul {
-            background: $white;
-            padding: 20px;
-            list-style: none;
-            li.main-list-item-patent {
-                ul {
-                    li {
-                        text-align: left;
-                        padding: 0px 0 0 30px;
-                        margin: 0px;
-                        background: transparent url("../images/link-tool.png") center center no-repeat;
-                        background-position: left 0px;
-                        a {
-
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-/*@media screen and (min-width:$break-point-medium) {
-    body .patwrap {
-    display:flex;
-    flex-wrap:no-wrap;
-    }
-    body .boxes {
-    background-color:#fff;
-    width:25%;
-    padding:20px;
-    margin: 10px 5px;
-    }
-}*/
-@media screen and (max-width:1200px) {
-    section#block-bean-patentoverview {
-    .img1:before { 
-        min-height:150px;
-    }
-    .img2:before { 
-        min-height:150px;
-    }
-    .img3:before { 
-        min-height:150px;
-    }
-    .img4:before { 
-        min-height:150px;
-    }
-}
-}
-@media screen and (max-width:992px) {
-    section#block-bean-patentoverview {
-    .img1:before { 
-        min-height:120px;
-    }
-    .img2:before { 
-        min-height:120px;
-    }
-    .img3:before { 
-        min-height:120px;
-    }
-    .img4:before { 
-        min-height:120px;
-    }   
-    } 
-}
-@media screen and (max-width:991px) {
-    section#block-bean-patentoverview {
-    .img1:before { 
-        min-height:80px;
-    }
-    .img2:before { 
-        min-height:80px;
-    }
-    .img3:before { 
-        min-height:80px;
-    }
-    .img4:before { 
-        min-height:80px;
-    }  
-    }  
-}
-@media screen and (max-width:$break-point-medium) {
-    .patwrap {
-    display:flex;
-    flex-wrap:wrap;
-    }
-    .boxes {
-    background-color:#fff;
-    width:46%;
-    padding:20px;
-    margin: 10px 5px;
-    }
-    section#block-bean-patentoverview {
-    .img1:before { 
-        min-height:181px;
-    }
-    .img2:before { 
-        min-height:181px;
-    }
-    .img3:before { 
-        min-height:181px;
-    }
-    .img4:before { 
-        min-height:181px;
-    }
-    }    
 }
