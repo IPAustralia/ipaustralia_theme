@@ -566,3 +566,14 @@ section#block-bean-news-and-community-landing-page- {
 section#block-panels-mini-case-studies-four-item-display, section#block-panels-mini-official-notices-four-item-displ {
     @include landing_page_more_about();
 }
+
+//alistairs business edge styles
+#block-bean-find-your-business-edge {
+    padding: 80px 10px;
+    text-align: center;
+    color: white;
+    background-color: #9B8910;
+    font: normal 20px "robotolight", sans-serif;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
