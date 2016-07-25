@@ -18,6 +18,7 @@
   /********************************/
   /* CSS for Placeholder polyfill */
   /********************************/
+  /* Added to show Service interruption*/
 }
 #ipAustralia-block .nw_open {
   height: 548px;
@@ -458,6 +459,20 @@
 #ipAustralia-block .nw_Expand.button.nw_initial {
   display: none;
 }
+#ipAustralia-block .nw_ErrorSays {
+  width: 100%;
+  margin-bottom: 10px;
+  color: cornsilk;
+  background-color: goldenrod;
+  padding: 10px;
+  margin-right: 15px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  word-wrap: break-word;
+  font-size: 17px;
+  font-family: calibri;
+}
 #ipAustralia-block .nw_AgentStatus {
   height: 16px;
   display: block;
@@ -580,6 +595,13 @@
   height: 50%;
   display: inline-block;
 }
+#ipAustralia-block #loader1 {
+  position: absolute;
+  left: 40%;
+  top: 35%;
+  border-radius: 20px;
+  background: #ffffff;
+}
 #ipAustralia-block .dcw {
   display: none;
   height: 100%;
@@ -691,11 +713,6 @@
 
   .nwAutosize1.nw_UserInputField {
     font-size: 16px;
-  }
-
-  .ios #ipAustralia-block {
-    bottom: auto;
-    height: calc(100vh-4em);
   }
 
   #ipAustralia-block button.nw_SubmitBtn {

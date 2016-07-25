@@ -9890,12 +9890,12 @@ window.Nina.config.newConfig = function(agentConfig) {
              * The version of the UI. Injected by Grunt based on package.json and build #
              * @type {string}
              */
-            version: "ipAustraliaBlock-201606301745",
+            version: "ipAustraliaBlock-201607221846",
             /**
              * The date and time the build of the UI took place. Automatically generated during build in the client's Gruntfile
              * @type {string}
              */
-            date: "2016-06-30 18:50",
+            date: "2016-07-22 18:53",
             /**
              * The maximum length of a user query
              * @type {int}
@@ -11807,7 +11807,7 @@ window.Nina.helper.newDebug = function(_ui, _cookiesJar) {
             }
 		},
 		getUIVersion: function() {
-			return "ipAustraliaBlock-201606301745";
+			return "ipAustraliaBlock-201607221846";
 		},
 		switchPreprodMode: function(reload) {
 			reload = (reload !== "undefined") ? reload : true;
@@ -15529,16 +15529,19 @@ window.NinaVars = window.NinaVars || {};
     window.ipa.virtualAssistant = window.ipa.virtualAssistant || {};
 
 
-    var isLiveAgent = false;
+    var isLiveAgent = '';
     var isMobileNavigator = false;
+    var chatUrl = '';
+    var va = window.ipa.virtualAssistant;
+    var isIPad = false; // used to check if device is IPAD
     $(document).ready(function () {
 
         var isMobile = window.matchMedia("only screen and (max-width: 768px)");
         var isDesktop = window.matchMedia("only screen and (min-width: 769px)");
 
-        var va = window.ipa.virtualAssistant;
+
         var endChatSession = "~_End_Chat_Session";
-        var isIPad = false; // used to check if device is IPAD
+        
         va.OPEN_ALEX_TEXT = "Open Alex virtual assistant. Ask questions to get help around the site.";
         va.OPEN_LIVE_AGENT = "Open Live Agent. Ask questions to Agent";
         va.MINIMIZE_LIVE_AGENT = "Minimize Live Agent Window ";
@@ -15560,6 +15563,15 @@ window.NinaVars = window.NinaVars || {};
         if (navigator.userAgent.match(/iPad/)) {
             isIPad = true;
         }
+        var cookieJar = document.cookie.split(";");
+        for (var x = 0; x < cookieJar.length; x++) {
+            var oneCookie = cookieJar[x].split("=");
+            if (oneCookie[0].indexOf("Nina-ipAustralia-block-session") !== -1 && oneCookie[1].indexOf('isLiveAgent') > 0) {
+                isLiveAgent = true;
+                chatUrl = decodeURIComponent(oneCookie[1].substring(oneCookie[1].lastIndexOf('chatUrl') + 16));
+                chatUrl = chatUrl.split('\"')[0];
+            }
+        }
 
         if (isFirstInteraction) {
             if (!isDesktop.matches || isMobileNavigator) { // this condition for Mobile
@@ -15572,9 +15584,15 @@ window.NinaVars = window.NinaVars || {};
             }
         } else {
             if (!isDesktop.matches || isMobileNavigator) {
+                if (isLiveAgent) {
+                    loadLiveAgent();
+                }
                 $('#ipAustralia-block ,.nw_Dialog').addClass('nwMinimize');
                 $('#ex').addClass('nw_initial');
             } else {
+                if (isLiveAgent) {
+                    loadLiveAgent();
+                }
                 $('#nw_Header').addClass('nwMinimize');
                 $('.nw_Dialog').addClass('nwMinimize nwClosed');
                 $('#ex').removeClass('nw_Expand nw_collapse');
@@ -15613,8 +15631,7 @@ window.NinaVars = window.NinaVars || {};
                 "/ipa_apac/",
                 "/ps/ipa/",
                 "/ps/ipa_usa/",
-                "/trade-marks"
-            ];
+                "/trade-marks"            ];
 
             var urlpath = window.location.pathname.toLowerCase();
 
@@ -15994,11 +16011,17 @@ window.NinaVars = window.NinaVars || {};
         });
 
         $("#cl,#nw_Header").click(function (event) {
+            if (isLiveAgent) {
+                $('#nw_Header').unbind('click');
+                var eventEle = this.id;
+                if (eventEle === "cl") {
+                    closeIcon_HeaderClick();
+                }
+            } else {
+                closeIcon_HeaderClick();
+            }
             event.preventDefault();
             event.stopPropagation();
-            closeIcon_HeaderClick();
-
-
         });
 
         // written this function to rebind the click handler for Header.
@@ -16157,9 +16180,35 @@ window.NinaVars = window.NinaVars || {};
             $("input, textarea").blur();
         };
 
+ function loadLiveAgent() {
+
+            var imageDiv = '<div id="spinnerImage"><img id="loader1"  src="./images/spinner.gif"/></div>';
+
+            var snippet =
+                '<!--[if (gte IE 9)|!(IE)]><!--><div id="myObject"><iframe name="chatInfofrm" id="chatInfofrm" class="dcw-iframe" src="' + chatUrl + '"></iframe></div><![endif]-->' +
+                '</div>';
+            $('.nw_AgentHeader').text(" ASK LIVE AGENT");
+            $('.nw_Conversation').removeClass('nwNormal');
+            $('.transitionPhase').remove();
+            $('#nw_Header').removeClass('nw_Header');
+            $('#nw_Header').addClass('nw_LiveAgentHeader');
+            var newControl = "<a href='#' id='cross' class='button nw_closeCross'></a>";
+            $(newControl).appendTo('.nw_Controls');
+            $('.dcw').show();
+            $("#dcw").html(imageDiv + snippet);
+           
+            if (!isLiveAgent) {
+                $('.responsive-chat-icon').addClass('responsive-chat-icon-liveagent-close');
+            }
+           
+            // create div dynamically , and show the end chat link.
+
+            var endChatLink = "<div id='endChatMobile' style='text-align: center'><strong>LIVE CHAT </strong>(<a href='#' id='endChat'><strong>END CHAT<strong></a>)</div>";
+            $('.nw_Dialog').append(endChatLink);
+        }
         $(document).on('click', '#ininChatLink', function () {
             // click on Chat Link Should disable the the yes and No link provided..
-            var chatUrl = $(this).attr('data-iframe-source');
+            chatUrl = $(this).attr('data-iframe-source');
             $(this).removeAttr('data-iframe-source');
             $(this).removeAttr('href');
             $(this).attr('id', 'noUse');
@@ -16173,79 +16222,95 @@ window.NinaVars = window.NinaVars || {};
             $('a[data-vtz-jump="1f5a5864-24c0-418f-b42f-c46883f969b9"]').replaceWith("<text>"+$('a[data-vtz-jump="1f5a5864-24c0-418f-b42f-c46883f969b9"]').text()+"</text>");
             
             if (chatUrl != undefined && chatUrl.length > 0) {
+                c.setSession("isLiveAgent", isLiveAgent);
+                c.setSession('chatUrl', chatUrl);
+                loadLiveAgent();
                 $('#nw_Header').unbind('click');
-                $('.nw_AgentHeader').text(" ASK LIVE AGENT");
-                $('.nw_Conversation').removeClass('nwNormal');
-                $('.transitionPhase').remove();
-                $('#nw_Header').removeClass('nw_Header');
-                $('#nw_Header').addClass('nw_LiveAgentHeader');
-                var newControl = "<a href='#' id='cross' class='button nw_closeCross'></a>";
-                $(newControl).appendTo('.nw_Controls');
-                isLiveAgent = true;
-                $('.dcw').show();
-                var snippet =
-                    '<!--[if (gte IE 9)|!(IE)]><!--><div id="myObject"><iframe name="chatInfofrm" id="chatInfofrm" class="dcw-iframe" src="' + chatUrl + '"></iframe></div><![endif]-->' +
-                    '</div>';
-
-                $(".dcw").html(snippet);
-                if (isLiveAgent) {
-                    $('.responsive-chat-icon').addClass('responsive-chat-icon-liveagent-close');
-                } else {
-                    $('.responsive-chat-icon').removeClass('responsive-chat-icon-close responsive-chat-icon-liveagent responsive-chat-icon-liveagent-close');
+                if (isIPad) {
+                    va.iPadOpen();
                 }
-                // create div dynamically , and show the end chat link.
-
-                var endChatLink = "<div id='endChatMobile' style='text-align: center'><strong>LIVE CHAT </strong>(<a href='#' id='endChat'><strong>END CHAT<strong></a>)</div>";
-
-                $('.nw_Dialog').append(endChatLink);
-                //}
 
                 setLabel($('#ex'), va.EXPAND_LIVE_AGENT);
                 setLabel($('#cl'), va.MINIMIZE_LIVE_AGENT);
                 setLabel($('#cross'), va.END_LIVE_AGENT_CHAT);
-                event.preventDefault();
-                event.stopPropagation();
+
             }
         });
 
         // ends live Chat and gets back to VA.
-        function endChat() {
-            if (window.confirm('Are you sure you want to exit your Live Chat session?')) {
-                $('#chatInfofrm').attr('src', parent.location.href); //simply reload the iFrame source to disconnect the active chat session
-                setLabel($('#cl'), va.END_LIVE_AGENT_CHAT);
-                // remove the DIV that Provides the link to endChat in mobile View
-                $('#endChatMobile').remove();
-                $('#nw_Header').bind('click', closeIcon_HeaderClick);
-                $('#nw_Header').removeClass('nw_LiveAgentHeader');
-                $('#nw_Header').addClass('nw_Header');
-                $('.nw_Conversation, .nw_Input').removeClass('nw_transitionPhase');
-                $('.nw_AgentHeader').text(" ASK ALEX FOR HELP");
-                $('.nw_Conversation').addClass('nwNormal');
-                $('.nw_Controls').find('#cross').remove();
-                isLiveAgent = false;
-
-                $('.dcw').hide();
-                $('#endChatMobile').remove();
-                $('.responsive-chat-icon').addClass('responsive-chat-icon-close');
-                $('.responsive-chat-icon').removeClass(' responsive-chat-icon-liveagent responsive-chat-icon-liveagent-close');
-                setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
-                setLabel($('#cl'), va.CLOSE_ALEX_TEXT);
-                // send some data to IQStudio to notify liveChat end.
-                ui.sendQuery("", endChatSession, {});
-
-            }
+        
+        va.endChat = function () {
+            setLabel($('#cl'), va.END_LIVE_AGENT_CHAT);
+            // remove the DIV that Provides the link to endChat in mobile View
+            $('#endChatMobile').remove();
+            $('#nw_Header').bind('click', closeIcon_HeaderClick);
+            $('#nw_Header').removeClass('nw_LiveAgentHeader');
+            $('#nw_Header').addClass('nw_Header');
+            $('.nw_Conversation, .nw_Input').removeClass('nw_transitionPhase');
+            $('.nw_AgentHeader').text(" ASK ALEX FOR HELP");
+            $('.nw_Conversation').addClass('nwNormal');
+            $('.nw_Controls').find('#cross').remove();
+            isLiveAgent = false;
+            c.removeSession("isLiveAgent");
+            c.removeSession("chatUrl");
+            $('.dcw').hide();
+            $('#endChatMobile').remove();
+            $('.responsive-chat-icon').addClass('responsive-chat-icon-close');
+            $('.responsive-chat-icon').removeClass(' responsive-chat-icon-liveagent responsive-chat-icon-liveagent-close');
+            setLabel($('#ex'), va.EXPAND_ALEX_TEXT);
+            setLabel($('#cl'), va.CLOSE_ALEX_TEXT);
+            // send some data to IQStudio to notify liveChat end.
+            ui.sendQuery("", endChatSession, {});
+            $('#myObject').remove();
         }
 
         // endChat for Mobile View
         $(document).on('click', '#endChat', function () {
-            endChat();
+            if (window.confirm('Are you sure you want to exit your Live Chat session?')) {
+
+                $('#chatInfofrm').prop('contentWindow').postMessage("chatExit", 'https://dcomdev-nsw.ccaas.datacom.com.au');
+            }
+
         });
 
         $(document).on('click', '#cross', function () {
-            endChat();
+            if (window.confirm('Are you sure you want to exit your Live Chat session?')) {
+
+                $('#chatInfofrm').prop('contentWindow').postMessage("chatExit", 'https://dcomdev-nsw.ccaas.datacom.com.au');
+
+            }
 
         });
     });
+
+
+    // written for reply 
+    window.addEventListener('message', function (event) {
+        var focusIn = 'composeMsgInputFocusIn';
+        var focusOut = 'composeMsgInputFocusOut';
+        var serverConfiguration = 'ServerConfig';
+        var chatExit = 'chatExited';
+        var eventData = event.data;
+        if (isIPad) {
+            if (eventData.toLowerCase() === focusIn.toLowerCase()) {
+                va.iPadOpen();
+
+            } else if (eventData.toLowerCase() === focusOut.toLowerCase()) {
+
+                va.iPadClose();
+            }
+        }
+        if (eventData.toLowerCase() === serverConfiguration.toLowerCase()) {
+            if (~event.origin.indexOf('https://dcomdev-nsw.ccaas.datacom.com.au') || ~event.origin.indexOf('https://dcomsys-nsw.ccaas.datacom.com.au')) {
+                $('#loader1').hide();
+            }
+        }
+        if (eventData.toLowerCase() === chatExit.toLowerCase()) {
+            va.endChat();
+        }
+
+    });
+
 
     window.initialize = function () { //  handler to invoke VA in mobile view
 
