@@ -91,10 +91,16 @@ article {
         }
     }
 
-    //hide print logo
-    #print-logo {display:none;}
+//hide print logo
+#print-logo {display:none;}
 
-    .container ul li .media {
-        overflow: visible;
-    }
+.container ul li .media {
+    overflow: visible;
+}
 
+//Responsive images
+.img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
