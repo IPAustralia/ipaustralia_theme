@@ -1,6 +1,11 @@
 @import url(font-awesome-4.2.0/css/font-awesome.min.css);
 /* colors */
 /* sizes */
+#spinnerImage {
+    top: 30%;
+    position: absolute;
+    left: 37%;
+}
 #ipAustralia-block {
   -webkit-font-smoothing: antialiased;
   width: 380px;
