@@ -9895,7 +9895,7 @@ window.Nina.config.newConfig = function(agentConfig) {
              * The date and time the build of the UI took place. Automatically generated during build in the client's Gruntfile
              * @type {string}
              */
-            date: "2016-07-27 08:01",
+            date: "2016-07-27 11:31",
             /**
              * The maximum length of a user query
              * @type {int}
@@ -16183,8 +16183,8 @@ window.NinaVars = window.NinaVars || {};
 
  function loadLiveAgent() {
 
-            var imageDiv = '<div id="spinnerImage"><img id="loader1"  src="./images/ui/spinner.gif"/></div>';
-
+            //var imageDiv = '<div id="spinnerImage"><img id="loader1"  src="./images/ui/spinner.gif"/></div>';
+var imageDiv = '<div id="spinnerImage"><img id="loader1"  src="https://vabeta.govcms.acsitefactory.com/sites/g/files/net1196/themes/site/ipaustralia/va/images/ui/spinner.gif"/></div>';
             var snippet =
                 '<!--[if (gte IE 9)|!(IE)]><!--><div id="myObject"><iframe name="chatInfofrm" id="chatInfofrm" class="dcw-iframe" src="' + chatUrl + '"></iframe></div><![endif]-->' +
                 '</div>';
@@ -16270,6 +16270,7 @@ window.NinaVars = window.NinaVars || {};
             if (window.confirm('Are you sure you want to exit your Live Chat session?')) {
 
                 $('#chatInfofrm').prop('contentWindow').postMessage("chatExit", 'https://dcomdev-nsw.ccaas.datacom.com.au');
+				$('#chatInfofrm').prop('contentWindow').postMessage("chatExit", 'https://dcomsys-nsw.ccaas.datacom.com.au');
             }
 
         });
@@ -16278,6 +16279,7 @@ window.NinaVars = window.NinaVars || {};
             if (window.confirm('Are you sure you want to exit your Live Chat session?')) {
 
                 $('#chatInfofrm').prop('contentWindow').postMessage("chatExit", 'https://dcomdev-nsw.ccaas.datacom.com.au');
+				$('#chatInfofrm').prop('contentWindow').postMessage("chatExit", 'https://dcomsys-nsw.ccaas.datacom.com.au');
 
             }
 
