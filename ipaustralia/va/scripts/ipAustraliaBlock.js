@@ -16183,7 +16183,7 @@ window.NinaVars = window.NinaVars || {};
 
  function loadLiveAgent() {
 
-            var imageDiv = '<div id="spinnerImage"><img id="loader1"  src="../images/ui/spinner.gif"/></div>';
+            var imageDiv = '<div id="spinnerImage"><img id="loader1"  src="./images/ui/spinner.gif"/></div>';
 
             var snippet =
                 '<!--[if (gte IE 9)|!(IE)]><!--><div id="myObject"><iframe name="chatInfofrm" id="chatInfofrm" class="dcw-iframe" src="' + chatUrl + '"></iframe></div><![endif]-->' +
