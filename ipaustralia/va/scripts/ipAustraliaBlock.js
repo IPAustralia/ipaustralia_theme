@@ -9895,7 +9895,7 @@ window.Nina.config.newConfig = function(agentConfig) {
              * The date and time the build of the UI took place. Automatically generated during build in the client's Gruntfile
              * @type {string}
              */
-            date: "2016-07-22 18:53",
+            date: "2016-07-27 08:01",
             /**
              * The maximum length of a user query
              * @type {int}
@@ -15631,7 +15631,8 @@ window.NinaVars = window.NinaVars || {};
                 "/ipa_apac/",
                 "/ps/ipa/",
                 "/ps/ipa_usa/",
-                "/trade-marks"            ];
+                "/trade-marks/"
+            ];
 
             var urlpath = window.location.pathname.toLowerCase();
 
@@ -16182,7 +16183,7 @@ window.NinaVars = window.NinaVars || {};
 
  function loadLiveAgent() {
 
-            var imageDiv = '<div id="spinnerImage"><img id="loader1"  src="./images/spinner.gif"/></div>';
+            var imageDiv = '<div id="spinnerImage"><img id="loader1"  src="./images/ui/spinner.gif"/></div>';
 
             var snippet =
                 '<!--[if (gte IE 9)|!(IE)]><!--><div id="myObject"><iframe name="chatInfofrm" id="chatInfofrm" class="dcw-iframe" src="' + chatUrl + '"></iframe></div><![endif]-->' +
