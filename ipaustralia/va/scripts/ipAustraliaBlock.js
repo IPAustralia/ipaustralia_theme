@@ -15625,7 +15625,7 @@ window.NinaVars = window.NinaVars || {};
             ];*/
             // Added the pages where Alex is to be shown  
 
-            //var whiteList = [
+            var whiteList = [
                 //following are to support Nuance preprod and ui-dev domains
                 "/ipa/",
                 "/ipa_apac/",
