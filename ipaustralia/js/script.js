@@ -1379,3 +1379,4 @@ jQuery( document ).ready(function() {
         }
     });
 });
+/* confirm visibility */
