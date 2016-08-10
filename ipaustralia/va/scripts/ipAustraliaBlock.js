@@ -15631,7 +15631,10 @@ window.NinaVars = window.NinaVars || {};
                 "/ipa_apac/",
                 "/ps/ipa/",
                 "/ps/ipa_usa/",
-                "/trade-marks"
+                "/trade-marks",
+                "/patents",
+                "/designs",
+                "/plant-preeders-rights"
             ];
 
             var urlpath = window.location.pathname.toLowerCase();
