@@ -99,7 +99,7 @@ example use:
 
 */
 /*
-Styling the top section of the landing page where we have the background image 
+Styling the top section of the landing page where we have the background image
 going widescreen and the toolbar on the right.
 Options explained below:
 
@@ -1715,7 +1715,7 @@ ul.tools-resources-list li.bs-callout.bs-vert-callout-purple {
   padding-left: 50px; }
 
 /*
-Main title DIV with background image and underline 
+Main title DIV with background image and underline
 */
 div.title {
   background: #efefef;
@@ -11917,3 +11917,4 @@ dl {
 /*dl dd p, #content dl dd p { margin: 0 !important; }*/
 
 /*# sourceMappingURL=style.css.map */
+/* test */
