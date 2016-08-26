@@ -9890,12 +9890,12 @@ window.Nina.config.newConfig = function(agentConfig) {
              * The version of the UI. Injected by Grunt based on package.json and build #
              * @type {string}
              */
-            version: "ipAustraliaBlock-201607221846",
+            version: "ipAustraliaBlock-201607271402",
             /**
              * The date and time the build of the UI took place. Automatically generated during build in the client's Gruntfile
              * @type {string}
              */
-            date: "2016-07-27 11:31",
+            date: "2016-08-08 11:05",
             /**
              * The maximum length of a user query
              * @type {int}
@@ -11807,7 +11807,7 @@ window.Nina.helper.newDebug = function(_ui, _cookiesJar) {
             }
 		},
 		getUIVersion: function() {
-			return "ipAustraliaBlock-201607221846";
+			return "ipAustraliaBlock-201607271402";
 		},
 		switchPreprodMode: function(reload) {
 			reload = (reload !== "undefined") ? reload : true;
@@ -15627,11 +15627,7 @@ window.NinaVars = window.NinaVars || {};
 
             var whiteList = [
                 //following are to support Nuance preprod and ui-dev domains
-                "/ipa/",
-                "/ipa_apac/",
-                "/ps/ipa/",
-                "/ps/ipa_usa/",
-                "/trade-marks"
+                "/"
             ];
 
             var urlpath = window.location.pathname.toLowerCase();
@@ -16182,9 +16178,12 @@ window.NinaVars = window.NinaVars || {};
         };
 
  function loadLiveAgent() {
+ 
+			var img= "//www.ipaustralia.gov.au/sites/g/files/net856/themes/site/ipaustralia/va/images/ui/spinner.gif";
+            
 
             //var imageDiv = '<div id="spinnerImage"><img id="loader1"  src="./images/ui/spinner.gif"/></div>';
-var imageDiv = '<div id="spinnerImage"><img id="loader1"  src="https://vabeta.govcms.acsitefactory.com/sites/g/files/net1196/themes/site/ipaustralia/va/images/ui/spinner.gif"/></div>';
+			var imageDiv = '<div id="spinnerImage"><img id="loader1" src="' + img + '"/></div>';
             var snippet =
                 '<!--[if (gte IE 9)|!(IE)]><!--><div id="myObject"><iframe name="chatInfofrm" id="chatInfofrm" class="dcw-iframe" src="' + chatUrl + '"></iframe></div><![endif]-->' +
                 '</div>';
