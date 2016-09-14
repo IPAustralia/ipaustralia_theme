@@ -90,12 +90,12 @@ function externalLink(){
     //if it does not contain ipaustralia.gov.au, does not start with "#" or "/" then run function.
     jQuery('section a:not([href*=".ipaustralia.gov.au"]):not([href^="#"]):not([href^="/"]):not([href^="node/"])').each(function () {
         //if no href is on the link
-        if (jQuery(this).attr('href') != undefined) {
+        if (jQuery(this).attr('href') != undefined && !jQuery(this).hasClass('charcoal-rounded-button')) {
             if (jQuery(this).attr('title') != undefined) {
                 jQuery(this).attr('title', 'external link (new window) - ' + jQuery(this).attr('title'));
                 jQuery(this).addClass('external');
                 jQuery(this).attr('target', '_blank');
-            } else{
+            } else {
                 jQuery(this).attr('title', 'external link (new window)');
                 jQuery(this).addClass('external');
                 jQuery(this).attr('target', '_blank');
