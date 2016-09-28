@@ -7,10 +7,10 @@ NinaVars = {
     invocationpoint: document.location.href
 };
 //Activate pre prod when deploying to test site.
-/*if(getParameterByName('preprod')) {
+if(getParameterByName('preprod')) {
    NinaVars.preprod = true;
-}*/
-   NinaVars.preprod = true;
+}
+   //NinaVars.preprod = true;
 
 function getParameterByName(name, url) {
     //this function is typically used to return a boolean
