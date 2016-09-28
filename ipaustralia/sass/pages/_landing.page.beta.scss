@@ -1,0 +1,9 @@
+section#block-bean-beta-landing-block {
+    @include landing_page_header_title('tablet.jpg', $themecolor:$mint);
+}
+
+section#block-bean-current-betas {
+    background: $white;
+    @include  section_padding(20);
+    @include  landing_page_group_block($background: $lighter-grey, $height:420px);
+}

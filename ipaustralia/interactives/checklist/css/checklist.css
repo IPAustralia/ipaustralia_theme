@@ -311,20 +311,23 @@
 .checklist-section li .toggle.color-trademark {
 	background: #de4326 !important;
 }
-.checklist-section li .toggle.color-design{
+.checklist-section li .toggle.color-design {
 	background: #84c98f !important;
 }
 .checklist-section li .toggle.color-pbr {
 	background:#f1ac1e !important;
 }
-.checklist-section li .toggle.color-copyright{
+.checklist-section li .toggle.color-patent {
+    background:#30aeb6 !important;
+}
+.checklist-section li .toggle.color-copyright {
 	background:#704579 !important;
 }
 .whitearrow {
 	color:#fff !important;
 }
 
-.checklist-section li .toggle{
+.checklist-section li .toggle {
 	border: none;
 	-webkit-appearance:none;
 	-moz-appearance:none;

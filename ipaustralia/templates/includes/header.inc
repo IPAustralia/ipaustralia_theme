@@ -9,7 +9,7 @@
                 </a>
             <?php endif; ?>
             <?php if (isset($iptoolkit_logo)) :?>
-                <?php print $iptoolkit_logo; ?>
+                <a href="http://www.industry.gov.au" title="Department of Industry, Innovation and Science"><?php print $iptoolkit_logo; ?></a>
             <?php endif; ?>
             <div class="col-md-8 header-right">
                 <?php print render($page['header']); ?>
