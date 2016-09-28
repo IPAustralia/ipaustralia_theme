@@ -352,7 +352,7 @@ function showChatIcon() {
 
     jQuery('.responsive-chat-icon').remove();
 
-    if (jQuery('.bp-medium').length > 0 && jQuery("body").hasClass("section-trade-marks")) {
+    if (jQuery('.bp-medium').length > 0 && jQuery("#ipAustralia-block").length > 0 ) {
         jQuery('header#navbar .header > .container').prepend('<div class="responsive-chat-icon">chat</div>');
         jQuery('.block-search-api-page').css('width', jQuery(document).width() - 30 + 'px');
     } else {

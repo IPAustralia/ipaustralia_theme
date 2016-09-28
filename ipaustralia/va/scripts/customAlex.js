@@ -3,13 +3,14 @@
 *
 */
 NinaVars = { 
-    welcome: 'Hello. I&rsquo;m Alex, IP Australia&rsquo;s virtual assistant. As I am new to IP Australia, please be aware that I am still <strong>learning</strong> and can <strong>only</strong> assist with general trade mark information during this time.  You can view important information about your <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4861991975096831866" class="dialog toc-filter-processed">privacy.</a>'
+    welcome: 'Hello. I&rsquo;m Alex, IP Australia&rsquo;s virtual assistant. I&rsquo;m new to IP Australia, so I&rsquo;m still learning. I can assist with general intellectual property rights information and online services questions. We have information about your <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4861991975096831866" class="dialog toc-filter-processed">privacy.</a>',
+    invocationpoint: document.location.href
 };
-
+//Activate pre prod when deploying to test site.
 if(getParameterByName('preprod')) {
    NinaVars.preprod = true;
 }
-   NinaVars.preprod = true;
+/*   NinaVars.preprod = true;*/
 
 function getParameterByName(name, url) {
     //this function is typically used to return a boolean
