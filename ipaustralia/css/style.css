@@ -3958,8 +3958,8 @@ section#block-panels-mini-case-studies-four-item-display .container, section#blo
   font-weight: bold;
   text-decoration: underline; }
 
-.section-yellow-search {
-  background: transparent url(../images/yellow-search-bg.jpg) center center no-repeat; }
+.section-yellow-search div.title {
+  background: transparent url(../images/yellow-search-bg.jpg) center center no-repeat !important; }
 
 /* Qualified Persons Directory - Item */
 .node-type-qualified-person .field-name-field-name {
