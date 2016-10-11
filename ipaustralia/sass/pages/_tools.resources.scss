@@ -592,8 +592,8 @@ section#block-panels-mini-case-studies-four-item-display, section#block-panels-m
     font-weight: bold;
     text-decoration: underline;
 }
-.section-yellow-search {
-    background: transparent url(../images/yellow-search-bg.jpg) center center no-repeat;
+.section-yellow-search div.title {
+    background: transparent url(../images/yellow-search-bg.jpg) center center no-repeat !important;
 }
 
 /* Qualified Persons Directory - Item */
@@ -611,42 +611,63 @@ section#block-panels-mini-case-studies-four-item-display, section#block-panels-m
 }
 
 /* Tm Image Descriptors Search */
-
-.section-red-search {
+.section-red-search div.title {
     background: transparent url(../images/red-search-bg.jpg) center center no-repeat;
-
 }
+
+/* Tm Image Descriptors Examples Listing */
+.page-tools-resources-tm-image-descriptors .panel-display.panel-2col.clearfix {
+    background-color: #eaeaea;
+    margin: 10px;
+    min-height: 100px;
+    width: 95%;
+}
+.page-tools-resources-tm-image-descriptors table .views-view-grid.cols-2 {
+    width: 100%;
+}
+.page-tools-resources-tm-image-descriptors .views-field.views-field-title {
+    padding-top: 20px;
+    color: #0d252c;
+    font-size: 20px;
+    font-weight: bold;
+}
+.page-tools-resources-tm-image-descriptors table .views-view-grid .cols-2 img {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
 /* country flags for international content */
-.country-usa {
+.country-usa div.title {
     background: transparent url(../images/country-bg-usa.jpg) center center no-repeat;
 }
-.country-nz {
+.country-nz div.title {
     background: transparent url(../images/country-bg-nz.jpg) center center no-repeat;
 }
-.country-eu {
+.country-eu div.title {
     background: transparent url(../images/country-bg-eu.jpg) center center no-repeat;
 }
-.country-south-korea {
+.country-south-korea div.title {
     background: transparent url(../images/country-bg-south-korea.jpg) center center no-repeat;
 }
-.country-china {
+.country-china div.title {
     background: transparent url(../images/country-bg-china.jpg) center center no-repeat;
 }
-.country-singapore {
+.country-singapore div.title {
     background: transparent url(../images/country-bg-singapore.jpg) center center no-repeat;
 }
-.country-indonesia {
+.country-indonesia div.title {
     background: transparent url(../images/country-bg-indonesia.jpg) center center no-repeat;
 }
-.country-canada {
+.country-canada div.title {
     background: transparent url(../images/country-bg-canada.jpg) center center no-repeat;
 }
-.country-thailand {
+.country-thailand div.title {
     background: transparent url(../images/country-bg-thailand.jpg) center center no-repeat;
 }
-.country-japan {
+.country-japan div.title {
     background: transparent url(../images/country-bg-japan.jpg) center center no-repeat;
 }
-.country-india {
+.country-india div.title {
     background: transparent url(../images/country-bg-india.jpg) center center no-repeat;
 }

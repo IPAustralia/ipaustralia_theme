@@ -3945,6 +3945,91 @@ section#block-panels-mini-case-studies-four-item-display .container, section#blo
   border-top: 2px solid white;
   border-bottom: 2px solid white; }
 
+/* Qualified Persons Directory - Listing */
+.page-tools-resources-qualified-persons-directory .views-row-even, .page-tools-resources-qualified-persons-directory .views-row-odd {
+  background: #eff0f2;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 75%; }
+
+.page-tools-resources-qualified-persons-directory .views-row .views-field-title a {
+  color: #0d252c;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.section-yellow-search div.title {
+  background: transparent url(../images/yellow-search-bg.jpg) center center no-repeat !important; }
+
+/* Qualified Persons Directory - Item */
+.node-type-qualified-person .field-name-field-name {
+  font-size: 20px;
+  padding-bottom: 20px; }
+
+.node-type-qualified-person .field-name-field-plat-group-species-fmily .field-items {
+  padding-left: 30px; }
+
+.node-type-qualified-person .field-name-field-plat-group-species-fmily {
+  padding-top: 20px; }
+
+/* Tm Image Descriptors Search */
+.section-red-search div.title {
+  background: transparent url(../images/red-search-bg.jpg) center center no-repeat; }
+
+/* Tm Image Descriptors Examples Listing */
+.page-tools-resources-tm-image-descriptors .panel-display.panel-2col.clearfix {
+  background-color: #eaeaea;
+  margin: 10px;
+  min-height: 100px;
+  width: 95%; }
+
+.page-tools-resources-tm-image-descriptors table .views-view-grid.cols-2 {
+  width: 100%; }
+
+.page-tools-resources-tm-image-descriptors .views-field.views-field-title {
+  padding-top: 20px;
+  color: #0d252c;
+  font-size: 20px;
+  font-weight: bold; }
+
+.page-tools-resources-tm-image-descriptors table .views-view-grid .cols-2 img {
+  padding-left: 20px;
+  padding-top: 20px; }
+
+/* country flags for international content */
+.country-usa div.title {
+  background: transparent url(../images/country-bg-usa.jpg) center center no-repeat; }
+
+.country-nz div.title {
+  background: transparent url(../images/country-bg-nz.jpg) center center no-repeat; }
+
+.country-eu div.title {
+  background: transparent url(../images/country-bg-eu.jpg) center center no-repeat; }
+
+.country-south-korea div.title {
+  background: transparent url(../images/country-bg-south-korea.jpg) center center no-repeat; }
+
+.country-china div.title {
+  background: transparent url(../images/country-bg-china.jpg) center center no-repeat; }
+
+.country-singapore div.title {
+  background: transparent url(../images/country-bg-singapore.jpg) center center no-repeat; }
+
+.country-indonesia div.title {
+  background: transparent url(../images/country-bg-indonesia.jpg) center center no-repeat; }
+
+.country-canada div.title {
+  background: transparent url(../images/country-bg-canada.jpg) center center no-repeat; }
+
+.country-thailand div.title {
+  background: transparent url(../images/country-bg-thailand.jpg) center center no-repeat; }
+
+.country-japan div.title {
+  background: transparent url(../images/country-bg-japan.jpg) center center no-repeat; }
+
+.country-india div.title {
+  background: transparent url(../images/country-bg-india.jpg) center center no-repeat; }
+
 section#block-bean-about-us-landing-block {
   background: transparent url("../images/contact-us-banner.jpg") center center no-repeat;
   background-size: cover;
