@@ -635,6 +635,84 @@ section#block-panels-mini-case-studies-four-item-display, section#block-panels-m
     padding-top: 20px;
 }
 
+/* TM iomage descriptors - Examples */
+
+.page-tools-resources-tm-image-descriptors-arrows .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-stripes .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-col-first .field-content
+{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.page-tools-resources-tm-image-descriptors-arrows .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-stripes .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-2col .panel-col-first {
+    float: left;
+    width: 40%;
+}
+.page-tools-resources-tm-image-descriptors-arrows table,
+.page-tools-resources-tm-image-descriptors-stripes table,
+.page-tools-resources-tm-image-descriptors-bladed-images table,
+.page-tools-resources-tm-image-descriptors-types-of-circles table,
+.page-tools-resources-tm-image-descriptors-other-shapes table {
+    background-color: transparent;
+    width: 100%;
+}
+.page-tools-resources-tm-image-descriptors-arrows .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-stripes .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-2col .panel-col-last, .panel-2col .panel-col-first {
+    float: left;
+    /* width: 0%; */
+}
+.page-tools-resources-tm-image-descriptors-arrows .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-stripes .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-2col .panel-col-first .inside {
+    margin: 0 0 !important;
+}
+.page-tools-resources-tm-image-descriptors-arrows .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-stripes .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-display.panel-2col.clearfix {
+    background-color: #eaeaea;
+    margin: 10px;
+    min-height: 140px;
+    width: 95%;
+}
+
+/* Tm image descsriptors - Groups */
+
+.page-tools-resources-tm-image-descriptors-actions .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-clothes .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-food-not .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-musicians .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-sports-people .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-tools .cols-4 .panel-col-first {
+    margin-left: 20px;
+}
+
+.page-tools-resources-tm-image-descriptors-actions .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-clothes .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-food-not .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-musicians .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-sports-people .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-tools .panel-display.panel-2col.clearfix {
+    background-color: #eaeaea;
+    margin: 10px;
+    min-height: 70px !important;
+    width: 95%;
+}
+
+
 
 /* country flags for international content */
 .country-usa div.title {
