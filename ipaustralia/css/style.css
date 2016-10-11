@@ -3973,42 +3973,62 @@ section#block-panels-mini-case-studies-four-item-display .container, section#blo
   padding-top: 20px; }
 
 /* Tm Image Descriptors Search */
-.section-red-search {
-  background: transparent url(../images/red-search-bg.jpg) center center no-repeat; }
+.section-red-search div.title {
+  background: transparent url(../images/red-search-bg.jpg) center center no-repeat !important; }
+
+/* Tm Image Descriptors Examples Listing */
+.page-tools-resources-tm-image-descriptors .panel-display.panel-2col.clearfix {
+  background-color: #eaeaea;
+  margin: 10px;
+  min-height: 100px;
+  width: 95%; }
+
+.page-tools-resources-tm-image-descriptors table .views-view-grid.cols-2 {
+  width: 100%; }
+
+.page-tools-resources-tm-image-descriptors .views-field.views-field-title {
+  padding-top: 20px;
+  color: #0d252c;
+  font-size: 20px;
+  font-weight: bold; }
+
+.page-tools-resources-tm-image-descriptors table .views-view-grid .cols-2 img {
+  padding-left: 20px;
+  padding-top: 20px; }
 
 /* country flags for international content */
-.country-usa {
-  background: transparent url(../images/country-bg-usa.jpg) center center no-repeat; }
+.country-usa div.title {
+  background: transparent url(../images/country-bg-usa.jpg) center center no-repeat !important; }
 
-.country-nz {
-  background: transparent url(../images/country-bg-nz.jpg) center center no-repeat; }
+.country-nz div.title {
+  background: transparent url(../images/country-bg-nz.jpg) center center no-repeat !important; }
 
-.country-eu {
-  background: transparent url(../images/country-bg-eu.jpg) center center no-repeat; }
+.country-eu div.title {
+  background: transparent url(../images/country-bg-eu.jpg) center center no-repeat !important; }
 
-.country-south-korea {
-  background: transparent url(../images/country-bg-south-korea.jpg) center center no-repeat; }
+.country-south-korea div.title {
+  background: transparent url(../images/country-bg-south-korea.jpg) center center no-repeat !important; }
 
-.country-china {
-  background: transparent url(../images/country-bg-china.jpg) center center no-repeat; }
+.country-china div.title {
+  background: transparent url(../images/country-bg-china.jpg) center center no-repeat !important; }
 
-.country-singapore {
-  background: transparent url(../images/country-bg-singapore.jpg) center center no-repeat; }
+.country-singapore div.title {
+  background: transparent url(../images/country-bg-singapore.jpg) center center no-repeat !important; }
 
-.country-indonesia {
-  background: transparent url(../images/country-bg-indonesia.jpg) center center no-repeat; }
+.country-indonesia div.title {
+  background: transparent url(../images/country-bg-indonesia.jpg) center center no-repeat !important; }
 
-.country-canada {
-  background: transparent url(../images/country-bg-canada.jpg) center center no-repeat; }
+.country-canada div.title {
+  background: transparent url(../images/country-bg-canada.jpg) center center no-repeat !important; }
 
-.country-thailand {
-  background: transparent url(../images/country-bg-thailand.jpg) center center no-repeat; }
+.country-thailand div.title {
+  background: transparent url(../images/country-bg-thailand.jpg) center center no-repeat !important; }
 
-.country-japan {
-  background: transparent url(../images/country-bg-japan.jpg) center center no-repeat; }
+.country-japan div.title {
+  background: transparent url(../images/country-bg-japan.jpg) center center no-repeat !important; }
 
-.country-india {
-  background: transparent url(../images/country-bg-india.jpg) center center no-repeat; }
+.country-india div.title {
+  background: transparent url(../images/country-bg-india.jpg) center center no-repeat !important; }
 
 section#block-bean-about-us-landing-block {
   background: transparent url("../images/contact-us-banner.jpg") center center no-repeat;
