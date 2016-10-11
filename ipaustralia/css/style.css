@@ -3945,6 +3945,71 @@ section#block-panels-mini-case-studies-four-item-display .container, section#blo
   border-top: 2px solid white;
   border-bottom: 2px solid white; }
 
+/* Qualified Persons Directory - Listing */
+.page-tools-resources-qualified-persons-directory .views-row-even, .page-tools-resources-qualified-persons-directory .views-row-odd {
+  background: #eff0f2;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 75%; }
+
+.page-tools-resources-qualified-persons-directory .views-row .views-field-title a {
+  color: #0d252c;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.section-yellow-search {
+  background: transparent url(../images/yellow-search-bg.jpg) center center no-repeat; }
+
+/* Qualified Persons Directory - Item */
+.node-type-qualified-person .field-name-field-name {
+  font-size: 20px;
+  padding-bottom: 20px; }
+
+.node-type-qualified-person .field-name-field-plat-group-species-fmily .field-items {
+  padding-left: 30px; }
+
+.node-type-qualified-person .field-name-field-plat-group-species-fmily {
+  padding-top: 20px; }
+
+/* Tm Image Descriptors Search */
+.section-red-search {
+  background: transparent url(../images/red-search-bg.jpg) center center no-repeat; }
+
+/* country flags for international content */
+.country-usa {
+  background: transparent url(../images/country-bg-usa.jpg) center center no-repeat; }
+
+.country-nz {
+  background: transparent url(../images/country-bg-nz.jpg) center center no-repeat; }
+
+.country-eu {
+  background: transparent url(../images/country-bg-eu.jpg) center center no-repeat; }
+
+.country-south-korea {
+  background: transparent url(../images/country-bg-south-korea.jpg) center center no-repeat; }
+
+.country-china {
+  background: transparent url(../images/country-bg-china.jpg) center center no-repeat; }
+
+.country-singapore {
+  background: transparent url(../images/country-bg-singapore.jpg) center center no-repeat; }
+
+.country-indonesia {
+  background: transparent url(../images/country-bg-indonesia.jpg) center center no-repeat; }
+
+.country-canada {
+  background: transparent url(../images/country-bg-canada.jpg) center center no-repeat; }
+
+.country-thailand {
+  background: transparent url(../images/country-bg-thailand.jpg) center center no-repeat; }
+
+.country-japan {
+  background: transparent url(../images/country-bg-japan.jpg) center center no-repeat; }
+
+.country-india {
+  background: transparent url(../images/country-bg-india.jpg) center center no-repeat; }
+
 section#block-bean-about-us-landing-block {
   background: transparent url("../images/contact-us-banner.jpg") center center no-repeat;
   background-size: cover;
