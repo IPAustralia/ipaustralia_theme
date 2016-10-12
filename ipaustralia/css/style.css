@@ -3235,7 +3235,6 @@ article a.external {
         position: relative;
         z-index: 10; }
         .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="image"] img {
-          display: inline-block;
           height: 380px; }
       .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="date"] {
         text-align: left;
@@ -4683,7 +4682,6 @@ section#block-panels-mini-news-and-community-homepage-pane {
         position: relative;
         z-index: 10; }
         section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="image"] img {
-          display: inline-block;
           height: 380px; }
       section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="date"] {
         text-align: left;
@@ -12178,7 +12176,7 @@ section#block-bean-beta-landing-block {
         padding-right: 10px; }
 
 section#block-bean-current-betas {
-  background: #fff;
+  background: #eff0f2;
   padding: 80px 0px 100px; }
   @media only screen and (max-width: 640px) {
     section#block-bean-current-betas {
@@ -12214,12 +12212,12 @@ section#block-bean-current-betas {
   section#block-bean-current-betas .group-left > div, section#block-bean-current-betas .group-middle > div, section#block-bean-current-betas .group-right > div {
     margin: 0 20px;
     padding: 40px;
-    background: #eff0f2;
-    height: 420px;
+    background: #fff;
+    height: 350px;
     overflow-y: hidden; }
     @media only screen and (max-width: 768px) {
       section#block-bean-current-betas .group-left > div, section#block-bean-current-betas .group-middle > div, section#block-bean-current-betas .group-right > div {
-        height: 570px; } }
+        height: 500px; } }
     @media only screen and (max-width: 640px) {
       section#block-bean-current-betas .group-left > div, section#block-bean-current-betas .group-middle > div, section#block-bean-current-betas .group-right > div {
         height: auto;
@@ -12246,7 +12244,7 @@ section#block-bean-current-betas {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
-        background: #eff0f2 url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+        background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
     section#block-bean-current-betas .group-left h3:after, section#block-bean-current-betas .group-left h4:after, section#block-bean-current-betas .group-middle h3:after, section#block-bean-current-betas .group-middle h4:after, section#block-bean-current-betas .group-right h3:after, section#block-bean-current-betas .group-right h4:after {
       border-top: 4px solid #b6bec0;
@@ -12259,7 +12257,7 @@ section#block-bean-current-betas {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-current-betas .group-left .open h4, section#block-bean-current-betas .group-middle .open h4, section#block-bean-current-betas .group-right .open h4 {
-    background: #eff0f2 url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
+    background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
   @media only screen and (max-width: 640px) {
     section#block-bean-current-betas .group-left p, section#block-bean-current-betas .group-middle p, section#block-bean-current-betas .group-right p {
       display: none; } }
@@ -12296,5 +12294,54 @@ section#block-bean-current-betas {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
+  section#block-bean-current-betas h3 {
+    margin-top: -15px !important;
+    margin-bottom: -20px !important; }
+
+section#block-bean-ip-discovery-beta-block {
+  padding: 80px 10px;
+  text-align: center;
+  color: white;
+  background-color: #612166;
+  font: normal 20px "robotolight", sans-serif;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+  @media only screen and (max-width: 768px) {
+    section#block-bean-ip-discovery-beta-block {
+      padding: 40px 0px; } }
+  section#block-bean-ip-discovery-beta-block h2 {
+    color: white; }
+  section#block-bean-ip-discovery-beta-block .bean-basic-content {
+    max-width: 80%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 768px) {
+      section#block-bean-ip-discovery-beta-block .bean-basic-content {
+        max-width: 90%; } }
+  section#block-bean-ip-discovery-beta-block .field-items p a {
+    border: 2px solid white;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px;
+    text-decoration: none;
+    margin-top: 40px; }
+    section#block-bean-ip-discovery-beta-block .field-items p a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-ip-discovery-beta-block .field-items p a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
+    section#block-bean-ip-discovery-beta-block .field-items p a:hover {
+      border-color: white; }
 
 /*# sourceMappingURL=style.css.map */
