@@ -3980,8 +3980,9 @@ section#block-panels-mini-case-studies-four-item-display .container, section#blo
 .page-tools-resources-tm-image-descriptors .panel-display.panel-2col.clearfix {
   background-color: #eaeaea;
   margin: 10px;
-  min-height: 100px;
-  width: 95%; }
+  min-height: 70px;
+  width: 95%;
+  padding-left: 10px; }
 
 .page-tools-resources-tm-image-descriptors table .views-view-grid.cols-2 {
   width: 100%; }
@@ -3989,12 +3990,24 @@ section#block-panels-mini-case-studies-four-item-display .container, section#blo
 .page-tools-resources-tm-image-descriptors .views-field.views-field-title {
   padding-top: 20px;
   color: #0d252c;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold; }
 
 .page-tools-resources-tm-image-descriptors table .views-view-grid .cols-2 img {
   padding-left: 20px;
   padding-top: 20px; }
+
+/* Tm image descriptors - heraldic terms */
+.page-tools-resources-tm-image-descriptors-heraldic-terms .panel-col-first .field-content {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.page-tools-resources-tm-image-descriptors-heraldic-terms .panel-display.panel-2col.clearfix {
+  background-color: #eaeaea;
+  margin: 10px;
+  min-height: 220px !important;
+  width: 95%; }
 
 /* TM iomage descriptors - Examples */
 .page-tools-resources-tm-image-descriptors-arrows .panel-col-first .field-content,
