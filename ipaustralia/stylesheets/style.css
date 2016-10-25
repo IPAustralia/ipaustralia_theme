@@ -3235,7 +3235,6 @@ article a.external {
         position: relative;
         z-index: 10; }
         .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="image"] img {
-          display: inline-block;
           height: 380px; }
       .front #block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="date"] {
         text-align: left;
@@ -3974,14 +3973,15 @@ section#block-panels-mini-case-studies-four-item-display .container, section#blo
 
 /* Tm Image Descriptors Search */
 .section-red-search div.title {
-  background: transparent url(../images/red-search-bg.jpg) center center no-repeat; }
+  background: transparent url(../images/red-search-bg.jpg) center center no-repeat !important; }
 
 /* Tm Image Descriptors Examples Listing */
 .page-tools-resources-tm-image-descriptors .panel-display.panel-2col.clearfix {
   background-color: #eaeaea;
   margin: 10px;
-  min-height: 100px;
-  width: 95%; }
+  min-height: 70px;
+  width: 95%;
+  padding-left: 10px; }
 
 .page-tools-resources-tm-image-descriptors table .views-view-grid.cols-2 {
   width: 100%; }
@@ -3989,46 +3989,133 @@ section#block-panels-mini-case-studies-four-item-display .container, section#blo
 .page-tools-resources-tm-image-descriptors .views-field.views-field-title {
   padding-top: 20px;
   color: #0d252c;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold; }
 
 .page-tools-resources-tm-image-descriptors table .views-view-grid .cols-2 img {
   padding-left: 20px;
   padding-top: 20px; }
 
+/* Tm image descriptors - heraldic terms */
+.page-tools-resources-tm-image-descriptors-heraldic-terms .panel-col-first .field-content {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.page-tools-resources-tm-image-descriptors-heraldic-terms .panel-display.panel-2col.clearfix {
+  background-color: #eaeaea;
+  margin: 10px;
+  min-height: 220px !important;
+  width: 95%; }
+
+/* TM iomage descriptors - Examples */
+.page-tools-resources-tm-image-descriptors-arrows .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-stripes .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-col-first .field-content {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.page-tools-resources-tm-image-descriptors-arrows .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-stripes .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-2col .panel-col-first {
+  float: left;
+  width: 40%; }
+
+.page-tools-resources-tm-image-descriptors-arrows table,
+.page-tools-resources-tm-image-descriptors-stripes table,
+.page-tools-resources-tm-image-descriptors-bladed-images table,
+.page-tools-resources-tm-image-descriptors-types-of-circles table,
+.page-tools-resources-tm-image-descriptors-other-shapes table {
+  background-color: transparent;
+  width: 100%; }
+
+.page-tools-resources-tm-image-descriptors-arrows .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-stripes .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-2col .panel-col-last, .panel-2col .panel-col-first {
+  float: left;
+  /* width: 0%; */ }
+
+.page-tools-resources-tm-image-descriptors-arrows .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-stripes .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-2col .panel-col-first .inside {
+  margin: 0 0 !important; }
+
+.page-tools-resources-tm-image-descriptors-arrows .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-stripes .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-display.panel-2col.clearfix {
+  background-color: #eaeaea;
+  margin: 10px;
+  min-height: 140px;
+  width: 95%; }
+
+/* Tm image descsriptors - Groups */
+.page-tools-resources-tm-image-descriptors-actions .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-clothes .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-food-not .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-musicians .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-sports-people .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-tools .cols-4 .panel-col-first {
+  margin-left: 20px; }
+
+.page-tools-resources-tm-image-descriptors-actions .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-clothes .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-food-not .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-musicians .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-sports-people .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-tools .panel-display.panel-2col.clearfix {
+  background-color: #eaeaea;
+  margin: 10px;
+  min-height: 70px !important;
+  width: 95%; }
+
 /* country flags for international content */
 .country-usa div.title {
-  background: transparent url(../images/country-bg-usa.jpg) center center no-repeat; }
+  background: transparent url(../images/country-bg-usa.jpg) center center no-repeat !important; }
 
 .country-nz div.title {
-  background: transparent url(../images/country-bg-nz.jpg) center center no-repeat; }
+  background: transparent url(../images/country-bg-nz.jpg) center center no-repeat !important; }
 
 .country-eu div.title {
-  background: transparent url(../images/country-bg-eu.jpg) center center no-repeat; }
+  background: transparent url(../images/country-bg-eu.jpg) center center no-repeat !important; }
 
 .country-south-korea div.title {
-  background: transparent url(../images/country-bg-south-korea.jpg) center center no-repeat; }
+  background: transparent url(../images/country-bg-south-korea.jpg) center center no-repeat !important; }
 
 .country-china div.title {
-  background: transparent url(../images/country-bg-china.jpg) center center no-repeat; }
+  background: transparent url(../images/country-bg-china.jpg) center center no-repeat !important; }
 
 .country-singapore div.title {
-  background: transparent url(../images/country-bg-singapore.jpg) center center no-repeat; }
+  background: transparent url(../images/country-bg-singapore.jpg) center center no-repeat !important; }
 
 .country-indonesia div.title {
-  background: transparent url(../images/country-bg-indonesia.jpg) center center no-repeat; }
+  background: transparent url(../images/country-bg-indonesia.jpg) center center no-repeat !important; }
 
 .country-canada div.title {
-  background: transparent url(../images/country-bg-canada.jpg) center center no-repeat; }
+  background: transparent url(../images/country-bg-canada.jpg) center center no-repeat !important; }
 
 .country-thailand div.title {
-  background: transparent url(../images/country-bg-thailand.jpg) center center no-repeat; }
+  background: transparent url(../images/country-bg-thailand.jpg) center center no-repeat !important; }
 
 .country-japan div.title {
-  background: transparent url(../images/country-bg-japan.jpg) center center no-repeat; }
+  background: transparent url(../images/country-bg-japan.jpg) center center no-repeat !important; }
 
 .country-india div.title {
-  background: transparent url(../images/country-bg-india.jpg) center center no-repeat; }
+  background: transparent url(../images/country-bg-india.jpg) center center no-repeat !important; }
+
+body.page-file section#block-system-main {
+  padding-bottom: 100px;
+  font-size: 20px; }
 
 section#block-bean-about-us-landing-block {
   background: transparent url("../images/contact-us-banner.jpg") center center no-repeat;
@@ -4599,7 +4686,6 @@ section#block-panels-mini-news-and-community-homepage-pane {
         position: relative;
         z-index: 10; }
         section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="image"] img {
-          display: inline-block;
           height: 380px; }
       section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="date"] {
         text-align: left;
@@ -12094,7 +12180,7 @@ section#block-bean-beta-landing-block {
         padding-right: 10px; }
 
 section#block-bean-current-betas {
-  background: #fff;
+  background: #eff0f2;
   padding: 80px 0px 100px; }
   @media only screen and (max-width: 640px) {
     section#block-bean-current-betas {
@@ -12130,12 +12216,12 @@ section#block-bean-current-betas {
   section#block-bean-current-betas .group-left > div, section#block-bean-current-betas .group-middle > div, section#block-bean-current-betas .group-right > div {
     margin: 0 20px;
     padding: 40px;
-    background: #eff0f2;
-    height: 420px;
+    background: #fff;
+    height: 350px;
     overflow-y: hidden; }
     @media only screen and (max-width: 768px) {
       section#block-bean-current-betas .group-left > div, section#block-bean-current-betas .group-middle > div, section#block-bean-current-betas .group-right > div {
-        height: 570px; } }
+        height: 500px; } }
     @media only screen and (max-width: 640px) {
       section#block-bean-current-betas .group-left > div, section#block-bean-current-betas .group-middle > div, section#block-bean-current-betas .group-right > div {
         height: auto;
@@ -12162,7 +12248,7 @@ section#block-bean-current-betas {
         padding-right: 30px;
         line-height: 30px;
         font-size: 1.2em;
-        background: #eff0f2 url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
+        background: #fff url("../images/arrow-down-charcoal-transparent.png") right 20px no-repeat;
         cursor: pointer; } }
     section#block-bean-current-betas .group-left h3:after, section#block-bean-current-betas .group-left h4:after, section#block-bean-current-betas .group-middle h3:after, section#block-bean-current-betas .group-middle h4:after, section#block-bean-current-betas .group-right h3:after, section#block-bean-current-betas .group-right h4:after {
       border-top: 4px solid #b6bec0;
@@ -12175,7 +12261,7 @@ section#block-bean-current-betas {
           margin: 5px 0 10px 2px;
           border-top: 3px solid #b6bec0; } }
   section#block-bean-current-betas .group-left .open h4, section#block-bean-current-betas .group-middle .open h4, section#block-bean-current-betas .group-right .open h4 {
-    background: #eff0f2 url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
+    background: #fff url("../images/arrow-up-charcoal-transparent.png") right 20px no-repeat; }
   @media only screen and (max-width: 640px) {
     section#block-bean-current-betas .group-left p, section#block-bean-current-betas .group-middle p, section#block-bean-current-betas .group-right p {
       display: none; } }
@@ -12212,3 +12298,52 @@ section#block-bean-current-betas {
       text-decoration: none;
       background: transparent;
       border: 2px solid #0d252c; }
+  section#block-bean-current-betas h3 {
+    margin-top: -15px !important;
+    margin-bottom: -20px !important; }
+
+section#block-bean-ip-discovery-beta-block {
+  padding: 80px 10px;
+  text-align: center;
+  color: white;
+  background-color: #612166;
+  font: normal 20px "robotolight", sans-serif;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+  @media only screen and (max-width: 768px) {
+    section#block-bean-ip-discovery-beta-block {
+      padding: 40px 0px; } }
+  section#block-bean-ip-discovery-beta-block h2 {
+    color: white; }
+  section#block-bean-ip-discovery-beta-block .bean-basic-content {
+    max-width: 80%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 768px) {
+      section#block-bean-ip-discovery-beta-block .bean-basic-content {
+        max-width: 90%; } }
+  section#block-bean-ip-discovery-beta-block .field-items p a {
+    border: 2px solid white;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px;
+    text-decoration: none;
+    margin-top: 40px; }
+    section#block-bean-ip-discovery-beta-block .field-items p a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-ip-discovery-beta-block .field-items p a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
+    section#block-bean-ip-discovery-beta-block .field-items p a:hover {
+      border-color: white; }
