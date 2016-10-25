@@ -9890,12 +9890,12 @@ window.Nina.config.newConfig = function(agentConfig) {
              * The version of the UI. Injected by Grunt based on package.json and build #
              * @type {string}
              */
-            version: "ipAustraliaBlock-201608221044",
+            version: "ipAustraliaBlock-201610232200",
             /**
              * The date and time the build of the UI took place. Automatically generated during build in the client's Gruntfile
              * @type {string}
              */
-            date: "2016-08-22 10:44",
+            date: "2016-10-24 16:57",
             /**
              * The maximum length of a user query
              * @type {int}
@@ -11807,7 +11807,7 @@ window.Nina.helper.newDebug = function(_ui, _cookiesJar) {
             }
 		},
 		getUIVersion: function() {
-			return "ipAustraliaBlock-201608221044";
+			return "ipAustraliaBlock-201610232200";
 		},
 		switchPreprodMode: function(reload) {
 			reload = (reload !== "undefined") ? reload : true;
