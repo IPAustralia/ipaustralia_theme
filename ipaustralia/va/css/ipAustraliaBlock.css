@@ -1,4 +1,9 @@
 @import url(font-awesome-4.2.0/css/font-awesome.min.css);
+/* temp fix for error message. Remove once live chat is working */
+#ipAustralia-block .nw_ErrorSays {
+display: none !important;
+}
+
 /* colors */
 /* sizes */
 #ipAustralia-block {
