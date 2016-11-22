@@ -3691,37 +3691,37 @@ section#block-bean-search-ip-rights {
     padding: 5px;
     margin: 0px 0px 0px 5px; }
 
-.page-tools-resources-publications---reports .views-row {
+#block-views-publications-reports-block-2 .views-row, .page-tools-resources-publications---reports .views-row {
   background: #eff0f2;
   margin-bottom: 10px; }
-  .page-tools-resources-publications---reports .views-row .panel-col-first {
+  #block-views-publications-reports-block-2 .views-row .panel-col-first, .page-tools-resources-publications---reports .views-row .panel-col-first {
     width: 23%; }
-    .page-tools-resources-publications---reports .views-row .panel-col-first img {
+    #block-views-publications-reports-block-2 .views-row .panel-col-first img, .page-tools-resources-publications---reports .views-row .panel-col-first img {
       margin: 30px;
       width: 140px;
       height: 140px; }
       @media only screen and (max-width: 1400px) {
-        .page-tools-resources-publications---reports .views-row .panel-col-first img {
+        #block-views-publications-reports-block-2 .views-row .panel-col-first img, .page-tools-resources-publications---reports .views-row .panel-col-first img {
           margin: 5px;
           width: 100%;
           height: auto; } }
     @media only screen and (max-width: 480px) {
-      .page-tools-resources-publications---reports .views-row .panel-col-first {
+      #block-views-publications-reports-block-2 .views-row .panel-col-first, .page-tools-resources-publications---reports .views-row .panel-col-first {
         display: none; } }
-  .page-tools-resources-publications---reports .views-row .panel-col-last {
+  #block-views-publications-reports-block-2 .views-row .panel-col-last, .page-tools-resources-publications---reports .views-row .panel-col-last {
     width: 70%;
     padding-top: 30px; }
     @media only screen and (max-width: 480px) {
-      .page-tools-resources-publications---reports .views-row .panel-col-last {
+      #block-views-publications-reports-block-2 .views-row .panel-col-last, .page-tools-resources-publications---reports .views-row .panel-col-last {
         width: 100%; } }
-  .page-tools-resources-publications---reports .views-row .date-display-single {
+  #block-views-publications-reports-block-2 .views-row .date-display-single, .page-tools-resources-publications---reports .views-row .date-display-single {
     color: #999; }
-  .page-tools-resources-publications---reports .views-row .views-field-title a {
+  #block-views-publications-reports-block-2 .views-row .views-field-title a, .page-tools-resources-publications---reports .views-row .views-field-title a {
     color: #0d252c;
     font-size: 24px;
     font-weight: bold;
     text-decoration: underline; }
-.page-tools-resources-publications---reports .views-label-field-publish-online-date {
+#block-views-publications-reports-block-2 .views-label-field-publish-online-date, .page-tools-resources-publications---reports .views-label-field-publish-online-date {
   color: #999; }
 
 .page-tools-resources-pdf-forms .views-row {
@@ -4606,6 +4606,52 @@ section#block-bean-working-with-us .group-left > div, section#block-bean-working
   background: #fff;
   height: 470px;
   overflow-y: hidden; }
+
+section#block-bean-beta-products-about-us-block {
+  padding: 80px 10px;
+  text-align: center;
+  color: white;
+  background-color: #612166;
+  font: normal 20px "robotolight", sans-serif;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+  @media only screen and (max-width: 768px) {
+    section#block-bean-beta-products-about-us-block {
+      padding: 40px 0px; } }
+  section#block-bean-beta-products-about-us-block h2 {
+    color: white; }
+  section#block-bean-beta-products-about-us-block .bean-basic-content {
+    max-width: 80%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 768px) {
+      section#block-bean-beta-products-about-us-block .bean-basic-content {
+        max-width: 90%; } }
+  section#block-bean-beta-products-about-us-block .field-items p a {
+    border: 2px solid white;
+    background: transparent;
+    padding: 16px 35px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "montserratregular", sans-serif;
+    line-height: 19px;
+    text-decoration: none;
+    margin-top: 40px; }
+    section#block-bean-beta-products-about-us-block .field-items p a:after {
+      background: transparent url("../images/arrow-right-transparent.png") center center no-repeat;
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      content: '';
+      margin: 0 0 -2px 10px; }
+    section#block-bean-beta-products-about-us-block .field-items p a:hover {
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid #0d252c; }
+    section#block-bean-beta-products-about-us-block .field-items p a:hover {
+      border-color: white; }
 
 section#block-panels-mini-news-and-community-homepage-pane {
   padding: 80px 0px 100px;
