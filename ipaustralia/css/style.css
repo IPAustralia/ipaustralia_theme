@@ -3418,13 +3418,13 @@ body.page-search-gss .container section .google-search-pager {
       box-sizing: border-box; }
       body.page-search-gss .container section .google-search-pager ul.pager li a {
         border-radius: 0;
-        padding: 6px 12px;
-        margin-left: -1px;
-        float: left; }
-      body.page-search-gss .container section .google-search-pager ul.pager li.current {
+        padding: 6px 12px; }
+      body.page-search-gss .container section .google-search-pager ul.pager li.pager-current {
         background: #0d252c;
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        padding: 6px 12px;
+        border: 1px solid #ddd; }
 
 .page-tools-resources-case-studies .views-row {
   background: #eff0f2;

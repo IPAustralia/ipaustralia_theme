@@ -82,32 +82,28 @@ body.page-search-gss {
                 .gss-info {
                     display: none;
                 }
-
             }
             .google-search-pager {
                 margin: 20px 0;
                 ul.pager {
-                    margin:0;
-                    
+                    margin: 0;
                     li {
                         padding:0;
                         box-sizing: border-box;
                         a {
                             border-radius: 0;
                             padding: 6px 12px;
-                            margin-left: -1px;
-                            float: left;
                         }
-                        &.current {
+                        &.pager-current {
                             background: $charcoal;
                             color: $white;
                             text-decoration: none;
+                            padding: 6px 12px;
+                            border: 1px solid #ddd;
                         }
                     }
-
                 }
             }
-
         }
     }
 }
