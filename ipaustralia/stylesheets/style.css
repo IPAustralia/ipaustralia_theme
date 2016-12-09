@@ -3393,6 +3393,39 @@ section#block-bean-search-ip-rights .panels-flexible-row-four_column_panel_with_
 section#block-bean-search-ip-rights {
   height: 300px; }
 
+body.page-search-gss .container section ul.tabs--primary {
+  display: none; }
+body.page-search-gss .container section .searchhead {
+  display: none; }
+body.page-search-gss .container section .google-search-results li.gss-result {
+  display: block;
+  background: #eff0f2;
+  padding: 35px;
+  margin-bottom: 10px !important; }
+  body.page-search-gss .container section .google-search-results li.gss-result img.gss-thumbnail-image {
+    float: left;
+    margin: 10px; }
+  body.page-search-gss .container section .google-search-results li.gss-result .gss-search-url {
+    word-wrap: break-word; }
+body.page-search-gss .container section .google-search-results .gss-info {
+  display: none; }
+body.page-search-gss .container section .google-search-pager {
+  margin: 20px 0; }
+  body.page-search-gss .container section .google-search-pager ul.pager {
+    margin: 0; }
+    body.page-search-gss .container section .google-search-pager ul.pager li {
+      padding: 0;
+      box-sizing: border-box; }
+      body.page-search-gss .container section .google-search-pager ul.pager li a {
+        border-radius: 0;
+        padding: 6px 12px;
+        margin-left: -1px;
+        float: left; }
+      body.page-search-gss .container section .google-search-pager ul.pager li.current {
+        background: #0d252c;
+        color: #fff;
+        text-decoration: none; }
+
 .page-tools-resources-case-studies .views-row {
   background: #eff0f2;
   margin-bottom: 10px; }
