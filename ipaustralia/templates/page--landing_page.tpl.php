@@ -1,4 +1,7 @@
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMCLXCW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --> 
 
 <?php
   $theme_path = drupal_get_path('theme', 'ipaustralia');

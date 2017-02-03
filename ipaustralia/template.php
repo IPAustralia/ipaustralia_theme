@@ -18,6 +18,8 @@ function ipaustralia_js_alter(&$javascript) {
   $javascript['misc/jquery.js']['data'] = drupal_get_path('theme', 'ipaustralia') . '/js/jquery-1.11.3.min.js';
 }
 
+
+
 /**
  * Implements hook_preprocess_html().
  */
@@ -37,6 +39,19 @@ function ipaustralia_preprocess_html(&$variables) {
   if (!empty($trail[1]['link_title'])) {
     $variables['classes_array'][] = 'section-' . drupal_clean_css_identifier(strtolower($trail[1]['link_title']));
   }
+
+  //add GTM script to the head tag
+  $gtm_string = "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PMCLXCW');";
+  $script = array( 
+    '#tag' => 'script',
+    '#value' => $gtm_string
+  );
+
+  drupal_add_html_head($script, 'script');
 }
 
 /**
