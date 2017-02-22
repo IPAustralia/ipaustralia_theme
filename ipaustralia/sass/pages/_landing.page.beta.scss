@@ -3,7 +3,14 @@ section#block-bean-beta-landing-block {
 }
 
 section#block-bean-current-betas {
-    background: $white;
+    background: $lighter-grey;
     @include  section_padding(20);
-    @include  landing_page_group_block($background: $lighter-grey, $height:420px);
+    @include  landing_page_group_block();
+    h3 {
+    	margin-top: -15px !important;
+    	margin-bottom: -20px !important;
+    }
+}
+section#block-bean-ip-discovery-beta-block {
+    @include full_width_block();
 }

@@ -387,7 +387,7 @@
 }
 
 //reports
-.page-tools-resources-publications---reports {
+#block-views-publications-reports-block-2, .page-tools-resources-publications---reports {
     .views-row {
         background: $color_athens_gray_approx;
         margin-bottom: 10px;
@@ -576,4 +576,197 @@ section#block-panels-mini-case-studies-four-item-display, section#block-panels-m
     font: normal 20px "robotolight", sans-serif;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
+}
+
+/* Qualified Persons Directory - Listing */
+
+.page-tools-resources-qualified-persons-directory .views-row-even, .page-tools-resources-qualified-persons-directory .views-row-odd {
+    background: #eff0f2;
+    margin-bottom: 10px;
+    padding: 20px;
+    width:75%;
+}
+.page-tools-resources-qualified-persons-directory .views-row .views-field-title a {
+    color: #0d252c;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.section-yellow-search div.title {
+    background: transparent url(../images/yellow-search-bg.jpg) center center no-repeat !important;
+}
+
+/* Qualified Persons Directory - Item */
+
+.node-type-qualified-person .field-name-field-name {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.node-type-qualified-person .field-name-field-plat-group-species-fmily .field-items {
+    padding-left:30px;
+}
+.node-type-qualified-person .field-name-field-plat-group-species-fmily {
+    padding-top: 20px;
+}
+
+/* Tm Image Descriptors Search */
+.section-red-search div.title {
+    background: transparent url(../images/red-search-bg.jpg) center center no-repeat !important;
+}
+
+/* Tm Image Descriptors Examples Listing */
+.page-tools-resources-tm-image-descriptors .panel-display.panel-2col.clearfix {
+    background-color: #eaeaea;
+    margin: 10px;
+    min-height: 70px;
+    width: 95%;
+    padding-left:10px;
+}
+.page-tools-resources-tm-image-descriptors table .views-view-grid.cols-2 {
+    width: 100%;
+}
+.page-tools-resources-tm-image-descriptors .views-field.views-field-title {
+    padding-top: 20px;
+    color: #0d252c;
+    font-size: 18px;
+    font-weight: bold;
+}
+.page-tools-resources-tm-image-descriptors table .views-view-grid .cols-2 img {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+/* Tm image descriptors - heraldic terms */
+
+.page-tools-resources-tm-image-descriptors-heraldic-terms .panel-col-first .field-content
+{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.page-tools-resources-tm-image-descriptors-heraldic-terms .panel-display.panel-2col.clearfix {
+    background-color: #eaeaea;
+    margin: 10px;
+    min-height: 220px !important;
+    width: 95%;
+}
+
+/* TM iomage descriptors - Examples */
+
+.page-tools-resources-tm-image-descriptors-arrows .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-stripes .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-col-first .field-content,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-col-first .field-content
+{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.page-tools-resources-tm-image-descriptors-arrows .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-stripes .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-2col .panel-col-first {
+    float: left;
+    width: 40%;
+}
+.page-tools-resources-tm-image-descriptors-arrows table,
+.page-tools-resources-tm-image-descriptors-stripes table,
+.page-tools-resources-tm-image-descriptors-bladed-images table,
+.page-tools-resources-tm-image-descriptors-types-of-circles table,
+.page-tools-resources-tm-image-descriptors-other-shapes table {
+    background-color: transparent;
+    width: 100%;
+}
+.page-tools-resources-tm-image-descriptors-arrows .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-stripes .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-2col .panel-col-last, .panel-2col .panel-col-first,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-2col .panel-col-last, .panel-2col .panel-col-first {
+    float: left;
+    /* width: 0%; */
+}
+.page-tools-resources-tm-image-descriptors-arrows .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-stripes .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-2col .panel-col-first .inside,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-2col .panel-col-first .inside {
+    margin: 0 0 !important;
+}
+.page-tools-resources-tm-image-descriptors-arrows .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-stripes .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-bladed-images .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-types-of-circles .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-other-shapes .panel-display.panel-2col.clearfix {
+    background-color: #eaeaea;
+    margin: 10px;
+    min-height: 140px;
+    width: 95%;
+}
+
+/* Tm image descsriptors - Groups */
+
+.page-tools-resources-tm-image-descriptors-actions .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-clothes .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-food-not .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-musicians .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-sports-people .cols-4 .panel-col-first,
+.page-tools-resources-tm-image-descriptors-tools .cols-4 .panel-col-first {
+    margin-left: 20px;
+}
+
+.page-tools-resources-tm-image-descriptors-actions .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-clothes .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-food-not .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-musicians .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-sports-people .panel-display.panel-2col.clearfix,
+.page-tools-resources-tm-image-descriptors-tools .panel-display.panel-2col.clearfix {
+    background-color: #eaeaea;
+    margin: 10px;
+    min-height: 70px !important;
+    width: 95%;
+}
+
+
+
+/* country flags for international content */
+.country-usa div.title {
+    background: transparent url(../images/country-bg-usa.jpg) center center no-repeat !important;
+}
+.country-nz div.title {
+    background: transparent url(../images/country-bg-nz.jpg) center center no-repeat !important;
+}
+.country-eu div.title {
+    background: transparent url(../images/country-bg-eu.jpg) center center no-repeat !important;
+}
+.country-south-korea div.title {
+    background: transparent url(../images/country-bg-south-korea.jpg) center center no-repeat !important;
+}
+.country-china div.title {
+    background: transparent url(../images/country-bg-china.jpg) center center no-repeat !important;
+}
+.country-singapore div.title {
+    background: transparent url(../images/country-bg-singapore.jpg) center center no-repeat !important;
+}
+.country-indonesia div.title {
+    background: transparent url(../images/country-bg-indonesia.jpg) center center no-repeat !important;
+}
+.country-canada div.title {
+    background: transparent url(../images/country-bg-canada.jpg) center center no-repeat !important;
+}
+.country-thailand div.title {
+    background: transparent url(../images/country-bg-thailand.jpg) center center no-repeat !important;
+}
+.country-japan div.title {
+    background: transparent url(../images/country-bg-japan.jpg) center center no-repeat !important;
+}
+.country-india div.title {
+    background: transparent url(../images/country-bg-india.jpg) center center no-repeat !important;
+}
+
+//file page styles
+body.page-file section#block-system-main {
+    padding-bottom:100px;
+    font-size: 20px;
 }

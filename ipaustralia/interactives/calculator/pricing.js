@@ -32,26 +32,26 @@ jQuerywindow.trigger('scroll');
 jQuery("#sumAssuredTM").change(function()
 { 
   //alert(jQuery(this).val());
- var selectedvalue = jQuery(this).val();
- // do your calculation
- jQuery("#tb").val(selectedvalue);
+var selectedvalue = jQuery(this).val();
+// do your calculation
+jQuery("#tb").val(selectedvalue);
 jQuery(".classSel").html(selectedvalue);
-var firstOne = selectedvalue * 120;
-var firstTwo = selectedvalue * 120;
-var firstThree = selectedvalue * 200;
+var firstOne = selectedvalue * 200;
+var firstTwo = selectedvalue * 250;
+var firstThree = selectedvalue * 330;
 var firstFour = selectedvalue * 200;
 jQuery(".oneTotal").html("$" + firstOne);
 jQuery(".twoTotal").html("$" + firstTwo);
 jQuery(".threeTotal").html("$" +  firstThree);
 jQuery(".fourTotal").html("$" + firstFour); 
-var partTwo = selectedvalue * 80;
+var partTwo = selectedvalue * 130;
 jQuery(".partTwoTotal").html("$" + partTwo);
 var oneApplyTotal = firstOne + partTwo;
 jQuery(".applyOne").html("$" + oneApplyTotal);
 jQuery(".applyTwo").html("$" + firstTwo);
 jQuery(".applyThree").html("$" + firstThree);
 jQuery(".applyFour").html("$" + firstFour); 
-var regRen = selectedvalue * 300;
+var regRen = selectedvalue * 400;
 jQuery(".oneRegisterTotal").html("$" + regRen);
 jQuery(".twoRegisterTotal").html("$" + regRen);
 jQuery(".threeRegisterTotal").html("$" + regRen);
@@ -64,6 +64,7 @@ jQuery(".fourRenewTotal").html("$" + regRen);
 jQuery("tr:even").css("background-color", "#E5CCCC");
 jQuery("tr:odd").css("background-color", "#c53e47"); 
 //** END TM **//
+
 
 //** START DESIGN **//
 jQuery("#sumAssuredDes").change(function()

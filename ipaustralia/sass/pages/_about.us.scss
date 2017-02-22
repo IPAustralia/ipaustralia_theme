@@ -48,6 +48,10 @@ section#block-bean-working-with-us .group-left > div, section#block-bean-working
     height: 470px;
     overflow-y: hidden;
   }
+
+section#block-bean-beta-products-about-us-block {
+        @include full_width_block();
+    }
 section#block-panels-mini-news-and-community-homepage-pane{
     @include section_padding(20);
     @include news_and_community_inner_page($overlayimage:'transparent-pixel-purple_v2.png');

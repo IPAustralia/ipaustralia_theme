@@ -1,6 +1,10 @@
 @import url(font-awesome-4.2.0/css/font-awesome.min.css);
 /* colors */
 /* sizes */
+/* temp fix for error message. Remove once live chat is working */
+#ipAustralia-block .nw_ErrorSays {
+display: none !important;
+}
 #ipAustralia-block {
   -webkit-font-smoothing: antialiased;
   width: 380px;

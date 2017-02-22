@@ -55,3 +55,55 @@ section#block-bean-search-ip-rights .panels-flexible-row-four_column_panel_with_
 section#block-bean-search-ip-rights {
 height:300px;
 }
+
+body.page-search-gss {
+    .container {
+        section {
+            ul.tabs--primary {
+                display:none;
+            }
+            .searchhead {
+                display:none;
+            }
+            .google-search-results {
+                li.gss-result {
+                    display: block;
+                    background: $color_athens_gray_approx;
+                    padding: 35px;
+                    margin-bottom: 10px !important;
+                    img.gss-thumbnail-image {
+                        float: left;
+                        margin: 10px;
+                    }
+                    .gss-search-url {
+                        word-wrap: break-word;
+                    }
+                }
+                .gss-info {
+                    display: none;
+                }
+            }
+            .google-search-pager {
+                margin: 20px 0;
+                ul.pager {
+                    margin: 0;
+                    li {
+                        padding:0;
+                        box-sizing: border-box;
+                        a {
+                            border-radius: 0;
+                            padding: 6px 12px;
+                        }
+                        &.pager-current {
+                            background: $charcoal;
+                            color: $white;
+                            text-decoration: none;
+                            padding: 6px 12px;
+                            border: 1px solid #ddd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
