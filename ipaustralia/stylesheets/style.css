@@ -3876,7 +3876,8 @@ section#block-bean-ip-report-anchor-menu.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
 
 @media only screen and (max-width: 640px) {
   section#block-bean-news-and-community-landing-page- .panels-flexible-region, section#block-bean-news-and-community-landing-page- .bean-three-column-block {
@@ -3903,7 +3904,8 @@ section#block-bean-news-and-community-landing-page-.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
 
 section#block-panels-mini-case-studies-four-item-display h2, section#block-panels-mini-official-notices-four-item-displ h2 {
   margin-bottom: 30px;
@@ -4263,7 +4265,8 @@ section#block-bean-about-us-anchor-menu.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
 
 section#block-bean-what-we-do-block {
   background: #eff0f2;
@@ -5008,7 +5011,8 @@ section#block-bean-patents-anchor-menu-3.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
 
 section#block-bean-patentoverview {
   background-color: #c0e8ea;
@@ -5692,7 +5696,8 @@ section#block-bean-trade-marks-anchor-menu.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
 
 section#block-bean-understanding-trade-marks-new {
   background: #eff0f2;
@@ -6326,7 +6331,8 @@ section#block-bean-designs-anchor-menu.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
 
 section#block-bean-understanding-designs-block {
   background: #eff0f2;
@@ -6973,7 +6979,8 @@ section#block-bean-pbr-anchor-menu.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
 
 section#block-bean-understanding-pbr-0 {
   background: #eff0f2;
@@ -11025,7 +11032,8 @@ section#block-bean-ip-infringement-anchor-block-0.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
 
 section#block-bean-enforcing-your-ip-block {
   background: #eff0f2;
@@ -11590,7 +11598,8 @@ section#block-bean-understanding-ip-anchor-block.is_stuck {
   display: block !important;
   position: fixed !important;
   top: 80px !important;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
 
 section#block-bean-getting-started-with-ip-block {
   background: #eff0f2;
