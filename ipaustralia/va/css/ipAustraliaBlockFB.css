@@ -8,11 +8,11 @@ body {
 #ipAustralia-block {
   -webkit-font-smoothing: antialiased;
   width: 380px;
-  position: fixed;
+  position: absolute;
   background: white;
   font-size: 18px;
   right: 20px;
-  top: 25px;
+  top: 36px;
   line-height: 18px;
   transition: all 1s ease;
   z-index: 101;
@@ -28,7 +28,8 @@ body {
 }
 
 #ipAustralia-block .nw_Header {
-  background-color: #CED2D5;
+  background-color: #0d252c;
+  color: #fff;
   height: 60px;
   width: 100%;
   color: #1D252C;
@@ -356,6 +357,7 @@ body {
 
 #ipAustralia-block .nw_Conversation.nwNormal {
   display: inline-block;
+  border: 1px solid #ced2d5;
 }
 
 #ipAustralia-block .nw_Input.nwNormal {
