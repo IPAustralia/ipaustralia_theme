@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 380px;
   position: absolute;
-  background: white;
+  background: #e9ebee;
   font-size: 18px;
   right: 20px;
   top: 36px;
@@ -28,7 +28,7 @@ body {
 }
 
 #ipAustralia-block .nw_Header {
-  background-color: #0d252c;
+  background-color: #40575e;
   color: #fff;
   height: 60px;
   width: 100%;
@@ -57,7 +57,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   display: table-cell;
   line-height: 50px;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   padding-top: 6px;
 }
@@ -356,7 +356,7 @@ body {
 
 #ipAustralia-block .nw_Conversation.nwNormal {
   display: inline-block;
-  border: 1px solid #ced2d5;
+  border: 1px solid #40575e;
 }
 
 #ipAustralia-block .nw_Input.nwNormal {
@@ -427,7 +427,7 @@ body {
   font-family: "calibri";
   font-weight: 300;
   font-size: 14px;
-  color: #B6BEC0;
+  color: #000;
   bottom: 78px;
   left: 29px;
 }
