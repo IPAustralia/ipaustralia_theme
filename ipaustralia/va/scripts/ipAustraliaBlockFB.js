@@ -9890,12 +9890,12 @@ window.Nina.config.newConfig = function(agentConfig) {
              * The version of the UI. Injected by Grunt based on package.json and build #
              * @type {string}
              */
-            version: "ipAustraliaBlockFB-201702201606",
+            version: "ipAustraliaBlockFB-201704191644",
             /**
              * The date and time the build of the UI took place. Automatically generated during build in the client's Gruntfile
              * @type {string}
              */
-            date: "2017-03-16 15:07",
+            date: "2017-04-19 16:47",
             /**
              * The maximum length of a user query
              * @type {int}
@@ -11807,7 +11807,7 @@ window.Nina.helper.newDebug = function(_ui, _cookiesJar) {
             }
 		},
 		getUIVersion: function() {
-			return "ipAustraliaBlockFB-201702201606";
+			return "ipAustraliaBlockFB-201704191644";
 		},
 		switchPreprodMode: function(reload) {
 			reload = (reload !== "undefined") ? reload : true;
@@ -16365,5 +16365,23 @@ window.NinaVars = window.NinaVars || {};
         event.preventDefault();
         event.stopPropagation();
     };
+	
+	//Mutation observer is used to observer the document DOM structure to see if there are any changes.
+    MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+
+	var observer = new MutationObserver(function(mutations, observer) {
+		//Checks the agent's response to see if there are any hyperlinks and add an attribute so on click will open a new tab.
+		var $agentAnswer = $(".nw_AgentSays.nw_AgentLastAnswer");
+		if ($agentAnswer.has("a")) {
+			$agentAnswer.children("a[data-vtz-link-type='Web'][id!='ininChatLink']").attr("target", "_blank");
+		}
+	});
+
+	$(document).ready(function() {
+		observer.observe(document, {
+			childList: true,
+		  subtree: true,
+		});
+	});
 
 })();

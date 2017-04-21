@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 380px;
   position: absolute;
-  background: #e9ebee;
+  background: white;
   font-size: 18px;
   right: 20px;
   top: 36px;
@@ -421,7 +421,6 @@ body {
 }
 
 #ipAustralia-block .nw_StatusMessage {
-  /* position: absolute; */
   margin-top: -3px;
   left: 10px;
   font-family: "calibri";
