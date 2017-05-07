@@ -121,3 +121,7 @@ body.section-plant-breeders-rights {
         @include application-process-menu($steps:6, $backgroundcolor:$color_oasis_approx, $imagefolder:pbr, $color:$yellow);
     }
 }
+
+#block-menu-block-20.application-process-menu {
+        @include application-process-menu($steps:7, $imagefolder:commercialisation);
+}
