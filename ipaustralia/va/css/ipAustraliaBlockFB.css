@@ -9,10 +9,10 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 380px;
   position: absolute;
+  top: 36px;
   background: white;
   font-size: 18px;
   right: 20px;
-  top: 36px;
   line-height: 18px;
   transition: all 1s ease;
   z-index: 101;
@@ -29,9 +29,9 @@ body {
 
 #ipAustralia-block .nw_Header {
   background-color: #40575e;
-  color: #fff;
   height: 60px;
   width: 100%;
+  color: #fff;
   font-size: 16px;
   display: table;
 }
@@ -573,6 +573,7 @@ body {
 #ipAustralia-block #endChatMobile {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   header .header .responsive-chat-icon {
     display: none !important;
