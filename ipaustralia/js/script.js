@@ -358,16 +358,16 @@ function showChatIcon() {
         jQuery('.responsive-chat-icon').remove();
         jQuery('.block-search-api-page').removeAttr('style');
     }
-//commented out due to code block being in ipaustraliablock.js VA - added by datacom 28/6
-    /*jQuery(document).on('click', '.responsive-chat-icon', function () {
+
+    jQuery(document).on('click', '.responsive-chat-icon', function () {
         triggerChat();
-    });*/
+    });
 }
 
-/*function triggerChat() {
+function triggerChat() {
     initialize();
     //jQuery(".responsive-chat-icon").toggleClass("opened");
-}*/
+}
 
 function slickSlides() {
     if (jQuery('.bp-medium_ipad').length > 0) {
