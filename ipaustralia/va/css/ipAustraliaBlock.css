@@ -6,6 +6,8 @@
   height: 48px;
   width: 114px;
   display: inline-block;
+  background-image: url("../images/ui/dots-01.gif");
+  background-size: 114px 48px;
 }
 
 #ipAustralia-block {
