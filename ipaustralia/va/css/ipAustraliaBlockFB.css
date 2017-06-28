@@ -1,6 +1,15 @@
 @import url(font-awesome-4.2.0/css/font-awesome.min.css);
 /* colors */
 /* sizes */
+.loading-dots {
+  /* margin: auto 27px; */
+  position: relative;
+  /* New position for the bubbles */
+  height: 48px;
+  width: 114px;
+  display: inline-block;
+}
+
 body {
   max-width: 800px;
 }
@@ -704,4 +713,7 @@ body {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13 / 10), only screen and (min-resolution: 120dpi) {
   @import url("retinaSpritesStyleSheet.scss");
+}
+.nw_SubmitBtn:focus {
+  outline: 2px solid blue;
 }
