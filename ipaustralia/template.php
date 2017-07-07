@@ -220,6 +220,7 @@ function ipaustralia_preprocess_block(&$vars) {
   elseif ($vars['block']->region == 'content_top') {
     $vars['theme_hook_suggestions'][] = 'block__app_process';
   }
+
 }
 
 /**
@@ -350,5 +351,6 @@ function ipaustralia_file_link($variables) {
     ) .
     '</span>';
 }
+
 
 include_once dirname(__FILE__) . '/includes/megamenu.inc';
