@@ -2100,6 +2100,41 @@ body.section-plant-breeders-rights .application-process-menu {
       #block-menu-block-20.application-process-menu ul li:nth-child(1) a {
         background: transparent url("../images/application-process/commercialisation/1.png") center center no-repeat; }
 
+#block-menu-block-21.application-process-menu {
+  background-color: #e5e8ec; }
+  #block-menu-block-21.application-process-menu ul li {
+    display: none; }
+    #block-menu-block-21.application-process-menu ul li a::before {
+      color: #0d252c; }
+    #block-menu-block-21.application-process-menu ul li:nth-child(7) {
+      display: block; }
+      #block-menu-block-21.application-process-menu ul li:nth-child(7) a {
+        background: transparent url("../images/application-process/enforce/7.png") center center no-repeat; }
+    #block-menu-block-21.application-process-menu ul li:nth-child(6) {
+      display: block; }
+      #block-menu-block-21.application-process-menu ul li:nth-child(6) a {
+        background: transparent url("../images/application-process/enforce/6.png") center center no-repeat; }
+    #block-menu-block-21.application-process-menu ul li:nth-child(5) {
+      display: block; }
+      #block-menu-block-21.application-process-menu ul li:nth-child(5) a {
+        background: transparent url("../images/application-process/enforce/5.png") center center no-repeat; }
+    #block-menu-block-21.application-process-menu ul li:nth-child(4) {
+      display: block; }
+      #block-menu-block-21.application-process-menu ul li:nth-child(4) a {
+        background: transparent url("../images/application-process/enforce/4.png") center center no-repeat; }
+    #block-menu-block-21.application-process-menu ul li:nth-child(3) {
+      display: block; }
+      #block-menu-block-21.application-process-menu ul li:nth-child(3) a {
+        background: transparent url("../images/application-process/enforce/3.png") center center no-repeat; }
+    #block-menu-block-21.application-process-menu ul li:nth-child(2) {
+      display: block; }
+      #block-menu-block-21.application-process-menu ul li:nth-child(2) a {
+        background: transparent url("../images/application-process/enforce/2.png") center center no-repeat; }
+    #block-menu-block-21.application-process-menu ul li:nth-child(1) {
+      display: block; }
+      #block-menu-block-21.application-process-menu ul li:nth-child(1) a {
+        background: transparent url("../images/application-process/enforce/1.png") center center no-repeat; }
+
 /*
 Applicaiton process on body
 */
@@ -12470,5 +12505,3 @@ section#block-bean-ip-discovery-beta-block {
       border: 2px solid #0d252c; }
     section#block-bean-ip-discovery-beta-block .field-items p a:hover {
       border-color: white; }
-
-/*# sourceMappingURL=style.css.map */
