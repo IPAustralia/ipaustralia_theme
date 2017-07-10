@@ -2,8 +2,8 @@
 *   Custom code for Alex for IP Australia.
 *
 */
-NinaVars = { 
-    welcome: 'Hello. I&rsquo;m Alex, IP Australia&rsquo;s virtual assistant. I&rsquo;m new to IP Australia, so I&rsquo;m still learning. I can assist with general intellectual property rights information and online services questions. We have information about your <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4861991975096831866" class="dialog toc-filter-processed">privacy.</a>',
+NinaVars = {
+    welcome: 'Hello. I&rsquo;m Alex, IP Australia&rsquo;s virtual assistant. I can assist with general intellectual property rights information and online services questions. We have information about your <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4861991975096831866" class="dialog toc-filter-processed">privacy.</a>',
     invocationpoint: document.location.href
 };
 //Activate pre prod when deploying to test site.
@@ -15,7 +15,7 @@ if(getParameterByName('preprod')) {
 function getParameterByName(name, url) {
     //this function is typically used to return a boolean
     if (!url) url = window.location.href;
-    url = url.toLowerCase(); // This is just to avoid case sensitiveness  
+    url = url.toLowerCase(); // This is just to avoid case sensitiveness
     name = name.replace(/[\[\]]/g, "\\$&").toLowerCase();// This is just to avoid case sensitiveness for query parameter name
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
         results = regex.exec(url);
