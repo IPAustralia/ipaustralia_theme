@@ -1,0 +1,72 @@
+.node-mediation-referral-service {
+  
+    .field-name-field-feature-image {
+      img {
+        border-radius: 50%;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  
+	@media (min-width: /*@screen-md-min*/ 992px) {
+      .field-name-field-feature-image {
+          float: right;
+      }
+    }
+
+  .field-name-field-business-area, .field-name-field-state-or-territory, .field-name-field-organisation, .field-name-field-link, .field-name-field-pricing, .field-name-field-proficient-languages, .field-name-field-services-offered-via-digit, .field-name-field-contact-mediation { 
+    margin-bottom: 5px;
+
+    @media (min-width: /*@screen-md-min*/ 992px) {
+      &::after {
+        clear: none;
+      }
+
+      .field-label, .field-items, .field-item {
+        float: none;
+        display: inline;
+      }
+    }
+  }
+
+  .field-name-field-qualifications-experience {
+    margin-top: 15px;
+  }
+}
+.node-mediation-referral-service {
+  
+    .field-name-field-feature-image {
+      img {
+        border-radius: 50%;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  
+  @media (min-width: /*@screen-md-min*/ 992px) {
+      .field-name-field-feature-image {
+          float: right;
+      }
+    }
+
+  .field-name-field-business-area, .field-name-field-state-or-territory, .field-name-field-organisation, .field-name-field-link, .field-name-field-pricing, .field-name-field-proficient-languages, .field-name-field-services-offered-via-digit, .field-name-field-contact-mediation { 
+    margin-bottom: 5px;
+
+    @media (min-width: /*@screen-md-min*/ 992px) {
+      &::after {
+        clear: none;
+      }
+
+      .field-label, .field-items, .field-item {
+        float: none;
+        display: inline;
+      }
+    }
+  }
+
+  .field-name-field-qualifications-experience {
+    margin-top: 15px;
+  }
+}
