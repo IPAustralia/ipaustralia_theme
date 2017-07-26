@@ -10,8 +10,9 @@ NinaVars = {
 if(getParameterByName('preprod')) {
    NinaVars.preprod = true;
 }
+/*
 NinaVars.preprod = true; //Disable for production release
-
+*/
 function getParameterByName(name, url) {
     //this function is typically used to return a boolean
     if (!url) url = window.location.href;
