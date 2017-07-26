@@ -609,7 +609,10 @@
   left: 40%;
   top: 35%;
   border-radius: 20px;
-  background: #ffffff;
+  background-image: url("../images/spinner.gif");
+  background-size: 64px 64px;
+  width: 64px;
+  height: 64px;
 }
 #ipAustralia-block .dcw {
   display: none;
