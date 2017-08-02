@@ -72,9 +72,11 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
       $parents = array();
       foreach ($items as $item) {
         $item_parents = taxonomy_get_parents($item['tid']);
-        $name = reset($item_parents)->name;
-        if (!in_array($name, $parents)) {
-          $parents[] = $name;
+        if(isset($item_parents) && !empty($item_parents)) {
+          $name = reset($item_parents)->name;
+          if (!in_array($name, $parents)) {
+            $parents[] = $name;
+          }
         }
       }
       if (count($parents) >= 2) {
