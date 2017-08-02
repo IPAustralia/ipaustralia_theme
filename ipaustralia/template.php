@@ -94,7 +94,7 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
   // theme-or-alter-drupal-7-primary-links-1063.
   // __ipaustralia_mega_menu() depends on menu_block being around, so just
   // leave the menu as is if menu_block isn't enabled.
-  if ($vars['main_menu'] && module_exists('menu_block')) {
+  if (isset($vars['main_menu']) && !empty($vars['main_menu']) && module_exists('menu_block')) {
     $vars['primary_nav'] = __ipaustralia_mega_menu();
   }
   if (isset($vars['node']->type)) {
