@@ -107,3 +107,27 @@ body.page-search-gss {
         }
     }
 }
+
+body.page-tools-resources-ip-toolkit-search-gss {
+    .container {
+        .search-api-page-results {
+            .search-results {
+                li.search-result {
+                    display: block;
+                    background: $color_athens_gray_approx;
+                    padding: 35px;
+                    margin-bottom: 10px !important; 
+
+                    img {
+                        float: left;
+                        margin: 1em;
+                    }
+
+                    a {
+                        word-wrap: break-word;
+                    }
+                }
+            }
+        }
+    }
+}

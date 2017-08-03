@@ -3496,6 +3496,17 @@ body.page-search-gss .container section .google-search-pager {
         padding: 6px 12px;
         border: 1px solid #ddd; }
 
+body.page-tools-resources-ip-toolkit-search-gss .container .search-api-page-results .search-results li.search-result {
+  display: block;
+  background: #eff0f2;
+  padding: 35px;
+  margin-bottom: 10px !important; }
+  body.page-tools-resources-ip-toolkit-search-gss .container .search-api-page-results .search-results li.search-result img {
+    float: left;
+    margin: 1em; }
+  body.page-tools-resources-ip-toolkit-search-gss .container .search-api-page-results .search-results li.search-result a {
+    word-wrap: break-word; }
+
 .page-tools-resources-case-studies .views-row {
   background: #eff0f2;
   margin-bottom: 10px; }
