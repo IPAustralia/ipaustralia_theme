@@ -3496,17 +3496,17 @@ body.page-search-gss .container section .google-search-pager {
         padding: 6px 12px;
         border: 1px solid #ddd; }
 
-#search-api-page-search-form ol {
+#search-api-page-search-form .search-api-page-results ol {
   padding: 0;
   margin: 0;
   width: 100%;
   display: block;
   position: relative; }
-  #search-api-page-search-form ol li {
+  #search-api-page-search-form .search-api-page-results ol li {
     background: #eff0f2;
     padding: 1em;
     margin: 0 0 .4em 0; }
-    #search-api-page-search-form ol li img {
+    #search-api-page-search-form .search-api-page-results ol li img {
       float: left; }
 
 .page-tools-resources-case-studies .views-row {
