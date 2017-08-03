@@ -3496,16 +3496,18 @@ body.page-search-gss .container section .google-search-pager {
         padding: 6px 12px;
         border: 1px solid #ddd; }
 
-body.page-tools-resources-ip-toolkit-search-gss .container .search-api-page-results .search-results li.search-result {
+#search-api-page-search-form ol {
+  padding: 0;
+  margin: 0;
+  width: 100%;
   display: block;
-  background: #eff0f2;
-  padding: 35px;
-  margin-bottom: 10px !important; }
-  body.page-tools-resources-ip-toolkit-search-gss .container .search-api-page-results .search-results li.search-result img {
-    float: left;
-    margin: 1em; }
-  body.page-tools-resources-ip-toolkit-search-gss .container .search-api-page-results .search-results li.search-result a {
-    word-wrap: break-word; }
+  position: relative; }
+  #search-api-page-search-form ol li {
+    background: #eff0f2;
+    padding: 1em;
+    margin: 0 0 .4em 0; }
+    #search-api-page-search-form ol li img {
+      float: left; }
 
 .page-tools-resources-case-studies .views-row {
   background: #eff0f2;
