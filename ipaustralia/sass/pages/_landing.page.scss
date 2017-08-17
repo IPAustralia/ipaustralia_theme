@@ -24,8 +24,8 @@
                 box-shadow: 2px 2px 6px grey;
                 margin: .4em;
                 min-height: 580px;
-                .col-md-4 {
-                    width:32% !important;
+                &.col-md-4 {
+                    width:32%;
                 }
             }
         }

@@ -5000,8 +5000,8 @@ section#block-panels-mini-news-and-community-homepage-pane {
     box-shadow: 2px 2px 6px grey;
     margin: .4em;
     min-height: 580px; }
-    .view-policy-register .item-list ul li .col-md-4 {
-      width: 32% !important; }
+    .view-policy-register .item-list ul li.col-md-4 {
+      width: 32%; }
 
 #block-block-61 {
   display: block;
