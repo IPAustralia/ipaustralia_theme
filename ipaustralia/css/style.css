@@ -4996,6 +4996,20 @@ section#block-panels-mini-news-and-community-homepage-pane {
 article#node-65901 {
   margin: 0 !important;
   padding: 0 !important; }
+article.node-policy-register-publication {
+  margin: 0 !important;
+  padding: 0 !important; }
+  article.node-policy-register-publication .field-label {
+    font-weight: bold;
+    padding: 1em 0; }
+  article.node-policy-register-publication .field-item {
+    padding: 1em 0; }
+  article.node-policy-register-publication .field-name-field-issue-summary .field-label {
+    font-size: 1.4em; }
+  article.node-policy-register-publication .field-name-field-history .field-label {
+    font-size: 1.4em; }
+  article.node-policy-register-publication .field-name-field-comments .field-label {
+    font-size: 1.4em; }
 
 .view-policy-register .view-filters {
   background-color: lightgray;
@@ -5058,6 +5072,29 @@ article#node-65901 {
 #block-block-56 {
   background: #eff0f2;
   padding: 2em 2em 3em 2em; }
+
+#block-block-51 {
+  display: block;
+  position: relative;
+  margin: 1em 0;
+  padding: 0; }
+  #block-block-51 .back-to-home-pr a {
+    display: block;
+    position: relative;
+    width: 14%;
+    padding: .6em;
+    background-color: #de4326;
+    color: white;
+    text-decoration: none; }
+    #block-block-51 .back-to-home-pr a:hover {
+      box-shadow: 2px 2px 6px; }
+
+#block-webform-client-block-65641 {
+  margin-bottom: 1em; }
+
+.page-policy-register-search #block-webform-client-block-65641 {
+  display: none;
+  visibility: hidden; }
 
 section#block-bean-patents-landing-block-new {
   background: transparent url("../images/patents-landing.jpg") center center no-repeat;
