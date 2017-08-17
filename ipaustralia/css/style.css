@@ -5001,9 +5001,10 @@ section#block-panels-mini-news-and-community-homepage-pane {
     margin: .4em;
     min-height: 580px; }
     .view-policy-register .item-list ul li .col-md-4 {
-      width: 30%; }
+      width: 32% !important; }
 
 #block-block-61 {
+  display: block;
   margin: 0 auto;
   max-width: 1100px;
   padding: 0; }
@@ -5019,8 +5020,10 @@ section#block-panels-mini-news-and-community-homepage-pane {
     border-spacing: 0;
     border-color: grey;
     margin: 1em 0;
-    width: 100% th, td;
-      width-padding: .4em; }
+    width: 100%;
+    font-size: .8em; }
+    #block-block-61 table th, #block-block-61 table td {
+      padding: .4em; }
     #block-block-61 table th {
       border-top: 1px solid white;
       border-bottom: 1px solid white;
