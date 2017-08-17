@@ -1,0 +1,55 @@
+/** 
+ * Policy Reigster 
+ * 
+ */
+
+//Legend block
+#block-block-61 {
+    margin: 0 auto; 
+    max-width: 1100px;
+    padding: 0;
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.25em; 
+    }
+
+    h4 { 
+        font-size: 1.1em;
+    }
+
+    table {
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border-color: grey;
+        margin: 1em 0;
+
+        th, td {
+            padding: .4em; 
+        }
+
+        th {
+           .gray {
+                background-color: gray;
+                color: white;
+            }
+
+            .lightgray {
+                background-color: lightgrey;
+                color: black;
+            }
+
+            .italic {
+                font-style: italic;
+            }
+
+            .bold {
+                font-weight: bold;
+            }
+        }
+    }
+}
