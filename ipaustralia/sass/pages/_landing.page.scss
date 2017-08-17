@@ -8,7 +8,34 @@ article {
         margin: 0 !important;
         padding: 0 !important;
     }
-} 
+    &.node-policy-register-publication {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        .field-label {
+            font-weight: bold; 
+        }
+
+        .field-name-field-issue-summary {
+            .field-label {
+                font-size: 1.2em;
+            }
+        }
+
+        .field-name-field-history {
+            .field-label {
+                font-size: 1.2em;
+            }
+        }
+
+        .field-name-field-comments {
+            .field-label {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
 
 //View 
 .view-policy-register {
@@ -109,3 +136,23 @@ article {
     background: #eff0f2;
     padding: 2em 2em 3em 2em;
 }
+
+//Back to home button
+#block-block-51 {
+    display: block;
+    position: relative;
+    margin: 1em 0;
+    padding: 0;
+    .back-to-home-pr {
+        a {
+            padding: .6em;
+            background-color: #de4326;
+            color: white;
+            text-decoration: none;
+        }
+        &:hover {
+            box-shadow: 2px 2px 6px;
+        }
+    }
+}
+
