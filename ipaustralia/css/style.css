@@ -5005,8 +5005,7 @@ section#block-panels-mini-news-and-community-homepage-pane {
 
 #block-block-61 {
   display: block;
-  margin: 0 auto;
-  max-width: 1100px;
+  margin: 1em auto;
   padding: 0; }
   #block-block-61 h2 {
     font-size: 1.4em; }
