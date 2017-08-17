@@ -5000,13 +5000,14 @@ article.node-policy-register-publication {
   margin: 0 !important;
   padding: 0 !important; }
   article.node-policy-register-publication .field-label {
-    font-weight: bold; }
+    font-weight: bold;
+    padding: 1em 0; }
   article.node-policy-register-publication .field-name-field-issue-summary .field-label {
-    font-size: 1.2em; }
+    font-size: 1.4em; }
   article.node-policy-register-publication .field-name-field-history .field-label {
-    font-size: 1.2em; }
+    font-size: 1.4em; }
   article.node-policy-register-publication .field-name-field-comments .field-label {
-    font-size: 1.2em; }
+    font-size: 1.4em; }
 
 .view-policy-register .view-filters {
   background-color: lightgray;
@@ -5085,6 +5086,10 @@ article.node-policy-register-publication {
 
 #block-webform-client-block-65641 {
   margin-bottom: 1em; }
+
+.page-policy-register-search #block-webform-client-block-65641 {
+  display: none;
+  visibility: hidden; }
 
 section#block-bean-patents-landing-block-new {
   background: transparent url("../images/patents-landing.jpg") center center no-repeat;

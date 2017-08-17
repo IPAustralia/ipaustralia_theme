@@ -14,23 +14,24 @@ article {
 
         .field-label {
             font-weight: bold; 
+            padding: 1em 0;
         }
 
         .field-name-field-issue-summary {
             .field-label {
-                font-size: 1.2em;
+                font-size: 1.4em;
             }
         }
 
         .field-name-field-history {
             .field-label {
-                font-size: 1.2em;
+                font-size: 1.4em;
             }
         }
 
         .field-name-field-comments {
             .field-label {
-                font-size: 1.2em;
+                font-size: 1.4em;
             }
         }
     }
@@ -159,4 +160,11 @@ article {
 //Webform
 #block-webform-client-block-65641 {
     margin-bottom: 1em;
+}
+
+.page-policy-register-search {
+    #block-webform-client-block-65641 {
+        display: none;
+        visibility: hidden;
+    }
 }
