@@ -4990,7 +4990,13 @@ section#block-panels-mini-news-and-community-homepage-pane {
   padding: 1em;
   margin: 1em auto; }
 .view-policy-register .item-list ul {
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .view-policy-register .item-list ul li {
+    border: 1px solid lightgray;
+    padding: 1em;
+    box-shadow: 2px 2px 6px grey; }
 
 #block-block-61 {
   margin: 0 auto;
@@ -5007,9 +5013,15 @@ section#block-panels-mini-news-and-community-homepage-pane {
     border-collapse: collapse;
     border-spacing: 0;
     border-color: grey;
-    margin: 1em 0; }
-    #block-block-61 table th, #block-block-61 table td {
-      padding: .4em;
+    margin: 1em 0;
+    width: 100% th, td;
+      width-padding: .4em; }
+    #block-block-61 table th {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+      width: 20%; }
+    #block-block-61 table td {
       border: 1px solid lightgray; }
     #block-block-61 table .gray {
       background-color: gray;
