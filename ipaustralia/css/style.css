@@ -3423,7 +3423,6 @@ article a.external {
 .front #block-system-main {
   display: none; }
 
-/*@import "_landing.page.scss";*/
 .page-search .search-info {
   display: none; }
 .page-search .search-snippet-info h1 {
@@ -4980,6 +4979,39 @@ section#block-panels-mini-news-and-community-homepage-pane {
     font-size: 1em; }
   section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="date"], section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="title"], section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="location"], section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="body"] {
     background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat; }
+
+/** 
+ * Policy Reigster 
+ * 
+ */
+#block-block-61 {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0; }
+  #block-block-61 h2 {
+    font-size: 1.4em; }
+  #block-block-61 h3 {
+    font-size: 1.25em; }
+  #block-block-61 h4 {
+    font-size: 1.1em; }
+  #block-block-61 table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: grey;
+    margin: 1em 0; }
+    #block-block-61 table th, #block-block-61 table td {
+      padding: .4em; }
+    #block-block-61 table th .gray {
+      background-color: gray;
+      color: white; }
+    #block-block-61 table th .lightgray {
+      background-color: lightgrey;
+      color: black; }
+    #block-block-61 table th .italic {
+      font-style: italic; }
+    #block-block-61 table th .bold {
+      font-weight: bold; }
 
 section#block-bean-patents-landing-block-new {
   background: transparent url("../images/patents-landing.jpg") center center no-repeat;
