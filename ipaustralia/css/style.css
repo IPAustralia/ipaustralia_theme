@@ -4981,9 +4981,17 @@ section#block-panels-mini-news-and-community-homepage-pane {
     background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat; }
 
 /** 
- * Policy Reigster 
+ * Policy Reigster / Policy Register Archive
  * 
  */
+.view-policy-register .view-filters {
+  background-color: lightgray;
+  border: 1px solid gray;
+  padding: 1em;
+  margin: 1em auto; }
+.view-policy-register .item-list ul {
+  list-style-type: none; }
+
 #block-block-61 {
   margin: 0 auto;
   max-width: 1100px;
@@ -5001,16 +5009,17 @@ section#block-panels-mini-news-and-community-homepage-pane {
     border-color: grey;
     margin: 1em 0; }
     #block-block-61 table th, #block-block-61 table td {
-      padding: .4em; }
-    #block-block-61 table th .gray {
+      padding: .4em;
+      border: 1px solid lightgray; }
+    #block-block-61 table .gray {
       background-color: gray;
       color: white; }
-    #block-block-61 table th .lightgray {
+    #block-block-61 table .lightgray {
       background-color: lightgrey;
       color: black; }
-    #block-block-61 table th .italic {
+    #block-block-61 table .italic {
       font-style: italic; }
-    #block-block-61 table th .bold {
+    #block-block-61 table .bold {
       font-weight: bold; }
 
 section#block-bean-patents-landing-block-new {

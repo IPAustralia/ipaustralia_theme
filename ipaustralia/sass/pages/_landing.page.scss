@@ -1,7 +1,24 @@
 /** 
- * Policy Reigster 
+ * Policy Reigster / Policy Register Archive
  * 
  */
+
+//View 
+.view-policy-register {
+    .view-filters {
+        background-color: lightgray;
+        border: 1px solid gray;
+        padding: 1em; 
+        margin: 1em auto;
+    }
+    .item-list {
+        ul {
+            list-style-type: none;
+        }
+    }
+}
+
+
 
 //Legend block
 #block-block-61 {
@@ -29,27 +46,26 @@
         margin: 1em 0;
 
         th, td {
-            padding: .4em; 
+            padding: .4em;
+            border: 1px solid lightgray;
+        }
+        
+        .gray {
+            background-color: gray;
+            color: white;
         }
 
-        th {
-           .gray {
-                background-color: gray;
-                color: white;
-            }
+        .lightgray {
+            background-color: lightgrey;
+            color: black;
+        }
 
-            .lightgray {
-                background-color: lightgrey;
-                color: black;
-            }
+        .italic {
+            font-style: italic;
+        }
 
-            .italic {
-                font-style: italic;
-            }
-
-            .bold {
-                font-weight: bold;
-            }
+        .bold {
+            font-weight: bold;
         }
     }
 }
