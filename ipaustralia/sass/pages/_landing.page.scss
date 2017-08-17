@@ -17,6 +17,10 @@ article {
             padding: 1em 0;
         }
 
+        .field-item {
+            padding: 1em 0;
+        }
+
         .field-name-field-issue-summary {
             .field-label {
                 font-size: 1.4em;
@@ -146,12 +150,18 @@ article {
     padding: 0;
     .back-to-home-pr {
         a {
+            display: block;
+            position: relative;
+            width: 14%;
             padding: .6em;
             background-color: #de4326;
             color: white;
             text-decoration: none;
             &:hover {
                 box-shadow: 2px 2px 6px;
+            }
+            &:before {
+
             }
         }
     }

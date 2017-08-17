@@ -5002,6 +5002,8 @@ article.node-policy-register-publication {
   article.node-policy-register-publication .field-label {
     font-weight: bold;
     padding: 1em 0; }
+  article.node-policy-register-publication .field-item {
+    padding: 1em 0; }
   article.node-policy-register-publication .field-name-field-issue-summary .field-label {
     font-size: 1.4em; }
   article.node-policy-register-publication .field-name-field-history .field-label {
@@ -5077,6 +5079,9 @@ article.node-policy-register-publication {
   margin: 1em 0;
   padding: 0; }
   #block-block-51 .back-to-home-pr a {
+    display: block;
+    position: relative;
+    width: 14%;
     padding: .6em;
     background-color: #de4326;
     color: white;
