@@ -178,7 +178,11 @@ article {
             font-weight: bold;
             background-color: black;
             color: white;
-            padding: .2em 0;
+            padding: .2em;
+        }
+        .field-items {
+            padding: .12em;
+            border: 1px solid;
         }
     }
     dl {
