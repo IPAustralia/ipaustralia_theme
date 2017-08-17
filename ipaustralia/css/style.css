@@ -4991,12 +4991,17 @@ section#block-panels-mini-news-and-community-homepage-pane {
   margin: 1em auto; }
 .view-policy-register .item-list ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0; }
+  margin: 1em 0;
+  padding: 0;
+  overflow: hidden; }
   .view-policy-register .item-list ul li {
     border: 1px solid lightgray;
     padding: 1em;
-    box-shadow: 2px 2px 6px grey; }
+    box-shadow: 2px 2px 6px grey;
+    margin: .4em;
+    min-height: 580px; }
+    .view-policy-register .item-list ul li .col-md-4 {
+      width: 30%; }
 
 #block-block-61 {
   margin: 0 auto;

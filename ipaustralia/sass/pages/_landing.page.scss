@@ -14,13 +14,19 @@
     .item-list {
         ul {
             list-style-type: none;
-            margin: 0;
+            margin: 1em 0;
             padding: 0;
+            overflow: hidden;
 
             li {
                 border: 1px solid lightgray;
                 padding: 1em;
                 box-shadow: 2px 2px 6px grey;
+                margin: .4em;
+                min-height: 580px;
+                .col-md-4 {
+                    width:30%;
+                }
             }
         }
     }
