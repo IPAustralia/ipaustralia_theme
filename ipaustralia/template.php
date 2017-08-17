@@ -88,7 +88,6 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
     }
   }
 
-
   // Override the default primary nav render array. see
   // template.inc:template_preprocess_page() and
   // page.vars.php:bootstrap_preprocess_page() for where these variables are
@@ -108,6 +107,13 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
     // Homepage doesn't have sidebars.
     $vars['content_column_class'] = ' class="col-sm-12"';
   }
+}
+
+/**
+ * Implements hook_theme_form_alter()
+ */
+function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
+  dpm($form);
 }
 
 /**
