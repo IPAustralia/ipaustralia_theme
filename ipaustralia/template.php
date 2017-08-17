@@ -113,7 +113,7 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
  * Implements hook_theme_form_alter()
  */
 function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
-  echo '<pre>' . var_dump($form) . '</pre>';
+  //echo '<pre>' . var_export($form) . '</pre>';
 }
 
 /**
