@@ -568,8 +568,17 @@ article {
     margin-bottom: 10px;
     letter-spacing: 1px; }
   article .field-name-field-publish-online-date {
-    float: right;
-    margin-top: 25px; }
+    display: block;
+    position: relative;
+    margin: .2em 0 1em 0; }
+    article .field-name-field-publish-online-date .field-label {
+      font-weight: bold;
+      background-color: black;
+      color: white;
+      padding: .2em; }
+    article .field-name-field-publish-online-date .field-items {
+      padding: .12em;
+      border: 1px solid; }
   article dl dt:nth-of-type(even) {
     background: #eff0f2; }
   article dl dd:nth-of-type(even) {
@@ -3423,7 +3432,6 @@ article a.external {
 .front #block-system-main {
   display: none; }
 
-/*@import "_landing.page.scss";*/
 .page-search .search-info {
   display: none; }
 .page-search .search-snippet-info h1 {
@@ -3495,6 +3503,19 @@ body.page-search-gss .container section .google-search-pager {
         text-decoration: none;
         padding: 6px 12px;
         border: 1px solid #ddd; }
+
+body.page-tools-resources-ip-toolkit-search .search-api-page-results ol {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+  position: relative; }
+  body.page-tools-resources-ip-toolkit-search .search-api-page-results ol li {
+    background: #eff0f2;
+    padding: 1em;
+    margin: 0 0 .4em 0; }
+    body.page-tools-resources-ip-toolkit-search .search-api-page-results ol li img {
+      float: left; }
 
 .page-tools-resources-case-studies .views-row {
   background: #eff0f2;
@@ -4967,6 +4988,76 @@ section#block-panels-mini-news-and-community-homepage-pane {
     font-size: 1em; }
   section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="date"], section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="title"], section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="location"], section#block-panels-mini-news-and-community-homepage-pane .quicktabs-wrapper .quicktabs_main .views-view-grid td div[class*="body"] {
     background: transparent url("../images/transparent-pixel-purple_v2.png") center center repeat; }
+
+/** 
+ * Policy Reigster / Policy Register Archive
+ * 
+ */
+article#node-65901 {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.view-policy-register .view-filters {
+  background-color: lightgray;
+  border: 1px solid gray;
+  padding: 1em;
+  margin: 1em auto; }
+.view-policy-register .item-list ul {
+  list-style-type: none;
+  margin: 1em 0;
+  padding: 0;
+  overflow: hidden; }
+  .view-policy-register .item-list ul li {
+    border: 1px solid lightgray;
+    padding: 1em;
+    box-shadow: 2px 2px 6px grey;
+    margin: .4em;
+    min-height: 580px;
+    border-left: 10px solid #0d252c; }
+    .view-policy-register .item-list ul li.col-md-4 {
+      width: 32%; }
+
+#block-block-61 {
+  display: block;
+  margin: 1em auto;
+  padding: 0; }
+  #block-block-61 h2 {
+    font-size: 1.4em; }
+  #block-block-61 h3 {
+    font-size: 1.25em; }
+  #block-block-61 h4 {
+    font-size: 1.1em; }
+  #block-block-61 table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: grey;
+    margin: 1em 0;
+    width: 100%;
+    font-size: .8em; }
+    #block-block-61 table th, #block-block-61 table td {
+      padding: .4em; }
+    #block-block-61 table th {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+      width: 20%; }
+    #block-block-61 table td {
+      border: 1px solid lightgray; }
+    #block-block-61 table .gray {
+      background-color: gray;
+      color: white; }
+    #block-block-61 table .lightgray {
+      background-color: lightgrey;
+      color: black; }
+    #block-block-61 table .italic {
+      font-style: italic; }
+    #block-block-61 table .bold {
+      font-weight: bold; }
+
+#block-block-56 {
+  background: #eff0f2;
+  padding: 2em 2em 3em 2em; }
 
 section#block-bean-patents-landing-block-new {
   background: transparent url("../images/patents-landing.jpg") center center no-repeat;

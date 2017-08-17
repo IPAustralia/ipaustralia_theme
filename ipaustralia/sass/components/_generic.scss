@@ -171,8 +171,19 @@ article {
         letter-spacing: 1px
     }
     .field-name-field-publish-online-date {
-        float: right;
-        margin-top: 25px;
+        display: block;
+        position: relative;
+        margin: .2em 0 1em 0;
+        .field-label {
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            padding: .2em;
+        }
+        .field-items {
+            padding: .12em;
+            border: 1px solid;
+        }
     }
     dl {
         dt:nth-of-type(even) {
