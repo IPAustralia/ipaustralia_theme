@@ -4991,8 +4991,8 @@ section#block-panels-mini-news-and-community-homepage-pane {
  * 
  */
 article#node-65901 {
-  margin: 0;
-  padding: 0; }
+  margin: 0 !important;
+  padding: 0 !important; }
 
 .view-policy-register .view-filters {
   background-color: lightgray;
@@ -5009,7 +5009,8 @@ article#node-65901 {
     padding: 1em;
     box-shadow: 2px 2px 6px grey;
     margin: .4em;
-    min-height: 580px; }
+    min-height: 580px;
+    border-left: 10px solid #0d252c; }
     .view-policy-register .item-list ul li.col-md-4 {
       width: 32%; }
 
@@ -5050,6 +5051,10 @@ article#node-65901 {
       font-style: italic; }
     #block-block-61 table .bold {
       font-weight: bold; }
+
+#block-block-56 {
+  background: #eff0f2;
+  padding: 2em 2em 3em 2em; }
 
 section#block-bean-patents-landing-block-new {
   background: transparent url("../images/patents-landing.jpg") center center no-repeat;
