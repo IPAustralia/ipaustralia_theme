@@ -568,8 +568,14 @@ article {
     margin-bottom: 10px;
     letter-spacing: 1px; }
   article .field-name-field-publish-online-date {
-    float: right;
-    margin-top: 25px; }
+    display: block;
+    position: relative;
+    margin: .2em 0 1em 0; }
+    article .field-name-field-publish-online-date .field-label {
+      font-weight: bold;
+      background-color: black;
+      color: white;
+      padding: .2em 0; }
   article dl dt:nth-of-type(even) {
     background: #eff0f2; }
   article dl dd:nth-of-type(even) {
@@ -4984,6 +4990,10 @@ section#block-panels-mini-news-and-community-homepage-pane {
  * Policy Reigster / Policy Register Archive
  * 
  */
+article#node-65901 {
+  margin: 0;
+  padding: 0; }
+
 .view-policy-register .view-filters {
   background-color: lightgray;
   border: 1px solid gray;
