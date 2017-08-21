@@ -111,10 +111,18 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
  * Implements hook_theme_form_alter()
  */
 function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
-
   if($form_id == "webform_client_form_65641") {
-    var_export($form);
+    // if($form['#node']->['webform']['components'][10]['form_key'] == "policy_id") {
+    //   $form[]['components'][10]['value'] == "";
+    // }
+    $form['#submit'][] = '_webform_submit_handler';
+    var_export($form_state);
   }
+}
+
+function _webform_submit_handler(&$form, &$form_state) {
+
+
 }
 
 /**
