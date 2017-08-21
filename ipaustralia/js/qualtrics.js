@@ -5,7 +5,3 @@ this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==
 this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g+ "&t=" + (new Date()).getTime();document.body&&document.body.appendChild(a)}};
 this.start=function(){var a=this;window.addEventListener?window.addEventListener("load",function(){a.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){a.go()})}};
 try{(new g(100,"r","QSI_S_ZN_01epb97w0hDoY4t","//zn01epb97w0hdoy4t-ipaustralia.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_01epb97w0hDoY4t&Q_LOC="+encodeURIComponent(window.location.href))).start()}catch(i){}})();
-
-
-var divQualtrix = "<div id='ZN_01epb97w0hDoY4t'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>";
-document.body.appendChild(divQualtrix);

@@ -13,7 +13,10 @@ jQuery(document).ready(function () {
 
     if (jQuery('.application-process-menu').length){
         jQuery('aside.col-sm-3').addClass('app-process-visible');
-    }
+    } 
+
+    jQuery('body').append("<div id='ZN_0e0bzgMZ1MJCD1H'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>");
+
 });
 jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-bloc h3', function () {
     openCloseToolsResources(jQuery(this));
