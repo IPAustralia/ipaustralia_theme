@@ -126,7 +126,7 @@ function getFieldValueFromNode() {
   $nid = $node->nid;
   $node = node_load($nid);
   print_r($node);
-  return $node->getField("field_policy_id");
+  //return $node->getField("field_policy_id");
 }
 
 echo getFieldValueFromNode();
