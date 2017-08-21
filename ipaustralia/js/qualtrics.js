@@ -1,4 +1,3 @@
-<script type='text/javascript'>
 console.log('I am at the beginning of the js');
 (function(){var g=function(e,h,f,g){
 this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
@@ -8,4 +7,3 @@ this.go=function(){if(this.check()){var a=document.createElement("script");a.typ
 this.start=function(){var a=this;window.addEventListener?window.addEventListener("load",function(){a.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){a.go()})}};
 try{(new g(100,"r","QSI_S_ZN_01epb97w0hDoY4t","//zn01epb97w0hdoy4t-ipaustralia.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_01epb97w0hDoY4t&Q_VERSION=0&Q_LOC="+encodeURIComponent(window.location.href))).start()}catch(i){}})();
 console.log('I am at the end of the js');
-</script>
