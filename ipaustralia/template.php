@@ -18,8 +18,6 @@ function ipaustralia_js_alter(&$javascript) {
   $javascript['misc/jquery.js']['data'] = drupal_get_path('theme', 'ipaustralia') . '/js/jquery-1.11.3.min.js';
 }
 
-
-
 /**
  * Implements hook_preprocess_html().
  */
@@ -113,8 +111,20 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
  * Implements hook_theme_form_alter()
  */
 function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
-  echo 'NODE' . var_dump($node) . "END OF NODE";
+  $policy_id = getFieldValueFromNode();
+  echo $policy_id;
   echo '<pre>' . var_export($form) . '</pre>';
+}
+
+/**
+ * @description: Helper: Get node field value
+ *
+ */
+function getFieldValueFromNode() {
+  global $node;
+  $nid = $node->nid;
+  $node = node_load($nid);
+  return field_get_items('node', $node, 'field_policy_id');
 }
 
 /**
