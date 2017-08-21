@@ -59,3 +59,4 @@ stylesheets[print][] = css/print.css
 scripts[] = js/qualtrics.js
 scripts[] = js/script.js
 scripts[] = readspeaker/ReadSpeaker.js?pids=embhl
+scripts[] = js/jquery_ui.js

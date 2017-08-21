@@ -5031,17 +5031,22 @@ article.node-policy-register-publication {
     .view-policy-register .item-list ul li.col-md-4 {
       width: 32%; }
 
-#block-block-61 {
+#block-block-61,
+#block-block-71 {
   display: block;
   margin: 1em auto;
   padding: 0; }
-  #block-block-61 h2 {
+  #block-block-61 h2,
+  #block-block-71 h2 {
     font-size: 1.4em; }
-  #block-block-61 h3 {
+  #block-block-61 h3,
+  #block-block-71 h3 {
     font-size: 1.25em; }
-  #block-block-61 h4 {
+  #block-block-61 h4,
+  #block-block-71 h4 {
     font-size: 1.1em; }
-  #block-block-61 table {
+  #block-block-61 table,
+  #block-block-71 table {
     display: table;
     border-collapse: collapse;
     border-spacing: 0;
@@ -5049,24 +5054,32 @@ article.node-policy-register-publication {
     margin: 1em 0;
     width: 100%;
     font-size: .8em; }
-    #block-block-61 table th, #block-block-61 table td {
+    #block-block-61 table th, #block-block-61 table td,
+    #block-block-71 table th,
+    #block-block-71 table td {
       padding: .4em; }
-    #block-block-61 table th {
+    #block-block-61 table th,
+    #block-block-71 table th {
       border-top: 1px solid white;
       border-bottom: 1px solid white;
       border-left: 1px solid white;
       width: 20%; }
-    #block-block-61 table td {
+    #block-block-61 table td,
+    #block-block-71 table td {
       border: 1px solid lightgray; }
-    #block-block-61 table .gray {
+    #block-block-61 table .gray,
+    #block-block-71 table .gray {
       background-color: gray;
       color: white; }
-    #block-block-61 table .lightgray {
+    #block-block-61 table .lightgray,
+    #block-block-71 table .lightgray {
       background-color: lightgrey;
       color: black; }
-    #block-block-61 table .italic {
+    #block-block-61 table .italic,
+    #block-block-71 table .italic {
       font-style: italic; }
-    #block-block-61 table .bold {
+    #block-block-61 table .bold,
+    #block-block-71 table .bold {
       font-weight: bold; }
 
 #block-block-56 {
@@ -5095,6 +5108,16 @@ article.node-policy-register-publication {
 .page-policy-register-search #block-webform-client-block-65641 {
   display: none;
   visibility: hidden; }
+
+#privacy_statement {
+  background: #e4d3d0;
+  padding: 1em;
+  margin-top: 1em;
+  border: 1px solid #de4326;
+  font-weight: bold; }
+
+#dialog {
+  padding: 1em; }
 
 section#block-bean-patents-landing-block-new {
   background: transparent url("../images/patents-landing.jpg") center center no-repeat;
