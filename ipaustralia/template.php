@@ -18,8 +18,6 @@ function ipaustralia_js_alter(&$javascript) {
   $javascript['misc/jquery.js']['data'] = drupal_get_path('theme', 'ipaustralia') . '/js/jquery-1.11.3.min.js';
 }
 
-
-
 /**
  * Implements hook_preprocess_html().
  */
@@ -113,8 +111,35 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
  * Implements hook_theme_form_alter()
  */
 function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
-  //echo '<pre>' . var_export($form) . '</pre>';
+  if($form_id == "webform_client_form_65641") {
+    // if($form['#node']->['webform']['components'][10]['form_key'] == "policy_id") {
+    //   $form[]['components'][10]['value'] == "";
+    // }
+    $form['#submit'][] = '_webform_submit_handler';
+
+    // var_export($form['#node']);
+    // var_export($form_state);
+  }
 }
+
+function _webform_submit_handler(&$form, &$form_state) {
+
+
+}
+
+/**
+ * @description: Helper: Get node field value
+ *
+ */
+// function getFieldValueFromNode() {
+//   global $node;
+//   $nid = $node->nid;
+//   $node = node_load($nid);
+//   print_r($node);
+//   //return $node->getField("field_policy_id");
+// }
+
+// getFieldValueFromNode();
 
 /**
  * Implements hook_menu_block_tree_alter().
