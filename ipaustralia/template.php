@@ -113,7 +113,10 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
 function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
   $policy_id = getFieldValueFromNode();
   echo $policy_id;
-  echo '<pre>' . var_export($form) . '</pre>';
+
+  if($form_id == "webform_client_form_65641") {
+    var_export($form);
+  }
 }
 
 /**
@@ -124,7 +127,7 @@ function getFieldValueFromNode() {
   global $node;
   $nid = $node->nid;
   $node = node_load($nid);
-  return field_get_items('node', $node, 'field_policy_id');
+  return $node->getField("field_policy_id");
 }
 
 /**
