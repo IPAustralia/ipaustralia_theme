@@ -75,7 +75,8 @@ article {
 
 
 //Legend block
-#block-block-61 {
+#block-block-61, 
+#block-block-71 {
     display: block;
     margin: 1em auto; 
     padding: 0;
@@ -177,4 +178,17 @@ article {
         display: none;
         visibility: hidden;
     }
+}
+
+//privacy_statement 
+#privacy_statement {
+    background: #e4d3d0;
+    padding: 1em;
+    margin-top: 1em;
+    border: 1px solid #de4326;
+    font-weight: bold;
+}
+
+#dialog {
+    padding: 1em;
 }
