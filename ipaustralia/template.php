@@ -116,6 +116,8 @@ function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
     //   $form[]['components'][10]['value'] == "";
     // }
     $form['#submit'][] = '_webform_submit_handler';
+
+    var_export($form['#node']);
     var_export($form_state);
   }
 }
