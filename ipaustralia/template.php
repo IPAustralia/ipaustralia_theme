@@ -129,7 +129,7 @@ function getFieldValueFromNode() {
   //return $node->getField("field_policy_id");
 }
 
-echo getFieldValueFromNode();
+getFieldValueFromNode();
 
 /**
  * Implements hook_menu_block_tree_alter().
