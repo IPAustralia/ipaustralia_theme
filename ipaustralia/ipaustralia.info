@@ -56,6 +56,6 @@ stylesheets[print][] = css/print.css
 ;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;
 
-scripts[] = js/script.js
 scripts[] = js/qualtrics.js
+scripts[] = js/script.js
 scripts[] = readspeaker/ReadSpeaker.js?pids=embhl
