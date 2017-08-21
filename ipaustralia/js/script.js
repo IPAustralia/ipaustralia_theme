@@ -17,7 +17,7 @@ jQuery(document).ready(function () {
 
     jQuery('body').append("<div id='ZN_0e0bzgMZ1MJCD1H'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>");
 
-    jQuery("#dialog").dialog();
+    //jQuery("#dialog").dialog();
 });
 jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-bloc h3', function () {
     openCloseToolsResources(jQuery(this));
