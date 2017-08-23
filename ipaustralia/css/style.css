@@ -5026,7 +5026,7 @@ article.node-policy-register-publication {
     padding: 1em;
     box-shadow: 2px 2px 6px grey;
     margin: .4em;
-    min-height: 580px;
+    min-height: 600px;
     border-left: 10px solid #0d252c; }
     .view-policy-register .item-list ul li.col-md-4 {
       width: 32%; }
@@ -5117,7 +5117,12 @@ article.node-policy-register-publication {
   font-weight: bold; }
 
 #dialog {
-  padding: 1em; }
+  padding: 1em;
+  margin: 1em;
+  background-color: white;
+  width: 50%;
+  color: black;
+  transition: all 0.3s; }
 
 section#block-bean-patents-landing-block-new {
   background: transparent url("../images/patents-landing.jpg") center center no-repeat;
