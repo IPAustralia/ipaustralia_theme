@@ -16,12 +16,18 @@ jQuery(document).ready(function () {
     } 
 
     jQuery('body').append("<div id='ZN_0e0bzgMZ1MJCD1H'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>");
-
-    jQuery('#dialog').popup();
 });
 
+$('#myLink').click(function(){ MyFunction(); return false; });
 
+jQuery(document).on('click', '.my_popup_open', function() {
+    openPopup();
+    return false;
+});
 
+function openPopup() {
+    jQuery('#dialog').popup();
+}
 
 jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-bloc h3', function () {
     openCloseToolsResources(jQuery(this));
