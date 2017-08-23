@@ -24,7 +24,7 @@ jQuery(document).on('click', '.my_popup_open', function() {
 });
 
 function openPopup() {
-    jQuery('#dialog').popup({transition: 'all 0.3s'});
+    jQuery('#dialog').popup();
 }
 
 jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-bloc h3', function () {
