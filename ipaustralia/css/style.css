@@ -5121,7 +5121,8 @@ article.node-policy-register-publication {
   margin: 1em;
   background-color: white;
   width: 50%;
-  color: black; }
+  color: black;
+  transition: all 0.3s; }
 
 section#block-bean-patents-landing-block-new {
   background: transparent url("../images/patents-landing.jpg") center center no-repeat;

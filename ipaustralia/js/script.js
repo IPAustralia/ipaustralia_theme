@@ -18,7 +18,7 @@ jQuery(document).ready(function () {
     jQuery('body').append("<div id='ZN_0e0bzgMZ1MJCD1H'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>");
 });
 
-jQuery(document).on('click', '.my_popup_open', function() {
+jQuery(document).on('click', '.dialog_open', function() {
     openPopup();
     return false;
 });
