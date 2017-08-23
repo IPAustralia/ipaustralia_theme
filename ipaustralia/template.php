@@ -112,19 +112,14 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
  */
 function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
   if($form_id == "webform_client_form_65641") {
-    $form['#submit'][] = '_webform_submit_handler';
+    if ($node = menu_get_object()) {
+      var_export($node);
 
-    var_export($form['#node']);
+      $form['submitted']['policy_id']['#value'] = $node->field_policy_id['und']['0']['value'];
     
-    //var_export($form_state);
+    }
   }
 }
-
-function _webform_submit_handler(&$form, &$form_state) {
-
-
-}
-
 /**
  * @description: Helper: Get node field value
  *
