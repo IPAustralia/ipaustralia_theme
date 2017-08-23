@@ -17,12 +17,12 @@ jQuery(document).ready(function () {
 
     jQuery('body').append("<div id='ZN_0e0bzgMZ1MJCD1H'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>");
 
-    //jQuery("#dialog").dialog();
-    jQuery('#dialog').notifyModal({
-        duration : 2500,
-        placement : 'center',
-        onTop : true,
-    });
+    // //jQuery("#dialog").dialog();
+    // jQuery('#dialog').notifyModal({
+    //     duration : 2500,
+    //     placement : 'center',
+    //     onTop : true,
+    // });
 });
 
 
