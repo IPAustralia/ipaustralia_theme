@@ -112,13 +112,16 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
  */
 function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
   if($form_id == "webform_client_form_65641") {
-    // if($form['#node']->['webform']['components'][10]['form_key'] == "policy_id") {
+    if($form['#node']->['webform']['components'][10]['form_key'] == "policy_id") {
     //   $form[]['components'][10]['value'] == "";
-    // }
+      echo "Hello world";
+    
+    }
     $form['#submit'][] = '_webform_submit_handler';
 
-    // var_export($form['#node']);
-    // var_export($form_state);
+    var_export($form['#node']);
+    
+    //var_export($form_state);
   }
 }
 
