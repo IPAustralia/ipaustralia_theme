@@ -111,28 +111,15 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
  * Implements hook_theme_form_alter()
  */
 function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
+  //The form itself. Get the form information from the var_dump due to no devel in Saas
   if($form_id == "webform_client_form_65641") {
+    //Get the node information
     if ($node = menu_get_object()) {
-      var_export($node);
-
-      $form['submitted']['policy_id']['#value'] = $node->field_policy_id['und']['0']['value'];
-    
+      //Set the webform value to node value.
+      $form['submitted']['policy_id']['#value'] = $node->field_policy_id['und']['0']['value'];   
     }
   }
 }
-/**
- * @description: Helper: Get node field value
- *
- */
-// function getFieldValueFromNode() {
-//   global $node;
-//   $nid = $node->nid;
-//   $node = node_load($nid);
-//   print_r($node);
-//   //return $node->getField("field_policy_id");
-// }
-
-// getFieldValueFromNode();
 
 /**
  * Implements hook_menu_block_tree_alter().
