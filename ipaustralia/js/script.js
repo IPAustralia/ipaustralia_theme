@@ -10,6 +10,7 @@ jQuery(document).ready(function () {
     toolsAndResourcesTabsCheck();
     personaCookies();
     externalLink();
+    openPopup();
 
     if (jQuery('.application-process-menu').length){
         jQuery('aside.col-sm-3').addClass('app-process-visible');
