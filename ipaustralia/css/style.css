@@ -5246,6 +5246,9 @@ article.node-policy-register-publication {
     width: 30%; }
   .page-node-66741 .med-img {
     width: 50%; }
+  .page-node-66741 .dot-box {
+    border-top: 1px dotted lightgray;
+    padding: 1em .2em; }
   .page-node-66741 .clearfix {
     clear: both;
     overflow: hidden; }
