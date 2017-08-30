@@ -5128,6 +5128,8 @@ article.node-policy-register-publication {
 .page-node-66741 {
   /* Colours */
   /* Table */ }
+  .page-node-66741 article .field-name-field-publish-online-date {
+    margin: 1em 0 !important; }
   .page-node-66741 p, .page-node-66741 h2, .page-node-66741 h3, .page-node-66741 h4, .page-node-66741 h5 {
     padding: .4em 0; }
   .page-node-66741 p, .page-node-66741 ul {
