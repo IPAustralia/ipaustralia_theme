@@ -200,6 +200,10 @@ article {
 
 /* Corporate plan 2017 */
 .page-node-66741 {
+    p, h2, h3, h4, h5 {
+        padding: .4em 0;
+    }
+    
     p, ul {
        font-size: 1.2em;             
     }
@@ -267,7 +271,6 @@ article {
         position:relative;
         width: 100%;
         margin-top: -100px;
-        z-index: 9988;
     }
                
     .cover h2 {
@@ -347,6 +350,14 @@ article {
     .light-yellow {
         background-color: rgb(252, 234, 215); /* #fcead7 */       
     }
+
+    .light-gray {
+        background-color: lightgray;
+    }
+
+    .light-yellow, .light-gray, .light-green, .light-blue, .light-gray-blue, .bright-blue, .bright-red,  .gold-yellow, .sky-blue, .blue-green, .bright-green {
+        padding: .4em;
+    }
                
     .yellow-box,
     .green-box,
@@ -366,7 +377,11 @@ article {
     }
 
     .small-img {
-        width: 20%;
+        width: 40%;
+    }
+
+    .med-img {
+        width: 50%;
     }
     
     .clearfix {
