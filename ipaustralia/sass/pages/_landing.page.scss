@@ -387,6 +387,11 @@ article {
         width: 50%;
     }
     
+    .dot-box {
+        border-top: 1px dotted lightgray;
+        padding: 1em .2em;
+    }
+
     .clearfix {
         clear: both;
         overflow: hidden;
