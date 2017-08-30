@@ -5128,6 +5128,8 @@ article.node-policy-register-publication {
 .page-node-66741 {
   /* Colours */
   /* Table */ }
+  .page-node-66741 article .field-name-field-publish-online-date {
+    margin: 1em 0 !important; }
   .page-node-66741 p, .page-node-66741 h2, .page-node-66741 h3, .page-node-66741 h4, .page-node-66741 h5 {
     padding: .4em 0; }
   .page-node-66741 p, .page-node-66741 ul {
@@ -5241,7 +5243,7 @@ article.node-policy-register-publication {
     text-align: center;
     margin: 0; }
   .page-node-66741 .small-img {
-    width: 40%; }
+    width: 30%; }
   .page-node-66741 .med-img {
     width: 50%; }
   .page-node-66741 .clearfix {
@@ -5295,15 +5297,13 @@ article.node-policy-register-publication {
   .page-node-66741 .purple-hr {
     color: #cdbed6;
     border: 4px solid #cdbed6; }
-  .page-node-66741 .purple {
-    color: #cdbed5;
+  .page-node-66741 .purple-bold {
+    color: #61116A;
     font-weight: bold; }
+  .page-node-66741 .purple {
+    color: #61116A; }
   .page-node-66741 .in-middle {
-    position: absolute;
-    margin-top: -90%;
-    padding-top: 12%;
-    margin-left: 25%;
-    margin-right: 25%; }
+    margin: 25% 0 0 0; }
 
 section#block-bean-patents-landing-block-new {
   background: transparent url("../images/patents-landing.jpg") center center no-repeat;
