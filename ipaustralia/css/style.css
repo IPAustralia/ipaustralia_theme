@@ -5011,6 +5011,10 @@ article.node-policy-register-publication {
   article.node-policy-register-publication .field-name-field-comments .field-label {
     font-size: 1.4em; }
 
+#edit-combine-wrapper {
+  width: 100%;
+  margin: 1em 0; }
+
 .view-policy-register .view-filters {
   background-color: lightgray;
   border: 1px solid gray;
