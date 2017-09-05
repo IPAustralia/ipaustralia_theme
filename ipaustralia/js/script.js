@@ -22,6 +22,8 @@ jQuery(document).ready(function () {
         openPopup();
         return false;
     });
+
+    jQuery('.view-policy-register li.views-row').matchHeight();
 });
 
 jQuery(document).on('click', '.dialog_open', function() {
@@ -158,6 +160,7 @@ function resizing() {
     slickSlides();
     slideApplicationProcess();
     stickyMenu();
+    jQuery('.view-policy-register li.views-row').matchHeight();
 }
 function equaliseElementsHeight() {
     /*

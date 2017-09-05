@@ -5030,7 +5030,6 @@ article.node-policy-register-publication {
     padding: 1em;
     box-shadow: 2px 2px 6px grey;
     margin: .4em;
-    min-height: 600px;
     border-left: 10px solid #0d252c; }
     .view-policy-register .item-list ul li.col-md-4 {
       width: 32%; }
@@ -5311,6 +5310,23 @@ article.node-policy-register-publication {
     color: #61116A; }
   .page-node-66741 .in-middle {
     margin: 25% 0 0 0; }
+
+@media (max-width: 480px) {
+  .view-policy-register .col-md-4 {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 1em 0; } }
+@media (max-width: 768) {
+  .view-policy-register .col-md-4 {
+    width: 48%;
+    display: block; } }
+.view-policy-register .item-list ul.cleared li {
+  border: none;
+  padding: 1em;
+  box-shadow: none;
+  margin: .4em;
+  border-left: none; }
 
 section#block-bean-patents-landing-block-new {
   background: transparent url("../images/patents-landing.jpg") center center no-repeat;

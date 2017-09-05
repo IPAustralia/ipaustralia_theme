@@ -12,5 +12,12 @@
 	h6 {font-size: 20px;}
 	#ipAustralia-block {display:none;}
 	p {page-break-inside: avoid;}
+
+	a[href]:after {
+		content: none !important;
+	}
 	
+	.col-md-4 {
+		width: 100% !important;
+	}
 }
