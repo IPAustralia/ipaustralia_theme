@@ -35,7 +35,8 @@ function openPopup() {
     jQuery('#dialog').popup();
 }
 
-jQuery(window).on('load', function () {
+jQuery(document).ajaxComplete(function(e){
+   e.preventDefault();
    jQuery('.view-policy-register li.views-row').matchHeight();
 });
 
