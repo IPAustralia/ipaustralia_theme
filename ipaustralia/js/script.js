@@ -24,6 +24,11 @@ jQuery(document).ready(function () {
     });
 
     jQuery('.view-policy-register li.views-row').matchHeight();
+
+    jQuery(document).ajaxComplete(function(e){
+        e.preventDefault();
+        jQuery('.view-policy-register li.views-row').matchHeight();
+    });
 });
 
 jQuery(document).on('click', '.dialog_open', function() {
