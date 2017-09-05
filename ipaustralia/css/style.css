@@ -5032,7 +5032,10 @@ article.node-policy-register-publication {
     margin: .4em;
     border-left: 10px solid #0d252c; }
     .view-policy-register .item-list ul li.col-md-4 {
-      width: 32%; }
+      width: 100%;
+      display: block;
+      position: relative;
+      margin: 1em 0; }
 
 #block-block-61,
 #block-block-71 {
@@ -5311,16 +5314,12 @@ article.node-policy-register-publication {
   .page-node-66741 .in-middle {
     margin: 25% 0 0 0; }
 
-@media (max-width: 480px) {
+@media (min-width: 969) {
   .view-policy-register .col-md-4 {
-    width: 100% !important;
-    display: block;
-    position: relative;
-    margin: 1em 0 !important; } }
-@media (max-width: 768) {
+    width: 32% !important; } }
+@media (min-width: 768) and (max-width: 968) {
   .view-policy-register .col-md-4 {
-    width: 48% !important;
-    display: block; } }
+    width: 48% !important; } }
 .view-policy-register .item-list ul.cleared li {
   border: none;
   padding: 1em;
