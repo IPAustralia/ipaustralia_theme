@@ -500,16 +500,16 @@ article {
 .view-policy-register {
     @media (max-width:480px) {
         .col-md-4 {
-            width: 100%;
+            width: 100% !important;
             display: block;
             position: relative; 
-            margin: 1em 0;
+            margin: 1em 0 !important;
         }
     }
 
     @media (max-width:768) {
         .col-md-4 {
-            width: 48%;
+            width: 48% !important;
             display: block;
         }
     }
