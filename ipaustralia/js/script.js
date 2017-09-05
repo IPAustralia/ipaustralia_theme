@@ -35,6 +35,10 @@ function openPopup() {
     jQuery('#dialog').popup();
 }
 
+jQuery(window).on('load', function () {
+   jQuery('.view-policy-register li.views-row').matchHeight();
+});
+
 jQuery(document).on('click', '.bp-small #block-bean-tools-and-resources-generic-bloc h3', function () {
     openCloseToolsResources(jQuery(this));
 });

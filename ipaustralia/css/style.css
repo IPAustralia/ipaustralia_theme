@@ -5313,13 +5313,13 @@ article.node-policy-register-publication {
 
 @media (max-width: 480px) {
   .view-policy-register .col-md-4 {
-    width: 100%;
+    width: 100% !important;
     display: block;
     position: relative;
-    margin: 1em 0; } }
+    margin: 1em 0 !important; } }
 @media (max-width: 768) {
   .view-policy-register .col-md-4 {
-    width: 48%;
+    width: 48% !important;
     display: block; } }
 .view-policy-register .item-list ul.cleared li {
   border: none;
