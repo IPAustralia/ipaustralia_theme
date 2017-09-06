@@ -5329,6 +5329,15 @@ article.node-policy-register-publication {
   .view-policy-register .col-md-4 {
     width: 48% !important;
     margin: 1em .9em 0 0 !important; } }
+/* Hard coded to hide the feedback form from the policy register archive page */
+.page-node-68281 .region-content-bottom,
+.page-node-68286 .region-content-bottom,
+.page-node-68291 .region-content-bottom,
+.page-node-68296 .region-content-bottom {
+  display: none;
+  visibility: hidden;
+  width: 0; }
+
 section#block-bean-patents-landing-block-new {
   background: transparent url("../images/patents-landing.jpg") center center no-repeat;
   background-size: cover;

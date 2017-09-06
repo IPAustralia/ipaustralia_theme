@@ -531,3 +531,15 @@ article {
         }
     }
 }
+
+/* Hard coded to hide the feedback form from the policy register archive page */
+.page-node-68281,
+.page-node-68286,
+.page-node-68291,
+.page-node-68296 {
+    .region-content-bottom {
+        display: none;
+        visibility: hidden;
+        width: 0;
+    }
+}
