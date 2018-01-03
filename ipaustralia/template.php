@@ -44,7 +44,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KSCK47');";
-  $script = array( 
+  $script = array(
     '#tag' => 'script',
     '#value' => $gtm_string
   );
@@ -61,6 +61,7 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
   $vars['iptoolkit_logo'] = theme('image', array(
     'path' => drupal_get_path('theme', 'ipaustralia') . '/images/DIIS_logo.png',
     'attributes' => array('class' => 'iptoolkit-logo'),
+    'alt' => 'Department of Industry, Innovation and Science',
   ));
 
   // Add class to determine whether to use cookies or not.
@@ -116,7 +117,7 @@ function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
     //Get the node information
     if ($node = menu_get_object()) {
       //Set the webform value to node value.
-      $form['submitted']['policy_id']['#value'] = $node->field_policy_id['und']['0']['value'];   
+      $form['submitted']['policy_id']['#value'] = $node->field_policy_id['und']['0']['value'];
     }
   }
 }
