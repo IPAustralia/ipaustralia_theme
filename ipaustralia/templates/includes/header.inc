@@ -14,7 +14,7 @@
             </div>
         </div>
     </div>
-    <nav class="navbar-default" role="navigation">
+    <nav class="navbar-default" aria-label="Main navigation">
         <div class="navbar-header">
             <button
                 type="button"
