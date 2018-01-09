@@ -102,9 +102,17 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
     // e.g. page--trade_mark_certification_rules.tpl.php
     $vars['theme_hook_suggestions'][] = 'page__' . $vars['node']->type;
   }
-  if (drupal_is_front_page()) {
-    // Homepage doesn't have sidebars.
-    $vars['content_column_class'] = ' class="col-sm-12"';
+
+  if (!empty($variables['page']['sidebar_first']) || !empty($variables['page']['sidebar_second'])) {
+    // if one side bar, eg a menu
+    $variables['content_column_class'] = ' class="col-sm-9"';
+  }
+  elseif (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    // both sidebars
+    $variables['content_column_class'] = ' class="col-sm-6"';
+  } else {
+    // neither sidebar, eg the homepage
+    $variables['content_column_class'] = ' class="col-sm-12"';
   }
 }
 

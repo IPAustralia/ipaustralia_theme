@@ -13,7 +13,7 @@ var WRInitTime=(new Date()).getTime();
 
 <div class="main-container">
 
-  <div class="overlay" />
+  <div class="overlay"></div>
 
   <?php if (!empty($messages)): ?>
     <div class="messages">

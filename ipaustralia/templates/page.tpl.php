@@ -13,7 +13,7 @@ var WRInitTime=(new Date()).getTime();
 
 <div class="main-container <?php if (isset($page_classes)): print implode(' ', $page_classes); endif; ?>">
 
-  <div class="overlay" />
+  <div class="overlay"></div>
 
 <!-- breadcrumb was here -->
 
@@ -45,7 +45,7 @@ var WRInitTime=(new Date()).getTime();
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
 
-    <section<?php print $content_column_class; ?> role="main" aria-labelledby="mainHeading">
+    <section<?php print $variables['content_column_class']; ?> role="main" aria-labelledby="mainHeading">
       <a id="main-content"></a>
 
       <?php if (!empty($tabs)): ?>

@@ -19,7 +19,7 @@ Applicaiton process on body
         text-decoration: none;
         color: #000;
         display: block;
-        background: none; 
+        background: none;
     }
 
     ul {
@@ -78,11 +78,6 @@ Applicaiton process on body
                 color:$charcoal;
                 height:99px;
                 overflow:hidden;
-                @media only screen and (max-width: $break-point-large + 200) {
-                    height: 65px;
-                    white-space: nowrap;
-                    text-overflow:ellipsis;
-                }
                 @media only screen and (max-width: $break-point-large) {
                     height:89px;
                     white-space: normal;
