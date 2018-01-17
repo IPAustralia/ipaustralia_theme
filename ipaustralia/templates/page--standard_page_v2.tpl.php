@@ -50,23 +50,33 @@ var WRInitTime=(new Date()).getTime();
 
       <!-- breadcrumbs were here -->
       <div class="row">
-      <?php if (!empty($title)): ?>
-          <div class="col-md-6 col-sm-12">
-            <h1 id="mainHeading"><?php print $title; ?></h1>
-          </div>
+      <?php
+        $hero_image = $page['content']['system_main']['nodes'][$node->nid]['field_masthead_image'];
+        if (!empty($title)):
+          if (!empty($hero_image)): ?>
+            <div class="col-md-6 col-sm-12">
+          <?php else: ?>
+            <div class="col-sm-12">
+          <?php endif; ?>
+          <h1 id="mainHeading"><?php print $title; ?></h1>
+          <?php
+              $subtitle = $page['content']['system_main']['nodes'][$node->nid]['field_subtitle'];
+              if (!empty($subtitle)): ?>
+                <div class="subtitle"><?php print render($subtitle); ?></div>
+          <?php endif; ?>
+        </div>
       <?php endif; ?>
       <?php
-          $hero_image = $page['content']['system_main']['nodes'][$node->nid]['field_masthead_image'];
-          if (!empty($hero_image)): ?>
-          <div class="col-md-6 col-sm-12">
-            <?php print render($hero_image); ?>
-          </div>
+        if (!empty($hero_image)): ?>
+        <div class="col-md-6 col-sm-12">
+          <?php print render($hero_image); ?>
+        </div>
       <?php endif; ?>
       </div>
       <?php
           $page_body = $page['content']['system_main']['nodes'][$node->nid]['body'];
           if (!empty($page_body)): ?>
-          <p>then body</p>
+          <hr>
           <?php print render($page_body); ?>
       <?php endif; ?>
 
@@ -91,14 +101,3 @@ var WRInitTime=(new Date()).getTime();
 document.write(unescape("%3Cscript%20src='"+(document.location.protocol=='https:'? "https://cdnssl.clicktale.net/www/ptc/8dd11315-763a-4246-bb54-dfc6d9cb1206.js":"http://cdn.clicktale.net/www/ptc/8dd11315-763a-4246-bb54-dfc6d9cb1206.js") + "'%20type='text/javascript'%3E%3C/script%3E"));
 </script>
 <!-- ClickTale end of Bottom part -->
-
-<?php
-// one off fix until custom block 1's removed, to make the block actually blank
-// for views to display over 9 bootstrap columns with a left menu
-db_update('block_custom')
-  ->fields(array(
-    'body' => NULL,
-  ))
-  ->condition('bid', 1, '=')
-  ->execute();
-?>
