@@ -91,3 +91,14 @@ var WRInitTime=(new Date()).getTime();
 document.write(unescape("%3Cscript%20src='"+(document.location.protocol=='https:'? "https://cdnssl.clicktale.net/www/ptc/8dd11315-763a-4246-bb54-dfc6d9cb1206.js":"http://cdn.clicktale.net/www/ptc/8dd11315-763a-4246-bb54-dfc6d9cb1206.js") + "'%20type='text/javascript'%3E%3C/script%3E"));
 </script>
 <!-- ClickTale end of Bottom part -->
+
+<?php
+// one off fix until custom block 1's removed, to make the block actually blank
+// for views to display over 9 bootstrap columns with a left menu
+db_update('block_custom')
+  ->fields(array(
+    'body' => NULL,
+  ))
+  ->condition('bid', 1, '=')
+  ->execute();
+?>
