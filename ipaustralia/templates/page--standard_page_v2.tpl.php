@@ -23,7 +23,32 @@ var WRInitTime=(new Date()).getTime();
     </div>
   <?php endif; ?>
 
-  <!-- title was here -->
+  <div class="row mastheadWrapper">
+    <div class="container">
+    <?php
+      $hero_image = $page['content']['system_main']['nodes'][$node->nid]['field_masthead_image'];
+      if (!empty($title)):
+        if (!empty($hero_image)): ?>
+          <div class="col-md-6 col-sm-12">
+        <?php else: ?>
+          <div class="col-sm-12">
+        <?php endif; ?>
+        <h1 id="mainHeading"><?php print $title; ?></h1>
+        <?php
+            $subtitle = $page['content']['system_main']['nodes'][$node->nid]['field_subtitle'];
+            if (!empty($subtitle)): ?>
+              <div class="subtitle"><?php print render($subtitle); ?></div>
+        <?php endif; ?>
+      </div>
+    <?php endif; ?>
+    <?php
+      if (!empty($hero_image)): ?>
+      <div class="col-md-6 col-sm-12">
+        <?php print render($hero_image); ?>
+      </div>
+    <?php endif; ?>
+    </div>
+  </div>
 
   <?php print render($page['content_top']); ?>
 
@@ -49,35 +74,10 @@ var WRInitTime=(new Date()).getTime();
       <?php endif; ?>
 
       <!-- breadcrumbs were here -->
-      <div class="row">
-      <?php
-        $hero_image = $page['content']['system_main']['nodes'][$node->nid]['field_masthead_image'];
-        if (!empty($title)):
-          if (!empty($hero_image)): ?>
-            <div class="col-md-6 col-sm-12">
-          <?php else: ?>
-            <div class="col-sm-12">
-          <?php endif; ?>
-          <h1 id="mainHeading"><?php print $title; ?></h1>
-          <?php
-              $subtitle = $page['content']['system_main']['nodes'][$node->nid]['field_subtitle'];
-              if (!empty($subtitle)): ?>
-                <div class="subtitle"><?php print render($subtitle); ?></div>
-          <?php endif; ?>
-        </div>
-      <?php endif; ?>
-      <?php
-        if (!empty($hero_image)): ?>
-        <div class="col-md-6 col-sm-12">
-          <?php print render($hero_image); ?>
-        </div>
-      <?php endif; ?>
-      </div>
       <?php
           $page_body = $page['content']['system_main']['nodes'][$node->nid]['body'];
           if (!empty($page_body)): ?>
-          <hr>
-          <?php print render($page_body); ?>
+            <?php print render($page_body); ?>
       <?php endif; ?>
 
     </section>

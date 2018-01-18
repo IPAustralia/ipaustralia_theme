@@ -1,3 +1,4 @@
+// standard page with split header
 div.field-name-field-masthead-image {
   img{
     display: block;
@@ -5,4 +6,8 @@ div.field-name-field-masthead-image {
     margin-right: auto;
     padding: 0.5em;
   }
+}
+
+div.mastheadWrapper {
+  background-color: $color_athens_gray_approx;
 }
