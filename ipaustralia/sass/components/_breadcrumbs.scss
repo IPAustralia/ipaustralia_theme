@@ -1,7 +1,5 @@
 .breadcrumbs {
-    background: $lighter-grey;
     padding: 20px 0px;
-
     ol {
         padding: 0px;
         margin: 0px;
@@ -19,7 +17,6 @@
             }
             a {
                 text-decoration: underline;
-
             }
         }
         > li + li::before {

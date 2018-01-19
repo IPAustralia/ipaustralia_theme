@@ -59,7 +59,7 @@ var WRInitTime=(new Date()).getTime();
       <?php endif; ?>
 
       <?php if (!empty($breadcrumb)): ?>
-        <div class="breadcrumbs">
+        <div class="breadcrumbs" role="navigation">
           <div class="container">
              <?php print $breadcrumb; ?>
           </div>

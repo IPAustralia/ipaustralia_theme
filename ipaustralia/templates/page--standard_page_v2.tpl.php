@@ -15,7 +15,7 @@ var WRInitTime=(new Date()).getTime();
 
   <div class="overlay"></div>
 
-  <?php if (!empty($messages)): ?>
+  <?php if (isset($messages) && !empty($messages)): ?>
     <div class="messages">
       <div class="container">
         <?php print $messages; ?>
@@ -26,23 +26,23 @@ var WRInitTime=(new Date()).getTime();
   <div class="row mastheadWrapper">
     <div class="container">
     <?php
-      $hero_image = $page['content']['system_main']['nodes'][$node->nid]['field_masthead_image'];
-      if (!empty($title)):
-        if (!empty($hero_image)): ?>
+      $hero_image = isset($page['content']['system_main']['nodes'][$node->nid]['field_masthead_image']) ? $page['content']['system_main']['nodes'][$node->nid]['field_masthead_image'] : null;
+      if (isset($title) && !empty($title)):
+        if (isset($hero_image) && !empty($hero_image)): ?>
           <div class="col-md-6 col-sm-12">
         <?php else: ?>
           <div class="col-sm-12">
         <?php endif; ?>
         <h1 id="mainHeading"><?php print $title; ?></h1>
         <?php
-            $subtitle = $page['content']['system_main']['nodes'][$node->nid]['field_subtitle'];
-            if (!empty($subtitle)): ?>
+            $subtitle = isset($page['content']['system_main']['nodes'][$node->nid]['field_subtitle']) ? $page['content']['system_main']['nodes'][$node->nid]['field_subtitle'] : null;
+            if (isset($subtitle) && !empty($subtitle)): ?>
               <div class="subtitle"><?php print render($subtitle); ?></div>
         <?php endif; ?>
       </div>
     <?php endif; ?>
     <?php
-      if (!empty($hero_image)): ?>
+      if (isset($hero_image) && !empty($hero_image)): ?>
       <div class="col-md-6 col-sm-12">
         <?php print render($hero_image); ?>
       </div>
@@ -54,7 +54,7 @@ var WRInitTime=(new Date()).getTime();
 
   <div class="container">
 
-    <?php if (!empty($page['sidebar_first'])): ?>
+    <?php if (isset($page['sidebar_first']) && !empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3">
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
@@ -63,26 +63,33 @@ var WRInitTime=(new Date()).getTime();
     <section<?php print $variables['content_column_class']; ?> role="main" aria-labelledby="mainHeading">
       <a id="main-content"></a>
 
-      <?php if (!empty($tabs)): ?>
+      <?php if (isset($tabs) && !empty($tabs)): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
-      <?php if (!empty($page['help'])): ?>
+      <?php if (isset($page['help']) && !empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
-      <?php if (!empty($action_links)): ?>
+      <?php if (isset($action_links) && !empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
 
-      <!-- breadcrumbs were here -->
+      <?php if (isset($breadcrumb) && !empty($breadcrumb)): ?>
+        <div class="breadcrumbs" role="navigation">
+          <div class="container">
+             <?php print $breadcrumb; ?>
+          </div>
+        </div>
+      <?php endif; ?>
+
       <?php
-          $page_body = $page['content']['system_main']['nodes'][$node->nid]['body'];
-          if (!empty($page_body)): ?>
+          $page_body = isset($page['content']['system_main']['nodes'][$node->nid]['body']) ? $page['content']['system_main']['nodes'][$node->nid]['body'] : null;
+          if (isset($page_body) && !empty($page_body)): ?>
             <?php print render($page_body); ?>
       <?php endif; ?>
 
     </section>
 
-    <?php if (!empty($page['sidebar_second'])): ?>
+    <?php if (isset($page['sidebar_second']) && !empty($page['sidebar_second'])): ?>
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
