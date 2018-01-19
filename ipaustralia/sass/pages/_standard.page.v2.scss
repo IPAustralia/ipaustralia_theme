@@ -1,12 +1,20 @@
 // standard page with split header
 .node-type-standard-page-v2 {
-  aside .region-sidebar-first .well ul li:first-child {
-    border-top: 0.3em solid #000000;
-    margin-top: -0.25em;
+  aside{
+    .region-sidebar-first.well {;
+      ul {
+        li {
+          &:first-child {
+            border-top: none !important;
+            margin-top: -0.25em;
+          }
+        }
+      }
+    }
   }
 
   div.field-name-field-masthead-image {
-    img{
+    img {
       display: block;
       margin-left: auto;
       margin-right: auto;
