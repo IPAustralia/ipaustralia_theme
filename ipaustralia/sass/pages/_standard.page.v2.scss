@@ -1,11 +1,11 @@
 // standard page with split header
 .node-type-standard-page-v2 {
   aside{
-    .region-sidebar-first.well {;
+      .region-sidebar-first.well {
       ul {
         li {
           &:first-child {
-            border-top: none !important;
+            border-top: none;
             margin-top: -0.25em;
           }
         }
