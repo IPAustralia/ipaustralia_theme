@@ -1,4 +1,8 @@
 rules:
+  border-zero:
+    - 1
+    -
+      convention: 'none'
   clean-import-paths:
     - 1
     -
@@ -8,4 +12,4 @@ rules:
   nesting-depth:
     - 1
     -
-      max-depth: 6
+      max-depth: 4

@@ -4,14 +4,10 @@
   // remove the border at the top of the left nav
   aside {
     .region-sidebar-first {
-      .well {
-        ul {
-          li {
-            &:first-child {
-              border-top: 0;
-              margin-top: -.25em;
-            }
-          }
+      ul {
+        li &:first-child {
+          border-top: none;
+          margin-top: -.25em;
         }
       }
     }
