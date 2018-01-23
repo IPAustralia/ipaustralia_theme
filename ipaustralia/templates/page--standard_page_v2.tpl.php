@@ -23,7 +23,7 @@ var WRInitTime=(new Date()).getTime();
     </div>
   <?php endif; ?>
 
-  <div class="row mastheadWrapper">
+  <div class="masthead-wrapper">
     <div class="container">
     <?php
       $hero_image = isset($page['content']['system_main']['nodes'][$node->nid]['field_masthead_image']) ? $page['content']['system_main']['nodes'][$node->nid]['field_masthead_image'] : null;
@@ -73,7 +73,7 @@ var WRInitTime=(new Date()).getTime();
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
 
-      <?php if (isset($breadcrumb) && !empty($breadcrumb)): ?>
+      <?php if (!empty($breadcrumb)): ?>
         <div class="breadcrumbs" role="navigation">
           <div class="container">
              <?php print $breadcrumb; ?>

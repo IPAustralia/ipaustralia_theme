@@ -1,19 +1,24 @@
 // standard page with split header
 .node-type-standard-page-v2 {
-  aside{
-      .region-sidebar-first.well {
-      ul {
-        li {
-          &:first-child {
-            border-top: none;
-            margin-top: -0.25em;
+
+  // remove the border at the top of the left nav
+  aside {
+    .region-sidebar-first {
+      .well {
+        ul {
+          li {
+            &:first-child {
+              border-top: 0;
+              margin-top: -.25em;
+            }
           }
         }
       }
     }
   }
 
-  div.field-name-field-masthead-image {
+  // masthead image centred in the right column
+  .field-name-field-masthead-image {
     img {
       display: block;
       margin-left: auto;
@@ -21,15 +26,17 @@
     }
   }
 
-  div.mastheadWrapper {
-    background-color: #fafafa;
-    border-bottom: 0.3em solid #000000;
+  // masthead background and border
+  .masthead-wrapper {
+    background-color: $very-light-grey;
+    border-bottom: .3em solid $black;
   }
 
+  // padding for the main content
   .main-container {
     .container {
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
+      padding-bottom: .5em;
+      padding-top: .5em;
     }
   }
 }
