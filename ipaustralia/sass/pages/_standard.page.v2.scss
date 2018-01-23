@@ -1,13 +1,15 @@
 // standard page with split header
-.node-type-standard-page-v2 {
 
+.node-type-standard-page-v2 {
   // remove the border at the top of the left nav
   aside {
-    .region-sidebar-first {
+    .region-sidebar-first.well {
       ul {
-        li &:first-child {
-          border-top: none;
-          margin-top: -.25em;
+        li {
+          &:first-child {
+            border-top: none;
+            margin-top: -.25em;
+          }
         }
       }
     }
