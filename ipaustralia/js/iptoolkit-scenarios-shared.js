@@ -45,9 +45,5 @@
       $('[data-toggle="tooltip"]').tooltip();
     })
 
-    /* -- script for clearing radios on page load -- */
-    $(document).ready(function() {
-      $('input[type=radio]').attr('checked', false);
-    })
   })
 })(jQuery);
