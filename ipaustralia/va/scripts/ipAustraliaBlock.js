@@ -9890,12 +9890,12 @@ window.Nina.config.newConfig = function(agentConfig) {
              * The version of the UI. Injected by Grunt based on package.json and build #
              * @type {string}
              */
-            version: "ipAustraliaBlock-201802121549",
+            version: "ipAustraliaBlock-201802191611",
             /**
              * The date and time the build of the UI took place. Automatically generated during build in the client's Gruntfile
              * @type {string}
              */
-            date: "2018-02-12 17:09",
+            date: "2018-02-19 16:28",
             /**
              * The maximum length of a user query
              * @type {int}
@@ -10195,8 +10195,8 @@ window.Nina.config.newConfig = function(agentConfig) {
                 houstonURL: "https://agent-preprod.au.nod.nuance.com/houston/houston.html",
                 houstonURL_IE89: "https://agent-preprod.au.nod.nuance.com/houston/houston_ie89.js",
                 base_url: {
-                    "AS": "https://agent-preprod-as.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/jbotservice.asmx/TalkAgent",
-                    "AM": "https://agent-preprod-am.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/jbotservice.asmx/TalkAgent "
+                    "AS": "https://agent-preprod-as.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/",
+                    "AM": "https://agent-preprod-am.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/"
                 },
                 use_smart_router: false,
                 smart_router_endpoint: "",
@@ -10216,8 +10216,8 @@ window.Nina.config.newConfig = function(agentConfig) {
                 houstonURL: "https://agent.au.nod.nuance.com/houston/houston.html",
                 houstonURL_IE89: "https://agent.au.nod.nuance.com/houston/houston_ie89.js",
                 base_url: {
-                    "AS": "https://agent-as.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/jbotservice.asmx/TalkAgent",
-                    "AM": "https://agent-am.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/jbotservice.asmx/TalkAgent"
+                    "AS": "https://agent-as.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/",
+                    "AM": "https://agent-am.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/"
                 },
                 use_smart_router: false,
                 smart_router_endpoint: "",
@@ -11807,7 +11807,7 @@ window.Nina.helper.newDebug = function(_ui, _cookiesJar) {
             }
 		},
 		getUIVersion: function() {
-			return "ipAustraliaBlock-201802121549";
+			return "ipAustraliaBlock-201802191611";
 		},
 		switchPreprodMode: function(reload) {
 			reload = (reload !== "undefined") ? reload : true;
@@ -15462,8 +15462,8 @@ window.NinaVars = window.NinaVars || {};
                 houstonURL: "https://agent-preprod.au.nod.nuance.com/houston/houston.html",
                 houstonURL_IE89: "https://agent-preprod.au.nod.nuance.com/houston/houston_ie89.js",
                 base_url: {
-                    "AS": "https://agent-preprod-as.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/jbotservice.asmx/TalkAgent",
-                    "AM": "https://agent-preprod-am.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/jbotservice.asmx/TalkAgent"
+                    "AS": "https://agent-preprod-as.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/",
+                    "AM": "https://agent-preprod-am.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/"
                 },
                 use_smart_router: false,
                 smart_router_endpoint: "",
@@ -15474,8 +15474,8 @@ window.NinaVars = window.NinaVars || {};
                 houstonURL: "https://agent.au.nod.nuance.com/houston/houston.html",
                 houstonURL_IE89: "https://agent.au.nod.nuance.com/houston/houston_ie89.js",
                 base_url: {
-                    "AS": "https://agent-as.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/jbotservice.asmx/TalkAgent",
-                    "AM": "https://agent-am.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/jbotservice.asmx/TalkAgent"
+                    "AS": "https://agent-as.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/",
+                    "AM": "https://agent-am.au.nod.nuance.com/IPAus-Service_AU-EnglishUS-WebBotRouter/"
                 },
                 use_smart_router: false,
                 smart_router_endpoint: "",
