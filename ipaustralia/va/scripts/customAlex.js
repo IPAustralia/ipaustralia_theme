@@ -3,7 +3,8 @@
 *
 */
 NinaVars = {
-    welcome: 'Hello. I&rsquo;m Alex, IP Australia&rsquo;s virtual assistant. I can assist with general intellectual property rights information and online services questions. We have information about your <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4861991975096831866" class="dialog toc-filter-processed">privacy.</a>',
+    //welcome: 'Hello. I&rsquo;m Alex, IP Australia&rsquo;s virtual assistant. I can assist with general intellectual property rights information and online services questions. We have information about your <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4861991975096831866" class="dialog toc-filter-processed">privacy.</a>',
+    welcome: 'This is a test site',
     invocationpoint: document.location.href
 };
 //Activate pre prod when deploying to test site.
