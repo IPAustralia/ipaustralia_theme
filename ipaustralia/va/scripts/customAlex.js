@@ -3,7 +3,9 @@
 *
 */
 NinaVars = {
-    welcome: '<p>Hello. I&rsquo;m Alex, IP Australia&rsquo;s virtual assistant.</p><p>I can assist with general intellectual property rights information and online services questions. We have information about your <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4862048373285474170" class="dialog toc-filter-processed">privacy</a>.</p><p style="color:#f00">Please note: I&rsquo;m undergoing some routine maintenance over the next few days and may not be able to respond to your enquiries at this time.  I&rsquo;m sorry for any inconvenience caused.</p>',
+    welcome: 'Hello. I&rsquo;m Alex, IP Australia&rsquo;s virtual assistant. I can assist with general intellectual property rights information and online services questions. We have information about your <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4862048373285474170" class="dialog toc-filter-processed">privacy.</a>',
+    // maintenance -- welcome: '<p>Hello. I&rsquo;m Alex, IP Australia&rsquo;s virtual assistant.</p><p>I can assist with general intellectual property rights information and online services questions. We have information about your <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4862048373285474170" class="dialog toc-filter-processed">privacy</a>.</p><p style="color:#f00">Please note: I&rsquo;m undergoing some routine maintenance over the next few days and may not be able to respond to your enquiries at this time.  I&rsquo;m sorry for any inconvenience caused.</p>',
+    //possible -- welcome: '<p>Hello. I&rsquo;m Alex, IP Australia&rsquo;s virtual assistant.</p><p>I can assist with general <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4862048837141942138" class="dialog">intellectual property rights</a> information and <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4862048381875408762" class="dialog">online services/a> questions. We have information about your <a href="#" data-vtz-link-type="Dialog" data-vtz-jump="4862048373285474170" class="dialog toc-filter-processed">privacy</a>.</p>',
     invocationpoint: document.location.href
 };
 //Activate pre prod when deploying to test site.
