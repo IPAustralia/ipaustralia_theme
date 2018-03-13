@@ -124,10 +124,6 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
       $template_name = $template_name . '__' . $path_segment;
       $vars['theme_hook_suggestions'][] = $template_name;
     }
-
-    foreach ($vars['theme_hook_suggestions'] as $temp) {
-      echo $temp . '<br>';
-    }
   }
 }
 
