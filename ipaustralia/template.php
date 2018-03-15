@@ -103,16 +103,27 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
     $vars['theme_hook_suggestions'][] = 'page__' . $vars['node']->type;
   }
 
-  if (!empty($variables['page']['sidebar_first']) || !empty($variables['page']['sidebar_second'])) {
+  /* $vars not $variables */
+  if (!empty($vars['page']['sidebar_first']) || !empty($vars['page']['sidebar_second'])) {
     // if one side bar, eg a menu
-    $variables['content_column_class'] = ' class="col-sm-9"';
+    $vars['content_column_class'] = ' class="col-sm-9"';
   }
-  elseif (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+  elseif (!empty($vars['page']['sidebar_first']) && !empty($vars['page']['sidebar_second'])) {
     // both sidebars
-    $variables['content_column_class'] = ' class="col-sm-6"';
+    $vars['content_column_class'] = ' class="col-sm-6"';
   } else {
     // neither sidebar, eg the homepage
-    $variables['content_column_class'] = ' class="col-sm-12"';
+    $vars['content_column_class'] = ' class="col-sm-12"';
+  }
+
+  // add the possibility to base page templates off the aliased path
+  if (isset($vars['node'])) {
+    $template_name = 'page';
+    $alias = drupal_get_path_alias();
+    foreach (explode('/', $alias) as $path_segment) {
+      $template_name = $template_name . '__' . $path_segment;
+      $vars['theme_hook_suggestions'][] = $template_name;
+    }
   }
 }
 
@@ -373,6 +384,5 @@ function ipaustralia_file_link($variables) {
     ) .
     '</span>';
 }
-
 
 include_once dirname(__FILE__) . '/includes/megamenu.inc';
