@@ -604,7 +604,7 @@ if ( typeof Object.create !== "function" ) {
 				}
 				base.afterGo();
 				base.singleItemTransition();
-				
+
 				return false;
 			}
 			var goToPixel = base.positionsInArray[position];
@@ -925,7 +925,7 @@ if ( typeof Object.create !== "function" ) {
 
 				var position = $(this).position();
 				locals.relativePos = position.left;
-				
+
 				locals.offsetX = getTouches(event).x - position.left;
 				locals.offsetY = getTouches(event).y - position.top;
 
@@ -940,7 +940,7 @@ if ( typeof Object.create !== "function" ) {
 
 				base.newPosX = getTouches(event).x- locals.offsetX;
 				base.newPosY = getTouches(event).y - locals.offsetY;
-				base.newRelativeX = base.newPosX - locals.relativePos;	
+				base.newRelativeX = base.newPosX - locals.relativePos;
 
 				if (typeof base.options.startDragging === "function" && locals.dragging !== true && base.newRelativeX !== 0) {
 					locals.dragging = true;
@@ -1004,13 +1004,13 @@ if ( typeof Object.create !== "function" ) {
 				}
 				swapEvents("off");
 			}
-			base.$elem.on(base.ev_types["start"], ".owl-wrapper", dragStart); 
+			base.$elem.on(base.ev_types["start"], ".owl-wrapper", dragStart);
 		},
 
 		getNewPosition : function(){
 			var base = this,
 				newPosition;
-			
+
 			newPosition = base.closestItem();
 
 			if(newPosition>base.maximumItem){
@@ -1036,7 +1036,7 @@ if ( typeof Object.create !== "function" ) {
 					} else {
 						base.currentItem = i;
 					}
-				} 
+				}
 				else if (goal + (base.itemWidth/20) < v && goal + (base.itemWidth/20) > (array[i+1] || array[i]-base.itemWidth) && base.moveDirection() === "right"){
 					if(base.options.scrollPerPage === true){
 						closest = array[i+1] || array[array.length-1];
@@ -1087,7 +1087,7 @@ if ( typeof Object.create !== "function" ) {
 				base.jumpTo(item)
 			});
 		},
-		
+
 		stopOnHover : function(){
 			var base = this;
 			if(base.options.stopOnHover === true && base.browser.isTouch !== true && base.options.autoPlay !== false){
@@ -1122,7 +1122,7 @@ if ( typeof Object.create !== "function" ) {
 				if( typeof $lazyImg.data("src") !== "string"){
 					$item.data("owl-loaded","loaded");
 					continue;
-				}				
+				}
 				if($item.data("owl-loaded") === undefined){
 					$lazyImg.hide();
 					$item.addClass("loading").data("owl-loaded","checked");
@@ -1153,7 +1153,7 @@ if ( typeof Object.create !== "function" ) {
 				iterations += 1;
 				if (base.completeImg($lazyImg.get(0)) || isBackgroundImg === true) {
 					showImage();
-				} else if(iterations <= 100){//if image loads in less than 10 seconds 
+				} else if(iterations <= 100){//if image loads in less than 10 seconds
 					setTimeout(checkLazyImage,100);
 				} else {
 					showImage();
@@ -1183,7 +1183,7 @@ if ( typeof Object.create !== "function" ) {
 				iterations += 1;
 				if ( base.completeImg($currentimg.get(0)) ) {
 					addHeight();
-				} else if(iterations <= 100){ //if image loads in less than 10 seconds 
+				} else if(iterations <= 100){ //if image loads in less than 10 seconds
 					setTimeout(checkImage,100);
 				} else {
 					base.wrapperOuter.css("height", ""); //Else remove height attribute
@@ -1379,7 +1379,7 @@ if ( typeof Object.create !== "function" ) {
 				position;
 
 			if(base.$elem.children().length === 0){return false}
-			
+
 			if(targetPosition === undefined || targetPosition === -1){
 				position = -1;
 			} else {
@@ -1435,7 +1435,7 @@ if ( typeof Object.create !== "function" ) {
 		responsive : true,
 		responsiveRefreshRate : 200,
 		responsiveBaseWidth	: window,
-		
+
 
 		baseClass : "owl-carousel",
 		theme : "owl-theme",
@@ -1465,6 +1465,8 @@ if ( typeof Object.create !== "function" ) {
 		afterAction : false,
 		startDragging : false,
 		afterLazyLoad: false
-		
+
 	};
 })( jQuery, window, document );
+
+/* update */
