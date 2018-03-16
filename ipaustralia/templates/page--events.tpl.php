@@ -78,7 +78,7 @@ var WRInitTime=(new Date()).getTime();
 
   <?php print render($page['content_top']); ?>
 
-  <div class="container">
+  <div> <!-- was class="container"> -->
 
     <?php if (isset($page['sidebar_first']) && !empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3">
