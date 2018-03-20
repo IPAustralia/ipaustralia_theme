@@ -86,7 +86,7 @@ var WRInitTime=(new Date()).getTime();
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
 
-    <section<?php print $variables['content_column_class']; ?> role="main" aria-labelledby="mainHeading">
+    <section<?php print $variables['content_column_class']; ?> role="main" aria-labelledby="mainHeading" style="padding: 0">
       <a id="main-content"></a>
 
       <?php if (isset($tabs) && !empty($tabs)): ?>
