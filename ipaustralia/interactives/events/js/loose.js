@@ -13,7 +13,8 @@ $(window).load(function() {
 -- removed
 */
 
-$(document).ready(function() {
+// $(document).ready(function() {
+$(window).bind('load', function() { // wait for other javascript
   $("#owl-demo").owlCarousel({
     items: 3,
     lazyLoad: true,
