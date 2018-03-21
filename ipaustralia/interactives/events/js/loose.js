@@ -1,3 +1,4 @@
+/*
 $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide",
@@ -9,12 +10,16 @@ $(window).load(function() {
   });
 });
 
+-- removed
+*/
+
 $(document).ready(function() {
   $("#owl-demo").owlCarousel({
     items: 3,
     lazyLoad: true,
-    autoPlay: true,
-    pagination: true,
+    autoPlay: 3000, // -- was true
+    // pagination: true, -- removed
+    navigation: true // -- added
   });
 
   $(".scroll").click(function(event) {
