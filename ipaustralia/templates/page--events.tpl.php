@@ -20,9 +20,10 @@ var WRInitTime=(new Date()).getTime();
   drupal_add_css($events_path . '/css/owl.carousel.css');
   drupal_add_css($events_path . '/css/simplelightbox.min.css');
   drupal_add_css($events_path . '/css/styles.css');
+  drupal_add_css($events_path . '/css/header-and-menu-styles.css');
 
-  drupal_add_html_head_link(array('rel'=>'stylesheet', 'href'=>'http://fonts.googleapis.com/css?family=Abel'));
-  drupal_add_html_head_link(array('rel'=>'stylesheet', 'href'=>'http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese'));
+  drupal_add_html_head_link(array('rel'=>'stylesheet', 'href'=>'https://fonts.googleapis.com/css?family=Abel'));
+  drupal_add_html_head_link(array('rel'=>'stylesheet', 'href'=>'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese'));
 
   // drupal_add_js($events_path . '/js/jquery-2.1.4.min.js', array('type' => 'file', 'scope' => 'footer'));
   // drupal_add_js($events_path . '/js/bootstrap.js', array('type' => 'file', 'scope' => 'footer'));

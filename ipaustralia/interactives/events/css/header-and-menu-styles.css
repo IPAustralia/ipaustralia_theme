@@ -1,0 +1,31 @@
+/* reduce hedaer height, reduce menu heigh & hide items, etc */
+.header {
+  margin-top: 0!important;
+}
+
+header .header {
+  padding: 0 0 20px 0 !important;
+}
+
+.header .logo img {
+  margin-top: 20px;
+}
+
+.megamenu li.icon-home > a {
+  padding: 0;
+}
+
+.navbar {
+  height: 48px;
+}
+
+a.tab-patents.title.dropdown-toggle.megamenu-tab-patents,
+a.tab-trade-marks.title.dropdown-toggle.megamenu-tab-trade-marks,
+a.tab-designs.title.dropdown-toggle.megamenu-tab-designs,
+a.tab-plant-breeder-rights.title.dropdown-toggle.megamenu-tab-plant-breeders-rights,
+a.tab-understanding-ip.title.dropdown-toggle.megamenu-tab-understanding-ip,
+a.tab-ip-infringement.title.dropdown-toggle.megamenu-tab-ip-infringement,
+a.tab-tools--resources.title.dropdown-toggle.megamenu-tab-tools--resources
+ {
+  display: none;
+}
