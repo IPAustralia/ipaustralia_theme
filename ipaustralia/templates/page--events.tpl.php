@@ -29,11 +29,11 @@ var WRInitTime=(new Date()).getTime();
   // drupal_add_js($events_path . '/js/bootstrap.js', array('type' => 'file', 'scope' => 'footer'));
 
   // the order may need to change
-  drupal_add_js($events_path . '/js/jquery.flexslider.js', array('type' => 'file', 'scope' => 'footer'));
-  drupal_add_js($events_path . '/js/easing.js', array('type' => 'file', 'scope' => 'footer'));
-  drupal_add_js($events_path . '/js/move-top.js', array('type' => 'file', 'scope' => 'footer'));
+  // drupal_add_js($events_path . '/js/jquery.flexslider.js', array('type' => 'file', 'scope' => 'footer'));
+  // drupal_add_js($events_path . '/js/easing.js', array('type' => 'file', 'scope' => 'footer'));
+  // drupal_add_js($events_path . '/js/move-top.js', array('type' => 'file', 'scope' => 'footer'));
   drupal_add_js($events_path . '/js/owl.carousel.js', array('type' => 'file', 'scope' => 'footer'));
-  drupal_add_js($events_path . '/js/SmoothScroll.min.js', array('type' => 'file', 'scope' => 'footer'));
+  // drupal_add_js($events_path . '/js/SmoothScroll.min.js', array('type' => 'file', 'scope' => 'footer'));
 
   drupal_add_js($events_path . '/js/loose.js', array('type' => 'file', 'scope' => 'footer'));
 ?>
