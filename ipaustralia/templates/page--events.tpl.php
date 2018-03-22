@@ -14,28 +14,30 @@ var WRInitTime=(new Date()).getTime();
 <?php
   // css, font, & javascript files specific to the events pages
   $events_path = drupal_get_path('theme', 'ipaustralia') . '/interactives/events';
-  // drupal_add_css($events_path . '/css/bootstrap.css');
+  /* drupal_add_css($events_path . '/css/bootstrap.css');
   drupal_add_css($events_path . '/css/flexslider.css');
   drupal_add_css($events_path . '/css/font-awesome.min.css');
   drupal_add_css($events_path . '/css/owl.carousel.css');
   drupal_add_css($events_path . '/css/simplelightbox.min.css');
-  drupal_add_css($events_path . '/css/styles.css');
+  drupal_add_css($events_path . '/css/styles.css'); */
   drupal_add_css($events_path . '/css/header-and-menu-styles.css');
 
+  /*
   drupal_add_html_head_link(array('rel'=>'stylesheet', 'href'=>'https://fonts.googleapis.com/css?family=Abel'));
   drupal_add_html_head_link(array('rel'=>'stylesheet', 'href'=>'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese'));
 
-  // drupal_add_js($events_path . '/js/jquery-2.1.4.min.js', array('type' => 'file', 'scope' => 'footer'));
-  // drupal_add_js($events_path . '/js/bootstrap.js', array('type' => 'file', 'scope' => 'footer'));
+  drupal_add_js($events_path . '/js/jquery-2.1.4.min.js', array('type' => 'file', 'scope' => 'footer'));
+  drupal_add_js($events_path . '/js/bootstrap.js', array('type' => 'file', 'scope' => 'footer'));
 
   // the order may need to change
-  // drupal_add_js($events_path . '/js/jquery.flexslider.js', array('type' => 'file', 'scope' => 'footer'));
-  // drupal_add_js($events_path . '/js/easing.js', array('type' => 'file', 'scope' => 'footer'));
-  // drupal_add_js($events_path . '/js/move-top.js', array('type' => 'file', 'scope' => 'footer'));
+  drupal_add_js($events_path . '/js/jquery.flexslider.js', array('type' => 'file', 'scope' => 'footer'));
+  drupal_add_js($events_path . '/js/easing.js', array('type' => 'file', 'scope' => 'footer'));
+  drupal_add_js($events_path . '/js/move-top.js', array('type' => 'file', 'scope' => 'footer'));
   drupal_add_js($events_path . '/js/owl.carousel.js', array('type' => 'file', 'scope' => 'footer'));
-  // drupal_add_js($events_path . '/js/SmoothScroll.min.js', array('type' => 'file', 'scope' => 'footer'));
+  drupal_add_js($events_path . '/js/SmoothScroll.min.js', array('type' => 'file', 'scope' => 'footer'));
 
   drupal_add_js($events_path . '/js/loose.js', array('type' => 'file', 'scope' => 'footer'));
+  */
 ?>
 
 <div class="main-container <?php if (isset($page_classes)): print implode(' ', $page_classes); endif; ?>">
