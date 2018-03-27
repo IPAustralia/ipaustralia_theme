@@ -9,7 +9,7 @@
 
 /*-- Bootstrap hacks --*/
 
-#ip-summit .btn-primary, .speakers-button .btn-primary, .program-button .btn-primary  {
+#ip-summit .btn-primary, .speakers-button .btn-primary, .program-button .btn-primary {
     background-color: #1D252C;
     border: none;
     padding: 15px;
@@ -25,31 +25,42 @@
 }
 
 
+#ip-summit .btn-primary:focus,
+#ip-summit .btn-primary:active,
+#ip-summit .readmore-w3 a:focus,
+#ip-summit .readmore-w3 a:active,
+#ip-summit .readmore-w3 a.visited,
+.open > .dropdown-toggle.btn-primary {
+  color: #000;
+  background-color: #E5E8EC;
+  border: none;
+}
+
 /*-- Sprite --*/
 
 .sprite-a {
-	background: url('../img/icons%20for%20summit.png') no-repeat -10px -10px;
+	background: url('../img/icons-for-summit.png') no-repeat -10px -10px;
 }
 .sprite-b {
-	background: url('../img/icons%20for%20summit.png') no-repeat -119px -10px;
+	background: url('../img/icons-for-summit.png') no-repeat -119px -10px;
 }
 .sprite-c {
-	background: url('../img/icons%20for%20summit.png') no-repeat -228px -10px;
+	background: url('../img/icons-for-summit.png') no-repeat -228px -10px;
 }
 .sprite-d {
-	background: url('../img/icons%20for%20summit.png') no-repeat -337px -10px;
+	background: url('../img/icons-for-summit.png') no-repeat -337px -10px;
 }
 .sprite-e {
-	background: url('../img/icons%20for%20summit.png') no-repeat -10px -119px;
+	background: url('../img/icons-for-summit.png') no-repeat -10px -119px;
 }
 .sprite-f {
-	background: url('../img/icons%20for%20summit.png') no-repeat -119px -119px;
+	background: url('../img/icons-for-summit.png') no-repeat -119px -119px;
 }
 .sprite-g {
-	background: url('../img/icons%20for%20summit.png') no-repeat -228px -119px;
+	background: url('../img/icons-for-summit.png') no-repeat -228px -119px;
 }
 .sprite-h {
-	background: url('../img/icons%20for%20summit.png') no-repeat -337px -119px;
+	background: url('../img/icons-for-summit.png') no-repeat -337px -119px;
 }
 .sprite-a, .sprite-b, .sprite-c, .sprite-d, .sprite-e, .sprite-f, .sprite-g, .sprite-h {
 	width: 99px;
@@ -117,7 +128,11 @@ a:focus, a:hover {
 }
 /*-- //Reset-Code --*/
 
-
+ul.ipsummit-list {
+    margin-left: 5em;
+    line-height: 30px;
+    font-size: 1.2em;
+}
 
 
 
@@ -643,13 +658,12 @@ p.w3ltext{
     text-decoration: none;
     color: #fff;
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 600;
     overflow: hidden;
     position: relative;
     padding: 1em 0;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-family: 'Abel', sans-serif;
+    letter-spacing: 1px;
 }
 .open > ul.dropdown-menu.agile_short_dropdown{
     display: block;
@@ -1177,6 +1191,7 @@ h3.heading:after, h2.heading:after {
 
 .sign-gd-two ul li {
     margin-bottom: 15px;
+	padding: 1em 0 0.57em 0;
 }
 .sign-gd-two ul li.p2 {
     margin-left: 99px;
@@ -1367,8 +1382,7 @@ textarea {
 	padding:0;
 }
 .readmore-w3 a {
-    border: 1px solid #146eb4;
-    background: #146eb4;
+    background-color: #1D252C;
     text-transform: uppercase;
     display: inline-block;
     text-decoration: none;
@@ -1384,9 +1398,7 @@ textarea {
 }
 .readmore-w3 a:hover {
     text-decoration: none;
-    background: #fff;
-    color: #146eb4;
-    border: 1px solid #fff;
+     background-color: #DE4326;
 }
 .keynote-speakers-grid-2 {
     padding: 4em 0;
@@ -1429,7 +1441,11 @@ textarea {
 
 #program ul {
     margin:2em 3em;
+    margin-left: 5em;
+    line-height: 25px;
+	font-size:1.2em;
 }
+
 #program p {
     margin:1em 0em;
 }
@@ -1439,6 +1455,7 @@ textarea {
 
 table.ipsummit-table {
     border-top: #cecece 1px solid;
+	margin-top: 2em;
 }
 
 .ipsummit-table td {
@@ -1500,11 +1517,12 @@ table.ipsummit-table {
 }  
 .agile-dish-caption {
     position: absolute;
-    width: 94.5%;
-    bottom: 0px;
+    width: 97.8%;
+    height: 98.2%;
+    bottom: 0.3em;
     z-index: 999;
     background: rgba(5, 5, 3, 0.59);
-    padding: 4em 3em;
+    padding: 2em;
     transition: all 0.8s;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
@@ -2215,6 +2233,9 @@ span.week {
 	.gallery-small{
 		width: 50%;
 	}
+	.effect-3:after {
+		top: 2.6em;
+		left: 1.85em;
 
 }
 @media screen and (max-width: 900px){
@@ -2470,12 +2491,13 @@ span.week {
 		height: 95px;
 	}
 	.gallery-small-text:after {
-		width: 75px;
-		height: 105px;
+		width: 85%;
+		height: 85%;
 	}
 	.effect-3:after {
-		top: 15px;
-		left: 15px;
+		top: 1.85em;
+		left: 1.5em;
+		z-index: 999;
 	}
 	.hours {
 		margin-right: 13em;
@@ -2528,8 +2550,8 @@ span.week {
 		left: 10px;
 	}
 	.gallery-small-text:after {
-		width: 67px;
-		height: 95px;
+		width: 85%;
+		height: 85%;
 	}
 	.agile-dish-caption h4 {
 		font-size: 1.5em;
@@ -2590,9 +2612,8 @@ span.week {
 		height: 225px;
 	}
 	.gallery-small {
-/*		float: none;*/
 		width: 100%;
-/*		width: 100%;*/
+		padding: 0.25em
 	}
 	.gallery-small-text:after {
 		width: 349px;
