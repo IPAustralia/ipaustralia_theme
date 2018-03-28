@@ -24,16 +24,8 @@
     font-weight: 700;
 }
 
-
-#ip-summit .btn-primary:focus,
-#ip-summit .btn-primary:active,
-#ip-summit .readmore-w3 a:focus,
-#ip-summit .readmore-w3 a:active,
-#ip-summit .readmore-w3 a.visited,
-.open > .dropdown-toggle.btn-primary {
-  color: #000;
-  background-color: #E5E8EC;
-  border: none;
+#ip-summit .btn-primary:visited, .speakers-button .btn-primary:visited, .program-button .btn-primary:visited  {
+    color: #fff;
 }
 
 /*-- Sprite --*/
@@ -931,6 +923,11 @@ h3.heading:after, h2.heading:after {
 .w3_agileits_grid p {
 	margin-top: 2em;
 }
+.w3_agileits_grid ul {
+    margin-left:50px;
+    margin-top: 30px;
+    font-size: 1.1em;
+}
 .w3_agileits_about_grid_left h3, .w3_agileits_about_grid_right h3 {
     font-size: 30px;
     color: #146eb4;
@@ -938,10 +935,10 @@ h3.heading:after, h2.heading:after {
     text-transform: capitalize;
 }
 .w3_agileits_about_grid_left p, .w3_agileits_about_grid_right p {
-    color: #999;
+    color: #000;
     line-height: 1.8em;
 	margin-top:2em;
-	font-size:15px;
+	font-size:1.3em;
 }
 .w3_agileits_about_grid_left p i, .w3_agileits_about_grid_right p i {
 	display:block;
@@ -1041,10 +1038,18 @@ h3.heading:after, h2.heading:after {
 .contacts-container .phone {
     background: url('../img/icons-03.png') no-repeat;
     background-position: 0px -3px;
+	margin-top: 1.1em;
+}
+.contacts-container .phone-number {
+	margin-top: 1.1em;
 }
 .contacts-container .email {
     background: url('../img/icons-04.png') no-repeat;
     background-position: 0px -3px;
+    margin-top: 1.1em;
+}
+.contacts-container .email-address {
+	margin-top: 1.1em;
 }
 .contacts-container strong {
 	margin-left:35px;
@@ -1191,7 +1196,7 @@ h3.heading:after, h2.heading:after {
 
 .sign-gd-two ul li {
     margin-bottom: 15px;
-	padding: 1em 0 0.57em 0;
+	padding: 1em 0 0.35em 0;
 }
 .sign-gd-two ul li.p2 {
     margin-left: 99px;
@@ -1456,6 +1461,7 @@ textarea {
 table.ipsummit-table {
     border-top: #cecece 1px solid;
 	margin-top: 2em;
+	margin-bottom: 5em;
 }
 
 .ipsummit-table td {
@@ -1472,6 +1478,16 @@ table.ipsummit-table {
 .ipsummit-table td:nth-of-type(2) h3 {
     color: #40874D;
     font-weight:900;
+}
+table.ipsummit-table ul {
+    margin: 1em 0 0 4em;
+}
+table.ipsummit-table ul li {
+    margin-bottom: 1em;
+}
+
+table.ipsummit-table p {
+    margin:1em 0 1em 0;
 }
 
 
