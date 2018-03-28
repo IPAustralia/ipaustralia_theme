@@ -2164,8 +2164,11 @@ span.week {
 		padding: 1.6em 1em;
 	}
 	.w3_agileits_about_grid_left, .w3_agileits_about_grid_right {
-		width: 50%;
+		width: 100%;
 		float: left;
+	}
+	.w3_agileits_about_grid_right {
+		margin-top:2em;
 	}
 	.keynote-speakers-grid-1, .keynote-speakers-grid-2 {
 		width: 50%;
