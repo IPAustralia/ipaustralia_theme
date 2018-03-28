@@ -892,6 +892,9 @@ li.dropdown.act a.w3_icons_act {
 .ip-summit, .gallery-top, .about, .summit, .program-intro, .program, .contact, .keynote-speakers, .speakers-and-program, .partners, .registration {
     padding: 4em 0;
 }
+.keynote-speakers {
+	margin-bottom:3em;
+}
 h3.title-w3-agile,.w3l_heading h2,h3.agileits-title,h3.heading {
     text-align: center;
     font-size: 40px;
