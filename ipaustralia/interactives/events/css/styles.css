@@ -65,6 +65,27 @@
 }
 
 
+/*-- Social Media --*/
+
+
+.facebook {
+    content: url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/themes/site/ipaustralia/interactives/events/images/icon-facebook.png);
+    height:2.5em;
+}
+.twitter {
+    content: url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/themes/site/ipaustralia/interactives/events/images/icon-twitter.png);
+    height:2.5em;
+}
+.linkedin {
+    content: url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/themes/site/ipaustralia/interactives/events/images/icon-linkedin.png);
+    height:2.5em;
+}
+.instagram {
+    content: url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/themes/site/ipaustralia/interactives/events/images/icon-instagram.png);
+    height:2.5em;
+}
+
+
 
 body {
 	padding: 0;
@@ -866,6 +887,9 @@ li.dropdown.act a.w3_icons_act {
 }
 #ip-summit .contacts-container li {
     padding:1em 0 1em 0;
+}
+#ip-summit .contacts-container li:first-child  {
+    margin-top:-0.6em;
 }
 #ip-summit ul.list-home {
     margin:2em 0  0 3em
@@ -1921,9 +1945,9 @@ span.week {
 	.readmore-w3 a {
 		margin: 1.5em 0 0;
 	}
-	.flexslider .slides img {
+/*	.flexslider .slides img {
 		height: 416px;
-	}
+	}*/
 	.drop-pad.sign-gd-two {
 		padding: 60px 30px 60px 185px;
 	}
@@ -1949,9 +1973,9 @@ span.week {
 		margin-top: 65px;
 		padding: 0 40px;
 	}
-	.flexslider .slides img {
+/*	.flexslider .slides img {
 		height: 394px;
-	}	
+	}	*/
 	.drop-pad.sign-gd-two {
 		padding: 60px 30px 60px 145px;
 	}
@@ -2174,9 +2198,9 @@ span.week {
 		width: 50%;
 		float: left;
 	}
-	.flexslider .slides img {
+/*	.flexslider .slides img {
 		height: 339px;
-	}
+	}*/
 	.col-md-3.number {
 		width: 25%;
 		float: left;
@@ -2527,9 +2551,9 @@ span.week {
 	.map-home h3 {
 			font-size: 25px;
 	}
-	.flexslider .slides img {
+/*	.flexslider .slides img {
 		height: auto;
-	}
+	}*/
 	.mobile-menu ul {
 		top: 13%;
 	}
