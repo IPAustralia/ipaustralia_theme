@@ -1,3 +1,11 @@
+/* changes to the standard */
+
+.masthead-wrapper {
+  display: none;
+}
+
+/* content of the subpages */
+
 .chapter {
   padding-top: 40px;
   font-size: medium;
@@ -22,12 +30,10 @@
     margin-bottom: 100px;
     margin-right: 120px;
   }
-
   #welcome .chapter-body {
     margin-right: 350px;
     margin-top: -250px;
   }
-
   .chapter-header-text {
     background-color: #fafafa;
     display: block;
@@ -38,13 +44,11 @@
     padding: 0.5em;
     width: 380px;
   }
-
   .chapter-header-text dl {
     margin: 0;
     padding: 0;
     width: 100%;
   }
-
   .chapter-header-text dt {
     float: left;
     font-size: small;
@@ -52,7 +56,6 @@
     padding: 0;
     width: 50%;
   }
-
   .chapter-header-text dd {
     float: left;
     font-size: small;
@@ -60,60 +63,49 @@
     padding: 0;
     width: 50%;
   }
-
   .chapter h2 {
     font-size: 3.5em;
     line-height: 1.05em;
     margin-top: -18px;
     margin-bottom: 18px;
   }
-
   .chapter {
     padding-top: 515px;
     padding-bottom: 10px;
     background-position: top right;
     background-repeat: no-repeat;
   }
-
   .chapter#welcome {
     background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/zed-welcome-2018.png');
   }
-
   .chapter#chapter-1 {
     background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c1-introduction-2018.png');
   }
-
   .chapter#chapter-2 {
     background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c2-patents-2018.png');
   }
-
   .chapter#chapter-3 {
     background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c3-trademark-2018.png');
   }
-
   .chapter#chapter-4 {
     background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c4-designs-2018.png');
   }
-
   .chapter#chapter-5 {
     background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c5-pbr-2018.png');
   }
-
   .chapter#chapter-6 {
     background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c6-collab-research-2018.png');
   }
-
   .chapter#chapter-7 {
     background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c7-location-names-2018.png');
   }
-
   .chapter#chapter-8 {
     background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c8-project-2018.png');
   }
-
   .chapter-number {
     position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
 }
