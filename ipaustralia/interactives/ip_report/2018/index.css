@@ -6,6 +6,7 @@ section[aria-label = "main"] {
 
 @media only screen and (min-width: 1180px) {
   .field-name-field-masthead-image  .img-responsive {
+    padding-right: 12px;
     padding-top: 30px;
     max-height: 120px;
   }
