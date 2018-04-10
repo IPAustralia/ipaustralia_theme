@@ -1,3 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
 /* changes to the standard */
 
 .masthead-wrapper {
@@ -66,8 +69,8 @@
   .chapter h2 {
     font-size: 3.5em;
     line-height: 1.05em;
-    
   }
+
   .chapter {
     padding-bottom: 10px;
     background-position: top right;
@@ -106,7 +109,51 @@
     /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
+
+.patent-table, .trade-marks-table, .corporate {
+    margin: 1.5em 0em;
+    border: none;
+    text-align: center;
+    width: 80%;
 }
+
+.patent-table td, .trade-marks-table td , .corporate td{
+    padding: 0.3em 1.2em;
+}
+
+table.patent-table tr:nth-of-type(1) {
+    background-color: #30AEB6;
+    color: #FFF;
+    font-size: 1.08em;
+}
+
+table.patent-table tr:nth-of-type(2), table.trade-marks-table tr:nth-of-type(2) {
+    background-color: #f8fbfb;
+}
+
+table.patent-table tr:nth-of-type(4) {
+    background-color: #cce7ee;
+}
+
+table.trade-marks-table tr:nth-of-type(1) {
+    background-color: #d83f21;
+    color: #FFF;
+    font-size: 1.08em;
+}
+
+table.trade-marks-table tr:nth-of-type(4) {
+    background-color: #edc5c3;
+}
+
+table.corporate tr:nth-child(odd) {
+  background-color: #f8fbfb;
+}
+
+table.corporate td:first-of-type, table.corporate tr:first-of-type{
+  background-color: #5D2067;
+  color: #FFF;
+}
+
 
 @media only screen and (min-width: 1200px) {
 
