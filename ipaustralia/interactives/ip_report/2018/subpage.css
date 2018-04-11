@@ -32,11 +32,11 @@
 @media only screen and (min-width: 768px) {
   .chapter-body {
     margin-bottom: 100px;
-    margin-right: 120px;
+    /* margin-right: 120px; */
   }
   #welcome .chapter-body {
     margin-right: 250px;
-    margin-top: -250px;
+    /* margin-top: -250px; */
   }
   .chapter-header-text {
     background-color: #fafafa;
