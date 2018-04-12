@@ -1,4 +1,8 @@
 /* page reset */
+.masthead-wrapper {
+  display: none;
+}
+
 section[aria-label = "main"] {
   padding-left: 0;
   padding-right: 0;
