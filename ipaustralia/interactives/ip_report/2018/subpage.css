@@ -164,3 +164,7 @@ table.corporate td:first-of-type, table.corporate tr:first-of-type{
     padding-bottom:10px;
   }
 }
+
+.figure-wrapper {
+  margin: 1.5em 0 1.5em 0;
+}
