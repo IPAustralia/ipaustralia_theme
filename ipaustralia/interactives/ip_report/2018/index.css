@@ -1,15 +1,30 @@
-/* page reset */
-.masthead-wrapper {
-  display: none;
-}
+@charset "utf-8";
+/* CSS Document */
 
-section[aria-label = "main"] {
+/* page reset */
+
+section[aria-label="main"] {
   padding-left: 0;
   padding-right: 0;
 }
 
+h1.title {
+  font-size: 3.25em;
+  line-height: 1em;
+  padding-left: 20px;
+  color: #FFF;
+  margin-top: -280px;
+  margin-bottom: 110px;
+  width: 35%;
+  letter-spacing: 0.023em;
+}
+
+img.cover-image {
+  width: 100%;
+}
+
 @media only screen and (min-width: 1180px) {
-  .field-name-field-masthead-image  .img-responsive {
+  .field-name-field-masthead-image .img-responsive {
     padding-right: 12px;
     padding-top: 30px;
     max-height: 120px;
@@ -29,9 +44,8 @@ ul.grid {
 
 .grid li {
   background-position: top right;
-  border-radius: 20px;
   background-repeat: no-repeat;
-  background-size: 289px 260px;
+  background-size: 364px 194px;
   border: 3px solid #fff;
   display: table-cell;
   float: left;
@@ -39,83 +53,112 @@ ul.grid {
   margin-bottom: 12px;
   vertical-align: bottom;
   width: 100%;
-
-  transition: border-color .25s ease-in-out;
-  -moz-transition: border-color .25s ease-in-out;
-  -webkit-transition: border-color .25s ease-in-out;
+  transition: border-color .50s ease-in-out;
+  -moz-transition: border-color .50s ease-in-out;
+  -webkit-transition: border-color .50s ease-in-out;
 }
 
 .grid li:hover {
-  border-color: #632466;
+  border: 3px solid #1D252C;
+  opacity: 0.8;
 }
 
 .grid li a {
   color: #141414;
   display: block;
-  font-size: 1.1em;
-  font-weight: bold;
+  font-size: 1.25em;
   height: 100%;
-  padding-left: 25px;
-  padding-top: 100px;
+  padding-left: 5px;
+  padding-top: 138px;
   text-decoration: none;
   width: 100%;
 }
 
+li:nth-child(7) a, li:nth-child(8) a, li:nth-child(9) a {
+  color: #fff;
+}
+
 .grid li#welcome {
-  background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/zed-welcome-2018.png');
-  background-color: #F9E6B9; /*#f5b21e;*/
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-zed.png');
 }
 
 .grid li#chapter-1 {
-  background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c1-introduction-2018.png');
-  background-color: #F9E6B9; /*#f6b221;*/
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-1.png');
 }
 
 .grid li#chapter-2 {
-  background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c2-patents-2018.png');
-  background-color: #98D5E1; /*#3ab0c8;*/
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-2.png');
 }
 
 .grid li#chapter-3 {
-  background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c3-trademark-2018.png');
-  background-color: #FDEAE8; /*#d74022;*/
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-3.png');
 }
 
 .grid li#chapter-4 {
-  background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c4-designs-2018.png');
-  background-color: #C8EAD4; /*#6ecb98;*/
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-4.png');
 }
 
 .grid li#chapter-5 {
-  background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c5-pbr-2018.png');
-  background-color: #F9E6B9; /*#f6b221;*/
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-5.png');
 }
 
 .grid li#chapter-6 {
-  background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c6-collab-research-2018.png');
-  background-color: #F6E4F6; /*#632466;*/
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-6.png');
 }
 
 .grid li#chapter-7 {
-  background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c7-location-names-2018.png');
-  background-color: #F6E4F6; /*#632466;*/
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-7.png');
 }
 
 .grid li#chapter-8 {
-  background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/c8-project-2018.png');
-  background-color: #F6E4F6; /*#632466;*/
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-8.png');
 }
 
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 1150px) {
   ul.grid {
-    width: 1180px;
+    width: 100%;
   }
-
   .grid li {
     height: 200px;
-    margin-bottom: 12px;
-    margin-left: 6px;
-    margin-right: 6px;
-    width: 370px;
+    margin: 14.5px 9.6px;
+    width: 364px
+  }
+}
+
+@media only screen and (max-width: 1149px) {
+  .grid li#chapter-1 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-res1.png);
+  }
+  .grid li#chapter-2 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-res2.png);
+  }
+  .grid li#chapter-3 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-res3.png);
+  }
+  .grid li#chapter-4 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-res4.png);
+  }
+  .grid li#chapter-5 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-res5.png);
+  }
+  .grid li#chapter-6 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-res6.png);
+  }
+  .grid li#chapter-7 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-res7.png);
+  }
+  .grid li#chapter-8 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-res8.png);
+  }
+  .grid li a {
+    color: #000;
+    text-decoration: none;
+  }
+  h1.title {
+    width: 100%;
+    font-size: 2.5em;
+    margin: 0px;
+    color: #000;
+    padding-top: 30px;
   }
 }

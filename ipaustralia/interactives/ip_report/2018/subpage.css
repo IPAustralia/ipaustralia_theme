@@ -9,7 +9,6 @@
 
 /* content of the subpages */
 
-
 .chapter-number {
   font-weight: bold;
   position: relative !important;
@@ -20,14 +19,23 @@
   display: none;
 }
 
-.chapter-header-text-img {
-  display: none;
-}
-
 .no-top {
   margin-top: 11.6em;
 }
 
+.boxed {
+  padding: 15px;
+  width: 80%;
+  margin: 5% 10%;
+}
+
+.boxed-patent {
+  border: #30AEB6 3px solid;
+}
+
+.boxed-tm {
+  border: #d83f21 3px solid;
+}
 
 @media only screen and (min-width: 768px) {
   .chapter-body {
@@ -70,7 +78,6 @@
     font-size: 3.5em;
     line-height: 1.05em;
   }
-
   .chapter {
     padding-bottom: 10px;
     background-position: top right;
@@ -109,62 +116,55 @@
     /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
-
-.patent-table, .trade-marks-table, .corporate {
+  .patent-table, .trade-marks-table, .corporate {
     margin: 1.5em 0em;
     border: none;
     text-align: center;
     width: 80%;
-}
-
-.patent-table td, .trade-marks-table td , .corporate td{
+  }
+  .patent-table td, .trade-marks-table td, .corporate td {
     padding: 0.3em 1.2em;
-}
-
-table.patent-table tr:nth-of-type(1) {
+  }
+  table.patent-table tr:nth-of-type(1) {
     background-color: #30AEB6;
     color: #FFF;
     font-size: 1.08em;
-}
-
-table.patent-table tr:nth-of-type(2), table.trade-marks-table tr:nth-of-type(2) {
+  }
+  table.patent-table tr:nth-of-type(2), table.trade-marks-table tr:nth-of-type(2) {
     background-color: #f8fbfb;
-}
-
-table.patent-table tr:nth-of-type(4) {
+  }
+  table.patent-table tr:nth-of-type(4) {
     background-color: #cce7ee;
-}
-
-table.trade-marks-table tr:nth-of-type(1) {
+  }
+  table.trade-marks-table tr:nth-of-type(1) {
     background-color: #d83f21;
     color: #FFF;
     font-size: 1.08em;
-}
-
-table.trade-marks-table tr:nth-of-type(4) {
-    background-color: #edc5c3;
-}
-
-table.corporate tr:nth-child(odd) {
-  background-color: #f8fbfb;
-}
-
-table.corporate td:first-of-type, table.corporate tr:first-of-type{
-  background-color: #5D2067;
-  color: #FFF;
-}
-
-
-@media only screen and (min-width: 1200px) {
-
-  .chapter-header-text-img {
-    display: block;
-    height: 155px;
-    margin-top: 10px;
-    padding-bottom:10px;
   }
-}
-
-.figure-wrapper {
-  margin: 1.5em 0 1.5em 0;
-}
+  table.trade-marks-table tr:nth-of-type(4) {
+    background-color: #edc5c3;
+  }
+  table.corporate tr:nth-child(odd) {
+    background-color: #f8fbfb;
+  }
+  table.corporate td:first-of-type, table.corporate tr:first-of-type {
+    background-color: #5D2067;
+    color: #FFF;
+  }
+  @media only screen and (min-width: 1200px) {
+    .chapter-header-text-img {
+      display: block;
+      height: 155px;
+      margin-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  .boxed {
+    padding: 5px;
+  }
+  .boxed-patent {
+    border: solid 1px #30aeb6;
+  }
+  .boxed-tm {
+    border: solid 1px #d83f21;
+  }
