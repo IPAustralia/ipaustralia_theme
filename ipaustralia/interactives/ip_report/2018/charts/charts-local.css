@@ -108,3 +108,12 @@
     width: 620px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  #chapter-7 .ct-axis-title {
+    display: none;
+  }
+  span.ct-label.ct-horizontal.ct-end {
+    transform: rotate(45deg);
+  }
+}
