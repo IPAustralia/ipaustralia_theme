@@ -20,31 +20,82 @@
 }
 
 .no-top {
-  margin-top: 11.6em;
+  margin-top: 20em;
 }
 
-.boxed {
-  padding: 15px;
-  width: 80%;
-  margin: 5% 10%;
+.chapter-body {
+  margin-bottom: 100px;
 }
 
-.boxed-patent {
-  border: #30AEB6 3px solid;
+#welcome .chapter-body {
+  margin-right: 250px;
+  margin-top: 250px;
 }
 
-.boxed-tm {
-  border: #d83f21 3px solid;
+.chapter h2 {
+  font-size: 3em;
+  line-height: 1.05em;
+  width: 90%;
 }
 
-@media only screen and (min-width: 768px) {
-  .chapter-body {
-    margin-bottom: 100px;
-    /* margin-right: 120px; */
+.chapter {
+  padding-bottom: 10px;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.chapter#welcome {
+  background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/zed-welcome-2018.png');
+}
+
+.chapter#chapter-1 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c1-introduction-ipreport.png');
+}
+
+.chapter#chapter-2 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c2-patents-ipreport.png');
+}
+
+.chapter#chapter-3 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c3-trademarks-ipreport.png');
+}
+
+.chapter#chapter-4 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c4-designs-ipreport.png');
+}
+
+.chapter#chapter-5 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c5-plantbreedersrights-ipreport.png');
+}
+
+.chapter#chapter-6 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c6-researchgrants-ipreport.png');
+}
+
+.chapter#chapter-7 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c7-locationnames-ipreport.png');
+}
+
+.chapter#chapter-8 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c8-researchprogram-ipreport.png');
+}
+
+.chapter-number {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media only screen and (min-width: 1200px) {
+  .no-top {
+    margin-top: 6em;
   }
-  #welcome .chapter-body {
-    margin-right: 250px;
-    /* margin-top: -250px; */
+  .chapter-header-text-img {
+    display: block;
+    height: 155px;
+    margin-top: 10px;
+    padding-bottom: 10px;
   }
   .chapter-header-text {
     background-color: #fafafa;
@@ -74,97 +125,60 @@
     padding: 0;
     width: 50%;
   }
-  .chapter h2 {
-    font-size: 3.5em;
-    line-height: 1.05em;
-  }
-  .chapter {
-    padding-bottom: 10px;
-    background-position: top right;
-    background-repeat: no-repeat;
-  }
-  .chapter#welcome {
-    background-image: url('https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/zed-welcome-2018.png');
-  }
-  .chapter#chapter-1 {
-    background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c1-introduction-ipreport.png');
-  }
-  .chapter#chapter-2 {
-    background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c2-patents-ipreport.png');
-  }
-  .chapter#chapter-3 {
-    background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c3-trademarks-ipreport.png');
-  }
-  .chapter#chapter-4 {
-    background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c4-designs-ipreport.png');
-  }
-  .chapter#chapter-5 {
-    background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c5-plantbreedersrights-ipreport.png');
-  }
-  .chapter#chapter-6 {
-    background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c6-researchgrants-ipreport.png');
-  }
-  .chapter#chapter-7 {
-    background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c7-locationnames-ipreport.png');
-  }
-  .chapter#chapter-8 {
-    background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/c8-researchprogram-ipreport.png');
-  }
-  .chapter-number {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-  .patent-table, .trade-marks-table, .corporate {
-    margin: 1.5em 0em;
-    border: none;
-    text-align: center;
-    width: 80%;
-  }
+}
+
+.figure-wrapper {
+  margin: 1.5em 0 1.5em 0;
+}
+
+.patent-table, .trade-marks-table, .corporate {
+  margin: auto;
+  border: none;
+  text-align: center;
+}
+
+table.patent-table tr:nth-of-type(1) {
+  background-color: #30AEB6;
+  color: #FFF;
+  font-size: 1.08em;
+}
+
+table.patent-table tr:nth-of-type(2), table.trade-marks-table tr:nth-of-type(2) {
+  background-color: #f8fbfb;
+}
+
+table.patent-table tr:nth-of-type(4) {
+  background-color: #cce7ee;
+}
+
+table.trade-marks-table tr:nth-of-type(1) {
+  background-color: #d83f21;
+  color: #FFF;
+  font-size: 1.08em;
+}
+
+table.trade-marks-table tr:nth-of-type(4) {
+  background-color: #edc5c3;
+}
+
+table.corporate tr:nth-child(odd) {
+  background-color: #f8fbfb;
+}
+
+table.corporate td:first-of-type, table.corporate tr:first-of-type {
+  background-color: #5D2067;
+  color: #FFF;
+}
+
+@media only screen and (min-width: 730px) {
   .patent-table td, .trade-marks-table td, .corporate td {
     padding: 0.3em 1.2em;
   }
-  table.patent-table tr:nth-of-type(1) {
-    background-color: #30AEB6;
-    color: #FFF;
-    font-size: 1.08em;
+}
+
+@media only sceen and (max-width: 1000px) {
+  #welcome .chapter-body.no-top {
+    width: 100%;
+    margin-top: 400px;
   }
-  table.patent-table tr:nth-of-type(2), table.trade-marks-table tr:nth-of-type(2) {
-    background-color: #f8fbfb;
-  }
-  table.patent-table tr:nth-of-type(4) {
-    background-color: #cce7ee;
-  }
-  table.trade-marks-table tr:nth-of-type(1) {
-    background-color: #d83f21;
-    color: #FFF;
-    font-size: 1.08em;
-  }
-  table.trade-marks-table tr:nth-of-type(4) {
-    background-color: #edc5c3;
-  }
-  table.corporate tr:nth-child(odd) {
-    background-color: #f8fbfb;
-  }
-  table.corporate td:first-of-type, table.corporate tr:first-of-type {
-    background-color: #5D2067;
-    color: #FFF;
-  }
-  @media only screen and (min-width: 1200px) {
-    .chapter-header-text-img {
-      display: block;
-      height: 155px;
-      margin-top: 10px;
-      padding-bottom: 10px;
-    }
-  }
-  .boxed {
-    padding: 5px;
-  }
-  .boxed-patent {
-    border: solid 1px #30aeb6;
-  }
-  .boxed-tm {
-    border: solid 1px #d83f21;
-  }
+}
