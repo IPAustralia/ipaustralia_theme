@@ -14,8 +14,8 @@
         }
       })
       var vals = arr.join("-")
-      var str = 'https://www.ipaustralia.gov.au/ip-management-scenarios-toolkit/' + vals
-      //		var str = vals + '.html'
+      var str = ' https://www.ipaustralia.gov.au/tools-resources/ip-toolkit/researcher/ip-management-scenarios-toolkit/' + vals
+      // var str = vals + '.html'
       console.log(vals.length);
 
       if (arr.length > 2) {
