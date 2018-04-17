@@ -9,7 +9,6 @@
 
 /* content of the subpages */
 
-
 .chapter-number {
   font-weight: bold;
   position: relative !important;
@@ -32,7 +31,7 @@
   margin-right: 250px;
     margin-top: 250px;
 }
-  
+
 .chapter h2 {
     font-size: 3em;
     line-height: 1.05em;
@@ -156,7 +155,7 @@ table.corporate td:first-of-type, table.corporate tr:first-of-type{
 
 
 @media only screen and (min-width: 730px) {
- 
+
 .patent-table td, .trade-marks-table td, .corporate td{
     padding: 0.3em 1.2em;
 }
@@ -170,5 +169,8 @@ table.corporate td:first-of-type, table.corporate tr:first-of-type{
     margin-top: 400px;
 }}
 
-
-
+.end-notes {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
