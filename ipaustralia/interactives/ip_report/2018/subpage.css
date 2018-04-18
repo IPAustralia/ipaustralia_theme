@@ -196,8 +196,8 @@ table.corporate td:first-of-type, table.corporate tr:first-of-type {
 }
 
 .end-notes {
-  overflow-wrap: break-word !important;
-  word-break: break-all !important;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 
 .boxed {
