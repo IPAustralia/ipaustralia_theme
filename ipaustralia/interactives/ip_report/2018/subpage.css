@@ -195,7 +195,7 @@ table.corporate td:first-of-type, table.corporate tr:first-of-type {
   }
 }
 
-.end-notes {
+.end-notes a {
   overflow-wrap: break-word;
   word-break: break-all;
 }
