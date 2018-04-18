@@ -17,8 +17,14 @@
   display: none;
 }
 
-.no-top {
+.no-top, .no-top-large {
   margin-top: 12em;
+}
+
+@media only screen and (max-width: 768px) {
+  .no-top-large {
+    margin-top: 18em;
+  }
 }
 
 .chapter-body {
