@@ -195,14 +195,27 @@ table.corporate td:first-of-type, table.corporate tr:first-of-type {
   }
 }
 
-end-notes {
+.end-notes {
   overflow-wrap: break-word;
   word-wrap: break-word;
   -ms-word-break: break-all;
   word-break: break-all;
-  /*word-break: break-word;*/
+  word-break: break-word;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+
+.boxed {
+  margin: 30px;
+  padding: 20px;
+}
+
+.boxed-patent {
+  border: 3px solid #30aeb6;
+}
+
+.boxed-tm {
+  border: solid 3px #de4326;
 }
