@@ -185,6 +185,7 @@ table.corporate td:first-of-type, table.corporate tr:first-of-type {
   #welcome .chapter-body {
     width: 100%;
     margin-top: 225px;
+    margin-right: 0;
   }
   #welcome .chapter-body h2 {
     font-size: 2em;
