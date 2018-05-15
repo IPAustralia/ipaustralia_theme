@@ -1,12 +1,27 @@
 <?php if ($element['#items'][0]['value']): ?>
 	<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
-		<img src="<?php echo base_path() . drupal_get_path('theme', 'ipaustralia') ?>/images/eservices-forms.jpg" alt="" />
 		<div>
-
-			<div class="field-label"<?php print $title_attributes; ?>>Online services</div>
+			<h3>Submitting your form through online services</h3>
 			<div class="field-items"<?php print $content_attributes; ?>>
-				<p><a href="https://services.ipaustralia.gov.au/ICMWebUI">Fill in and submit this form online using online services.</a></p>
-				<p>Using online services is secure, convenient, and can save you money.</p>
+				<ol>
+					<li>Download the form from above section (Download form)</li>
+					<li>Complete the form</li>
+					<li>Sign in to or return to <a href="https://services.ipaustralia.gov.au/ICMWebUI" title="Link to online services">online services</a></li>
+					<li>Choose the correct service request from online services and submit</li>
+				</ol>
+			</div>
+			<h3>Submitting your form via post</h3>
+			<div class="field-items"<?php print $content_attributes; ?>>
+				<ol>
+					<li>Download the form from above section (Download form)</li>
+					<li>Complete the form</li>
+					<li>Send the form to our postal address</li>
+				</ol>
+			</div>
+			<h3>Postal address</h3>
+			<div class="field-items"<?php print $content_attributes; ?>>
+				<p>PO Box 200<br />
+				Woden ACT 2606</p>
 			</div>
 		</div>
 	</div>

@@ -113,13 +113,13 @@
 }
 
 .field-name-field-online-services-link {
-    background: #eaeaea url(../images/eservices-forms.jpg) no-repeat right center;
+    background: #eaeaea; /* url(../images/eservices-forms.jpg) no-repeat right center;*/
     padding: 10px;
     min-height: 110px;
     margin: 20px 0;
-    @media only screen and (max-width: $break-point-large) {
+    /*@media only screen and (max-width: $break-point-large) {
         background: #eaeaea;
-    }
+    }*/
 }
 
 .view-foi-disclosure-log,
