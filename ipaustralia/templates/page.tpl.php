@@ -9,8 +9,8 @@ var WRInitTime=(new Date()).getTime();
 </script>
 <!-- ClickTale end of Top part -->
 
-<?php // include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/header.inc";
-include __DIR__ . '\includes\header.inc';
+<?php
+include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/header.inc";
 ?>
 
 <div class="main-container <?php if (isset($page_classes)): print implode(' ', $page_classes); endif; ?>">
@@ -93,8 +93,7 @@ include __DIR__ . '\includes\header.inc';
 </div>
 
 <?php
-//include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/footer.inc";
-include __DIR__ .  '\includes\footer.inc'
+include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/footer.inc";
 ?>
 
 <!-- ClickTale Bottom part -->
