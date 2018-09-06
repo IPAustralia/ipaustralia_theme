@@ -9,7 +9,9 @@ var WRInitTime=(new Date()).getTime();
 </script>
 <!-- ClickTale end of Top part -->
 
-<?php include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/header.inc"; ?>
+<?php // include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/header.inc";
+include __DIR__ . '\includes\header.inc';
+?>
 
 <div class="main-container <?php if (isset($page_classes)): print implode(' ', $page_classes); endif; ?>">
 
@@ -27,11 +29,20 @@ var WRInitTime=(new Date()).getTime();
 
   <div class="title">
     <div class="container">
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-      <h1 class="page-header" id="mainHeading"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
+      <div class="col-sm-9">
+        <?php print render($title_prefix); ?>
+        <?php if (!empty($title)): ?>
+        <h1 class="page-header" id="mainHeading"><?php print $title; ?></h1>
+        <?php endif; ?>
+        <?php print render($title_suffix); ?>
+      </div>
+      <div class="col-sm-3">
+        <?php
+        if (!empty($header_right_text)){
+          print render($header_right_text);
+        }
+        ?>
+      </div>
     </div>
   </div>
 
@@ -81,7 +92,10 @@ var WRInitTime=(new Date()).getTime();
 
 </div>
 
-<?php include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/footer.inc"; ?>
+<?php
+//include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/footer.inc";
+include __DIR__ .  '\includes\footer.inc'
+?>
 
 <!-- ClickTale Bottom part -->
 <script type='text/javascript'>
