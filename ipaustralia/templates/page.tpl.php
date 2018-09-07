@@ -40,6 +40,12 @@ include DRUPAL_ROOT . "/" . path_to_theme() . "/templates/includes/header.inc";
         <?php
         if (!empty($header_right_text)){
           print render($header_right_text);
+        } else {
+          // ugly workaround for standard pages as indexes
+          $path_array = explode("/", drupal_get_path_alias());
+          if(count($path_array == 2) && $path_array[0] == "ip-for-digital-business"){
+            print('<a id="masthead-link" href="/ip-for-digital-business/">IP for digital business</a>');
+          }
         }
         ?>
       </div>
