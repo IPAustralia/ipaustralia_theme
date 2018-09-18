@@ -4,67 +4,8 @@
   text-decoration: none !important;
 }
 
-$color_1: #fff;
-$font_family_1: "montserratregular",sans-serif;
-$background_color_1: #0d252c;
-$background_color_2: #135361;
-
 section#block-block-126 {
-	background: url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/ip-for-digital-business-feature-.jpg)center top no-repeat;
+	background: url(/sites/g/files/net856/f/ip-for-digital-business-feature-.jpg)center top no-repeat;
 	background-size: cover;
 	height: 90vh;
-	font-family: $font_family_1;
-}
-.region.region-content-bottom {
-	background-color: $background_color_1;
-	padding: 1em;
-	color: $color_1;
-}
-.container.digital-ip {
-	margin-top: 30%;
-	color: $color_1 !important;
-	h1 {
-		color: $color_1 !important;
-		font-size: 4em;
-		line-height: 1.2em;
-	}
-	p {
-		font-size: 1.2em;
-		line-height: 1.4em;
-	}
-}
-.container { .digital-ip { .row { .col-md-5 { p { a {
-						border: 2px solid #1d252c !important;
-						background: #1d252c;
-						padding: 15px 25px;
-						display: inline-block;
-						border-radius: 100px;
-						color: $color_1 !important;
-						text-transform: uppercase;
-						line-height: 1.2em;
-						text-decoration: none;
-						&:hover {
-							text-decoration: none;
-							background: #00819c;
-							border: 2px solid #fff !important;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-@media (max-width: 991px) {
-	.container.digital-ip {
-		margin-top: 1em;
-		h1 {
-			font-size: 3em;
-		}
-		.row {
-			.col-md-5 {
-				background-color: $background_color_2;
-				padding: 1em;
-			}
-		}
-	}
 }
