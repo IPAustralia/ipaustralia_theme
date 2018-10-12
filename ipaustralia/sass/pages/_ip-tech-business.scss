@@ -1,11 +1,135 @@
+$color_1: #fff;
+$font_family_1: "montserratregular",sans-serif;
+$background_color_1: #0d252c;
+$background_color_2: #00819c;
+$background_color_3: #135361;
+
 #masthead-link {
   color: $white;
   line-height: 55px;
   text-decoration: none !important;
 }
-
-section#block-block-126 {
-	background: url(/sites/g/files/net856/f/ip-for-digital-business-feature-.jpg)center top no-repeat;
-	background-size: cover;
-	height: 90vh;
+ 
+#block-block-126 {
+    background: url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/ip-for-digital-business-feature-.jpg)center top no-repeat;
+    background-size: cover;
+    height: 90vh;
+    font-family: $font_family_1;
+}
+.page-node-70801 {
+    .region.region-content-bottom {
+        background-color: $background_color_1;
+        padding: 1em;
+        color: $color_1;
+        border-bottom: 3em solid #00819c;
+    }
+}
+.container.digital-ip {
+    margin-top: 30%;
+    color: $color_1 !important;
+    h1 {
+        color: $color_1 !important;
+        font-size: 4em;
+        line-height: 1.2em;
+    }
+    p {
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+}
+.container {
+    .digital-ip {
+        .row {
+            .col-md-5 {
+                p {
+                    a {
+                        border: 2px solid #1d252c !important;
+                        background: #1d252c;
+                        padding: 15px 25px;
+                        display: inline-block;
+                        border-radius: 100px;
+                        color: $color_1 !important;
+                        text-transform: uppercase;
+                        line-height: 1.2em;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: none;
+                            background: #00819c;
+                            border: 2px solid #fff !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.container.ip-for-digital-business-sub-section {
+    .col-lg-6.col-md-12 {
+        padding: 1em 3em;
+    }
+}
+.page-node-71406 {
+    div.title {
+        background: transparent url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/ip-for-digital-business-secondary.jpg) center top no-repeat;
+        background-size: cover;
+    }
+}
+.page-node-71426 {
+    div.title {
+        background: transparent url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/ip-for-digital-business-secondary.jpg) center top no-repeat;
+        background-size: cover;
+    }
+}
+.page-node-71416 {
+    div.title {
+        background: transparent url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/ip-for-digital-business-secondary.jpg) center top no-repeat;
+        background-size: cover;
+    }
+}
+.page-node-71421 {
+    div.title {
+        background: transparent url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/ip-for-digital-business-secondary.jpg) center top no-repeat;
+        background-size: cover;
+    }
+}
+.page-node-71411 {
+    div.title {
+        background: transparent url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/ip-for-digital-business-secondary.jpg) center top no-repeat;
+        background-size: cover;
+    }
+}
+.node-type-ip-for-digital-business {
+    div.title {
+        background: transparent url(https://ipaustralia.govcms.gov.au/sites/g/files/net856/f/ip-for-digital-business-secondary.jpg) center top no-repeat;
+        background-size: cover;
+    }
+}
+a#masthead-link {
+    background-color: $background_color_1;
+    padding: 1em;
+    font-size: 1.2em;
+    font-family: $font_family_1;
+    &:hover {
+        background-color: $background_color_2;
+    }
+}
+@media (max-width: 1080px) {
+    a#masthead-link {
+        padding: 0.5em !important;
+        font-size: 1em;
+    }
+}
+@media (max-width: 991px) {
+    .container.digital-ip {
+        margin-top: 1em;
+        h1 {
+            font-size: 3em;
+        }
+        .row {
+            .col-md-5 {
+                background-color: $background_color_3;
+                padding: 1em;
+            }
+        }
+    }
 }
