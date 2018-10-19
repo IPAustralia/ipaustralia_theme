@@ -1,0 +1,61 @@
+
+.block-radio-list {
+
+	&__outer-legend,
+	&__block-legend {
+		font-size: 1em;
+		font-weight: bold;
+		border: 0;
+		margin-bottom: 0;
+	}
+
+	&__outer-legend {
+		margin-bottom: 1rem;
+	}
+
+	&__block-legend {
+		font-weight: normal;
+		background: $teal_medium;
+		padding: 5px;
+	}
+
+	&__radios {
+		border: 1px solid $teal_medium;
+		border-top: 0;
+		background: $teal_pale;
+	}
+
+	.form-item {
+		margin: 0;
+	}
+
+	label {
+		padding: 0;
+		display: block;
+	}
+
+	.text {
+		display: block;
+		padding: 5px;
+		border: 1px solid transparent;
+		outline: 1px solid transparent;
+		transition: 0.25s;
+
+		&:hover {
+			background: $teal_light;
+		}
+	}
+
+	input {
+		@include visually-hidden;
+	}
+
+	input:focus + .text {
+		outline-color: #000;
+	}
+
+	input:checked + .text {
+		background: #fff;
+		border-color: $teal;
+	}
+}

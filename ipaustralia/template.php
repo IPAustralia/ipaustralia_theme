@@ -385,4 +385,13 @@ function ipaustralia_file_link($variables) {
     '</span>';
 }
 
+
+/**
+ * Implements hook_webform_form().
+ */
+function ipaustralia_preprocess_webform_form(&$vars) {
+  __ipaustralia_contract_generator($vars);
+}
+
 include_once dirname(__FILE__) . '/includes/megamenu.inc';
+include_once dirname(__FILE__) . '/includes/contract_generator.inc';

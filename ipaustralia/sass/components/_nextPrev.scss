@@ -1,0 +1,50 @@
+
+.nextPrev {
+	display: flex;
+	margin-top: 2em;
+}
+
+.nextPrev__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $teal;
+	background: $teal_pale;
+	border: 1px solid;
+	border-radius: 0;
+	padding: 3px 5px;
+	line-height: 1;
+	transition: 0.25s;
+	font-size: 1.4rem;
+	font-weight: bold;
+	min-width: 7.7rem;
+	margin-right: 7px;
+
+	&:hover, &:focus {
+		background: #fff;
+		color: #000;
+	}
+
+	&.submit-btn {
+		background: $teal;
+		border-color: $teal;
+		color: #fff;
+		padding: 3px 5px;
+		line-height: 1.1;
+
+		&:hover, &:focus {
+			background: #000;
+		}
+	}
+}
+
+.nextPrev__icon {
+	height: 15px;
+	width: 30px;
+	fill: currentColor;
+}
+
+.nextPrev__icon + .nextPrev__text,
+.nextPrev__text + .nextPrev__icon {
+	margin-left: 5px;
+}

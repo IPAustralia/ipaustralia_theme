@@ -1,0 +1,124 @@
+
+.progressBar {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 43rem;
+
+	@media (max-width: 600px) {
+		display: block;
+	}
+
+	&__heading {
+		display: block;
+		margin: 0;
+		font-size: 1em;
+		font-weight: normal;
+		color: $teal;
+		margin-right: 1rem;
+		font-family: inherit;
+		flex-grow: 0;
+	}
+
+	&__list {
+		flex-grow: 1;
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	&__item {
+		flex-grow: 1;
+		display: flex;
+		align-items: center;
+
+		&::after {
+			content: '';
+			display: block;
+			border-bottom: 1px solid $teal_light;
+			flex-grow: 1;
+		}
+
+		&.-active {
+			&::after {
+				border-color: $teal;
+			}
+		}
+
+		&:last-child {
+			flex-grow: 0;
+		}
+	}
+
+	&__number {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 4rem;
+		width: 4rem;
+		padding: 0;
+		background: transparent;
+		border: 1px solid;
+		border-radius: 50%;
+		color: $teal;
+		transition: 0.3s;
+		font-size: 1.5em;
+		line-height: 1;
+		font-weight: bold;
+		font-family: "tahoma", montserratregular, sans-serif;
+
+		&:disabled {
+			color: $teal_light;
+			pointer-events: none;
+		}
+
+		&[aria-current="step"] {
+			pointer-events: none;
+		}
+
+		&:not([disabled]):hover {
+			background: $teal_light;
+			color: #000;
+		}
+	}
+
+	.webform-component-fieldset & {
+		margin-left: auto;
+		margin-right: auto;
+
+		&__item {
+			&::after {
+				border-color: $teal;
+			}
+		}
+
+		&__number {
+			background-color: #fff;
+
+			&:disabled {
+				color: $teal;
+			}
+
+			&:not([disabled]):hover {
+				background: $teal_light;
+				color: #000;
+			}
+
+			&[aria-current="step"] {
+				background: $teal;
+				color: #fff;
+			}
+		}
+
+		&__heading {
+			font-size: 0.9em;
+
+			@media (min-width: 600px) {
+				width: 4em;
+				line-height: 1.2;
+			}
+		}
+	}
+}

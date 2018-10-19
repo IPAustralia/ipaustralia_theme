@@ -1,0 +1,10 @@
+
+@mixin visually-hidden {
+	height: 0;
+	width: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	overflow: hidden;
+	pointer-events: none;
+}
