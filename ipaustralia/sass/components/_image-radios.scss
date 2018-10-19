@@ -1,0 +1,71 @@
+
+.image-radios {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5px;
+	margin-bottom: -10px;
+
+	> *,
+	> * > *,
+	> * > * > * {
+		display: flex;
+	}
+
+	&__item {
+		position: relative;
+		margin-right: 10px;
+		margin-bottom: 10px;
+
+		svg {
+			position: absolute;
+			z-index: 1;
+			top: 10px;
+			left: 0;
+			right: 0;
+			height: 44px;
+			width: 100%;
+			pointer-events: none;
+		}
+	}
+
+	.form-item {
+		margin: 0;
+	}
+
+	label {
+		padding: 0;
+	}
+
+	.text {
+		background: $teal_pale;
+		color: #000;
+		border: 1px solid $teal_medium;
+		padding: 10px;
+		padding-top: 55px;
+		width: 11rem;
+		text-align: center;
+		transition: 0.3s;
+		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	input {
+		@include visually-hidden;
+	}
+
+	input:focus + .text,
+	.text:hover {
+		background: #fff;
+	}
+
+	input:checked + .text {
+		background-color: $teal_medium;
+	}
+
+	input:checked:focus + .text,
+	input:checked + .text:hover {
+		border-color: #000;
+	}
+}

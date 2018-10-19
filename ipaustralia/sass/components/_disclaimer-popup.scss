@@ -1,0 +1,54 @@
+
+.webform-component--disclaimer {
+	max-width: 60rem;
+	width: calc(100% - 40px);
+	max-height: calc(100% - 40px);
+	margin: 0;
+	overflow: auto;
+	background: $teal_pale;
+	border: 1px solid $teal;
+	padding: 13px 20px;
+	padding-top: 0;
+	z-index: 100;
+	outline: none;
+
+	> .control-label {
+		background: $teal;
+		color: #fff;
+		padding: 20px;
+		margin: 0 -20px 1.5rem;
+		display: block;
+		max-width: none;
+	}
+
+	// .js & { display: none; }
+}
+
+.disclaimer-overlay {
+	z-index: 1000;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(#fff,0.5);
+
+	.js & {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+
+	&.-open {
+		display: flex;
+	}
+}
+
+#edit-submitted-disclaimer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+body.-scrollLock {
+	overflow: hidden;
+}

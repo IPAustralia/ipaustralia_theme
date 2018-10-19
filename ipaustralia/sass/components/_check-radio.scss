@@ -1,0 +1,85 @@
+
+.check-radio {
+	label {
+		padding-left: 0;
+	}
+
+	.text {
+		padding-left: 3rem;
+		position: relative;
+		display: inline-block;
+		font-weight: bold;
+
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			transition: 0.3s;
+		}
+
+		&::before {
+			height: 2.5rem;
+			width: 2.5rem;
+			border: 1px solid $teal;
+		}
+
+		&::after {
+			height: 1.5rem;
+			width: 1.5rem;
+			margin-top: 0.5rem;
+			margin-left: 0.5rem;
+			//border is for users using high contrast mode
+			border: 1px solid $teal;
+			background: $teal;
+			opacity: 0;
+			transform: scale(0);
+		}
+	}
+
+	input {
+		@include visually-hidden;
+	}
+
+	input:focus + .text {
+		&::before {
+			box-shadow: 0 0 10px #000;
+		}
+	}
+
+	.text:hover {
+		&::after {
+			opacity: 0.5;
+			transform: scale(0.6);
+		}
+	}
+
+	input:checked + .text {
+		&::after {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+
+	input:checked:hover + .text {
+		&::after {
+			transform: scale(0.8);
+		}
+	}
+
+	// input:checked:focus + .text {
+	// 	&::after {
+	// 		opacity: 1;
+	// 		transform: scale(0.8);
+	// 	}
+	// }
+
+	input[type="radio"] {
+		+ .text {
+			&::before, &::after {
+				border-radius: 50%;
+			}
+		}
+	}
+}

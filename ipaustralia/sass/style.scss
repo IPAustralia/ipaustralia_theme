@@ -1,8 +1,4 @@
-@import "variables/__includes.scss";
-@import "mixins/__includes.scss";
-@import "components/__includes.scss";
-@import "pages/__includes.scss";
+@import "__includes.scss";
 
-
-/// This file should now contain styles
+/// This file should not contain styles
 /// please use [pages] or [components] to do the required styling

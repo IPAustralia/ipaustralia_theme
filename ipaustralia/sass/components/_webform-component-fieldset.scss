@@ -1,0 +1,49 @@
+
+.webform-component-fieldset {
+	border: 0;
+
+	.panel-heading {
+		position: relative;
+		overflow: hidden;
+		background: $teal;
+		color: #fff;
+		border: 0;
+		border-radius: 0;
+		display: flex;
+		padding-right: 80px !important;
+		font-size: 1em;
+		font-weight: bold;
+		font-family: tahoma, montserratregular, sans-serif;
+
+		svg {
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			fill: currentColor;
+			height: 65px;
+			width: 80px;
+		}
+	}
+
+	.panel-body {
+		background: $teal_pale;
+		border: 1px solid $teal;
+		border-top: 0;
+		padding: 20px 30px;
+	}
+
+	.field-suffix {
+		margin-top: 0.5em;
+		font-size: 0.75em;
+		display: block;
+	}
+}
+
+// Hiding empty fields to fix extra space at top of form
+.webform-component--1-a-i-company--1-a-i-company-details,
+.webform-component--1-c-partnership--1-c-partner-details,
+.webform-component--2-a-i-company--2-a-i-company-details,
+.webform-component--2-b-individual--2-b-individual-details,
+.webform-component--2-c-partnership--2-c-partner-details {
+	display: none;
+}
