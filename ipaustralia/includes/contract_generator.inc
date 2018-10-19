@@ -99,7 +99,7 @@ function __ipaustralia_contract_generator(&$vars){
 }
 
 function __ipaustralia_contract_generator_load_file($file){
-  $myfile = fopen($file, "r") or die("Unable to open file!");
+  $myfile = fopen($file, "r") or die("Unable to open file " . $file . "!");
   $content = fread($myfile,filesize($file));
   fclose($myfile);
   return $content;
