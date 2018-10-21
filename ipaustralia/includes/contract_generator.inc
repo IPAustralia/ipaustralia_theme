@@ -54,7 +54,7 @@ function __ipaustralia_contract_generator(&$vars){
 
                   foreach($icons as $label => $icon) {
                     if ($inputValue === $label) {
-                      $radioSettings['#prefix'] = $radioSettings['#prefix'] . __ipaustralia_contract_generator_load_file(DRUPAL_ROOT . '/sites/all/themes/ipaustralia/images/contract-generator-icons/spaced/'.$icon.'.svg');
+                      $radioSettings['#prefix'] = $radioSettings['#prefix'] . __ipaustralia_contract_generator_load_file(DRUPAL_ROOT . '/sites/all/themes/ipaustralia/images/contract-generator-icons-spaced-'.$icon.'.svg');
                     }
                   }
                 }
@@ -77,13 +77,13 @@ function __ipaustralia_contract_generator(&$vars){
             $formKey =& $formField['#webform_component']['form_key'];
             if(isset($formKey)){
               if($formKey==='individual'||$formKey==='2_b_individual'){
-                $formField['#title'] = '</span><span>' . $formField['#title'] . '</span>' . __ipaustralia_contract_generator_load_file(DRUPAL_ROOT . '/sites/all/themes/ipaustralia/images/contract-generator-icons/tight/finger-print.svg') . '<span>';
+                $formField['#title'] = '</span><span>' . $formField['#title'] . '</span>' . __ipaustralia_contract_generator_load_file(DRUPAL_ROOT . '/sites/all/themes/ipaustralia/images/contract-generator-icons-tight-finger-print.svg') . '<span>';
               }else if($formKey==='1_c_partnership'||$formKey==='2_c_partnership'){
-                $formField['#title'] = '</span><span>' . $formField['#title'] . '</span>' . __ipaustralia_contract_generator_load_file(DRUPAL_ROOT . '/sites/all/themes/ipaustralia/images/contract-generator-icons/tight/hand-shake.svg') . '<span>';
+                $formField['#title'] = '</span><span>' . $formField['#title'] . '</span>' . __ipaustralia_contract_generator_load_file(DRUPAL_ROOT . '/sites/all/themes/ipaustralia/images/contract-generator-icons-tight-hand-shake.svg') . '<span>';
               }else if($formKey==='1_a_ii_sole_director_company'||$formKey==='2_a_ii_sole_director_company'){
-                $formField['#title'] = '</span><span>' . $formField['#title'] . '</span>' . __ipaustralia_contract_generator_load_file(DRUPAL_ROOT . '/sites/all/themes/ipaustralia/images/contract-generator-icons/tight/building.svg') . '<span>';
+                $formField['#title'] = '</span><span>' . $formField['#title'] . '</span>' . __ipaustralia_contract_generator_load_file(DRUPAL_ROOT . '/sites/all/themes/ipaustralia/images/contract-generator-icons-tight-building.svg') . '<span>';
               }else if($formKey==='1_a_i_company'||$formKey==='2_a_i_company'){
-                $formField['#title'] = '</span><span>' . $formField['#title'] . '</span>' . __ipaustralia_contract_generator_load_file(DRUPAL_ROOT . '/sites/all/themes/ipaustralia/images/contract-generator-icons/tight/building.svg') . '<span>';
+                $formField['#title'] = '</span><span>' . $formField['#title'] . '</span>' . __ipaustralia_contract_generator_load_file(DRUPAL_ROOT . '/sites/all/themes/ipaustralia/images/contract-generator-icons-tight-building.svg') . '<span>';
               }
             }
           }
