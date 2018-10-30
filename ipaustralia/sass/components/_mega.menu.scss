@@ -1,513 +1,522 @@
-header {
-    nav{
-        #header-navigation-container {
-            position: relative;
+nav{
+    #header-navigation-container {
+        position: relative;
+        @media only screen and (max-width: $break-point-medium - 1) {
+            border:0px;
+            padding:0px;
+            margin-top:-1px;
+        }
+    }
+    &.navbar-default {
+        background: $charcoal;
+        z-index: 1000;
+
+        @media only screen and (min-width: $break-point-medium) {
+            top: 0;
+
+            @supports (position: sticky) {
+                position: sticky !important;
+            }
+        }
+
+        &.js-is-sticky{
+            @media only screen and (min-width: $break-point-medium) {
+                position: fixed;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+    .nav-tabs {
+        border: 0px;
+        margin: 0px;
+
+        li {
+            margin-bottom: 0px;
+            border: 0px;
+            position: inherit;
+            float: left;
             @media only screen and (max-width: $break-point-medium - 1) {
-                border:0px;
-                padding:0px;
-                margin-top:-1px;
+                float: none;
+                border-bottom:1px solid #283e44;
+                clear:both;
+                &.icon-home {
+                    display: none;
+                }
+                /*@include background-image('arrow-down-charcoal.png', right, center, $charcoal);*/
+            }
+            &.active{
+                background: $off-white;
+                a {
+                    color: $charcoal;
+                    background:$menu-active-color;
+                    &:hover, &:active, &:focus {
+                        border: 0px;
+                        color: $charcoal;
+                        background:$off-white;
+                        cursor:pointer;
+                    }
+                    &.megamenu-tab-patents {
+                        background:$menu-active-color-patents;
+                        color: white !important;
+                        &:hover, &:active, &:focus {
+                            border-bottom: 4px solid $teal;
+                        }
+                    }
+                    &.megamenu-tab-trade-marks {
+                        background:$menu-active-color-trademark;
+                        color: white !important;
+                        &:hover, &:active, &:focus {
+                            border-bottom: 4px solid $red;
+
+                        }
+                    }
+                    &.megamenu-tab-designs {
+                        background:$menu-active-color-designs;
+                        color: white !important;
+                        &:hover, &:active, &:focus {
+                            border-bottom: 4px solid $mint;
+
+                        }
+                    }
+                    &.megamenu-tab-plant-breeders-rights {
+                        background:$menu-active-color-plantbreeder;
+                        color: white !important;
+                        &:hover, &:active, &:focus {
+                            border-bottom: 4px solid $yellow;
+
+                        }
+                    }
+                }
+            }
+            &.open, &:hover {
+                > a {
+                    z-index: 991;
+                    &:first-child  {
+                        background: $off-white;
+                        color: $charcoal !important;
+                        border-color: $off-white !important;
+                        @media only screen and (max-width: $break-point-medium - 1) {
+                            @include background-image('arrow-up-transparent.png', 90%, center, no-repeat, $charcoal);
+                            /*background-color:$charcoal !important;*/
+                            color:white !important;
+                            margin-bottom:-5px;
+                        }
+                    }
+
+                }
+                @media only screen and (max-width: $break-point-medium - 1) {
+                    background:$charcoal;
+                }
+            }
+            &.icon-home {
+                &:hover, &.active {
+                    /*@include background-image('home.png');*/
+                    background-color:$charcoal;
+                }
+                a {
+                    display: none;
+                    text-indent: -9999px;
+                    @include background-image('home.png');
+                    width: 70px;
+                    display: block;
+
+                    &:hover, &:active, &:focus {
+                        border: 0px !important;
+                        @include background-image('home.png');
+                        cursor:pointer;
+                    }
+                }
+                @media only screen and (max-width: $break-point-large - 50) {
+                    display: none;
+                }
+                @media only screen and (max-width: $break-point-medium - 1) {
+                    display: block;
+                }
+            }
+
+            a {
+                padding: 19px 21px 15px 21px;
+                display: block;
+                cursor: pointer;
+                color: white;
+                font: normal 16px 'montserratregular', sans-serif;
+                display: block;
+                line-height:46px;
+                border: 0px;
+                margin:0px;
+                border-radius:0px;
+                @media only screen and (max-width: $break-point-xlarge - 1) {
+                    padding: 19px 10px 15px 10px;
+                }
+                @media only screen and (max-width: $break-point-large - 1) {
+                    padding: 19px 5px 15px 5px;
+                }
+                @media only screen and (max-width: $break-point-large - 150) {
+                    font-size: 14px;
+                }
+                @media only screen and (max-width: $break-point-medium - 1) {
+                    font-size: 16px;
+                }
+                &:hover {
+                    text-decoration: none;
+                    border: 0px;
+                    background: transparent;
+                }
+                &:active, &:focus{
+                    background: $charcoal;
+                }
+
+                &.active {
+                    border:0px;
+                }
+                &.megamenu-tab-patents {
+                    border-bottom: 4px solid $teal;
+                    padding-bottom: 11px;
+                }
+                &.megamenu-tab-trade-marks {
+                    border-bottom: 4px solid $red;
+                    padding-bottom: 11px;
+                }
+                &.megamenu-tab-designs {
+                    border-bottom: 4px solid $mint;
+                    padding-bottom: 11px;
+                }
+                &.megamenu-tab-plant-breeders-rights {
+                    border-bottom: 4px solid $yellow;
+                    padding-bottom: 11px;
+                }
+                @media only screen and (max-width: $break-point-medium - 1) {
+                    padding: 22px 15px !important;
+                    line-height:16px;
+                    @include background-image('arrow-down-transparent.png', 90%);
+                    &:hover, &:active, &:focus {
+                        @include background-image('arrow-down-transparent.png', 90%);
+                    }
+                }
+            }
+
+            &.tab-patents {
+                a{
+                    &.highlight-box {
+                        border-left: 6px solid $teal !important;
+                    }   
+                }
+            }
+            &.tab-trade-marks {
+                a{
+                    &.highlight-box {
+                        border-left: 6px solid $red !important;
+                    }   
+                }
+            }
+            &.tab-designs{
+                a{
+                    &.highlight-box {
+                        border-left: 6px solid $mint !important;
+                    }   
+                }
+            }
+            &.tab-plant-breeder-rights {
+                a{
+                    &.highlight-box {
+                        border-left: 6px solid $yellow !important;
+                    }   
+                }
+            }
+            &.tab-understanding-ip, &.tab-ip-infringement, &.tab-tools--resources  {
+                a {
+                    &.highlight-box {
+                        border-left: 6px solid $charcoal !important;
+                    }   
+                }
+            }
+            &:hover .dropdown-menu {
+                //display: block;
+                @media only screen and (max-width: $break-point-medium -1) {
+                    display: none;
+                }
+                @media only screen and (min-width: $break-point-medium) {
+                    display: block;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $break-point-xlarge) {
+            text-overflow:ellipsis;
+            white-space: nowrap ;
+            overflow:hidden;
+
+            > li {
+                float: none;
+                display:inline-block;
+                a {
+                    margin: 0 -2px;
+                }
             }
         }
         @media only screen and (max-width: $break-point-medium - 1) {
-            .navbar-header {
-                position: absolute;
-                top: 20px;
-                right: 0px;
-                button {
-                    border:0px;
-                    border: 0px;
-                    border-radius: 0px;
-                    width:48px;
-                    height:34px;
-                    &:hover, &:active, &:focus {
-                        background-color:#fff !important;
-                    }
-                    @include background-image('close-cross.png');
-                    &.collapsed {
-                        @include background-image('burger.png');
-                    }
-
-                }
-
+            > li {
+                display:block;
             }
         }
-        &.navbar-default {
-            background: $charcoal;
-        }
-        &.is_stuck{
-            bottom: auto !important;
-            left: 0;
-            position: fixed !important;
-            right: 0;
-            top: 0 !important;
-            z-index: 1000;
-        }
-        .nav-tabs {
-            border: 0px;
-            margin: 0px;
 
-            li {
-                margin-bottom: 0px;
-                border: 0px;
-                position: inherit;
-                float: left;
-                @media only screen and (max-width: $break-point-medium - 1) {
-                    float: none;
-                    border-bottom:1px solid #283e44;
-                    clear:both;
-                    &.icon-home {
-                        display: none;
-                    }
-                    /*@include background-image('arrow-down-charcoal.png', right, center, $charcoal);*/
-                }
-                &.active{
-                    background: $off-white;
-                    a {
-                        color: $charcoal;
-                        background:$menu-active-color;
-                        &:hover, &:active, &:focus {
-                            border: 0px;
-                            color: $charcoal;
-                            background:$off-white;
-                            cursor:pointer;
-                        }
-                        &.megamenu-tab-patents {
-                            background:$menu-active-color-patents;
-                            color: white !important;
-                            &:hover, &:active, &:focus {
-                                border-bottom: 4px solid $teal;
-                            }
-                        }
-                        &.megamenu-tab-trade-marks {
-                            background:$menu-active-color-trademark;
-                            color: white !important;
-                            &:hover, &:active, &:focus {
-                                border-bottom: 4px solid $red;
-
-                            }
-                        }
-                        &.megamenu-tab-designs {
-                            background:$menu-active-color-designs;
-                            color: white !important;
-                            &:hover, &:active, &:focus {
-                                border-bottom: 4px solid $mint;
-
-                            }
-                        }
-                        &.megamenu-tab-plant-breeders-rights {
-                            background:$menu-active-color-plantbreeder;
-                            color: white !important;
-                            &:hover, &:active, &:focus {
-                                border-bottom: 4px solid $yellow;
-
-                            }
-                        }
-                    }
-                }
-                &.open, &:hover {
-                    > a {
-                        z-index: 991;
-                        &:first-child  {
-                            background: $off-white;
-                            color: $charcoal !important;
-                            border-color: $off-white !important;
-                            @media only screen and (max-width: $break-point-medium - 1) {
-                                @include background-image('arrow-up-transparent.png', 90%, center, no-repeat, $charcoal);
-                                /*background-color:$charcoal !important;*/
-                                color:white !important;
-                                margin-bottom:-5px;
-                            }
-                        }
-
-                    }
-                    @media only screen and (max-width: $break-point-medium - 1) {
-                        background:$charcoal;
-                    }
-                }
-                &.icon-home {
-                    &:hover, &.active {
-                        /*@include background-image('home.png');*/
-                        background-color:$charcoal;
-                    }
-                    a {
-                        display: none;
-                        text-indent: -9999px;
-                        @include background-image('home.png');
-                        width: 70px;
-                        display: block;
-
-                        &:hover, &:active, &:focus {
-                            border: 0px !important;
-                            @include background-image('home.png');
-                            cursor:pointer;
-                        }
-                    }
-                    @media only screen and (max-width: $break-point-large - 50) {
-                       display: none;
-                    }
-                    @media only screen and (max-width: $break-point-medium - 1) {
-                       display: block;
-                    }
-                }
-
-                a {
-                    padding: 19px 21px 15px 21px;
-                    display: block;
-                    cursor: pointer;
-                    color: white;
-                    font: normal 16px 'montserratregular', sans-serif;
-                    display: block;
-                    line-height:46px;
-                    border: 0px;
-                    margin:0px;
-                    border-radius:0px;
-                    @media only screen and (max-width: $break-point-xlarge - 1) {
-                        padding: 19px 10px 15px 10px;
-                    }
-                    @media only screen and (max-width: $break-point-large - 1) {
-                        padding: 19px 5px 15px 5px;
-                    }
-                    @media only screen and (max-width: $break-point-large - 150) {
-                       font-size: 14px;
-                    }
-                    @media only screen and (max-width: $break-point-medium - 1) {
-                       font-size: 16px;
-                    }
-                    &:hover {
-                        text-decoration: none;
-                        border: 0px;
-                        background: transparent;
-                    }
-                    &:active, &:focus{
-                        background: $charcoal;
-                    }
-
-                    &.active {
-                        border:0px;
-                    }
-                    &.megamenu-tab-patents {
-                        border-bottom: 4px solid $teal;
-                        padding-bottom: 11px;
-                    }
-                    &.megamenu-tab-trade-marks {
-                        border-bottom: 4px solid $red;
-                        padding-bottom: 11px;
-                    }
-                    &.megamenu-tab-designs {
-                        border-bottom: 4px solid $mint;
-                        padding-bottom: 11px;
-                    }
-                    &.megamenu-tab-plant-breeders-rights {
-                        border-bottom: 4px solid $yellow;
-                        padding-bottom: 11px;
-                    }
-                    @media only screen and (max-width: $break-point-medium - 1) {
-                        padding: 22px 15px !important;
-                        line-height:16px;
-                        @include background-image('arrow-down-transparent.png', 90%);
-                        &:hover, &:active, &:focus {
-                            @include background-image('arrow-down-transparent.png', 90%);
-                        }
-                    }
-                }
-
-                &.tab-patents {
-                    a{
-                        &.highlight-box {
-                            border-left: 6px solid $teal !important;
-                        }   
-                    }
-                }
-                &.tab-trade-marks {
-                    a{
-                        &.highlight-box {
-                            border-left: 6px solid $red !important;
-                        }   
-                    }
-                }
-                &.tab-designs{
-                    a{
-                        &.highlight-box {
-                            border-left: 6px solid $mint !important;
-                        }   
-                    }
-                }
-                &.tab-plant-breeder-rights {
-                    a{
-                        &.highlight-box {
-                            border-left: 6px solid $yellow !important;
-                        }   
-                    }
-                }
-                &.tab-understanding-ip, &.tab-ip-infringement, &.tab-tools--resources  {
-                    a {
-                        &.highlight-box {
-                            border-left: 6px solid $charcoal !important;
-                        }   
-                    }
-                }
-                &:hover .dropdown-menu {
-                    //display: block;
-                    @media only screen and (max-width: $break-point-medium -1) {
-                        display: none;
-                    }
-                    @media only screen and (min-width: $break-point-medium) {
-                        display: block;
-                    }
-                }
-            }
-
-            @media only screen and (max-width: $break-point-xlarge) {
-                text-overflow:ellipsis;
-                white-space: nowrap ;
-                overflow:hidden;
-
-                > li {
-                    float: none;
-                    display:inline-block;
-                    a {
-                        margin: 0 -2px;
-                    }
-                }
-            }
+        .dropdown-menu {
+            background: $off-white;
+            border: medium none;
+            border-radius: 0px;
+            box-shadow: 0 5px 4px rgba(0,0,0, 0.5);
+            margin-top: 0 !important;
+            position: absolute;
+            width: 100%;
+            padding: 20px 40px;
             @media only screen and (max-width: $break-point-medium - 1) {
-                > li {
-                    display:block;
+                position:relative;
+                box-shadow:none;
+                padding:0px;
+                margin-bottom:0px;
+            }
+
+            a {
+                font-size: 14px;
+                padding: 0px;
+                background: transparent;
+                color:$charcoal;
+                &:active, &:focus{
+                    background: transparent;
+                }
+            }
+            .clearfix {
+                clear: both;
+            }
+
+            i {
+                float: left;
+                height: 80px;
+                width: 90px;
+                &.icon-patents {
+                    @include background-image('mm-icon-patent.gif', left, top);
+                }
+                &.icon-trade-marks {
+                    @include background-image('mm-icon-tm.gif', left, top);
+                }
+                &.icon-designs {
+                    @include background-image('mm-icon-design.gif', left, top);
+                }
+                &.icon-plant-breeders-rights {
+                    @include background-image('mm-icon-pbr.gif', left, top);
+                }
+                &.icon-understanding-ip, &.icon-ip-infringement, &.icon-tools--resources {
+                    display: none;
+                }
+                @media only screen and (max-width: $break-point-medium - 1) {
+                    display:none;
+                }
+            }
+            .megamenu-tab-contents__title {
+                a {
+                    float: left;
+                    font:$title-h4;
+                    /*font-family: $font-title-normal;*/
+                    text-transform: uppercase;
+                }
+                @media only screen and (max-width: $break-point-medium - 1) {
+                    display:none;
+                }
+                p {
+                    position: absolute;
+                    margin: 30px 90px 30px 0px;
+                    padding-right: 180px;
+                    font-size: 16px;
+                    @media only screen and (max-width: $break-point-xlarge) {
+                        display:none;
+                    }
+                }
+            }
+            .learn-more {
+                @include rounded-button-with-arrrow(transparent,$charcoal, 16px, 'arrow-right-charcoal-transparent.png');
+                float: right;
+                margin-bottom:20px;
+                &:hover {
+                }
+                @media only screen and (max-width: $break-point-medium - 1) {
+                    margin: 0px;
+                    border: 0px !important;
+                    width: 100%;
                 }
             }
 
-            .dropdown-menu {
-                background: $off-white;
-                border: medium none;
-                border-radius: 0px;
-                box-shadow: 0 5px 4px rgba(0,0,0, 0.5);
-                margin-top: 0 !important;
-                position: absolute;
-                width: 100%;
-                padding: 20px 40px;
+            .megamenu-level-2 {
+                clear: both;
+                padding: $gap-small 0px;
+                margin-top: $gap-medium;
+                border-top:2px dotted #c5c9cc;
                 @media only screen and (max-width: $break-point-medium - 1) {
-                    position:relative;
-                    box-shadow:none;
+                    border:none;
+                    margin:0px;
                     padding:0px;
-                    margin-bottom:0px;
                 }
-
-                a {
-                    font-size: 14px;
-                    padding: 0px;
-                    background: transparent;
-                    color:$charcoal;
-                    &:active, &:focus{
-                        background: transparent;
-                    }
-                }
-                .clearfix {
-                    clear: both;
-                }
-
-                i {
+                li {
                     float: left;
-                    height: 80px;
-                    width: 90px;
-                    &.icon-patents {
-                        @include background-image('mm-icon-patent.gif', left, top);
-                    }
-                    &.icon-trade-marks {
-                        @include background-image('mm-icon-tm.gif', left, top);
-                    }
-                    &.icon-designs {
-                        @include background-image('mm-icon-design.gif', left, top);
-                    }
-                    &.icon-plant-breeders-rights {
-                        @include background-image('mm-icon-pbr.gif', left, top);
-                    }
-                    &.icon-understanding-ip, &.icon-ip-infringement, &.icon-tools--resources {
-                        display: none;
+                    width: 33%;
+
+                    @media only screen and (min-width: $break-point-medium + 1) {
+                        &.expanded:nth-child(4n) {
+                            clear: both;
+                        }
                     }
                     @media only screen and (max-width: $break-point-medium - 1) {
-                        display:none;
+                        float:none;
+                        width:100%;
+                        border:0px;
+                        border-top:1px solid $grey;
                     }
-                }
-                .megamenu-tab-contents__title {
                     a {
-                        float: left;
-                        font:$title-h4;
+                        font:$title-h6;
                         /*font-family: $font-title-normal;*/
-                        text-transform: uppercase;
+                        float: left;
+                        display: inline-block;
+                        padding-right: 20px;
+                        @include background-image('arrow-right-charcoal-transparent.png', right);
+                        margin-bottom: 10px;
+                        white-space: normal;
+                        @media only screen and (max-width: $break-point-large - 100) {
+                            background:none;
+                        }
+                        @media only screen and (max-width: $break-point-medium - 1) {
+                            float:none;
+                            font:$body-text;
+                            width:100%;
+                            padding: 20px!important;
+                            margin:0px;
+                            font-weight: bold;
+                            background:none;
+                            background-color:$lighter-grey !important;
+                            color:$charcoal !important;
+                        }
                     }
-                    @media only screen and (max-width: $break-point-medium - 1) {
-                        display:none;
+                    .megamenu-level-3 {
+                        padding:0px;
+                        @media only screen and (max-width: $break-point-medium - 1) {
+                            background-color:transparent !important;
+                        }
+                        li {
+                            width: 100%;
+                            a{
+                                font:$body-text;
+                                line-height: 30px;
+                                background: none;
+                                text-decoration: underline;
+                                margin:0px;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                                @media only screen and (max-width: $break-point-medium - 1) {
+                                    float:none;
+                                    font:$body-text;
+                                    width:100%;
+                                    padding: 20px 20px 20px 40px !important;
+                                    margin:0px;
+                                    font-weight: normal;
+                                    background:none;
+                                    text-decoration: none;
+                                    @include background-image('arrow-right-charcoal-transparent.png', $x:20px);
+                                    background-size:auto 10px;
+                                    background-color:$lighter-grey !important;
+                                    color:$charcoal !important;
+                                }
+                            }
+                        }
+                        @media only screen and (max-width: $break-point-medium - 1) {
+                            /*display:none;*/
+                        }
                     }
-                    p {
-                        position: absolute;
-                        margin: 30px 90px 30px 0px;
-                        padding-right: 180px;
-                        font-size: 16px;
-                        @media only screen and (max-width: $break-point-xlarge) {
+                    &.highlight-box {
+                        padding-right:10px;
+                        &.top-margin {
+                            a {
+                                margin-top: $gap-medium;
+                            }
+                        }
+                        a {
+                            padding: 25px 23px 25px 60px;
+                            @include background-image('link-manual.png', 15px, center, no-repeat, white);
+                            border-left: 6px solid $charcoal;
+                            font: $body-text;
+                            position: relative;
+                            width: 100%;
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                            white-space:nowrap;
+                            &:hover {
+                                border-left: 6px solid $charcoal;
+                            }
+                            &:after {
+                                content:'  ';
+                                float: right;
+                                display: block;
+                                @include background-image('arrow-right-charcoal-transparent.png', right);
+                                width: 20px;
+                                height: 20px;
+                                position: absolute;
+                                right: 0px;
+                                margin-right: 15px;
+                                top:26px;
+                            }
+
+                            &.search-icon {
+                                @include background-image('link-search.png', 15px, center, no-repeat, white); 
+                            }
+                            &.apply-icon {
+                                @include background-image('link-apply.png', 15px, center, no-repeat, white); 
+                            }
+                            &.manual-icon {
+                                @include background-image('link-manual.png', 15px, center, no-repeat, white); 
+                            }
+                            &.fees-icon {
+                                @include background-image('link-fees.png', 15px, center, no-repeat, white); 
+                            }
+                            &.case-studies-icon {
+                                @include background-image('link-case-studies.png', 15px, center, no-repeat, white); 
+                            }
+                            &.download-icon {
+                                @include background-image('link-download.png', 15px, center, no-repeat, white); 
+                            }
+                        }
+                        @media only screen and (max-width: $break-point-medium - 1) {
                             display:none;
                         }
                     }
                 }
-                .learn-more {
-                    @include rounded-button-with-arrrow(transparent,$charcoal, 16px, 'arrow-right-charcoal-transparent.png');
-                    float: right;
-                    margin-bottom:20px;
-                    &:hover {
-                    }
-                    @media only screen and (max-width: $break-point-medium - 1) {
-                        margin: 0px;
-                        border: 0px !important;
-                        width: 100%;
-                    }
-                }
-
-                .megamenu-level-2 {
-                    clear: both;
-                    padding: $gap-small 0px;
-                    margin-top: $gap-medium;
-                    border-top:2px dotted #c5c9cc;
-                    @media only screen and (max-width: $break-point-medium - 1) {
-                        border:none;
-                        margin:0px;
-                        padding:0px;
-                    }
-                    li {
-                        float: left;
-                        width: 33%;
-
-                        @media only screen and (min-width: $break-point-medium + 1) {
-                            &.expanded:nth-child(4n) {
-                                clear: both;
-                            }
-                        }
-                        @media only screen and (max-width: $break-point-medium - 1) {
-                            float:none;
-                            width:100%;
-                            border:0px;
-                            border-top:1px solid $grey;
-                        }
-                        a {
-                            font:$title-h6;
-                            /*font-family: $font-title-normal;*/
-                            float: left;
-                            display: inline-block;
-                            padding-right: 20px;
-                            @include background-image('arrow-right-charcoal-transparent.png', right);
-                            margin-bottom: 10px;
-                            white-space: normal;
-                            @media only screen and (max-width: $break-point-large - 100) {
-                                background:none;
-                            }
-                            @media only screen and (max-width: $break-point-medium - 1) {
-                                float:none;
-                                font:$body-text;
-                                width:100%;
-                                padding: 20px!important;
-                                margin:0px;
-                                font-weight: bold;
-                                background:none;
-                                background-color:$lighter-grey !important;
-                                color:$charcoal !important;
-                            }
-                        }
-                        .megamenu-level-3 {
-                            padding:0px;
-                            @media only screen and (max-width: $break-point-medium - 1) {
-                                background-color:transparent !important;
-                            }
-                            li {
-                                width: 100%;
-                                a{
-                                    font:$body-text;
-                                    line-height: 30px;
-                                    background: none;
-                                    text-decoration: underline;
-                                    margin:0px;
-                                    &:hover {
-                                        text-decoration: none;
-                                    }
-                                    @media only screen and (max-width: $break-point-medium - 1) {
-                                        float:none;
-                                        font:$body-text;
-                                        width:100%;
-                                        padding: 20px 20px 20px 40px !important;
-                                        margin:0px;
-                                        font-weight: normal;
-                                        background:none;
-                                        text-decoration: none;
-                                        @include background-image('arrow-right-charcoal-transparent.png', $x:20px);
-                                        background-size:auto 10px;
-                                        background-color:$lighter-grey !important;
-                                        color:$charcoal !important;
-                                    }
-                                }
-                            }
-                            @media only screen and (max-width: $break-point-medium - 1) {
-                                /*display:none;*/
-                            }
-                        }
-                        &.highlight-box {
-                            padding-right:10px;
-                            &.top-margin {
-                                a {
-                                    margin-top: $gap-medium;
-                                }
-                            }
-                            a {
-                                padding: 25px 23px 25px 60px;
-                                @include background-image('link-manual.png', 15px, center, no-repeat, white);
-                                border-left: 6px solid $charcoal;
-                                font: $body-text;
-                                position: relative;
-                                width: 100%;
-                                overflow:hidden;
-                                text-overflow:ellipsis;
-                                white-space:nowrap;
-                                &:hover {
-                                    border-left: 6px solid $charcoal;
-                                }
-                                &:after {
-                                    content:'  ';
-                                    float: right;
-                                    display: block;
-                                    @include background-image('arrow-right-charcoal-transparent.png', right);
-                                    width: 20px;
-                                    height: 20px;
-                                    position: absolute;
-                                    right: 0px;
-                                    margin-right: 15px;
-                                    top:26px;
-                                }
-
-                                &.search-icon {
-                                    @include background-image('link-search.png', 15px, center, no-repeat, white); 
-                                }
-                                &.apply-icon {
-                                    @include background-image('link-apply.png', 15px, center, no-repeat, white); 
-                                }
-                                &.manual-icon {
-                                    @include background-image('link-manual.png', 15px, center, no-repeat, white); 
-                                }
-                                &.fees-icon {
-                                    @include background-image('link-fees.png', 15px, center, no-repeat, white); 
-                                }
-                                &.case-studies-icon {
-                                    @include background-image('link-case-studies.png', 15px, center, no-repeat, white); 
-                                }
-                                &.download-icon {
-                                    @include background-image('link-download.png', 15px, center, no-repeat, white); 
-                                }
-                            }
-                            @media only screen and (max-width: $break-point-medium - 1) {
-                                display:none;
-                            }
-                        }
-                    }
-                }
-
             }
-        }
 
+        }
+    }
+}
+
+@media only screen and (max-width: $break-point-medium - 1) {
+    // Two classes needed to overpower bootstrap
+    .navbar-header.navbar-header {
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        margin: 0;
+
+        button {
+            border:0px;
+            border: 0px;
+            border-radius: 0px;
+            width:48px;
+            height:34px;
+            &:hover, &:active, &:focus {
+                background-color:#fff !important;
+            }
+            @include background-image('close-cross.png');
+            &.collapsed {
+                @include background-image('burger.png');
+            }
+
+        }
 
     }
 }
@@ -521,8 +530,12 @@ header {
     display:none;
 }
 //removes padding on non ip right descriptive text in megamenu
-header nav .nav-tabs li.tab-patents .dropdown-menu .megamenu-tab-contents__title p,
-header nav .nav-tabs li.tab-trade-marks .dropdown-menu .megamenu-tab-contents__title p,
-header nav .nav-tabs li.tab-designs .dropdown-menu .megamenu-tab-contents__title p, 
-header nav .nav-tabs li.tab-plant-breeder-rights .dropdown-menu .megamenu-tab-contents__title p {margin: 30px 90px 30px 90px;}
+nav .nav-tabs li.tab-patents .dropdown-menu .megamenu-tab-contents__title p,
+nav .nav-tabs li.tab-trade-marks .dropdown-menu .megamenu-tab-contents__title p,
+nav .nav-tabs li.tab-designs .dropdown-menu .megamenu-tab-contents__title p,
+nav .nav-tabs li.tab-plant-breeder-rights .dropdown-menu .megamenu-tab-contents__title p {margin: 30px 90px 30px 90px;}
 
+// Need position:relative for position:sticky to work
+section[role="main"][aria-label="Main content"] {
+    position: relative;
+}
