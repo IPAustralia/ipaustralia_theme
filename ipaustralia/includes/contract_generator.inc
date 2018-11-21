@@ -276,12 +276,17 @@ function __ipaustralia_contract_generator_load_file($file){
 }
 
 function __ipaustralia_contract_generator_custom_js(&$vars){
+  $public_file_url = null;
+  if ($wrapper = file_stream_wrapper_get_instance_by_uri('public://')) {
+    $public_file_url = $wrapper->getExternalUrl();
+  }
   $js = '<script src="https://www.ipaustralia.gov.au/sites/g/files/net856/themes/site/ipaustralia/interactives/nda_generator/docxtemplater-latest.min.js"></script>';
   $js .= '<script src="https://www.ipaustralia.gov.au/sites/g/files/net856/themes/site/ipaustralia/interactives/nda_generator/jszip.min.js"></script>';
   $js.='<script src="https://www.ipaustralia.gov.au/sites/g/files/net856/themes/site/ipaustralia/interactives/nda_generator/file-saver.min.js"></script>';
   $js.='<script src="https://www.ipaustralia.gov.au/sites/g/files/net856/themes/site/ipaustralia/interactives/nda_generator/jszip-utils.min.js"></script>';
   $js.='<!-- IE 6 to 9 --><!--[if IE]><script type="text/javascript" src="https://www.ipaustralia.gov.au/sites/g/files/net856/themes/site/ipaustralia/interactives/nda_generator/jszip-utils-ie.min.js"></script><![endif]-->';
   $js .= '<script type="text/javascript">';
+  //$js .= 'console.log("'.$public_file_url.'");';
   $js .= 'var form_id="#' . $vars['form']['#id'] . '";';
   $js .= '
 (function($){
@@ -815,9 +820,9 @@ function __ipaustralia_contract_generator_custom_js(&$vars){
       // generate the file
       var templateFilePath = "";
       if(accumulatedData.one_way_or_two_way == "one_way") {
-        templateFilePath = "/sites/g/files/net856/themes/site/ipaustralia/interactives/nda_generator/template-one.docx"
+        templateFilePath = "' . $public_file_url . 'template-one.docx"
       } else {
-        templateFilePath = "/sites/g/files/net856/themes/site/ipaustralia/interactives/nda_generator/template-two.docx"
+        templateFilePath = "' . $public_file_url . 'template-two.docx"
       }
 
       loadFile(templateFilePath, function(error, template) {
