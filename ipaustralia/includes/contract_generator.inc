@@ -236,8 +236,8 @@ function __ipaustralia_contract_generator(&$vars){
               if($formField['#webform_component']['form_key']==='law_and_jurisdiction'){
                 $formField['#prefix'] = '
                 <fieldset class="block-radio-list">
-                  <legend class="block-radio-list__outer-legend">' . $formField['#title'] . ' <span class="form-required" title="This field is required.">*</span></legend>
-                  <fieldset class="block-radio-list__block">
+                  <legend class="block-radio-list__outer-legend">' . // $formField['#title'] . ' <span class="form-required" title="This field is required.">*</span>
+                  '</legend><fieldset class="block-radio-list__block">
                     <legend class="block-radio-list__block-legend">In What State or Territory is your business\' head office located?</legend>';
                 $formField['#suffix'] = '</fieldset></fieldset>';
                 $formField['#title'] = '';
