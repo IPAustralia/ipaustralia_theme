@@ -35,9 +35,9 @@ h2 {
 h3 {
     color: $color_shark_approx;
     font-family: $font-title-normal;
-    font-size: 28px;
-    line-height: 32px;
-    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
     letter-spacing: -0.5px;
 
     @media only screen and (max-width: $break-point-medium) {
@@ -52,11 +52,11 @@ h3 {
 h4 {
     color: $color_shark_approx;
     font-family: $font-title-normal;
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 30px;
     @media only screen and (max-width: $break-point-medium) {
-        font-size: 22px;
-        line-height: 34px;
+        font-size: 18px;
+        line-height: 20px;
     }
     a {
         color: $charcoal !important;
@@ -65,7 +65,7 @@ h4 {
 h5 {
     color: $color_shark_approx;
     font-family: $font-title-normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     a {
         color: $charcoal;
@@ -74,7 +74,7 @@ h5 {
 h6 {
     color: $color_shark_approx;
     font-family: $font_1, $font_5;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     a {
         color: $charcoal !important;
@@ -174,7 +174,7 @@ article {
         display: block;
         position: relative;
         margin: .2em 0 1em 0;
-        .field-label {
+        /* .field-label {
             font-weight: bold;
             background-color: black;
             color: white;
@@ -183,7 +183,7 @@ article {
         .field-items {
             padding: .12em;
             border: 1px solid;
-        }
+        } */
     }
     dl {
         dt:nth-of-type(even) {

@@ -1,3 +1,13 @@
+
+// https://stackoverflow.com/a/52116816/1611058
+if (!('remove' in Element.prototype)) {
+    Element.prototype.remove = function () {
+        if (this.parentNode) {
+            this.parentNode.removeChild(this);
+        }
+    };
+}
+
 jQuery(window).load(function () {
     resizing();
 });
@@ -11,6 +21,9 @@ jQuery(document).ready(function () {
     personaCookies();
     externalLink();
     openPopup();
+    stickyMenu();
+
+    new ip_contract_generator_pages(jQuery);
 
     if (jQuery('.application-process-menu').length){
         jQuery('aside.col-sm-3').addClass('app-process-visible');
@@ -169,7 +182,6 @@ function resizing() {
     showChatIcon();
     slickSlides();
     slideApplicationProcess();
-    stickyMenu();
     jQuery('.view-policy-register li.views-row').matchHeight();
 }
 function equaliseElementsHeight() {
@@ -680,34 +692,402 @@ function openCloseGroups($object) {
         });
     }
 }
-function stickyMenu() {
-    // Set sticky only when on large screen
-    if (jQuery('.bp-medium').length > 0) {
-        jQuery(".navbar-default").trigger("sticky_kit:detach");
-        jQuery("#block-bean-patents-anchor-menu-3").trigger("sticky_kit:detach");
-        jQuery("#block-bean-trade-marks-anchor-menu").trigger("sticky_kit:detach");
-        jQuery("#block-bean-designs-anchor-menu").trigger("sticky_kit:detach");
-        jQuery("#block-bean-pbr-anchor-menu").trigger("sticky_kit:detach");
-        jQuery("#block-bean-ip-infringement-anchor-block-0").trigger("sticky_kit:detach");
-        jQuery("#block-bean-understanding-ip-anchor-block").trigger("sticky_kit:detach");
-        jQuery("#block-bean-about-us-anchor-menu").trigger("sticky_kit:detach");
-        jQuery("#block-bean-ip-report-anchor-menu").trigger("sticky_kit:detach");
-        jQuery("#block-bean-news-and-community-landing-page-").trigger("sticky_kit:detach");
-    } else {
-        jQuery(".navbar-default").stick_in_parent();
-        jQuery("#block-bean-patents-anchor-menu-3").stick_in_parent();
-        jQuery("#block-bean-trade-marks-anchor-menu").stick_in_parent();
-        jQuery("#block-bean-designs-anchor-menu").stick_in_parent();
-        jQuery("#block-bean-pbr-anchor-menu").stick_in_parent();
-        jQuery("#block-bean-ip-infringement-anchor-block-0").stick_in_parent();
-        jQuery("#block-bean-understanding-ip-anchor-block").stick_in_parent();
-        jQuery("#block-bean-about-us-anchor-menu").stick_in_parent();
-        jQuery("#block-bean-ip-report-anchor-menu").stick_in_parent();
-        jQuery("#block-bean-news-and-community-landing-page-").stick_in_parent();
 
+function stickyMenu() {
+
+    var selector = [
+        '.navbar-default',
+        '#block-bean-patents-anchor-menu-3',
+        '#block-bean-trade-marks-anchor-menu',
+        '#block-bean-designs-anchor-menu',
+        '#block-bean-pbr-anchor-menu',
+        '#block-bean-ip-infringement-anchor-block-0',
+        '#block-bean-understanding-ip-anchor-block',
+        '#block-bean-about-us-anchor-menu',
+        '#block-bean-ip-report-anchor-menu',
+        '#block-bean-news-and-community-landing-page-'
+    ].join(',');
+
+    var _$stickies = [].slice.call(document.querySelectorAll(selector));
+
+    _$stickies.forEach(function(_$sticky){
+        var supportsSticky = typeof CSS !== 'undefined' && CSS.supports('position', 'sticky');
+
+        if (supportsSticky) {
+            SUPPORTED_handle_stickiness(_$sticky);
+            window.addEventListener('scroll', function(){
+                SUPPORTED_handle_stickiness(_$sticky);
+            })
+
+        } else {
+            var original_offset = jQuery(_$sticky).offset().top;
+            create_spacer(_$sticky);
+            NOT_SUPPORTED_handle_stickiness(_$sticky, original_offset);
+            window.addEventListener('scroll', function(){
+                NOT_SUPPORTED_handle_stickiness(_$sticky, original_offset);
+            })
+        }
+    })
+
+    // Functionality for when position:sticky is available
+    function SUPPORTED_handle_stickiness(_$sticky){
+        var isSticky = getComputedStyle(_$sticky).position == 'sticky';
+        var currentOffset = _$sticky.getBoundingClientRect().top;
+        var cssOffset = get_css_offset(_$sticky);
+        var isStuck = currentOffset <= cssOffset;
+
+        apply_sticky_class(isSticky && isStuck, _$sticky);
     }
+
+    // Functionality for when position:sticky is not available
+    function NOT_SUPPORTED_handle_stickiness(_$sticky, original_offset) {
+        var cssOffset = get_css_offset(_$sticky);
+        var isStuck = pageYOffset + (cssOffset * 2) >= original_offset + cssOffset;
+        apply_sticky_class(isStuck, _$sticky);
+    }
+
+    function create_spacer(_$sticky) {
+        var height = get_style(_$sticky, 'height');
+        jQuery(_$sticky).wrap('<div class="js-sticky-spacer" style="min-height:'+height+'px"></div>');
+    }
+
+    function apply_sticky_class(isStuck, _$sticky) {
+
+        var stickyClass = 'js-is-sticky';
+
+        if (isStuck) {
+            _$sticky.classList.add(stickyClass);
+        } else {
+            _$sticky.classList.remove(stickyClass);
+        }
+    }
+
+    function get_css_offset(_$sticky) {
+        return get_style(_$sticky, 'top');
+    }
+
+    function get_style(_$element, cssProperty) {
+        return parseInt( getComputedStyle(_$element)[cssProperty].replace('px','') );
+    }
+
 }
 
+function ip_contract_generator_pages($) {
+
+    var _$formSubmit = document.querySelector('.contract-generator-submit');
+
+    if (_$formSubmit) {
+
+        var $pages = $('.form-page');
+        var _$form = $pages.closest('form')[0];
+        var $progressBtns = $('.progressBar__number');
+
+        _$form.onsubmit = function(e){
+            e.preventDefault();
+        }
+
+        var controller = this;
+        var pages;
+
+        this.hide_all = function() {
+            pages.forEach(function(page){
+                page.hide();
+            })
+        }
+
+        pages = $pages.toArray().map(function(_$page, index){
+            return new generator_page(_$page, index);
+        });
+
+        var invalidLabels = [];
+        var disclaimer = new disclaimer_popup();
+
+        function generator_page (_$page, index) {
+            var _$next = _$page.querySelector('.next-btn, .submit-btn');
+            var _$prev = _$page.querySelector('.back-btn');
+            var _$progress = _$page.querySelector('.progressBar');
+
+            init_progress_bar(_$progress);
+
+            this._$page = _$page;
+
+            _$page.setAttribute('tabindex','-1');
+
+            var pageControl = this;
+
+            var $fields = $(_$page).find('.webform-component');
+            $fields = $fields.filter(function(){
+                return !!this.querySelector('input,textarea,select');
+            })
+            this.fields = $fields.toArray().map(function(_$field){
+                return new form_field(_$field);
+            });
+
+            this.hide = function(){
+                _$page.style.display = 'none';
+            }
+            this.show = function(){
+                _$page.style.display = 'block';
+                _$page.focus();
+            }
+
+            this.next = function(){
+                if (validate_page(pageControl)) {
+                    if (_$next.classList.contains('submit-btn')) {
+                        disclaimer.open();
+                    } else {
+                        var nextIndex = index + 1;
+                        show_page(nextIndex);
+                    }
+                } else {
+                    // _$form.reportValidity();
+                    // alert ('invalid');
+                }
+            }
+
+            this.prev = function(){
+                var prevIndex = index - 1;
+                show_page(prevIndex);
+            }
+
+            //Hides all but the first page
+            if (index === 0) {
+                pageControl.show();
+            }
+
+            bind_events();
+
+            function bind_events () {
+
+                if (_$next) {
+                    _$next.onclick = function(e) {
+                        e.preventDefault();
+                        pageControl.next();
+                    }
+                }
+
+                if (_$prev) {
+                    _$prev.onclick = function(e) {
+                        e.preventDefault();
+                        pageControl.prev();
+                    }
+                }
+            }
+        }
+
+        function init_progress_bar (_$progress) {
+            var $buttons = $(_$progress).find('button');
+            $buttons.each(function(i){
+                this.onclick = function(){
+                    show_page(i);
+                }
+            });
+            fix_progress_disabled_attributes();
+        }
+
+        function show_page (selectedIndex) {
+            if (pages[selectedIndex]) {
+                controller.hide_all();
+                pages[selectedIndex].show();
+                return true;
+            }
+            return false;
+        }
+
+        function validate_page (pageControl) {
+            invalidLabels = [];
+            var validation = pageControl.fields.map(function(field){
+                return field.validate();
+            })
+            var valid = !validation.some(function(value){ return !value; });
+            if (!valid) {
+                show_error_block(pageControl._$page);
+            } else {
+                hide_error_block(pageControl._$page);
+            }
+            return valid;
+        }
+
+        function show_error_block(_$page) {
+            var $page = $(_$page);
+            var listHTML = ['<li>', invalidLabels.join('</li><li>'), '</li>'].join('');
+            _$errorBlock = _$page.querySelector('.error-block');
+            if (_$errorBlock) {
+                var _$list = _$errorBlock.querySelector('.error-block-list');
+                _$list.innerHTML = listHTML;
+            } else {
+                $page.prepend([
+                    '<div class="error-block" role="alert" tabindex="-1">',
+                        '<h2>Errors found on page</h2>',
+                        '<p>The following fields have errors:</p>',
+                        '<ol class="error-block-list">',
+                            listHTML,
+                        '</ol>',
+                    '</div>'
+                ].join(''))
+                _$errorBlock = _$page.querySelector('.error-block');
+            }
+            _$errorBlock.focus();
+        }
+
+        function hide_error_block(_$page) {
+            var _$block = _$page.querySelector('.error-block');
+            if (_$block) {
+                _$block.remove();
+            }
+        }
+
+        function form_field (_$field) {
+            var field = this;
+            var _$input = _$field.querySelector('input, textarea, select');
+            var type = _$input.type || _$input.nodeName.toLowerCase();
+            var isRequired = !!_$field.querySelector('.form-required');
+
+            if (_$input.classList.contains('form-text')) {
+                type = 'text';
+            }
+
+            this.validate = function () {
+                var typeActions = {
+                    radio: validate_radios,
+                    text: validate_inputs,
+                    textarea: validate_inputs,
+                };
+                if (isRequired) {
+                    var valid = typeActions[type](_$field);
+                    handle_error_state(_$field, valid);
+                    return valid;
+                } else {
+                    return true;
+                }
+            }
+
+            if (type === 'radio' || type === 'checkbox') {
+                var $inputs = $(_$field).find('input');
+                $inputs.change(function(){
+                    field.validate();
+                    fix_progress_disabled_attributes();
+                })
+            } else {
+                _$input.onchange = function() {
+                    if (field.validate()) {
+                        if (_$input.checkValidity) {
+                            var isValid = _$input.checkValidity();
+                            var action = isValid ? 'remove' : 'add';
+                            _$field.classList[action]('-invalid');
+                        }
+                    }
+                }
+            }
+        }
+
+        // Drupal is removing the disabled attributes on progress bar buttons
+        function fix_progress_disabled_attributes(){
+            setTimeout(function(){
+                $progressBtns.each(function(){
+                    this.disabled = this.dataset.disabled === 'true';
+                })
+            }, 1);
+        }
+
+        function push_invalid_label(_$label){
+            var text = _$label.textContent;
+            if (invalidLabels.indexOf(text) === -1) {
+                invalidLabels.push(text);
+            }
+        }
+
+        function validate_inputs (_$wrapper) {
+            var _$label = _$wrapper.querySelector('label');
+            var $input = $(_$wrapper).find('.form-text, textarea').filter(':visible');
+            if ($input.length) {
+                var $invalidFields = $input.filter(function(){
+                    return this.value === '';
+                });
+                var valid = $invalidFields.length === 0;
+                if (!valid) {
+                    push_invalid_label(_$label);
+                }
+                return valid;
+            }
+            return true;
+        }
+
+        function validate_radios (_$wrapper) {
+            var _$label;
+            if (_$wrapper.classList.contains('webform-component--law-and-jurisdiction')){
+                _$label = $(_$wrapper).prev()[0];
+            } else {
+                _$label = _$wrapper.querySelector('.control-label');
+            }
+            var $radios = $(_$wrapper).find('input[type="radio"]').filter(function(){
+                return $(this).parent().is(':visible');
+            });
+            if (_$label.textContent === 'Disclaimer *') {
+                // Disclaimer has it's own special logic
+                return true;
+            }
+            if ($radios.length) {
+                // var label = $radios.closest()
+                var uncheckedCount = $radios.not(':checked').length;
+                var totalCount = $radios.length;
+                var valid = uncheckedCount < totalCount;
+                if (!valid) {
+                    push_invalid_label(_$label);
+                }
+                return valid;
+            }
+            return true;
+        }
+
+        function handle_error_state (_$wrapper, valid) {
+            var action = valid ? 'remove' : 'add';
+            _$wrapper.classList[action]('-error');
+        }
+
+        function disclaimer_popup() {
+            var self = this;
+            var _$disclaimer = document.querySelector('.webform-component--disclaimer');
+            var $disclaimer = $(_$disclaimer);
+            var _$trigger = document.querySelector('.submit-btn');
+            var _$body = document.querySelector('body');
+            $disclaimer.attr('tabindex', '-1').attr('role', 'dialogue');
+            $disclaimer.wrap('<div class="disclaimer-overlay"></div>');
+            var _$wrapper = _$disclaimer.parentElement;
+
+            var _$agree = _$disclaimer.querySelector('input[type="radio"]');
+
+            this.open = function () {
+                _$wrapper.classList.add('-open');
+                _$body.classList.add('-scrollLock');
+                _$disclaimer.focus();
+            }
+            this.close = function () {
+                _$wrapper.classList.remove('-open');
+                _$body.classList.remove('-scrollLock');
+                _$trigger.focus();
+                _$agree.checked = false;
+            }
+
+            _$disclaimer.onclick = function(e) {
+                e.stopPropagation();
+            }
+            // close if the escape key is pressed
+            _$disclaimer.addEventListener('keydown', function(e){
+                if (e.which === 27) {
+                    self.close();
+                }
+            })
+            _$wrapper.onclick = function() {
+                self.close();
+            }
+            _$agree.onchange = function() {
+                _$formSubmit.click();
+                self.close();
+            }
+        }
+    }
+}
 
 //bold the "IP Australia" in the footer
 jQuery(document).ready(function () {
@@ -1316,84 +1696,6 @@ function equalHeight($container) {
         return a
     }
 });
-
-
-
-/*
- Sticky-kit v1.1.2 | WTFPL | Leaf Corcoran 2015 | http://leafo.net
- */
-(function () {
-    var b, f;
-    b = this.jQuery || window.jQuery;
-    f = b(window);
-    b.fn.stick_in_parent = function (d) {
-        var A, w, J, n, B, K, p, q, k, E, t;
-        null == d && (d = {});
-        t = d.sticky_class;
-        B = d.inner_scrolling;
-        E = d.recalc_every;
-        k = d.parent;
-        q = d.offset_top;
-        p = d.spacer;
-        w = d.bottoming;
-        null == q && (q = 0);
-        null == k && (k = void 0);
-        null == B && (B = !0);
-        null == t && (t = "is_stuck");
-        A = b(document);
-        null == w && (w = !0);
-        J = function (a, d, n, C, F, u, r, G) {
-            var v, H, m, D, I, c, g, x, y, z, h, l;
-            if (!a.data("sticky_kit")) {
-                a.data("sticky_kit", !0);
-                I = A.height();
-                g = a.parent();
-                null != k && (g = g.closest(k));
-                if (!g.length)
-                    throw"failed to find stick parent";
-                v = m = !1;
-                (h = null != p ? p && a.closest(p) : b("<div />")) && h.css("position", a.css("position"));
-                x = function () {
-                    var c, f, e;
-                    if (!G && (I = A.height(), c = parseInt(g.css("border-top-width"), 10), f = parseInt(g.css("padding-top"), 10), d = parseInt(g.css("padding-bottom"), 10), n = g.offset().top + c + f, C = g.height(), m && (v = m = !1, null == p && (a.insertAfter(h), h.detach()), a.css({position: "", top: "", width: "", bottom: ""}).removeClass(t), e = !0), F = a.offset().top - (parseInt(a.css("margin-top"), 10) || 0) - q,
-                            u = a.outerHeight(!0), r = a.css("float"), h && h.css({width: a.outerWidth(!0), height: u, display: a.css("display"), "vertical-align": a.css("vertical-align"), "float": r}), e))
-                        return l()
-                };
-                x();
-                if (u !== C)
-                    return D = void 0, c = q, z = E, l = function () {
-                        var b, l, e, k;
-                        if (!G && (e = !1, null != z && (--z, 0 >= z && (z = E, x(), e = !0)), e || A.height() === I || x(), e = f.scrollTop(), null != D && (l = e - D), D = e, m ? (w && (k = e + u + c > C + n, v && !k && (v = !1, a.css({position: "fixed", bottom: "", top: c}).trigger("sticky_kit:unbottom"))), e < F && (m = !1, c = q, null == p && ("left" !== r && "right" !== r || a.insertAfter(h),
-                                h.detach()), b = {position: "", width: "", top: ""}, a.css(b).removeClass(t).trigger("sticky_kit:unstick")), B && (b = f.height(), u + q > b && !v && (c -= l, c = Math.max(b - u, c), c = Math.min(q, c), m && a.css({top: c + "px"})))) : e > F && (m = !0, b = {position: "fixed", top: c}, b.width = "border-box" === a.css("box-sizing") ? a.outerWidth() + "px" : a.width() + "px", a.css(b).addClass(t), null == p && (a.after(h), "left" !== r && "right" !== r || h.append(a)), a.trigger("sticky_kit:stick")), m && w && (null == k && (k = e + u + c > C + n), !v && k)))
-                            return v = !0, "static" === g.css("position") && g.css({position: "relative"}),
-                                    a.css({position: "absolute", bottom: d, top: "auto"}).trigger("sticky_kit:bottom")
-                    }, y = function () {
-                        x();
-                        return l()
-                    }, H = function () {
-                        G = !0;
-                        f.off("touchmove", l);
-                        f.off("scroll", l);
-                        f.off("resize", y);
-                        b(document.body).off("sticky_kit:recalc", y);
-                        a.off("sticky_kit:detach", H);
-                        a.removeData("sticky_kit");
-                        a.css({position: "", bottom: "", top: "", width: ""});
-                        g.position("position", "");
-                        if (m)
-                            return null == p && ("left" !== r && "right" !== r || a.insertAfter(h), h.remove()), a.removeClass(t)
-                    }, f.on("touchmove", l), f.on("scroll", l), f.on("resize",
-                            y), b(document.body).on("sticky_kit:recalc", y), a.on("sticky_kit:detach", H), setTimeout(l, 0)
-            }
-        };
-        n = 0;
-        for (K = this.length; n < K; n++)
-            d = this[n], J(b(d));
-        return this
-    }
-}).call(this);
-
-
 
 //makes the megamenu top navigation clickable when already toggled.
 jQuery( document ).ready(function() {

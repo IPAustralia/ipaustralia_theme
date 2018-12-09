@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* page reset */
+
+.masthead-wrapper {
+  display: none;
+}
+
+section[aria-label="main"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h1.title {
+  font-size: 3.25em;
+  line-height: 1em;
+  padding-left: 20px;
+  color: #FFF;
+  margin-top: -280px;
+  margin-bottom: 110px;
+  width: 35%;
+  letter-spacing: 0.023em;
+}
+
+img.cover-image {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1180px) {
+  .field-name-field-masthead-image .img-responsive {
+    padding-right: 12px;
+    padding-top: 30px;
+    max-height: 120px;
+  }
+}
+
+/* section --- */
+
+/* list */
+
+ul.grid {
+  display: table;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.grid li {
+  background-position: top right;
+  background-repeat: no-repeat;
+  border: 3px solid #fff;
+  display: table-cell;
+  float: left;
+  height: 364px;
+  margin-bottom: 12px;
+  vertical-align: bottom;
+  width: 100%;
+  transition: border-color .50s ease-in-out;
+  -moz-transition: border-color .50s ease-in-out;
+  -webkit-transition: border-color .50s ease-in-out;
+}
+
+.grid li:hover {
+  border: 3px solid #1D252C;
+  opacity: 0.8;
+}
+
+.grid li a {
+  color: #141414;
+  display: block;
+  font-size: 1.25em;
+  height: 100%;
+  padding-left: 5px;
+  padding-top: 140px;
+  text-decoration: none;
+  width: 100%;
+}
+
+li:nth-child(7) a, li:nth-child(8) a, li:nth-child(9) a {
+  color: #fff;
+}
+
+.grid li#welcome {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-zed.png');
+}
+
+.grid li#chapter-1 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-1.png');
+}
+
+.grid li#chapter-2 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-2.png');
+}
+
+.grid li#chapter-3 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-3.png');
+}
+
+.grid li#chapter-4 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-4.png');
+}
+
+.grid li#chapter-5 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-5.png');
+}
+
+.grid li#chapter-6 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-6.png');
+}
+
+.grid li#chapter-7 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-7.png');
+}
+
+.grid li#chapter-8 {
+  background-image: url('https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-hp-8.png');
+}
+
+@media only screen and (min-width: 1150px) {
+  ul.grid {
+    width: 100%;
+  }
+  .grid li {
+    height: 200px;
+    margin: 14.5px 9.6px;
+    width: 364px
+  }
+}
+
+@media only screen and (max-width: 1149px) {
+  .grid li {
+    height: 240px;
+    text-align: center;
+  }
+  .grid li#welcome {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-responsive-ch9.png)
+  }
+  .grid li#chapter-1 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-responsive-ch1.png);
+  }
+  .grid li#chapter-2 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-responsive-ch2.png);
+  }
+  .grid li#chapter-3 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-responsive-ch3.png);
+  }
+  .grid li#chapter-4 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-responsive-ch4.png);
+  }
+  .grid li#chapter-5 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-responsive-ch5.png);
+  }
+  .grid li#chapter-6 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-responsive-ch6.png);
+  }
+  .grid li#chapter-7 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-responsive-ch7.png);
+  }
+  .grid li#chapter-8 {
+    background-image: url(https://www.ipaustralia.gov.au/sites/g/files/net856/f/ipr-responsive-ch8.png);
+  }
+  .grid li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding-top: 203px;
+  }
+  h1.title {
+    font-size: 3em;
+    width: 60%;
+    padding-top: 30px;
+    margin-bottom: 3em;
+  }
+}
+
+@media only screen and (max-width: 737px) {
+  h1.title {
+    font-size: 2em;
+    width: 80%;
+    margin-top: -180px;
+    padding-bottom: 10px;
+    margin-bottom: 3em;
+  }
+}
+
+@media only screen and (max-width: 494px) {
+  h1.title {
+    color: #000;
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  img.cover-image {
+    display: none;
+  }
+}
+
+/* intro para */
+
+p.intro {
+  margin-left: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  p.intro {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  p.intro {
+    margin-top: -70px;
+  }
+}
+
+@media screen and (min-width: 977px) {
+  p.intro {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1154px) {
+  p.intro {
+    padding-top: 0;
+    margin-top: -60px;
+  }
+}
+
+@media screen and (min-width: 1206px) {
+  p.intro {
+    padding-top: 0;
+    margin-top: -0;
+  }
+}

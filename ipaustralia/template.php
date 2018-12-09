@@ -44,7 +44,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KSCK47');";
-  $script = array( 
+  $script = array(
     '#tag' => 'script',
     '#value' => $gtm_string
   );
@@ -61,6 +61,7 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
   $vars['iptoolkit_logo'] = theme('image', array(
     'path' => drupal_get_path('theme', 'ipaustralia') . '/images/DIIS_logo.png',
     'attributes' => array('class' => 'iptoolkit-logo'),
+    'alt' => 'Department of Industry, Innovation and Science',
   ));
 
   // Add class to determine whether to use cookies or not.
@@ -101,9 +102,28 @@ function ipaustralia_preprocess_page(&$vars, $hook) {
     // e.g. page--trade_mark_certification_rules.tpl.php
     $vars['theme_hook_suggestions'][] = 'page__' . $vars['node']->type;
   }
-  if (drupal_is_front_page()) {
-    // Homepage doesn't have sidebars.
+
+  /* $vars not $variables */
+  if (!empty($vars['page']['sidebar_first']) || !empty($vars['page']['sidebar_second'])) {
+    // if one side bar, eg a menu
+    $vars['content_column_class'] = ' class="col-sm-9"';
+  }
+  elseif (!empty($vars['page']['sidebar_first']) && !empty($vars['page']['sidebar_second'])) {
+    // both sidebars
+    $vars['content_column_class'] = ' class="col-sm-6"';
+  } else {
+    // neither sidebar, eg the homepage
     $vars['content_column_class'] = ' class="col-sm-12"';
+  }
+
+  // add the possibility to base page templates off the aliased path
+  if (isset($vars['node'])) {
+    $template_name = 'page';
+    $alias = drupal_get_path_alias();
+    foreach (explode('/', $alias) as $path_segment) {
+      $template_name = $template_name . '__' . $path_segment;
+      $vars['theme_hook_suggestions'][] = $template_name;
+    }
   }
 }
 
@@ -116,7 +136,7 @@ function ipaustralia_form_alter(&$form, &$form_state, $form_id) {
     //Get the node information
     if ($node = menu_get_object()) {
       //Set the webform value to node value.
-      $form['submitted']['policy_id']['#value'] = $node->field_policy_id['und']['0']['value'];   
+      $form['submitted']['policy_id']['#value'] = $node->field_policy_id['und']['0']['value'];
     }
   }
 }
@@ -365,5 +385,17 @@ function ipaustralia_file_link($variables) {
     '</span>';
 }
 
+
+/**
+ * Implements hook_webform_form().
+ */
+function ipaustralia_preprocess_webform_form(&$vars) {
+  if(isset($vars['form']['#node']->title)){
+    if($vars['form']['#node']->title==='IP contract generator'){
+      include_once dirname(__FILE__) . '/includes/contract_generator.inc';
+      __ipaustralia_contract_generator($vars);
+    }
+  }
+}
 
 include_once dirname(__FILE__) . '/includes/megamenu.inc';

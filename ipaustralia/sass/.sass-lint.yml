@@ -1,0 +1,15 @@
+rules:
+  border-zero:
+    - 1
+    -
+      convention: 'none'
+  clean-import-paths:
+    - 1
+    -
+      leading-underscore: true
+      filename-extension: true
+  force-pseudo-nesting: 0
+  nesting-depth:
+    - 1
+    -
+      max-depth: 4

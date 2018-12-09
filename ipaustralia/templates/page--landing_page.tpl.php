@@ -1,7 +1,7 @@
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSCK47"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) --> 
+<!-- End Google Tag Manager (noscript) -->
 
 <?php
   $theme_path = drupal_get_path('theme', 'ipaustralia');
@@ -20,7 +20,7 @@ var WRInitTime=(new Date()).getTime();
 
 <div class="main-container">
 
-  <div class="overlay" />
+  <div class="overlay"></div>
 
   <?php if (!empty($messages)): ?>
     <div class="messages">
@@ -32,7 +32,7 @@ var WRInitTime=(new Date()).getTime();
 
   <div>
 
-    <section>
+    <section role="main" aria-label="Main content">
       <a id="main-content"></a>
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>

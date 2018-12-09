@@ -1,0 +1,264 @@
+$color_1: #fff;
+$color_2: #000;
+$font_family_1: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$background_color_1: #704579;
+$background_color_2: #fff;
+$background_color_3: none;
+
+/* button styling */
+form#webform-client-form-70621 {
+	margin: 2em;
+	font-size: 1.12em;
+}
+.form-radios.custom-block {
+	label {
+		display: block;
+		margin: 1px 0;
+		background-color: $background_color_1;
+		color: $color_1;
+		border-radius: 15px;
+		padding: 0.5em;
+		margin-bottom: 4%;
+		font-family: $font_family_1;
+		border: 2px solid #fff;
+		&:hover {
+			border: 2px solid #704579;
+			color: $color_2;
+			background-color: $background_color_2;
+		}
+	}
+}
+.generator.form-item.webform-component.webform-component-radios.webform-component--one-way-or-two-way.form-group {
+	margin-bottom: 2em;
+	border-bottom: 2px solid #f1f1f1;
+	padding-bottom: 1%;
+}
+.generator.form-item.webform-component.webform-component-radios.webform-component--1-end-user-business-details-party-one.form-group {
+	margin-bottom: 2em;
+	border-bottom: 2px solid #f1f1f1;
+	padding-bottom: 1%;
+}
+.generator.form-item.webform-component.webform-component-radios.webform-component--2-end-user-business-details-party-two.form-group {
+	margin-bottom: 2em;
+	border-bottom: 2px solid #f1f1f1;
+	padding-bottom: 1%;
+}
+.generator.form-item.webform-component.webform-component-radios.webform-component--4-duration-of-obligations.form-group {
+	margin-bottom: 2em;
+	border-bottom: 2px solid #f1f1f1;
+	padding-bottom: 1%;
+}
+.form-item.webform-component.webform-component-textarea.webform-component--3-permitted-purpose.form-group {
+	margin-bottom: 2em;
+	border-bottom: 2px solid #f1f1f1;
+	padding-bottom: 1%;
+}
+.form-item.webform-component.webform-component-select.webform-component--5-law-and-jurisdiction.form-group {
+	margin-bottom: 2em;
+	border-bottom: 2px solid #f1f1f1;
+	padding-bottom: 1%;
+}
+.form-item.webform-component.webform-component-checkboxes.webform-component--disclaimer.form-group {
+	margin-bottom: 2em;
+	border-bottom: 2px solid #f1f1f1;
+	padding-bottom: 1%;
+}
+button.webform-submit.button-primary.btn.btn-default.form-submit {
+	display: block;
+	margin: 0 auto;
+	display: block;
+	margin: 0 auto;
+	padding: 1em;
+	border-radius: 20px;
+	border: 2px solid #704579;
+	&:hover {
+		background-color: $background_color_1;
+		color: $color_1;
+		border: 2px solid #fff;
+	}
+}
+.custom-block {
+	margin-left: 2%;
+	.radio {
+		input[type="radio"] {
+			position: relative !important;
+		}
+	}
+}
+#edit-submitted-one-way-or-two-way {
+	width: 50%;
+}
+#edit-submitted-1-end-user-business-details-party-one {
+	width: 50%;
+}
+#edit-submitted-1a-end-user-details-company {
+	width: 50%;
+}
+#edit-submitted-2-end-user-business-details-party-two {
+	width: 50%;
+}
+#edit-submitted-4-duration-of-obligations {
+	width: 50%;
+}
+#edit-submitted-2a-other-party-details-company {
+	width: 50%;
+}
+#edit-submitted-one-way-or-two-way-1 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-one-way-or-two-way-2 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-1-end-user-business-details-party-one-1 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-1-end-user-business-details-party-one-2 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-1-end-user-business-details-party-one-3 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-1a-end-user-details-company-1 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-1a-end-user-details-company-2 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-2-end-user-business-details-party-two-1 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-2-end-user-business-details-party-two-2 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-2-end-user-business-details-party-two-3 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-4-duration-of-obligations-1 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-4-duration-of-obligations-2 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-4-duration-of-obligations-3 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-4-duration-of-obligations-4 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-2a-other-party-details-company-1 {
+	margin: 1em;
+	padding: 1em;
+}
+#edit-submitted-2a-other-party-details-company-2 {
+	margin: 1em;
+	padding: 1em;
+}
+fieldset.webform-component-fieldset.webform-component--2-partnership.panel.panel-default.form-wrapper {
+	margin: 1.2em;
+	.panel-body {
+		padding: 1em 2.2em;
+	}
+}
+fieldset.webform-component-fieldset.webform-component--1-company.panel.panel-default.form-wrapper {
+	margin: 1.2em;
+	.panel-body {
+		padding: 1em 2.2em;
+	}
+}
+fieldset.webform-component-fieldset.webform-component--1-sole-director-company.panel.panel-default.form-wrapper {
+	margin: 1.2em;
+	.panel-body {
+		padding: 1em 2.2em;
+	}
+}
+fieldset.webform-component-fieldset.webform-component--1-individual.panel.panel-default.form-wrapper {
+	margin: 1.2em;
+	margin-bottom: 3%;
+	.panel-body {
+		padding: 1em 2.2em;
+	}
+	>.panel-heading {
+		background-color: $background_color_3 !important;
+	}
+}
+fieldset.webform-component-fieldset.generator-heading.webform-component--1-partnership.panel.panel-default.form-wrapper {
+	margin: 1.2em;
+	.panel-body {
+		padding: 1em 2.2em;
+	}
+}
+fieldset.webform-component-fieldset.webform-component--2-individual.panel.panel-default.form-wrapper {
+	margin: 1.2em;
+	.panel-body {
+		padding: 1em 2.2em;
+	}
+}
+fieldset.webform-component-fieldset.webform-component--2-company.panel.panel-default.form-wrapper {
+	margin: 1.2em;
+	.panel-body {
+		padding: 1em 2.2em;
+	}
+}
+fieldset.webform-component-fieldset.webform-component--2-sole-director-company.panel.panel-default.form-wrapper {
+	margin: 1.2em;
+	.panel-body {
+		padding: 1em 2.2em;
+	}
+}
+.form-item.form-item-submitted-one-way-or-two-way.form-type-radio.radio {
+	margin-bottom: 4%;
+}
+.panel-default {
+	>.panel-heading {
+		padding: 2%;
+	}
+}
+span.panel-title.fieldset-legend {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+select#edit-submitted-5-law-and-jurisdiction {
+	margin: 2%;
+	width: 50%;
+}
+div#edit-submitted-disclaimer {
+	padding: 0.5em;
+}
+.form-group {
+	margin-bottom: 1.5em;
+}
+@media only screen and (max-width: 700px) {
+	div#edit-submitted-one-way-or-two-way {
+		width: 100%;
+	}
+	#edit-submitted-1-end-user-business-details-party-one {
+		width: 100%;
+	}
+	#edit-submitted-1a-end-user-details-company {
+		width: 100%;
+	}
+	#edit-submitted-2-end-user-business-details-party-two {
+		width: 100%;
+	}
+	#edit-submitted-4-duration-of-obligations {
+		width: 100%;
+	}
+	#edit-submitted-2a-other-party-details-company {
+		width: 100%;
+	}
+}
+

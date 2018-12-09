@@ -39,6 +39,7 @@ function __ipaustralia_mega_menu() {
 		'expanded' => TRUE,
 		'sort' => FALSE
 	);
+	
 	$tree = menu_tree_build($config);
 	$tree_content = $tree['content']['#content'];
 	__ipaustralia_add_mega_menu_theme_suggestions($tree_content);
@@ -84,8 +85,8 @@ function ipaustralia_menu_link__menu_block__mega_menu__level_1(array $variables)
 		$class = drupal_clean_css_identifier(strtolower($element["#title"]));
 		// get tab header
 		$tab_header = l(
-			$element['#title'], 
-			$element['#href'], 
+			$element['#title'],
+			$element['#href'],
 			array_merge_recursive(
 				$element['#localized_options'],
 				array(
@@ -105,28 +106,28 @@ function ipaustralia_menu_link__menu_block__mega_menu__level_1(array $variables)
 				$sub_menu = drupal_render($element['#below']);
 			}
 			$title = l(
-				$element['#title'], 
-				$element['#href'], 
+				$element['#title'],
+				$element['#href'],
 				array_merge_recursive($element['#localized_options'], array('attributes' => array('class' => array('title'))))
 			);
 			// using <i> for icons per bootstrap convention
-			$icon = '<i class="icon icon-' . $class . '"></i>';
+			$icon = '<i class="icon icon-' . $class . '" role="none"></i>';
 			$learn_more = l(
 				t('Learn more'),
 				$element['#href'],
 				array_merge_recursive($element['#localized_options'], array('attributes' => array('class' => array('learn-more'))))
 			);
-			$description = 
+			$description =
 				!empty($element['#localized_options']['attributes']['title'])
 				? '<p>' . $element['#localized_options']['attributes']['title'] . '</p>'
 				: '';
-			$tab_contents = 
+			$tab_contents =
 				'<div class="megamenu-tab-contents dropdown-menu" data-tab-id="' . $tab_id . '">' .
 					$icon .
 					'<div class="megamenu-tab-contents__title">' . $title . $description . '</div>' .
 					$learn_more .
-					$sub_menu . 
-					'<div class="clearfix" />' .
+					$sub_menu .
+					'<div class="clearfix" ></div>' .
 				'</div>';
 		}
 		$output = $tab_header . $tab_contents;

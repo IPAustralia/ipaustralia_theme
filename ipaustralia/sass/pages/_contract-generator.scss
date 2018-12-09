@@ -1,0 +1,34 @@
+
+.webform-component--law-and-jurisdiction {
+	color: #000;
+
+	> .control-label {
+		display: none;
+	}
+}
+
+.webform-component {
+	&.-error, &.-invalid {
+		&::after {
+			content: "This field is required";
+			display: inline-block;
+			border: 1px solid $red;
+			background: $red_pale;
+			padding: 5px 10px;
+			margin-top: 1rem;
+		}
+	}
+	&.-invalid::after {
+		content: 'This field is invalid';
+	}
+}
+
+.form-page {
+	outline: none;
+
+	.js & { display: none; }
+}
+
+.contract-generator-submit  {
+	.js & { display: none !important; }
+}

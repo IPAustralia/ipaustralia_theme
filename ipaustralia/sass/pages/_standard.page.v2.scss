@@ -1,0 +1,40 @@
+// standard page with split header
+
+.node-type-standard-page-v2 {
+  // remove the border at the top of the left nav
+  aside {
+    .region-sidebar-first.well {
+      ul {
+        li {
+          &:first-child {
+            border-top: none;
+            margin-top: -.25em;
+          }
+        }
+      }
+    }
+  }
+
+  // masthead image centred in the right column
+  .field-name-field-masthead-image {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  // masthead background and border
+  .masthead-wrapper {
+    background-color: $very-light-grey;
+    border-bottom: .3em solid $black;
+  }
+
+  // padding for the main content
+  .main-container {
+    .container {
+      padding-bottom: .5em;
+      padding-top: .5em;
+    }
+  }
+}

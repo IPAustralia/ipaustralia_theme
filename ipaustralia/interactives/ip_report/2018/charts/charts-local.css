@@ -1,0 +1,119 @@
+.ct-series-a .ct-line,
+.ct-series-a .ct-point {
+  stroke: purple;
+}
+
+.ct-series-b .ct-line,
+.ct-series-b .ct-point {
+  stroke: orange;
+}
+
+.ct-series-c .ct-line,
+.ct-series-c .ct-point {
+  stroke: blue;
+}
+
+.ct-series .ct-line {
+  stroke-width: 2px;
+}
+
+.ct-label {
+  font-size: 1.2rem;
+}
+
+/* all vertical bars - colour base */
+
+.ct-series-a .ct-bar {
+  stroke: orange;
+}
+
+.ct-series-b .ct-bar {
+  stroke: #f4c63d;
+}
+
+.ct-series-c .ct-bar {
+  display: none;
+}
+
+/* vertical bars - chapter 3 - reds */
+
+#chapter-3 .ct-series-a .ct-bar {
+  stroke: #edc5c3;
+}
+
+#chapter-3 .ct-series-b .ct-bar {
+  stroke: #f6e7e4;
+}
+
+/* vertical bars - chapter 4 - greens */
+
+#chapter-4 .ct-series-a .ct-bar {
+  stroke: #c8ead4;
+}
+
+#chapter-4 .ct-series-b .ct-bar {
+  stroke: #dff1e5;
+}
+
+/* all vertical bars */
+
+.ct-series .ct-bar {
+  stroke-width: 20px;
+}
+
+@media only all and (min-width:768px) {
+  .ct-series .ct-bar {
+    stroke-width: 48px;
+  }
+}
+
+/* combined vertical bars and lines */
+
+.chart-container {
+  position: relative;
+}
+
+.chart-container>* {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* horizontal bars */
+
+.horiz-bar .ct-series-c .ct-bar {
+  display: block;
+  stroke: blanchedalmond;
+}
+
+/* figure legends */
+
+.fig-legend {
+  display: block;
+  list-style: none;
+  margin: 5px auto 5px auto;
+  width: auto;
+}
+
+.fig-legend li {
+  float: left;
+  margin: 0 5px 5px 5px;
+  width: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .fig-legend {
+    width: 620px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #chapter-7 .ct-axis-title {
+    display: none;
+  }
+  span.ct-label.ct-horizontal.ct-end {
+    transform: rotate(45deg);
+  }
+}

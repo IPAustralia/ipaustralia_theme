@@ -1,0 +1,15 @@
+
+.error-block {
+	padding: 20px;
+	background: $red_pale;
+	border: 1px solid $red;
+	outline: none;
+	margin-bottom: 2em;
+
+	h2 {
+		font-size: 1.2em;
+		line-height: 1;
+		margin: 0;
+		margin-bottom: 0.5em;
+	}
+}

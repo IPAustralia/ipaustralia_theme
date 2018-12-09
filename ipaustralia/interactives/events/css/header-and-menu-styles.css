@@ -1,0 +1,17 @@
+/* reduce header height, hide menu etc */
+.header {
+  border-bottom: 1px solid #ccc;
+  margin-top: 0!important;
+}
+
+header .header {
+  padding: 0 0 20px 0 !important;
+}
+
+.header .logo img {
+  margin-top: 20px;
+}
+
+.navbar-default, .masthead-wrapper {
+  display: none;
+}

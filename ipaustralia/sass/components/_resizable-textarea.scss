@@ -1,0 +1,23 @@
+
+.resizable-textarea {
+	textarea {
+		border: 1px solid $teal;
+		border-radius: 0;
+		color: #000;
+	}
+	.grippie {
+		background: $teal;
+		border: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&::before {
+			content: '';
+			display: block;
+			height: 0;
+			border-bottom: 1px solid #fff;
+			width: 15px;
+		}
+	}
+}
