@@ -390,8 +390,12 @@ function ipaustralia_file_link($variables) {
  * Implements hook_webform_form().
  */
 function ipaustralia_preprocess_webform_form(&$vars) {
-  __ipaustralia_contract_generator($vars);
+  if(isset($vars['form']['#node']->title)){
+    if($vars['form']['#node']->title==='IP contract generator'){
+      include_once dirname(__FILE__) . '/includes/contract_generator.inc';
+      __ipaustralia_contract_generator($vars);
+    }
+  }
 }
 
 include_once dirname(__FILE__) . '/includes/megamenu.inc';
-include_once dirname(__FILE__) . '/includes/contract_generator.inc';
